@@ -1,0 +1,249 @@
+{
+  "contentStatus": "complete",
+  "id": "B11",
+  "title": "Gyeran Mari Rolled Omelet",
+  "koreanName": "Gyeran Mari",
+  "hangul": "계란말이",
+  "romanization": "gyeran mari",
+  "category": "banchan",
+  "releaseCohort": "week-02",
+  "publicReleaseOrder": 35,
+  "canonicalSlug": "gyeran-mari-rolled-omelet",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gyeran-mari-rolled-omelet/",
+  "shortDescription": "Thin layers of beaten egg with scallion and carrot are rolled in a skillet, then sliced into neat spirals.",
+  "culturalContext": "Gyeran mari is a Korean rolled-egg dish served as banchan, in lunch boxes, or with drinks. Fillings, seasoning, thickness, and rolling technique vary.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 12,
+    "display": "12 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "12 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "totalTime": {
+    "minutes": 29,
+    "display": "About 29 minutes"
+  },
+  "equipment": [
+    "20 cm / 8-inch nonstick skillet",
+    "Bowl and chopsticks or whisk",
+    "Fine-mesh strainer, optional",
+    "Flexible spatula",
+    "Calibrated instant-read thermometer"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "egg-roll",
+      "heading": "Rolled egg",
+      "ingredients": [
+        {
+          "id": "eggs",
+          "item": "large eggs",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "large eggs",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["egg"]
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "finely chopped",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": "finely diced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 0.33,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Mix the eggs",
+      "action": "Beat eggs with salt, then stir in scallion and carrot.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The whites and yolks are combined without large streaks.",
+      "safetyNote": "Wash hands after handling raw egg and keep the mixture off ready-to-eat foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Preheat gently",
+      "action": "Heat the skillet over medium-low and wipe in a thin film of oil.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Medium-low",
+      "visualOrTactileCue": "The oil shimmers without smoking.",
+      "safetyNote": "Keep the handle turned inward.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Start the roll",
+      "action": "Pour a thin layer of egg; when mostly set but still glossy on top, roll it toward one side.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Medium-low",
+      "visualOrTactileCue": "The layer bends without flowing raw egg.",
+      "safetyNote": "Do not taste undercooked egg.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Build layers",
+      "action": "Oil the exposed pan lightly, add another thin layer under the roll, and roll again; repeat until the egg is used.",
+      "estimatedTime": "6 to 8 minutes",
+      "temperature": "Medium-low",
+      "visualOrTactileCue": "The roll is firm, layered, and lightly golden.",
+      "safetyNote": "Control heat so the exterior does not burn before the center cooks.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Verify doneness",
+      "action": "Check the center with a clean thermometer and continue turning gently until it reaches 160°F / 71°C.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Medium-low",
+      "visualOrTactileCue": "The center reaches 160°F / 71°C and no liquid egg remains.",
+      "safetyNote": "Egg dishes should reach 160°F / 71°C.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and slice",
+      "action": "Rest 5 minutes, then slice on a clean board with a clean knife.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "Slices hold visible spirals.",
+      "safetyNote": "Refrigerate within 2 hours.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this egg roll is cooked in a skillet.",
+  "targetInternalTemperature": "160°F / 71°C in the center of the finished egg roll.",
+  "visualDonenessCues": [
+    "Layers are set with no liquid egg",
+    "Roll is firm enough to slice",
+    "Center reaches 160°F / 71°C"
+  ],
+  "foodSafetyNotes": [
+    "Keep raw egg separate from ready-to-eat foods.",
+    "Cook the center of the egg roll to 160°F / 71°C.",
+    "Use a clean board and knife for the cooked roll.",
+    "Refrigerate within 2 hours at or below 40°F / 4°C."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": true,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains egg; use clean cookware and utensils to manage cross-contact."
+  },
+  "substitutions": [
+    "Finely chopped chives may replace scallion.",
+    "Omit carrot rather than using large wet fillings."
+  ],
+  "ingredientSourcing": ["Choose refrigerated, clean, uncracked eggs."],
+  "makeAhead": "Cook up to 1 day ahead, cool promptly, cover, and refrigerate.",
+  "storage": "Refrigerate within 2 hours in a covered container and use within 4 days pending food-safety approval.",
+  "reheating": "Reheat gently until steaming, or serve properly refrigerated slices cool.",
+  "leftovers": "Pack only properly chilled leftovers with an ice source.",
+  "servingSuggestions": ["Serve sliced as banchan or in a lunch box."],
+  "menuPairings": ["M06", "SF01", "F06", "SA01"],
+  "relatedRecipeIds": ["B10", "B12"],
+  "faq": [
+    {
+      "question": "Why is my roll breaking?",
+      "answer": "The layer may be too cooked, too thick, or overfilled; test cooking must calibrate the pan."
+    },
+    {
+      "question": "Can the center stay soft?",
+      "answer": "It may stay tender, but the egg dish still must reach 160°F / 71°C."
+    }
+  ],
+  "seoTitle": "Gyeran Mari Korean Rolled Omelet",
+  "metaDescription": "Learn Korean gyeran mari with thin egg layers, scallion and carrot, practical rolling cues, and a verified 160°F / 71°C center.",
+  "primaryKeyword": "gyeran mari recipe",
+  "secondaryTopics": ["Korean rolled omelet", "egg banchan"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi gyeran-mari technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/gyeran-mari",
+    "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

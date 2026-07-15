@@ -1,0 +1,87 @@
+---
+import registryData from '../../data/url-registry.json';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import DisabledForm from '../components/DisabledForm.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd } from '../lib/seo';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_MEDIA_KIT');
+---
+
+<BaseLayout
+  title="Sponsorship and Media Kit Preview"
+  description="A disabled sponsorship and media-kit framework covering deliverables, evidence, disclosure, rights, editorial independence, and approval."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: '/' },
+      { name: 'Media Kit', path },
+    ]),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[{ label: 'Home', href: '/' }, { label: 'Media Kit' }]}
+      /><p class="eyebrow">No audience or performance claim is published</p><h1>
+        Partnership structure before sales claims.
+      </h1><p class="lede">
+        A future media kit may package one reviewed recipe, one long video,
+        three distinct shorts, one email placement, and separately negotiated
+        usage rights. Rates, reach, demographics, results, and availability
+        remain blank until supported by real records.
+      </p>
+    </div>
+  </header>
+  <section class="section tinted">
+    <div class="shell support-grid">
+      <section class="support-card">
+        <h2>Required brief</h2><ul class="plain-list">
+          <li>Brand, product, audience, objective, substantiated claims</li><li>
+            Exact deliverables, channels, dates, approval contacts
+          </li><li>Compensation, exclusivity, usage, whitelisting, and term</li>
+        </ul>
+      </section>
+      <section class="support-card">
+        <h2>Non-negotiable controls</h2><ul class="plain-list">
+          <li>Clear sponsorship labels and editorial independence</li><li>
+            No unsafe or culturally misleading instruction
+          </li><li>
+            No hidden ranking, fake test, or invented performance result
+          </li>
+        </ul>
+      </section>
+      <section class="support-card">
+        <h2>Rights</h2><p>
+          Production fee and media usage are separate. Scope must identify
+          media, territory, term, edits, paid use, sublicensing, archival use,
+          and revocation/correction.
+        </p>
+      </section>
+      <section class="support-card">
+        <h2>Measurement</h2><p>
+          Only consented allowlisted events and real platform reports may
+          support a result. Personal identifiers never enter analytics or
+          campaign URLs.
+        </p>
+      </section>
+    </div>
+  </section>
+  <section class="section">
+    <div class="shell reading-width">
+      <DisabledForm
+        formId="sponsor-inquiry"
+        title="Sponsorship inquiry preview"
+        fields={[
+          { label: 'Organization' },
+          { label: 'Campaign objective' },
+          { label: 'Evidence and claim requirements', type: 'textarea' },
+        ]}
+        buttonLabel="Inquiry disabled"
+        explanation="No legal identity, contact channel, rate card, privacy workflow, or partnership approval is configured."
+      />
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import registryData from '../../../../data/url-registry.json';
+import RecipePage from '../../../components/RecipePage.astro';
+import { registryPathById, type UrlRegistry } from '../../../lib/url-registry';
+import type { CompleteRecipe } from '../../../schemas/recipe';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('recipes');
+  const recipes = entries
+    .map((entry) => entry.data)
+    .filter(
+      (recipe): recipe is CompleteRecipe => recipe.contentStatus === 'complete',
+    );
+  const byId = new Map(recipes.map((recipe) => [recipe.id, recipe]));
+  const registry = registryData as UrlRegistry;
+
+  return recipes.map((recipe) => ({
+    params: {
+      category: recipe.category,
+      slug: recipe.canonicalSlug,
+    },
+    props: {
+      recipe,
+      related: recipe.relatedRecipeIds.map((id) => {
+        const relatedRecipe = byId.get(id);
+        if (!relatedRecipe) throw new Error(`Missing related recipe ${id}`);
+        return {
+          recipe: relatedRecipe,
+          href: registryPathById(registry, id),
+        };
+      }),
+    },
+  }));
+}
+
+interface Props {
+  recipe: CompleteRecipe;
+  related: { recipe: CompleteRecipe; href: string }[];
+}
+
+const { recipe, related } = Astro.props;
+---
+
+<RecipePage {recipe} {related} />

@@ -1,0 +1,304 @@
+{
+  "contentStatus": "complete",
+  "id": "F07",
+  "title": "Tomato-Onion Sesame Salad",
+  "koreanName": "Tomato Yangpa Chamkkae Saelleodeu",
+  "hangul": "토마토 양파 참깨 샐러드",
+  "romanization": "tomato yangpa chamkkae saelleodeu",
+  "category": "fresh",
+  "releaseCohort": "week-08",
+  "publicReleaseOrder": 60,
+  "canonicalSlug": "tomato-onion-sesame-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fresh/tomato-onion-sesame-salad/",
+  "shortDescription": "Ripe tomatoes and thin onion are dressed at service with soy sauce, rice vinegar, sesame oil, and toasted sesame seeds.",
+  "culturalContext": "This is a contemporary Korean-inspired tomato salad rather than a traditional fixed recipe. Tomato cut, onion treatment, sweetness, and dressing balance vary; the descriptive Korean name requires review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "fresh side servings",
+  "prepTime": {
+    "minutes": 16,
+    "display": "16 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No rest"
+  },
+  "totalTime": {
+    "minutes": 16,
+    "display": "16 minutes"
+  },
+  "equipment": [
+    "Colander",
+    "Clean cutting board and knife",
+    "Salad spinner or clean towels",
+    "Large clean mixing bowl",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "salad",
+      "heading": "Tomato and onion",
+      "ingredients": [
+        {
+          "id": "tomatoes",
+          "item": "ripe firm tomatoes",
+          "metricAmount": 600,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "medium tomatoes",
+          "preparation": "washed and cut into wedges",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "sweet onion",
+          "metricAmount": 120,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "medium onion",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "dressing",
+      "heading": "Sesame dressing",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Sort and wash",
+      "action": "Rinse tomatoes and scallion under cool running water; discard tomatoes with mold, leaking damage, or spoilage.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Produce is clean with damaged portions discarded.",
+      "safetyNote": "Use potable running water without soap or detergent.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Dry and cut",
+      "action": "Dry and cut tomatoes and scallion on a clean board; thinly slice onion with a clean knife.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pieces are dry and evenly cut.",
+      "safetyNote": "Use clean ready-to-eat tools kept away from raw meat and seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Mix the dressing",
+      "action": "Whisk soy sauce, vinegar, sugar, sesame oil, and sesame seeds until the sugar dissolves.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The dressing is uniform.",
+      "safetyNote": "Verify all packaged condiment allergen labels.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Toss at service",
+      "action": "Arrange tomatoes and onion, add dressing, and toss gently at service.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Ingredients are lightly coated and still crisp.",
+      "safetyNote": "Use clean hands or utensils.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Taste with a clean utensil",
+      "action": "Adjust only after using a clean tasting spoon once; do not return it to the bowl.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "Flavor is balanced without repeated tasting contact.",
+      "safetyNote": "Use a fresh spoon for every taste.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve immediately",
+      "action": "Transfer to a clean dish and serve immediately; refrigerate if service is delayed.",
+      "estimatedTime": "1 minute",
+      "temperature": "Cool",
+      "visualOrTactileCue": "The salad is crisp and not watery.",
+      "safetyNote": "Refrigerate at or below 40°F / 4°C and discard after unsafe holding.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this is a raw, ready-to-eat fresh side dish.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Tomato wedges hold their shape",
+    "Onion is thin and crisp",
+    "Dressing is evenly distributed"
+  ],
+  "foodSafetyNotes": [
+    "Wash produce under cool potable running water without soap or detergent.",
+    "Use clean hands, boards, knives, bowls, and serving ware for ready-to-eat food.",
+    "Keep washed produce separate from raw animal foods and their tools.",
+    "Refrigerate at or below 40°F / 4°C and serve promptly."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify labels and prevent cross-contact."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying the label."
+  ],
+  "ingredientSourcing": [
+    "Choose ripe but firm tomatoes without breaks, mold, or leaking juice."
+  ],
+  "makeAhead": "Mix dressing up to 1 day ahead; cut and dress tomatoes immediately before service.",
+  "storage": "Best served immediately. Refrigerate components separately at or below 40°F / 4°C and discard dressed salad after unsafe holding.",
+  "reheating": "Do not reheat; this is a raw ready-to-eat dish.",
+  "leftovers": "Avoid retaining table-exposed dressed leftovers; use only clean, promptly refrigerated portions.",
+  "servingSuggestions": ["Serve promptly with grilled meat or fish."],
+  "menuPairings": ["M10", "SF08", "B22", "SA02"],
+  "relatedRecipeIds": ["F06", "F08"],
+  "faq": [
+    {
+      "question": "Can I use very soft tomatoes?",
+      "answer": "No. Choose sound, firm-ripe fruit and discard spoiled or leaking tomatoes."
+    },
+    {
+      "question": "Why dress at service?",
+      "answer": "Salt and acid quickly draw juice from cut tomatoes."
+    }
+  ],
+  "seoTitle": "Tomato-Onion Sesame Salad",
+  "metaDescription": "Make tomato-onion sesame salad with soy and rice vinegar, safe running-water produce washing, clean ready-to-eat tools, and prompt service.",
+  "primaryKeyword": "tomato onion sesame salad",
+  "secondaryTopics": ["Korean-inspired tomato salad", "sesame dressing"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Contemporary locked-title formulation; descriptive Korean naming and cultural framing require human review.",
+    "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 16,
+  "wash": "Rinse tomatoes and scallion under cool running water; discard tomatoes with mold, leaking damage, or spoilage.",
+  "cut": "Dry and cut tomatoes and scallion on a clean board; thinly slice onion with a clean knife.",
+  "mix": "Whisk soy sauce, vinegar, sugar, sesame oil, and sesame seeds until the sugar dissolves.",
+  "toss": "Arrange tomatoes and onion, add dressing, and toss gently at service.",
+  "cues": [
+    "Tomato wedges hold their shape",
+    "Onion is thin and crisp",
+    "Dressing is evenly distributed"
+  ],
+  "sourcing": [
+    "Choose ripe but firm tomatoes without breaks, mold, or leaking juice."
+  ],
+  "serving": ["Serve promptly with grilled meat or fish."],
+  "source": "Contemporary locked-title formulation; descriptive Korean naming and cultural framing require human review."
+}

@@ -1,0 +1,281 @@
+{
+  "contentStatus": "complete",
+  "id": "B24",
+  "title": "Kkaennip Jangajji Pickled Perilla Leaves",
+  "koreanName": "Kkaennip Jangajji",
+  "hangul": "깻잎장아찌",
+  "romanization": "kkaennip-jangajji",
+  "category": "banchan",
+  "releaseCohort": "week-11",
+  "publicReleaseOrder": 71,
+  "canonicalSlug": "kkaennip-jangajji-pickled-perilla-leaves",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/kkaennip-jangajji-pickled-perilla-leaves/",
+  "shortDescription": "Perilla leaves are layered with a cooled soy-vinegar brine for a crisp, savory refrigerator pickle that is never presented as shelf-stable.",
+  "culturalContext": "Kkaennip jangajji is a preserved perilla-leaf banchan with household variations in brine, aromatics, sweetness, and resting time. This draft uses a vinegar-forward refrigerator method rather than a canning process.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 10,
+  "servingUnit": "banchan servings",
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "restTime": {
+    "minutes": 720,
+    "display": "12 hours refrigerated"
+  },
+  "totalTime": {
+    "minutes": 750,
+    "display": "12 hours 30 minutes"
+  },
+  "equipment": [
+    "Clean colander",
+    "Salad spinner or clean towels",
+    "Small saucepan",
+    "Clean heat-safe bowl",
+    "Clean covered refrigerator container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "pickle",
+      "heading": "Perilla leaves and refrigerator brine",
+      "ingredients": [
+        {
+          "id": "perilla-leaves",
+          "item": "fresh perilla leaves",
+          "metricAmount": 60,
+          "metricUnit": "count",
+          "customaryAmount": 60,
+          "customaryUnit": "leaves",
+          "preparation": "stems trimmed; washed under running water and dried",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 180,
+          "metricUnit": "ml",
+          "customaryAmount": 0.75,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "commercial rice vinegar labeled 5% acidity",
+          "metricAmount": 120,
+          "metricUnit": "ml",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 120,
+          "metricUnit": "ml",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "granulated sugar",
+          "metricAmount": 50,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 4,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Wash and dry",
+      "action": "Rinse leaves individually under cool running water, drain, and dry thoroughly; do not use soap or produce wash.",
+      "estimatedTime": "15 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Leaves are clean, intact, and dry.",
+      "safetyNote": "Discard slimy or damaged leaves and use clean hands and tools.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Make brine",
+      "action": "Combine soy sauce, 5% acidity rice vinegar, water, sugar, garlic, and optional gochugaru; bring to a brief boil while stirring.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Boiling",
+      "visualOrTactileCue": "Sugar dissolves and brine bubbles throughout.",
+      "safetyNote": "Use only commercially labeled 5% acidity vinegar; prevent steam and splash burns.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Cool completely",
+      "action": "Transfer brine to a clean heat-safe bowl and cool completely before it touches the leaves.",
+      "estimatedTime": "30 minutes",
+      "temperature": "Cool to 70°F / 21°C or below",
+      "visualOrTactileCue": "Brine is no longer warm.",
+      "safetyNote": "Do not pour hot brine into an unsuitable container or directly onto delicate leaves.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Layer cleanly",
+      "action": "Layer leaves in a clean container, spooning cooled brine between every few leaves.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Room temperature during brief assembly",
+      "visualOrTactileCue": "Leaves are evenly wetted and mostly submerged.",
+      "safetyNote": "Minimize time out of refrigeration and never reuse a container that is not clean.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Refrigerate",
+      "action": "Cover and refrigerate at least 12 hours, pressing leaves below the brine with a clean utensil after the first hour.",
+      "estimatedTime": "12 hours",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Leaves darken slightly and absorb brine.",
+      "safetyNote": "This is a refrigerator pickle only, not a shelf-stable or fermentation process.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve cold",
+      "action": "Remove portions with clean utensils and return the container promptly to refrigeration.",
+      "estimatedTime": "2 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Leaves smell fresh and savory with no gas, slime, or mold.",
+      "safetyNote": "Discard the entire batch if mold, gas, slime, or an off odor appears.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill required; use a clean preparation area separate from raw meat and seafood.",
+  "targetInternalTemperature": "Keep continuously refrigerated at or below 40°F / 4°C.",
+  "visualDonenessCues": [
+    "Leaves are evenly coated",
+    "Brine remains clear of mold or gas",
+    "No slime or off odor is present"
+  ],
+  "foodSafetyNotes": [
+    "Refrigerator pickle only; not shelf-stable, canned, or validated for room-temperature storage.",
+    "Use commercial vinegar labeled 5% acidity and do not reduce the vinegar proportion without a qualified process review.",
+    "Keep at or below 40°F / 4°C and use a clean utensil for every serving.",
+    "Discard the batch if it was held above 40°F / 4°C for more than 2 hours, or 1 hour above 90°F / 32°C."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Verify every packaged-ingredient label and segregate tools for diners with allergies."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after label verification.",
+    "Do not substitute homemade or unlabeled vinegar."
+  ],
+  "ingredientSourcing": [
+    "Choose unwilted perilla leaves without slime.",
+    "Confirm the vinegar label states 5% acidity."
+  ],
+  "makeAhead": "Prepare 12 to 24 hours ahead and keep continuously refrigerated.",
+  "storage": "Keep covered at or below 40°F / 4°C and use within 5 days; this conservative limit requires test-kitchen review.",
+  "reheating": "Do not reheat; serve cold with a clean utensil.",
+  "leftovers": "Return promptly to refrigeration; discard portions left out beyond time limits or contaminated by used utensils.",
+  "servingSuggestions": [
+    "Serve one folded leaf with rice and grilled meat.",
+    "Use clean kitchen shears to cut leaves for diners who need smaller bites."
+  ],
+  "menuPairings": ["M19", "SF14", "F09", "SA04"],
+  "relatedRecipeIds": ["B23", "B25"],
+  "faq": [
+    {
+      "question": "Can I store this in the pantry?",
+      "answer": "No. This draft is a refrigerator pickle only and is not a validated canning process."
+    },
+    {
+      "question": "Can I use any vinegar?",
+      "answer": "Use only commercially labeled 5% acidity vinegar unless a qualified process authority approves another formula."
+    }
+  ],
+  "seoTitle": "Kkaennip Jangajji Refrigerator Perilla Pickle",
+  "metaDescription": "Make a savory perilla-leaf refrigerator pickle with a 5% acidity vinegar brine, strict cold storage, and clear no-canning guidance.",
+  "primaryKeyword": "kkaennip jangajji",
+  "secondaryTopics": [
+    "pickled perilla leaves",
+    "refrigerator pickle",
+    "Korean banchan"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe-header",
+    "ingredient-list",
+    "instructions",
+    "food-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Food-safety basis: https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Process boundary: refrigerator pickle; formula requires qualified review before any shelf-stable claim.",
+    "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
+  ],
+  "seafoodPreparation": null
+}

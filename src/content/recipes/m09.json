@@ -1,0 +1,476 @@
+{
+  "contentStatus": "complete",
+  "id": "M09",
+  "title": "Tteokgalbi Grilled Beef-and-Pork Patties",
+  "koreanName": "Tteokgalbi",
+  "hangul": "떡갈비",
+  "romanization": "tteokgalbi",
+  "category": "grilled-meat",
+  "releaseCohort": "week-01",
+  "publicReleaseOrder": 30,
+  "canonicalSlug": "tteokgalbi-grilled-beef-and-pork-patties",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/tteokgalbi-grilled-beef-and-pork-patties/",
+  "shortDescription": "Ground beef and pork are mixed with a pear-soy, garlic, scallion, onion, and sesame seasoning, shaped into thick oval patties, and grilled to a verified ground-meat temperature.",
+  "culturalContext": "Tteokgalbi refers to seasoned minced or finely chopped meat shaped into patties, historically connected to rib meat and several Korean regional and formal dining traditions. Recipes and origin narratives vary; this accessible beef-and-pork draft requires cultural review and does not imply that rice cake is an ingredient.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 8,
+  "servingUnit": "patties",
+  "prepTime": { "minutes": 35, "display": "35 minutes" },
+  "marinateTime": { "minutes": 30, "display": "30 minutes chilling" },
+  "cookTime": { "minutes": 18, "display": "16 to 18 minutes" },
+  "restTime": { "minutes": 3, "display": "3 minutes" },
+  "totalTime": { "minutes": 86, "display": "About 1 hour 30 minutes" },
+  "equipment": [
+    "Large chilled mixing bowl",
+    "Chef’s knife and separate raw-meat cutting board",
+    "Box grater",
+    "Digital scale",
+    "Sheet pan lined with parchment",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Wide metal spatula",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "ground-meat",
+      "heading": "Ground meat",
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "item": "80% lean ground beef",
+          "metricAmount": 450,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "pound",
+          "preparation": "kept cold",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ground-pork",
+          "item": "ground pork",
+          "metricAmount": 450,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "pound",
+          "preparation": "kept cold",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "patty-seasoning",
+      "heading": "Pear-soy seasoning",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "korean-pear",
+          "item": "Korean or Asian pear",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 0.4,
+          "customaryUnit": "cup",
+          "preparation": "finely grated and lightly drained",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": "finely grated and squeezed nearly dry",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "brown-sugar",
+          "item": "brown sugar",
+          "metricAmount": 25,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 45,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "scallions",
+          "preparation": "finely chopped",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": "lightly crushed",
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "seasoning",
+    "ingredients": [
+      {
+        "id": "soy-sauce",
+        "item": "soy sauce",
+        "metricAmount": 45,
+        "metricUnit": "ml",
+        "customaryAmount": 3,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "korean-pear",
+        "item": "Korean or Asian pear",
+        "metricAmount": 100,
+        "metricUnit": "g",
+        "customaryAmount": 0.4,
+        "customaryUnit": "cup",
+        "preparation": "finely grated and lightly drained",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "onion",
+        "item": "yellow onion",
+        "metricAmount": 100,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "cup",
+        "preparation": "finely grated and squeezed nearly dry",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "brown-sugar",
+        "item": "brown sugar",
+        "metricAmount": 25,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "rice-syrup",
+        "item": "Korean rice syrup",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 18,
+        "metricUnit": "g",
+        "customaryAmount": 6,
+        "customaryUnit": "cloves",
+        "preparation": "minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 45,
+        "metricUnit": "g",
+        "customaryAmount": 3,
+        "customaryUnit": "scallions",
+        "preparation": "finely chopped",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "sesame-seeds",
+        "item": "toasted sesame seeds",
+        "metricAmount": 9,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": "lightly crushed",
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "black-pepper",
+        "item": "ground black pepper",
+        "metricAmount": 1,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "about 340 g / 1 1/2 cups seasoning mixture",
+    "meatWeightCovered": "900 g / 2 pounds total ground beef and pork",
+    "mixOrder": [
+      "Dissolve brown sugar in soy sauce and rice syrup",
+      "Stir in pear, squeezed onion, garlic, and scallions",
+      "Finish with sesame oil, sesame seeds, and black pepper"
+    ],
+    "marinationVessel": "Chilled nonreactive mixing bowl, followed by a parchment-lined covered sheet pan",
+    "refrigeratedMarinationTimeRange": "30 minutes after shaping at or below 40°F / 4°C",
+    "maximumPracticalMarinationWarning": "Cook within 24 hours of mixing; do not hold seasoned ground meat beyond the package use-by date.",
+    "reserveBeforeRawContactInstruction": "Reserve 30 ml / 2 tablespoons seasoning in a clean covered bowl before mixing the remainder into ground meat if a finishing glaze is desired.",
+    "rawContactDiscardOrReboilInstruction": "Discard any seasoning or liquid that contacts raw ground meat; do not brush it onto cooked patties. Use only the separately reserved clean portion, boiled before service.",
+    "substitutions": [
+      "Use verified gluten-free tamari only after checking the label.",
+      "All-beef patties require a separate fat and texture test."
+    ],
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten unless certified alternatives are used",
+      "sesame"
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare seasoning cold",
+      "action": "Keep meat refrigerated. Mix soy sauce, sugar, rice syrup, pear, squeezed onion, garlic, scallions, sesame oil, sesame seeds, and pepper. Reserve 2 tablespoons in a clean bowl before raw contact if glazing.",
+      "estimatedTime": "12 minutes",
+      "temperature": "Keep ingredients cold",
+      "visualOrTactileCue": "Sugar is dissolved and the mixture is moist but not watery.",
+      "safetyNote": "Label and refrigerate the clean reserve; wash produce before grating and use clean tools.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the ground meat",
+      "action": "Add cold ground beef and pork to a chilled bowl. Pour in seasoning and mix with gloved hands just until sticky and cohesive, about 90 seconds.",
+      "estimatedTime": "3 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Mixture holds together when pressed without visible dry meat pockets.",
+      "safetyNote": "Do not rinse or taste raw meat; wash hands and sanitize the bowl area after mixing.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Shape and chill",
+      "action": "Divide into eight 155 g portions. Shape into 10 cm / 4-inch ovals about 2 cm / 3/4 inch thick, press a shallow center indentation, place on parchment, cover, and chill 30 minutes.",
+      "estimatedTime": "40 minutes including chilling",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Patties are equal, smooth-edged, and firm enough to lift.",
+      "safetyNote": "Keep raw patties below ready-to-eat foods in the refrigerator and discard raw-contact parchment after use.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat safely",
+      "action": "Preheat a clean outdoor grill or approved indoor electric grill to medium and oil lightly. Set separate raw and cooked spatulas and platters.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium, about 375°F / 190°C surface",
+      "visualOrTactileCue": "Grill is hot, clean, lightly oiled, and arranged with separate utensil zones.",
+      "safetyNote": "Never use charcoal, propane, or other fuel-burning grills indoors or in enclosed spaces.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill without scorching",
+      "action": "Place patties on the grill and cook 5 to 6 minutes without pressing. Turn with a wide spatula and cook another 5 to 6 minutes, reducing heat if sugars darken too quickly.",
+      "estimatedTime": "10 to 12 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "Patties release cleanly, hold together, and brown deeply without blackened sugar.",
+      "safetyNote": "Switch to a clean spatula after the raw side has been cooked; never press out juices.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Verify ground-meat temperature",
+      "action": "Insert a calibrated thermometer horizontally from the side into the center of multiple patties. Continue cooking, turning as needed, until every checked patty reaches 160°F / 71°C. Boil the clean reserve separately before brushing, if used.",
+      "estimatedTime": "4 to 6 minutes as needed",
+      "temperature": "160°F / 71°C minimum",
+      "visualOrTactileCue": "Centers are firm and thermometer-verified; color is not used as the safety test.",
+      "safetyNote": "Ground beef and pork require 160°F / 71°C; do not apply the lower whole-cut beef target.",
+      "mediaReference": null
+    },
+    {
+      "step": 7,
+      "heading": "Rest and serve",
+      "action": "Move to a clean platter, rest 3 minutes for juices to settle, and serve hot.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Patties remain moist and intact after resting.",
+      "safetyNote": "Refrigerate leftovers within 2 hours in a shallow covered container.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or manufacturer-approved indoor electric grill with ventilation. Preheat to medium, oil lightly, and establish separate raw and cooked spatulas, platters, and thermometer access.",
+  "targetInternalTemperature": "160°F / 71°C in the center of every representative ground beef-and-pork patty; no lower whole-cut target applies",
+  "visualDonenessCues": [
+    "Patties hold together and are deeply browned without burned sugar",
+    "Centers feel firm",
+    "Multiple patties reach 160°F / 71°C when probed horizontally from the side"
+  ],
+  "foodSafetyNotes": [
+    "Keep ground beef and pork at or below 40°F / 4°C and do not rinse or taste them raw.",
+    "Use separate raw and cooked utensils, parchment, and platters.",
+    "Reserve any glaze before raw contact and discard all raw-contact seasoning.",
+    "Cook ground beef-and-pork patties to 160°F / 71°C; color is not a substitute for a thermometer.",
+    "Refrigerate cooked patties within 2 hours."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify labels and protect raw and cooked grill zones from allergen and microbial cross-contact."
+  },
+  "substitutions": [
+    "An all-beef version needs separate fat, moisture, and binding tests.",
+    "Use verified gluten-free tamari only after checking the full label."
+  ],
+  "ingredientSourcing": [
+    "Choose freshly ground beef and pork with intact cold packaging and current use-by dates.",
+    "Ask the butcher to package the meats separately and keep them below ready-to-eat foods in transit."
+  ],
+  "makeAhead": "Shape patties up to 12 hours ahead, cover, and refrigerate below ready-to-eat foods; cook within the ground meat's labeled use-by window.",
+  "storage": "Refrigerate cooked patties in a shallow airtight container within 2 hours and use within 4 days, consistent with general cooked-leftover guidance pending review.",
+  "reheating": "Reheat once to 165°F / 74°C in a covered skillet or oven, then serve immediately; avoid repeated cooling and reheating.",
+  "leftovers": "Crumble properly refrigerated reheated patties into a rice bowl only after they reach the reheating target.",
+  "servingSuggestions": [
+    "Serve one or two patties per person with rice and banchan",
+    "Brush lightly with boiled clean reserve only after temperature verification"
+  ],
+  "menuPairings": ["B09", "F09", "SA04", "D04"],
+  "relatedRecipeIds": ["M08", "M10"],
+  "faq": [
+    {
+      "question": "Does tteokgalbi contain rice cake?",
+      "answer": "Not necessarily. The name is associated with the pounded, shaped texture; this beef-and-pork formulation contains no rice cake."
+    },
+    {
+      "question": "Why is the target 160°F instead of 145°F?",
+      "answer": "These are ground beef-and-pork patties, so the official ground-meat minimum is 160°F / 71°C rather than the whole-cut beef target."
+    }
+  ],
+  "seoTitle": "Tteokgalbi Grilled Beef-and-Pork Patties",
+  "metaDescription": "Make pear-soy tteokgalbi patties with ground beef and pork, shaping and grill controls, and a verified 160°F ground-meat temperature.",
+  "primaryKeyword": "tteokgalbi beef and pork patties",
+  "secondaryTopics": [
+    "Korean grilled patties",
+    "ground meat Korean BBQ",
+    "tteokgalbi recipe"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "raw-ground-meat safety",
+    "temperature verification",
+    "recipe card"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Preparation and cultural comparison: https://www.koreanbapsang.com/tteokgalbi-korean-short-rib-patties/",
+    "Ground-meat safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Accessible beef-and-pork formulation created for the locked title; not test-cooked. Regional history, Korean-language, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

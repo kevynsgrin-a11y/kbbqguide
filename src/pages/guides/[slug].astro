@@ -1,0 +1,25 @@
+---
+import registryData from '../../../data/url-registry.json';
+import GuidePage from '../../components/GuidePage.astro';
+import { guides, type Guide } from '../../lib/guides';
+import type { UrlRegistry } from '../../lib/url-registry';
+
+export function getStaticPaths() {
+  const registry = registryData as UrlRegistry;
+  return guides.map((guide) => {
+    const entry = registry.entries.find(
+      (candidate) => candidate.id === guide.id,
+    );
+    if (!entry) throw new Error(`Missing guide registry entry ${guide.id}`);
+    return { params: { slug: entry.slug }, props: { guide } };
+  });
+}
+
+interface Props {
+  guide: Guide;
+}
+
+const { guide } = Astro.props;
+---
+
+<GuidePage {guide} />

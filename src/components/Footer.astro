@@ -1,0 +1,66 @@
+---
+import registryData from '../../data/url-registry.json';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+---
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <section aria-labelledby="footer-about">
+        <a
+          class="footer-brand"
+          href={registryPathById(registry, 'SYS_HOME')}
+          aria-label="KBBQGuide home"
+        >
+          <span>KBBQ</span>Guide
+        </a>
+        <h2 id="footer-about">Gather around a better-planned table.</h2>
+        <p>
+          KBBQGuide organizes Korean barbecue at home into clear recipes,
+          practical menus, and thoughtful safety cues. Every recipe remains in
+          editorial preview until its named human reviews are complete.
+        </p>
+      </section>
+      <nav class="footer-links" aria-label="Recipe links">
+        <strong>Explore</strong>
+        <a href={registryPathById(registry, 'SYS_RECIPES')}>All recipes</a>
+        <a href={registryPathById(registry, 'CAT_MEAT')}>Grilled meat</a>
+        <a href={registryPathById(registry, 'CAT_SEAFOOD')}>Seafood</a>
+        <a href={registryPathById(registry, 'CAT_BANCHAN')}>Banchan</a>
+        <a href={registryPathById(registry, 'SYS_GUIDES')}>Guides</a>
+        <a href={registryPathById(registry, 'SYS_MENUS')}>Menus</a>
+        <a href={registryPathById(registry, 'SYS_TOOLS')}>Planning tools</a>
+        <a href={registryPathById(registry, 'SYS_SHOP')}>Shop preview</a>
+        <a href={registryPathById(registry, 'SYS_NEWSLETTER')}
+          >Newsletter preview</a
+        >
+      </nav>
+      <nav class="footer-links" aria-label="Policy and standards routes">
+        <strong>Standards</strong>
+        <a href={registryPathById(registry, 'POL_AFFILIATE')}
+          >Affiliate disclosure</a
+        >
+        <a href={registryPathById(registry, 'POL_SPONSORED')}
+          >Sponsored content policy</a
+        >
+        <span class="nav-future" aria-disabled="true"
+          >Editorial policy · reserved</span
+        >
+        <span class="nav-future" aria-disabled="true"
+          >Recipe testing policy · reserved</span
+        >
+        <span class="nav-future" aria-disabled="true"
+          >Accessibility · reserved</span
+        >
+        <a href={registryPathById(registry, 'SYS_SITEMAP')}>HTML sitemap</a>
+      </nav>
+    </div>
+    <p class="fine-print">
+      © 2026 KBBQGuide. Editorial preview: no rating, nutrition, price, stock,
+      review, or firsthand-testing claim is made until its corresponding human
+      review is complete.
+    </p>
+  </div>
+</footer>

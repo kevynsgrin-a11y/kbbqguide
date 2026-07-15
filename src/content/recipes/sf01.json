@@ -1,0 +1,474 @@
+{
+  "contentStatus": "complete",
+  "id": "SF01",
+  "title": "Gochujang Grilled Shrimp",
+  "koreanName": "Gochujang sae-u gui",
+  "hangul": "고추장 새우구이",
+  "romanization": "gochujang-saeu-gui",
+  "category": "seafood",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 8,
+  "canonicalSlug": "gochujang-grilled-shrimp",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/gochujang-grilled-shrimp/",
+  "shortDescription": "Large shrimp briefly marinated in gochujang, soy, honey, garlic, ginger, rice vinegar, and sesame, then skewered and grilled until opaque.",
+  "culturalContext": "Gochujang is widely used in Korean cooking, including marinades and glazes. This grilled-shrimp formula is a contemporary adaptation for this guide and is not presented as a regionally fixed or ancient dish.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 15,
+    "display": "10 to 15 minutes"
+  },
+  "cookTime": {
+    "minutes": 8,
+    "display": "6 to 8 minutes"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No required rest"
+  },
+  "totalTime": {
+    "minutes": 43,
+    "display": "43 minutes"
+  },
+  "equipment": [
+    "Nonreactive mixing bowl",
+    "Measuring cups and spoons",
+    "Clean cutting board and paring knife",
+    "Metal skewers",
+    "Outdoor grill or manufacturer-approved indoor electric tabletop grill",
+    "Long-handled tongs",
+    "Two clean pastry brushes",
+    "Calibrated thin-tip instant-read thermometer, optional for a secondary check",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "shrimp",
+      "heading": "Shrimp",
+      "ingredients": [
+        {
+          "id": "large-shrimp",
+          "item": "raw large shrimp, about 16–20 count per pound",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "refrigerator-thawed if frozen, peeled and deveined; tails optional",
+          "optional": false,
+          "allergenNotes": ["shellfish"]
+        }
+      ]
+    },
+    {
+      "id": "gochujang-marinade",
+      "heading": "Gochujang marinade and glaze",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+        },
+        {
+          "id": "soy-sauce",
+          "item": "regular soy sauce",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "gochujang",
+        "item": "gochujang",
+        "metricAmount": 60,
+        "metricUnit": "g",
+        "customaryAmount": 0.25,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+      },
+      {
+        "id": "soy-sauce",
+        "item": "regular soy sauce",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "honey",
+        "item": "honey",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "rice-vinegar",
+        "item": "unseasoned rice vinegar",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 12,
+        "metricUnit": "g",
+        "customaryAmount": 4,
+        "customaryUnit": "cloves",
+        "preparation": "finely minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "ginger",
+        "item": "fresh ginger",
+        "metricAmount": 5,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "teaspoon",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "gochugaru",
+        "item": "gochugaru",
+        "metricAmount": 3,
+        "metricUnit": "g",
+        "customaryAmount": 1.5,
+        "customaryUnit": "teaspoons",
+        "preparation": null,
+        "optional": true,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "scallions",
+        "preparation": "thinly sliced",
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 210 ml / 7/8 cup",
+    "meatWeightCovered": "680 g / 1.5 lb raw shrimp",
+    "mixOrder": [
+      "Whisk gochujang, soy sauce, honey, vinegar, and sesame oil until smooth.",
+      "Stir in garlic, ginger, optional gochugaru, and scallions.",
+      "Move 60 ml / 1/4 cup to a clean finishing bowl before raw shrimp is added."
+    ],
+    "marinationVessel": "Nonreactive bowl kept under refrigeration",
+    "refrigeratedMarinationTimeRange": "10 to 15 minutes at 40°F / 4°C or below",
+    "maximumPracticalMarinationWarning": "Do not exceed 20 minutes; salt and vinegar can change the shrimp’s surface texture and the glaze can become overly strong.",
+    "reserveBeforeRawContactInstruction": "Reserve 60 ml / 1/4 cup in a separate clean bowl for finishing before adding raw shrimp.",
+    "rawContactDiscardOrReboilInstruction": "Discard marinade that contacted raw shrimp and discard any cooking-brush remainder; use only the untouched reserved portion after cooking.",
+    "substitutions": [
+      "Reduce optional gochugaru for less heat while retaining the gochujang base.",
+      "Gluten-related substitution requires both certified tamari and a verified gluten-free gochujang."
+    ],
+    "allergenNotes": [
+      "Contains shellfish, soy, and sesame.",
+      "Gochujang and regular soy sauce may contain wheat."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Thaw and prepare without rinsing",
+      "action": "Thaw frozen shrimp overnight in the refrigerator. Peel and devein with clean tools, then pat very dry with disposable towels; do not rinse.",
+      "estimatedTime": "10 minutes after thawing",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Shrimp smell mild, feel firm, and have a dry surface with no ice crystals or loose shell.",
+      "safetyNote": "Discard leaking packages or shrimp with sour, rancid, or ammonia-like odor; sanitize the prep area after raw seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix and reserve clean glaze",
+      "action": "Whisk gochujang, soy sauce, honey, vinegar, and sesame oil; stir in garlic, ginger, gochugaru, and scallions. Transfer 60 ml / 1/4 cup to a clean finishing bowl.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The glaze is smooth, red, and brushable.",
+      "safetyNote": "Clearly separate and label the clean finishing portion before raw shrimp enters the remaining marinade.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate briefly and skewer",
+      "action": "Coat shrimp in the remaining marinade for 10 to 15 minutes under refrigeration, then thread onto metal skewers through both the thick and tail ends.",
+      "estimatedTime": "10 to 15 minutes",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Shrimp are lightly coated and lie flat on the skewers.",
+      "safetyNote": "Discard the raw-contact marinade; do not carry it to the cooked-food side of the grill.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat and oil",
+      "action": "Preheat the approved grill to medium-high. Clean the grate, oil it lightly with a folded oil-dampened towel held by clean tongs, and arrange a clean platter.",
+      "estimatedTime": "10 minutes",
+      "temperature": "400–425°F / 204–218°C grill surface",
+      "visualOrTactileCue": "Skewers sizzle immediately and release after the first side sets.",
+      "safetyNote": "Use only manufacturer-approved indoor electric equipment indoors and follow ventilation and grease instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill until opaque",
+      "action": "Grill skewers about 2 to 3 minutes on the first side and 1 to 3 minutes on the second, moving them away from hot spots that scorch the glaze.",
+      "estimatedTime": "4 to 6 minutes",
+      "temperature": "Official cue: pearly or white and opaque throughout",
+      "visualOrTactileCue": "Centers are opaque, flesh is pearly, and shrimp form a relaxed C rather than a tightly overcooked ring.",
+      "safetyNote": "Time, curl, and exterior color are secondary cues; inspect the thickest shrimp for full opacity.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Finish with clean glaze",
+      "action": "Transfer skewers to the clean platter and brush lightly with the untouched reserved glaze using a clean brush.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "The surface is glossy and the shrimp remain opaque.",
+      "safetyNote": "Never use the raw-contact marinade or brush on cooked shrimp.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high. Follow the appliance manual for ventilation, clearances, grease handling, and grate care; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "FoodSafety.gov lists no numeric minimum for shrimp; cook until flesh is pearly or white and opaque throughout.",
+  "visualDonenessCues": [
+    "Flesh is pearly or white and opaque through the thickest shrimp.",
+    "Shrimp are firm and form a relaxed C; a tight ring indicates likely overcooking but is not a safety test."
+  ],
+  "foodSafetyNotes": [
+    "Keep seafood at 40°F / 4°C or below and thaw in the refrigerator, not on the counter.",
+    "Do not rinse raw seafood; splashing can spread contamination. Peel, devein, or remove side muscles with clean tools, then pat dry.",
+    "Use separate raw and cooked plates, tongs, brushes, and skewers, or wash and sanitize them fully before reuse.",
+    "FoodSafety.gov directs cooking shrimp and scallops until the flesh is pearly or white and opaque; time alone is not a doneness test.",
+    "Pregnant, immunocompromised, older, and very young diners should not be served raw or undercooked seafood.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "Use peeled large shrimp of similar size so timing remains consistent; smaller shrimp require shorter cooking and closer inspection.",
+    "Gluten-related substitution requires both certified tamari and verified gluten-free gochujang; cross-contact still requires management."
+  ],
+  "ingredientSourcing": [
+    "Choose refrigerated shrimp displayed on thick ice or frozen shrimp in intact packages without heavy frost or large ice crystals.",
+    "Reject shrimp with sour, rancid, fishy, or ammonia-like odor; fresh shrimp should smell mild.",
+    "Check gochujang heat level and allergen labeling before purchase."
+  ],
+  "makeAhead": "Mix the glaze up to 1 day ahead and refrigerate. Thaw shrimp in the refrigerator and prepare shortly before cooking; marinate only 10 to 15 minutes.",
+  "storage": "Refrigerate cooked shrimp within 2 hours at 40°F / 4°C or below and use within 2 days. Discard individual dipping or glaze portions after service.",
+  "reheating": "Reheat leftovers to 165°F / 74°C, using brief gentle heat to reduce rubbery texture.",
+  "leftovers": "Chop reheated shrimp for a rice bowl or lettuce wrap; add fresh vegetables only after reheating.",
+  "servingSuggestions": [
+    "Serve with rice and crisp cucumber or fresh greens to balance the spicy glaze.",
+    "Keep raw-seafood tools and platters away from finished banchan and sauces."
+  ],
+  "menuPairings": ["B25", "F03", "SA03", "D02"],
+  "relatedRecipeIds": ["SF15", "SF02"],
+  "faq": [
+    {
+      "question": "How long should shrimp sit in gochujang marinade?",
+      "answer": "Only 10 to 15 minutes under refrigeration, with an absolute practical limit of 20 minutes for this salty, acidic formula."
+    },
+    {
+      "question": "What is the safest doneness cue for shrimp?",
+      "answer": "FoodSafety.gov instructs cooking shrimp until the flesh is pearly or white and opaque; inspect the thickest shrimp rather than relying only on time or curl."
+    }
+  ],
+  "seoTitle": "Gochujang Grilled Shrimp Recipe",
+  "metaDescription": "Grill gochujang shrimp with a short refrigerated marinade, clean reserved glaze, anti-sticking steps, and official opaque-doneness guidance.",
+  "primaryKeyword": "gochujang grilled shrimp",
+  "secondaryTopics": [
+    "Korean spicy shrimp",
+    "gochujang seafood marinade",
+    "grilled shrimp skewers",
+    "shrimp food safety"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "seafood-buying-and-thawing",
+    "raw-seafood-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Gochujang culinary context: https://en.wikipedia.org/wiki/Gochujang (secondary overview only; Korean cultural review required).",
+    "Seafood doneness and beef/seafood temperature reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Grilling, no-rinsing, and cross-contact reference verified 2026-07-14: https://www.foodsafety.gov/blog/how-grill-safely-summer",
+    "Contemporary formulation created for this locked title; not claimed as a canonical historical recipe and not test-cooked."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Firm shrimp with a mild odor; no sour, rancid, fishy, or ammonia-like smell.",
+      "Frozen packaging is intact with no major ice buildup, freezer burn, or signs of thawing and refreezing."
+    ],
+    "thawing": "Thaw overnight in a covered container in the refrigerator. For faster thawing, keep shrimp sealed and submerge in cold water, changing the water every 30 minutes; cook immediately afterward.",
+    "cleaningOrShellPreparation": "Peel and devein with clean tools; tails may remain for handling. Do not rinse raw shrimp.",
+    "drying": "Pat every shrimp dry with disposable towels immediately before marinating.",
+    "scoringOrSkewering": "Thread each shrimp through two points on metal skewers so it lies flat and does not spin.",
+    "grillSurfacePreparation": "Preheat, clean, and lightly oil the grate or approved electric grill surface.",
+    "stickingPrevention": "Dry shrimp thoroughly, use a lightly oiled clean surface, and wait until the first side releases naturally before turning.",
+    "approximateTime": "About 4 to 6 minutes total for large shrimp, depending on size and grill heat.",
+    "donenessCues": [
+      "Pearly or white and opaque through the thickest part.",
+      "Firm but not hard; no translucent center remains."
+    ],
+    "applicableTemperature": "FoodSafety.gov provides a visual standard for shrimp—pearly or white and opaque—rather than a numeric minimum.",
+    "shellOpeningAndDiscardGuidance": "Not applicable to peeled shrimp; discard removed shells promptly and sanitize the work area.",
+    "crossContactNotes": [
+      "Keep raw skewers, bowl, marinade, brush, and tongs separate from the clean cooked-food set.",
+      "Reserve finishing glaze before raw contact and discard the raw-contact portion."
+    ]
+  }
+}

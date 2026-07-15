@@ -1,0 +1,411 @@
+{
+  "contentStatus": "complete",
+  "id": "M14",
+  "title": "Ganjang Pork Bulgogi",
+  "koreanName": "Ganjang Dwaeji Bulgogi",
+  "hangul": "간장 돼지불고기",
+  "romanization": "ganjang dwaeji bulgogi",
+  "category": "grilled-meat",
+  "releaseCohort": "week-04",
+  "publicReleaseOrder": 41,
+  "canonicalSlug": "ganjang-pork-bulgogi",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/ganjang-pork-bulgogi/",
+  "shortDescription": "Thin pork shoulder is marinated with soy sauce, pear, onion, garlic, and sesame, then grilled in uncrowded batches.",
+  "culturalContext": "Dwaeji bulgogi describes seasoned pork in a range of Korean preparations. This soy-based, nonspicy version is distinguished editorially as ganjang pork bulgogi; cuts, sweetness, vegetables, and cooking methods vary.",
+  "adaptationLabel": "restaurant-style",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 60,
+    "display": "60 minutes refrigerated"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "12 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 95,
+    "display": "About 95 minutes"
+  },
+  "equipment": [
+    "Separate raw-meat cutting board",
+    "Nonreactive covered container",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Long tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "meat",
+      "heading": "Pork",
+      "ingredients": [
+        {
+          "id": "meat",
+          "item": "boneless pork shoulder",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "partially chilled and thinly sliced across the grain",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "marinade",
+      "heading": "Soy-pear marinade",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "pear",
+          "item": "Korean or Asian pear",
+          "metricAmount": 120,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 5,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "chopped",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "soy-sauce",
+        "item": "soy sauce",
+        "metricAmount": 60,
+        "metricUnit": "ml",
+        "customaryAmount": 0.25,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "pear",
+        "item": "Korean or Asian pear",
+        "metricAmount": 120,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "cup",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "onion",
+        "item": "yellow onion",
+        "metricAmount": 100,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "cup",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "rice-syrup",
+        "item": "Korean rice syrup",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 15,
+        "metricUnit": "g",
+        "customaryAmount": 5,
+        "customaryUnit": "cloves",
+        "preparation": "minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "scallions",
+        "preparation": "chopped",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "black-pepper",
+        "item": "ground black pepper",
+        "metricAmount": 1,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 300 ml / 1 1/4 cups marinade",
+    "meatWeightCovered": "900 g / 2 pounds boneless pork shoulder",
+    "mixOrder": [
+      "Combine soy sauce, pear, onion, and rice syrup.",
+      "Stir in garlic, scallions, sesame oil, and pepper.",
+      "Coat chilled pork evenly."
+    ],
+    "marinationVessel": "Nonreactive covered container at or below 40°F / 4°C",
+    "refrigeratedMarinationTimeRange": "30 minutes to 4 hours under refrigeration.",
+    "maximumPracticalMarinationWarning": "Do not exceed 8 hours without test-cook approval; thin pork may become overly seasoned.",
+    "reserveBeforeRawContactInstruction": "Reserve any serving sauce before the marinade contacts raw meat.",
+    "rawContactDiscardOrReboilInstruction": "Discard marinade that contacted raw meat; do not brush it onto cooked food.",
+    "substitutions": [
+      "Use certified gluten-free tamari only after verifying every label.",
+      "Firm ripe pear or unsweetened pear purée may be compared during test cooking."
+    ],
+    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare safely",
+      "action": "Slice the partially chilled pork on a dedicated board, keep it cold, and wash hands after handling.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Refrigerated until needed",
+      "visualOrTactileCue": "Slices are even and remain cold.",
+      "safetyNote": "Keep raw pork and juices away from ready-to-eat foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the marinade",
+      "action": "Stir all marinade ingredients until evenly combined.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The marinade is homogeneous.",
+      "safetyNote": "Reserve any serving sauce before raw-meat contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate under refrigeration",
+      "action": "Coat pork evenly, cover, and refrigerate for 1 hour.",
+      "estimatedTime": "60 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Every piece has a thin, even coating.",
+      "safetyNote": "Never marinate meat at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the grill",
+      "action": "Preheat a clean outdoor grill or manufacturer-approved indoor electric grill; establish the heat zones described below.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium-high heat with an open cooler zone",
+      "visualOrTactileCue": "The grate is hot, clean, and lightly oiled.",
+      "safetyNote": "Never use a fuel-burning grill indoors; follow electric-grill ventilation instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Shake off heavy excess marinade and grill in uncrowded batches, turning often, until browned and representative thick pieces reach at least 145°F / 63°C.",
+      "estimatedTime": "12 minutes",
+      "temperature": "Medium-high heat with an open cooler zone",
+      "visualOrTactileCue": "The thickest representative pieces reach 145°F / 63°C before a full 3-minute rest.",
+      "safetyNote": "Whole cuts of pork require 145°F / 63°C followed by a 3-minute rest.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and serve",
+      "action": "Transfer to a clean platter, apply only clean reserved sauce if used, and rest 3 minutes before serving.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "The meat has completed the stated rest on a clean platter.",
+      "safetyNote": "Use clean utensils and do not return cooked meat to the raw-meat platter.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or approved indoor electric grill with a medium-high direct zone and open cooler zone; cook in uncrowded batches and separate raw and cooked tools.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest representative pieces, followed by a 3-minute rest for whole-cut pork.",
+  "visualDonenessCues": [
+    "Edges caramelize without blackening",
+    "Slices are no longer wet with raw marinade",
+    "Thermometer confirms 145°F / 63°C before the rest"
+  ],
+  "foodSafetyNotes": [
+    "Keep pork refrigerated at or below 40°F / 4°C.",
+    "Prevent raw-pork cross-contact.",
+    "Cook to 145°F / 63°C and rest 3 minutes.",
+    "Never use fuel-burning grills indoors."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify labels and prevent cross-contact."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying every label.",
+    "Firm ripe pear or unsweetened pear purée may be compared during test cooking."
+  ],
+  "ingredientSourcing": [
+    "Choose cold intact pork shoulder and a ripe fragrant Korean or Asian pear."
+  ],
+  "makeAhead": "Mix marinade up to 2 days ahead; marinate pork only within the stated refrigerated range.",
+  "storage": "Refrigerate cooked meat in a shallow covered container within 2 hours and use within 4 days pending food-safety approval.",
+  "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
+  "leftovers": "Use properly refrigerated leftovers in rice bowls or lettuce wraps within the approved window.",
+  "servingSuggestions": ["Serve with rice, lettuce wraps, and crisp banchan."],
+  "menuPairings": ["B14", "F04", "SA04", "D04"],
+  "relatedRecipeIds": ["M13", "M15"],
+  "faq": [
+    {
+      "question": "Is this spicy?",
+      "answer": "This draft is soy-based and contains no chile; Korean pork bulgogi styles vary."
+    },
+    {
+      "question": "Why cook in batches?",
+      "answer": "Crowding traps steam and prevents controlled browning."
+    }
+  ],
+  "seoTitle": "Ganjang Pork Bulgogi Recipe",
+  "metaDescription": "Make soy-based ganjang pork bulgogi with pear, garlic, sesame, refrigerated marination, thermometer checks, and a three-minute rest.",
+  "primaryKeyword": "ganjang pork bulgogi",
+  "secondaryTopics": ["soy pork bulgogi", "Korean grilled pork"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Soy-based pork bulgogi is an editorial synthesis compared with the project’s cited bulgogi conventions; exact locked-title framing requires Korean food-editor review.",
+    "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

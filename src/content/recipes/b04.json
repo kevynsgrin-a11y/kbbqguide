@@ -1,0 +1,284 @@
+{
+  "contentStatus": "complete",
+  "id": "B04",
+  "title": "Baechu Geotjeori Fresh Kimchi",
+  "koreanName": "Baechu Geotjeori",
+  "hangul": "배추겉절이",
+  "romanization": "baechu geotjeori",
+  "category": "banchan",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 15,
+  "canonicalSlug": "baechu-geotjeori-fresh-kimchi",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/baechu-geotjeori-fresh-kimchi/",
+  "shortDescription": "Bite-size napa cabbage is briefly salted and tossed with a fresh gochugaru, fish-sauce, garlic, scallion, and sesame dressing for same-day serving.",
+  "culturalContext": "Geotjeori describes freshly seasoned vegetables intended to be eaten before long fermentation. Baechu geotjeori brings crisp cabbage and an immediate, lively seasoning to the table; household formulas and sweetness vary.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 8,
+  "servingUnit": "side-dish servings",
+  "prepTime": { "minutes": 25, "display": "25 minutes" },
+  "marinateTime": { "minutes": 40, "display": "40 minutes salting" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 10, "display": "10 minutes draining" },
+  "totalTime": { "minutes": 75, "display": "1 hour 15 minutes" },
+  "equipment": [
+    "Chef’s knife and cutting board",
+    "Large nonreactive bowl",
+    "Colander",
+    "Food-safe gloves",
+    "Airtight refrigerator container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "fresh-kimchi",
+      "heading": "Cabbage and fresh seasoning",
+      "ingredients": [
+        {
+          "id": "napa-cabbage",
+          "item": "napa cabbage",
+          "metricAmount": 1200,
+          "metricUnit": "g",
+          "customaryAmount": 2.5,
+          "customaryUnit": "pounds",
+          "preparation": "cut into 5 cm / 2-inch pieces",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "kosher-salt",
+          "item": "kosher salt",
+          "metricAmount": 36,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean gochugaru",
+          "metricAmount": 40,
+          "metricUnit": "g",
+          "customaryAmount": 0.4,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce",
+          "item": "Korean fish sauce",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["fish"]
+        },
+        {
+          "id": "plum-syrup",
+          "item": "Korean plum syrup or rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 75,
+          "metricUnit": "g",
+          "customaryAmount": 5,
+          "customaryUnit": "scallions",
+          "preparation": "cut into 4 cm / 1.5-inch pieces",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Cut and wash the cabbage",
+      "action": "Remove damaged outer leaves, cut cabbage into bite-size pieces, and wash under cool running water. Drain briefly.",
+      "estimatedTime": "12 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pieces include both leafy and crisp stem portions and no grit remains.",
+      "safetyNote": "Use a clean board and potable running water.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Salt",
+      "action": "Toss cabbage with salt in a nonreactive bowl. Rest 40 minutes, turning every 10 minutes.",
+      "estimatedTime": "40 minutes",
+      "temperature": "Cool room temperature",
+      "visualOrTactileCue": "Stem pieces bend slightly but retain a juicy crunch.",
+      "safetyNote": "Keep covered and separate from raw animal foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Rinse and drain",
+      "action": "Rinse thoroughly under cold running water and drain 10 minutes, shaking off trapped water.",
+      "estimatedTime": "10 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "No salt crystals remain and the cabbage is moist but not dripping.",
+      "safetyNote": "Use a sanitized colander and sink area.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Mix the dressing",
+      "action": "In the cleaned bowl, combine gochugaru, fish sauce, plum syrup, garlic, scallions, sesame oil, and sesame seeds.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The dressing is loose, vivid red, and evenly mixed.",
+      "safetyNote": "Contains fish and sesame; verify packaged ingredient labels.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Toss",
+      "action": "Wearing gloves, gently toss drained cabbage with dressing until every piece is lightly coated.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Cabbage looks glossy and red while the leaves remain distinct rather than crushed.",
+      "safetyNote": "Use clean food-safe gloves and a clean serving dish.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve or chill",
+      "action": "Serve immediately or cover and refrigerate for up to 1 hour before serving.",
+      "estimatedTime": "Immediate",
+      "temperature": "Cold or cool",
+      "visualOrTactileCue": "The stems remain crisp and little liquid has accumulated.",
+      "safetyNote": "Refrigerate promptly; geotjeori is a fresh banchan, not a room-temperature fermentation project.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan does not use a grill.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Salted cabbage bends slightly but stays crisp",
+    "Dressing coats every piece lightly",
+    "Finished geotjeori remains fresh and glossy"
+  ],
+  "foodSafetyNotes": [
+    "Wash cabbage under cool running water before preparation.",
+    "Use clean tools, gloves, and serving ware.",
+    "Declare fish and sesame allergens.",
+    "Refrigerate promptly at or below 40°F / 4°C; do not hold at room temperature to ferment.",
+    "Discard if mold, putrid odor, or unusual discoloration develops."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": true,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains fish and sesame; check syrup, gochugaru, and fish-sauce labels for facility cross-contact."
+  },
+  "substitutions": [
+    "Rice syrup may replace Korean plum syrup, with sweetness adjusted only after testing.",
+    "A vegan version needs a separately tested seasoning formula."
+  ],
+  "ingredientSourcing": [
+    "Choose crisp napa cabbage without browned or slimy leaves.",
+    "Korean markets stock gochugaru, fish sauce, plum syrup, and toasted sesame oil."
+  ],
+  "makeAhead": "Wash and cut cabbage several hours ahead and refrigerate dry; salt and dress close to serving.",
+  "storage": "Refrigerate in an airtight container and use within 3 days; texture is best on day 1 and the limit requires food-safety review.",
+  "reheating": "Do not reheat; serve cold or cool.",
+  "leftovers": "Use properly refrigerated leftover geotjeori as a cold rice topping within the approved storage window.",
+  "servingSuggestions": [
+    "Serve immediately with rice",
+    "Pair with grilled meats or a warm soup"
+  ],
+  "menuPairings": ["M19", "SF09", "F09", "SA04"],
+  "relatedRecipeIds": ["B03", "B05"],
+  "faq": [
+    {
+      "question": "Is geotjeori fermented kimchi?",
+      "answer": "It is designed to be eaten freshly seasoned; it may change slightly in the refrigerator but this recipe does not call for room-temperature fermentation."
+    },
+    {
+      "question": "Why drain the cabbage well?",
+      "answer": "Excess water dilutes the seasoning and makes the fresh banchan watery sooner."
+    }
+  ],
+  "seoTitle": "Baechu Geotjeori Fresh Kimchi Recipe",
+  "metaDescription": "Make same-day baechu geotjeori with crisp napa cabbage, gochugaru, fish sauce, sesame, careful salting, and clear refrigeration guidance.",
+  "primaryKeyword": "baechu geotjeori fresh kimchi",
+  "secondaryTopics": [
+    "fresh napa cabbage kimchi",
+    "Korean geotjeori",
+    "quick kimchi banchan"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["recipe card", "food-safety notes", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention and technique reference: https://www.maangchi.com/recipe/baechu-geotjeori",
+    "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Draft synthesized for this project; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

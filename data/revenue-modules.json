@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "phase": 6,
+  "defaultStatus": "disabled",
+  "modules": [
+    {
+      "id": "REV_PANTRY",
+      "title": "Shoppable Korean pantry",
+      "purpose": "Compare ingredient categories, label considerations, substitutions, and sourcing questions without prices or merchant links.",
+      "merchantCandidateIds": [
+        "amazon-associates",
+        "weee-affiliate",
+        "walmart-creator"
+      ],
+      "status": "disabled"
+    },
+    {
+      "id": "REV_BEGINNER_SETUP",
+      "title": "Beginner tabletop setup",
+      "purpose": "Explain manufacturer approval, clearances, power, cleanup, and capacity questions before any product comparison.",
+      "merchantCandidateIds": [
+        "amazon-associates",
+        "walmart-creator",
+        "bbqguys-impact"
+      ],
+      "status": "disabled"
+    },
+    {
+      "id": "REV_SAFETY_KIT",
+      "title": "Thermometer and food-safety kit",
+      "purpose": "Describe calibration, response, cleaning, raw/cooked separation, and storage needs without claiming product tests.",
+      "merchantCandidateIds": [
+        "thermoworks-impact",
+        "amazon-associates",
+        "walmart-creator"
+      ],
+      "status": "disabled"
+    },
+    {
+      "id": "REV_HOSTING",
+      "title": "Hosting sets for 2, 4, and 8",
+      "purpose": "Map guest-count needs to serving bowls, platters, utensils, seating, and table access without stock or price claims.",
+      "merchantCandidateIds": [
+        "etsy-affiliate",
+        "amazon-associates",
+        "walmart-creator"
+      ],
+      "status": "disabled"
+    },
+    {
+      "id": "REV_PREP",
+      "title": "Meat and seafood prep tools",
+      "purpose": "Compare task fit, cleanability, food-contact use, and raw/cooked separation without asserting firsthand performance.",
+      "merchantCandidateIds": [
+        "amazon-associates",
+        "walmart-creator",
+        "home-depot-affiliate"
+      ],
+      "status": "disabled"
+    },
+    {
+      "id": "REV_SERVEWARE",
+      "title": "Servingware and table setting",
+      "purpose": "Plan stable, cleanable, heat-aware table service with transparent material and care questions.",
+      "merchantCandidateIds": [
+        "etsy-affiliate",
+        "amazon-associates",
+        "ebay-partner-network"
+      ],
+      "status": "disabled"
+    },
+    {
+      "id": "REV_RECIPE_SUPPORT",
+      "title": "Recipe-specific ingredient and equipment recommendations",
+      "purpose": "Reserve contextual modules that may appear only after recipe, merchant, disclosure, and evidence review.",
+      "merchantCandidateIds": [],
+      "status": "disabled"
+    }
+  ],
+  "adSlots": [
+    {
+      "id": "AD_AFTER_INTRO",
+      "position": "after-introduction",
+      "status": "disabled"
+    },
+    {
+      "id": "AD_AFTER_RECIPE",
+      "position": "after-completed-recipe",
+      "status": "disabled"
+    },
+    {
+      "id": "AD_DESKTOP_RAIL",
+      "position": "optional-desktop-rail",
+      "status": "disabled"
+    },
+    {
+      "id": "AD_MOBILE_ANCHOR",
+      "position": "optional-closeable-mobile-anchor",
+      "status": "disabled"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "contentStatus": "complete",
+  "id": "D04",
+  "title": "Injeolmi Toast with Ice Cream",
+  "koreanName": "Injeolmi Toseuteu",
+  "hangul": "인절미 토스트",
+  "romanization": "injeolmi-toseuteu",
+  "category": "desserts",
+  "releaseCohort": "week-12",
+  "publicReleaseOrder": 76,
+  "canonicalSlug": "injeolmi-toast-with-ice-cream",
+  "canonicalUrl": "https://kbbqguide.com/recipes/desserts/injeolmi-toast-with-ice-cream/",
+  "shortDescription": "Buttered toast is layered with warmed bite-size injeolmi, roasted soybean powder, honey, and commercial pasteurized ice cream.",
+  "culturalContext": "Injeolmi toast is a modern Korean café dessert that combines toasted bread with chewy rice cake and soybean powder. Toppings and construction vary; this draft adds commercial pasteurized ice cream and foregrounds choking and melt control.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 8,
+    "display": "8 minutes"
+  },
+  "restTime": {
+    "minutes": 2,
+    "display": "2 minutes"
+  },
+  "totalTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "equipment": [
+    "Clean cutting board and knife",
+    "Toaster oven or skillet",
+    "Parchment-lined tray",
+    "Clean ice-cream scoop",
+    "Serving plates"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "toast",
+      "heading": "Toast, injeolmi, and topping",
+      "ingredients": [
+        {
+          "id": "bread",
+          "item": "thick-cut sandwich bread",
+          "metricAmount": 4,
+          "metricUnit": "slices",
+          "customaryAmount": 4,
+          "customaryUnit": "slices",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["wheat/gluten", "verify egg, dairy, and soy label"]
+        },
+        {
+          "id": "butter",
+          "item": "unsalted butter",
+          "metricAmount": 28,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": "softened",
+          "optional": false,
+          "allergenNotes": ["dairy"]
+        },
+        {
+          "id": "injeolmi",
+          "item": "commercial prepared injeolmi rice cake",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": 7,
+          "customaryUnit": "ounces",
+          "preparation": "label checked; cut into small bite-size pieces",
+          "optional": false,
+          "allergenNotes": ["soy; verify facility cross-contact"]
+        },
+        {
+          "id": "ice-cream",
+          "item": "commercial pasteurized vanilla ice cream",
+          "metricAmount": 240,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": "kept frozen until service",
+          "optional": false,
+          "allergenNotes": ["dairy", "verify egg and soy label"]
+        },
+        {
+          "id": "soybean-powder",
+          "item": "roasted soybean powder",
+          "metricAmount": 20,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy"]
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Check labels and portions",
+      "action": "Verify all packaged-food labels and keep ice cream frozen; cut injeolmi into small bite-size pieces.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Ice cream at or below 0°F / -18°C",
+      "visualOrTactileCue": "Rice cake pieces are small and ice cream is firm.",
+      "safetyNote": "Chewy rice cake is a choking hazard; do not serve large pieces to young children or anyone with swallowing difficulty.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Butter bread",
+      "action": "Spread bread lightly with butter and place on a clean tray.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Bread is evenly coated.",
+      "safetyNote": "Keep ready-to-eat ingredients away from raw-food work areas.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Toast",
+      "action": "Toast bread until crisp and golden.",
+      "estimatedTime": "5 minutes",
+      "temperature": "375°F / 190°C toaster oven or medium skillet",
+      "visualOrTactileCue": "Edges are golden without burning.",
+      "safetyNote": "Use dry oven mitts and keep the appliance attended.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Warm rice cake",
+      "action": "Warm bite-size injeolmi separately just until soft, following package directions.",
+      "estimatedTime": "2 to 3 minutes",
+      "temperature": "Warm, not scorching",
+      "visualOrTactileCue": "Pieces are pliable but not melted into one mass.",
+      "safetyNote": "Rice cake can become dangerously hot and sticky; test temperature before assembly.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Assemble",
+      "action": "Layer warm injeolmi on toast, dust with soybean powder, and drizzle with honey.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Warm",
+      "visualOrTactileCue": "Toppings are evenly distributed in small pieces.",
+      "safetyNote": "Warn diners about chewiness and supervise higher-risk diners.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Add ice cream and serve",
+      "action": "Using a clean scoop, add commercial pasteurized ice cream and serve immediately with a knife and fork.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Ice cream remains frozen",
+      "visualOrTactileCue": "Ice cream holds its shape at service.",
+      "safetyNote": "Do not refreeze melted ice cream; discard portions left out beyond safe time limits.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill required; use a toaster oven or skillet on a stable, attended cooking surface.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Toast is golden and crisp",
+    "Rice cake is soft and divided into small pieces",
+    "Ice cream remains frozen until service"
+  ],
+  "foodSafetyNotes": [
+    "Use only commercial pasteurized ice cream and keep it frozen until service.",
+    "Chewy injeolmi is a choking hazard; cut small and do not serve to young children or diners with swallowing difficulty without appropriate supervision and modification.",
+    "Warm rice cake may be sticky and very hot; check temperature before serving.",
+    "Do not refreeze melted ice cream and observe time limits for perishable food."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": true,
+    "dairy": true,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Verify every packaged-ingredient label and segregate tools for diners with allergies."
+  },
+  "substitutions": [
+    "Use only verified allergen-appropriate bread and frozen dessert.",
+    "Omit ice cream for diners who cannot safely manage hot-and-cold mixed textures."
+  ],
+  "ingredientSourcing": [
+    "Buy prepared injeolmi from a reputable refrigerated or frozen supplier and follow label storage directions.",
+    "Choose commercial pasteurized ice cream in an intact package."
+  ],
+  "makeAhead": "Preportion dry toppings; toast and assemble only at service.",
+  "storage": "Store each component according to its label; keep ice cream frozen and injeolmi refrigerated or frozen as directed.",
+  "reheating": "Rewarm only the rice cake and toast; never heat ice cream.",
+  "leftovers": "Discard assembled leftovers; do not refreeze melted ice cream or save diner-handled rice cake.",
+  "servingSuggestions": [
+    "Serve immediately with a knife and fork.",
+    "Explain the chewy texture before diners take a bite."
+  ],
+  "menuPairings": ["M13", "SF10", "B16", "F07"],
+  "relatedRecipeIds": ["D03", "D05"],
+  "faq": [
+    {
+      "question": "Why cut the injeolmi small?",
+      "answer": "Chewy rice cake can obstruct the airway; small pieces and careful supervision reduce, but do not eliminate, choking risk."
+    },
+    {
+      "question": "Can melted ice cream be refrozen?",
+      "answer": "No. Keep it frozen until service and discard melted portions."
+    }
+  ],
+  "seoTitle": "Injeolmi Toast with Ice Cream",
+  "metaDescription": "Make modern Korean café-style injeolmi toast with commercial pasteurized ice cream, small rice-cake pieces, label checks, and choking cautions.",
+  "primaryKeyword": "injeolmi toast with ice cream",
+  "secondaryTopics": [
+    "Korean cafe dessert",
+    "rice cake toast",
+    "soybean powder"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe-header",
+    "ingredient-list",
+    "instructions",
+    "food-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Cold-food handling basis: https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely",
+    "Editorial framing: contemporary Korean café dessert; language and choking guidance require human review.",
+    "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
+  ],
+  "seafoodPreparation": null
+}

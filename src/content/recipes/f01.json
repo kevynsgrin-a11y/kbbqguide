@@ -1,0 +1,262 @@
+{
+  "contentStatus": "complete",
+  "id": "F01",
+  "title": "Ssam Lettuce and Herb Platter",
+  "koreanName": "Ssam Chaeso",
+  "hangul": "쌈채소",
+  "romanization": "ssam chaeso",
+  "category": "fresh",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 21,
+  "canonicalSlug": "ssam-lettuce-and-herb-platter",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fresh/ssam-lettuce-and-herb-platter/",
+  "shortDescription": "A crisp, carefully washed assortment of leaf lettuce, perilla, cucumber, mild chile, garlic, and optional crown daisy for wrapping grilled food with rice and ssamjang.",
+  "culturalContext": "Ssam refers to wrapping a bite of food in edible leaves, and Korean tables may offer many cultivated and seasonal greens. This practical platter is a flexible selection rather than a fixed canonical list; ingredient names and availability require Korean editorial review.",
+  "adaptationLabel": "none",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "platter servings",
+  "prepTime": { "minutes": 25, "display": "25 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 15, "display": "15 minutes draining and chilling" },
+  "totalTime": { "minutes": 40, "display": "40 minutes" },
+  "equipment": [
+    "Large clean basin",
+    "Salad spinner or clean towels",
+    "Chef’s knife and dedicated produce cutting board",
+    "Large chilled serving platter",
+    "Food-safe refrigerator container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "ssam-greens",
+      "heading": "Wrapping greens and fresh garnishes",
+      "ingredients": [
+        {
+          "id": "red-leaf-lettuce",
+          "item": "red leaf lettuce",
+          "metricAmount": 225,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "small head",
+          "preparation": "leaves separated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "green-leaf-lettuce",
+          "item": "green leaf lettuce",
+          "metricAmount": 225,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "small head",
+          "preparation": "leaves separated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "perilla-leaves",
+          "item": "Korean perilla leaves",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 24,
+          "customaryUnit": "leaves",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "crown-daisy",
+          "item": "crown daisy leaves",
+          "metricAmount": 75,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cups loosely packed",
+          "preparation": "tough stems removed",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "cucumber",
+          "item": "Korean or Persian cucumber",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "small cucumbers",
+          "preparation": "cut into thin batons",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "green-chiles",
+          "item": "mild Korean green chiles",
+          "metricAmount": 40,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "small chiles",
+          "preparation": "thinly sliced",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "thinly sliced",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect the produce",
+      "action": "Discard wilted, slimy, bruised, or decayed leaves and trim damaged portions from otherwise sound vegetables.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Keep produce cold",
+      "visualOrTactileCue": "Selected leaves are crisp, brightly colored, and free of slime or off odor.",
+      "safetyNote": "Keep ready-to-eat produce separate from raw meat, poultry, and seafood from shopping through service.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Wash the greens",
+      "action": "Wash hands, clean the basin, then rinse lettuce, perilla, and crown daisy under cool running water, gently separating folds where grit collects.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "No visible grit remains and the final rinse water is clear.",
+      "safetyNote": "Do not use soap, bleach, or detergent on produce; use potable running water and a clean basin.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Dry thoroughly",
+      "action": "Spin greens in small batches or blot with clean towels. Refrigerate 15 minutes in a clean container lined with a dry towel.",
+      "estimatedTime": "15 minutes",
+      "temperature": "Refrigerator at or below 40°F / 4°C",
+      "visualOrTactileCue": "Leaves are dry enough that water does not pool on the platter.",
+      "safetyNote": "Use a cleaned salad spinner and fresh towels to avoid recontaminating washed leaves.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Prepare the garnishes",
+      "action": "Wash cucumber and chiles under running water, dry them, and cut on a clean produce-only board. Slice garlic with a clean knife.",
+      "estimatedTime": "7 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Cucumber batons and chile rings are even and easy to tuck into a wrap.",
+      "safetyNote": "Avoid touching eyes after cutting chiles and wash hands and tools afterward.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Arrange the platter",
+      "action": "Fan sturdy lettuce around the platter, stack perilla in small bundles, and place delicate herbs, cucumber, chiles, and garlic in separate groups.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Chilled platter",
+      "visualOrTactileCue": "Leaves are easy to lift one at a time and wet ingredients do not sit on top of them.",
+      "safetyNote": "Use a clean chilled platter and clean serving tongs.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve cold",
+      "action": "Serve alongside hot cooked food, rice, and a separately spooned sauce. Replenish with small chilled batches rather than overfilling the table platter.",
+      "estimatedTime": "Immediate",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Leaves remain crisp and cool throughout service.",
+      "safetyNote": "Discard platter portions contaminated by raw meat utensils or left unrefrigerated for more than 2 hours.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill is used for the platter; keep it physically separated from the raw-meat side of any tabletop grilling station.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Leaves are crisp, dry, and free of grit",
+    "No slimy or decayed produce remains",
+    "Platter stays chilled and visually separate from raw-meat tools"
+  ],
+  "foodSafetyNotes": [
+    "Wash hands and sanitize the sink, basin, spinner, board, and platter before handling ready-to-eat greens.",
+    "Rinse produce under cool potable running water without soap or bleach.",
+    "Keep washed produce separate from raw animal foods and their utensils.",
+    "Refrigerate prepared greens at or below 40°F / 4°C until service.",
+    "Discard contaminated or temperature-abused platter portions rather than returning them to storage."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "The platter itself contains none of the listed major allergens, but sauces and grilled foods served beside it commonly contain soy, wheat, sesame, fish, or shellfish; use separate tongs and bowls."
+  },
+  "substitutions": [
+    "Use butter lettuce or romaine hearts when Korean leaf lettuce is unavailable.",
+    "Omit perilla or crown daisy if unavailable rather than substituting unrelated strongly flavored herbs without testing."
+  ],
+  "ingredientSourcing": [
+    "Choose unwilted lettuce and perilla with crisp stems and no slimy edges.",
+    "Korean markets may label mixed wrapping greens as ssam chaeso; confirm each unfamiliar plant is intended for raw culinary use."
+  ],
+  "makeAhead": "Wash and dry sturdy greens up to 1 day ahead and refrigerate between clean towels; cut cucumber, chile, and garlic within 2 hours of service.",
+  "storage": "Refrigerate dry greens in a clean sealed container and use within 2 days; discard any portion exposed to raw-food utensils or extended room-temperature service.",
+  "reheating": "Do not reheat; serve chilled.",
+  "leftovers": "Use only uncontaminated, continuously chilled leftovers in a salad the next day; discard table-exposed leaves if their handling is uncertain.",
+  "servingSuggestions": [
+    "Layer rice, a small piece of grilled food, and ssamjang in one leaf",
+    "Use perilla inside lettuce for a two-leaf wrap"
+  ],
+  "menuPairings": ["M04", "SF02", "B16", "SA01"],
+  "relatedRecipeIds": ["F10", "F02"],
+  "faq": [
+    {
+      "question": "What makes a good ssam leaf?",
+      "answer": "It should be fresh, flexible enough to fold, and large enough to hold one compact bite without tearing."
+    },
+    {
+      "question": "Can I wash greens with soap?",
+      "answer": "No. Rinse produce under cool potable running water and rely on clean hands, tools, and separation from raw foods."
+    }
+  ],
+  "seoTitle": "Korean Ssam Lettuce and Herb Platter Guide",
+  "metaDescription": "Build a crisp Korean ssam platter with lettuce, perilla, herbs, cucumber, chile, and garlic, including produce washing and cross-contact controls.",
+  "primaryKeyword": "ssam lettuce and herb platter",
+  "secondaryTopics": [
+    "Korean lettuce wraps",
+    "ssam vegetables",
+    "Korean BBQ fresh sides"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["produce-safety steps", "recipe card", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "General ssam service context cross-checked with https://www.maangchi.com/recipe/ssamjang (lettuce, rice, grilled-food pairing).",
+    "Current produce and cross-contamination framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
+    "Draft synthesized for the locked platter title; not test-cooked. Plant identification, Korean-language, cultural, and food-safety approval remain required."
+  ],
+  "seafoodPreparation": null
+}

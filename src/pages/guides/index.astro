@@ -1,0 +1,64 @@
+---
+import registryData from '../../../data/url-registry.json';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { guides } from '../../lib/guides';
+import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
+import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_GUIDES');
+const guideItems = guides.map((guide) => ({
+  name: guide.title,
+  path: registryPathById(registry, guide.id),
+}));
+---
+
+<BaseLayout
+  title="Korean BBQ Planning Guides"
+  description="Twelve practical Korean BBQ guides covering setup, safety, pantry, meat, seafood, ssam, menus, timelines, banchan, cleanup, and leftovers."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+      { name: 'Guides', path },
+    ]),
+    itemListJsonLd('Korean BBQ planning guides', guideItems),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+          { label: 'Guides' },
+        ]}
+      />
+      <p class="eyebrow">Twelve decision guides</p>
+      <h1>Plan the room, table, work, and cleanup.</h1>
+      <p class="lede">
+        Move from room setup to cleanup with practical checkpoints that respect
+        different homes, equipment, appetites, and ways of building the table.
+      </p>
+    </div>
+  </header>
+
+  <section class="section tinted" aria-labelledby="guide-index-title">
+    <div class="shell">
+      <h2 id="guide-index-title">All guides</h2>
+      <div class="card-grid guide-grid">
+        {
+          guides.map((guide, index) => (
+            <article class="support-card guide-card">
+              <p class="eyebrow">Guide {String(index + 1).padStart(2, '0')}</p>
+              <h3>
+                <a href={registryPathById(registry, guide.id)}>{guide.title}</a>
+              </h3>
+              <p>{guide.description}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

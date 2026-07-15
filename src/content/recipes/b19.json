@@ -1,0 +1,282 @@
+{
+  "contentStatus": "complete",
+  "id": "B19",
+  "title": "Mechurial Jangjorim Soy-Braised Quail Eggs",
+  "koreanName": "Mechurial Jangjorim",
+  "hangul": "메추리알 장조림",
+  "romanization": "mechurial jangjorim",
+  "category": "banchan",
+  "releaseCohort": "week-08",
+  "publicReleaseOrder": 58,
+  "canonicalSlug": "mechurial-jangjorim-soy-braised-quail-eggs",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/mechurial-jangjorim-soy-braised-quail-eggs/",
+  "shortDescription": "Quail eggs are hard-cooked, peeled, and gently braised in soy sauce with garlic until seasoned and glossy.",
+  "culturalContext": "Mechurial jangjorim is a Korean soy-braised quail-egg side dish. Sweetness, aromatics, chile, broth, and whether meat is included vary. The locked English title spelling is preserved pending language review.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "totalTime": {
+    "minutes": 45,
+    "display": "About 45 minutes"
+  },
+  "equipment": [
+    "Medium saucepan with lid",
+    "Slotted spoon",
+    "Bowl of ice water",
+    "Clean bowl for peeling",
+    "Clean serving container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "eggs",
+      "heading": "Quail eggs",
+      "ingredients": [
+        {
+          "id": "quail-eggs",
+          "item": "refrigerated quail eggs",
+          "metricAmount": 240,
+          "metricUnit": "g",
+          "customaryAmount": 24,
+          "customaryUnit": "quail eggs",
+          "preparation": "clean and uncracked",
+          "optional": false,
+          "allergenNotes": ["egg"]
+        }
+      ]
+    },
+    {
+      "id": "braise",
+      "heading": "Soy braise",
+      "ingredients": [
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 480,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "cups",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 90,
+          "metricUnit": "ml",
+          "customaryAmount": 0.38,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "peeled",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "dried-kelp",
+          "item": "dried kelp",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "small piece",
+          "preparation": "wiped clean",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "green-chile",
+          "item": "mild green chile",
+          "metricAmount": 20,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "chile",
+          "preparation": "whole",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect eggs",
+      "action": "Use refrigerated clean uncracked quail eggs and discard any cracked or leaking egg.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "All eggs are intact.",
+      "safetyNote": "Wash hands after handling shell eggs.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Hard-cook",
+      "action": "Cover eggs with water, bring to a gentle boil, and cook until whites and yolks are firm.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Gentle boil",
+      "visualOrTactileCue": "A test egg has a fully firm white and yolk.",
+      "safetyNote": "Do not serve soft or runny quail eggs in this draft.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Cool and peel",
+      "action": "Transfer to ice water, cool promptly, then peel with clean hands into a clean bowl.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Shells are removed and eggs remain intact.",
+      "safetyNote": "Discard eggs with off odor or contamination during peeling.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Build the braise",
+      "action": "Bring water, soy sauce, rice syrup, garlic, kelp, and optional chile to a simmer; remove kelp after 5 minutes.",
+      "estimatedTime": "6 minutes",
+      "temperature": "Simmer",
+      "visualOrTactileCue": "The liquid is aromatic and gently bubbling.",
+      "safetyNote": "Avoid tasting with utensils used on eggshells.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Braise eggs",
+      "action": "Add peeled eggs and simmer gently, turning, until evenly tan and seasoned.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Gentle simmer",
+      "visualOrTactileCue": "Eggs are hot and evenly colored.",
+      "safetyNote": "Keep the liquid at a controlled simmer to prevent splashing.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Cool promptly and serve safely",
+      "action": "Rest 5 minutes, serve warm, or cool promptly in a shallow container and refrigerate. Halve eggs for diners at choking risk.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Warm or chilled",
+      "visualOrTactileCue": "Eggs are glossy and the storage container is shallow.",
+      "safetyNote": "Whole quail eggs are a choking hazard; cut appropriately and supervise vulnerable diners.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is prepared on the stovetop or as a seasoned side.",
+  "targetInternalTemperature": "Cook shell eggs until both whites and yolks are firm; braise peeled eggs until steaming throughout.",
+  "visualDonenessCues": [
+    "Whites and yolks are fully firm",
+    "Peeled eggs are evenly tan",
+    "Braising liquid simmers steadily"
+  ],
+  "foodSafetyNotes": [
+    "Use refrigerated clean uncracked eggs.",
+    "Cook until whites and yolks are firm.",
+    "Cool promptly and refrigerate within 2 hours.",
+    "Whole quail eggs can be a choking hazard; cut appropriately for vulnerable diners."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": true,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains egg, soy, and wheat/gluten; verify soy sauce labels and prevent cross-contact."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying the label.",
+    "Do not substitute pre-peeled eggs without checking the package storage and heating directions."
+  ],
+  "ingredientSourcing": [
+    "Choose refrigerated quail eggs in an intact dated carton."
+  ],
+  "makeAhead": "Prepare up to 2 days ahead, cool promptly, cover, and refrigerate.",
+  "storage": "Refrigerate in braising liquid within 2 hours and use within 4 days pending qualified review.",
+  "reheating": "Reheat gently until steaming throughout; avoid repeated reheating.",
+  "leftovers": "Use properly refrigerated leftovers within the approved window and retain choking precautions.",
+  "servingSuggestions": ["Serve in small portions with rice."],
+  "menuPairings": ["M14", "SF09", "F04", "SA04"],
+  "relatedRecipeIds": ["B18", "B20"],
+  "faq": [
+    {
+      "question": "Why preserve “Mechurial” in the title?",
+      "answer": "It is a locked inventory field; spelling and romanization require human review."
+    },
+    {
+      "question": "Can the yolks be soft?",
+      "answer": "No. This draft cooks both whites and yolks firm."
+    }
+  ],
+  "seoTitle": "Mechurial Jangjorim Braised Quail Eggs",
+  "metaDescription": "Make Korean soy-braised quail eggs with firm yolks and whites, clean peeling, prompt refrigeration, allergen declarations, and choking guidance.",
+  "primaryKeyword": "mechurial jangjorim",
+  "secondaryTopics": ["Korean quail eggs", "soy-braised eggs"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Locked quail-egg jangjorim formulation requires Korean language review; general jangjorim conventions compared with https://www.maangchi.com/recipe/jangjorim",
+    "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 20,
+  "cook": 20,
+  "source": "Locked quail-egg jangjorim formulation requires Korean language review; general jangjorim conventions compared with https://www.maangchi.com/recipe/jangjorim"
+}

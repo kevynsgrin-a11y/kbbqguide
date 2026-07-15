@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "policy": "deny-by-default",
+  "allowedDomains": [],
+  "notes": "Phase 6 keeps every merchant, sponsor, social, email, analytics, and media destination inactive. Add exact HTTPS hostnames only after human terms, channel, privacy, and security review."
+}

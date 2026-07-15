@@ -1,0 +1,95 @@
+---
+import registryData from '../../data/url-registry.json';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd } from '../lib/seo';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_START');
+---
+
+<BaseLayout
+  title="Start Here"
+  description="A five-step path from appliance safety and a first menu to recipes, shopping, and a calm Korean BBQ service plan."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+      { name: 'Start Here', path },
+    ]),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+          { label: 'Start Here' },
+        ]}
+      />
+      <p class="eyebrow">Your first safe, manageable table</p>
+      <h1>Start with decisions, then choose dishes.</h1>
+      <p class="lede">
+        Confirm the cooking setting, pick a guest count, choose one centerpiece,
+        and work backward from service. KBBQGuide keeps each decision visible so
+        the meal feels generous without becoming chaotic.
+      </p>
+    </div>
+  </header>
+
+  <section class="section tinted" aria-labelledby="start-steps-title">
+    <div class="shell reading-width">
+      <h2 id="start-steps-title">Five checkpoints</h2>
+      <ol class="instruction-list start-list">
+        <li class="instruction-card">
+          <h3>Confirm the appliance and setting</h3>
+          <p>
+            Read the indoor/outdoor safety and tabletop grill guides before menu
+            planning.
+          </p>
+          <a href={registryPathById(registry, 'G02')}>Review the setting rule</a
+          >
+        </li>
+        <li class="instruction-card">
+          <h3>Choose a menu size</h3>
+          <p>
+            Use the locked menus for two, four, or eight as workload-aware
+            starting points.
+          </p>
+          <a href={registryPathById(registry, 'SYS_MENUS')}>Compare the menus</a
+          >
+        </li>
+        <li class="instruction-card">
+          <h3>Open every recipe</h3>
+          <p>
+            Verify yield, marination, equipment, allergen, storage, and safety
+            notes before shopping.
+          </p>
+          <a href={registryPathById(registry, 'SYS_RECIPES')}
+            >Browse all 80 drafts</a
+          >
+        </li>
+        <li class="instruction-card">
+          <h3>Generate the working plan</h3>
+          <p>
+            Scale quantities, consolidate the shopping list, and choose a prep
+            runway.
+          </p>
+          <a href={registryPathById(registry, 'SYS_TOOLS')}
+            >Open planning tools</a
+          >
+        </li>
+        <li class="instruction-card">
+          <h3>Protect raw and ready-to-eat zones</h3>
+          <p>
+            Set separate platters, utensils, surfaces, and service roles before
+            heat begins.
+          </p>
+          <a href={registryPathById(registry, 'G01')}>Read the beginner guide</a
+          >
+        </li>
+      </ol>
+    </div>
+  </section>
+</BaseLayout>

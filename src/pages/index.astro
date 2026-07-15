@@ -1,0 +1,167 @@
+---
+import { getCollection } from 'astro:content';
+import registryData from '../../data/url-registry.json';
+import MediaPlaceholder from '../components/MediaPlaceholder.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { categories } from '../lib/categories';
+import { itemListJsonLd } from '../lib/seo';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+import type { CompleteRecipe } from '../schemas/recipe';
+
+const registry = registryData as UrlRegistry;
+const recipes = (await getCollection('recipes'))
+  .map((entry) => entry.data)
+  .filter(
+    (recipe): recipe is CompleteRecipe => recipe.contentStatus === 'complete',
+  )
+  .sort((a, b) => a.publicReleaseOrder - b.publicReleaseOrder);
+const featured = [recipes[0], recipes[19], recipes[34]].filter(
+  (recipe): recipe is CompleteRecipe => Boolean(recipe),
+);
+const canonicalPath = registryPathById(registry, 'SYS_HOME');
+const categoryList = itemListJsonLd(
+  'Korean BBQ recipe categories',
+  categories.map((category) => ({
+    name: category.label,
+    path: registryPathById(registry, category.id),
+  })),
+);
+---
+
+<BaseLayout
+  title="Korean BBQ at Home, Made Clear"
+  description="Build a complete Korean BBQ table at home with 80 structured recipe drafts, practical menus, planning tools, and visible food-safety cues."
+  canonicalPath={canonicalPath}
+  jsonLd={[categoryList]}
+  pageClass="home-page"
+>
+  <section class="marketing-hero">
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Korean BBQ, from first prep to final plate</p>
+        <h1>The whole Korean BBQ table, made clear.</h1>
+        <p class="lede">
+          KBBQGuide brings grilling, banchan, seafood, fresh sides, sauces, and
+          a sweet finish into one calm system—with the timing, sensory cues, and
+          safety decisions visible when you need them.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href={registryPathById(registry, 'SYS_RECIPES')}
+            >Explore all recipes</a
+          >
+          <a
+            class="button secondary"
+            href={registryPathById(registry, 'CAT_MEAT')}>Fire up the grill</a
+          >
+        </div>
+        <dl class="hero-stats" aria-label="KBBQGuide library overview">
+          <div><dt>80</dt><dd>recipes</dd></div>
+          <div><dt>6</dt><dd>table sections</dd></div>
+          <div><dt>1</dt><dd>clear plan</dd></div>
+        </dl>
+      </div>
+      <div
+        class="hero-table"
+        role="img"
+        aria-label="Stylized overhead Korean barbecue table with a central grill, side dishes, and serving plates"
+      >
+        <span class="hero-bowl hero-bowl-kimchi" aria-hidden="true"></span>
+        <span class="hero-bowl hero-bowl-greens" aria-hidden="true"></span>
+        <span class="hero-bowl hero-bowl-rice" aria-hidden="true"></span>
+        <span class="hero-bowl hero-bowl-sauce" aria-hidden="true"></span>
+        <span class="hero-grill" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </span>
+        <span class="hero-chopsticks" aria-hidden="true"></span>
+        <span class="hero-table-label">Gather · grill · share</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="categories-title">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Build your table</p>
+          <h2 id="categories-title">Choose your starting point</h2>
+        </div>
+        <p class="lede">
+          Start with the sizzle, the sides, or the sauce. Every section is
+          organized around the decisions that make dinner easier.
+        </p>
+      </div>
+      <div class="card-grid">
+        {
+          categories.map((category) => (
+            <article class="category-card">
+              <a href={registryPathById(registry, category.id)}>
+                <MediaPlaceholder
+                  mediaId={`${category.id}-hero`}
+                  label={`${category.label} at the table`}
+                  altDraft={`A representative ${category.label.toLowerCase()} tabletop arrangement`}
+                  ratio="16:9"
+                />
+                <div class="category-card-content">
+                  <p class="eyebrow">{category.eyebrow}</p>
+                  <h3>{category.label}</h3>
+                  <p>{category.description}</p>
+                  <p class="card-meta">
+                    <span>
+                      {
+                        recipes.filter(
+                          (recipe) => recipe.category === category.slug,
+                        ).length
+                      }{' '}
+                      recipes
+                    </span>
+                  </p>
+                </div>
+              </a>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section tinted" aria-labelledby="featured-title">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A table worth gathering around</p>
+          <h2 id="featured-title">Start with three KBBQ essentials</h2>
+        </div>
+        <p class="lede">
+          Pair a savory grill centerpiece with seafood and banchan, then use the
+          related-recipe paths to round out the meal.
+        </p>
+      </div>
+      <div class="card-grid">
+        {
+          featured.map((recipe) => (
+            <RecipeCard {recipe} href={registryPathById(registry, recipe.id)} />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="media-contract-title">
+    <div class="shell support-grid">
+      <div>
+        <p class="eyebrow">Honest by design</p>
+        <h2 id="media-contract-title">
+          Clear guidance without borrowed certainty.
+        </h2>
+      </div>
+      <div>
+        <p class="lede">
+          KBBQGuide keeps planned photography visibly labeled until each image
+          is produced, rights-cleared, and checked against the recipe. The
+          guidance stays useful without pretending an untested image is proof.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

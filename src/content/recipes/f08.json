@@ -1,0 +1,303 @@
+{
+  "contentStatus": "complete",
+  "id": "F08",
+  "title": "Radish Sprout and Perilla Salad",
+  "koreanName": "Musun Kkaennip Saelleodeu",
+  "hangul": "무순 깻잎 샐러드",
+  "romanization": "musun kkaennip saelleodeu",
+  "category": "fresh",
+  "releaseCohort": "week-09",
+  "publicReleaseOrder": 64,
+  "canonicalSlug": "radish-sprout-and-perilla-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fresh/radish-sprout-and-perilla-salad/",
+  "shortDescription": "Commercial radish sprouts and shredded perilla leaves are dressed immediately before service with rice vinegar, soy, gochugaru, and sesame.",
+  "culturalContext": "This is a contemporary Korean-inspired fresh salad. Raw sprouts carry a distinct microbial risk that washing cannot eliminate; the descriptive Korean name and whether this dish is appropriate for publication require human review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "fresh side servings",
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No rest"
+  },
+  "totalTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "equipment": [
+    "Colander",
+    "Salad spinner or clean towels",
+    "Clean cutting board and knife",
+    "Large clean bowl",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "salad",
+      "heading": "Sprouts and perilla",
+      "ingredients": [
+        {
+          "id": "radish-sprouts",
+          "item": "commercial refrigerated radish sprouts",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": 5,
+          "customaryUnit": "ounces",
+          "preparation": "sealed package within date",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "perilla",
+          "item": "fresh perilla leaves",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 20,
+          "customaryUnit": "leaves",
+          "preparation": "washed, dried, and shredded",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "dressing",
+      "heading": "Dressing",
+      "ingredients": [
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean red pepper flakes",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Assess whether raw sprouts are appropriate",
+      "action": "Do not serve this raw-sprout salad to pregnant people, young children, older adults, or people with weakened immune systems; choose a fully cooked alternative.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "The intended diners are not in a higher-risk group.",
+      "safetyNote": "Washing does not eliminate pathogens that may be inside sprout seeds.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Check package and sprouts",
+      "action": "Use a cold sealed in-date commercial package; discard slimy, moldy, discolored, warm, recalled, or off-smelling sprouts.",
+      "estimatedTime": "2 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Sprouts are crisp, cold, and fresh-smelling.",
+      "safetyNote": "Check current recalls and never use home-grown sprouts in this draft.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Rinse and dry",
+      "action": "Rinse sprouts, perilla, and scallion under cool running water and dry thoroughly.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Produce is clean and dry.",
+      "safetyNote": "Rinsing reduces surface soil but does not make contaminated raw sprouts safe.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Mix dressing",
+      "action": "Whisk vinegar, soy sauce, gochugaru, sugar, sesame oil, and seeds in a clean bowl.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Sugar is dissolved.",
+      "safetyNote": "Verify soy, wheat/gluten, and sesame labels.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Toss at service",
+      "action": "Shred perilla on a clean board, add all greens, and toss immediately before serving.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Greens are lightly coated and crisp.",
+      "safetyNote": "Use clean ready-to-eat utensils.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve immediately",
+      "action": "Transfer to a clean dish and serve at once; discard table-exposed leftovers.",
+      "estimatedTime": "1 minute",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Salad is crisp and cold.",
+      "safetyNote": "Do not store dressed raw-sprout leftovers for later service.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this is a raw ready-to-eat salad.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Sprouts are crisp and cold",
+    "No slime, mold, or off odor",
+    "Greens are lightly dressed"
+  ],
+  "foodSafetyNotes": [
+    "Raw sprouts can harbor pathogens inside seeds; washing cannot eliminate this risk.",
+    "Higher-risk people should avoid raw sprouts and receive a fully cooked alternative.",
+    "Use only sealed refrigerated commercial sprouts, check recalls, and never use home-grown sprouts in this draft.",
+    "Keep at or below 40°F / 4°C, serve immediately, and discard leftovers."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify labels."
+  },
+  "substitutions": [
+    "For higher-risk diners, replace raw sprouts with a separately validated fully cooked vegetable."
+  ],
+  "ingredientSourcing": [
+    "Buy sealed cold commercial radish sprouts within date and check current recall notices."
+  ],
+  "makeAhead": "Mix dressing up to 1 day ahead; prepare sprouts only immediately before service.",
+  "storage": "Keep unopened sprouts at or below 40°F / 4°C; serve the dressed salad immediately and discard leftovers.",
+  "reheating": "Do not reheat; use a separately validated cooked alternative instead.",
+  "leftovers": "Discard all dressed or table-exposed leftovers.",
+  "servingSuggestions": [
+    "Serve only to diners for whom raw sprouts are appropriate."
+  ],
+  "menuPairings": ["M11", "SF09", "B23", "SA03"],
+  "relatedRecipeIds": ["F07", "F09"],
+  "faq": [
+    {
+      "question": "Does washing make raw sprouts safe?",
+      "answer": "No. Contamination can occur inside the seed where rinsing cannot reach."
+    },
+    {
+      "question": "Who should avoid raw sprouts?",
+      "answer": "Pregnant people, young children, older adults, and people with weakened immune systems should choose a fully cooked alternative."
+    }
+  ],
+  "seoTitle": "Radish Sprout and Perilla Salad",
+  "metaDescription": "Make radish sprout and perilla salad with explicit raw-sprout risk screening, sealed cold produce, recall checks, clean tools, and immediate service.",
+  "primaryKeyword": "radish sprout perilla salad",
+  "secondaryTopics": ["Korean-inspired sprout salad", "raw sprout safety"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Contemporary locked-title formulation; raw-sprout risk language requires qualified food-safety review.",
+    "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "source": "Contemporary locked-title formulation; raw-sprout risk language requires qualified food-safety review."
+}

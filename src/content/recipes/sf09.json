@@ -1,0 +1,256 @@
+{
+  "contentStatus": "complete",
+  "id": "SF09",
+  "title": "Jogi Gui Grilled Yellow Croaker",
+  "koreanName": "Jogi Gui",
+  "hangul": "조기구이",
+  "romanization": "jogi-gui",
+  "category": "seafood",
+  "releaseCohort": "week-06",
+  "publicReleaseOrder": 50,
+  "canonicalSlug": "jogi-gui-grilled-yellow-croaker",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jogi-gui-grilled-yellow-croaker/",
+  "shortDescription": "Yellow croaker is lightly salted, dried, and grilled whole until the skin is browned and the thickest flesh reaches 145°F / 63°C.",
+  "culturalContext": "Jogi-gui is Korean grilled croaker. Fresh versus salted fish, species sold as croaker, preparation, and ceremonial or everyday context vary; exact market naming requires review.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 15,
+    "display": "15 minutes refrigerated"
+  },
+  "cookTime": {
+    "minutes": 14,
+    "display": "14 minutes"
+  },
+  "restTime": {
+    "minutes": 2,
+    "display": "2 minutes"
+  },
+  "totalTime": {
+    "minutes": 51,
+    "display": "About 51 minutes"
+  },
+  "equipment": [
+    "Separate seafood cutting board",
+    "Paper towels",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Fish basket, perforated grill pan, or narrow-spaced grate",
+    "Long spatula or tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "fish",
+      "heading": "Yellow croaker",
+      "ingredients": [
+        {
+          "id": "fish",
+          "item": "whole yellow croaker",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "medium fish",
+          "preparation": "scaled, gutted, and gills removed by fishmonger",
+          "optional": false,
+          "allergenNotes": ["fish"]
+        },
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect and thaw safely",
+      "action": "Inspect the cold fish and package; reject sour, rancid, fishy, or ammonia odors, soft flesh, damaged packaging, or evidence of temperature abuse.",
+      "estimatedTime": "Overnight thawing if frozen",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Fish smells mild, flesh is firm, and the product is cold.",
+      "safetyNote": "Reject sour, rancid, fishy, or ammonia odors and damaged or temperature-abused packages.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Clean and dry",
+      "action": "Have the fishmonger scale, gut, and remove gills as appropriate; verify the cavity is clean, rinse briefly only if needed, and dry thoroughly.",
+      "estimatedTime": "10 to 15 minutes",
+      "temperature": "Cold preparation",
+      "visualOrTactileCue": "Cavity and skin are clean and very dry.",
+      "safetyNote": "Keep raw seafood and its juices off ready-to-eat foods; wash hands and sanitize tools afterward.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Salt under refrigeration",
+      "action": "Salt both sides lightly, cover, and refrigerate 15 minutes; blot away released moisture and brush with oil.",
+      "estimatedTime": "15 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "The skin is dry with a thin oil sheen.",
+      "safetyNote": "Keep seafood refrigerated until the grill is ready.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Prepare the grill",
+      "action": "Preheat and oil a fish basket or narrow-spaced grate; establish medium direct heat and an open cooler zone.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium direct heat with cooler zone",
+      "visualOrTactileCue": "The surface is hot, clean, and lightly oiled.",
+      "safetyNote": "Never use a fuel-burning grill indoors; follow appliance ventilation instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Secure in the basket and grill, turning once when the skin releases, until browned and the thickest edible flesh reaches 145°F / 63°C.",
+      "estimatedTime": "14 minutes",
+      "temperature": "Medium direct heat with cooler zone",
+      "visualOrTactileCue": "Skin is browned, flesh is opaque and flakes, and the thickest edible portion reaches 145°F / 63°C.",
+      "safetyNote": "Use a clean thermometer and clean tools after the final turn; verify 145°F / 63°C in the thickest edible portion.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve safely",
+      "action": "Transfer with clean tools, rest 2 minutes, and serve whole with a clear warning about bones.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Hot",
+      "visualOrTactileCue": "The seafood is on a clean platter and served promptly.",
+      "safetyNote": "Whole fish contains pin bones and sharp bones; diners must eat carefully and children require close adult supervision.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or approved indoor electric grill with a clean, lightly oiled fish basket or narrow-spaced grate over medium heat and an open cooler zone.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest edible portion; visual cues supplement but do not replace thermometer verification.",
+  "visualDonenessCues": [
+    "Skin is browned and releases from the basket",
+    "Flesh is opaque and separates easily",
+    "Thickest edible portion reaches 145°F / 63°C"
+  ],
+  "foodSafetyNotes": [
+    "Keep fish at or below 40°F / 4°C and cook within 2 days of purchase or freeze.",
+    "Prevent raw-fish cross-contact.",
+    "Cook to 145°F / 63°C.",
+    "Warn diners about pin bones and sharp bones."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": false,
+    "fish": true,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains fish; use dedicated clean tools and verify any pre-seasoned product label."
+  },
+  "substitutions": [
+    "Use another whole fish only after retesting thickness, bone pattern, skin behavior, and timing."
+  ],
+  "ingredientSourcing": [
+    "Buy properly chilled yellow croaker from a reputable seller and confirm the market species.",
+    "Choose firm fish with a mild smell and intact skin."
+  ],
+  "makeAhead": "Have the fish cleaned by a qualified fishmonger; salt only for the stated refrigerated time before grilling.",
+  "storage": "Refrigerate cooked seafood in a shallow covered container within 2 hours and use within 3 days pending food-safety approval.",
+  "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
+  "leftovers": "Use properly refrigerated leftovers within the approved window; discard table-exposed portions after unsafe holding.",
+  "servingSuggestions": ["Serve hot with rice, soup, and banchan."],
+  "menuPairings": ["B08", "F01", "SA01", "D05"],
+  "relatedRecipeIds": ["SF08", "SF10"],
+  "faq": [
+    {
+      "question": "Can visual flaking replace a thermometer?",
+      "answer": "No. Flaking is a supporting cue; verify 145°F / 63°C."
+    },
+    {
+      "question": "Is a whole fish boneless?",
+      "answer": "No. Warn every diner and supervise children closely."
+    }
+  ],
+  "seoTitle": "Jogi Gui Korean Grilled Yellow Croaker",
+  "metaDescription": "Grill Korean jogi-gui yellow croaker with safe buying and thawing, light salting, thermometer verification, clean tools, and pin-bone guidance.",
+  "primaryKeyword": "jogi gui",
+  "secondaryTopics": ["Korean grilled croaker", "whole fish recipe"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "The locked jogi-gui identity and salted-grilled framing require Korean food-editor and seafood-market verification before publication.",
+    "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Fish is refrigerated on ice or frozen solid in intact packaging.",
+      "Odor is fresh and mild, never sour, rancid, fishy, or ammonia-like.",
+      "Whole fish has firm flesh and, when fresh, clear eyes and red gills."
+    ],
+    "thawing": "Thaw overnight in a covered container in the refrigerator. For rapid thawing, seal in a leakproof bag under cold water and cook immediately; never thaw on the counter.",
+    "cleaningOrShellPreparation": "Have the fishmonger scale, gut, and remove gills as appropriate; verify the cavity is clean and follow any package directions.",
+    "drying": "Pat every surface thoroughly dry with disposable paper towels; immediately discard towels and sanitize the work area.",
+    "scoringOrSkewering": "Make two shallow skin slashes on the thickest side without cutting through bones; test cooking must validate whether scoring improves even cooking.",
+    "grillSurfacePreparation": "Preheat, clean, and lightly oil a fish basket or narrow-spaced grate.",
+    "stickingPrevention": "Dry the skin thoroughly, oil lightly, and wait for the skin to release before turning.",
+    "approximateTime": "14 minutes, subject to product size and grill output; thermometer verification controls.",
+    "donenessCues": [
+      "Skin is browned and releases from the basket",
+      "Flesh is opaque and separates easily",
+      "Thickest edible portion reaches 145°F / 63°C"
+    ],
+    "applicableTemperature": "145°F / 63°C in the thickest edible portion.",
+    "shellOpeningAndDiscardGuidance": null,
+    "crossContactNotes": [
+      "Use a dedicated board and tools for raw seafood.",
+      "Wash hands with soap and water after raw-seafood contact.",
+      "Use a clean thermometer, tools, and platter for cooked seafood."
+    ]
+  }
+}

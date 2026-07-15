@@ -1,0 +1,266 @@
+{
+  "contentStatus": "complete",
+  "id": "SA05",
+  "title": "Korean BBQ Onion Soy-Vinegar Dipping Sauce",
+  "koreanName": "Yangpa Ganjang Sosu",
+  "hangul": "양파 간장 소스",
+  "romanization": "yangpa ganjang sosu",
+  "category": "sauces",
+  "releaseCohort": "week-10",
+  "publicReleaseOrder": 68,
+  "canonicalSlug": "korean-bbq-onion-soy-vinegar-dipping-sauce",
+  "canonicalUrl": "https://kbbqguide.com/recipes/sauces/korean-bbq-onion-soy-vinegar-dipping-sauce/",
+  "shortDescription": "Thin sweet onion is soaked briefly in a tangy soy-rice-vinegar sauce and portioned individually for Korean barbecue dipping.",
+  "culturalContext": "Onion soy-vinegar dipping sauces are common accompaniments in Korean barbecue restaurants, but names, ratios, chile additions, and service vary. This is a restaurant-style descriptive formulation.",
+  "adaptationLabel": "restaurant-style",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 12,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 10,
+    "display": "10 minutes refrigerated"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "0 minutes"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No rest"
+  },
+  "totalTime": {
+    "minutes": 25,
+    "display": "About 25 minutes"
+  },
+  "equipment": [
+    "Clean cutting board and knife",
+    "Mixing bowl",
+    "Clean lidded refrigerator container",
+    "Individual dipping dishes"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "sauce",
+      "heading": "Onion soy-vinegar sauce",
+      "ingredients": [
+        {
+          "id": "onion",
+          "item": "sweet onion",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "medium onion",
+          "preparation": "peeled and very thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 120,
+          "metricUnit": "ml",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 90,
+          "metricUnit": "ml",
+          "customaryAmount": 6,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 36,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mustard",
+          "item": "prepared Korean or yellow mustard",
+          "metricAmount": 10,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "label checked",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare onion cleanly",
+      "action": "Rinse the whole onion exterior, peel, and slice thinly on a clean ready-to-eat board.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Onion slices are thin and clean.",
+      "safetyNote": "Keep board and knife away from raw meat and seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Dissolve sauce",
+      "action": "Whisk soy sauce, vinegar, water, sugar, and optional mustard until sugar dissolves.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Sauce is uniform.",
+      "safetyNote": "Verify soy, wheat/gluten, and mustard-product labels.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Chill briefly",
+      "action": "Add onion, cover, and refrigerate 10 minutes.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "Onion softens slightly but remains crisp.",
+      "safetyNote": "Keep at or below 40°F / 4°C.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Portion individually",
+      "action": "Spoon the needed sauce and onion into individual clean dipping dishes.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Each diner has a separate portion.",
+      "safetyNote": "Do not place the master container beside raw tabletop grilling.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Protect the master batch",
+      "action": "Return the covered uncontaminated master batch immediately to refrigeration.",
+      "estimatedTime": "1 minute",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "Master sauce remains clean and cold.",
+      "safetyNote": "Never return served sauce or onion to the master container.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Discard contaminated portions",
+      "action": "Discard every served portion contacted by raw food, shared utensils, hands, or used eating utensils.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "No contaminated portion is retained.",
+      "safetyNote": "Acid and soy sauce do not make raw-meat-contaminated dipping sauce safe.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is prepared without a grill.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Sugar is dissolved",
+    "Onion remains crisp",
+    "Master batch stays clean and refrigerated"
+  ],
+  "foodSafetyNotes": [
+    "Treat as a ready-to-eat refrigerated sauce.",
+    "Use clean tools and individual portions.",
+    "Discard any portion contacted by raw food or shared/used utensils.",
+    "Keep the master batch at or below 40°F / 4°C."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy and wheat/gluten; optional prepared mustard may add declared allergens, so verify its label."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying the label."
+  ],
+  "ingredientSourcing": [
+    "Choose a firm onion without mold or soft spots and verify condiment labels."
+  ],
+  "makeAhead": "Prepare up to 1 day ahead and keep covered and refrigerated.",
+  "storage": "Keep the uncontaminated master batch at or below 40°F / 4°C and use within 3 days pending review.",
+  "reheating": "Do not reheat; serve cold or cool.",
+  "leftovers": "Discard all served portions and retain only uncontaminated refrigerated master sauce.",
+  "servingSuggestions": ["Serve in individual dishes with grilled foods."],
+  "menuPairings": ["M03", "SF14", "B22", "F09"],
+  "relatedRecipeIds": ["SA04", "SA01"],
+  "faq": [
+    {
+      "question": "Can served sauce go back in the container?",
+      "answer": "No. Discard every served portion."
+    },
+    {
+      "question": "Does vinegar make raw-meat contact safe?",
+      "answer": "No. Contaminated dipping sauce must be discarded."
+    }
+  ],
+  "seoTitle": "Korean BBQ Onion Soy-Vinegar Sauce",
+  "metaDescription": "Make Korean BBQ onion soy-vinegar dipping sauce with clean ready-to-eat handling, individual portions, cold storage, and strict contamination discard rules.",
+  "primaryKeyword": "Korean BBQ onion dipping sauce",
+  "secondaryTopics": ["soy vinegar sauce", "restaurant-style dipping sauce"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Restaurant-style locked-title formulation requiring Korean food-editor and test-kitchen review.",
+    "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 15,
+  "marinate": 10,
+  "marinateDisplay": "10 minutes refrigerated",
+  "cook": 0,
+  "rest": 0,
+  "source": "Restaurant-style locked-title formulation requiring Korean food-editor and test-kitchen review."
+}

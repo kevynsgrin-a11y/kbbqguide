@@ -1,0 +1,285 @@
+{
+  "contentStatus": "complete",
+  "id": "SF14",
+  "title": "Jeonbok Gui Grilled Abalone",
+  "koreanName": "Jeonbok Gui",
+  "hangul": "전복구이",
+  "romanization": "jeonbok-gui",
+  "category": "seafood",
+  "releaseCohort": "week-11",
+  "publicReleaseOrder": 70,
+  "canonicalSlug": "jeonbok-gui-grilled-abalone",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jeonbok-gui-grilled-abalone/",
+  "shortDescription": "Cleaned abalone is removed from the shell, trimmed, scored, and grilled briefly with garlic-sesame seasoning until firm and safely cooked.",
+  "culturalContext": "Jeonbok gui refers to grilled abalone in Korean cooking. Cleaning, whether viscera are used, seasoning, shell presentation, and tenderness vary; this conservative draft discards viscera and requires market and cultural review.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 8,
+    "display": "6 to 8 minutes"
+  },
+  "restTime": {
+    "minutes": 2,
+    "display": "2 minutes"
+  },
+  "totalTime": {
+    "minutes": 35,
+    "display": "About 35 minutes"
+  },
+  "equipment": [
+    "Stiff clean brush",
+    "Cut-resistant glove",
+    "Wide blunt spoon or abalone tool",
+    "Separate seafood cutting board",
+    "Small knife",
+    "Outdoor grill or approved indoor electric grill",
+    "Calibrated instant-read thermometer",
+    "Clean platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "abalone",
+      "heading": "Abalone",
+      "ingredients": [
+        {
+          "id": "abalone",
+          "item": "live farmed abalone in shells",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 8,
+          "customaryUnit": "medium abalone",
+          "preparation": "source label retained",
+          "optional": false,
+          "allergenNotes": ["shellfish"]
+        }
+      ]
+    },
+    {
+      "id": "seasoning",
+      "heading": "Garlic-sesame seasoning",
+      "ingredients": [
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Verify source and vitality",
+      "action": "Buy labeled live abalone from a reputable source, keep cold, and reject cracked shells, off odor, or nonresponsive flesh.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Abalone respond to touch and smell mild.",
+      "safetyNote": "Do not use dead, damaged, unverified, or temperature-abused shellfish.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Scrub and remove safely",
+      "action": "Scrub shells, wear a cut-resistant glove, and use a blunt tool to separate each abalone from its shell.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Cold preparation",
+      "visualOrTactileCue": "Flesh is removed intact.",
+      "safetyNote": "Shell edges and tools can cut; keep the supporting hand protected.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Trim and clean",
+      "action": "Remove and discard viscera and mouthparts, scrub dark edges, rinse briefly, dry, and score the foot shallowly.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Cold preparation",
+      "visualOrTactileCue": "Only clean firm foot meat remains.",
+      "safetyNote": "This draft does not use viscera; sanitize the board and tools after cleaning.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Season and preheat",
+      "action": "Mix oil, garlic, soy, and sesame oil; coat abalone lightly and preheat a clean grill tray over medium-high.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Abalone have a thin coating and the tray is hot.",
+      "safetyNote": "Keep seasoning tools used on raw abalone away from cooked food.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Grill scored-side down, turn once, and cook until firm, opaque, lightly browned, and 145°F / 63°C in representative thick pieces.",
+      "estimatedTime": "6 to 8 minutes",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Representative thick pieces reach 145°F / 63°C.",
+      "safetyNote": "Use clean tongs and thermometer after the final turn.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Slice and serve",
+      "action": "Rest 2 minutes, slice with a clean knife into manageable pieces, and serve on clean shells only if shells were separately scrubbed and sanitized.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Hot",
+      "visualOrTactileCue": "Slices are manageable and served cleanly.",
+      "safetyNote": "Abalone can be chewy and a choking risk; cut appropriately for diners.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or approved indoor electric grill with a stable lightly oiled tray over medium-high heat; keep raw and cooked zones separate.",
+  "targetInternalTemperature": "145°F / 63°C in representative thick abalone pieces, pending qualified shellfish review.",
+  "visualDonenessCues": [
+    "Flesh is firm and opaque",
+    "Scored surface curls lightly",
+    "Representative thick pieces reach 145°F / 63°C"
+  ],
+  "foodSafetyNotes": [
+    "Buy labeled live abalone from a reputable source and keep cold.",
+    "Protect hands from sharp shells and clean away viscera and mouthparts.",
+    "Prevent raw-shellfish cross-contact and cook to 145°F / 63°C pending review.",
+    "Cut chewy flesh into manageable pieces to reduce choking risk."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains shellfish, soy, wheat/gluten, and sesame; verify labels."
+  },
+  "substitutions": [
+    "Do not substitute canned or frozen abalone without a separate process."
+  ],
+  "ingredientSourcing": [
+    "Buy labeled live farmed abalone from a reputable seafood dealer and retain source information."
+  ],
+  "makeAhead": "Clean immediately before cooking; seasoning may be mixed 1 day ahead and refrigerated.",
+  "storage": "Refrigerate cooked abalone within 2 hours and use within 2 days pending review.",
+  "reheating": "Reheat gently to 165°F / 74°C until steaming; overcooking may toughen it.",
+  "leftovers": "Use properly refrigerated leftovers within the approved window.",
+  "servingSuggestions": ["Serve sliced with rice and fresh sides."],
+  "menuPairings": ["B13", "F06", "SA01", "D05"],
+  "relatedRecipeIds": ["SF13", "SF15"],
+  "faq": [
+    {
+      "question": "Can I use the viscera?",
+      "answer": "Not in this conservative draft; viscera use requires separate cultural and safety review."
+    },
+    {
+      "question": "Why cut it after grilling?",
+      "answer": "Abalone is chewy, so manageable slices reduce choking risk."
+    }
+  ],
+  "seoTitle": "Jeonbok Gui Korean Grilled Abalone",
+  "metaDescription": "Make jeonbok gui with labeled live abalone, cut-safe cleaning, discarded viscera, cross-contact controls, a 145°F / 63°C check, and manageable slicing.",
+  "primaryKeyword": "jeonbok gui",
+  "secondaryTopics": ["Korean grilled abalone", "abalone cleaning"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Locked jeonbok-gui formulation requires Korean food-editor, seafood-market, and qualified shellfish safety review.",
+    "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Abalone are live and responsive with intact shells and mild odor.",
+      "Source label identifies seller and product.",
+      "Product is cold and has not been temperature abused."
+    ],
+    "thawing": "Not applicable; this draft uses live abalone only.",
+    "cleaningOrShellPreparation": "With cut protection, scrub shell, remove meat using a blunt tool, discard viscera and mouthparts, scrub dark edges, rinse briefly, dry, and sanitize tools.",
+    "drying": "Pat cleaned foot meat dry with disposable towels and discard towels immediately.",
+    "scoringOrSkewering": "Score the foot shallowly in a crosshatch without cutting through.",
+    "grillSurfacePreparation": "Preheat and lightly oil a stable grill tray.",
+    "stickingPrevention": "Dry well, oil lightly, and turn only after the scored surface releases.",
+    "approximateTime": "6 to 8 minutes depending on size; thermometer verification controls.",
+    "donenessCues": [
+      "Flesh is firm and opaque",
+      "Surface is lightly browned",
+      "Representative thick pieces reach 145°F / 63°C"
+    ],
+    "applicableTemperature": "145°F / 63°C in representative thick pieces pending qualified review.",
+    "shellOpeningAndDiscardGuidance": "Not applicable to abalone; reject nonresponsive live product before preparation.",
+    "crossContactNotes": [
+      "Use a dedicated raw-shellfish board and tools.",
+      "Sanitize the sink and work area after cleaning.",
+      "Use clean tongs, thermometer, knife, and platter for cooked abalone."
+    ]
+  },
+  "source": "Locked jeonbok-gui formulation requires Korean food-editor, seafood-market, and qualified shellfish safety review."
+}

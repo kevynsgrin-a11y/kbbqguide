@@ -1,0 +1,18 @@
+---
+interface Props {
+  recipeId: string;
+  title: string;
+}
+
+const { recipeId, title } = Astro.props;
+---
+
+<section class="video-placeholder" aria-labelledby={`video-${recipeId}`}>
+  <p class="eyebrow">Video production plan</p>
+  <h2 id={`video-${recipeId}`}>{title} video is not yet produced</h2>
+  <p>
+    The manifest reserves 16:9 and 9:16 shot lists, a poster frame, captions,
+    and a transcript. No video player, duration, upload date, or VideoObject is
+    emitted until an approved asset exists.
+  </p>
+</section>

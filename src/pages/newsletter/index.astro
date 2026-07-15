@@ -1,0 +1,87 @@
+---
+import automationData from '../../../data/automation-registry.json';
+import registryData from '../../../data/url-registry.json';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import DisabledForm from '../../components/DisabledForm.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd } from '../../lib/seo';
+import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_NEWSLETTER');
+---
+
+<BaseLayout
+  title="Newsletter Preview"
+  description="A disabled preview of the consent-aware Korean BBQ newsletter, welcome sequence, preference tags, and required unsubscribe controls."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+      { name: 'Newsletter', path },
+    ]),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[{ label: 'Home', href: '/' }, { label: 'Newsletter' }]}
+      />
+      <p class="eyebrow">Consent first · provider not selected</p>
+      <h1>Design the relationship before collecting an address.</h1>
+      <p class="lede">
+        The planned Friday email combines one menu, technique, banchan or fresh
+        idea, safety note, community question, and clearly disclosed shopping
+        module. Signup and sending remain disabled.
+      </p>
+    </div>
+  </header>
+
+  <section class="section tinted">
+    <div class="shell support-grid">
+      <section>
+        <p class="eyebrow">Five-message draft</p>
+        <h2>Welcome sequence</h2>
+        <ol class="timeline-list">
+          {
+            automationData.welcomeSequence.map((message) => (
+              <li>
+                <strong>Day {message.day}:</strong> {message.topic}
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+      <section>
+        <p class="eyebrow">Explicit preferences</p>
+        <h2>Interest tags</h2>
+        <ul class="allergen-list">
+          {
+            automationData.interestTags.map((tag) => (
+              <li>{tag.replaceAll('-', ' / ')}</li>
+            ))
+          }
+        </ul>
+        <p>
+          A future subscriber must choose or knowingly generate these tags.
+          Direct-message interaction never substitutes for email consent.
+        </p>
+      </section>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell reading-width">
+      <DisabledForm
+        formId="newsletter-preview"
+        title="Newsletter signup preview"
+        fields={[
+          { label: 'Email address', type: 'email' },
+          { label: 'Interest preferences' },
+        ]}
+        buttonLabel="Signup disabled"
+        explanation="No provider, consent record, postal address, retention policy, suppression workflow, or sending authorization is configured."
+      />
+    </div>
+  </section>
+</BaseLayout>

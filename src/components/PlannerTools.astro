@@ -1,0 +1,465 @@
+---
+interface MenuPayload {
+  id: string;
+  guests: number;
+  title: string;
+  path: string;
+  recipes: readonly { title: string; path: string }[];
+  shopping: readonly {
+    item: string;
+    amount: number | null;
+    unit: string | null;
+    optional: boolean;
+  }[];
+}
+
+interface AllergenRecipe {
+  title: string;
+  path: string;
+  allergens: readonly string[];
+}
+
+interface Props {
+  menus: readonly MenuPayload[];
+  allergenRecipes: readonly AllergenRecipe[];
+}
+
+const { menus, allergenRecipes } = Astro.props;
+const payload = JSON.stringify({ menus, allergenRecipes }).replaceAll(
+  '<',
+  '\\u003c',
+);
+const initialMenu = menus.find((menu) => menu.guests === 4) ?? menus[0];
+const allergenOptions = [
+  ['soy', 'Soy'],
+  ['wheatGluten', 'Wheat / gluten'],
+  ['sesame', 'Sesame'],
+  ['fish', 'Fish'],
+  ['shellfish', 'Shellfish'],
+  ['egg', 'Egg'],
+  ['dairy', 'Dairy'],
+  ['peanuts', 'Peanuts'],
+  ['treeNuts', 'Tree nuts'],
+  ['alcohol', 'Alcohol'],
+] as const;
+---
+
+<script
+  is:inline
+  id="phase5-planner-data"
+  type="application/json"
+  set:html={payload}
+/>
+
+<div class="tool-stack">
+  <section
+    class="tool-panel"
+    id="quantity-scalers"
+    aria-labelledby="scaler-title"
+  >
+    <p class="eyebrow">Calculators</p>
+    <h2 id="scaler-title">Servings and marinade quantity</h2>
+    <p>
+      These calculators apply a linear ratio only. They do not change equipment
+      capacity, cooking batches, food-safety limits, or recipe review status.
+    </p>
+    <div class="tool-grid">
+      <form class="calculator-card" data-quantity-scaler>
+        <h3>Servings scaler</h3>
+        <label>
+          Base quantity
+          <input
+            name="amount"
+            type="number"
+            min="0.01"
+            step="0.01"
+            value="500"
+          />
+        </label>
+        <label>
+          Base servings
+          <input name="base" type="number" min="1" step="1" value="4" />
+        </label>
+        <label>
+          Target servings
+          <input name="target" type="number" min="1" step="1" value="8" />
+        </label>
+        <label>
+          Unit
+          <input name="unit" type="text" value="g" maxlength="18" />
+        </label>
+        <p class="tool-result" aria-live="polite">
+          Scaled quantity: <strong data-scale-output>1000 g</strong>
+        </p>
+        <noscript
+          >Formula: base quantity × target servings ÷ base servings.</noscript
+        >
+      </form>
+
+      <form class="calculator-card" data-quantity-scaler>
+        <h3>Marinade scaler</h3>
+        <label>
+          Base marinade quantity
+          <input
+            name="amount"
+            type="number"
+            min="0.01"
+            step="0.01"
+            value="240"
+          />
+        </label>
+        <label>
+          Base meat or seafood weight
+          <input name="base" type="number" min="1" step="1" value="680" />
+        </label>
+        <label>
+          Target meat or seafood weight
+          <input name="target" type="number" min="1" step="1" value="1360" />
+        </label>
+        <label>
+          Unit
+          <input name="unit" type="text" value="ml" maxlength="18" />
+        </label>
+        <p class="tool-result" aria-live="polite">
+          Scaled quantity: <strong data-scale-output>480 ml</strong>
+        </p>
+        <noscript
+          >Formula: base marinade × target weight ÷ base weight.</noscript
+        >
+      </form>
+    </div>
+  </section>
+
+  <section
+    class="tool-panel"
+    id="menu-builder"
+    aria-labelledby="menu-builder-title"
+  >
+    <p class="eyebrow">Menu and shopping builder</p>
+    <h2 id="menu-builder-title">Choose a table size</h2>
+    <label class="select-label">
+      Guest count
+      <select data-menu-select>
+        {
+          menus.map((menu) => (
+            <option value={menu.guests}>{menu.guests} guests</option>
+          ))
+        }
+      </select>
+    </label>
+    <div class="planner-output" aria-live="polite">
+      <div>
+        <h3 data-menu-title>{initialMenu?.title}</h3>
+        <ul class="plain-list" data-menu-recipes>
+          {
+            initialMenu?.recipes.map((recipe) => (
+              <li>
+                <a href={recipe.path}>{recipe.title}</a>
+              </li>
+            ))
+          }
+        </ul>
+        {
+          initialMenu && (
+            <a data-menu-link href={initialMenu.path}>
+              Open full menu
+            </a>
+          )
+        }
+      </div>
+      <div>
+        <h3>Consolidated list</h3>
+        <p class="fine-tool-print">
+          Generated from recipe quantities; verify preparation notes, package
+          sizes, pantry stock, substitutions, labels, and actual yields.
+        </p>
+        <ul
+          class="plain-list shopping-list"
+          data-shopping-list
+          tabindex="0"
+          aria-label="Consolidated shopping list"
+        >
+          {
+            initialMenu?.shopping.map((line) => (
+              <li>
+                {line.amount !== null && `${line.amount} ${line.unit} · `}
+                {line.item}
+                {line.optional && ' (optional)'}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+    <noscript>
+      The four-guest plan is shown above. Open the menu index for the two- and
+      eight-guest server-rendered lists.
+    </noscript>
+  </section>
+
+  <section
+    class="tool-panel"
+    id="prep-timeline"
+    aria-labelledby="timeline-title"
+  >
+    <p class="eyebrow">Prep timeline generator</p>
+    <h2 id="timeline-title">Choose your runway</h2>
+    <label class="select-label">
+      Time before service
+      <select data-timeline-select>
+        <option value="two-day">Two days</option>
+        <option value="one-day">One day</option>
+        <option value="two-hour">Two hours</option>
+      </select>
+    </label>
+    <ol class="timeline-list" data-timeline-output aria-live="polite">
+      <li>
+        Read every recipe; confirm labels, appliance approval, and refrigerator
+        space.
+      </li>
+      <li>Shop and complete only recipe-approved long-lead preparations.</li>
+      <li>
+        Calibrate the thermometer and map raw, cooked, and ready-to-eat zones.
+      </li>
+    </ol>
+    <p class="fine-tool-print">
+      Recipe-specific marination, refrigeration, storage, and cooling rules
+      always override this generic sequence.
+    </p>
+    <noscript>
+      The two-day sequence is shown above. The complete timeline guide includes
+      one-day and two-hour server-rendered alternatives.
+    </noscript>
+  </section>
+
+  <section
+    class="tool-panel"
+    id="equipment-checklist"
+    aria-labelledby="equipment-title"
+  >
+    <p class="eyebrow">Equipment checklist</p>
+    <h2 id="equipment-title">Check the setup, not just the shopping</h2>
+    <fieldset class="checklist-fieldset">
+      <legend>Local checklist; selections are not stored</legend>
+      {
+        [
+          'Exact appliance manual reviewed for the intended setting',
+          'Stable heat-safe surface and required clearances confirmed',
+          'Calibrated instant-read thermometer ready',
+          'Separate raw and cooked platters, tongs, and boards ready',
+          'Ready-to-eat greens and sauces protected from the raw station',
+          'Ventilation and grease controls set per manufacturer guidance',
+          'Cooling, cleaning, and shutdown path understood',
+        ].map((item, index) => (
+          <label class="check-row">
+            <input type="checkbox" name={`equipment-${index + 1}`} />
+            <span>{item}</span>
+          </label>
+        ))
+      }
+    </fieldset>
+  </section>
+
+  <section
+    class="tool-panel"
+    id="allergen-filter"
+    aria-labelledby="allergen-title"
+  >
+    <p class="eyebrow">Non-medical allergen display</p>
+    <h2 id="allergen-title">Hide recipes with selected draft flags</h2>
+    <div class="disclosure-box">
+      This display cannot guarantee that a recipe, ingredient, brand, kitchen,
+      or serving environment is safe for an allergy. Labels and cross-contact
+      risks change; consult a qualified clinician for individualized medical
+      guidance.
+    </div>
+    <fieldset class="allergen-controls">
+      <legend>Hide recipes flagged for:</legend>
+      {
+        allergenOptions.map(([value, label]) => (
+          <label class="check-row">
+            <input type="checkbox" value={value} data-allergen-filter />
+            <span>{label}</span>
+          </label>
+        ))
+      }
+    </fieldset>
+    <p data-allergen-count aria-live="polite">
+      Showing all {allergenRecipes.length} recipe drafts.
+    </p>
+    <ul class="plain-list allergen-results" data-allergen-results>
+      {
+        allergenRecipes.map((recipe) => (
+          <li>
+            <a href={recipe.path}>{recipe.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <noscript>
+      All recipes are shown because filtering needs JavaScript. Open each recipe
+      to review its full allergen and cross-contact section.
+    </noscript>
+  </section>
+</div>
+
+<script>
+  interface PlannerData {
+    menus: Array<{
+      guests: number;
+      title: string;
+      path: string;
+      recipes: Array<{ title: string; path: string }>;
+      shopping: Array<{
+        item: string;
+        amount: number | null;
+        unit: string | null;
+        optional: boolean;
+      }>;
+    }>;
+    allergenRecipes: Array<{
+      title: string;
+      path: string;
+      allergens: string[];
+    }>;
+  }
+
+  const dataNode = document.querySelector<HTMLScriptElement>(
+    '#phase5-planner-data',
+  );
+  const plannerData = dataNode
+    ? (JSON.parse(dataNode.textContent ?? '{}') as PlannerData)
+    : null;
+
+  document
+    .querySelectorAll<HTMLFormElement>('[data-quantity-scaler]')
+    .forEach((form) => {
+      const update = () => {
+        const formData = new FormData(form);
+        const amount = Number(formData.get('amount'));
+        const base = Number(formData.get('base'));
+        const target = Number(formData.get('target'));
+        const unit = String(formData.get('unit') ?? '').trim();
+        const output = form.querySelector<HTMLElement>('[data-scale-output]');
+        if (!output) return;
+        if (
+          ![amount, base, target].every(Number.isFinite) ||
+          amount <= 0 ||
+          base <= 0 ||
+          target <= 0
+        ) {
+          output.textContent = 'Enter values greater than zero';
+          return;
+        }
+        const result = Math.round(((amount * target) / base) * 1000) / 1000;
+        output.textContent = `${result} ${unit}`.trim();
+      };
+      form.addEventListener('input', update);
+    });
+
+  const menuSelect =
+    document.querySelector<HTMLSelectElement>('[data-menu-select]');
+  const menuTitle = document.querySelector<HTMLElement>('[data-menu-title]');
+  const menuRecipes = document.querySelector<HTMLElement>(
+    '[data-menu-recipes]',
+  );
+  const menuLink =
+    document.querySelector<HTMLAnchorElement>('[data-menu-link]');
+  const shoppingList = document.querySelector<HTMLElement>(
+    '[data-shopping-list]',
+  );
+  const renderMenu = () => {
+    const menu = plannerData?.menus.find(
+      (candidate) => candidate.guests === Number(menuSelect?.value),
+    );
+    if (!menu || !menuTitle || !menuRecipes || !menuLink || !shoppingList)
+      return;
+    menuTitle.textContent = menu.title;
+    menuLink.href = menu.path;
+    menuRecipes.replaceChildren(
+      ...menu.recipes.map((recipe) => {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = recipe.path;
+        link.textContent = recipe.title;
+        item.append(link);
+        return item;
+      }),
+    );
+    shoppingList.replaceChildren(
+      ...menu.shopping.map((line) => {
+        const item = document.createElement('li');
+        item.textContent = `${line.amount === null ? '' : `${line.amount} ${line.unit} · `}${line.item}${line.optional ? ' (optional)' : ''}`;
+        return item;
+      }),
+    );
+  };
+  menuSelect?.addEventListener('change', renderMenu);
+
+  const timelines: Record<string, string[]> = {
+    'two-day': [
+      'Read every recipe; confirm labels, appliance approval, and refrigerator space.',
+      'Shop and complete only recipe-approved long-lead preparations.',
+      'Calibrate the thermometer and map raw, cooked, and ready-to-eat zones.',
+    ],
+    'one-day': [
+      'Prepare recipe-approved banchan and sauces; reserve clean sauce before raw contact.',
+      'Wash and dry ready-to-eat produce before opening the raw prep station.',
+      'Label and refrigerate components according to their individual recipes.',
+    ],
+    'two-hour': [
+      'Stop adding dishes; finish cold food and return it to refrigeration.',
+      'Set separate raw and cooked tools, platters, thermometer, and serving zones.',
+      'Preheat only when the manual directs; never shortcut marination at room temperature.',
+    ],
+  };
+  const timelineSelect = document.querySelector<HTMLSelectElement>(
+    '[data-timeline-select]',
+  );
+  const timelineOutput = document.querySelector<HTMLOListElement>(
+    '[data-timeline-output]',
+  );
+  timelineSelect?.addEventListener('change', () => {
+    const steps = timelines[timelineSelect.value] ?? [];
+    timelineOutput?.replaceChildren(
+      ...steps.map((step) => {
+        const item = document.createElement('li');
+        item.textContent = step;
+        return item;
+      }),
+    );
+  });
+
+  const filterInputs = [
+    ...document.querySelectorAll<HTMLInputElement>('[data-allergen-filter]'),
+  ];
+  const allergenCount = document.querySelector<HTMLElement>(
+    '[data-allergen-count]',
+  );
+  const allergenResults = document.querySelector<HTMLElement>(
+    '[data-allergen-results]',
+  );
+  const renderAllergens = () => {
+    const excluded = new Set(
+      filterInputs.filter((input) => input.checked).map((input) => input.value),
+    );
+    const visible = (plannerData?.allergenRecipes ?? []).filter(
+      (recipe) => !recipe.allergens.some((allergen) => excluded.has(allergen)),
+    );
+    if (allergenCount)
+      allergenCount.textContent = `Showing ${visible.length} of ${plannerData?.allergenRecipes.length ?? 0} recipe drafts.`;
+    allergenResults?.replaceChildren(
+      ...visible.map((recipe) => {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = recipe.path;
+        link.textContent = recipe.title;
+        item.append(link);
+        return item;
+      }),
+    );
+  };
+  filterInputs.forEach((input) =>
+    input.addEventListener('change', renderAllergens),
+  );
+</script>

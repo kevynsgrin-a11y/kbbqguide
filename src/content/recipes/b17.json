@@ -1,0 +1,338 @@
+{
+  "contentStatus": "complete",
+  "id": "B17",
+  "title": "Doraji Muchim Spicy Bellflower Root",
+  "koreanName": "Doraji Muchim",
+  "hangul": "도라지무침",
+  "romanization": "doraji-muchim",
+  "category": "banchan",
+  "releaseCohort": "week-07",
+  "publicReleaseOrder": 55,
+  "canonicalSlug": "doraji-muchim-spicy-bellflower-root",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/doraji-muchim-spicy-bellflower-root/",
+  "shortDescription": "Dried bellflower root is soaked until pliable, rubbed with salt to temper bitterness, rinsed, and dressed with gochujang, vinegar, garlic, and sesame.",
+  "culturalContext": "Doraji muchim is a Korean seasoned bellflower-root side dish known for a pleasantly bitter, crisp-chewy character. Fresh versus dried root and bitterness-removal methods vary.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "marinateTime": {
+    "minutes": 480,
+    "display": "480 minutes"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "0 minutes"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "0 minutes"
+  },
+  "totalTime": {
+    "minutes": 505,
+    "display": "About 505 minutes"
+  },
+  "equipment": [
+    "Large clean bowl",
+    "Colander",
+    "Clean kitchen towel",
+    "Clean cutting board and knife",
+    "Clean mixing and serving bowls"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "root",
+      "heading": "Bellflower root",
+      "ingredients": [
+        {
+          "id": "dried-doraji",
+          "item": "dried bellflower root (doraji)",
+          "metricAmount": 85,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "ounces",
+          "preparation": "sealed package checked",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "potable water for soaking and rinsing",
+          "metricAmount": 2000,
+          "metricUnit": "ml",
+          "customaryAmount": 8,
+          "customaryUnit": "cups",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt for rubbing",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "dressing",
+      "heading": "Spicy dressing",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean red pepper flakes",
+          "metricAmount": 14,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "chopped",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Verify and soak",
+      "action": "Check the package identity and directions, rinse dried doraji, cover with potable cold water, and soak 8 to 12 hours in the refrigerator.",
+      "estimatedTime": "8 to 12 hours",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "Roots are pliable and expanded.",
+      "safetyNote": "Do not use foraged or unidentified roots.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Rub with salt",
+      "action": "Drain, add coarse salt, and rub the roots firmly to help soften texture and reduce bitterness.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Roots feel more flexible.",
+      "safetyNote": "Use clean hands and avoid splashing soak water.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Rinse thoroughly",
+      "action": "Rinse repeatedly under cool running water, drain, and cut long pieces into bite-size lengths.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Water runs clear and roots remain crisp.",
+      "safetyNote": "Use potable water and clean ready-to-eat tools.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Mix dressing",
+      "action": "Combine gochujang, gochugaru, vinegar, rice syrup, soy sauce, garlic, scallions, sesame oil, and seeds.",
+      "estimatedTime": "4 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Dressing is uniform.",
+      "safetyNote": "Verify gochujang and soy sauce allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Toss",
+      "action": "Add drained doraji and toss until evenly coated.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Every strip has a thin coating.",
+      "safetyNote": "Use clean utensils; this is ready-to-eat after mixing.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve or chill",
+      "action": "Transfer to a clean dish and serve promptly or cover and refrigerate.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Roots are crisp-chewy and evenly seasoned.",
+      "safetyNote": "Keep at or below 40°F / 4°C and discard after unsafe holding.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is prepared on the stovetop or as a seasoned side.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Roots are pliable but crisp",
+    "Rinse water runs clear",
+    "Dressing coats evenly"
+  ],
+  "foodSafetyNotes": [
+    "Use only correctly identified packaged bellflower root; do not forage.",
+    "Soak under refrigeration, not at room temperature.",
+    "Use potable running water and clean ready-to-eat tools.",
+    "Refrigerate promptly at or below 40°F / 4°C."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify gochujang and soy sauce labels."
+  },
+  "substitutions": [
+    "Fresh doraji requires a separately tested peeling and bitterness-removal process."
+  ],
+  "ingredientSourcing": [
+    "Buy sealed labeled dried doraji from a high-turnover Korean market."
+  ],
+  "makeAhead": "Soak under refrigeration overnight; dress close to service.",
+  "storage": "Refrigerate covered at or below 40°F / 4°C and use within 3 days pending review.",
+  "reheating": "Do not reheat; serve properly refrigerated.",
+  "leftovers": "Avoid keeping table-exposed leftovers.",
+  "servingSuggestions": ["Serve with rice and grilled dishes."],
+  "menuPairings": ["M12", "SF07", "F02", "SA02"],
+  "relatedRecipeIds": ["B16", "B18"],
+  "faq": [
+    {
+      "question": "Why soak in the refrigerator?",
+      "answer": "The long hydration period must remain under cold control."
+    },
+    {
+      "question": "Can I forage bellflower root?",
+      "answer": "No. Use only correctly identified packaged food product."
+    }
+  ],
+  "seoTitle": "Doraji Muchim Spicy Bellflower Root",
+  "metaDescription": "Make doraji muchim with packaged dried bellflower root, refrigerated soaking, thorough rinsing, spicy gochujang-vinegar dressing, and clean handling.",
+  "primaryKeyword": "doraji muchim",
+  "secondaryTopics": ["Korean bellflower root", "spicy banchan"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi doraji-muchim preparation reference, accessed 2026-07-14: https://www.maangchi.com/recipe/doraji-muchim",
+    "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 25,
+  "marinate": 480,
+  "cook": 0,
+  "rest": 0,
+  "source": "Maangchi doraji-muchim preparation reference, accessed 2026-07-14: https://www.maangchi.com/recipe/doraji-muchim"
+}

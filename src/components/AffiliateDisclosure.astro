@@ -1,0 +1,20 @@
+---
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<aside
+  class:list={['affiliate-disclosure', { compact }]}
+  data-affiliate-status="inactive"
+  aria-label="Material connection disclosure"
+>
+  <strong>No affiliate relationship is active.</strong>
+  <p>
+    Merchant names appear only as pending research candidates. This preview has
+    no paid destination, affiliate ID, price, stock, coupon, ranking, or
+    firsthand product-testing claim.
+  </p>
+</aside>

@@ -1,0 +1,18 @@
+---
+interface Props {
+  slotId: string;
+  label: string;
+}
+
+const { slotId, label } = Astro.props;
+---
+
+<aside
+  class="disabled-ad-slot"
+  data-ad-slot={slotId}
+  data-ad-status="disabled"
+  aria-label={`${label}; advertising disabled`}
+>
+  <strong>Advertising reservation disabled</strong>
+  <span>{label} · no network, script, request, identifier, or impression</span>
+</aside>

@@ -1,0 +1,450 @@
+{
+  "contentStatus": "complete",
+  "id": "SF02",
+  "title": "Soy-Garlic Grilled Shrimp",
+  "koreanName": "Ganjang maneul sae-u gui",
+  "hangul": "간장 마늘 새우구이",
+  "romanization": "ganjang-maneul-saeu-gui",
+  "category": "seafood",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 9,
+  "canonicalSlug": "soy-garlic-grilled-shrimp",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/soy-garlic-grilled-shrimp/",
+  "shortDescription": "Large shrimp in a quick soy-garlic, honey, rice-vinegar, ginger, scallion, and sesame marinade, grilled until pearly and opaque.",
+  "culturalContext": "Soy, garlic, scallion, ginger, and sesame form a familiar Korean seasoning family. Applying that profile to skewered grilled shrimp is presented here as a contemporary home-grilling adaptation rather than a singular traditional formula.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 15,
+    "display": "10 to 15 minutes"
+  },
+  "cookTime": {
+    "minutes": 8,
+    "display": "6 to 8 minutes"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No required rest"
+  },
+  "totalTime": {
+    "minutes": 43,
+    "display": "43 minutes"
+  },
+  "equipment": [
+    "Nonreactive mixing bowl",
+    "Measuring cups and spoons",
+    "Clean cutting board and paring knife",
+    "Metal skewers",
+    "Outdoor grill or manufacturer-approved indoor electric tabletop grill",
+    "Long-handled tongs",
+    "Two clean pastry brushes",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "shrimp",
+      "heading": "Shrimp",
+      "ingredients": [
+        {
+          "id": "large-shrimp",
+          "item": "raw large shrimp, about 16–20 count per pound",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "refrigerator-thawed if frozen, peeled and deveined; tails optional",
+          "optional": false,
+          "allergenNotes": ["shellfish"]
+        }
+      ]
+    },
+    {
+      "id": "soy-garlic-marinade",
+      "heading": "Soy-garlic marinade and glaze",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "regular soy sauce",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "soy-sauce",
+        "item": "regular soy sauce",
+        "metricAmount": 45,
+        "metricUnit": "ml",
+        "customaryAmount": 3,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "honey",
+        "item": "honey",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "rice-vinegar",
+        "item": "unseasoned rice vinegar",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 18,
+        "metricUnit": "g",
+        "customaryAmount": 6,
+        "customaryUnit": "cloves",
+        "preparation": "finely minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "ginger",
+        "item": "fresh ginger",
+        "metricAmount": 5,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "teaspoon",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "scallions",
+        "preparation": "thinly sliced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "black-pepper",
+        "item": "ground black pepper",
+        "metricAmount": 1,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 190 ml / 3/4 cup",
+    "meatWeightCovered": "680 g / 1.5 lb raw shrimp",
+    "mixOrder": [
+      "Whisk soy sauce, honey, vinegar, sesame oil, and pepper.",
+      "Stir in garlic, ginger, and scallions.",
+      "Reserve 60 ml / 1/4 cup in a clean bowl before raw shrimp contact."
+    ],
+    "marinationVessel": "Nonreactive bowl held under refrigeration",
+    "refrigeratedMarinationTimeRange": "10 to 15 minutes at 40°F / 4°C or below",
+    "maximumPracticalMarinationWarning": "Do not exceed 30 minutes; soy and vinegar can make shrimp overly salty and alter the surface texture.",
+    "reserveBeforeRawContactInstruction": "Move 60 ml / 1/4 cup to a clean finishing bowl before adding raw shrimp.",
+    "rawContactDiscardOrReboilInstruction": "Discard marinade and brushes that contacted raw shrimp; finish only with the untouched reserved sauce.",
+    "substitutions": [
+      "Certified gluten-free tamari may replace soy sauce after label review.",
+      "Maple syrup may replace honey by volume, changing flavor and browning."
+    ],
+    "allergenNotes": [
+      "Contains shellfish, soy, and sesame.",
+      "Regular soy sauce usually contains wheat."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare dry shrimp",
+      "action": "Thaw in the refrigerator, peel, and devein with clean tools. Do not rinse; pat each shrimp very dry.",
+      "estimatedTime": "10 minutes after thawing",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Shrimp are firm, dry, and mild-smelling without translucent ice glaze.",
+      "safetyNote": "Reject leaking packages or shrimp with sour, rancid, fishy, or ammonia-like odor; sanitize the prep area.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix and reserve sauce",
+      "action": "Whisk soy sauce, honey, vinegar, sesame oil, and pepper; stir in garlic, ginger, and scallions. Reserve 60 ml / 1/4 cup in a clean bowl.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Honey is dissolved and aromatics are evenly dispersed.",
+      "safetyNote": "Keep the reserved finishing sauce and its brush completely away from raw seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate and skewer",
+      "action": "Coat shrimp for 10 to 15 minutes under refrigeration, then thread through two points on metal skewers.",
+      "estimatedTime": "10 to 15 minutes",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Shrimp lie flat and carry a thin coating rather than dripping sauce.",
+      "safetyNote": "Discard all raw-contact marinade; never leave shrimp marinating at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Prepare the grill surface",
+      "action": "Preheat the approved grill to medium-high, clean it, and oil it lightly. Arrange a clean cooked-food platter and utensils.",
+      "estimatedTime": "10 minutes",
+      "temperature": "400–425°F / 204–218°C grill surface",
+      "visualOrTactileCue": "Shrimp sizzle promptly and the first side releases after setting.",
+      "safetyNote": "Use only approved indoor electric equipment indoors and follow manufacturer ventilation and grease directions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill to full opacity",
+      "action": "Grill 2 to 3 minutes on the first side and 1 to 3 minutes on the second, checking the center of the thickest shrimp.",
+      "estimatedTime": "4 to 6 minutes",
+      "temperature": "Official cue: pearly or white and opaque throughout",
+      "visualOrTactileCue": "No translucent band remains and the flesh is pearly and firm.",
+      "safetyNote": "Do not rely only on pink exterior color or curl; inspect the thickest center.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Finish cleanly",
+      "action": "Transfer to the clean platter and brush lightly with untouched reserved sauce using a clean brush.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "Shrimp are glossy without pooled sauce.",
+      "safetyNote": "Never reuse the raw-seafood brush, bowl, or marinade on cooked shrimp.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high. Follow the appliance manual for ventilation, clearances, grease handling, and grate care; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "FoodSafety.gov lists no numeric minimum for shrimp; cook until flesh is pearly or white and opaque throughout.",
+  "visualDonenessCues": [
+    "No translucent center remains in the thickest shrimp.",
+    "Flesh is pearly or white, opaque, and firm without becoming hard."
+  ],
+  "foodSafetyNotes": [
+    "Keep seafood at 40°F / 4°C or below and thaw in the refrigerator, not on the counter.",
+    "Do not rinse raw seafood; splashing can spread contamination. Peel, devein, or remove side muscles with clean tools, then pat dry.",
+    "Use separate raw and cooked plates, tongs, brushes, and skewers, or wash and sanitize them fully before reuse.",
+    "FoodSafety.gov directs cooking shrimp and scallops until the flesh is pearly or white and opaque; time alone is not a doneness test.",
+    "Pregnant, immunocompromised, older, and very young diners should not be served raw or undercooked seafood.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "Use comparably sized shrimp to keep cooking times consistent.",
+    "Certified gluten-free tamari addresses only the soy-sauce ingredient; labels and cross-contact still require review."
+  ],
+  "ingredientSourcing": [
+    "Choose firm mild-smelling shrimp or intact frozen packages without heavy frost or evidence of refreezing.",
+    "Check soy sauce and sesame oil labels for declared allergens and cross-contact."
+  ],
+  "makeAhead": "Mix and refrigerate the sauce up to 1 day ahead. Thaw shrimp in the refrigerator and marinate only 10 to 15 minutes shortly before grilling.",
+  "storage": "Refrigerate cooked shrimp within 2 hours at 40°F / 4°C or below and use within 2 days.",
+  "reheating": "Reheat to 165°F / 74°C with brief gentle heat; discard leftovers that have been repeatedly warmed or held out too long.",
+  "leftovers": "Use reheated shrimp in rice bowls or chopped lettuce wraps with fresh garnishes added afterward.",
+  "servingSuggestions": [
+    "Serve with rice and a crisp fresh or lightly pickled vegetable.",
+    "Use individual sauce dishes and keep raw seafood away from communal banchan."
+  ],
+  "menuPairings": ["B01", "F04", "SA04", "D03"],
+  "relatedRecipeIds": ["SF01", "SF03"],
+  "faq": [
+    {
+      "question": "Can shrimp marinate overnight?",
+      "answer": "No. This salty, acidic sauce is designed for 10 to 15 minutes and should not exceed 30 minutes."
+    },
+    {
+      "question": "Do I need to rinse peeled shrimp?",
+      "answer": "No. FoodSafety.gov advises not rinsing raw seafood because splashing spreads contamination; peel, devein, and pat dry instead."
+    }
+  ],
+  "seoTitle": "Soy-Garlic Grilled Shrimp Recipe",
+  "metaDescription": "Make soy-garlic grilled shrimp with a brief refrigerated marinade, clean finishing sauce, anti-sticking preparation, and opaque-doneness cues.",
+  "primaryKeyword": "soy garlic grilled shrimp",
+  "secondaryTopics": [
+    "Korean soy shrimp",
+    "garlic shrimp skewers",
+    "sesame grilled shrimp",
+    "shrimp grilling safety"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "seafood-buying-and-thawing",
+    "raw-seafood-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Seasoning-family comparison: https://www.maangchi.com/recipe/bulgogi (soy, garlic, ginger, scallion, and sesame proportions used only as comparative context).",
+    "Seafood doneness reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "No-rinsing and cross-contact reference verified 2026-07-14: https://www.foodsafety.gov/blog/how-grill-safely-summer",
+    "Contemporary shrimp formulation created for the locked title; no canonical-history or test-cooked claim is made."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Firm shrimp with a mild odor and no sour, rancid, fishy, or ammonia-like smell.",
+      "Frozen packages are intact without large ice crystals, freezer burn, or signs of thawing and refreezing."
+    ],
+    "thawing": "Thaw in a covered container overnight in the refrigerator. For a faster method, keep sealed under cold water, changing water every 30 minutes, then cook immediately.",
+    "cleaningOrShellPreparation": "Peel and devein with clean tools; tails are optional. Do not rinse raw shrimp.",
+    "drying": "Pat thoroughly dry with disposable towels before marinating.",
+    "scoringOrSkewering": "Thread through two points on metal skewers to prevent spinning.",
+    "grillSurfacePreparation": "Preheat, clean, and lightly oil the grill surface.",
+    "stickingPrevention": "Dry well, oil the surface lightly, and wait for the first side to set and release before turning.",
+    "approximateTime": "About 4 to 6 minutes total for large shrimp.",
+    "donenessCues": [
+      "Pearly or white and opaque throughout.",
+      "Firm with no translucent center."
+    ],
+    "applicableTemperature": "FoodSafety.gov provides the visual standard pearly or white and opaque rather than a numeric shrimp minimum.",
+    "shellOpeningAndDiscardGuidance": "Not applicable to peeled shrimp; discard shells promptly and sanitize tools and surfaces.",
+    "crossContactNotes": [
+      "Keep raw marinade, skewers, brush, and tongs separate from the clean cooked-food set.",
+      "Reserve finishing sauce before raw contact and discard all contaminated sauce."
+    ]
+  }
+}

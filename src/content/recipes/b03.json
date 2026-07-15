@@ -1,0 +1,298 @@
+{
+  "contentStatus": "complete",
+  "id": "B03",
+  "title": "Oi Sobagi Cucumber Kimchi",
+  "koreanName": "Oi Sobagi",
+  "hangul": "오이소박이",
+  "romanization": "oi sobagi",
+  "category": "banchan",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 14,
+  "canonicalSlug": "oi-sobagi-cucumber-kimchi",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/oi-sobagi-cucumber-kimchi/",
+  "shortDescription": "Small cucumbers are cross-slit, briefly salted, and stuffed with a crisp chive, carrot, gochugaru, garlic, fish-sauce, and sesame filling.",
+  "culturalContext": "Oi sobagi is cucumber kimchi filled through cross-shaped cuts rather than sliced into a salad. It is valued for fresh crunch and is commonly eaten sooner than long-aged cabbage kimchi; fillings and fermentation choices vary by cook.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 8,
+  "servingUnit": "side-dish servings",
+  "prepTime": { "minutes": 35, "display": "35 minutes" },
+  "marinateTime": { "minutes": 40, "display": "40 minutes salting" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 0, "display": "Optional fermentation not included" },
+  "totalTime": {
+    "minutes": 75,
+    "display": "1 hour 15 minutes, before optional fermentation"
+  },
+  "equipment": [
+    "Chef’s knife and cutting board",
+    "Large nonreactive bowl",
+    "Colander",
+    "Food-safe gloves",
+    "Clean 2-liter glass or food-safe plastic container with headspace"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "cucumber-kimchi",
+      "heading": "Cucumbers and stuffing",
+      "ingredients": [
+        {
+          "id": "cucumbers",
+          "item": "Korean, Persian, or small pickling cucumbers",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "about 10 small cucumbers",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "kosher-salt",
+          "item": "kosher salt",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "asian-chives",
+          "item": "Asian chives",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cups",
+          "preparation": "cut into 1 cm / 3/8-inch pieces",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot",
+          "metricAmount": 70,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": "cut into fine matchsticks",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 80,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean gochugaru",
+          "metricAmount": 35,
+          "metricUnit": "g",
+          "customaryAmount": 0.33,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce",
+          "item": "Korean fish sauce",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["fish"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Cut the cucumbers",
+      "action": "Wash and dry cucumbers. Trim the ends, then cut each crosswise into 7.5 cm / 3-inch lengths. Make a deep cross-shaped slit from one end, stopping 1 cm / 3/8 inch before the other end so each piece stays intact.",
+      "estimatedTime": "15 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Each piece opens into four attached sections.",
+      "safetyNote": "Use a clean board and stable knife grip because the narrow pieces can roll.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Salt",
+      "action": "Work salt over the outsides and gently into the slits. Rest 40 minutes, turning once.",
+      "estimatedTime": "40 minutes",
+      "temperature": "Cool room temperature",
+      "visualOrTactileCue": "Cucumbers bend slightly without breaking but remain crisp.",
+      "safetyNote": "Keep covered and away from raw animal foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Rinse and drain",
+      "action": "Rinse quickly under cold running water to remove surface salt, then drain slit-side down for 10 minutes.",
+      "estimatedTime": "10 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "No salt crystals remain and the slits are not waterlogged.",
+      "safetyNote": "Use potable water and a sanitized colander and sink area.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Mix the stuffing",
+      "action": "Wearing gloves, combine chives, carrot, onion, gochugaru, fish sauce, garlic, sugar, and sesame seeds.",
+      "estimatedTime": "8 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Vegetables are evenly coated and the filling holds loosely together.",
+      "safetyNote": "Declare fish and sesame allergens and avoid eye contact with gochugaru.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Stuff and pack",
+      "action": "Gently open each cucumber and press filling into the center and between the sections. Pack snugly in a clean container with 5 cm / 2 inches of headspace.",
+      "estimatedTime": "12 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Every cucumber is visibly filled but not split apart.",
+      "safetyNote": "Use clean gloves and a food-grade nonreactive container.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Chill",
+      "action": "Refrigerate immediately for the crispest result. Any room-temperature fermentation option must be defined by the qualified safety reviewer before publication.",
+      "estimatedTime": "At least 2 hours chilling",
+      "temperature": "Refrigerator at or below 40°F / 4°C",
+      "visualOrTactileCue": "Cucumbers remain crisp and seasoning begins to moisten the container.",
+      "safetyNote": "Keep refrigerated; discard if mold, putrid odor, or unusual discoloration appears.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan does not use a grill.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Salted cucumbers bend slightly but stay crisp",
+    "Stuffing fills each cross-slit",
+    "Finished cucumbers look moist and brightly seasoned"
+  ],
+  "foodSafetyNotes": [
+    "Wash cucumbers under cool running water before cutting.",
+    "Use clean tools, gloves, and a food-grade nonreactive container.",
+    "Keep refrigerated at or below 40°F / 4°C; this draft does not authorize room-temperature fermentation.",
+    "Declare fish and sesame allergens.",
+    "Discard if mold, putrid odor, or unusual discoloration appears."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": true,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains fish and sesame; check gochugaru and fish-sauce labels for facility cross-contact."
+  },
+  "substitutions": [
+    "Persian or small pickling cucumbers may replace Korean cucumbers; avoid waxed, seedy slicing cucumbers.",
+    "Use more scallions if Asian chives are unavailable, noting the flavor change."
+  ],
+  "ingredientSourcing": [
+    "Choose small, firm, unwaxed cucumbers without soft spots.",
+    "Korean markets carry Asian chives, gochugaru, and Korean fish sauce."
+  ],
+  "makeAhead": "Prepare the vegetable filling up to 4 hours ahead and refrigerate; salt and stuff cucumbers on the same day.",
+  "storage": "Refrigerate at or below 40°F / 4°C and use within 5 days for best crunch; this conservative quality limit still requires food-safety approval.",
+  "reheating": "Do not reheat; serve cold or cool.",
+  "leftovers": "Chop properly refrigerated leftover oi sobagi into a cold rice bowl within the approved storage window.",
+  "servingSuggestions": [
+    "Serve one or two stuffed cucumber pieces per person",
+    "Cut longer pieces once at serving time if needed"
+  ],
+  "menuPairings": ["M18", "SF08", "F08", "SA03"],
+  "relatedRecipeIds": ["B02", "B04"],
+  "faq": [
+    {
+      "question": "Why stop the slit before the end?",
+      "answer": "The attached base holds the cucumber together while creating space for stuffing."
+    },
+    {
+      "question": "How do I keep oi sobagi crisp?",
+      "answer": "Use small firm cucumbers, avoid over-salting, drain well, and refrigerate promptly."
+    }
+  ],
+  "seoTitle": "Oi Sobagi Stuffed Cucumber Kimchi Recipe",
+  "metaDescription": "Make crisp oi sobagi cucumber kimchi with cross-slit cucumbers, chive-gochugaru stuffing, refrigeration guidance, and clear allergen notes.",
+  "primaryKeyword": "oi sobagi cucumber kimchi",
+  "secondaryTopics": [
+    "stuffed cucumber kimchi",
+    "Korean cucumber banchan",
+    "oi sobagi recipe"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["recipe card", "food-safety notes", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention and technique reference: https://www.maangchi.com/recipe/oisobagi-kimchi",
+    "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Draft synthesized for this project; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

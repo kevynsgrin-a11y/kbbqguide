@@ -1,0 +1,288 @@
+{
+  "contentStatus": "complete",
+  "id": "SA01",
+  "title": "Classic Ssamjang",
+  "koreanName": "Ssamjang",
+  "hangul": "쌈장",
+  "romanization": "ssamjang",
+  "category": "sauces",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 24,
+  "canonicalSlug": "classic-ssamjang",
+  "canonicalUrl": "https://kbbqguide.com/recipes/sauces/classic-ssamjang/",
+  "shortDescription": "Doenjang and gochujang are mixed with finely chopped onion, scallion, garlic, rice syrup, toasted sesame oil, and sesame seeds for a savory wrap sauce.",
+  "culturalContext": "Ssamjang is a Korean sauce served with ssam wraps and grilled foods, commonly built from fermented soybean paste and chile paste. Ratios, sweetness, aromatics, and texture vary widely; this draft's `classic` label describes its familiar ingredient family, not one universal formula.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 16,
+  "servingUnit": "tablespoons",
+  "prepTime": { "minutes": 15, "display": "15 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 15, "display": "15 minutes chilled rest" },
+  "totalTime": { "minutes": 30, "display": "30 minutes" },
+  "equipment": [
+    "Small digital scale or measuring spoons",
+    "Chef’s knife and produce cutting board",
+    "Medium mixing bowl",
+    "Clean spoon or whisk",
+    "Airtight refrigerator container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "ssamjang",
+      "heading": "Fermented pastes and aromatics",
+      "ingredients": [
+        {
+          "id": "doenjang",
+          "item": "Korean doenjang",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "may contain wheat/gluten; check label"]
+        },
+        {
+          "id": "gochujang",
+          "item": "Korean gochujang",
+          "metricAmount": 20,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "may contain wheat/gluten; check label"]
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 40,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "clove",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup or honey",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "lightly crushed",
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "water",
+          "item": "cool potable water",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": "use only as needed to loosen",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Check the paste labels",
+      "action": "Read the doenjang and gochujang labels for soy, wheat/gluten, alcohol, and other declared allergens before measuring.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Both containers are within date, properly stored, and free of unexpected spoilage signs.",
+      "safetyNote": "Do not assume fermented pastes are gluten-free; formulations vary by brand.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Prepare the aromatics",
+      "action": "Wash onion and scallion, dry, and mince finely with garlic on a clean produce board.",
+      "estimatedTime": "8 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pieces are no larger than 3 mm / 1/8 inch for an even spoonable texture.",
+      "safetyNote": "Use clean tools and keep ready-to-eat aromatics away from raw grill foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Mix the base",
+      "action": "Stir doenjang and gochujang together until the color is uniform and no separate streaks remain.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The base is thick, smooth, and evenly rust-red.",
+      "safetyNote": "Use a clean spoon; do not dip utensils that have touched raw meat into the sauce.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Finish the sauce",
+      "action": "Fold in onion, scallion, garlic, rice syrup, sesame oil, and sesame seeds. Add water 1 teaspoon at a time only if needed.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Sauce holds a soft mound on a spoon while the aromatics remain suspended.",
+      "safetyNote": "Declare soy, possible wheat/gluten, and sesame allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Rest cold",
+      "action": "Transfer to a clean covered container and refrigerate 15 minutes so the aromatics hydrate.",
+      "estimatedTime": "15 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Sauce remains thick and cohesive after chilling.",
+      "safetyNote": "Refrigerate promptly because the finished sauce contains fresh onion, scallion, garlic, and added water.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve hygienically",
+      "action": "Spoon a small amount into individual dishes and replenish from the refrigerated master container with a clean spoon.",
+      "estimatedTime": "Immediate",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Each diner has a separate portion and the master batch stays clean.",
+      "safetyNote": "Discard table portions touched by raw-food utensils or used bites; never return them to the master container.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill is used to make the sauce; keep the master container refrigerated and outside the raw-meat zone of any tabletop grill.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Fermented pastes are evenly blended",
+    "Aromatics are finely cut",
+    "Finished sauce is thick, cohesive, and spoonable"
+  ],
+  "foodSafetyNotes": [
+    "Check every fermented-paste label for allergens and storage directions.",
+    "Use clean tools and washed produce for this ready-to-eat sauce.",
+    "Refrigerate the finished sauce at or below 40°F / 4°C.",
+    "Serve in small individual portions to prevent raw-meat and saliva cross-contact.",
+    "Discard contaminated table portions and never merge them back into stored sauce."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": true,
+    "crossContactWarning": "Contains soy and sesame; many doenjang and gochujang products contain wheat/gluten or alcohol. Verify each label and use dedicated serving spoons."
+  },
+  "substitutions": [
+    "Use only verified gluten-free doenjang and gochujang for a gluten-free adaptation.",
+    "Rice syrup may replace honey at equal volume; adjust sweetness only after testing."
+  ],
+  "ingredientSourcing": [
+    "Choose Korean doenjang and gochujang whose flavor and allergen labels have been reviewed together.",
+    "Do not activate affiliate links until a specific product's current ingredients and merchant terms are verified."
+  ],
+  "makeAhead": "Make up to 1 day ahead and refrigerate in a clean sealed container; stir before portioning.",
+  "storage": "Refrigerate at or below 40°F / 4°C and use within 5 days; this conservative fresh-aromatic limit requires food-safety approval.",
+  "reheating": "Do not heat; serve cool or at a brief cool-room temperature.",
+  "leftovers": "Keep only sauce that remained in the clean master container; discard all table-served portions after the meal.",
+  "servingSuggestions": [
+    "Add a small dab to a lettuce-and-rice wrap",
+    "Serve in individual dishes beside grilled meat"
+  ],
+  "menuPairings": ["M11", "SF06", "B06", "F01"],
+  "relatedRecipeIds": ["SA05", "SA02"],
+  "faq": [
+    {
+      "question": "Is all ssamjang gluten-free?",
+      "answer": "No. Doenjang and gochujang formulations vary and often contain wheat or barley, so check both labels."
+    },
+    {
+      "question": "Why portion the sauce individually?",
+      "answer": "Individual bowls reduce the chance that raw-meat tongs or used bites contaminate the stored batch."
+    }
+  ],
+  "seoTitle": "Classic Ssamjang Korean BBQ Dipping Sauce",
+  "metaDescription": "Mix classic ssamjang with doenjang, gochujang, aromatics, rice syrup, and sesame, including label checks and tabletop cross-contact controls.",
+  "primaryKeyword": "classic ssamjang recipe",
+  "secondaryTopics": [
+    "Korean BBQ dipping sauce",
+    "doenjang gochujang sauce",
+    "ssam wrap sauce"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "allergen label checks",
+    "recipe card",
+    "food-safety notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention, ratio-family, serving, and refrigerator reference: https://www.maangchi.com/recipe/ssamjang",
+    "Current cross-contamination and refrigeration framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
+    "Draft synthesized for this project; not test-cooked. Brand-specific allergens, Korean-language, cultural, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

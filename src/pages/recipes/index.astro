@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import registryData from '../../../data/url-registry.json';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categories } from '../../lib/categories';
+import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
+import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+import type { CompleteRecipe } from '../../schemas/recipe';
+
+const registry = registryData as UrlRegistry;
+const recipes = (await getCollection('recipes'))
+  .map((entry) => entry.data)
+  .filter(
+    (recipe): recipe is CompleteRecipe => recipe.contentStatus === 'complete',
+  )
+  .sort((a, b) => a.publicReleaseOrder - b.publicReleaseOrder);
+const canonicalPath = registryPathById(registry, 'SYS_RECIPES');
+const structuredData = [
+  breadcrumbJsonLd([
+    { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+    { name: 'Recipes', path: canonicalPath },
+  ]),
+  itemListJsonLd(
+    'All Korean BBQ recipe drafts',
+    recipes.map((recipe) => ({
+      name: recipe.title,
+      path: registryPathById(registry, recipe.id),
+    })),
+  ),
+];
+---
+
+<BaseLayout
+  title="Korean BBQ Recipe Library"
+  description="Browse 80 Korean BBQ recipes for grilled meat, seafood, banchan, fresh sides, sauces, and desserts."
+  canonicalPath={canonicalPath}
+  jsonLd={structuredData}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+          { label: 'Recipes' },
+        ]}
+      />
+      <p class="eyebrow">The KBBQGuide recipe library</p>
+      <h1>80 recipes. One deliberate table.</h1>
+      <p class="lede">
+        Browse by category or follow the suggested table-building order. Every
+        recipe keeps timing, sensory cues, context, and safety notes in the same
+        easy-to-scan structure.
+      </p>
+    </div>
+  </header>
+
+  <section class="section tinted" aria-labelledby="category-links-title">
+    <div class="shell">
+      <h2 id="category-links-title">Browse by category</h2>
+      <div class="support-grid">
+        {
+          categories.map((category) => (
+            <a
+              class="support-card"
+              href={registryPathById(registry, category.id)}
+            >
+              <>
+                <strong>{category.label}</strong>
+                <br />
+              </>
+              <span>
+                {
+                  recipes.filter((recipe) => recipe.category === category.slug)
+                    .length
+                }{' '}
+                recipes
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="all-recipes-title">
+    <div class="shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The complete collection</p>
+          <h2 id="all-recipes-title">All recipes</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        {
+          recipes.map((recipe) => (
+            <RecipeCard {recipe} href={registryPathById(registry, recipe.id)} />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

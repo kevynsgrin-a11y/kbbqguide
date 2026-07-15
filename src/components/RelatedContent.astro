@@ -1,0 +1,33 @@
+---
+import type { CompleteRecipe } from '../schemas/recipe';
+import RecipeCard from './RecipeCard.astro';
+
+interface LinkedRecipe {
+  recipe: CompleteRecipe;
+  href: string;
+}
+
+interface Props {
+  recipes: LinkedRecipe[];
+}
+
+const { recipes } = Astro.props;
+---
+
+<section class="section tinted related-content" aria-labelledby="related-title">
+  <div class="shell">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Continue the table</p>
+        <h2 id="related-title">Locked related recipes</h2>
+      </div>
+      <p class="lede">
+        These links come from immutable recipe IDs in the relationship graph,
+        not free-text URL construction.
+      </p>
+    </div>
+    <div class="card-grid">
+      {recipes.map(({ recipe, href }) => <RecipeCard {recipe} {href} />)}
+    </div>
+  </div>
+</section>

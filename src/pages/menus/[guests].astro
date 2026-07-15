@@ -1,0 +1,158 @@
+---
+import { getCollection } from 'astro:content';
+import registryData from '../../../data/url-registry.json';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import DraftNotice from '../../components/DraftNotice.astro';
+import SafetyCallout from '../../components/SafetyCallout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { menus, type MenuPlan } from '../../lib/menus';
+import { consolidateShoppingList } from '../../lib/planner';
+import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
+import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+import type { CompleteRecipe } from '../../schemas/recipe';
+
+export function getStaticPaths() {
+  return menus.map((menu) => ({
+    params: { guests: `${menu.guests}-guests` },
+    props: { menu },
+  }));
+}
+
+interface Props {
+  menu: MenuPlan;
+}
+
+const { menu } = Astro.props as Props;
+const registry = registryData as UrlRegistry;
+const allRecipes = (await getCollection('recipes'))
+  .map((entry) => entry.data)
+  .filter(
+    (recipe): recipe is CompleteRecipe => recipe.contentStatus === 'complete',
+  );
+const byId = new Map(allRecipes.map((recipe) => [recipe.id, recipe]));
+const recipes = menu.recipeIds.map((id) => {
+  const recipe = byId.get(id);
+  if (!recipe) throw new Error(`Missing menu recipe ${id}`);
+  return recipe;
+});
+const shopping = consolidateShoppingList(recipes, menu.guests);
+const path = registryPathById(registry, menu.id);
+---
+
+<BaseLayout
+  title={`Korean BBQ Menu for ${menu.guests}`}
+  description={menu.description}
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+      { name: 'Menus', path: registryPathById(registry, 'SYS_MENUS') },
+      { name: `${menu.guests} guests`, path },
+    ]),
+    itemListJsonLd(
+      menu.title,
+      recipes.map((recipe) => ({
+        name: recipe.title,
+        path: registryPathById(registry, recipe.id),
+      })),
+    ),
+  ]}
+  pageClass="menu-page"
+>
+  <header class="category-hero menu-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+          { label: 'Menus', href: registryPathById(registry, 'SYS_MENUS') },
+          { label: `${menu.guests} guests` },
+        ]}
+      />
+      <p class="eyebrow">A planning draft for {menu.guests}</p>
+      <h1>{menu.title}</h1>
+      <p class="lede">{menu.description}</p>
+      <a class="button" href={registryPathById(registry, 'SYS_TOOLS')}>
+        Customize in the planner
+      </a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="shell support-grid">
+      <DraftNotice />
+      <SafetyCallout
+        title="Guest count does not change safety limits"
+        notes={[
+          'Scaling changes quantity, not appliance approval, marination limits, cooking temperatures, rest rules, or cross-contact controls.',
+        ]}
+      />
+    </div>
+  </section>
+
+  <section class="section tinted" aria-labelledby="menu-recipes-title">
+    <div class="shell">
+      <p class="eyebrow">Linked by immutable recipe ID</p>
+      <h2 id="menu-recipes-title">The menu</h2>
+      <div class="support-grid">
+        {
+          recipes.map((recipe) => (
+            <a
+              class="support-card"
+              href={registryPathById(registry, recipe.id)}
+            >
+              <strong>{recipe.title}</strong>
+              <span>
+                {recipe.category} · base yield {recipe.yield}
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="menu-service-title">
+    <div class="shell support-grid">
+      <div>
+        <p class="eyebrow">Sequence</p>
+        <h2 id="menu-service-title">Service order</h2>
+        <ol class="plain-list">
+          {menu.serviceOrder.map((item) => <li>{item}</li>)}
+        </ol>
+      </div>
+      <div>
+        <p class="eyebrow">Capacity and separation</p>
+        <h2>Equipment checklist</h2>
+        <ul class="plain-list checklist-list">
+          {menu.equipment.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tinted" aria-labelledby="shopping-title">
+    <div class="shell">
+      <p class="eyebrow">Generated from recipe records</p>
+      <h2 id="shopping-title">Consolidated planning list</h2>
+      <p class="lede">
+        Quantities scale each linked draft to {menu.guests} servings and combine matching
+        item names and units. Verify package sizes, pantry stock, optional items,
+        preparation notes, and every recipe before purchasing.
+      </p>
+      <div class="shopping-grid">
+        {
+          shopping.map((line) => (
+            <div class="shopping-line">
+              <span>
+                {line.amount !== null && `${line.amount} ${line.unit} · `}
+                <strong>{line.item}</strong>
+                {line.optional && ' (optional)'}
+              </span>
+              <small>{line.recipeIds.join(', ')}</small>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

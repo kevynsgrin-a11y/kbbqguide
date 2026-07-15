@@ -1,0 +1,273 @@
+{
+  "contentStatus": "complete",
+  "id": "D05",
+  "title": "Sikhye Sweet Rice Punch",
+  "koreanName": "Sikhye",
+  "hangul": "식혜",
+  "romanization": "sikhye",
+  "category": "desserts",
+  "releaseCohort": "week-13",
+  "publicReleaseOrder": 80,
+  "canonicalSlug": "sikhye-sweet-rice-punch",
+  "canonicalUrl": "https://kbbqguide.com/recipes/desserts/sikhye-sweet-rice-punch/",
+  "shortDescription": "Cooked rice and commercial barley malt liquid are held in a verified hot range until sweet, then boiled fully, rapidly cooled, and served cold.",
+  "culturalContext": "Sikhye is a traditional Korean sweet rice drink made by using barley malt enzymes to sweeten cooked rice, then boiling and chilling the drink. Household sweetness, rice handling, ginger, and garnish vary; it is not an alcoholic fermentation.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 12,
+  "servingUnit": "240 ml / 1-cup servings",
+  "prepTime": {
+    "minutes": 35,
+    "display": "35 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 310,
+    "display": "About 5 hours 10 minutes"
+  },
+  "restTime": {
+    "minutes": 120,
+    "display": "2 hours rapid cooling and chilling"
+  },
+  "totalTime": {
+    "minutes": 465,
+    "display": "About 7 hours 45 minutes"
+  },
+  "equipment": [
+    "Large clean bowl",
+    "Fine-mesh strainer",
+    "Temperature-controlled rice cooker or slow cooker",
+    "Calibrated probe thermometer",
+    "Large pot",
+    "Ice bath",
+    "Shallow covered containers"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "sikhye",
+      "heading": "Sweet rice punch",
+      "ingredients": [
+        {
+          "id": "barley-malt",
+          "item": "commercial yeotgireum-garu barley malt powder",
+          "metricAmount": 250,
+          "metricUnit": "g",
+          "customaryAmount": 9,
+          "customaryUnit": "ounces",
+          "preparation": "label checked",
+          "optional": false,
+          "allergenNotes": ["barley/wheat gluten"]
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 3.8,
+          "metricUnit": "l",
+          "customaryAmount": 1,
+          "customaryUnit": "gallon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice",
+          "item": "cooked short-grain rice",
+          "metricAmount": 400,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cups",
+          "preparation": "freshly cooked and hot",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "granulated sugar",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": "adjust only after test cook",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "slices",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "pine-nuts",
+          "item": "pine nuts",
+          "metricAmount": 20,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": "for garnish",
+          "optional": true,
+          "allergenNotes": ["tree nuts"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Extract malt liquid",
+      "action": "Mix malt powder with cool water, rest 20 minutes, then strain through a fine mesh without forcing sediment through.",
+      "estimatedTime": "30 minutes",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Liquid is tan with most solids removed.",
+      "safetyNote": "Verify the malt label for barley/wheat gluten and use clean equipment.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Combine hot",
+      "action": "Place freshly cooked hot rice and strained malt liquid in a temperature-controlled appliance.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Start at or above 140°F / 60°C",
+      "visualOrTactileCue": "Rice disperses in the liquid.",
+      "safetyNote": "Do not use an unverified warm setting; measure the liquid temperature with a calibrated probe.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Hold in verified range",
+      "action": "Hold 4 to 5 hours, checking hourly, until several rice grains float and the liquid tastes mildly sweet.",
+      "estimatedTime": "4 to 5 hours",
+      "temperature": "Maintain 140 to 150°F / 60 to 66°C",
+      "visualOrTactileCue": "Several grains float and liquid is sweet.",
+      "safetyNote": "Keep at or above 140°F / 60°C throughout; if control is lost, discard rather than continue at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Boil fully",
+      "action": "Transfer to a large pot, add sugar and optional ginger, and bring the entire batch to a rolling boil for 10 minutes.",
+      "estimatedTime": "15 minutes",
+      "temperature": "Rolling boil",
+      "visualOrTactileCue": "Entire surface boils and sugar dissolves.",
+      "safetyNote": "Prevent steam and sugar-syrup burns; keep the pot attended.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Cool rapidly",
+      "action": "Divide into shallow containers and set them in an ice bath, stirring with a clean utensil until cold, then cover and refrigerate.",
+      "estimatedTime": "Within 2 hours",
+      "temperature": "Cool from 140 to 70°F / 60 to 21°C within 2 hours and to 40°F / 4°C within 4 more hours",
+      "visualOrTactileCue": "Drink reaches 40°F / 4°C or below.",
+      "safetyNote": "Cooked rice can support bacterial growth; do not cool the full pot at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve cold",
+      "action": "Serve cold with a clean ladle and optional verified pine-nut garnish.",
+      "estimatedTime": "2 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Drink is cold with rice grains suspended.",
+      "safetyNote": "Keep cold during service; identify gluten and optional tree-nut allergens.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill required; use a verified temperature-controlled appliance, stable stovetop, and rapid-cooling setup.",
+  "targetInternalTemperature": "Hold at 140 to 150°F / 60 to 66°C during enzyme conversion, boil the full batch, then cool to 40°F / 4°C or below within the stated two-stage limit.",
+  "visualDonenessCues": [
+    "Several rice grains float during the verified hot hold",
+    "Full batch reaches a rolling boil",
+    "Drink is rapidly cooled to 40°F / 4°C or below"
+  ],
+  "foodSafetyNotes": [
+    "Sikhye is an enzyme-sweetened cooked-rice drink, not an alcoholic fermentation and not a room-temperature process.",
+    "Verify the appliance maintains 140 to 150°F / 60 to 66°C; discard after an uncontrolled warm hold.",
+    "After the hot hold, bring the entire batch to a rolling boil.",
+    "Rapidly cool in shallow containers: 140 to 70°F within 2 hours and 70 to 40°F within 4 additional hours.",
+    "Cooked rice requires strict time-temperature control; never cool the full pot on the counter."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": true,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": true,
+    "alcohol": false,
+    "crossContactWarning": "Verify every packaged-ingredient label and segregate tools for diners with allergies."
+  },
+  "substitutions": [
+    "Omit pine-nut garnish to remove that ingredient, while still checking all labels for cross-contact.",
+    "Do not substitute an unlabeled malt product or alter the hot-hold range without test-kitchen review."
+  ],
+  "ingredientSourcing": [
+    "Use commercial barley malt powder with a complete label.",
+    "Use fresh hot cooked rice and potable water."
+  ],
+  "makeAhead": "Prepare, boil, rapidly cool, and refrigerate up to 2 days ahead.",
+  "storage": "Keep covered at or below 40°F / 4°C and use within 3 days pending test-kitchen validation.",
+  "reheating": "Serve cold; if reheated for another use, bring to 165°F / 74°C and do not cycle repeatedly.",
+  "leftovers": "Discard drink left above 40°F / 4°C beyond 2 hours, or 1 hour above 90°F / 32°C; never mix service leftovers into the stored batch.",
+  "servingSuggestions": [
+    "Serve very cold in small bowls or cups.",
+    "Offer pine nuts only after an allergen check."
+  ],
+  "menuPairings": ["M17", "SF13", "B21", "F09"],
+  "relatedRecipeIds": ["D04", "D01"],
+  "faq": [
+    {
+      "question": "Is sikhye fermented or alcoholic?",
+      "answer": "No. Barley malt enzymes convert rice starch to sugars, and this method uses a controlled hot hold followed by a full boil."
+    },
+    {
+      "question": "Can I cool the pot on the counter?",
+      "answer": "No. Divide into shallow containers and use an ice bath to meet the two-stage cooling limit."
+    }
+  ],
+  "seoTitle": "Sikhye Korean Sweet Rice Punch",
+  "metaDescription": "Make sikhye with a thermometer-verified hot hold, full rolling boil, rapid two-stage cooling, strict cooked-rice control, and cold service.",
+  "primaryKeyword": "sikhye sweet rice punch",
+  "secondaryTopics": [
+    "Korean rice drink",
+    "barley malt punch",
+    "Korean dessert beverage"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe-header",
+    "ingredient-list",
+    "instructions",
+    "food-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Cultural and method orientation: https://www.maangchi.com/recipe/sikhye",
+    "Cooling basis: https://www.fda.gov/food/fda-food-code/food-code-2022",
+    "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
+  ],
+  "seafoodPreparation": null
+}

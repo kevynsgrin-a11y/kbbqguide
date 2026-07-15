@@ -1,0 +1,315 @@
+{
+  "contentStatus": "complete",
+  "id": "B18",
+  "title": "Yeongeun Jorim Soy-Braised Lotus Root",
+  "koreanName": "Yeongeun Jorim",
+  "hangul": "연근조림",
+  "romanization": "yeongeun-jorim",
+  "category": "banchan",
+  "releaseCohort": "week-08",
+  "publicReleaseOrder": 57,
+  "canonicalSlug": "yeongeun-jorim-soy-braised-lotus-root",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/yeongeun-jorim-soy-braised-lotus-root/",
+  "shortDescription": "Lotus root slices are rinsed, briefly blanched, and braised until crisp-tender in a glossy soy, garlic, and rice-syrup glaze.",
+  "culturalContext": "Yeongeun jorim belongs to the Korean family of soy-braised side dishes. Slice thickness, sweetness, color, chile, and final texture vary by household.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 35,
+    "display": "35 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "totalTime": {
+    "minutes": 60,
+    "display": "About 60 minutes"
+  },
+  "equipment": [
+    "Vegetable brush",
+    "Peeler",
+    "Chef’s knife and clean board",
+    "Heavy saucepan with lid",
+    "Colander",
+    "Heatproof spatula"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "lotus-root",
+      "heading": "Lotus root",
+      "ingredients": [
+        {
+          "id": "lotus-root",
+          "item": "fresh lotus root",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "scrubbed, peeled, and sliced 6 mm / 1/4 inch",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water for blanching",
+          "metricAmount": 1900,
+          "metricUnit": "ml",
+          "customaryAmount": 8,
+          "customaryUnit": "cups",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar for blanching water",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "braise",
+      "heading": "Braising glaze",
+      "ingredients": [
+        {
+          "id": "water-braise",
+          "item": "water",
+          "metricAmount": 480,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "cups",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 75,
+          "metricUnit": "ml",
+          "customaryAmount": 5,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": "divided",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "brown-sugar",
+          "item": "brown sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "smashed",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect and wash",
+      "action": "Discard lotus root with mold, deep soft spots, or spoilage; scrub under running water, peel, and slice evenly.",
+      "estimatedTime": "12 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Slices are clean, pale, and even.",
+      "safetyNote": "Use a stable board and keep fingers clear of the knife.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Rinse and blanch",
+      "action": "Rinse slices, then blanch 5 minutes in boiling water with vinegar; drain.",
+      "estimatedTime": "7 minutes",
+      "temperature": "Boiling",
+      "visualOrTactileCue": "Slices begin to turn translucent at the edges.",
+      "safetyNote": "Lower slices carefully and avoid steam burns.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Start the braise",
+      "action": "Combine blanched lotus root, braising water, soy sauce, half the rice syrup, sugar, and garlic; bring to a boil, then partially cover.",
+      "estimatedTime": "4 minutes",
+      "temperature": "Boil then medium-low",
+      "visualOrTactileCue": "Liquid simmers steadily without boiling over.",
+      "safetyNote": "Open the lid away from your face.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Braise until crisp-tender",
+      "action": "Simmer, turning occasionally, until slices are crisp-tender and the liquid reduces.",
+      "estimatedTime": "20 to 25 minutes",
+      "temperature": "Medium-low",
+      "visualOrTactileCue": "A knife enters with light resistance and slices remain intact.",
+      "safetyNote": "Use a clean tester and avoid tasting undercooked hard slices.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Glaze",
+      "action": "Uncover, add remaining rice syrup, and turn until glossy; remove from heat and add sesame oil and seeds.",
+      "estimatedTime": "4 to 6 minutes",
+      "temperature": "Medium",
+      "visualOrTactileCue": "Glaze clings without a watery pool.",
+      "safetyNote": "Concentrated syrup is very hot; avoid splashing.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and store",
+      "action": "Rest 5 minutes and transfer to a clean dish.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Warm or cool",
+      "visualOrTactileCue": "Glaze thickens slightly while slices stay intact.",
+      "safetyNote": "Refrigerate within 2 hours.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is prepared on the stovetop or as a seasoned side.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Slices are crisp-tender",
+    "Lotus-root holes remain distinct",
+    "Glaze clings without pooling"
+  ],
+  "foodSafetyNotes": [
+    "Discard spoiled or moldy lotus root.",
+    "Scrub under cool running water before peeling.",
+    "Handle boiling water and concentrated syrup carefully.",
+    "Refrigerate within 2 hours at or below 40°F / 4°C."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify labels."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying the label."
+  ],
+  "ingredientSourcing": [
+    "Choose firm heavy lotus root without mold, deep soft spots, or sour odor."
+  ],
+  "makeAhead": "Braise up to 2 days ahead, cool promptly, cover, and refrigerate.",
+  "storage": "Refrigerate within 2 hours and use within 4 days pending food-safety approval.",
+  "reheating": "Warm gently with a splash of water until steaming or serve properly refrigerated portions cool.",
+  "leftovers": "Use properly refrigerated leftovers within the approved window.",
+  "servingSuggestions": ["Serve with rice and other banchan."],
+  "menuPairings": ["M13", "SF08", "F03", "SA03"],
+  "relatedRecipeIds": ["B17", "B19"],
+  "faq": [
+    {
+      "question": "Why blanch first?",
+      "answer": "It begins tenderizing and helps control surface starch and color."
+    },
+    {
+      "question": "Should lotus root become soft?",
+      "answer": "This draft keeps a crisp-tender bite; test cooking must verify thickness and timing."
+    }
+  ],
+  "seoTitle": "Yeongeun Jorim Soy-Braised Lotus Root",
+  "metaDescription": "Make yeongeun jorim with cleaned, blanched lotus root and a glossy soy-rice-syrup glaze, with crisp-tender cues and safe hot-syrup handling.",
+  "primaryKeyword": "yeongeun jorim",
+  "secondaryTopics": ["Korean lotus root", "soy-braised banchan"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi yeongeun-jorim editorial URL checked 2026-07-14: https://www.maangchi.com/recipe/yeongeun-jorim",
+    "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 20,
+  "cook": 35,
+  "source": "Maangchi yeongeun-jorim editorial URL checked 2026-07-14: https://www.maangchi.com/recipe/yeongeun-jorim"
+}

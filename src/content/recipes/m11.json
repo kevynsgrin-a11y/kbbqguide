@@ -1,0 +1,368 @@
+{
+  "contentStatus": "complete",
+  "id": "M11",
+  "title": "Gochujang Samgyeopsal",
+  "koreanName": "Gochujang Samgyeopsal",
+  "hangul": "고추장 삼겹살",
+  "romanization": "gochujang samgyeopsal",
+  "category": "grilled-meat",
+  "releaseCohort": "week-02",
+  "publicReleaseOrder": 34,
+  "canonicalSlug": "gochujang-samgyeopsal",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/gochujang-samgyeopsal/",
+  "shortDescription": "Pork belly is coated in a spicy-sweet gochujang marinade, then grilled over controlled heat until browned and safely cooked.",
+  "culturalContext": "This is a contemporary spicy variation on grilled samgyeopsal using gochujang. Korean pork-belly preparations and marinades vary, so this draft does not present one universal formula.",
+  "adaptationLabel": "restaurant-style",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 60,
+    "display": "60 minutes refrigerated"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "12 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 95,
+    "display": "About 95 minutes"
+  },
+  "equipment": [
+    "Separate raw-meat cutting board",
+    "Nonreactive covered container",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Long tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "pork",
+      "heading": "Pork",
+      "ingredients": [
+        {
+          "id": "pork",
+          "item": "skinless pork belly slab",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "cut across the grain into 6 mm / 1/4-inch slices",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "seasoning",
+      "heading": "Gochujang marinade",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "gochujang",
+        "item": "gochujang",
+        "metricAmount": 60,
+        "metricUnit": "g",
+        "customaryAmount": 0.25,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten; verify label"]
+      },
+      {
+        "id": "soy-sauce",
+        "item": "soy sauce",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "rice-syrup",
+        "item": "Korean rice syrup",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 12,
+        "metricUnit": "g",
+        "customaryAmount": 4,
+        "customaryUnit": "cloves",
+        "preparation": "minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "ginger",
+        "item": "fresh ginger",
+        "metricAmount": 6,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "teaspoons",
+        "preparation": "grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      }
+    ],
+    "batchYield": "About 150 ml / 2/3 cup marinade",
+    "meatWeightCovered": "900 g / 2 pounds pork",
+    "mixOrder": [
+      "Whisk gochujang and soy sauce smooth.",
+      "Add rice syrup, garlic, ginger, and sesame oil.",
+      "Coat chilled pork evenly."
+    ],
+    "marinationVessel": "Nonreactive covered container kept at or below 40°F / 4°C",
+    "refrigeratedMarinationTimeRange": "45 minutes to 2 hours under refrigeration.",
+    "maximumPracticalMarinationWarning": "Do not exceed 4 hours without test-cook approval; the salty marinade can alter texture.",
+    "reserveBeforeRawContactInstruction": "Reserve any sauce for serving before it contacts raw pork.",
+    "rawContactDiscardOrReboilInstruction": "Discard raw-contact marinade; do not brush it onto cooked meat unless separately brought to a full boil under an approved process.",
+    "substitutions": [
+      "Use only verified gluten-free gochujang and tamari for a gluten-free adaptation."
+    ],
+    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare safely",
+      "action": "Trim and portion the skinless pork belly slab on a dedicated raw-meat board, then wash hands.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Refrigerated until needed",
+      "visualOrTactileCue": "Pieces are even in thickness.",
+      "safetyNote": "Keep raw pork and its juices away from ready-to-eat foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the seasoning",
+      "action": "Stir gochujang, soy sauce, rice syrup, garlic, ginger, and sesame oil until smooth.",
+      "estimatedTime": "4 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The seasoning is homogeneous.",
+      "safetyNote": "Reserve any table sauce before raw-pork contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate under refrigeration",
+      "action": "Coat the pork evenly, cover, and marinate for 1 hour in the refrigerator.",
+      "estimatedTime": "60 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Each slice has a thin, even coating.",
+      "safetyNote": "Never marinate pork at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the grill",
+      "action": "Preheat a clean outdoor grill or manufacturer-approved indoor electric grill and lightly oil the grate.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "The grate is hot and clean.",
+      "safetyNote": "Do not use a fuel-burning grill indoors; follow the appliance manufacturer’s ventilation instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Shake off excess marinade and grill in one layer, turning often to prevent scorching, until browned and at least 145°F / 63°C.",
+      "estimatedTime": "8 to 12 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "The thickest pieces reach at least 145°F / 63°C on a calibrated thermometer.",
+      "safetyNote": "Use clean tongs after the final turn and never place cooked pork on the raw-meat platter.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and serve",
+      "action": "Transfer to a clean platter and rest 3 minutes before slicing or serving.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "Juices settle during the full 3-minute rest.",
+      "safetyNote": "Whole cuts of pork require 145°F / 63°C followed by a 3-minute rest.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or a manufacturer-approved indoor electric grill on a heat-safe surface. Preheat, clean, and lightly oil the grate; keep raw and cooked zones and utensils separate.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest part, followed by a 3-minute rest for whole cuts of pork.",
+  "visualDonenessCues": [
+    "Edges are browned and lightly charred",
+    "Surface is sizzling, not wet with raw marinade",
+    "Thermometer confirms 145°F / 63°C before the 3-minute rest"
+  ],
+  "foodSafetyNotes": [
+    "Keep raw pork refrigerated at or below 40°F / 4°C until cooking.",
+    "Prevent raw-pork juices and utensils from contacting cooked food or banchan.",
+    "Cook whole cuts of pork to at least 145°F / 63°C and rest 3 minutes.",
+    "Never operate charcoal, gas, or other fuel-burning grills indoors."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify gochujang and soy sauce labels."
+  },
+  "substitutions": [
+    "Use only verified gluten-free gochujang and tamari for a gluten-free adaptation."
+  ],
+  "ingredientSourcing": [
+    "Choose cold skinless pork belly slab from a reputable retailer with intact packaging.",
+    "Check every prepared seasoning label for allergens."
+  ],
+  "makeAhead": "Mix marinade up to 2 days ahead; marinate pork only for the stated refrigerated range.",
+  "storage": "Refrigerate cooked pork in a shallow covered container within 2 hours and use within 4 days pending food-safety approval.",
+  "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
+  "leftovers": "Use properly refrigerated leftovers in rice bowls or lettuce wraps within the approved storage window.",
+  "servingSuggestions": [
+    "Serve in lettuce wraps with fresh vegetables and rice."
+  ],
+  "menuPairings": ["B11", "F01", "SA01", "D01"],
+  "relatedRecipeIds": ["M10", "M12"],
+  "faq": [
+    {
+      "question": "Why use medium heat?",
+      "answer": "Gochujang and rice syrup can scorch before thick pork is safely cooked."
+    },
+    {
+      "question": "Can raw marinade be used as sauce?",
+      "answer": "No. Reserve sauce before raw contact or boil a separate quantity under an approved process."
+    }
+  ],
+  "seoTitle": "Gochujang Samgyeopsal Pork Belly",
+  "metaDescription": "Make gochujang samgyeopsal with a spicy-sweet refrigerated marinade, controlled grill heat, thermometer verification, and safe handling.",
+  "primaryKeyword": "gochujang samgyeopsal",
+  "secondaryTopics": ["spicy pork belly", "Korean barbecue marinade"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Samgyeopsal grilling technique informed by Maangchi, accessed 2026-07-14: https://www.maangchi.com/recipe/samgyeopsal-gui; gochujang version is a locked editorial adaptation.",
+    "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

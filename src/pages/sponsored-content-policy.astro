@@ -1,0 +1,71 @@
+---
+import registryData from '../../data/url-registry.json';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd } from '../lib/seo';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'POL_SPONSORED');
+---
+
+<BaseLayout
+  title="Sponsored Content Policy"
+  description="The editorial independence, disclosure, evidence, approval, and usage-rights policy for possible sponsored Korean BBQ content."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: '/' },
+      { name: 'Sponsored Content Policy', path },
+    ]),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Sponsored Content Policy' },
+        ]}
+      />
+      <p class="eyebrow">No sponsor is active</p>
+      <h1>Sponsored content policy</h1>
+      <p class="lede">
+        Commercial support must be visible, bounded, and unable to bypass
+        editorial, safety, cultural, or audience-trust controls.
+      </p>
+    </div>
+  </header>
+  <section class="section tinted">
+    <div class="shell reading-width policy-stack">
+      <section>
+        <h2>Clear identification</h2><p>
+          Sponsored work will be labeled at the top, near paid recommendations,
+          and in channel-native language. It will never be disguised as
+          independent ranking or community content.
+        </p>
+      </section>
+      <section>
+        <h2>Editorial independence</h2><p>
+          The sponsor may verify factual brand information but cannot remove
+          required safety language, invent a test result, suppress a material
+          limitation, or purchase a favorable conclusion.
+        </p>
+      </section>
+      <section>
+        <h2>Evidence and approvals</h2><p>
+          Every deliverable requires content approval, marketing approval, claim
+          substantiation, exact-item test evidence where relevant, and written
+          usage-rights scope before release.
+        </p>
+      </section>
+      <section>
+        <h2>Corrections and conflicts</h2><p>
+          Material conflicts will be disclosed. Unsafe, inaccurate, expired, or
+          noncompliant work will be corrected, suspended, or removed regardless
+          of payment.
+        </p>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

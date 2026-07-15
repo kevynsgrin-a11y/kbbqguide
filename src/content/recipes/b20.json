@@ -1,0 +1,296 @@
+{
+  "contentStatus": "complete",
+  "id": "B20",
+  "title": "Jangjorim Soy-Braised Beef",
+  "koreanName": "Jangjorim",
+  "hangul": "장조림",
+  "romanization": "jangjorim",
+  "category": "banchan",
+  "releaseCohort": "week-08",
+  "publicReleaseOrder": 59,
+  "canonicalSlug": "jangjorim-soy-braised-beef",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/jangjorim-soy-braised-beef/",
+  "shortDescription": "Lean beef is simmered until safely cooked and fork-tender, shredded, then reduced gently in a savory soy-garlic braising liquid.",
+  "culturalContext": "Jangjorim is a Korean soy-braised dish commonly made with beef and sometimes eggs or chiles. Cut, broth, sweetness, shredding, and accompaniments vary.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 85,
+    "display": "85 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "totalTime": {
+    "minutes": 110,
+    "display": "About 110 minutes"
+  },
+  "equipment": [
+    "Separate raw-meat cutting board",
+    "Heavy saucepan with lid",
+    "Tongs",
+    "Calibrated instant-read thermometer",
+    "Two forks",
+    "Clean shallow storage container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "beef",
+      "heading": "Beef",
+      "ingredients": [
+        {
+          "id": "beef",
+          "item": "lean beef eye of round or brisket",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "cut into four equal pieces",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "braise",
+      "heading": "Soy braise",
+      "ingredients": [
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 1900,
+          "metricUnit": "ml",
+          "customaryAmount": 8,
+          "customaryUnit": "cups",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 180,
+          "metricUnit": "ml",
+          "customaryAmount": 0.75,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 10,
+          "customaryUnit": "cloves",
+          "preparation": "peeled",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "scallions",
+          "preparation": "cut into lengths",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "medium onion",
+          "preparation": "quartered",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "green-chiles",
+          "item": "mild green chiles",
+          "metricAmount": 40,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "chiles",
+          "preparation": "whole",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare raw beef safely",
+      "action": "Cut beef on a dedicated board, keep it refrigerated, and wash hands and sanitize the work area.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "Pieces are even and remain cold.",
+      "safetyNote": "Prevent raw-beef juices from contacting ready-to-eat food.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Start the simmer",
+      "action": "Place beef, water, garlic, scallions, and onion in a pot; bring to a boil, skim foam, then reduce to a covered simmer.",
+      "estimatedTime": "12 minutes",
+      "temperature": "Boil then low simmer",
+      "visualOrTactileCue": "Broth simmers gently.",
+      "safetyNote": "Open the lid away from your face and use a clean skimming utensil.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Cook safely and tender",
+      "action": "Simmer until beef exceeds 145°F / 63°C, completes a 3-minute rest equivalent in the hot covered environment, and continues until fork-tender.",
+      "estimatedTime": "55 to 70 minutes",
+      "temperature": "Low simmer",
+      "visualOrTactileCue": "A fork enters easily and the thermometer confirms the safety minimum was exceeded.",
+      "safetyNote": "The safety minimum does not by itself establish tenderness; test cooking controls the final texture endpoint.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Rest and shred",
+      "action": "Move beef to a clean bowl, rest at least 3 minutes, then shred with clean forks; strain 720 ml / 3 cups broth.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Warm",
+      "visualOrTactileCue": "Beef shreds into long fibers.",
+      "safetyNote": "Use only clean tools and a clean bowl after cooking.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Braise in soy",
+      "action": "Return shredded beef and measured broth to the clean pot with soy sauce, rice syrup, and optional chiles; simmer until seasoned and reduced.",
+      "estimatedTime": "15 to 20 minutes",
+      "temperature": "Gentle simmer",
+      "visualOrTactileCue": "Beef is deeply seasoned and liquid remains for storage.",
+      "safetyNote": "Reduced salty liquid is hot; avoid splashing.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve or cool promptly",
+      "action": "Serve hot, or divide beef and liquid into shallow clean containers and refrigerate within 2 hours.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Hot or cooling",
+      "visualOrTactileCue": "Beef remains moist in the braising liquid.",
+      "safetyNote": "Cool in shallow containers; do not leave the deep pot at room temperature.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is prepared on the stovetop or as a seasoned side.",
+  "targetInternalTemperature": "At least 145°F / 63°C plus a 3-minute rest for whole-cut beef; continue simmering to a test-cook-verified fork-tender endpoint.",
+  "visualDonenessCues": [
+    "Thermometer exceeds 145°F / 63°C",
+    "Fork enters with little resistance",
+    "Beef shreds cleanly into fibers"
+  ],
+  "foodSafetyNotes": [
+    "Keep raw beef at or below 40°F / 4°C and prevent cross-contact.",
+    "Meet at least 145°F / 63°C plus a 3-minute rest.",
+    "Continue to a fork-tender endpoint established by test cooking.",
+    "Cool promptly in shallow containers and refrigerate within 2 hours."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy and wheat/gluten; verify soy sauce labels."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying the label.",
+    "Do not change the beef cut without retesting tenderness and timing."
+  ],
+  "ingredientSourcing": [
+    "Choose cold intact lean beef from a reputable retailer."
+  ],
+  "makeAhead": "Prepare up to 2 days ahead and refrigerate submerged in braising liquid.",
+  "storage": "Refrigerate in shallow covered containers within 2 hours and use within 4 days pending qualified review.",
+  "reheating": "Reheat beef in its liquid to 165°F / 74°C until steaming.",
+  "leftovers": "Use properly refrigerated leftovers within the approved window.",
+  "servingSuggestions": [
+    "Serve in small portions with rice and fresh vegetables."
+  ],
+  "menuPairings": ["M15", "SF10", "F05", "SA05"],
+  "relatedRecipeIds": ["B19", "B21"],
+  "faq": [
+    {
+      "question": "Is 145°F enough for tenderness?",
+      "answer": "It is the whole-cut beef safety minimum with a rest, but jangjorim requires further simmering until test-cook-verified tender."
+    },
+    {
+      "question": "Why store it in liquid?",
+      "answer": "The braising liquid helps protect the shredded beef from drying."
+    }
+  ],
+  "seoTitle": "Jangjorim Korean Soy-Braised Beef",
+  "metaDescription": "Make Korean jangjorim with safely simmered, fork-tender shredded beef, soy-garlic braising liquid, thermometer checks, and shallow-container cooling.",
+  "primaryKeyword": "jangjorim recipe",
+  "secondaryTopics": ["Korean braised beef", "soy-braised banchan"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi jangjorim technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/jangjorim",
+    "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 20,
+  "cook": 85,
+  "source": "Maangchi jangjorim technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/jangjorim"
+}

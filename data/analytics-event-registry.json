@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "phase": 6,
+  "collectionEnabled": false,
+  "provider": null,
+  "globalProhibitedParameters": [
+    "email",
+    "name",
+    "phone",
+    "street_address",
+    "full_ip",
+    "user_id",
+    "free_text",
+    "raw_url_query"
+  ],
+  "events": [
+    {
+      "name": "recipe_view",
+      "consent": "analytics",
+      "allowedParameters": ["recipe_id", "category"]
+    },
+    {
+      "name": "recipe_complete",
+      "consent": "analytics",
+      "allowedParameters": ["recipe_id"]
+    },
+    {
+      "name": "jump_to_recipe",
+      "consent": "analytics",
+      "allowedParameters": ["recipe_id", "target_section"]
+    },
+    {
+      "name": "print_recipe",
+      "consent": "analytics",
+      "allowedParameters": ["recipe_id"]
+    },
+    {
+      "name": "servings_scaled",
+      "consent": "analytics",
+      "allowedParameters": ["recipe_id", "from_bucket", "to_bucket"]
+    },
+    {
+      "name": "menu_built",
+      "consent": "analytics",
+      "allowedParameters": ["guest_bucket", "menu_id"]
+    },
+    {
+      "name": "shopping_list_created",
+      "consent": "analytics",
+      "allowedParameters": ["guest_bucket", "item_count_bucket"]
+    },
+    {
+      "name": "video_start",
+      "consent": "analytics",
+      "allowedParameters": ["video_id", "recipe_id"]
+    },
+    {
+      "name": "video_50",
+      "consent": "analytics",
+      "allowedParameters": ["video_id", "recipe_id"]
+    },
+    {
+      "name": "video_complete",
+      "consent": "analytics",
+      "allowedParameters": ["video_id", "recipe_id"]
+    },
+    {
+      "name": "email_signup",
+      "consent": "marketing",
+      "allowedParameters": ["placement_id", "interest_tag_count"]
+    },
+    {
+      "name": "welcome_sequence_complete",
+      "consent": "marketing",
+      "allowedParameters": ["sequence_version"]
+    },
+    {
+      "name": "affiliate_click",
+      "consent": "marketing",
+      "allowedParameters": ["merchant_id", "module_id", "placement_id"]
+    },
+    {
+      "name": "bundle_view",
+      "consent": "analytics",
+      "allowedParameters": ["bundle_id"]
+    },
+    {
+      "name": "digital_product_view",
+      "consent": "analytics",
+      "allowedParameters": ["product_id"]
+    },
+    {
+      "name": "digital_purchase",
+      "consent": "marketing",
+      "allowedParameters": ["product_id", "currency", "value_bucket"]
+    },
+    {
+      "name": "class_waitlist_signup",
+      "consent": "marketing",
+      "allowedParameters": ["class_id", "placement_id"]
+    },
+    {
+      "name": "class_purchase",
+      "consent": "marketing",
+      "allowedParameters": ["class_id", "currency", "value_bucket"]
+    }
+  ]
+}

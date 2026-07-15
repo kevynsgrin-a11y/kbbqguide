@@ -1,0 +1,304 @@
+{
+  "contentStatus": "complete",
+  "id": "F06",
+  "title": "Asian Pear and Cucumber Salad",
+  "koreanName": "Bae Oi Saelleodeu",
+  "hangul": "배 오이 샐러드",
+  "romanization": "bae oi saelleodeu",
+  "category": "fresh",
+  "releaseCohort": "week-07",
+  "publicReleaseOrder": 56,
+  "canonicalSlug": "asian-pear-and-cucumber-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fresh/asian-pear-and-cucumber-salad/",
+  "shortDescription": "Crisp Asian pear and cucumber are cut into matchsticks and tossed with rice vinegar, lemon, scallion, and a restrained sweet-salty dressing.",
+  "culturalContext": "This is a contemporary Korean-inspired fresh salad rather than a traditional fixed dish. Pear variety, acid, chile, and herb additions vary; the descriptive Korean name requires review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "fresh side servings",
+  "prepTime": {
+    "minutes": 16,
+    "display": "16 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No rest"
+  },
+  "totalTime": {
+    "minutes": 16,
+    "display": "16 minutes"
+  },
+  "equipment": [
+    "Colander",
+    "Clean cutting board and knife",
+    "Salad spinner or clean towels",
+    "Large clean mixing bowl",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "salad",
+      "heading": "Pear and cucumber",
+      "ingredients": [
+        {
+          "id": "asian-pear",
+          "item": "Asian pear",
+          "metricAmount": 350,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "large pear",
+          "preparation": "washed, cored, and julienned",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "cucumber",
+          "item": "Korean or Persian cucumbers",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "small cucumbers",
+          "preparation": "washed and julienned",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "dressing",
+      "heading": "Light dressing",
+      "ingredients": [
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "lemon-juice",
+          "item": "fresh lemon juice",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 0.33,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean red pepper flakes",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Sort and wash",
+      "action": "Rinse pear, cucumbers, and scallion thoroughly under cool running water, even though the pear will be cored.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Produce is clean with damaged portions discarded.",
+      "safetyNote": "Use potable running water without soap or detergent.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Dry and cut",
+      "action": "Dry, core the pear, and julienne pear and cucumbers with a clean knife; slice scallion.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pieces are dry and evenly cut.",
+      "safetyNote": "Use clean ready-to-eat tools kept away from raw meat and seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Mix the dressing",
+      "action": "Whisk vinegar, lemon juice, sugar, salt, and optional gochugaru until sugar dissolves.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The dressing is uniform.",
+      "safetyNote": "Verify all packaged condiment allergen labels.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Toss at service",
+      "action": "Add pear, cucumber, and scallion and toss immediately before serving.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Ingredients are lightly coated and still crisp.",
+      "safetyNote": "Use clean hands or utensils.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Taste with a clean utensil",
+      "action": "Adjust only after using a clean tasting spoon once; do not return it to the bowl.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "Flavor is balanced without repeated tasting contact.",
+      "safetyNote": "Use a fresh spoon for every taste.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve immediately",
+      "action": "Transfer to a clean dish and serve immediately; refrigerate if service is delayed.",
+      "estimatedTime": "1 minute",
+      "temperature": "Cool",
+      "visualOrTactileCue": "The salad is crisp and not watery.",
+      "safetyNote": "Refrigerate at or below 40°F / 4°C and discard after unsafe holding.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this is a raw, ready-to-eat fresh side dish.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Pear and cucumber remain crisp",
+    "Dressing is clear and lightly coats",
+    "Salad has minimal released liquid"
+  ],
+  "foodSafetyNotes": [
+    "Wash produce under cool potable running water without soap or detergent.",
+    "Use clean hands, boards, knives, bowls, and serving ware for ready-to-eat food.",
+    "Keep washed produce separate from raw animal foods and their tools.",
+    "Refrigerate at or below 40°F / 4°C and serve promptly."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "No priority allergen is intentionally included, but verify packaged vinegar and gochugaru labels and prevent cross-contact."
+  },
+  "substitutions": [
+    "Use another crisp Asian pear variety only after checking ripeness and sweetness."
+  ],
+  "ingredientSourcing": [
+    "Choose a firm fragrant Asian pear and crisp unwaxed cucumbers without soft spots."
+  ],
+  "makeAhead": "Cut and dress immediately before service for best quality; dressing may be refrigerated 1 day ahead.",
+  "storage": "Best served immediately. Refrigerate components separately at or below 40°F / 4°C and discard dressed salad after unsafe holding.",
+  "reheating": "Do not reheat; this is a raw ready-to-eat dish.",
+  "leftovers": "Avoid retaining table-exposed dressed leftovers; use only clean, promptly refrigerated portions.",
+  "servingSuggestions": ["Serve as a cooling side with spicy grilled foods."],
+  "menuPairings": ["M09", "SF07", "B21", "SA01"],
+  "relatedRecipeIds": ["F05", "F07"],
+  "faq": [
+    {
+      "question": "Should I peel the pear?",
+      "answer": "This draft keeps the washed peel; test cooking may revise the texture choice."
+    },
+    {
+      "question": "Can it sit dressed?",
+      "answer": "Serve promptly because salt and acid draw water from the fruit and cucumber."
+    }
+  ],
+  "seoTitle": "Asian Pear and Cucumber Salad",
+  "metaDescription": "Make a crisp Asian pear and cucumber salad with rice vinegar and lemon, running-water washing, clean ready-to-eat tools, and prompt service.",
+  "primaryKeyword": "Asian pear cucumber salad",
+  "secondaryTopics": ["Korean-inspired fresh salad", "pear side dish"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Contemporary locked-title formulation; descriptive Korean naming and cultural framing require human review.",
+    "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 16,
+  "wash": "Rinse pear, cucumbers, and scallion thoroughly under cool running water, even though the pear will be cored.",
+  "cut": "Dry, core the pear, and julienne pear and cucumbers with a clean knife; slice scallion.",
+  "mix": "Whisk vinegar, lemon juice, sugar, salt, and optional gochugaru until sugar dissolves.",
+  "toss": "Add pear, cucumber, and scallion and toss immediately before serving.",
+  "cues": [
+    "Pear and cucumber remain crisp",
+    "Dressing is clear and lightly coats",
+    "Salad has minimal released liquid"
+  ],
+  "sourcing": [
+    "Choose a firm fragrant Asian pear and crisp unwaxed cucumbers without soft spots."
+  ],
+  "serving": ["Serve as a cooling side with spicy grilled foods."],
+  "source": "Contemporary locked-title formulation; descriptive Korean naming and cultural framing require human review."
+}

@@ -1,0 +1,384 @@
+{
+  "contentStatus": "complete",
+  "id": "SF11",
+  "title": "Doenjang-Glazed Grilled Black Cod",
+  "koreanName": "Doenjang Eun-daegu Gui",
+  "hangul": "된장 은대구구이",
+  "romanization": "doenjang eundaegu-gui",
+  "category": "seafood",
+  "releaseCohort": "week-07",
+  "publicReleaseOrder": 54,
+  "canonicalSlug": "doenjang-glazed-grilled-black-cod",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/doenjang-glazed-grilled-black-cod/",
+  "shortDescription": "Rich black cod portions are grilled in a basket with a savory-sweet doenjang glaze divided before raw-fish contact.",
+  "culturalContext": "Black cod, also sold as sablefish, is not true cod. This doenjang-glazed grilled version is a contemporary Korean-inspired adaptation requiring market-name and language review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 15,
+    "display": "15 minutes refrigerated"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "10 to 12 minutes"
+  },
+  "restTime": {
+    "minutes": 2,
+    "display": "2 minutes"
+  },
+  "totalTime": {
+    "minutes": 44,
+    "display": "About 45 minutes"
+  },
+  "equipment": [
+    "Separate raw-seafood cutting board",
+    "Paper towels",
+    "Two small bowls for raw-contact and reserved glaze",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Fish basket or perforated grill pan",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "fish",
+      "heading": "Black cod",
+      "ingredients": [
+        {
+          "id": "fish",
+          "item": "skin-on black cod (sablefish) fillet",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "cut into four even portions; pin bones removed",
+          "optional": false,
+          "allergenNotes": ["fish"]
+        }
+      ]
+    },
+    {
+      "id": "glaze",
+      "heading": "Doenjang glaze",
+      "ingredients": [
+        {
+          "id": "doenjang",
+          "item": "Korean fermented soybean paste",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect and thaw safely",
+      "action": "Inspect fish and packaging; thaw overnight in a covered container in the refrigerator if frozen.",
+      "estimatedTime": "Overnight if frozen",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Fish smells mild, flesh is firm, and packaging is intact.",
+      "safetyNote": "Reject sour, rancid, fishy, or ammonia odors and temperature-abused product.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Dry and portion",
+      "action": "Check for pin bones, portion on a dedicated board, and pat every surface dry.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Cold preparation",
+      "visualOrTactileCue": "Portions are even, dry, and free of detected pin bones.",
+      "safetyNote": "Keep raw fish and juices away from ready-to-eat food; wash hands and sanitize tools afterward.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Mix and divide the glaze",
+      "action": "Whisk doenjang, rice syrup, water, vinegar, garlic, and sesame oil smooth, then divide before handling fish.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The glaze is smooth and divided before raw contact.",
+      "safetyNote": "Keep the reserved finishing portion in a clean labeled bowl away from raw fish.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the grill",
+      "action": "Preheat a clean fish basket or perforated pan over medium heat and oil it lightly.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "The surface is hot, clean, and lightly oiled.",
+      "safetyNote": "Never use a fuel-burning grill indoors; follow electric-grill ventilation instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Place fish skin-side down, brush lightly with raw-contact glaze, cover and grill without turning until opaque and 145°F / 63°C; shield from flare-ups caused by rich fish oils.",
+      "estimatedTime": "10 to 12 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "Fish is opaque, separates easily, and reaches 145°F / 63°C in the thickest portion.",
+      "safetyNote": "Use clean tools after the final turn and verify temperature with a clean calibrated thermometer.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Finish and serve",
+      "action": "Transfer to a clean platter, brush only with the clean reserved glaze, rest 2 minutes, and serve promptly.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Hot",
+      "visualOrTactileCue": "The fish is glazed on a clean platter and served hot.",
+      "safetyNote": "Refrigerate within 2 hours and warn diners that pin bones may remain.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or approved indoor electric grill with a clean, lightly oiled fish basket or perforated pan over medium heat and an open cooler area.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest portion; visual cues supplement but do not replace thermometer verification.",
+  "visualDonenessCues": [
+    "Flesh turns opaque",
+    "Fish separates easily with gentle pressure",
+    "Thickest portion reaches 145°F / 63°C"
+  ],
+  "foodSafetyNotes": [
+    "Buy fish cold and keep at or below 40°F / 4°C.",
+    "Thaw in the refrigerator or by an FDA-approved rapid method and cook immediately.",
+    "Prevent raw-fish cross-contact and reserve finishing glaze before raw contact.",
+    "Cook to 145°F / 63°C and warn that pin bones may remain."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": true,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains fish, soy, wheat/gluten, and sesame; doenjang formulas vary, so verify the label."
+  },
+  "substitutions": [
+    "Use a verified gluten-free doenjang only after test-cook adjustment for salt and viscosity."
+  ],
+  "ingredientSourcing": [
+    "Confirm the product is black cod/sablefish, kept cold, with firm flesh and mild odor."
+  ],
+  "makeAhead": "Mix glaze up to 2 days ahead; divide it before raw contact. Portion and glaze fish only within the stated refrigerated window.",
+  "storage": "Refrigerate cooked fish in a shallow covered container within 2 hours and use within 3 days pending food-safety approval.",
+  "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming.",
+  "leftovers": "Use properly refrigerated leftovers within the approved window; discard table-exposed portions after unsafe holding.",
+  "servingSuggestions": ["Serve with rice and sharp or fresh banchan."],
+  "menuPairings": ["B10", "F03", "SA03", "D02"],
+  "relatedRecipeIds": ["SF10", "SF12"],
+  "faq": [
+    {
+      "question": "Is black cod a true cod?",
+      "answer": "No. Black cod is a market name for sablefish; confirm the label."
+    },
+    {
+      "question": "Why use a basket?",
+      "answer": "The rich delicate fillet can stick and break on open grates."
+    }
+  ],
+  "seoTitle": "Doenjang-Glazed Grilled Black Cod",
+  "metaDescription": "Grill doenjang-glazed black cod with market-name checks, divided glaze, cold-chain controls, a fish basket, and a verified 145°F / 63°C endpoint.",
+  "primaryKeyword": "doenjang grilled black cod",
+  "secondaryTopics": ["Korean-inspired sablefish", "fermented soybean glaze"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Contemporary locked-title formulation; black-cod market naming and Korean descriptive naming require human review.",
+    "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Fish is refrigerated on ice or frozen solid in intact packaging.",
+      "Odor is fresh and mild, never sour, rancid, fishy, or ammonia-like.",
+      "Flesh is firm without drying or discoloration at the edges."
+    ],
+    "thawing": "Thaw overnight in a covered refrigerator container. For rapid thawing, seal in a leakproof bag under cold water and cook immediately; never thaw on the counter.",
+    "cleaningOrShellPreparation": "Ask the seller to portion the fillet; inspect and remove detectable pin bones with clean tweezers, then sanitize the work area.",
+    "drying": "Pat all surfaces thoroughly dry with disposable paper towels and discard them immediately.",
+    "scoringOrSkewering": null,
+    "grillSurfacePreparation": "Preheat, clean, and lightly oil a fish basket or perforated grill pan.",
+    "stickingPrevention": "Keep skin on when available, dry thoroughly, oil lightly, and wait for the fish to release before turning.",
+    "approximateTime": "10 to 12 minutes depending on thickness and grill output; thermometer verification controls.",
+    "donenessCues": [
+      "Flesh is opaque and separates easily",
+      "Surface glaze is set but not burned",
+      "Thickest portion reaches 145°F / 63°C"
+    ],
+    "applicableTemperature": "145°F / 63°C in the thickest portion.",
+    "shellOpeningAndDiscardGuidance": null,
+    "crossContactNotes": [
+      "Use a dedicated raw-seafood board and utensils.",
+      "Reserve finishing glaze before raw-fish contact.",
+      "Use clean tools, thermometer, and platter for cooked fish."
+    ]
+  },
+  "fishHeading": "Black cod",
+  "fish": "skin-on black cod (sablefish) fillet",
+  "fishPrep": "cut into four even portions; pin bones removed",
+  "glazeHeading": "Doenjang glaze",
+  "glaze": [
+    {
+      "id": "doenjang",
+      "item": "Korean fermented soybean paste",
+      "metricAmount": 60,
+      "metricUnit": "g",
+      "customaryAmount": 0.25,
+      "customaryUnit": "cup",
+      "preparation": null,
+      "optional": false,
+      "allergenNotes": ["soy", "wheat/gluten; verify label"]
+    },
+    {
+      "id": "rice-syrup",
+      "item": "Korean rice syrup",
+      "metricAmount": 30,
+      "metricUnit": "ml",
+      "customaryAmount": 2,
+      "customaryUnit": "tablespoons",
+      "preparation": null,
+      "optional": false,
+      "allergenNotes": []
+    },
+    {
+      "id": "water",
+      "item": "water",
+      "metricAmount": 30,
+      "metricUnit": "ml",
+      "customaryAmount": 2,
+      "customaryUnit": "tablespoons",
+      "preparation": null,
+      "optional": false,
+      "allergenNotes": []
+    },
+    {
+      "id": "rice-vinegar",
+      "item": "unseasoned rice vinegar",
+      "metricAmount": 15,
+      "metricUnit": "ml",
+      "customaryAmount": 1,
+      "customaryUnit": "tablespoon",
+      "preparation": null,
+      "optional": false,
+      "allergenNotes": []
+    },
+    {
+      "id": "garlic",
+      "item": "garlic",
+      "metricAmount": 6,
+      "metricUnit": "g",
+      "customaryAmount": 2,
+      "customaryUnit": "cloves",
+      "preparation": "minced",
+      "optional": false,
+      "allergenNotes": []
+    },
+    {
+      "id": "sesame-oil",
+      "item": "toasted sesame oil",
+      "metricAmount": 5,
+      "metricUnit": "ml",
+      "customaryAmount": 1,
+      "customaryUnit": "teaspoon",
+      "preparation": null,
+      "optional": false,
+      "allergenNotes": ["sesame"]
+    }
+  ],
+  "mix": "Whisk doenjang, rice syrup, water, vinegar, garlic, and sesame oil smooth, then divide before handling fish.",
+  "grill": "Place fish skin-side down, brush lightly with raw-contact glaze, cover and grill without turning until opaque and 145°F / 63°C; shield from flare-ups caused by rich fish oils.",
+  "sourcing": [
+    "Confirm the product is black cod/sablefish, kept cold, with firm flesh and mild odor."
+  ],
+  "serving": ["Serve with rice and sharp or fresh banchan."],
+  "source": "Contemporary locked-title formulation; black-cod market naming and Korean descriptive naming require human review."
+}

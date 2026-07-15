@@ -1,0 +1,88 @@
+---
+import registryData from '../../data/url-registry.json';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import DisabledForm from '../components/DisabledForm.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd } from '../lib/seo';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_PARTNERSHIPS');
+---
+
+<BaseLayout
+  title="Brand Partnership Intake Preview"
+  description="A disabled brand-partnership intake framework with product fit, claim evidence, disclosure, rights, safety, privacy, and human-approval gates."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: '/' },
+      { name: 'Brand Partnerships', path },
+    ]),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[{ label: 'Home', href: '/' }, { label: 'Brand Partnerships' }]}
+      /><p class="eyebrow">Fit and evidence before deliverables</p><h1>
+        Brand partnership intake
+      </h1><p class="lede">
+        A future intake must surface the product, contracting entity, audience
+        fit, claims, compensation, timing, usage, exclusivity, platform rules,
+        and conflicts before a proposal is drafted.
+      </p>
+    </div>
+  </header>
+  <section class="section tinted">
+    <div class="shell support-grid">
+      <section class="support-card">
+        <h2>Good-fit signals</h2><p>
+          Relevant reader problem, complete claim support, transparent
+          compensation, realistic review time, clear rights, and acceptance of
+          editorial independence.
+        </p>
+      </section>
+      <section class="support-card">
+        <h2>Automatic stop signals</h2><p>
+          Hidden sponsorship, unsafe use, required positive verdict, invented
+          testing, unverifiable claims, pressure to omit limitations, unclear
+          ownership, or collection without consent.
+        </p>
+      </section>
+      <section class="support-card">
+        <h2>Information required</h2><p>
+          Legal entity, official contact, product/version, markets, evidence,
+          prohibited/required claims, deliverables, budget, dates, usage,
+          exclusivity, and approval workflow.
+        </p>
+      </section>
+      <section class="support-card">
+        <h2>Approval path</h2><p>
+          Fit screen → conflict check → product and claim evidence →
+          safety/cultural/legal review → proposal → contract → production →
+          content approval → marketing approval.
+        </p>
+      </section>
+    </div>
+  </section>
+  <section class="section">
+    <div class="shell reading-width">
+      <DisabledForm
+        formId="brand-intake"
+        title="Brand intake preview"
+        fields={[
+          { label: 'Organization' },
+          { label: 'Product and version' },
+          {
+            label: 'Claim evidence and requested deliverables',
+            type: 'textarea',
+          },
+          { label: 'Rights and timing', type: 'textarea' },
+        ]}
+        buttonLabel="Intake disabled"
+        explanation="No legal identity, contact endpoint, retention policy, conflict workflow, or commercial approval is configured."
+      />
+    </div>
+  </section>
+</BaseLayout>

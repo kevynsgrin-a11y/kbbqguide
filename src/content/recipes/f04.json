@@ -1,0 +1,296 @@
+{
+  "contentStatus": "complete",
+  "id": "F04",
+  "title": "Minari Muchim Water Parsley Salad",
+  "koreanName": "Minari Muchim",
+  "hangul": "미나리무침",
+  "romanization": "minari muchim",
+  "category": "fresh",
+  "releaseCohort": "week-03",
+  "publicReleaseOrder": 40,
+  "canonicalSlug": "minari-muchim-water-parsley-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fresh/minari-muchim-water-parsley-salad/",
+  "shortDescription": "Crisp water parsley is tossed just before serving with gochugaru, garlic, rice vinegar, soy sauce, and sesame.",
+  "culturalContext": "Minari muchim is a fresh Korean seasoned vegetable dish built around water parsley. Dressings, cut length, sweetness, and additions vary; this draft keeps the herb raw and crisp.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "fresh side servings",
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No rest"
+  },
+  "totalTime": {
+    "minutes": 15,
+    "display": "About 15 minutes"
+  },
+  "equipment": [
+    "Colander",
+    "Salad spinner or clean towels",
+    "Large mixing bowl",
+    "Clean cutting board and knife",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "salad",
+      "heading": "Water parsley salad",
+      "ingredients": [
+        {
+          "id": "minari",
+          "item": "fresh minari (Korean water parsley)",
+          "metricAmount": 250,
+          "metricUnit": "g",
+          "customaryAmount": 9,
+          "customaryUnit": "ounces",
+          "preparation": "tough ends trimmed; cut into 5 cm / 2-inch lengths",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean red pepper flakes (gochugaru)",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "clove",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Sort the minari",
+      "action": "Discard slimy, badly wilted, or damaged stems and leaves; trim tough ends.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Only crisp green stems and leaves remain.",
+      "safetyNote": "Discard spoiled produce rather than trying to wash it clean.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Wash under running water",
+      "action": "Rinse minari and scallion thoroughly under cool running water, separating stems so water reaches all surfaces. Do not use soap or detergent.",
+      "estimatedTime": "4 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "No visible soil remains.",
+      "safetyNote": "Use potable running water and a clean colander.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Dry and cut",
+      "action": "Drain and dry thoroughly, then cut on a clean board with a clean knife.",
+      "estimatedTime": "4 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The greens are dry enough that dressing will cling.",
+      "safetyNote": "Keep ready-to-eat produce away from raw meat, seafood, eggs, boards, and utensils.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Mix the dressing",
+      "action": "Stir gochugaru, vinegar, soy sauce, garlic, sugar, sesame oil, and sesame seeds in a clean bowl.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The sugar is mostly dissolved.",
+      "safetyNote": "Verify soy sauce and sesame allergen labels.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Toss at service",
+      "action": "Add minari and scallion and toss gently just before serving.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "Leaves are lightly coated and stems remain crisp.",
+      "safetyNote": "Use clean hands or utensils for this ready-to-eat salad.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve immediately",
+      "action": "Transfer to a clean dish and serve at once.",
+      "estimatedTime": "1 minute",
+      "temperature": "Cool",
+      "visualOrTactileCue": "The salad is bright, crisp, and not watery.",
+      "safetyNote": "Refrigerate promptly if service is delayed; discard after unsafe time at room temperature.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this is a raw, ready-to-eat fresh side dish.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Minari is clean and free of visible soil",
+    "Greens are dry before dressing",
+    "Stems remain crisp after tossing"
+  ],
+  "foodSafetyNotes": [
+    "Discard slimy or spoiled minari.",
+    "Wash under cool potable running water without soap or detergent.",
+    "Use clean boards, knives, hands, bowls, and serving ware for ready-to-eat produce.",
+    "Keep refrigerated at or below 40°F / 4°C and toss immediately before service."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; prevent cross-contact with raw animal foods and verify labels."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying the label.",
+    "Adjust gochugaru downward for a milder salad."
+  ],
+  "ingredientSourcing": [
+    "Choose crisp, bright-green minari without slime, yellowing, or strong off odors.",
+    "Transport refrigerated and store unwashed until preparation."
+  ],
+  "makeAhead": "Wash and dry the minari shortly before service; dressing may be mixed 1 day ahead and refrigerated separately.",
+  "storage": "Best served immediately. Refrigerate undressed greens and dressing separately at or below 40°F / 4°C; discard dressed salad if wilted or held unsafely.",
+  "reheating": "Do not reheat; this is a fresh ready-to-eat dish.",
+  "leftovers": "For best quality and safer handling, make only what will be served and avoid keeping table-exposed dressed leftovers.",
+  "servingSuggestions": ["Serve immediately beside rich grilled pork or beef."],
+  "menuPairings": ["M07", "SF05", "B19", "SA04"],
+  "relatedRecipeIds": ["F03", "F05"],
+  "faq": [
+    {
+      "question": "Can I wash minari with soap?",
+      "answer": "No. Rinse produce thoroughly under cool running water without soap or detergent."
+    },
+    {
+      "question": "Why toss at the last minute?",
+      "answer": "Minari stays crisper and releases less water when dressed immediately before serving."
+    }
+  ],
+  "seoTitle": "Minari Muchim Water Parsley Salad",
+  "metaDescription": "Make crisp Korean minari muchim with gochugaru, vinegar, soy, and sesame, plus running-water washing and ready-to-eat handling guidance.",
+  "primaryKeyword": "minari muchim recipe",
+  "secondaryTopics": ["Korean water parsley salad", "fresh Korean banchan"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi minari-muchim technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/minari-muchim",
+    "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

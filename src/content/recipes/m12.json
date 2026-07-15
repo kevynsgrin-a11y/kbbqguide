@@ -1,0 +1,368 @@
+{
+  "contentStatus": "complete",
+  "id": "M12",
+  "title": "Doenjang-Garlic Moksal Gui",
+  "koreanName": "Doenjang Moksal Gui",
+  "hangul": "된장 목살구이",
+  "romanization": "doenjang moksal-gui",
+  "category": "grilled-meat",
+  "releaseCohort": "week-03",
+  "publicReleaseOrder": 37,
+  "canonicalSlug": "doenjang-garlic-moksal-gui",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/doenjang-garlic-moksal-gui/",
+  "shortDescription": "Pork collar steaks receive a thin doenjang-garlic marinade before controlled grilling, temperature verification, and a full rest.",
+  "culturalContext": "Moksal refers to pork neck or collar, though retail cutting and naming vary. This doenjang-garlic grilled version is a contemporary editorial formulation requiring Korean-language and cultural review.",
+  "adaptationLabel": "restaurant-style",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 120,
+    "display": "120 minutes refrigerated"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "12 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 155,
+    "display": "About 155 minutes"
+  },
+  "equipment": [
+    "Separate raw-meat cutting board",
+    "Nonreactive covered container",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Long tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "pork",
+      "heading": "Pork",
+      "ingredients": [
+        {
+          "id": "pork",
+          "item": "boneless pork collar or neck",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "cut across the grain into 1 cm / 3/8-inch steaks",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "seasoning",
+      "heading": "Doenjang-garlic marinade",
+      "ingredients": [
+        {
+          "id": "doenjang",
+          "item": "Korean fermented soybean paste (doenjang)",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 5,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "finely chopped",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "doenjang",
+        "item": "Korean fermented soybean paste (doenjang)",
+        "metricAmount": 60,
+        "metricUnit": "g",
+        "customaryAmount": 0.25,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten; verify label"]
+      },
+      {
+        "id": "rice-syrup",
+        "item": "Korean rice syrup",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 15,
+        "metricUnit": "g",
+        "customaryAmount": 5,
+        "customaryUnit": "cloves",
+        "preparation": "minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "scallions",
+        "preparation": "finely chopped",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "water",
+        "item": "water",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 165 ml / 2/3 cup marinade",
+    "meatWeightCovered": "900 g / 2 pounds pork",
+    "mixOrder": [
+      "Loosen doenjang with water and rice syrup.",
+      "Mix in garlic, scallions, and sesame oil.",
+      "Coat chilled pork in a thin layer."
+    ],
+    "marinationVessel": "Nonreactive covered container kept at or below 40°F / 4°C",
+    "refrigeratedMarinationTimeRange": "1 to 4 hours under refrigeration.",
+    "maximumPracticalMarinationWarning": "Do not exceed 8 hours without test-cook approval because salt and fermentation can dominate.",
+    "reserveBeforeRawContactInstruction": "Reserve any serving sauce before the marinade contacts raw pork.",
+    "rawContactDiscardOrReboilInstruction": "Discard raw-contact marinade; do not reuse it on cooked pork.",
+    "substitutions": [
+      "Use a verified gluten-free doenjang only if its flavor and salt level are adjusted during test cooking."
+    ],
+    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare safely",
+      "action": "Trim and portion the boneless pork collar or neck on a dedicated raw-meat board, then wash hands.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Refrigerated until needed",
+      "visualOrTactileCue": "Pieces are even in thickness.",
+      "safetyNote": "Keep raw pork and its juices away from ready-to-eat foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the seasoning",
+      "action": "Whisk doenjang, rice syrup, garlic, scallions, sesame oil, and water until spreadable.",
+      "estimatedTime": "4 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The seasoning is homogeneous.",
+      "safetyNote": "Reserve any table sauce before raw-pork contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate under refrigeration",
+      "action": "Coat the pork, cover, and marinate for 2 hours in the refrigerator.",
+      "estimatedTime": "120 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "A thin paste coats every steak.",
+      "safetyNote": "Never marinate pork at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the grill",
+      "action": "Preheat a clean outdoor grill or manufacturer-approved indoor electric grill and lightly oil the grate.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "The grate is hot and clean.",
+      "safetyNote": "Do not use a fuel-burning grill indoors; follow the appliance manufacturer’s ventilation instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Scrape off heavy excess paste and grill, turning as needed, until browned and the thickest steak reaches at least 145°F / 63°C.",
+      "estimatedTime": "8 to 12 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "The thickest pieces reach at least 145°F / 63°C on a calibrated thermometer.",
+      "safetyNote": "Use clean tongs after the final turn and never place cooked pork on the raw-meat platter.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and serve",
+      "action": "Transfer to a clean platter and rest 3 minutes before slicing or serving.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "Juices settle during the full 3-minute rest.",
+      "safetyNote": "Whole cuts of pork require 145°F / 63°C followed by a 3-minute rest.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or a manufacturer-approved indoor electric grill on a heat-safe surface. Preheat, clean, and lightly oil the grate; keep raw and cooked zones and utensils separate.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest part, followed by a 3-minute rest for whole cuts of pork.",
+  "visualDonenessCues": [
+    "Edges are browned and lightly charred",
+    "Surface is sizzling, not wet with raw marinade",
+    "Thermometer confirms 145°F / 63°C before the 3-minute rest"
+  ],
+  "foodSafetyNotes": [
+    "Keep raw pork refrigerated at or below 40°F / 4°C until cooking.",
+    "Prevent raw-pork juices and utensils from contacting cooked food or banchan.",
+    "Cook whole cuts of pork to at least 145°F / 63°C and rest 3 minutes.",
+    "Never operate charcoal, gas, or other fuel-burning grills indoors."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; doenjang formulas vary, so verify the label."
+  },
+  "substitutions": [
+    "Use a verified gluten-free doenjang only if its flavor and salt level are adjusted during test cooking."
+  ],
+  "ingredientSourcing": [
+    "Choose cold boneless pork collar or neck from a reputable retailer with intact packaging.",
+    "Check every prepared seasoning label for allergens."
+  ],
+  "makeAhead": "Mix marinade up to 2 days ahead; marinate pork only within the stated refrigerated range.",
+  "storage": "Refrigerate cooked pork in a shallow covered container within 2 hours and use within 4 days pending food-safety approval.",
+  "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
+  "leftovers": "Use properly refrigerated leftovers in rice bowls or lettuce wraps within the approved storage window.",
+  "servingSuggestions": [
+    "Slice across the grain and serve with lettuce, rice, and crisp banchan."
+  ],
+  "menuPairings": ["B12", "F02", "SA02", "D02"],
+  "relatedRecipeIds": ["M11", "M13"],
+  "faq": [
+    {
+      "question": "What is moksal?",
+      "answer": "Moksal refers to pork neck or collar; retail cutting and naming vary."
+    },
+    {
+      "question": "Why remove excess marinade?",
+      "answer": "A thin coating browns more evenly and is less likely to burn."
+    }
+  ],
+  "seoTitle": "Doenjang-Garlic Moksal Gui Recipe",
+  "metaDescription": "Grill Korean pork collar with a doenjang-garlic marinade, controlled heat, thermometer verification, cross-contact controls, and rest.",
+  "primaryKeyword": "moksal gui recipe",
+  "secondaryTopics": ["pork collar barbecue", "doenjang marinade"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "The locked moksal-doenjang concept is an editorial draft; general Korean pork-grilling workflow compared with https://www.maangchi.com/recipe/samgyeopsal-gui on 2026-07-14.",
+    "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

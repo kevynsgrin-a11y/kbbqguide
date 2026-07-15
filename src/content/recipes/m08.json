@@ -1,0 +1,457 @@
+{
+  "contentStatus": "complete",
+  "id": "M08",
+  "title": "Neobiani Royal-Style Grilled Beef",
+  "koreanName": "Neobiani",
+  "hangul": "너비아니",
+  "romanization": "neobiani",
+  "category": "grilled-meat",
+  "releaseCohort": "week-01",
+  "publicReleaseOrder": 29,
+  "canonicalSlug": "neobiani-royal-style-grilled-beef",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/neobiani-royal-style-grilled-beef/",
+  "shortDescription": "Broad, thin pieces of tenderized beef are marinated with pear, soy sauce, garlic, scallion, sesame, and black pepper, then grilled quickly and cut for serving.",
+  "culturalContext": "Neobiani is commonly described as a broad, tenderized, marinated beef preparation associated with Korean court-style cooking and later formal presentations. Historical and royal-cuisine claims require specialist review; this draft focuses on the practical cut, marinade, and grill method.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": { "minutes": 30, "display": "30 minutes" },
+  "marinateTime": { "minutes": 120, "display": "2 to 8 hours" },
+  "cookTime": { "minutes": 10, "display": "8 to 10 minutes" },
+  "restTime": { "minutes": 3, "display": "3 minutes" },
+  "totalTime": {
+    "minutes": 163,
+    "display": "About 2 hours 45 minutes at minimum"
+  },
+  "equipment": [
+    "Chef’s knife and separate raw-meat cutting board",
+    "Meat mallet or rolling pin",
+    "Nonreactive bowl or food-safe bag",
+    "Small clean reserve-sauce bowl",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Long-handled tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "beef",
+      "heading": "Beef",
+      "ingredients": [
+        {
+          "id": "beef-short-rib-meat",
+          "item": "boneless beef short rib, ribeye, or sirloin",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "cut across the grain into broad 6 mm / 1/4-inch slices and lightly pounded",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "pear-soy-marinade",
+      "heading": "Pear-soy marinade",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "korean-pear",
+          "item": "Korean pear",
+          "metricAmount": 120,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": "peeled and finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.33,
+          "customaryUnit": "cup",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "brown-sugar",
+          "item": "brown sugar",
+          "metricAmount": 25,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "finely chopped",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": "lightly crushed",
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "soy-sauce",
+        "item": "soy sauce",
+        "metricAmount": 60,
+        "metricUnit": "ml",
+        "customaryAmount": 0.25,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "korean-pear",
+        "item": "Korean pear",
+        "metricAmount": 120,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "cup",
+        "preparation": "peeled and finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "onion",
+        "item": "yellow onion",
+        "metricAmount": 60,
+        "metricUnit": "g",
+        "customaryAmount": 0.33,
+        "customaryUnit": "cup",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "brown-sugar",
+        "item": "brown sugar",
+        "metricAmount": 25,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "rice-syrup",
+        "item": "Korean rice syrup",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": true,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 18,
+        "metricUnit": "g",
+        "customaryAmount": 6,
+        "customaryUnit": "cloves",
+        "preparation": "minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "scallions",
+        "preparation": "finely chopped",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "sesame-seeds",
+        "item": "toasted sesame seeds",
+        "metricAmount": 9,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": "lightly crushed",
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "black-pepper",
+        "item": "ground black pepper",
+        "metricAmount": 1,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "about 330 ml / 1 1/3 cups",
+    "meatWeightCovered": "680 g / 1 1/2 pounds sliced beef",
+    "mixOrder": [
+      "Dissolve brown sugar in soy sauce",
+      "Stir in grated pear and onion",
+      "Add garlic, scallions, sesame oil, sesame seeds, black pepper, and optional rice syrup"
+    ],
+    "marinationVessel": "Covered nonreactive bowl or food-safe zip bag set in a rimmed tray",
+    "refrigeratedMarinationTimeRange": "2 to 8 hours at or below 40°F / 4°C",
+    "maximumPracticalMarinationWarning": "Do not exceed 12 hours in this pear-forward draft; extended fruit-enzyme exposure can make thin beef surfaces mushy.",
+    "reserveBeforeRawContactInstruction": "Reserve 60 ml / 1/4 cup marinade in a clean covered bowl before adding beef if a cooked serving glaze is desired.",
+    "rawContactDiscardOrReboilInstruction": "Discard all marinade that touched raw beef; do not brush it onto cooked meat. Any separately reserved clean portion may be boiled in a saucepan before service.",
+    "substitutions": [
+      "Asian pear may replace Korean pear.",
+      "Use verified gluten-free tamari only after checking the label."
+    ],
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten unless certified alternatives are used",
+      "sesame"
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Slice and tenderize",
+      "action": "Keep beef cold. Cut across the grain into broad 6 mm / 1/4-inch slices, cover with parchment, and pound lightly to an even 4 mm / 3/16-inch thickness without tearing.",
+      "estimatedTime": "15 minutes",
+      "temperature": "Keep at or below 40°F / 4°C",
+      "visualOrTactileCue": "Pieces are broad, even, and flexible with visible surface scoring from the mallet.",
+      "safetyNote": "Do not rinse raw beef; use a dedicated board and wash hands and tools after contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix and reserve marinade",
+      "action": "Dissolve sugar in soy sauce, then add pear, onion, garlic, scallions, sesame oil, sesame seeds, pepper, and optional rice syrup. Reserve 60 ml / 1/4 cup in a clean bowl before raw contact.",
+      "estimatedTime": "8 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Sugar is dissolved and the marinade is evenly pulpy.",
+      "safetyNote": "Label and refrigerate the clean reserve immediately; never confuse it with raw-contact marinade.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate cold",
+      "action": "Coat beef thoroughly in the remaining marinade, cover, set over a rimmed tray, and refrigerate 2 to 8 hours.",
+      "estimatedTime": "2 to 8 hours",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Every surface has a thin even coating and the beef remains cold.",
+      "safetyNote": "Never marinate on the counter; discard all marinade that touched raw beef.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat safely",
+      "action": "Preheat a clean outdoor grill or approved indoor electric grill to medium-high. Establish separate raw and cooked utensil zones.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium-high, about 425°F / 218°C surface",
+      "visualOrTactileCue": "Grates are hot, scrubbed, and lightly oiled; clean platter and tongs are ready.",
+      "safetyNote": "Never use charcoal, propane, or other fuel-burning grills indoors or in enclosed spaces.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill in batches",
+      "action": "Lift beef from marinade, allowing excess to drip back into the raw container. Grill without crowding, about 2 to 3 minutes per side, moving pieces away from flare-ups.",
+      "estimatedTime": "8 to 10 minutes total",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Edges caramelize, surfaces brown, and the center remains moist without raw-looking patches.",
+      "safetyNote": "Use raw tongs until the final turn, then switch to clean tongs; sugary marinade can flare and burn.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Verify and rest",
+      "action": "Check representative pieces in the thickest portion with a calibrated thermometer. Move beef to a clean platter only after it reaches 145°F / 63°C, then rest 3 minutes. If using the clean reserve, boil it before spooning lightly over the rested beef.",
+      "estimatedTime": "3 minutes rest",
+      "temperature": "145°F / 63°C plus 3-minute rest",
+      "visualOrTactileCue": "Beef is browned, thermometer-verified, and juices settle during the rest.",
+      "safetyNote": "Thin pieces are difficult to probe; stack two representative pieces if needed without understating the required temperature.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or manufacturer-approved indoor electric grill with working ventilation. Preheat to medium-high, oil lightly, create raw and cooked zones, and keep a clean thermometer, tongs, and platter ready.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest practical portion, followed by a 3-minute rest",
+  "visualDonenessCues": [
+    "Broad slices are caramelized at the edges",
+    "No raw-looking translucent areas remain",
+    "Representative thick portions reach 145°F / 63°C before a 3-minute rest"
+  ],
+  "foodSafetyNotes": [
+    "Do not rinse raw beef and prevent raw juices from contacting ready-to-eat foods.",
+    "Marinate only under refrigeration at or below 40°F / 4°C.",
+    "Reserve any serving sauce before raw contact and discard raw-contact marinade.",
+    "Use separate raw and cooked utensils and a clean platter.",
+    "Verify 145°F / 63°C in the thickest practical portion and rest 3 minutes."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify all packaged labels and protect the grill and utensils from allergen cross-contact."
+  },
+  "substitutions": [
+    "Boneless ribeye or sirloin may replace short-rib meat when sliced and pounded evenly.",
+    "Use only verified gluten-free tamari for a gluten-free adaptation."
+  ],
+  "ingredientSourcing": [
+    "Ask for boneless short-rib meat or well-marbled beef that can be cut into broad slices.",
+    "Choose a fragrant ripe Korean or Asian pear without bruised flesh."
+  ],
+  "makeAhead": "Mix marinade up to 1 day ahead and refrigerate. Slice and marinate beef no more than 8 hours before cooking under this draft.",
+  "storage": "Refrigerate cooked beef in a shallow airtight container within 2 hours and use within 4 days, consistent with general cooked-leftover guidance pending review.",
+  "reheating": "Reheat once in a covered skillet with a spoonful of water until steaming, then uncover briefly; avoid repeated cooling and reheating.",
+  "leftovers": "Slice properly refrigerated leftovers for a rice bowl or lettuce wrap within the approved storage window.",
+  "servingSuggestions": [
+    "Cut broad pieces into bite-size sections after resting",
+    "Serve with rice, ssam greens, and a separately portioned sauce"
+  ],
+  "menuPairings": ["B08", "F08", "SA03", "D03"],
+  "relatedRecipeIds": ["M07", "M09"],
+  "faq": [
+    {
+      "question": "Why pound the beef?",
+      "answer": "Gentle pounding evens the thickness, broadens the pieces, and helps them cook quickly without tearing."
+    },
+    {
+      "question": "Can raw marinade become sauce?",
+      "answer": "Discard raw-contact marinade. Reserve a portion before adding beef and boil that clean reserve before serving if desired."
+    }
+  ],
+  "seoTitle": "Neobiani Royal-Style Korean Grilled Beef",
+  "metaDescription": "Make broad pear-soy marinated neobiani beef with tenderizing, grilling, raw-contact controls, and a verified 145°F temperature plus rest.",
+  "primaryKeyword": "neobiani royal style grilled beef",
+  "secondaryTopics": [
+    "Korean grilled beef",
+    "royal cuisine beef",
+    "pear soy beef marinade"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "raw-meat safety",
+    "temperature verification",
+    "recipe card"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Preparation and cultural comparison: https://www.koreanbapsang.com/neobiani-korean-marinated-beef-slices/ (direct retrieval unavailable during drafting; URL retained for human verification).",
+    "Whole-beef safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Draft synthesized for the locked title; not test-cooked. Royal-cuisine history, Korean-language, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

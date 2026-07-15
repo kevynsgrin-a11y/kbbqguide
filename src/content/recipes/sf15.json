@@ -1,0 +1,293 @@
+{
+  "contentStatus": "complete",
+  "id": "SF15",
+  "title": "Jogae Gui Grilled Clams",
+  "koreanName": "Jogae Gui",
+  "hangul": "조개구이",
+  "romanization": "jogae-gui",
+  "category": "seafood",
+  "releaseCohort": "week-12",
+  "publicReleaseOrder": 74,
+  "canonicalSlug": "jogae-gui-grilled-clams",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jogae-gui-grilled-clams/",
+  "shortDescription": "Live hard-shell clams are scrubbed, grilled covered until they open, and finished with garlic-scallion butter; every non-opening clam is discarded.",
+  "culturalContext": "Jogae gui broadly means grilled shellfish and may include varied species, table-grill service, sauces, and coastal restaurant presentations. This draft narrows the method to sourced live hard-shell clams and requires species-specific review.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 10,
+    "display": "6 to 10 minutes"
+  },
+  "restTime": {
+    "minutes": 2,
+    "display": "2 minutes"
+  },
+  "totalTime": {
+    "minutes": 37,
+    "display": "About 35 to 40 minutes"
+  },
+  "equipment": [
+    "Colander",
+    "Clean stiff brush",
+    "Outdoor grill with lid",
+    "Grill-safe tray",
+    "Long tongs",
+    "Clean serving bowl"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "clams",
+      "heading": "Clams and garlic-scallion finish",
+      "ingredients": [
+        {
+          "id": "live-clams",
+          "item": "live hard-shell clams from an approved source",
+          "metricAmount": 24,
+          "metricUnit": "count",
+          "customaryAmount": 24,
+          "customaryUnit": "clams",
+          "preparation": "shells intact and closed or closing when tapped",
+          "optional": false,
+          "allergenNotes": ["shellfish"]
+        },
+        {
+          "id": "oil",
+          "item": "neutral oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "butter",
+          "item": "unsalted butter",
+          "metricAmount": 28,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["dairy"]
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Verify source and life",
+      "action": "Check the harvest tag or source label; discard cracked clams and any open clam that does not close when tapped.",
+      "estimatedTime": "5 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Only intact, live clams remain.",
+      "safetyNote": "Keep the source tag or label and buy only from an approved supplier.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Scrub briefly",
+      "action": "Scrub shells under cool running water and drain; do not soak in fresh water.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Shell surfaces are free of grit.",
+      "safetyNote": "Prevent shellfish liquid from contacting ready-to-eat food.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Prepare finish",
+      "action": "Mix butter, garlic, scallions, and optional gochugaru in a clean bowl.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Butter mixture is uniform.",
+      "safetyNote": "Keep the clean finishing mixture away from raw shellfish and utensils.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat and arrange",
+      "action": "Preheat grill to medium-high, place clams hinge-side down on a grill-safe tray, and close the lid.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Medium-high heat",
+      "visualOrTactileCue": "Clams sit steadily in one layer.",
+      "safetyNote": "Use heatproof gloves and keep the grill outdoors due to heat and smoke.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Cook until open",
+      "action": "Cook 6 to 10 minutes, removing each clam with clean tongs as it opens fully.",
+      "estimatedTime": "6 to 10 minutes",
+      "temperature": "Covered medium-high grill",
+      "visualOrTactileCue": "Shells open and clam meat is opaque and firm.",
+      "safetyNote": "Discard every clam that does not open during cooking; never pry it open to eat.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Finish and serve",
+      "action": "Add a small amount of clean garlic-scallion butter to opened clams, heat 1 minute, and serve immediately in a clean bowl.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Hot",
+      "visualOrTactileCue": "Butter melts and clams remain steaming hot.",
+      "safetyNote": "Shells and trapped liquid are extremely hot; warn diners and discard chipped shell pieces.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor covered grill at medium-high heat with clams in a stable grill-safe tray; segregate raw-shellfish tools from clean serving tools.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Shell opens during cooking",
+    "Meat is opaque and firm",
+    "Any non-opening clam is discarded"
+  ],
+  "foodSafetyNotes": [
+    "Retain the harvest tag or source label and use only live shellfish from an approved source.",
+    "Discard cracked clams and any clam that is open before cooking and does not close when tapped.",
+    "Cook until shells open; discard every non-opening clam.",
+    "Higher-risk people should avoid raw or undercooked shellfish; this draft serves clams fully cooked.",
+    "Prevent raw shellfish and liquid from contacting ready-to-eat food."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": false,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": true,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Verify every packaged-ingredient label and segregate tools for diners with allergies."
+  },
+  "substitutions": [
+    "Do not substitute a different shellfish species without species-specific handling review.",
+    "Use a verified dairy-free finishing fat if needed."
+  ],
+  "ingredientSourcing": [
+    "Buy live clams cold from an approved source with a harvest tag or source label.",
+    "Reject cracked shells, off odors, or clams that fail the tap test."
+  ],
+  "makeAhead": "Mix the finish up to 1 day ahead; clean clams immediately before cooking.",
+  "storage": "Store live clams at or below 40°F / 4°C in a breathable container; do not seal airtight or submerge in fresh water.",
+  "reheating": "Reheating can toughen clams; if retained, reheat rapidly to 165°F / 74°C and discard any questionable shellfish.",
+  "leftovers": "Remove cooked meat from shells, refrigerate within 2 hours in a shallow covered container, and use within 1 day.",
+  "servingSuggestions": [
+    "Serve immediately with a bowl for empty shells.",
+    "Warn diners about hot shells and possible fragments."
+  ],
+  "menuPairings": ["B14", "F07", "SA02", "D01"],
+  "relatedRecipeIds": ["SF14", "SF01"],
+  "faq": [
+    {
+      "question": "What if a clam stays closed?",
+      "answer": "Discard it. Do not pry open or eat a clam that failed to open during cooking."
+    },
+    {
+      "question": "Should I soak clams in fresh water?",
+      "answer": "No. This draft uses a brief scrub under running water and no fresh-water soak."
+    }
+  ],
+  "seoTitle": "Jogae Gui Korean Grilled Clams",
+  "metaDescription": "Prepare live hard-shell clams from an approved source, grill until each shell opens, discard non-openers, and prevent shellfish cross-contact.",
+  "primaryKeyword": "jogae gui grilled clams",
+  "secondaryTopics": [
+    "Korean grilled shellfish",
+    "live clam safety",
+    "garlic scallion butter"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe-header",
+    "ingredient-list",
+    "instructions",
+    "food-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Seafood handling basis: https://www.fda.gov/consumers/consumer-updates/fresh-and-frozen-seafood-selecting-and-serving-it-safely",
+    "Temperature and shell-opening basis: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Approved source with harvest tag or source label",
+      "Shells intact and closed, or closing when tapped",
+      "Fresh ocean scent without sour or ammonia odor"
+    ],
+    "thawing": "Not applicable to this live-shellfish draft; do not substitute frozen clams without a separate method.",
+    "cleaningOrShellPreparation": "Scrub under cool running water immediately before cooking; do not soak in fresh water.",
+    "drying": "Drain in a clean colander; do not towel raw shellfish with reusable cloth.",
+    "scoringOrSkewering": null,
+    "grillSurfacePreparation": "Preheat an outdoor covered grill and use a clean, stable grill-safe tray.",
+    "stickingPrevention": "A stable tray keeps shells upright; no oil is needed on shells.",
+    "approximateTime": "6 to 10 minutes, removing clams individually as they open.",
+    "donenessCues": ["Shell opens during cooking", "Meat is opaque and firm"],
+    "applicableTemperature": null,
+    "shellOpeningAndDiscardGuidance": "Remove clams as they open and discard every clam that does not open during cooking; never pry a non-opening clam open to eat.",
+    "crossContactNotes": [
+      "Separate raw-shellfish colander, brush, tray, and tongs from clean serviceware.",
+      "Wash hands and sanitize surfaces after raw-shellfish contact.",
+      "Keep finishing butter clean and free of raw-shellfish contact."
+    ]
+  }
+}

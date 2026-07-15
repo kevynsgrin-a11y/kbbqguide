@@ -1,0 +1,301 @@
+{
+  "contentStatus": "complete",
+  "id": "B10",
+  "title": "Dubu Jorim Braised Tofu",
+  "koreanName": "Dubu Jorim",
+  "hangul": "두부조림",
+  "romanization": "dubu jorim",
+  "category": "banchan",
+  "releaseCohort": "week-01",
+  "publicReleaseOrder": 31,
+  "canonicalSlug": "dubu-jorim-braised-tofu",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/dubu-jorim-braised-tofu/",
+  "shortDescription": "Firm tofu is pan-fried until golden, then briefly braised in a savory soy, garlic, scallion, and gochugaru sauce.",
+  "culturalContext": "Dubu jorim is a Korean tofu side dish in the jorim family of seasoned braises. Seasoning balance, aromatics, chile level, and whether the tofu is fried first vary by household.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "totalTime": {
+    "minutes": 40,
+    "display": "About 40 minutes"
+  },
+  "equipment": [
+    "Nonstick or well-seasoned skillet with lid",
+    "Paper towels or clean kitchen towel",
+    "Thin spatula",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "tofu",
+      "heading": "Tofu",
+      "ingredients": [
+        {
+          "id": "firm-tofu",
+          "item": "firm tofu",
+          "metricAmount": 450,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "pound",
+          "preparation": "drained and cut into 1 cm / 3/8-inch slabs",
+          "optional": false,
+          "allergenNotes": ["soy"]
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral cooking oil",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "braising-sauce",
+      "heading": "Braising sauce",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean red pepper flakes (gochugaru)",
+          "metricAmount": 7,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Drain and dry",
+      "action": "Drain the tofu, cut it into even slabs, and blot every surface dry.",
+      "estimatedTime": "10 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The tofu surfaces feel dry and the slabs remain intact.",
+      "safetyNote": "Drying limits splatter when tofu meets hot oil.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the sauce",
+      "action": "Combine soy sauce, water, gochugaru, garlic, half the scallions, sesame oil, and sesame seeds in a clean bowl.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The sauce is evenly mixed.",
+      "safetyNote": "Check soy sauce labels for wheat/gluten and sesame declarations.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Brown the first side",
+      "action": "Heat oil over medium heat, add tofu in one layer, and cook without moving until golden underneath.",
+      "estimatedTime": "5 to 6 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "The underside is evenly golden and releases from the pan.",
+      "safetyNote": "Lower tofu away from you and protect exposed skin from hot-oil splatter.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Turn and brown",
+      "action": "Turn with a thin spatula and brown the second side.",
+      "estimatedTime": "4 to 5 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "Both broad sides are golden.",
+      "safetyNote": "Turn gently to avoid splashing hot oil.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Braise briefly",
+      "action": "Pour sauce around the tofu, cover partly, and simmer until the sauce reduces, spooning it over the slabs once.",
+      "estimatedTime": "5 to 7 minutes",
+      "temperature": "Medium-low simmer",
+      "visualOrTactileCue": "The tofu is steaming and a small amount of sauce clings to it.",
+      "safetyNote": "Open the lid away from your face.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Finish and store",
+      "action": "Top with remaining scallions, rest 5 minutes, and transfer to a clean dish.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "The sauce has settled into a glossy coating.",
+      "safetyNote": "Refrigerate within 2 hours in a shallow covered container.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is pan-fried and braised on the stovetop.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Both broad sides are golden",
+    "Sauce is reduced but not dry",
+    "Tofu is hot and steaming throughout"
+  ],
+  "foodSafetyNotes": [
+    "Blot tofu dry before adding it to hot oil to reduce splatter.",
+    "Use separate clean utensils and serving ware after cooking.",
+    "Refrigerate within 2 hours at or below 40°F / 4°C.",
+    "Declare soy, wheat/gluten, and sesame allergens."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify labels and prevent cross-contact for any adaptation."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying every label.",
+    "Use a milder quantity of gochugaru to reduce heat."
+  ],
+  "ingredientSourcing": [
+    "Choose firm tofu that is cold, sealed, and within its use-by date.",
+    "Buy Korean gochugaru from a high-turnover market and refrigerate after opening."
+  ],
+  "makeAhead": "Mix the sauce up to 1 day ahead and refrigerate; cook the tofu close to serving.",
+  "storage": "Cool promptly, refrigerate in a covered shallow container within 2 hours, and use within 4 days pending food-safety approval.",
+  "reheating": "Reheat gently in a covered skillet with a spoonful of water until steaming throughout.",
+  "leftovers": "Serve properly refrigerated leftovers with hot rice within the approved storage window.",
+  "servingSuggestions": ["Serve warm or cool with rice and other banchan."],
+  "menuPairings": ["M05", "SF15", "F05", "SA05"],
+  "relatedRecipeIds": ["B09", "B11"],
+  "faq": [
+    {
+      "question": "Do I need to press the tofu?",
+      "answer": "A brief drain and thorough surface drying are sufficient for this draft; test cooking must confirm texture."
+    },
+    {
+      "question": "Can I omit gochugaru?",
+      "answer": "Yes, but the flavor profile will be milder."
+    }
+  ],
+  "seoTitle": "Dubu Jorim Braised Tofu Recipe",
+  "metaDescription": "Make Korean dubu jorim: golden pan-fried tofu briefly braised with soy sauce, garlic, scallions, gochugaru, and sesame.",
+  "primaryKeyword": "dubu jorim recipe",
+  "secondaryTopics": ["Korean braised tofu", "tofu banchan"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi dubu-jorim technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/dubu-jorim",
+    "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

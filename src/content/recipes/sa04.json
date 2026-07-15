@@ -1,0 +1,287 @@
+{
+  "contentStatus": "complete",
+  "id": "SA04",
+  "title": "Yangnyeom Ganjang Scallion-Soy Dipping Sauce",
+  "koreanName": "Yangnyeom Ganjang",
+  "hangul": "양념간장",
+  "romanization": "yangnyeom ganjang",
+  "category": "sauces",
+  "releaseCohort": "week-01",
+  "publicReleaseOrder": 32,
+  "canonicalSlug": "yangnyeom-ganjang-scallion-soy-dipping-sauce",
+  "canonicalUrl": "https://kbbqguide.com/recipes/sauces/yangnyeom-ganjang-scallion-soy-dipping-sauce/",
+  "shortDescription": "Soy sauce is brightened with scallion, garlic, gochugaru, sesame, and a small amount of sweetener for spooning or dipping.",
+  "culturalContext": "Yangnyeom ganjang broadly means seasoned soy sauce. Korean versions vary widely by dish and household; this draft is a scallion-forward table sauce, not a claim of one universal formula.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 12,
+  "servingUnit": "tablespoons",
+  "prepTime": {
+    "minutes": 10,
+    "display": "10 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 10,
+    "display": "10 minutes"
+  },
+  "totalTime": {
+    "minutes": 20,
+    "display": "About 20 minutes"
+  },
+  "equipment": [
+    "Small mixing bowl",
+    "Whisk or spoon",
+    "Clean lidded jar",
+    "Individual dipping dishes"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "sauce",
+      "heading": "Seasoned soy sauce",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 120,
+          "metricUnit": "ml",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 45,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "scallions",
+          "preparation": "finely sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean red pepper flakes (gochugaru)",
+          "metricAmount": 4,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Wash the scallions",
+      "action": "Rinse scallions under running water, dry, trim, and finely slice.",
+      "estimatedTime": "4 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Scallions are clean, dry, and evenly sliced.",
+      "safetyNote": "Use a clean cutting board for this ready-to-eat sauce.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Combine the base",
+      "action": "Stir soy sauce, water, rice syrup, garlic, and gochugaru until the syrup dissolves.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "No streaks of syrup remain.",
+      "safetyNote": "Use clean utensils that have not touched raw food.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Add aromatics",
+      "action": "Fold in scallions, sesame oil, and sesame seeds.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "Aromatics are evenly suspended.",
+      "safetyNote": "Declare soy, wheat/gluten, and sesame allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Rest briefly",
+      "action": "Cover and rest in the refrigerator so the flavors combine.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "The scallions soften slightly while remaining fresh.",
+      "safetyNote": "Keep at or below 40°F / 4°C.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Portion for service",
+      "action": "Spoon only the needed amount into individual clean dipping dishes.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Each diner has a separate portion.",
+      "safetyNote": "Do not let utensils used for raw meat contact the master batch.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Store safely",
+      "action": "Cover and immediately return unused uncontaminated sauce to the refrigerator.",
+      "estimatedTime": "1 minute",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "The master batch remained clean and chilled.",
+      "safetyNote": "Discard any portion contacted by raw meat, seafood, shared eating utensils, or hands.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this is a no-cook dipping and spooning sauce.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Rice syrup is fully dissolved",
+    "Scallion and sesame are evenly distributed",
+    "Sauce remains fluid enough for dipping"
+  ],
+  "foodSafetyNotes": [
+    "Wash and dry scallions under running water before cutting.",
+    "Treat the sauce as ready-to-eat and use clean utensils.",
+    "Serve in individual portions; discard any portion contaminated by raw food or shared utensils.",
+    "Refrigerate promptly at or below 40°F / 4°C."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify labels and prevent cross-contact."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying the complete label.",
+    "Sugar may replace rice syrup by taste after test cooking."
+  ],
+  "ingredientSourcing": [
+    "Choose fresh, crisp scallions without slime.",
+    "Verify soy sauce and sesame product allergen labels."
+  ],
+  "makeAhead": "Prepare up to 1 day ahead and keep covered and refrigerated.",
+  "storage": "Keep the uncontaminated master batch covered at or below 40°F / 4°C and use within 4 days pending food-safety approval.",
+  "reheating": "Do not reheat; stir and serve chilled or cool in individual portions.",
+  "leftovers": "Discard sauce from dipping dishes; retain only uncontaminated refrigerated master sauce.",
+  "servingSuggestions": [
+    "Spoon over rice, tofu, or vegetables.",
+    "Serve in individual dishes with grilled foods."
+  ],
+  "menuPairings": ["M20", "SF12", "B18", "F07"],
+  "relatedRecipeIds": ["SA03", "SA05"],
+  "faq": [
+    {
+      "question": "Is yangnyeom ganjang always spicy?",
+      "answer": "No. Chile level and the balance of aromatics vary by household and intended dish."
+    },
+    {
+      "question": "Can dipping sauce be returned to the jar?",
+      "answer": "No. Discard served portions to avoid cross-contamination."
+    }
+  ],
+  "seoTitle": "Yangnyeom Ganjang Scallion-Soy Sauce",
+  "metaDescription": "Mix Korean yangnyeom ganjang with soy sauce, scallions, garlic, gochugaru, sesame, and clear ready-to-eat handling guidance.",
+  "primaryKeyword": "yangnyeom ganjang recipe",
+  "secondaryTopics": ["Korean dipping sauce", "seasoned soy sauce"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi seasoned soy sauce reference, editorial URL checked 2026-07-14: https://www.maangchi.com/recipe/yangnyeom-ganjang",
+    "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

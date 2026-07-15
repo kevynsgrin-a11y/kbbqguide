@@ -1,0 +1,250 @@
+{
+  "contentStatus": "complete",
+  "id": "B12",
+  "title": "Gyeran Jjim Steamed Eggs",
+  "koreanName": "Gyeran Jjim",
+  "hangul": "계란찜",
+  "romanization": "gyeran jjim",
+  "category": "banchan",
+  "releaseCohort": "week-02",
+  "publicReleaseOrder": 36,
+  "canonicalSlug": "gyeran-jjim-steamed-eggs",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gyeran-jjim-steamed-eggs/",
+  "shortDescription": "Eggs are gently cooked with anchovy-kelp broth until softly set and steaming, then finished with scallion and sesame oil.",
+  "culturalContext": "Gyeran jjim is a Korean steamed or gently simmered egg dish. Vessel, broth, toppings, and texture vary from silky home versions to puffed earthenware presentations.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 10,
+    "display": "10 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 28,
+    "display": "About 28 minutes"
+  },
+  "equipment": [
+    "Small heavy saucepan with lid or heat-safe earthenware pot",
+    "Bowl and whisk",
+    "Fine-mesh strainer, optional",
+    "Calibrated instant-read thermometer"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "steamed-eggs",
+      "heading": "Steamed eggs",
+      "ingredients": [
+        {
+          "id": "eggs",
+          "item": "large eggs",
+          "metricAmount": 250,
+          "metricUnit": "g",
+          "customaryAmount": 5,
+          "customaryUnit": "large eggs",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["egg"]
+        },
+        {
+          "id": "anchovy-kelp-broth",
+          "item": "unsalted anchovy-kelp broth",
+          "metricAmount": 360,
+          "metricUnit": "ml",
+          "customaryAmount": 1.5,
+          "customaryUnit": "cups",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["fish"]
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "finely sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Mix eggs and broth",
+      "action": "Beat eggs with salt, then whisk in cool broth; strain if a finer texture is desired.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The mixture is uniform and lightly foamy.",
+      "safetyNote": "Wash hands and clean spills after handling raw egg.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Warm gently",
+      "action": "Pour into the pot and cook over medium-low, stirring slowly along the bottom and sides.",
+      "estimatedTime": "4 minutes",
+      "temperature": "Medium-low",
+      "visualOrTactileCue": "Small soft curds begin to form.",
+      "safetyNote": "Do not leave the pot unattended.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Cover to set",
+      "action": "Reduce heat to low, cover, and cook gently without a hard boil.",
+      "estimatedTime": "6 to 9 minutes",
+      "temperature": "Low heat",
+      "visualOrTactileCue": "Edges are set and the center jiggles as one mass.",
+      "safetyNote": "Open the lid away from your face to avoid steam burns.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Verify temperature",
+      "action": "Insert a clean thermometer into the center without touching the pot; continue cooking until 160°F / 71°C.",
+      "estimatedTime": "1 to 3 minutes",
+      "temperature": "Low heat",
+      "visualOrTactileCue": "The center reaches 160°F / 71°C with no liquid egg.",
+      "safetyNote": "Egg dishes should reach 160°F / 71°C.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Finish",
+      "action": "Remove from heat, top with scallion and sesame oil, and rest covered briefly.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "The surface is softly set and steaming.",
+      "safetyNote": "The pot and escaping steam remain very hot.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve promptly",
+      "action": "Spoon into clean bowls and serve hot.",
+      "estimatedTime": "1 minute",
+      "temperature": "Hot",
+      "visualOrTactileCue": "The custard is tender and steaming throughout.",
+      "safetyNote": "Refrigerate leftovers within 2 hours.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this egg dish is gently cooked in a covered pot.",
+  "targetInternalTemperature": "160°F / 71°C in the center of the egg dish.",
+  "visualDonenessCues": [
+    "Edges and center are softly set",
+    "No liquid egg remains",
+    "Center reaches 160°F / 71°C"
+  ],
+  "foodSafetyNotes": [
+    "Use refrigerated, clean, uncracked eggs.",
+    "Cook the center to 160°F / 71°C.",
+    "Open the lid away from your face to avoid steam burns.",
+    "Refrigerate within 2 hours at or below 40°F / 4°C."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": true,
+    "shellfish": false,
+    "egg": true,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains egg, fish, and sesame; verify the broth and prevent cross-contact."
+  },
+  "substitutions": [
+    "Use water or a verified allergen-appropriate vegetable broth in place of anchovy-kelp broth."
+  ],
+  "ingredientSourcing": [
+    "Choose refrigerated, clean, uncracked eggs.",
+    "Verify prepared broth labels for fish and other allergens."
+  ],
+  "makeAhead": "For best texture, mix just before cooking; broth may be prepared and refrigerated 1 day ahead.",
+  "storage": "Refrigerate within 2 hours in a covered shallow container and use within 4 days pending food-safety approval.",
+  "reheating": "Reheat gently until the center reaches 165°F / 74°C and is steaming.",
+  "leftovers": "Use properly refrigerated leftovers promptly; the texture will be firmer.",
+  "servingSuggestions": ["Serve immediately with rice and grilled foods."],
+  "menuPairings": ["M07", "SF02", "F07", "SA02"],
+  "relatedRecipeIds": ["B11", "B13"],
+  "faq": [
+    {
+      "question": "Why did the eggs turn rubbery?",
+      "answer": "The heat may have been too high or cooking too long; use gentle heat while still reaching 160°F / 71°C."
+    },
+    {
+      "question": "Is gyeran jjim always made in earthenware?",
+      "answer": "No. Pots and cooking methods vary."
+    }
+  ],
+  "seoTitle": "Gyeran Jjim Korean Steamed Eggs",
+  "metaDescription": "Make tender Korean gyeran jjim with anchovy-kelp broth, gentle heat, steam-burn precautions, and a verified 160°F / 71°C center.",
+  "primaryKeyword": "gyeran jjim recipe",
+  "secondaryTopics": ["Korean steamed eggs", "egg banchan"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi gyeranjjim technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/gyeranjjim",
+    "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

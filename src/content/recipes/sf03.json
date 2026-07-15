@@ -1,0 +1,452 @@
+{
+  "contentStatus": "complete",
+  "id": "SF03",
+  "title": "Doenjang-Butter Grilled Scallops",
+  "koreanName": "Doenjang beoteo garibi gui",
+  "hangul": "된장 버터 가리비구이",
+  "romanization": "doenjang-beoteo-garibi-gui",
+  "category": "seafood",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 10,
+  "canonicalSlug": "doenjang-butter-grilled-scallops",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/doenjang-butter-grilled-scallops/",
+  "shortDescription": "Dry-packed sea scallops grilled for a browned crust and finished with a savory doenjang-butter glaze balanced with honey, vinegar, garlic, and sesame.",
+  "culturalContext": "Doenjang is a foundational Korean fermented soybean paste, while butter-based seafood glazes are a modern pairing. This recipe is explicitly contemporary and does not claim that doenjang-butter scallops are a codified traditional dish.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 8,
+    "display": "6 to 8 minutes"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No required rest"
+  },
+  "totalTime": {
+    "minutes": 28,
+    "display": "28 minutes"
+  },
+  "equipment": [
+    "Small mixing bowl",
+    "Measuring cups and spoons",
+    "Clean cutting board and paring knife",
+    "Disposable towels",
+    "Outdoor grill, grill plancha, or manufacturer-approved indoor electric tabletop grill",
+    "Two clean pastry brushes",
+    "Thin metal spatula or clean tongs",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "scallops",
+      "heading": "Scallops",
+      "ingredients": [
+        {
+          "id": "sea-scallops",
+          "item": "dry-packed large sea scallops",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "refrigerator-thawed if frozen; side muscles removed; patted very dry",
+          "optional": false,
+          "allergenNotes": ["shellfish"]
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral high-heat oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": "for coating scallops",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "doenjang-butter",
+      "heading": "Doenjang-butter glaze",
+      "ingredients": [
+        {
+          "id": "butter",
+          "item": "unsalted butter",
+          "metricAmount": 57,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "tablespoons",
+          "preparation": "softened",
+          "optional": false,
+          "allergenNotes": ["dairy"]
+        },
+        {
+          "id": "doenjang",
+          "item": "doenjang",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "paired-grilling-preparation",
+    "ingredients": [
+      {
+        "id": "butter",
+        "item": "unsalted butter",
+        "metricAmount": 57,
+        "metricUnit": "g",
+        "customaryAmount": 4,
+        "customaryUnit": "tablespoons",
+        "preparation": "softened",
+        "optional": false,
+        "allergenNotes": ["dairy"]
+      },
+      {
+        "id": "doenjang",
+        "item": "doenjang",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+      },
+      {
+        "id": "honey",
+        "item": "honey",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "rice-vinegar",
+        "item": "unseasoned rice vinegar",
+        "metricAmount": 10,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "teaspoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 6,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "cloves",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 5,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "scallion",
+        "item": "scallion",
+        "metricAmount": 15,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "scallion",
+        "preparation": "thinly sliced",
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 150 ml / 2/3 cup glaze",
+    "meatWeightCovered": "Finishes 680 g / 1.5 lb sea scallops",
+    "mixOrder": [
+      "Mash softened butter with doenjang until uniform.",
+      "Mix in honey, vinegar, garlic, sesame oil, and scallion.",
+      "Divide into a cooking portion and a clean finishing portion before approaching raw scallops."
+    ],
+    "marinationVessel": "No marination; hold divided glaze in two labeled clean bowls",
+    "refrigeratedMarinationTimeRange": "No marination; keep scallops and glaze refrigerated separately until preheating begins",
+    "maximumPracticalMarinationWarning": "Do not marinate scallops in the salty glaze; surface moisture prevents browning and salt can draw out water.",
+    "reserveBeforeRawContactInstruction": "Divide the glaze into separate cooking and finishing bowls before raw seafood handling.",
+    "rawContactDiscardOrReboilInstruction": "Discard any cooking glaze or brush contaminated by raw or undercooked scallops; finish only with the untouched clean portion.",
+    "substitutions": [
+      "A verified dairy-free solid cooking fat would create a different, separately reviewed recipe and cannot guarantee allergen safety.",
+      "White miso is not an equivalent cultural substitute for doenjang; if used, relabel the adaptation and rebalance salt after testing."
+    ],
+    "allergenNotes": [
+      "Contains shellfish, soy, dairy, and sesame.",
+      "Commercial doenjang may contain wheat; verify its label."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Select, thaw, and trim",
+      "action": "Thaw frozen scallops overnight in the refrigerator. Remove the small firm side muscle if present. Do not rinse.",
+      "estimatedTime": "8 minutes after thawing",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Scallops smell mild and sweet, feel firm, and are not sitting in milky liquid.",
+      "safetyNote": "Reject scallops with sour, strongly fishy, or ammonia-like odor; sanitize the prep area after raw seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Dry the surfaces thoroughly",
+      "action": "Blot scallops on all sides with disposable towels, then coat lightly with neutral oil and black pepper.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Surfaces feel tacky-dry rather than wet and leave no puddle on the plate.",
+      "safetyNote": "Discard towels immediately and wash hands after handling raw scallops.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Mix and divide the glaze",
+      "action": "Mash butter and doenjang smooth; mix in honey, vinegar, garlic, sesame oil, and scallion. Divide into separate cooking and finishing bowls with separate brushes.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Glaze is uniform, soft, and brushable with no lumps of plain butter.",
+      "safetyNote": "Keep the finishing bowl and brush outside the raw-seafood zone.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat for release",
+      "action": "Preheat the approved grill or plancha to medium-high, clean thoroughly, and oil lightly.",
+      "estimatedTime": "10 minutes",
+      "temperature": "400–425°F / 204–218°C surface",
+      "visualOrTactileCue": "Scallops sizzle on contact and remain stationary without flooding the surface.",
+      "safetyNote": "Use only approved indoor electric equipment indoors; follow ventilation, clearance, and grease instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Sear and turn once",
+      "action": "Place scallops with space between them and cook without moving for 2 to 3 minutes. Turn with a clean thin spatula when they release, brush the cooked side with the cooking glaze, and cook 2 to 3 minutes more.",
+      "estimatedTime": "4 to 6 minutes",
+      "temperature": "Official cue: milky white or opaque and firm",
+      "visualOrTactileCue": "First side is browned; center changes from translucent to opaque and the scallop feels firm with slight spring.",
+      "safetyNote": "Do not force stuck scallops; inspect the thickest center and discard the cooking glaze and brush after use.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Finish from the clean bowl",
+      "action": "Transfer opaque scallops to the clean platter and apply a very thin layer of untouched finishing glaze.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "Scallops are browned, opaque, and lightly glossy without a pool of melted butter.",
+      "safetyNote": "Never combine cooking and finishing glaze or reuse raw-contact tools.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high. Follow the appliance manual for ventilation, clearances, grease handling, and grate care; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "FoodSafety.gov lists no numeric minimum for scallops; cook until flesh is milky white or opaque and firm.",
+  "visualDonenessCues": [
+    "The center is milky white or opaque with no translucent raw band.",
+    "Scallops are firm with slight spring and have a browned first side."
+  ],
+  "foodSafetyNotes": [
+    "Keep seafood at 40°F / 4°C or below and thaw in the refrigerator, not on the counter.",
+    "Do not rinse raw seafood; splashing can spread contamination. Peel, devein, or remove side muscles with clean tools, then pat dry.",
+    "Use separate raw and cooked plates, tongs, brushes, and skewers, or wash and sanitize them fully before reuse.",
+    "FoodSafety.gov directs cooking shrimp and scallops until the flesh is pearly or white and opaque; time alone is not a doneness test.",
+    "Pregnant, immunocompromised, older, and very young diners should not be served raw or undercooked seafood.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": true,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "Wet-packed scallops can be used only after thorough drying, but added solution may inhibit browning; dry-packed is preferred.",
+    "Replacing butter or doenjang changes the recipe and requires separate allergen, salt, and cultural review."
+  ],
+  "ingredientSourcing": [
+    "Choose dry-packed scallops that are firm, moist but not milky, and mild-smelling.",
+    "Frozen packages should be intact without large ice crystals or signs of thawing and refreezing.",
+    "Read doenjang labels for soy, wheat, fish, and other possible ingredients because formulations vary."
+  ],
+  "makeAhead": "Mix and divide the glaze up to 1 day ahead and refrigerate. Bring it only to a brushable consistency while the grill preheats. Dry and season scallops immediately before cooking.",
+  "storage": "Refrigerate cooked scallops within 2 hours at 40°F / 4°C or below and use within 2 days. Discard used cooking glaze and individual serving portions.",
+  "reheating": "Reheat leftovers to 165°F / 74°C using brief gentle heat; scallops toughen quickly, so reheat only once.",
+  "leftovers": "Slice reheated scallops over rice with fresh greens; do not reuse leftover table glaze unless it remained uncontaminated and continuously refrigerated.",
+  "servingSuggestions": [
+    "Serve with rice and crisp fresh vegetables that offset the rich butter glaze.",
+    "Use a small amount of glaze so doenjang supports rather than masks the scallops."
+  ],
+  "menuPairings": ["B02", "F05", "SA05", "D04"],
+  "relatedRecipeIds": ["SF02", "SF04"],
+  "faq": [
+    {
+      "question": "Why use dry-packed scallops?",
+      "answer": "They generally release less added liquid, making a browned crust easier. Regardless of type, blot scallops thoroughly and verify freshness."
+    },
+    {
+      "question": "What is the official doneness cue?",
+      "answer": "FoodSafety.gov instructs cooking scallops until the flesh is milky white or opaque and firm; check the thickest center."
+    }
+  ],
+  "seoTitle": "Doenjang-Butter Grilled Scallops",
+  "metaDescription": "Grill dry-packed scallops with a contemporary doenjang-butter glaze, clean divided sauce, anti-sticking technique, and opaque-firm doneness cues.",
+  "primaryKeyword": "doenjang butter scallops",
+  "secondaryTopics": [
+    "Korean grilled scallops",
+    "doenjang seafood glaze",
+    "scallop grilling technique",
+    "dry-packed scallops"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "seafood-buying-and-thawing",
+    "raw-seafood-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Doenjang context reference: https://en.wikipedia.org/wiki/Doenjang (secondary overview only; Korean cultural review required).",
+    "Contemporary doenjang-butter flavor comparison: https://www.bonappetit.com/recipe/shrimp-scampi-udon-with-doenjang-butter-sauce (used only as combination precedent, not copied formulation).",
+    "Seafood doneness reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "No-rinsing and cross-contact reference verified 2026-07-14: https://www.foodsafety.gov/blog/how-grill-safely-summer",
+    "Contemporary draft not test-cooked; food safety, Korean language, and cultural framing require human approval."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Firm scallops with a mild, sweet sea smell and no sour, strongly fishy, or ammonia-like odor.",
+      "Dry-packed scallops are preferred; frozen packaging is intact without large ice crystals or freezer burn."
+    ],
+    "thawing": "Thaw in a covered container overnight in the refrigerator. If using sealed cold-water thawing, cook immediately afterward.",
+    "cleaningOrShellPreparation": "Remove the small tough side muscle when present. Do not rinse raw scallops.",
+    "drying": "Blot every side thoroughly with disposable towels immediately before oiling.",
+    "scoringOrSkewering": null,
+    "grillSurfacePreparation": "Use a thoroughly preheated, cleaned, lightly oiled grate or plancha with a thin spatula ready.",
+    "stickingPrevention": "Choose dry-packed scallops, dry aggressively, oil lightly, leave space, and do not move until a crust forms and releases.",
+    "approximateTime": "About 4 to 6 minutes total for large sea scallops, depending on thickness and surface heat.",
+    "donenessCues": [
+      "Milky white or opaque through the thickest center.",
+      "Firm with slight spring; no translucent raw band remains."
+    ],
+    "applicableTemperature": "FoodSafety.gov provides the visual standard milky white or opaque and firm rather than a numeric scallop minimum.",
+    "shellOpeningAndDiscardGuidance": "For shucked sea scallops no shell-opening cue applies; reject damaged packaging or scallops with spoilage odors.",
+    "crossContactNotes": [
+      "Use separate cooking and finishing glaze bowls and brushes.",
+      "Keep raw scallop plate and utensils away from the clean serving platter and ready-to-eat foods."
+    ]
+  }
+}

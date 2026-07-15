@@ -1,0 +1,73 @@
+---
+import registryData from '../../data/url-registry.json';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const links = [
+  {
+    label: 'Recipes',
+    href: registryPathById(registry, 'SYS_RECIPES'),
+  },
+  {
+    label: 'Start here',
+    href: registryPathById(registry, 'SYS_START'),
+  },
+  { label: 'Guides', href: registryPathById(registry, 'SYS_GUIDES') },
+  { label: 'Menus', href: registryPathById(registry, 'SYS_MENUS') },
+  { label: 'Tools', href: registryPathById(registry, 'SYS_TOOLS') },
+];
+---
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a
+      class="brand"
+      href={registryPathById(registry, 'SYS_HOME')}
+      aria-label="KBBQGuide home"
+    >
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="17"></circle>
+          <path d="M15 20h18M14 25h20M17 30h14"></path>
+          <path d="M18 13c-2 3 2 4 0 7M25 11c-2 3 2 5 0 8M32 14c-2 2 1 4 0 6"
+          ></path>
+        </svg>
+      </span>
+      <span class="brand-lockup">
+        <span class="brand-name"><strong>KBBQ</strong>Guide</span>
+        <span class="brand-tagline">The whole table, made clear</span>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      {links.map((link) => <a href={link.href}>{link.label}</a>)}
+      <a
+        class="button header-cta"
+        href={registryPathById(registry, 'SYS_RECIPES')}>Explore recipes</a
+      >
+    </nav>
+    <details class="nav-drawer" data-nav-drawer>
+      <summary aria-label="Open navigation menu">Menu</summary>
+      <nav class="drawer-panel" aria-label="Mobile navigation">
+        {links.map((link) => <a href={link.href}>{link.label}</a>)}
+      </nav>
+    </details>
+  </div>
+</header>
+
+<script>
+  for (const drawer of document.querySelectorAll<HTMLDetailsElement>(
+    '[data-nav-drawer]',
+  )) {
+    drawer.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && drawer.open) {
+        drawer.open = false;
+        drawer.querySelector<HTMLElement>('summary')?.focus();
+      }
+    });
+    drawer.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        drawer.open = false;
+      });
+    });
+  }
+</script>

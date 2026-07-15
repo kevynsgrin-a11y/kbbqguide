@@ -1,0 +1,396 @@
+{
+  "contentStatus": "complete",
+  "id": "M20",
+  "title": "Contemporary Doenjang-Gochujang Lamb Shoulder",
+  "koreanName": "Doenjang-Gochujang Yangnyeom Eokkaesal",
+  "hangul": "된장 고추장 양념 양 어깨살",
+  "romanization": "doenjang-gochujang yangnyeom yang eokkaesal",
+  "category": "grilled-meat",
+  "releaseCohort": "week-13",
+  "publicReleaseOrder": 77,
+  "canonicalSlug": "contemporary-doenjang-gochujang-lamb-shoulder",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/contemporary-doenjang-gochujang-lamb-shoulder/",
+  "shortDescription": "Boneless lamb-shoulder steaks are marinated with doenjang, gochujang, pear, and sesame, grilled to 145°F / 63°C, and rested three minutes.",
+  "culturalContext": "This contemporary recipe applies Korean fermented-paste seasoning to lamb shoulder, a combination without a single traditional standard. The descriptive Korean name and flavor balance require cultural and language review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 240,
+    "display": "4 hours refrigerated"
+  },
+  "cookTime": {
+    "minutes": 16,
+    "display": "12 to 16 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 279,
+    "display": "About 4 hours 40 minutes"
+  },
+  "equipment": [
+    "Separate raw-meat cutting board",
+    "Nonreactive covered container",
+    "Outdoor grill or approved electric grill",
+    "Long tongs",
+    "Calibrated instant-read thermometer",
+    "Clean resting platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "lamb",
+      "heading": "Lamb shoulder",
+      "ingredients": [
+        {
+          "id": "lamb-shoulder",
+          "item": "boneless lamb-shoulder steaks",
+          "metricAmount": 1.2,
+          "metricUnit": "kg",
+          "customaryAmount": 2.5,
+          "customaryUnit": "pounds",
+          "preparation": "six steaks about 2 cm / 3/4 inch thick; do not wash",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "marinade",
+      "heading": "Doenjang-gochujang marinade",
+      "ingredients": [
+        {
+          "id": "doenjang",
+          "item": "doenjang",
+          "metricAmount": 45,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless verified gluten-free"]
+        },
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless verified gluten-free"]
+        },
+        {
+          "id": "pear",
+          "item": "Asian pear",
+          "metricAmount": 90,
+          "metricUnit": "g",
+          "customaryAmount": 0.375,
+          "customaryUnit": "cup",
+          "preparation": "grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 5,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "doenjang",
+        "item": "doenjang",
+        "metricAmount": 45,
+        "metricUnit": "g",
+        "customaryAmount": 3,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless verified gluten-free"]
+      },
+      {
+        "id": "gochujang",
+        "item": "gochujang",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless verified gluten-free"]
+      },
+      {
+        "id": "pear",
+        "item": "Asian pear",
+        "metricAmount": 90,
+        "metricUnit": "g",
+        "customaryAmount": 0.375,
+        "customaryUnit": "cup",
+        "preparation": "grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "rice-syrup",
+        "item": "rice syrup",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 15,
+        "metricUnit": "g",
+        "customaryAmount": 5,
+        "customaryUnit": "cloves",
+        "preparation": "minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "water",
+        "item": "water",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 240 ml / 1 cup",
+    "meatWeightCovered": "1.2 kg / 2.5 pounds lamb-shoulder steaks",
+    "mixOrder": [
+      "Whisk doenjang, gochujang, pear, rice syrup, and water.",
+      "Add garlic and sesame oil.",
+      "Coat chilled lamb evenly."
+    ],
+    "marinationVessel": "Nonreactive covered container at or below 40°F / 4°C",
+    "refrigeratedMarinationTimeRange": "2 to 8 hours under refrigeration.",
+    "maximumPracticalMarinationWarning": "Do not exceed 12 hours without test-cook approval; salty fermented pastes can dominate.",
+    "reserveBeforeRawContactInstruction": "Reserve any serving sauce before the marinade contacts raw lamb.",
+    "rawContactDiscardOrReboilInstruction": "Discard marinade after raw-lamb contact; do not brush it on cooked meat.",
+    "substitutions": [
+      "Use verified gluten-free doenjang, gochujang, and tamari only after label review."
+    ],
+    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Portion without washing",
+      "action": "Keep lamb cold and portion into even shoulder steaks if not already cut; do not wash raw meat.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "Steaks are about 2 cm / 3/4 inch thick.",
+      "safetyNote": "Use a dedicated raw-meat board and wash hands after handling.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix marinade",
+      "action": "Whisk all marinade ingredients; reserve any serving sauce before raw contact.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Marinade is smooth.",
+      "safetyNote": "Verify doenjang and gochujang allergen labels.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate cold",
+      "action": "Coat lamb, cover, and refrigerate 4 hours.",
+      "estimatedTime": "4 hours",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Steaks remain cold and evenly coated.",
+      "safetyNote": "Never marinate meat at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat two zones",
+      "action": "Preheat medium-high and cooler grill zones; remove lamb and discard raw-contact marinade.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium-high and cooler zones",
+      "visualOrTactileCue": "Grates are clean and hot.",
+      "safetyNote": "Sugar and pastes can burn; keep a cooler zone available.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and measure",
+      "action": "Grill, turning as needed, until each steak reaches at least 145°F / 63°C in its thickest point.",
+      "estimatedTime": "12 to 16 minutes",
+      "temperature": "Medium-high heat",
+      "visualOrTactileCue": "Surface is browned and every steak reaches at least 145°F / 63°C.",
+      "safetyNote": "Use a calibrated thermometer; color is not a safety test.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest three minutes",
+      "action": "Move with clean tongs to a clean platter and rest at least 3 minutes before slicing.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "Three-minute rest is complete.",
+      "safetyNote": "The three-minute rest is part of the minimum whole-cut lamb safety endpoint.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use medium-high direct and cooler zones; clean the grates, control paste scorching, and segregate raw and cooked tools.",
+  "targetInternalTemperature": "At least 145°F / 63°C in the thickest part of every whole-cut lamb steak, followed by a 3-minute rest.",
+  "visualDonenessCues": [
+    "Fermented-paste coating is browned but not charred",
+    "Steaks release from clean grates",
+    "Every steak reaches 145°F / 63°C and rests 3 minutes"
+  ],
+  "foodSafetyNotes": [
+    "Cook whole-cut lamb steaks to at least 145°F / 63°C and rest at least 3 minutes.",
+    "Do not wash raw lamb; segregate hands, boards, utensils, marinade, and serviceware.",
+    "Discard marinade after raw contact.",
+    "Control flare-ups and sugar scorching with a cooler grill zone."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Verify every packaged-ingredient label and segregate tools for diners with allergies."
+  },
+  "substitutions": [
+    "Do not substitute ground lamb; ground lamb requires 160°F / 71°C.",
+    "Verify all fermented-paste labels before any gluten-free claim."
+  ],
+  "ingredientSourcing": [
+    "Ask for boneless lamb-shoulder steaks of even thickness.",
+    "Refrigerate lamb promptly and use intact, in-date packages."
+  ],
+  "makeAhead": "Mix marinade 1 day ahead; marinate only within the refrigerated range.",
+  "storage": "Refrigerate cooked lamb within 2 hours in shallow covered containers and use within 3 to 4 days.",
+  "reheating": "Reheat leftovers to 165°F / 74°C.",
+  "leftovers": "Slice only what will be served and refrigerate the remainder promptly.",
+  "servingSuggestions": [
+    "Slice across the grain after the rest.",
+    "Serve with crisp vegetables and individual dipping sauce portions."
+  ],
+  "menuPairings": ["B20", "F10", "SA05", "D05"],
+  "relatedRecipeIds": ["M19", "M01"],
+  "faq": [
+    {
+      "question": "Can I use ground lamb?",
+      "answer": "Not with this endpoint. Ground lamb requires 160°F / 71°C and a separate method."
+    },
+    {
+      "question": "Why rest three minutes?",
+      "answer": "The rest is part of the safe minimum endpoint for whole-cut lamb."
+    }
+  ],
+  "seoTitle": "Doenjang-Gochujang Grilled Lamb Shoulder",
+  "metaDescription": "Grill Korean-inspired fermented-paste lamb-shoulder steaks with cold marination, two heat zones, a 145°F endpoint, and a three-minute rest.",
+  "primaryKeyword": "doenjang gochujang lamb shoulder",
+  "secondaryTopics": [
+    "Korean-style lamb",
+    "grilled lamb shoulder steaks",
+    "fermented paste marinade"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe-header",
+    "ingredient-list",
+    "instructions",
+    "food-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Temperature basis: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Editorial framing: contemporary adaptation; no canonical-tradition claim.",
+    "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
+  ],
+  "seafoodPreparation": null
+}

@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "phase": 6,
+  "providersConfigured": false,
+  "collectionEnabled": false,
+  "interestTags": [
+    "beef",
+    "pork",
+    "chicken",
+    "seafood",
+    "banchan",
+    "fresh-vegetarian",
+    "beginner",
+    "party-host",
+    "equipment-gear",
+    "digital-product-customer",
+    "class-attendee"
+  ],
+  "welcomeSequence": [
+    {
+      "day": 0,
+      "topic": "Korean BBQ Night Planner and expectations",
+      "status": "draft"
+    },
+    {
+      "day": 2,
+      "topic": "Indoor setup, ventilation, carbon-monoxide caution, and thermometer guide",
+      "status": "draft"
+    },
+    {
+      "day": 4,
+      "topic": "Menu for four, shopping list, and prep timeline",
+      "status": "draft"
+    },
+    { "day": 7, "topic": "Banchan batch-prep lesson", "status": "draft" },
+    {
+      "day": 10,
+      "topic": "Disclosed pantry and equipment guide with preference-center CTA",
+      "status": "draft"
+    }
+  ],
+  "directMessageFlows": [
+    {
+      "keyword": "PLAN",
+      "deliverable": "planner opt-in",
+      "status": "draft-disabled"
+    },
+    {
+      "keyword": "MARINADE",
+      "deliverable": "marinade matrix",
+      "status": "draft-disabled"
+    },
+    {
+      "keyword": "BANCHAN",
+      "deliverable": "banchan checklist",
+      "status": "draft-disabled"
+    },
+    {
+      "keyword": "SHOP",
+      "deliverable": "disclosed on-site gear guide",
+      "status": "draft-disabled"
+    }
+  ],
+  "sms": {
+    "status": "disabled",
+    "minimumDelayDays": 30,
+    "legalReviewRequired": true
+  }
+}

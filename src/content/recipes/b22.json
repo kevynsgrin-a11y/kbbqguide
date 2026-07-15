@@ -1,0 +1,299 @@
+{
+  "contentStatus": "complete",
+  "id": "B22",
+  "title": "Korean BBQ Restaurant-Style Macaroni Salad",
+  "koreanName": "Makaroni Saelleodeu",
+  "hangul": "마카로니 샐러드",
+  "romanization": "makaroni saelleodeu",
+  "category": "banchan",
+  "releaseCohort": "week-09",
+  "publicReleaseOrder": 63,
+  "canonicalSlug": "korean-bbq-restaurant-style-macaroni-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/korean-bbq-restaurant-style-macaroni-salad/",
+  "shortDescription": "Elbow macaroni, cucumber, carrot, and corn are cooled promptly and folded with commercial mayonnaise for a sweet-tangy Korean BBQ restaurant-style side.",
+  "culturalContext": "Creamy macaroni salad is a familiar side at some Korean barbecue restaurants and reflects modern cross-cultural restaurant cooking. Formulas vary and this is explicitly restaurant-style.",
+  "adaptationLabel": "restaurant-style",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "12 minutes"
+  },
+  "restTime": {
+    "minutes": 30,
+    "display": "30 minutes"
+  },
+  "totalTime": {
+    "minutes": 62,
+    "display": "About 1 hour including cooling"
+  },
+  "equipment": [
+    "Large pot",
+    "Colander",
+    "Sheet pan for shallow cooling",
+    "Large clean bowl",
+    "Clean covered storage container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "salad",
+      "heading": "Macaroni salad",
+      "ingredients": [
+        {
+          "id": "macaroni",
+          "item": "dry elbow macaroni",
+          "metricAmount": 340,
+          "metricUnit": "g",
+          "customaryAmount": 12,
+          "customaryUnit": "ounces",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["wheat/gluten"]
+        },
+        {
+          "id": "cucumber",
+          "item": "Persian cucumbers",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "small cucumbers",
+          "preparation": "washed and finely diced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot",
+          "metricAmount": 80,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "medium carrot",
+          "preparation": "peeled and finely diced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "corn",
+          "item": "canned corn kernels",
+          "metricAmount": 165,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": "drained; can intact and label checked",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mayonnaise",
+          "item": "commercial pasteurized mayonnaise",
+          "metricAmount": 180,
+          "metricUnit": "g",
+          "customaryAmount": 0.75,
+          "customaryUnit": "cup",
+          "preparation": "kept refrigerated",
+          "optional": false,
+          "allergenNotes": ["egg"]
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 4,
+          "metricUnit": "g",
+          "customaryAmount": 0.75,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare clean vegetables",
+      "action": "Wash cucumber and carrot under running water, dry, and dice on a clean board.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Vegetables are clean, dry, and evenly diced.",
+      "safetyNote": "Keep ready-to-eat tools away from raw meat and seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Cook macaroni",
+      "action": "Boil macaroni in salted water until tender according to package directions.",
+      "estimatedTime": "8 to 10 minutes",
+      "temperature": "Boiling",
+      "visualOrTactileCue": "Macaroni is tender without a hard core.",
+      "safetyNote": "Avoid steam and boiling-water burns.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Drain and cool shallow",
+      "action": "Drain thoroughly, spread macaroni on a clean sheet pan, and cool promptly before refrigerating.",
+      "estimatedTime": "15 to 20 minutes",
+      "temperature": "Cooling then refrigerated",
+      "visualOrTactileCue": "Macaroni is no longer hot and is chilled promptly.",
+      "safetyNote": "Do not leave cooked pasta at room temperature beyond safe limits.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Mix dressing",
+      "action": "Whisk commercial mayonnaise, vinegar, sugar, salt, and pepper in a clean cold bowl.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Dressing is smooth.",
+      "safetyNote": "Verify mayonnaise and vinegar labels and keep mayonnaise refrigerated.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Combine cold",
+      "action": "Fold chilled macaroni, cucumber, carrot, corn, and dressing together with clean utensils.",
+      "estimatedTime": "4 minutes",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Ingredients are evenly coated.",
+      "safetyNote": "All components must be cool before mixing.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Chill and serve",
+      "action": "Cover, refrigerate at least 30 minutes, and portion with a clean utensil.",
+      "estimatedTime": "30 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "Salad is thoroughly cold.",
+      "safetyNote": "Discard portions held above refrigeration limits or contaminated by shared utensils.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is prepared without a grill.",
+  "targetInternalTemperature": "Cook macaroni until tender according to package directions; cool promptly and keep the finished salad at or below 40°F / 4°C.",
+  "visualDonenessCues": [
+    "Macaroni has no hard center",
+    "Pasta is cool before dressing",
+    "Finished salad is thoroughly chilled"
+  ],
+  "foodSafetyNotes": [
+    "Cook pasta according to package directions and cool promptly in a shallow layer.",
+    "Use commercial pasteurized mayonnaise.",
+    "Keep finished salad at or below 40°F / 4°C.",
+    "Discard table-exposed or temperature-abused portions."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": true,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": true,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains wheat/gluten and egg; verify macaroni and mayonnaise labels for additional allergens."
+  },
+  "substitutions": [
+    "Use a verified gluten-free pasta only after retesting texture and cooling."
+  ],
+  "ingredientSourcing": [
+    "Choose intact pasta and corn packages and commercial pasteurized mayonnaise."
+  ],
+  "makeAhead": "Prepare up to 1 day ahead and keep covered and refrigerated.",
+  "storage": "Refrigerate promptly and use within 3 days pending review.",
+  "reheating": "Do not reheat; serve cold.",
+  "leftovers": "Retain only clean continuously refrigerated salad.",
+  "servingSuggestions": ["Serve cold in small portions with Korean barbecue."],
+  "menuPairings": ["M17", "SF12", "F07", "SA02"],
+  "relatedRecipeIds": ["B21", "B23"],
+  "faq": [
+    {
+      "question": "Is this a traditional Korean dish?",
+      "answer": "No. It is explicitly a Korean BBQ restaurant-style adaptation."
+    },
+    {
+      "question": "Why cool pasta before dressing?",
+      "answer": "It prevents prolonged warm holding and protects the mayonnaise dressing."
+    }
+  ],
+  "seoTitle": "Korean BBQ Restaurant Macaroni Salad",
+  "metaDescription": "Make Korean BBQ restaurant-style macaroni salad with pasteurized mayonnaise, shallow pasta cooling, refrigeration, clean tools, and allergen guidance.",
+  "primaryKeyword": "Korean BBQ macaroni salad",
+  "secondaryTopics": ["restaurant-style banchan", "creamy pasta salad"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Restaurant-style locked-title formulation requiring test-kitchen and cultural review.",
+    "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 20,
+  "cook": 12,
+  "rest": 30,
+  "totalDisplay": "About 1 hour including cooling",
+  "source": "Restaurant-style locked-title formulation requiring test-kitchen and cultural review."
+}

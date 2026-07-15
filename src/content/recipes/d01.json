@@ -1,0 +1,330 @@
+{
+  "contentStatus": "complete",
+  "id": "D01",
+  "title": "Hotteok Brown-Sugar Seed Pancakes",
+  "koreanName": "Hotteok",
+  "hangul": "호떡",
+  "romanization": "hotteok",
+  "category": "desserts",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 27,
+  "canonicalSlug": "hotteok-brown-sugar-seed-pancakes",
+  "canonicalUrl": "https://kbbqguide.com/recipes/desserts/hotteok-brown-sugar-seed-pancakes/",
+  "shortDescription": "Soft yeasted wheat dough encloses brown sugar, cinnamon, sunflower seed, pumpkin seed, and sesame filling, then pan-fries into crisp-edged pancakes with molten centers.",
+  "culturalContext": "Hotteok is a Korean filled pancake strongly associated with street snacks and cool-weather eating. Fillings and dough styles have changed over time and may include nuts, seeds, or savory ingredients; this draft uses a clearly labeled seed filling.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 8,
+  "servingUnit": "pancakes",
+  "prepTime": { "minutes": 30, "display": "30 minutes active" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 24, "display": "20 to 24 minutes" },
+  "restTime": {
+    "minutes": 75,
+    "display": "1 hour rise plus 15 minutes cooling"
+  },
+  "totalTime": { "minutes": 129, "display": "About 2 hours 10 minutes" },
+  "equipment": [
+    "Large mixing bowl",
+    "Digital scale and measuring spoons",
+    "Clean towel or lid",
+    "Small filling bowl",
+    "Heavy nonstick or well-seasoned skillet with lid",
+    "Heatproof spatula",
+    "Flat hotteok press or oiled metal spatula",
+    "Wire rack"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "dough",
+      "heading": "Yeasted dough",
+      "ingredients": [
+        {
+          "id": "all-purpose-flour",
+          "item": "all-purpose flour",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": 2.5,
+          "customaryUnit": "cups",
+          "preparation": "spooned and leveled if measured by volume",
+          "optional": false,
+          "allergenNotes": ["wheat/gluten"]
+        },
+        {
+          "id": "warm-water",
+          "item": "warm water",
+          "metricAmount": 220,
+          "metricUnit": "ml",
+          "customaryAmount": 0.9,
+          "customaryUnit": "cup",
+          "preparation": "about 105°F / 41°C",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "instant-yeast",
+          "item": "instant yeast",
+          "metricAmount": 7,
+          "metricUnit": "g",
+          "customaryAmount": 2.25,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar-dough",
+          "item": "sugar",
+          "metricAmount": 25,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil-dough",
+          "item": "neutral oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "filling-and-frying",
+      "heading": "Brown-sugar seed filling and frying",
+      "ingredients": [
+        {
+          "id": "brown-sugar",
+          "item": "packed dark brown sugar",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sunflower-seeds",
+          "item": "roasted unsalted sunflower seeds",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": "finely chopped",
+          "optional": false,
+          "allergenNotes": ["check facility cross-contact"]
+        },
+        {
+          "id": "pumpkin-seeds",
+          "item": "roasted unsalted pumpkin seeds",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": "finely chopped",
+          "optional": false,
+          "allergenNotes": ["check facility cross-contact"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "cinnamon",
+          "item": "ground cinnamon",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil-frying",
+          "item": "neutral oil for pan-frying",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": "use as needed",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Mix the dough",
+      "action": "Combine warm water, yeast, and dough sugar. Add flour, salt, and 1 tablespoon oil; stir with a clean spoon until no dry flour remains and a very sticky dough forms.",
+      "estimatedTime": "7 minutes",
+      "temperature": "Water about 105°F / 41°C",
+      "visualOrTactileCue": "Dough is sticky, shaggy, and fully hydrated with no flour pockets.",
+      "safetyNote": "Raw flour can contain harmful germs; do not taste raw dough and wash hands and surfaces after flour contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Let the dough rise",
+      "action": "Cover and rise in a draft-free place for about 1 hour, until visibly doubled and bubbly.",
+      "estimatedTime": "60 minutes",
+      "temperature": "Warm room, about 75°F / 24°C",
+      "visualOrTactileCue": "Dough has doubled and shows bubbles across the surface.",
+      "safetyNote": "Use a clean food-safe cover and do not place the bowl near raw foods or excessive heat.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Prepare the filling",
+      "action": "Mix brown sugar, chopped sunflower and pumpkin seeds, sesame seeds, and cinnamon. Divide mentally or by weight into 8 equal portions.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Seeds are fine enough not to puncture the dough and the mixture is evenly speckled.",
+      "safetyNote": "Check seed packages for sesame, peanut, and tree-nut facility cross-contact before serving guests.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Fill the pancakes",
+      "action": "Oil hands lightly, deflate the dough, and divide into 8 pieces. Flatten one piece in an oiled palm, add about 2 tablespoons filling, gather edges over it, and pinch firmly closed; repeat.",
+      "estimatedTime": "15 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Each ball is fully sealed with no sugar visible through the seam.",
+      "safetyNote": "Keep raw dough away from ready-to-eat foods and clean flour residue before cooking begins.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Pan-fry and press",
+      "action": "Heat a thin film of oil over medium-low. Place 2 pancakes seam-side down, cook 1 minute, turn, then press gently to 10 cm / 4 inches. Cover and cook 2 minutes; uncover, turn, and cook 1 to 2 minutes more. Repeat with fresh oil as needed.",
+      "estimatedTime": "4 to 5 minutes per batch",
+      "temperature": "Medium-low heat",
+      "visualOrTactileCue": "Both sides are deep golden, the dough edge looks cooked rather than wet, and no raw seam remains.",
+      "safetyNote": "Molten sugar can cause severe burns; press gradually, keep seams intact, and never touch leaked filling.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Cool before eating",
+      "action": "Transfer to a wire rack and cool at least 15 minutes before serving.",
+      "estimatedTime": "15 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pancakes remain warm but can be held comfortably; filling has thickened slightly.",
+      "safetyNote": "Warn diners that the center may remain much hotter than the exterior and supervise children.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill is used; cook in a stable heavy skillet on a controlled stovetop burner with a lid and a clear, dry work area.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Dough doubles and becomes bubbly before shaping",
+    "Both pancake sides are deep golden",
+    "Edges and seams show no wet raw dough",
+    "Filling is molten but contained"
+  ],
+  "foodSafetyNotes": [
+    "Do not taste raw flour or raw dough; wash hands and surfaces after flour contact.",
+    "Check sesame and seed packages for allergen and facility cross-contact statements.",
+    "Keep water away from the hot oil and wipe spills before heating.",
+    "Treat leaked brown-sugar filling as a burn hazard.",
+    "Cool at least 15 minutes and warn that centers stay hotter than the exterior."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains wheat/gluten and sesame. Seed products may share facilities with peanuts or tree nuts; verify every package and use clean equipment."
+  },
+  "substitutions": [
+    "A nut-free claim requires verified seed packaging and facility information, not only omission of nuts.",
+    "Do not substitute gluten-free flour without separately developing dough hydration and structure."
+  ],
+  "ingredientSourcing": [
+    "Choose fresh instant yeast and record its expiration date for test-kitchen repeatability.",
+    "Source seeds with clear allergen and shared-facility statements."
+  ],
+  "makeAhead": "Mix the filling up to 3 days ahead and keep airtight. This draft does not approve overnight dough fermentation until test-kitchen and safety review.",
+  "storage": "Cool completely, then refrigerate in a single layer or separated by parchment for up to 3 days; this limit requires food-safety approval.",
+  "reheating": "Reheat in a covered dry skillet over low heat, then uncover to re-crisp. Cool briefly because the sugar center becomes extremely hot again.",
+  "leftovers": "Freeze cooled pancakes individually for up to 1 month as a quality guideline pending review; thaw under refrigeration before reheating.",
+  "servingSuggestions": [
+    "Serve warm only after the molten center has cooled safely",
+    "Offer one pancake per person after a savory meal"
+  ],
+  "menuPairings": ["M01", "SF01", "B01", "F01"],
+  "relatedRecipeIds": ["D05", "D02"],
+  "faq": [
+    {
+      "question": "Why cook hotteok over medium-low heat?",
+      "answer": "Moderate heat gives the yeasted dough time to cook through before the outside burns and the sugar leaks."
+    },
+    {
+      "question": "When is hotteok safe to bite?",
+      "answer": "Wait at least 15 minutes and test cautiously; the syrup center can remain dangerously hotter than the crust."
+    }
+  ],
+  "seoTitle": "Hotteok Brown-Sugar Seed Pancakes Recipe",
+  "metaDescription": "Make Korean hotteok with sticky yeasted dough and brown-sugar seed filling, including raw-flour, hot-oil, molten-syrup, and allergen safeguards.",
+  "primaryKeyword": "hotteok brown sugar seed pancakes",
+  "secondaryTopics": [
+    "Korean sweet pancakes",
+    "seed hotteok",
+    "Korean street-food dessert"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["raw-flour safety", "hot-syrup warning", "recipe card"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary dough, filling, shaping, and pan-frying convention reference: https://www.maangchi.com/recipe/hotteok",
+    "Current raw-flour food-safety framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
+    "Seed-forward filling is a contemporary formulation for the locked title; not test-cooked. Korean-language, cultural, allergen, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

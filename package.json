@@ -1,0 +1,58 @@
+{
+  "name": "kbbqguide-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "build": "npm run validate:phase8 && cross-env ASTRO_TELEMETRY_DISABLED=1 astro build && npm run validate:preview && npm run validate:headers",
+    "preview": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro preview",
+    "typecheck": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate:phase1": "vitest run tests/phase1.test.ts",
+    "validate:phase2": "vitest run tests/phase1.test.ts tests/phase2.test.ts",
+    "validate:phase3-batch1": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts",
+    "validate:phase3-batch2": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts",
+    "validate:phase3-batch3": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts",
+    "validate:phase3-batch4": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts",
+    "validate:phase3-batch5": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts",
+    "validate:phase3-batch6": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts",
+    "validate:phase3-batch7": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts",
+    "validate:phase3-batch8": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts",
+    "validate:phase3": "npm run validate:phase3-batch8",
+    "validate:phase4": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts tests/phase4.test.ts",
+    "validate:phase5": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts tests/phase4.test.ts tests/phase5.test.ts",
+    "validate:phase6": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts tests/phase4.test.ts tests/phase5.test.ts tests/phase6.test.ts",
+    "validate:phase7": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts tests/phase4.test.ts tests/phase5.test.ts tests/phase6.test.ts tests/phase7.test.ts",
+    "validate:phase8": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts tests/phase4.test.ts tests/phase5.test.ts tests/phase6.test.ts tests/phase7.test.ts tests/phase8.test.ts",
+    "validate:preview": "node scripts/validate-built-preview.mjs",
+    "validate:headers": "node scripts/validate-security-headers.mjs",
+    "audit": "npm audit --audit-level=high",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "astro": "7.0.9",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.9",
+    "@eslint/js": "10.0.1",
+    "@types/node": "26.1.1",
+    "@typescript-eslint/eslint-plugin": "8.64.0",
+    "@typescript-eslint/parser": "8.64.0",
+    "cross-env": "10.1.0",
+    "eslint": "10.7.0",
+    "eslint-plugin-astro": "1.7.0",
+    "prettier": "3.9.5",
+    "prettier-plugin-astro": "0.14.1",
+    "typescript": "6.0.3",
+    "vitest": "4.1.10"
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "contentStatus": "complete",
+  "id": "B13",
+  "title": "Eomuk Bokkeum Stir-Fried Fish Cake",
+  "koreanName": "Eomuk Bokkeum",
+  "hangul": "어묵볶음",
+  "romanization": "eomuk bokkeum",
+  "category": "banchan",
+  "releaseCohort": "week-03",
+  "publicReleaseOrder": 39,
+  "canonicalSlug": "eomuk-bokkeum-stir-fried-fish-cake",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/eomuk-bokkeum-stir-fried-fish-cake/",
+  "shortDescription": "Prepared Korean fish cake is stir-fried with onion and carrot, then glazed with soy sauce, garlic, and rice syrup.",
+  "culturalContext": "Eomuk bokkeum is a familiar Korean stir-fried fish-cake side dish. Fish-cake shape, vegetables, sweetness, chile, and sauce balance vary; this draft uses packaged sheets.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 10,
+    "display": "10 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "totalTime": {
+    "minutes": 30,
+    "display": "About 30 minutes"
+  },
+  "equipment": [
+    "Large skillet or wok",
+    "Separate clean cutting board",
+    "Heatproof spatula",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "stir-fry",
+      "heading": "Fish cake and vegetables",
+      "ingredients": [
+        {
+          "id": "fish-cake",
+          "item": "packaged Korean fish-cake sheets",
+          "metricAmount": 450,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "pound",
+          "preparation": "label checked; cut into bite-size strips",
+          "optional": false,
+          "allergenNotes": [
+            "fish",
+            "wheat/gluten; may contain egg, soy, shellfish, or other allergens"
+          ]
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 120,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "medium onion",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot",
+          "metricAmount": 80,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "medium carrot",
+          "preparation": "cut into matchsticks",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "glaze",
+      "heading": "Glaze",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Check and cut",
+      "action": "Read the fish-cake package for allergens, storage, and heating directions; cut fish cake and vegetables on a clean board.",
+      "estimatedTime": "10 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pieces are even and the label requirements are understood.",
+      "safetyNote": "Fish cake formulas vary and may include fish, wheat, egg, soy, shellfish, or other allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the glaze",
+      "action": "Stir soy sauce, water, rice syrup, and garlic in a clean bowl.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The syrup is dispersed.",
+      "safetyNote": "Verify soy sauce allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Stir-fry vegetables",
+      "action": "Heat oil over medium-high and stir-fry onion and carrot until crisp-tender.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Onion edges turn translucent.",
+      "safetyNote": "Keep the pan handle turned inward.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Heat the fish cake",
+      "action": "Add fish cake and stir-fry until hot and beginning to brown at the edges.",
+      "estimatedTime": "3 to 4 minutes",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Fish cake is steaming throughout with light browning.",
+      "safetyNote": "Follow any stricter package heating instruction.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Glaze",
+      "action": "Add the glaze and toss until reduced and glossy; remove from heat and add sesame oil and seeds.",
+      "estimatedTime": "2 to 3 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "The sauce clings and no watery pool remains.",
+      "safetyNote": "Reduced syrup is very hot; avoid splashing.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve or chill",
+      "action": "Transfer to a clean dish, rest 5 minutes, and serve warm or cool.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Warm or cool",
+      "visualOrTactileCue": "The glaze thickens slightly as it rests.",
+      "safetyNote": "Refrigerate within 2 hours.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is stir-fried on the stovetop.",
+  "targetInternalTemperature": "Follow the packaged fish cake manufacturer’s heating instructions; heat until steaming throughout.",
+  "visualDonenessCues": [
+    "Fish cake is steaming throughout",
+    "Edges show light browning",
+    "Glaze clings without a watery pool"
+  ],
+  "foodSafetyNotes": [
+    "Read and follow the packaged fish cake storage and heating instructions.",
+    "Fish cake formulas vary; verify fish, wheat/gluten, egg, soy, shellfish, and other allergen statements.",
+    "Heat until steaming throughout or to any stricter label direction.",
+    "Refrigerate within 2 hours at or below 40°F / 4°C."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": true,
+    "shellfish": false,
+    "egg": true,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains fish, wheat/gluten, soy, sesame, and potentially egg; packaged fish cake may also contain shellfish or other allergens, so the exact label controls."
+  },
+  "substitutions": [
+    "Use only a verified allergen-appropriate fish cake and adjust seasoning after test cooking."
+  ],
+  "ingredientSourcing": [
+    "Buy refrigerated or frozen Korean fish cake from a high-turnover market.",
+    "Keep the original package so its ingredients, allergen statement, storage, and heating directions remain available."
+  ],
+  "makeAhead": "Cut vegetables and mix glaze up to 1 day ahead; keep separately covered and refrigerated.",
+  "storage": "Follow the package after-opening directions; refrigerate the cooked dish within 2 hours and use within 4 days or the stricter label window.",
+  "reheating": "Reheat in a skillet until steaming throughout and follow any stricter package direction.",
+  "leftovers": "Use properly refrigerated leftovers in rice bowls within the approved or label-directed window.",
+  "servingSuggestions": ["Serve warm or cool as banchan."],
+  "menuPairings": ["M08", "SF03", "F08", "SA03"],
+  "relatedRecipeIds": ["B12", "B14"],
+  "faq": [
+    {
+      "question": "Are all Korean fish cakes the same?",
+      "answer": "No. Ingredients, texture, allergens, and heating directions vary by brand and product."
+    },
+    {
+      "question": "Can I skip reading the label if fish is expected?",
+      "answer": "No. Fish cakes may contain wheat, egg, soy, shellfish, or other allergens."
+    }
+  ],
+  "seoTitle": "Eomuk Bokkeum Korean Fish Cake",
+  "metaDescription": "Make eomuk bokkeum with Korean fish cake, vegetables, and soy glaze, plus label-first allergen checks and steaming-hot handling guidance.",
+  "primaryKeyword": "eomuk bokkeum recipe",
+  "secondaryTopics": ["Korean fish cake", "fish cake banchan"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi eomuk-bokkeum editorial reference URL checked 2026-07-14: https://www.maangchi.com/recipe/eomuk-bokkeum",
+    "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

@@ -1,0 +1,315 @@
+{
+  "contentStatus": "complete",
+  "id": "F05",
+  "title": "Gochugaru-Yuja Cabbage Slaw",
+  "koreanName": "Gochugaru-Yuja Yangbaechu Saelleodeu",
+  "hangul": "고춧가루 유자 양배추 샐러드",
+  "romanization": "gochugaru-yuja yangbaechu saelleodeu",
+  "category": "fresh",
+  "releaseCohort": "week-06",
+  "publicReleaseOrder": 52,
+  "canonicalSlug": "gochugaru-yuja-cabbage-slaw",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fresh/gochugaru-yuja-cabbage-slaw/",
+  "shortDescription": "Shredded cabbage and carrot are tossed just before serving with a bright yuja, rice-vinegar, gochugaru, and sesame dressing.",
+  "culturalContext": "This is a contemporary Korean-inspired slaw, not a traditional named dish. The descriptive Korean name, yuja product choice, and adaptation label require Korean-language and food-editor review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "fresh side servings",
+  "prepTime": {
+    "minutes": 16,
+    "display": "16 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No rest"
+  },
+  "totalTime": {
+    "minutes": 16,
+    "display": "16 minutes"
+  },
+  "equipment": [
+    "Colander",
+    "Clean cutting board and knife",
+    "Salad spinner or clean towels",
+    "Large clean mixing bowl",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "slaw",
+      "heading": "Vegetables",
+      "ingredients": [
+        {
+          "id": "cabbage",
+          "item": "green cabbage",
+          "metricAmount": 500,
+          "metricUnit": "g",
+          "customaryAmount": 1.1,
+          "customaryUnit": "pounds",
+          "preparation": "outer damaged leaves removed; finely shredded",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "medium carrot",
+          "preparation": "peeled and julienned",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "dressing",
+      "heading": "Yuja dressing",
+      "ingredients": [
+        {
+          "id": "yuja-cheong",
+          "item": "yuja marmalade or yuja-cheong",
+          "metricAmount": 45,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": "label checked",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean red pepper flakes",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 0.33,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Sort and wash",
+      "action": "Discard damaged cabbage leaves, then rinse cabbage, carrot, and scallions under running water before cutting.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Produce is clean with damaged portions discarded.",
+      "safetyNote": "Use potable running water without soap or detergent.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Dry and cut",
+      "action": "Dry thoroughly, then shred cabbage, julienne carrot, and slice scallions on a clean board.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pieces are dry and evenly cut.",
+      "safetyNote": "Use clean ready-to-eat tools kept away from raw meat and seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Mix the dressing",
+      "action": "Whisk yuja product, vinegar, gochugaru, neutral oil, sesame oil, and salt; confirm the yuja label ingredients.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The dressing is uniform.",
+      "safetyNote": "Verify all packaged condiment allergen labels.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Toss at service",
+      "action": "Add vegetables and toss gently immediately before serving.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Ingredients are lightly coated and still crisp.",
+      "safetyNote": "Use clean hands or utensils.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Taste with a clean utensil",
+      "action": "Adjust only after using a clean tasting spoon once; do not return it to the bowl.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "Flavor is balanced without repeated tasting contact.",
+      "safetyNote": "Use a fresh spoon for every taste.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve immediately",
+      "action": "Transfer to a clean dish and serve immediately; refrigerate if service is delayed.",
+      "estimatedTime": "1 minute",
+      "temperature": "Cool",
+      "visualOrTactileCue": "The salad is crisp and not watery.",
+      "safetyNote": "Refrigerate at or below 40°F / 4°C and discard after unsafe holding.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this is a raw, ready-to-eat fresh side dish.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Cabbage remains crisp",
+    "Dressing lightly coats without pooling",
+    "No damaged leaves remain"
+  ],
+  "foodSafetyNotes": [
+    "Wash produce under cool potable running water without soap or detergent.",
+    "Use clean hands, boards, knives, bowls, and serving ware for ready-to-eat food.",
+    "Keep washed produce separate from raw animal foods and their tools.",
+    "Refrigerate at or below 40°F / 4°C and serve promptly."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains sesame; yuja products vary, so verify the exact label for additional allergens."
+  },
+  "substitutions": [
+    "Do not substitute an unlabeled homemade preserve without a separate safety review."
+  ],
+  "ingredientSourcing": [
+    "Choose a firm dense cabbage and a sealed labeled yuja product."
+  ],
+  "makeAhead": "Shred dry vegetables and mix dressing separately up to 1 day ahead; refrigerate and toss at service.",
+  "storage": "Best served immediately. Refrigerate components separately at or below 40°F / 4°C and discard dressed salad after unsafe holding.",
+  "reheating": "Do not reheat; this is a raw ready-to-eat dish.",
+  "leftovers": "Avoid retaining table-exposed dressed leftovers; use only clean, promptly refrigerated portions.",
+  "servingSuggestions": ["Serve beside rich grilled meats or fish."],
+  "menuPairings": ["M08", "SF06", "B20", "SA05"],
+  "relatedRecipeIds": ["F04", "F06"],
+  "faq": [
+    {
+      "question": "Is this a traditional Korean dish?",
+      "answer": "No. It is explicitly a contemporary Korean-inspired slaw."
+    },
+    {
+      "question": "Why check the yuja label?",
+      "answer": "Sweeteners and added ingredients vary by product."
+    }
+  ],
+  "seoTitle": "Gochugaru-Yuja Korean Cabbage Slaw",
+  "metaDescription": "Make crisp gochugaru-yuja cabbage slaw with running-water produce washing, labeled yuja marmalade, sesame dressing, and last-minute tossing.",
+  "primaryKeyword": "gochugaru yuja cabbage slaw",
+  "secondaryTopics": ["Korean-inspired slaw", "yuja dressing"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Contemporary locked-title formulation; Korean naming and adaptation framing require human review.",
+    "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 16,
+  "wash": "Discard damaged cabbage leaves, then rinse cabbage, carrot, and scallions under running water before cutting.",
+  "cut": "Dry thoroughly, then shred cabbage, julienne carrot, and slice scallions on a clean board.",
+  "mix": "Whisk yuja product, vinegar, gochugaru, neutral oil, sesame oil, and salt; confirm the yuja label ingredients.",
+  "toss": "Add vegetables and toss gently immediately before serving.",
+  "cues": [
+    "Cabbage remains crisp",
+    "Dressing lightly coats without pooling",
+    "No damaged leaves remain"
+  ],
+  "sourcing": [
+    "Choose a firm dense cabbage and a sealed labeled yuja product."
+  ],
+  "serving": ["Serve beside rich grilled meats or fish."],
+  "source": "Contemporary locked-title formulation; Korean naming and adaptation framing require human review."
+}

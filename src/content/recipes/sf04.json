@@ -1,0 +1,324 @@
+{
+  "contentStatus": "complete",
+  "id": "SF04",
+  "title": "Ojingeo Gui Spicy Grilled Squid",
+  "koreanName": "Ojingeo Gui",
+  "hangul": "오징어구이",
+  "romanization": "ojingeo gui",
+  "category": "seafood",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 11,
+  "canonicalSlug": "ojingeo-gui-spicy-grilled-squid",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/ojingeo-gui-spicy-grilled-squid/",
+  "shortDescription": "Whole squid is cleaned, lightly scored, grilled until opaque and tender, then lacquered with a glossy gochujang, garlic, ginger, and rice-syrup sauce.",
+  "culturalContext": "Spicy whole grilled squid is commonly shared in Korean drinking and home-table settings. Names and seasoning vary; this draft follows an ojingeo-tonggui-style presentation while retaining the locked shorter title, and requires Korean-language review.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": { "minutes": 25, "display": "25 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 7, "display": "6 to 8 minutes" },
+  "restTime": { "minutes": 2, "display": "2 minutes" },
+  "totalTime": { "minutes": 34, "display": "About 35 minutes" },
+  "equipment": [
+    "Chef’s knife and cutting board",
+    "Kitchen shears",
+    "Small mixing bowl and brush",
+    "Outdoor grill or manufacturer-approved indoor electric grill pan",
+    "Long-handled tongs",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "squid-and-sauce",
+      "heading": "Squid and spicy glaze",
+      "ingredients": [
+        {
+          "id": "squid",
+          "item": "large whole squid",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "cleaned, quill, innards, eyes, and beak removed",
+          "optional": false,
+          "allergenNotes": ["shellfish/mollusk"]
+        },
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["may contain wheat/gluten and soy; check label"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral high-heat oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Clean the squid",
+      "action": "Keep the squid cold. Pull the head and innards from the mantle, remove the clear quill, cut away the innards, and remove the eyes and beak. Rinse the cleaned edible portions briefly under cold running water.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Keep at or below 40°F / 4°C",
+      "visualOrTactileCue": "The mantle is hollow and no hard quill or beak remains.",
+      "safetyNote": "Use a dedicated raw-seafood board and wash hands, knife, board, and sink area afterward.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Dry and score",
+      "action": "Pat the mantle and tentacles very dry. Lay chopsticks along both sides of the mantle as guards and score across the top at 12 mm / 1/2-inch intervals without cutting through; lightly score thick tentacles.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The surface is dry and evenly scored while the mantle remains whole.",
+      "safetyNote": "Discard paper towels after raw contact and sanitize the work surface.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Mix the glaze",
+      "action": "In a clean bowl, stir gochujang, rice syrup, soy sauce, garlic, and ginger until smooth. Keep this glaze separate from the raw squid.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The glaze is thick, smooth, and spoonable.",
+      "safetyNote": "Use a clean brush and do not return unused glaze to a raw-seafood container.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the grill",
+      "action": "Preheat an outdoor grill or approved indoor electric grill pan to medium-high and lightly oil the clean grate or pan.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Medium-high heat",
+      "visualOrTactileCue": "A drop of water on an electric grill pan evaporates promptly and the oil shimmers.",
+      "safetyNote": "Never use charcoal, propane, or other fuel-burning grills indoors or in enclosed spaces.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill the squid",
+      "action": "Grill the mantle and tentacles for about 1 minute per side, pressing gently with tongs as they curl. Brush the upward-facing side with glaze, turn, brush the second side, and continue turning until opaque and glossy.",
+      "estimatedTime": "6 to 8 minutes total",
+      "temperature": "Medium-high heat",
+      "visualOrTactileCue": "The flesh is opaque throughout, the surface is red and shiny, and the thickest part is firm but still springy.",
+      "safetyNote": "Use clean tongs after the squid is cooked; do not rely on color alone if any thick area remains translucent.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Finish and serve",
+      "action": "Move to a clean platter, rest 2 minutes, drizzle with sesame oil, and add scallions and sesame seeds. Cut into rings and bite-size tentacle pieces with clean shears just before serving.",
+      "estimatedTime": "4 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The rings cut cleanly and remain moist rather than rubbery.",
+      "safetyNote": "Serve promptly and refrigerate leftovers within 2 hours.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or a manufacturer-approved indoor electric grill pan with working ventilation. Heat to medium-high, clean the surface, oil lightly, and keep raw and cooked utensils separate.",
+  "targetInternalTemperature": "FoodSafety.gov lists no numeric minimum for squid; cook until the flesh is pearly or white and opaque throughout.",
+  "visualDonenessCues": [
+    "Mantle and tentacles are opaque throughout",
+    "Surface is glossy with light char",
+    "Thickest flesh is firm and springy, not translucent"
+  ],
+  "foodSafetyNotes": [
+    "Buy squid that smells clean and mild, not sour or strongly fishy, and keep it cold.",
+    "Thaw frozen squid overnight in the refrigerator, never on the counter.",
+    "Prevent raw-seafood juices from contacting cooked food, glaze, garnishes, or serving utensils.",
+    "Cook until opaque throughout and refrigerate leftovers within 2 hours in a shallow covered container.",
+    "Fuel-burning grills are outdoor-only; use only approved electric equipment indoors."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains mollusk shellfish, soy, sesame, and likely wheat; verify every packaged sauce label and prevent grill cross-contact."
+  },
+  "substitutions": [
+    "Use certified gluten-free gochujang and tamari only after verifying all labels.",
+    "Corn syrup may replace rice syrup at equal volume."
+  ],
+  "ingredientSourcing": [
+    "Ask a seafood counter to clean a whole squid while preserving the mantle and tentacles.",
+    "Korean markets commonly stock gochujang and rice syrup; compare allergen labels."
+  ],
+  "makeAhead": "Mix the glaze up to 2 days ahead and refrigerate in a sealed container. Clean squid no more than 1 day ahead and keep at or below 40°F / 4°C.",
+  "storage": "Refrigerate cooked squid in a shallow airtight container within 2 hours and use within 3 days; this conservative draft limit requires food-safety review.",
+  "reheating": "Reheat briefly in a covered skillet over medium heat until steaming; prolonged cooking toughens squid.",
+  "leftovers": "Slice cold leftover squid thinly for a rice bowl only if it was cooled and refrigerated promptly.",
+  "servingSuggestions": [
+    "Serve immediately with rice and crisp lettuce",
+    "Cut at the table for a shareable presentation"
+  ],
+  "menuPairings": ["B03", "F06", "SA01", "D05"],
+  "relatedRecipeIds": ["SF03", "SF05"],
+  "faq": [
+    {
+      "question": "Why score the squid?",
+      "answer": "Shallow scoring limits curling and creates more surface for the glaze without cutting the mantle into separate pieces."
+    },
+    {
+      "question": "How do I avoid rubbery squid?",
+      "answer": "Use high heat, cook only until fully opaque and springy, and remove it promptly rather than extending the cook."
+    }
+  ],
+  "seoTitle": "Ojingeo Gui Spicy Grilled Squid Recipe",
+  "metaDescription": "Make Korean-style spicy grilled squid with a glossy gochujang glaze, whole-squid cleaning guidance, grill cues, and explicit seafood safety steps.",
+  "primaryKeyword": "ojingeo gui spicy grilled squid",
+  "secondaryTopics": [
+    "Korean grilled squid",
+    "ojingeo tonggui",
+    "gochujang seafood"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe card",
+    "food-safety notes",
+    "seafood preparation"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary preparation reference: https://www.maangchi.com/recipe/ojingeo-tonggui (whole-squid cleaning, scoring, glaze, and grill sequence).",
+    "Seafood doneness reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Cold-storage reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Draft synthesized for the locked title; not test-cooked. Korean-language, cultural, and food-safety review remain required."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Whole squid is cold with moist, intact flesh",
+      "Aroma is mild and clean rather than sour, ammonia-like, or strongly fishy"
+    ],
+    "thawing": "Thaw frozen squid in a covered container in the refrigerator overnight; never thaw on the counter.",
+    "cleaningOrShellPreparation": "Remove the innards, ink sac if present, clear quill, eyes, and beak; retain the cleaned mantle and tentacles and rinse them briefly under cold running water.",
+    "drying": "Pat every surface thoroughly dry with disposable towels before scoring and grilling.",
+    "scoringOrSkewering": "Score the mantle without cutting through, using chopsticks as knife guards; lightly score thick tentacles.",
+    "grillSurfacePreparation": "Preheat a scrubbed outdoor grill or approved electric grill pan to medium-high and apply a thin coat of neutral oil.",
+    "stickingPrevention": "Dry the squid, preheat fully, oil the surface lightly, and wait until the flesh releases before turning.",
+    "approximateTime": "6 to 8 minutes total, depending on thickness and grill output",
+    "donenessCues": [
+      "Flesh is pearly or white and opaque throughout",
+      "Thickest areas are firm and springy",
+      "No translucent raw band remains"
+    ],
+    "applicableTemperature": "FoodSafety.gov provides a visual doneness standard rather than a numeric minimum for squid.",
+    "shellOpeningAndDiscardGuidance": null,
+    "crossContactNotes": [
+      "Use separate raw and cooked utensils and platters",
+      "Keep the clean glaze and garnish away from raw-squid juices"
+    ]
+  }
+}

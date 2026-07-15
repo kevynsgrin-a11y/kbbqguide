@@ -1,0 +1,157 @@
+---
+import affiliateData from '../../../data/affiliate-registry.json';
+import revenueData from '../../../data/revenue-modules.json';
+import registryData from '../../../data/url-registry.json';
+import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import DisabledAdSlot from '../../components/DisabledAdSlot.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd } from '../../lib/seo';
+import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_SHOP');
+const merchants = new Map(
+  affiliateData.merchants.map((merchant) => [merchant.id, merchant]),
+);
+const assets = [
+  {
+    title: 'Free Korean BBQ Night Planner',
+    format: 'planned accessible PDF and on-site version',
+    status: 'Content and delivery provider not approved',
+  },
+  {
+    title: 'Menus and shopping lists for 2, 4, and 8',
+    format: 'planned lead magnet using the existing menu tools',
+    status: 'Export, consent, and delivery not approved',
+  },
+  {
+    title: 'Paid printable planner',
+    format: 'planned digital product',
+    status: 'Price, tax, checkout, refund, and files not configured',
+  },
+  {
+    title: 'Marinade and banchan bundle',
+    format: 'planned digital bundle',
+    status: 'Test-kitchen and product review required',
+  },
+  {
+    title: 'Premium hosting toolkit',
+    format: 'planned hosting system',
+    status: 'Scope, price, licensing, and delivery not approved',
+  },
+];
+---
+
+<BaseLayout
+  title="Shop and Revenue Preview"
+  description="A disabled preview of transparent Korean BBQ pantry, equipment, hosting, and digital-product modules with no active merchant links or prices."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+      { name: 'Shop', path },
+    ]),
+  ]}
+  pageClass="revenue-page"
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+          { label: 'Shop' },
+        ]}
+      />
+      <p class="eyebrow">Transparent architecture, zero active commerce</p>
+      <h1>Plan helpful recommendations before monetizing them.</h1>
+      <p class="lede">
+        Every module starts with the reader’s decision, evidence, safety, and
+        disclosure needs. Merchant activation, prices, product links, and
+        checkout remain disabled.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="shell reading-width">
+      <AffiliateDisclosure />
+    </div>
+  </section>
+
+  <div class="shell">
+    <DisabledAdSlot
+      slotId="AD_AFTER_INTRO"
+      label="Possible post-introduction placement"
+    />
+  </div>
+
+  <section class="section tinted" aria-labelledby="revenue-modules-title">
+    <div class="shell">
+      <p class="eyebrow">Seven disabled module contracts</p>
+      <h2 id="revenue-modules-title">Recommendation areas</h2>
+      <div class="card-grid revenue-grid">
+        {
+          revenueData.modules.map((module) => (
+            <article
+              class="support-card revenue-card"
+              data-revenue-status={module.status}
+            >
+              <span class="status-pill">Disabled</span>
+              <h3>{module.title}</h3>
+              <p>{module.purpose}</p>
+              <strong>Pending merchant candidates</strong>
+              {module.merchantCandidateIds.length > 0 ? (
+                <ul class="plain-list">
+                  {module.merchantCandidateIds.map((id) => {
+                    const merchant = merchants.get(id);
+                    if (!merchant) throw new Error(`Missing merchant ${id}`);
+                    return (
+                      <li>
+                        {merchant.name} · {merchant.status}
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p>No candidate assigned.</p>
+              )}
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="digital-assets-title">
+    <div class="shell">
+      <p class="eyebrow">Product concepts, not offers</p>
+      <h2 id="digital-assets-title">Revenue-ready asset queue</h2>
+      <div class="support-grid">
+        {
+          assets.map((asset) => (
+            <article class="support-card">
+              <span class="status-pill">Unavailable</span>
+              <h3>{asset.title}</h3>
+              <p>{asset.format}</p>
+              <p>
+                <strong>Gate:</strong> {asset.status}
+              </p>
+            </article>
+          ))
+        }
+      </div>
+      <div class="hero-actions">
+        <a
+          class="button secondary"
+          href={registryPathById(registry, 'SYS_CLASS')}>Live class preview</a
+        >
+        <a
+          class="button secondary"
+          href={registryPathById(registry, 'SYS_MEDIA_KIT')}
+          >Sponsorship/media kit</a
+        >
+      </div>
+    </div>
+  </section>
+</BaseLayout>

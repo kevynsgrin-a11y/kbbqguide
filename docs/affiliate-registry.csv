@@ -1,0 +1,10 @@
+id,name,program_route,status,terms_verified_at,affiliate_id,approved_domains,email_link_permission,social_link_permission,price_display_permission,api_permission
+amazon-associates,Amazon Associates,direct Amazon program,not-applied,,,,unknown,unknown,unknown,unknown
+weee-affiliate,Weee! Affiliate Program,direct/in-house Weee program,not-applied,,,,unknown,unknown,unknown,unknown
+walmart-creator,Walmart Creator,direct Walmart platform,not-applied,,,,unknown,unknown,unknown,unknown
+thermoworks-impact,ThermoWorks,Impact,not-applied,,,,unknown,unknown,unknown,unknown
+bbqguys-impact,BBQGuys,Impact,not-applied,,,,unknown,unknown,unknown,unknown
+ooni-awin,Ooni,Awin,not-applied,,,,unknown,unknown,unknown,unknown
+ebay-partner-network,eBay Partner Network / eBay Ambassador,direct eBay programs,not-applied,,,,unknown,unknown,unknown,unknown
+etsy-affiliate,Etsy Affiliate Program / Creator Collective,official route; contracting platform requires enrollment verification,not-applied,,,,unknown,unknown,unknown,unknown
+home-depot-affiliate,The Home Depot Affiliate Program,official route; network requires enrollment verification,not-applied,,,,unknown,unknown,unknown,unknown

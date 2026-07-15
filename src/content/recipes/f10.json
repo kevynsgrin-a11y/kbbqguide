@@ -1,0 +1,294 @@
+{
+  "contentStatus": "complete",
+  "id": "F10",
+  "title": "Contemporary Sesame Broccoli and Bell Pepper Salad",
+  "koreanName": "Chamgireum Beurokolli Paprika Saelleodeu",
+  "hangul": "참기름 브로콜리 파프리카 샐러드",
+  "romanization": "chamgireum beurokolli papeurika-saelleodeu",
+  "category": "fresh",
+  "releaseCohort": "week-13",
+  "publicReleaseOrder": 79,
+  "canonicalSlug": "contemporary-sesame-broccoli-and-bell-pepper-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fresh/contemporary-sesame-broccoli-and-bell-pepper-salad/",
+  "shortDescription": "Briefly blanched broccoli and raw bell peppers are cooled, dried, and tossed with a sesame-soy vinaigrette.",
+  "culturalContext": "This contemporary vegetable salad uses Korean pantry seasonings with broccoli and bell pepper. It is not presented as a traditional named banchan, and its descriptive Korean display name requires review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "restTime": {
+    "minutes": 15,
+    "display": "15 minutes cooling"
+  },
+  "totalTime": {
+    "minutes": 38,
+    "display": "About 40 minutes"
+  },
+  "equipment": [
+    "Clean colander",
+    "Large pot",
+    "Clean bowl for potable ice-water bath",
+    "Salad spinner or clean towels",
+    "Clean cutting board and knife",
+    "Large clean bowl"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "salad",
+      "heading": "Vegetables and sesame dressing",
+      "ingredients": [
+        {
+          "id": "broccoli",
+          "item": "broccoli florets",
+          "metricAmount": 450,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cups",
+          "preparation": "cut evenly and washed under running water",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "red-pepper",
+          "item": "red bell pepper",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "large",
+          "preparation": "washed, seeded, and thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "yellow-pepper",
+          "item": "yellow bell pepper",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "large",
+          "preparation": "washed, seeded, and thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 20,
+          "metricUnit": "ml",
+          "customaryAmount": 4,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "clove",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Wash produce",
+      "action": "Wash broccoli and whole bell peppers under cool running water; do not use soap or produce wash.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "No visible soil remains.",
+      "safetyNote": "Keep produce and clean tools away from raw meat and seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Prepare ice bath and dressing",
+      "action": "Make an ice-water bath with potable water in a clean bowl; separately whisk soy sauce, vinegar, sesame oil, sesame seeds, and garlic.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Ice bath is cold and dressing is uniform.",
+      "safetyNote": "Use a sanitized bowl and potable ice and water.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Blanch broccoli",
+      "action": "Boil broccoli in small batches until bright green and crisp-tender.",
+      "estimatedTime": "2 to 3 minutes",
+      "temperature": "Rolling boil",
+      "visualOrTactileCue": "Stems are crisp-tender and color is bright.",
+      "safetyNote": "Prevent boiling-water and steam burns; do not overcrowd the pot.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Cool promptly",
+      "action": "Transfer broccoli immediately with a clean spider to the potable ice bath, then drain as soon as cold.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cool rapidly to 40°F / 4°C or below",
+      "visualOrTactileCue": "Broccoli is cold throughout.",
+      "safetyNote": "Cool promptly and do not leave cooked vegetables in the temperature danger zone.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Dry and slice",
+      "action": "Dry broccoli thoroughly; seed and thinly slice the washed peppers on a clean board.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Vegetables are dry and evenly cut.",
+      "safetyNote": "Use ready-to-eat tools that have not contacted raw foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Toss and chill",
+      "action": "Toss vegetables with dressing and refrigerate until service.",
+      "estimatedTime": "5 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Dressing lightly coats dry vegetables.",
+      "safetyNote": "Keep cold and observe the 2-hour limit, or 1 hour above 90°F / 32°C.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill required; use a clean produce area and a stable stovetop for blanching.",
+  "targetInternalTemperature": "Cool promptly and hold at or below 40°F / 4°C.",
+  "visualDonenessCues": [
+    "Broccoli is bright green and crisp-tender",
+    "Broccoli is cold and thoroughly drained",
+    "Peppers remain crisp and dressing is lightly applied"
+  ],
+  "foodSafetyNotes": [
+    "Wash produce under running water without soap or bleach.",
+    "Use potable ice and water in a clean ice bath.",
+    "Cool blanched broccoli promptly to 40°F / 4°C or below, then drain and dry.",
+    "Use clean ready-to-eat tools and hold the finished salad cold.",
+    "Discard salad held above 40°F / 4°C beyond 2 hours, or 1 hour above 90°F / 32°C."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Verify every packaged-ingredient label and segregate tools for diners with allergies."
+  },
+  "substitutions": [
+    "Cauliflower may replace part of the broccoli after separate blanch-time testing.",
+    "Use certified gluten-free tamari only after label verification."
+  ],
+  "ingredientSourcing": [
+    "Choose compact broccoli florets without yellowing or slime.",
+    "Choose firm bell peppers without soft spots."
+  ],
+  "makeAhead": "Blanch, cool, dry, and refrigerate vegetables up to 1 day ahead; dress within 2 hours of service.",
+  "storage": "Keep covered at or below 40°F / 4°C and use within 2 days.",
+  "reheating": "Do not reheat; serve chilled or cool.",
+  "leftovers": "Discard service leftovers beyond time limits or contaminated by used utensils.",
+  "servingSuggestions": [
+    "Serve chilled with grilled lamb or beef.",
+    "Add dressing shortly before service for the crispest texture."
+  ],
+  "menuPairings": ["M13", "SF11", "B25", "SA05"],
+  "relatedRecipeIds": ["F09", "F01"],
+  "faq": [
+    {
+      "question": "Why use potable ice water?",
+      "answer": "The cooked broccoli contacts the bath directly, so the bowl, water, and ice must all be safe and clean."
+    },
+    {
+      "question": "Can I skip drying?",
+      "answer": "Drying reduces dilution and helps the dressing coat evenly."
+    }
+  ],
+  "seoTitle": "Sesame Broccoli and Bell Pepper Salad",
+  "metaDescription": "Blanch and rapidly cool broccoli, pair it with crisp bell pepper, and toss with sesame-soy dressing using potable ice water and strict cold holding.",
+  "primaryKeyword": "sesame broccoli bell pepper salad",
+  "secondaryTopics": [
+    "Korean-inspired vegetable salad",
+    "blanched broccoli",
+    "sesame dressing"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe-header",
+    "ingredient-list",
+    "instructions",
+    "food-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Produce-safety basis: https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Cooling and cold-holding basis: project Food Safety Standard.",
+    "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
+  ],
+  "seafoodPreparation": null
+}

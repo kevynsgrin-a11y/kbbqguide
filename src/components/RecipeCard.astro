@@ -1,0 +1,31 @@
+---
+import type { CompleteRecipe } from '../schemas/recipe';
+import MediaPlaceholder from './MediaPlaceholder.astro';
+
+interface Props {
+  recipe: CompleteRecipe;
+  href: string;
+}
+
+const { recipe, href } = Astro.props;
+---
+
+<article class="recipe-card">
+  <a href={href}>
+    <MediaPlaceholder
+      mediaId={`${recipe.id}-hero`}
+      label="Planned recipe hero"
+      altDraft={`Finished ${recipe.title} presented safely at the table`}
+      ratio="4:3"
+    />
+    <div class="recipe-card-content">
+      <p class="eyebrow">Draft {recipe.id} · {recipe.adaptationLabel}</p>
+      <h3>{recipe.title}</h3>
+      <p>{recipe.shortDescription}</p>
+      <p class="card-meta">
+        <span>{recipe.totalTime.display}</span>
+        <span>{recipe.yield} {recipe.servingUnit}</span>
+      </p>
+    </div>
+  </a>
+</article>

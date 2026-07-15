@@ -1,0 +1,280 @@
+{
+  "contentStatus": "complete",
+  "id": "B25",
+  "title": "Gim Muchim Seasoned Seaweed",
+  "koreanName": "Gim Muchim",
+  "hangul": "김무침",
+  "romanization": "gim-muchim",
+  "category": "banchan",
+  "releaseCohort": "week-13",
+  "publicReleaseOrder": 78,
+  "canonicalSlug": "gim-muchim-seasoned-seaweed",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gim-muchim-seasoned-seaweed/",
+  "shortDescription": "Plain roasted seaweed is torn into bite-size pieces and lightly dressed with soy, sesame, scallion, and rice syrup just before service.",
+  "culturalContext": "Gim muchim is seasoned seaweed banchan with household differences in seaweed type, toasting, sweetness, aromatics, and moisture. This small-batch draft starts with commercial plain roasted gim and requires label and cultural review.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "banchan servings",
+  "prepTime": {
+    "minutes": 12,
+    "display": "12 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "Serve promptly"
+  },
+  "totalTime": {
+    "minutes": 12,
+    "display": "12 minutes"
+  },
+  "equipment": [
+    "Clean dry bowl",
+    "Clean kitchen shears or dry hands",
+    "Small clean bowl",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "gim",
+      "heading": "Seasoned seaweed",
+      "ingredients": [
+        {
+          "id": "gim",
+          "item": "plain unseasoned roasted gim sheets",
+          "metricAmount": 20,
+          "metricUnit": "g",
+          "customaryAmount": 10,
+          "customaryUnit": "sheets",
+          "preparation": "label checked",
+          "optional": false,
+          "allergenNotes": ["verify fish and shellfish cross-contact"]
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "rice syrup",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "finely sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Verify package",
+      "action": "Check that gim is plain, unseasoned, dry, within date, and free of damaged packaging or off odors.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Dry storage",
+      "visualOrTactileCue": "Sheets are crisp and smell clean.",
+      "safetyNote": "Verify fish, shellfish, sesame, soy, and wheat cross-contact statements.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Prepare clean and dry",
+      "action": "Wash and dry hands completely and use a clean, dry bowl and tools.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "No water remains on hands or equipment.",
+      "safetyNote": "Moisture encourages rapid quality loss; keep the ready-to-eat work area separate from raw food.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Tear gim",
+      "action": "Tear or cut sheets into bite-size pieces.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pieces are manageable and crisp.",
+      "safetyNote": "Remove any hard or foreign fragments and supervise diners who need smaller bites.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Mix dressing",
+      "action": "Combine soy sauce, sesame oil, rice syrup, scallion, sesame seeds, and optional gochugaru.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Dressing is uniform.",
+      "safetyNote": "Use clean utensils and verify all packaged labels.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Toss lightly",
+      "action": "Drizzle dressing over gim and toss quickly with clean dry utensils.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pieces are lightly coated, not saturated.",
+      "safetyNote": "Do not use hands that have contacted raw food.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve promptly",
+      "action": "Transfer to a clean dish and serve immediately for best texture.",
+      "estimatedTime": "1 minute",
+      "temperature": "Room temperature for immediate service",
+      "visualOrTactileCue": "Seaweed remains crisp at the edges.",
+      "safetyNote": "Discard diner-handled leftovers and do not return service portions to the package.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill required; use a clean, dry ready-to-eat preparation area.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Gim begins crisp and has no off odor",
+    "Dressing lightly coats rather than saturates",
+    "No foreign or hard fragments remain"
+  ],
+  "foodSafetyNotes": [
+    "Use commercial plain roasted gim from an intact, in-date package.",
+    "Verify label cross-contact statements; seaweed products may be processed around fish, shellfish, sesame, soy, or wheat.",
+    "Use clean, dry tools in a ready-to-eat area separate from raw food.",
+    "Discard diner-handled or damp leftovers rather than returning them to the original package."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": true,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Verify every packaged-ingredient label and segregate tools for diners with allergies."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after label verification.",
+    "A sesame-free version requires verified seaweed and dressing ingredients."
+  ],
+  "ingredientSourcing": [
+    "Choose plain unseasoned roasted gim in an intact moisture-proof package.",
+    "Read allergen and cross-contact statements on every package."
+  ],
+  "makeAhead": "Mix dressing up to 1 day ahead and refrigerate; tear and dress gim only at service.",
+  "storage": "Keep unopened gim dry according to its label; refrigerate dressing at or below 40°F / 4°C.",
+  "reheating": "Do not reheat dressed gim.",
+  "leftovers": "Discard damp or diner-handled dressed seaweed; it is intended as a small fresh batch.",
+  "servingSuggestions": [
+    "Serve immediately in small portions.",
+    "Use as a crisp accent with rice."
+  ],
+  "menuPairings": ["M20", "SF15", "F10", "SA05"],
+  "relatedRecipeIds": ["B24", "B01"],
+  "faq": [
+    {
+      "question": "Can I use seasoned snack seaweed?",
+      "answer": "This formula starts with plain unseasoned roasted gim so salt, oil, and allergens remain controlled."
+    },
+    {
+      "question": "Why dress it at the last minute?",
+      "answer": "Moisture quickly softens the seaweed, so immediate service preserves texture."
+    }
+  ],
+  "seoTitle": "Gim Muchim Korean Seasoned Seaweed",
+  "metaDescription": "Make a small batch of gim muchim with plain roasted seaweed, clean dry tools, packaged-label checks, a light sesame dressing, and prompt service.",
+  "primaryKeyword": "gim muchim seasoned seaweed",
+  "secondaryTopics": [
+    "Korean seaweed banchan",
+    "roasted gim",
+    "sesame soy dressing"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe-header",
+    "ingredient-list",
+    "instructions",
+    "food-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Ready-to-eat handling basis: project Food Safety Standard and packaged-label verification.",
+    "Cultural orientation: https://www.maangchi.com/recipe/gim-muchim",
+    "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
+  ],
+  "seafoodPreparation": null
+}

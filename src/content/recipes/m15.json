@@ -1,0 +1,389 @@
+{
+  "contentStatus": "complete",
+  "id": "M15",
+  "title": "Korean-Style Gochujang Grilled Pork Ribs",
+  "koreanName": "Gochujang Dwaeji Galbi Gui",
+  "hangul": "고추장 돼지갈비구이",
+  "romanization": "gochujang dwaeji galbi-gui",
+  "category": "grilled-meat",
+  "releaseCohort": "week-05",
+  "publicReleaseOrder": 45,
+  "canonicalSlug": "korean-style-gochujang-grilled-pork-ribs",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/korean-style-gochujang-grilled-pork-ribs/",
+  "shortDescription": "Pork spare ribs are coated with a gochujang, soy, garlic, and ginger marinade, then cooked over indirect heat and finished over direct heat.",
+  "culturalContext": "This Korean-style gochujang rib draft is a contemporary adaptation rather than a claim of one canonical Korean rib preparation. Cut, pre-cooking, marinade, smoke, and tenderness preferences vary.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 240,
+    "display": "240 minutes refrigerated"
+  },
+  "cookTime": {
+    "minutes": 100,
+    "display": "100 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 363,
+    "display": "About 363 minutes"
+  },
+  "equipment": [
+    "Separate raw-meat cutting board",
+    "Nonreactive covered container",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Long tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "meat",
+      "heading": "Ribs",
+      "ingredients": [
+        {
+          "id": "meat",
+          "item": "pork spare ribs",
+          "metricAmount": 1400,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "pounds",
+          "preparation": "membrane removed; cut into 2- or 3-bone sections",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "marinade",
+      "heading": "Gochujang marinade",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 90,
+          "metricUnit": "g",
+          "customaryAmount": 0.38,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "pear",
+          "item": "Korean or Asian pear",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 0.4,
+          "customaryUnit": "cup",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": "grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "gochujang",
+        "item": "gochujang",
+        "metricAmount": 90,
+        "metricUnit": "g",
+        "customaryAmount": 0.38,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten; verify label"]
+      },
+      {
+        "id": "soy-sauce",
+        "item": "soy sauce",
+        "metricAmount": 45,
+        "metricUnit": "ml",
+        "customaryAmount": 3,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "rice-syrup",
+        "item": "Korean rice syrup",
+        "metricAmount": 45,
+        "metricUnit": "ml",
+        "customaryAmount": 3,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "pear",
+        "item": "Korean or Asian pear",
+        "metricAmount": 100,
+        "metricUnit": "g",
+        "customaryAmount": 0.4,
+        "customaryUnit": "cup",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 18,
+        "metricUnit": "g",
+        "customaryAmount": 6,
+        "customaryUnit": "cloves",
+        "preparation": "minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "ginger",
+        "item": "fresh ginger",
+        "metricAmount": 9,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": "grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      }
+    ],
+    "batchYield": "About 300 ml / 1 1/4 cups marinade",
+    "meatWeightCovered": "1400 g / 3 pounds pork spare ribs",
+    "mixOrder": [
+      "Whisk gochujang and soy sauce smooth.",
+      "Add rice syrup, pear, garlic, ginger, and sesame oil.",
+      "Coat chilled ribs evenly."
+    ],
+    "marinationVessel": "Nonreactive covered container at or below 40°F / 4°C",
+    "refrigeratedMarinationTimeRange": "2 to 6 hours under refrigeration.",
+    "maximumPracticalMarinationWarning": "Do not exceed 12 hours without test-cook approval; salt and enzymes may affect texture.",
+    "reserveBeforeRawContactInstruction": "Reserve any serving sauce before the marinade contacts raw meat.",
+    "rawContactDiscardOrReboilInstruction": "Discard marinade that contacted raw meat; do not brush it onto cooked food.",
+    "substitutions": [
+      "Use only verified gluten-free gochujang and tamari for a gluten-free adaptation."
+    ],
+    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare safely",
+      "action": "Remove the membrane, portion the ribs on a dedicated board, refrigerate promptly, and wash hands.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Refrigerated until needed",
+      "visualOrTactileCue": "Sections are evenly sized with the membrane removed.",
+      "safetyNote": "Raw pork juices must not contact cooked food, banchan, or serving sauce.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the marinade",
+      "action": "Whisk the marinade until smooth and reserve any finishing portion before raw contact.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The marinade is homogeneous.",
+      "safetyNote": "Reserve any serving sauce before raw-meat contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate under refrigeration",
+      "action": "Coat ribs lightly, cover, and refrigerate for 4 hours.",
+      "estimatedTime": "240 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Every piece has a thin, even coating.",
+      "safetyNote": "Never marinate meat at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the grill",
+      "action": "Preheat a clean outdoor grill or manufacturer-approved indoor electric grill; establish the heat zones described below.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Indirect medium-low heat, then medium direct heat",
+      "visualOrTactileCue": "The grate is hot, clean, and lightly oiled.",
+      "safetyNote": "Never use a fuel-burning grill indoors; follow electric-grill ventilation instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Cook covered over indirect heat, turning periodically, until safely above 145°F / 63°C and approaching tender; finish briefly over direct heat with clean reserved sauce. Test cooking must establish the final tenderness endpoint.",
+      "estimatedTime": "100 minutes",
+      "temperature": "Indirect medium-low heat, then medium direct heat",
+      "visualOrTactileCue": "Ribs are safely above 145°F / 63°C, browned, and test-cook-verified tender before the rest.",
+      "safetyNote": "145°F / 63°C plus a 3-minute rest is the whole-cut pork safety minimum; tenderness may require a higher endpoint determined in test cooking.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and serve",
+      "action": "Transfer to a clean platter, apply only clean reserved sauce if used, and rest 3 minutes before serving.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "The meat has completed the stated rest on a clean platter.",
+      "safetyNote": "Use clean utensils and do not return cooked meat to the raw-meat platter.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill with indirect medium-low and direct medium zones, or an approved electric grill capable of covered indirect-style cooking. Keep raw and cooked tools separate.",
+  "targetInternalTemperature": "At least 145°F / 63°C plus a 3-minute rest for safety; test cooking must establish the higher tenderness endpoint before publication.",
+  "visualDonenessCues": [
+    "Meat has drawn back slightly from bone ends",
+    "Surface is glazed and browned, not burned",
+    "Thermometer confirms the safety minimum and test cooking confirms tenderness"
+  ],
+  "foodSafetyNotes": [
+    "Keep ribs refrigerated at or below 40°F / 4°C.",
+    "Reserve finishing sauce before raw contact.",
+    "Meet at least 145°F / 63°C plus a 3-minute rest.",
+    "Do not use fuel-burning grills indoors."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify gochujang and soy sauce labels."
+  },
+  "substitutions": [
+    "Use only verified gluten-free gochujang and tamari for a gluten-free adaptation."
+  ],
+  "ingredientSourcing": [
+    "Choose cold, meaty spare ribs with intact packaging and no off odor."
+  ],
+  "makeAhead": "Mix marinade up to 2 days ahead; marinate ribs only within the stated range.",
+  "storage": "Refrigerate cooked meat in a shallow covered container within 2 hours and use within 4 days pending food-safety approval.",
+  "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
+  "leftovers": "Use properly refrigerated leftovers in rice bowls or lettuce wraps within the approved window.",
+  "servingSuggestions": [
+    "Serve cut between bones with rice and fresh vegetables."
+  ],
+  "menuPairings": ["B15", "F05", "SA05", "D05"],
+  "relatedRecipeIds": ["M14", "M16"],
+  "faq": [
+    {
+      "question": "Why is the tenderness endpoint unresolved?",
+      "answer": "The official safety minimum and the higher texture endpoint are different; test cooking must validate the equipment-specific result."
+    },
+    {
+      "question": "Can raw marinade glaze the ribs?",
+      "answer": "No. Use only sauce reserved before raw-pork contact."
+    }
+  ],
+  "seoTitle": "Korean Gochujang Grilled Pork Ribs",
+  "metaDescription": "Grill Korean-style gochujang pork ribs with indirect heat, reserved glaze, thermometer verification, and an explicit test-cook tenderness gate.",
+  "primaryKeyword": "gochujang grilled pork ribs",
+  "secondaryTopics": ["Korean-style pork ribs", "gochujang rib marinade"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "The locked Korean-style gochujang rib concept is a contemporary editorial formulation requiring test-kitchen and Korean food-editor review.",
+    "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

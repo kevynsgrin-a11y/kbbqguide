@@ -1,0 +1,472 @@
+{
+  "contentStatus": "complete",
+  "id": "M01",
+  "title": "Classic Korean Pear Beef Bulgogi",
+  "koreanName": "Bulgogi",
+  "hangul": "불고기",
+  "romanization": "bulgogi",
+  "category": "grilled-meat",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 1,
+  "canonicalSlug": "classic-korean-pear-beef-bulgogi",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/",
+  "shortDescription": "Thin slices of beef marinated with Korean pear, soy sauce, garlic, scallions, and toasted sesame, then quickly grilled in small batches.",
+  "culturalContext": "Bulgogi is a broad Korean preparation of thin marinated meat cooked over fire or on a hot surface. Pear is one established marinade option, but sweetness, aromatics, cut, and cooking method vary by cook and household; this draft makes no singular origin claim.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "marinateTime": {
+    "minutes": 120,
+    "display": "2 to 12 hours"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "10 to 12 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 160,
+    "display": "2 hours 40 minutes, including minimum marination and rest"
+  },
+  "equipment": [
+    "Chef’s knife",
+    "Cutting board",
+    "Nonreactive mixing bowl or food-safe zip bag",
+    "Measuring cups and spoons",
+    "Outdoor grill or manufacturer-approved indoor electric tabletop grill",
+    "Long-handled tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "beef",
+      "heading": "Beef",
+      "ingredients": [
+        {
+          "id": "beef-ribeye",
+          "item": "well-marbled beef ribeye or sirloin",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "partially frozen, then sliced 3 mm / 1/8 inch thick against the grain",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "pear-marinade",
+      "heading": "Korean pear marinade",
+      "ingredients": [
+        {
+          "id": "pear",
+          "item": "Korean or Asian pear",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": "peeled, cored, and finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "regular soy sauce",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "brown-sugar",
+          "item": "packed light brown sugar",
+          "metricAmount": 25,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "medium onion",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 45,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "pear",
+        "item": "Korean or Asian pear",
+        "metricAmount": 150,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "cup",
+        "preparation": "peeled, cored, and finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "soy-sauce",
+        "item": "regular soy sauce",
+        "metricAmount": 60,
+        "metricUnit": "ml",
+        "customaryAmount": 0.25,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "brown-sugar",
+        "item": "packed light brown sugar",
+        "metricAmount": 25,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 18,
+        "metricUnit": "g",
+        "customaryAmount": 6,
+        "customaryUnit": "cloves",
+        "preparation": "finely minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "ginger",
+        "item": "fresh ginger",
+        "metricAmount": 5,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "teaspoon",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "onion",
+        "item": "yellow onion",
+        "metricAmount": 100,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "medium onion",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 45,
+        "metricUnit": "g",
+        "customaryAmount": 3,
+        "customaryUnit": "scallions",
+        "preparation": "thinly sliced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "black-pepper",
+        "item": "ground black pepper",
+        "metricAmount": 1,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-seeds",
+        "item": "toasted sesame seeds",
+        "metricAmount": 9,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      }
+    ],
+    "batchYield": "About 420 ml / 1 3/4 cups",
+    "meatWeightCovered": "680 g / 1.5 lb thinly sliced beef",
+    "mixOrder": [
+      "Whisk soy sauce and brown sugar until the sugar begins to dissolve.",
+      "Stir in grated pear, onion, garlic, ginger, scallions, pepper, sesame oil, and sesame seeds."
+    ],
+    "marinationVessel": "Nonreactive glass or stainless-steel bowl, or a food-safe zip bag set on a rimmed tray",
+    "refrigeratedMarinationTimeRange": "2 to 12 hours at 40°F / 4°C or below",
+    "maximumPracticalMarinationWarning": "For 3 mm / 1/8-inch slices, do not exceed 24 hours; extended exposure to pear and salt can make the surface overly soft and strongly seasoned.",
+    "reserveBeforeRawContactInstruction": "If marinade is wanted as a finishing sauce, portion it into a separate saucepan before adding raw beef.",
+    "rawContactDiscardOrReboilInstruction": "Discard marinade that contacted raw beef. A separately reserved portion may be served; do not brush used marinade onto cooked meat.",
+    "substitutions": [
+      "A ripe Bosc pear may replace Korean pear by weight, but sweetness and tenderizing effect will differ.",
+      "Certified gluten-free tamari may replace soy sauce only after every label is checked."
+    ],
+    "allergenNotes": [
+      "Soy and sesame are present.",
+      "Most regular soy sauce contains wheat; verify labels for gluten needs."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Slice the beef",
+      "action": "Firm the beef in the freezer for 20 to 30 minutes, then slice it 3 mm / 1/8 inch thick against the grain. Keep the sliced beef refrigerated while making the marinade.",
+      "estimatedTime": "15 minutes plus chilling",
+      "temperature": "Keep at or below 40°F / 4°C",
+      "visualOrTactileCue": "Slices are flexible, evenly thin, and show short cross-sections of the muscle grain.",
+      "safetyNote": "Use a clean cutting board; wash hands and sanitize the knife, board, and counter after raw-beef contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the pear marinade",
+      "action": "Whisk soy sauce and brown sugar, then stir in pear, onion, garlic, ginger, scallions, pepper, sesame oil, and sesame seeds.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The sugar is mostly dissolved and the mixture is loose and evenly speckled.",
+      "safetyNote": "Reserve any portion intended for serving before the marinade touches raw beef.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate under refrigeration",
+      "action": "Coat the beef thoroughly, cover, and refrigerate for 2 to 12 hours. Turn the bag or stir once midway if practical.",
+      "estimatedTime": "2 to 12 hours",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Every slice is lightly coated without dry pockets.",
+      "safetyNote": "Never marinate at room temperature; discard raw-contact marinade after the beef is removed.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat and arrange",
+      "action": "Preheat the approved grill to medium-high. Clean and lightly oil the grate, then let excess marinade drip from the beef so it sears instead of steams.",
+      "estimatedTime": "10 minutes",
+      "temperature": "400–450°F / 204–232°C grill surface",
+      "visualOrTactileCue": "The surface is hot enough for an immediate active sizzle.",
+      "safetyNote": "Use an outdoor grill or manufacturer-approved indoor electric appliance only, with required ventilation and clearances.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill in small batches",
+      "action": "Spread the beef in a single layer and grill, turning and separating the slices, until browned and cooked through, about 2 to 4 minutes per batch.",
+      "estimatedTime": "2 to 4 minutes per batch",
+      "temperature": "145°F / 63°C, then rest 3 minutes",
+      "visualOrTactileCue": "Edges are browned, the meat is no longer raw-looking, and the thickest practical cluster reaches the target temperature.",
+      "safetyNote": "Use separate clean utensils and platter for cooked beef; time and color alone are not the doneness test.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and serve",
+      "action": "Transfer the beef to a clean platter and rest for at least 3 minutes before serving with rice, ssam greens, and reviewed banchan.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Juices settle and the beef remains glossy rather than watery.",
+      "safetyNote": "Do not return cooked beef to the raw-meat bowl or pour raw-contact marinade over it.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high, about 400–450°F / 204–232°C. Follow the appliance manual for clearance and ventilation; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest practical portion, followed by a 3-minute rest",
+  "visualDonenessCues": [
+    "Thin slices are browned at the edges and no longer look raw.",
+    "The thickest practical cluster reaches 145°F / 63°C before the 3-minute rest."
+  ],
+  "foodSafetyNotes": [
+    "Keep raw beef and its marinade separate from ready-to-eat foods; wash hands and sanitize contacted surfaces.",
+    "Use separate raw and cooked plates and utensils, or wash and sanitize them fully before reuse.",
+    "Measure the thickest practical portion with a calibrated food thermometer; grill marks and time alone do not establish doneness.",
+    "For whole-cut beef, reach 145°F / 63°C and rest for at least 3 minutes before serving.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use; follow ventilation and clearance instructions."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "Use ripe Bosc pear by weight when Korean pear is unavailable; do not substitute pineapple or kiwi at the same marination time because their enzymes can soften thin beef rapidly.",
+    "Use certified gluten-free tamari only after label review; sesame requires a separate reviewed reformulation rather than a simple omission claim."
+  ],
+  "ingredientSourcing": [
+    "Ask a Korean market or butcher for thin bulgogi-cut ribeye or sirloin, or partially freeze and slice at home.",
+    "Choose a heavy, fragrant Korean/Asian pear without soft or leaking spots.",
+    "Use plain toasted sesame oil rather than an unverified flavored blend."
+  ],
+  "makeAhead": "Mix the marinade up to 1 day ahead and refrigerate it before raw contact. Slice and marinate the beef 2 to 12 hours before cooking; do not hold the thin beef in pear marinade longer than 24 hours.",
+  "storage": "Refrigerate cooked beef within 2 hours in a shallow airtight container at 40°F / 4°C or below; use within 3 days.",
+  "reheating": "Reheat leftovers to 165°F / 74°C. Reheat only the portion needed and avoid prolonged cooking that toughens thin beef.",
+  "leftovers": "Use leftover beef in a rice bowl or lettuce wrap after reheating to 165°F / 74°C; keep fresh garnishes separate until serving.",
+  "servingSuggestions": [
+    "Serve with steamed rice, ssam greens, kimchi, and ssamjang whose allergens have been checked.",
+    "Offer raw garlic or chile only as optional accompaniments and keep them away from the raw-meat work area."
+  ],
+  "menuPairings": ["B01", "F01", "SA01", "D01"],
+  "relatedRecipeIds": ["M20", "M02"],
+  "faq": [
+    {
+      "question": "Can I cook this without an outdoor grill?",
+      "answer": "Yes. Use a manufacturer-approved indoor electric grill or a heavy skillet under effective kitchen ventilation. Do not bring charcoal, propane, butane camping stoves, or outdoor grills indoors."
+    },
+    {
+      "question": "Why is the beef partially frozen before slicing?",
+      "answer": "Brief chilling firms the meat so thin, even slices are easier to cut; it is a slicing technique, not a food-safety kill step."
+    }
+  ],
+  "seoTitle": "Classic Korean Pear Beef Bulgogi Recipe",
+  "metaDescription": "Make Korean pear beef bulgogi with thin ribeye, a balanced soy-sesame marinade, precise grilling guidance, and visible food-safety steps.",
+  "primaryKeyword": "Korean pear beef bulgogi",
+  "secondaryTopics": [
+    "bulgogi marinade",
+    "Korean BBQ beef",
+    "Asian pear marinade",
+    "indoor electric grill"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "raw-food-safety",
+    "marination-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Recipe convention reference: https://www.maangchi.com/recipe/bulgogi (pear, soy, aromatics, thin beef, medium-high cooking).",
+    "Comparative recipe reference: https://www.koreanbapsang.com/bulgogi-korean-bbq-beef/ (household variation and technique cross-check).",
+    "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Grilling and cross-contact reference verified 2026-07-14: https://www.foodsafety.gov/blog/how-grill-safely-summer",
+    "Draft synthesized for this project; not test-cooked. Korean language, cultural framing, and food safety require human approval."
+  ],
+  "seafoodPreparation": null
+}

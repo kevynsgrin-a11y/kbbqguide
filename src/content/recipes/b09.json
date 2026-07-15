@@ -1,0 +1,296 @@
+{
+  "contentStatus": "complete",
+  "id": "B09",
+  "title": "Gamja Jorim Soy-Braised Potatoes",
+  "koreanName": "Gamja Jorim",
+  "hangul": "감자조림",
+  "romanization": "gamja jorim",
+  "category": "banchan",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 20,
+  "canonicalSlug": "gamja-jorim-soy-braised-potatoes",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gamja-jorim-soy-braised-potatoes/",
+  "shortDescription": "Baby potatoes are lightly browned, then braised until creamy inside and coated in a glossy soy, garlic, and rice-syrup glaze with sesame.",
+  "culturalContext": "Gamja jorim belongs to the Korean jorim family of dishes simmered in seasoned liquid until the ingredient absorbs flavor and the sauce reduces. Potato variety, sweetness, chile, and glaze thickness vary; this draft uses whole baby potatoes.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "side-dish servings",
+  "prepTime": { "minutes": 12, "display": "12 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 32, "display": "30 to 35 minutes" },
+  "restTime": { "minutes": 5, "display": "5 minutes" },
+  "totalTime": { "minutes": 49, "display": "About 50 minutes" },
+  "equipment": [
+    "Heavy 3-liter saucepan or sauté pan with lid",
+    "Colander",
+    "Wooden spoon or heatproof spatula",
+    "Paring knife or cake tester",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "braised-potatoes",
+      "heading": "Potatoes and braising glaze",
+      "ingredients": [
+        {
+          "id": "baby-potatoes",
+          "item": "small waxy baby potatoes",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "scrubbed; halve any larger than 4 cm / 1.5 inches",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral cooking oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 360,
+          "metricUnit": "ml",
+          "customaryAmount": 1.5,
+          "customaryUnit": "cups",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": "divided",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "brown-sugar",
+          "item": "brown sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "green-chile",
+          "item": "mild green chile",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "small chile",
+          "preparation": "thinly sliced",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Scrub and size the potatoes",
+      "action": "Scrub potatoes under cool running water, remove sprouts or green portions generously, and halve only the larger potatoes so all pieces cook evenly.",
+      "estimatedTime": "10 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Potatoes are clean and similar in size with no green skin or sprouts remaining.",
+      "safetyNote": "Discard potatoes that are extensively green, bitter, soft, or spoiled rather than trying to trim them.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Brown lightly",
+      "action": "Heat oil in a heavy pan over medium heat. Add potatoes and cook, turning, until several sides show pale golden patches.",
+      "estimatedTime": "6 to 8 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "Potato skins are glossy with scattered light-golden spots.",
+      "safetyNote": "Dry potatoes before adding them to hot oil to reduce splatter.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Build the braise",
+      "action": "Add water, soy sauce, half the rice syrup, brown sugar, and garlic. Stir, bring to a boil, then reduce to a steady simmer and cover partially.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Bring to boil, then medium-low",
+      "visualOrTactileCue": "The liquid bubbles steadily without boiling over.",
+      "safetyNote": "Open the lid away from your face and keep the pan handle turned inward.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Cook until tender",
+      "action": "Simmer 18 to 22 minutes, turning the potatoes every 5 minutes, until a paring knife enters the center with little resistance.",
+      "estimatedTime": "18 to 22 minutes",
+      "temperature": "Medium-low simmer",
+      "visualOrTactileCue": "Potatoes are creamy-tender inside but still hold their shape.",
+      "safetyNote": "Use a clean tester and avoid tasting before the potatoes are tender throughout.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Glaze",
+      "action": "Uncover, add remaining rice syrup and optional chile, and simmer while gently turning until the liquid becomes a shiny glaze that clings to the potatoes. Remove from heat and add sesame oil and seeds.",
+      "estimatedTime": "4 to 6 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "A thin glossy glaze coats each potato and leaves a trail when the spoon crosses the pan.",
+      "safetyNote": "The concentrated syrup is very hot; turn gently and avoid splashing.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and serve",
+      "action": "Rest 5 minutes, transfer to a clean dish, and serve warm or cool.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Warm or cool",
+      "visualOrTactileCue": "The glaze thickens slightly while potatoes remain intact.",
+      "safetyNote": "Refrigerate leftovers within 2 hours in a shallow covered container.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is braised on the stovetop.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "A knife enters the potato center with little resistance",
+    "Potatoes hold their shape",
+    "Reduced sauce forms a thin glossy coating"
+  ],
+  "foodSafetyNotes": [
+    "Discard extensively green, bitter, soft, or spoiled potatoes.",
+    "Scrub potatoes under cool running water before cooking.",
+    "Handle the hot reduced syrup carefully to avoid burns.",
+    "Refrigerate cooked potatoes within 2 hours at or below 40°F / 4°C.",
+    "Declare soy, wheat/gluten, and sesame allergens."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; use verified gluten-free alternatives and clean utensils for any adaptation."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying the label.",
+    "Corn syrup may replace rice syrup at equal volume.",
+    "Cut waxy Yukon Gold potatoes into 3.5 cm / 1.4-inch pieces if baby potatoes are unavailable."
+  ],
+  "ingredientSourcing": [
+    "Choose firm small waxy potatoes of similar size without green skin, sprouts, or soft spots.",
+    "Korean rice syrup is available at Korean markets; check the ingredient and allergen label."
+  ],
+  "makeAhead": "Braise the potatoes up to 1 day ahead, cool promptly, refrigerate, and refresh the glaze gently before serving.",
+  "storage": "Refrigerate in a shallow airtight container within 2 hours and use within 4 days, consistent with the general cooked-leftover window pending food-safety approval.",
+  "reheating": "Warm gently in a covered skillet with 1 tablespoon water until steaming, then uncover briefly to restore the glaze.",
+  "leftovers": "Serve properly refrigerated leftovers in a lunch box or rice bowl within the approved storage window.",
+  "servingSuggestions": [
+    "Serve warm or cool with rice",
+    "Add optional sliced green chile for contrast"
+  ],
+  "menuPairings": ["M04", "SF14", "F04", "SA04"],
+  "relatedRecipeIds": ["B08", "B10"],
+  "faq": [
+    {
+      "question": "Why use waxy potatoes?",
+      "answer": "Waxy potatoes hold their shape during simmering while becoming creamy inside."
+    },
+    {
+      "question": "When is the glaze ready?",
+      "answer": "It should look glossy, cling in a thin layer, and briefly reveal the pan when a spoon moves through it."
+    }
+  ],
+  "seoTitle": "Gamja Jorim Korean Soy-Braised Potatoes",
+  "metaDescription": "Make glossy gamja jorim with tender baby potatoes, soy sauce, garlic, rice syrup, and sesame, including braising cues and storage guidance.",
+  "primaryKeyword": "gamja jorim soy braised potatoes",
+  "secondaryTopics": [
+    "Korean potato banchan",
+    "soy glazed potatoes",
+    "algamja jorim"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["recipe card", "hot-syrup safety", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention and braising reference: https://www.maangchi.com/recipe/algamja-jorim",
+    "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Draft synthesized for the locked title; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

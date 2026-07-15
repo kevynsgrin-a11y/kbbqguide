@@ -1,0 +1,61 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import StructuredData from '../components/StructuredData.astro';
+import { canonicalUrl } from '../lib/seo';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  pageClass?: string;
+  canonicalPath?: string;
+  jsonLd?: readonly unknown[];
+}
+
+const {
+  title,
+  description,
+  pageClass = '',
+  canonicalPath = '/',
+  jsonLd = [],
+} = Astro.props;
+const siteName = 'KBBQGuide';
+const canonical = canonicalUrl(canonicalPath);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#151713" />
+    <title>{title} | {siteName}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {jsonLd.map((data) => <StructuredData {data} />)}
+  </head>
+  <body class={pageClass}>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="preview-strip">
+      KBBQGuide editorial preview · recipes await test-kitchen and expert review
+    </div>
+    <Header />
+    <main id="main-content" class="site-main" tabindex="-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

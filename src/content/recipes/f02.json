@@ -1,0 +1,262 @@
+{
+  "contentStatus": "complete",
+  "id": "F02",
+  "title": "Pajeori Korean Scallion Salad",
+  "koreanName": "Pajeori",
+  "hangul": "파절이",
+  "romanization": "pajeori",
+  "category": "fresh",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 22,
+  "canonicalSlug": "pajeori-korean-scallion-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fresh/pajeori-korean-scallion-salad/",
+  "shortDescription": "Fine scallion threads are soaked until crisp, dried, and tossed at the last minute with gochugaru, soy sauce, rice vinegar, sugar, sesame oil, and sesame seeds.",
+  "culturalContext": "Pajeori is a sharp, fresh scallion accompaniment commonly served with Korean grilled meat. It is also called pa muchim in many contexts; cut, dressing, sweetness, and chile intensity vary, so naming and framing remain queued for Korean review.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-salad servings",
+  "prepTime": { "minutes": 20, "display": "20 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 10, "display": "10 minutes crisping" },
+  "totalTime": { "minutes": 30, "display": "30 minutes" },
+  "equipment": [
+    "Chef’s knife and cutting board or scallion slicer with guard",
+    "Large bowl of ice water",
+    "Salad spinner or clean towels",
+    "Small bowl",
+    "Clean serving bowl"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "scallion-salad",
+      "heading": "Scallions and dressing",
+      "ingredients": [
+        {
+          "id": "scallions",
+          "item": "large scallions",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": 12,
+          "customaryUnit": "scallions",
+          "preparation": "cut into 10 cm / 4-inch fine lengthwise threads",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean gochugaru",
+          "metricAmount": 7,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 8,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "lightly crushed",
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Wash and trim",
+      "action": "Wash scallions thoroughly under cool running water, removing grit between outer layers, then trim roots and damaged tips.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Scallions are crisp, clean, and free of slime or grit.",
+      "safetyNote": "Use a clean sink and produce-only board and discard slimy scallions.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Cut fine threads",
+      "action": "Cut scallions into 10 cm / 4-inch sections, then slice lengthwise into fine threads, or use a guarded scallion slicer on a stable board.",
+      "estimatedTime": "10 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Threads are long, thin, and similar in width.",
+      "safetyNote": "Keep fingertips behind the blade and use the slicer guard; stop before pieces become too short to control.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Crisp",
+      "action": "Soak scallion threads in ice water for 10 minutes, separating them gently by hand.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Ice-cold water",
+      "visualOrTactileCue": "Threads curl slightly and feel crisp.",
+      "safetyNote": "Use potable water and a clean bowl.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Dry",
+      "action": "Drain thoroughly and spin dry or blot with clean towels.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "No free water remains to dilute the dressing.",
+      "safetyNote": "Use a cleaned spinner and fresh towel to avoid recontamination.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Mix and toss",
+      "action": "Whisk gochugaru, soy sauce, vinegar, sugar, sesame oil, and sesame seeds until the sugar begins to dissolve. Add scallions and toss gently just before serving.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Threads are lightly coated and remain springy, with little liquid pooling.",
+      "safetyNote": "Declare soy, wheat/gluten, and sesame allergens and use clean utensils.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve immediately",
+      "action": "Transfer to a clean bowl and serve at once alongside cooked grilled food.",
+      "estimatedTime": "Immediate",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Scallions remain crisp and curled rather than limp.",
+      "safetyNote": "Keep the salad and its utensils separate from raw meat at a tabletop grill.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill is used for the salad; serve it on the cooked-food side of the table and keep it away from raw-meat tongs and splatter.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Scallion threads are clean, fine, curled, and crisp",
+    "Dressing sugar is mostly dissolved",
+    "Salad is lightly coated without pooled water"
+  ],
+  "foodSafetyNotes": [
+    "Wash scallions thoroughly under cool potable running water.",
+    "Use guarded cutting technique and a stable board.",
+    "Dry scallions with clean equipment before dressing.",
+    "Keep ready-to-eat salad separate from raw meat and raw-food utensils.",
+    "Refrigerate undressed scallions at or below 40°F / 4°C and discard dressed salad after extended service."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify packaged ingredients and prevent raw-meat or shared-utensil cross-contact."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after checking the full label.",
+    "Thinly sliced spring onion greens may work, but the texture and bite require testing."
+  ],
+  "ingredientSourcing": [
+    "Choose large, crisp scallions with dry white bases and vivid green tops.",
+    "A guarded Korean scallion slicer can make uniform threads but is optional."
+  ],
+  "makeAhead": "Cut, crisp, and dry scallions up to 4 hours ahead and refrigerate covered; mix dressing separately and toss at serving.",
+  "storage": "Store undressed scallion threads and dressing separately under refrigeration for up to 1 day. Dressed salad is best immediately and should be discarded after 2 hours at room temperature.",
+  "reheating": "Do not reheat; serve cool.",
+  "leftovers": "Dressed leftovers wilt quickly; use only continuously refrigerated salad within 1 day and discard any table-exposed portion with uncertain handling.",
+  "servingSuggestions": [
+    "Pile beside grilled beef or pork",
+    "Use a small bundle inside a lettuce wrap"
+  ],
+  "menuPairings": ["M05", "SF03", "B17", "SA02"],
+  "relatedRecipeIds": ["F01", "F03"],
+  "faq": [
+    {
+      "question": "Why soak the scallion threads?",
+      "answer": "A short ice-water soak firms the cut edges, encourages curling, and moderates some of the sharp raw bite."
+    },
+    {
+      "question": "Can I dress pajeori ahead?",
+      "answer": "Keep the components separate and toss immediately before serving because salt and vinegar quickly soften the scallions."
+    }
+  ],
+  "seoTitle": "Pajeori Korean Scallion Salad Recipe",
+  "metaDescription": "Make crisp pajeori with fine scallion threads, gochugaru, soy, vinegar, sugar, and sesame, including knife and raw-meat cross-contact controls.",
+  "primaryKeyword": "pajeori Korean scallion salad",
+  "secondaryTopics": [
+    "pa muchim",
+    "Korean green onion salad",
+    "Korean BBQ scallion side"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["knife-safety steps", "recipe card", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Method and naming comparison: https://www.koreanbapsang.com/pajeori-korean-spicy-scallion-salad/ (direct retrieval unavailable during drafting; URL retained for human verification).",
+    "Current produce and cross-contamination framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
+    "Draft synthesized for the locked title; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

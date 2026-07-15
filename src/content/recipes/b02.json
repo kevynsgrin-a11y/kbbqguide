@@ -1,0 +1,287 @@
+{
+  "contentStatus": "complete",
+  "id": "B02",
+  "title": "Kkakdugi Radish Kimchi",
+  "koreanName": "Kkakdugi",
+  "hangul": "깍두기",
+  "romanization": "kkakdugi",
+  "category": "banchan",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 13,
+  "canonicalSlug": "kkakdugi-radish-kimchi",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/kkakdugi-radish-kimchi/",
+  "shortDescription": "Crunchy cubes of Korean radish are lightly salted, then coated with gochugaru, garlic, ginger, scallion, fish sauce, and salted shrimp for a bright, gradually souring kimchi.",
+  "culturalContext": "Kkakdugi is a cubed-radish kimchi served across Korean home and restaurant tables, especially alongside soups. Radish size, sweetness, seasoning, and fermentation preference vary; this draft presents one common seafood-seasoned style.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 12,
+  "servingUnit": "side-dish servings",
+  "prepTime": { "minutes": 30, "display": "30 minutes" },
+  "marinateTime": { "minutes": 30, "display": "30 minutes salting" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 0, "display": "Optional fermentation not included" },
+  "totalTime": {
+    "minutes": 60,
+    "display": "1 hour, before optional fermentation"
+  },
+  "equipment": [
+    "Chef’s knife and cutting board",
+    "Large nonreactive bowl",
+    "Colander",
+    "Food-safe gloves",
+    "Clean 2-liter glass or food-safe plastic container with headspace"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "radish-kimchi",
+      "heading": "Radish and seasoning",
+      "ingredients": [
+        {
+          "id": "korean-radish",
+          "item": "Korean radish",
+          "metricAmount": 1800,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "pounds",
+          "preparation": "peeled and cut into 2 cm / 3/4-inch cubes",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "kosher-salt",
+          "item": "kosher salt",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 25,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": "divided",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean gochugaru",
+          "metricAmount": 70,
+          "metricUnit": "g",
+          "customaryAmount": 0.75,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce",
+          "item": "Korean fish sauce",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["fish"]
+        },
+        {
+          "id": "saeujeot",
+          "item": "saeujeot fermented salted shrimp",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": "chopped",
+          "optional": false,
+          "allergenNotes": ["shellfish"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 10,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 75,
+          "metricUnit": "g",
+          "customaryAmount": 5,
+          "customaryUnit": "scallions",
+          "preparation": "cut into 2.5 cm / 1-inch pieces",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare the radish",
+      "action": "Wash, peel, and cut the radish into even 2 cm / 3/4-inch cubes.",
+      "estimatedTime": "15 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Cubes are uniform enough to season and ferment at similar rates.",
+      "safetyNote": "Use a clean board and wash produce under cool running water before cutting.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Salt the cubes",
+      "action": "Toss radish with salt and half the sugar. Rest 30 minutes, turning twice.",
+      "estimatedTime": "30 minutes",
+      "temperature": "Cool room temperature",
+      "visualOrTactileCue": "The radish glistens, releases some liquid, and remains crisp.",
+      "safetyNote": "Keep the bowl protected from raw meat and seafood cross-contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Drain",
+      "action": "Drain the released liquid without rinsing. Let the cubes stand in a clean colander for 5 minutes.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The cubes are moist but no longer sitting in a pool of liquid.",
+      "safetyNote": "Use a sanitized colander and sink area.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Season",
+      "action": "Wearing gloves, toss radish with gochugaru first, then add fish sauce, saeujeot, garlic, ginger, remaining sugar, and scallions.",
+      "estimatedTime": "8 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Every cube has an even red coating and seasoning collects lightly in the bowl.",
+      "safetyNote": "Contains fish and shellfish; prevent seasoning from contacting ready-to-eat allergen-free foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Pack",
+      "action": "Press into a clean food-grade container, removing large air pockets and leaving at least 5 cm / 2 inches of headspace.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Radish is compactly packed and the rim is clean.",
+      "safetyNote": "Do not fill to the lid because active fermentation can create gas and overflow.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Ferment conservatively and chill",
+      "action": "Refrigerate immediately for a fresh result, or hold in a cool room no more than 8 to 12 hours in this unreviewed draft, venting carefully, then refrigerate at or below 40°F / 4°C.",
+      "estimatedTime": "Optional 8 to 12 hours",
+      "temperature": "Cool room, then refrigerator at or below 40°F / 4°C",
+      "visualOrTactileCue": "Small bubbles and a clean tart aroma may develop while cubes stay crisp.",
+      "safetyNote": "Discard if mold, putrid odor, or unusual discoloration appears; final fermentation limits require qualified safety approval.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan does not use a grill.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Radish cubes remain crisp after salting",
+    "Seasoning coats each cube evenly",
+    "Early fermentation may show small bubbles and a clean tart aroma"
+  ],
+  "foodSafetyNotes": [
+    "Use clean tools, gloves, containers, and potable water.",
+    "Keep seafood seasonings refrigerated according to their labels and disclose both fish and shellfish.",
+    "Leave headspace and vent sealed vessels carefully.",
+    "Refrigerate at or below 40°F / 4°C after the chosen short room-temperature stage.",
+    "Discard a batch with mold, putrid odor, or unusual discoloration."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": false,
+    "fish": true,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains fish and crustacean shellfish; check all packaged seasonings for facility cross-contact."
+  },
+  "substitutions": [
+    "Daikon can replace Korean radish, but its higher moisture and softer texture require test-kitchen adjustment.",
+    "A vegan version needs a separately tested seasoning formula rather than simple omission of fish sauce and saeujeot."
+  ],
+  "ingredientSourcing": [
+    "Choose a heavy, firm Korean radish with smooth skin and crisp white flesh.",
+    "Source gochugaru, Korean fish sauce, and saeujeot from a Korean market and check storage labels."
+  ],
+  "makeAhead": "Cube and salt the radish only on assembly day; minced garlic and ginger may be prepared several hours ahead under refrigeration.",
+  "storage": "Keep refrigerated at or below 40°F / 4°C in a clean container with headspace. Label the batch date; an approved shelf-life claim awaits fermentation-safety review.",
+  "reheating": "Serve cold or cool; reheating is not recommended for this banchan.",
+  "leftovers": "Use more-sour, otherwise sound kkakdugi in a thoroughly cooked dish only after the review team defines a validated storage window.",
+  "servingSuggestions": [
+    "Serve with soups and rice",
+    "Spoon a small amount of radish and seasoning liquid into each dish"
+  ],
+  "menuPairings": ["M17", "SF07", "F07", "SA02"],
+  "relatedRecipeIds": ["B01", "B03"],
+  "faq": [
+    {
+      "question": "Should kkakdugi stay crunchy?",
+      "answer": "Yes. Salting softens the surface slightly, but evenly cut radish should retain a crisp center."
+    },
+    {
+      "question": "Can I refrigerate it immediately?",
+      "answer": "Yes. Immediate refrigeration gives a fresher profile and slower fermentation."
+    }
+  ],
+  "seoTitle": "Kkakdugi Korean Radish Kimchi Recipe",
+  "metaDescription": "Make crisp kkakdugi with Korean radish, gochugaru, fish sauce, and salted shrimp, plus cautious fermentation, storage, and allergen guidance.",
+  "primaryKeyword": "kkakdugi radish kimchi",
+  "secondaryTopics": [
+    "cubed radish kimchi",
+    "Korean banchan",
+    "fermented radish"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["recipe card", "fermentation safety", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention and technique reference: https://www.maangchi.com/recipe/kkakdugi",
+    "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Draft synthesized for this project; not test-cooked. Fermentation safety, Korean-language, cultural, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

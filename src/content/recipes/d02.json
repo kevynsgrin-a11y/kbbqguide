@@ -1,0 +1,259 @@
+{
+  "contentStatus": "complete",
+  "id": "D02",
+  "title": "Patbingsu Red-Bean Shaved Ice",
+  "koreanName": "Patbingsu",
+  "hangul": "팥빙수",
+  "romanization": "patbingsu",
+  "category": "desserts",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 28,
+  "canonicalSlug": "patbingsu-red-bean-shaved-ice",
+  "canonicalUrl": "https://kbbqguide.com/recipes/desserts/patbingsu-red-bean-shaved-ice/",
+  "shortDescription": "Fine shaved potable ice is topped with chilled sweetened red beans, pasteurized condensed milk, strawberries, mango, and optional small pieces of Korean rice cake.",
+  "culturalContext": "Patbingsu centers shaved ice and sweet red beans, while modern Korean versions may add fruit, milk, rice cakes, cereal, or ice cream. This fruit-forward assembly preserves the red-bean core without claiming one definitive topping set.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "dessert bowls",
+  "prepTime": { "minutes": 25, "display": "25 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": {
+    "minutes": 15,
+    "display": "15 minutes chilling bowls and toppings"
+  },
+  "totalTime": { "minutes": 40, "display": "40 minutes" },
+  "equipment": [
+    "Shaved-ice machine approved for food use",
+    "Freezer-safe potable-ice container",
+    "Chef’s knife and produce cutting board",
+    "Four wide freezer-chilled bowls",
+    "Clean topping spoons"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "shaved-ice",
+      "heading": "Ice and toppings",
+      "ingredients": [
+        {
+          "id": "potable-ice",
+          "item": "ice made from potable water",
+          "metricAmount": 800,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cups",
+          "preparation": "kept frozen and protected from contamination",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sweet-red-beans",
+          "item": "commercially prepared sweetened Korean red beans",
+          "metricAmount": 400,
+          "metricUnit": "g",
+          "customaryAmount": 1.67,
+          "customaryUnit": "cups",
+          "preparation": "chilled; label checked",
+          "optional": false,
+          "allergenNotes": [
+            "check label for soy, wheat/gluten, and facility cross-contact"
+          ]
+        },
+        {
+          "id": "condensed-milk",
+          "item": "pasteurized sweetened condensed milk",
+          "metricAmount": 120,
+          "metricUnit": "ml",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": "chilled",
+          "optional": false,
+          "allergenNotes": ["dairy"]
+        },
+        {
+          "id": "strawberries",
+          "item": "strawberries",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "cups",
+          "preparation": "washed, hulled, and quartered",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mango",
+          "item": "ripe mango flesh",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "cups",
+          "preparation": "cut into 1.5 cm / 1/2-inch cubes",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "injeolmi",
+          "item": "soft Korean injeolmi or plain rice-cake pieces",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 0.75,
+          "customaryUnit": "cup",
+          "preparation": "cut into pieces no larger than 1 cm / 3/8 inch",
+          "optional": true,
+          "allergenNotes": [
+            "may contain soy powder or facility allergens; check label"
+          ]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Sanitize and chill",
+      "action": "Wash hands and clean the shaved-ice machine according to its manufacturer instructions. Place serving bowls in the freezer for 15 minutes.",
+      "estimatedTime": "15 minutes",
+      "temperature": "Freezer",
+      "visualOrTactileCue": "Machine food-contact parts are clean and bowls are frosty.",
+      "safetyNote": "Ice is ready-to-eat food; handle the machine and ice only with clean hands and tools.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Check packaged toppings",
+      "action": "Read sweetened red-bean, condensed-milk, and optional rice-cake labels for allergens, pasteurization, storage, and date information.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Keep refrigerated as labeled",
+      "visualOrTactileCue": "Packages are intact, within date, and properly chilled after opening.",
+      "safetyNote": "Use pasteurized dairy and do not serve unlabeled rice cake or red-bean products to allergy-sensitive guests.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Wash and cut fruit",
+      "action": "Rinse strawberries and the whole mango under cool running water, dry, then cut on a clean produce board. Refrigerate the cut fruit.",
+      "estimatedTime": "10 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Fruit is clean, evenly cut, and cold with no bruised or moldy pieces.",
+      "safetyNote": "Wash the mango before cutting so the knife does not carry surface contamination into the flesh.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Prepare optional rice cake",
+      "action": "With a clean knife, cut soft rice cake into pieces no larger than 1 cm / 3/8 inch; omit it for young children, older adults, or anyone with swallowing difficulty.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Pieces are soft, separate, and very small.",
+      "safetyNote": "Chewy rice cake is a choking hazard; use small pieces, supervise eating, and omit for higher-risk diners.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Shave and assemble",
+      "action": "Shave potable ice directly into the chilled bowls. Immediately top each with one-fourth of the red beans, condensed milk, strawberries, mango, and optional rice cake.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Frozen and chilled",
+      "visualOrTactileCue": "Ice is fine and snowy, toppings are evenly distributed, and no liquid pools before service.",
+      "safetyNote": "Use only the machine's pusher, never fingers or utensils near moving blades.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve immediately",
+      "action": "Serve at once with clean spoons and instruct diners to mix lightly as they eat.",
+      "estimatedTime": "Immediate",
+      "temperature": "Frozen",
+      "visualOrTactileCue": "Ice remains fluffy rather than melted into soup.",
+      "safetyNote": "Do not refreeze melted bowls or save partially eaten servings; discard them after service.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this dessert uses a cleaned food-approved shaved-ice machine and freezer-chilled serviceware.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Ice is fine, clean, and snowy",
+    "All toppings are cold and label-checked",
+    "Rice-cake pieces, if used, are soft and very small",
+    "Dessert is served before melting"
+  ],
+  "foodSafetyNotes": [
+    "Treat ice as ready-to-eat food and use only potable water and sanitized equipment.",
+    "Use pasteurized condensed milk and commercially prepared sweetened red beans with intact labels.",
+    "Wash whole fruit before cutting and refrigerate cut fruit promptly.",
+    "Chewy rice cake is a choking hazard and should be omitted for higher-risk diners.",
+    "Serve immediately; never refreeze melted or partially eaten bowls."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": true,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains dairy and may contain soy or wheat/gluten through packaged red beans or rice cake. Verify every label and use a cleaned ice machine and topping utensils."
+  },
+  "substitutions": [
+    "Use a verified dairy-free condensed milk only after reviewing its soy, nut, and gluten allergens.",
+    "Omit rice cake rather than substituting another chewy topping for diners with swallowing risk."
+  ],
+  "ingredientSourcing": [
+    "Choose a commercial sweetened red-bean product with a complete ingredient and allergen label.",
+    "Use bagged ice labeled for consumption or freeze potable water in clean covered molds."
+  ],
+  "makeAhead": "Chill opened toppings and prepare fruit up to 4 hours ahead. Clean the machine and freeze bowls before service; shave ice only at assembly.",
+  "storage": "Do not store assembled patbingsu. Refrigerate separate opened toppings according to labels and use cut fruit within 2 days under this draft pending review.",
+  "reheating": "Not applicable; serve frozen.",
+  "leftovers": "Discard melted or partially eaten bowls. Store only untouched toppings that remained within safe temperature control and clean service conditions.",
+  "servingSuggestions": [
+    "Serve one chilled bowl per person",
+    "Offer optional rice cake only after assessing choking and allergen risks"
+  ],
+  "menuPairings": ["M05", "SF04", "B06", "F03"],
+  "relatedRecipeIds": ["D01", "D03"],
+  "faq": [
+    {
+      "question": "Can I refreeze melted patbingsu?",
+      "answer": "No. Discard melted or partially eaten bowls; refreezing damages texture and does not reverse handling contamination."
+    },
+    {
+      "question": "Why use commercially prepared sweetened beans?",
+      "answer": "They provide a labeled, ready-to-eat component and avoid introducing an unvalidated raw-bean cooking process into this assembly recipe."
+    }
+  ],
+  "seoTitle": "Patbingsu Korean Red-Bean Shaved Ice",
+  "metaDescription": "Assemble patbingsu with snowy potable ice, sweet red beans, pasteurized condensed milk, fruit, and optional rice cake with hygiene controls.",
+  "primaryKeyword": "patbingsu red bean shaved ice",
+  "secondaryTopics": [
+    "Korean shaved ice",
+    "bingsu dessert",
+    "sweet red bean ice"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["ice hygiene", "choking warning", "recipe card"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary red-bean, shaved-ice, fruit, and milk topping convention reference: https://www.maangchi.com/recipe/patbingsu",
+    "Current produce, pasteurized-food, cross-contamination, and refrigeration framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
+    "Contemporary fruit-forward assembly for the locked title; not test-cooked. Packaged-product allergens, Korean-language, cultural, choking, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

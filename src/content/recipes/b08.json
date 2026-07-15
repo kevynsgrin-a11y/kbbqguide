@@ -1,0 +1,284 @@
+{
+  "contentStatus": "complete",
+  "id": "B08",
+  "title": "Musaengchae Spicy Radish Salad",
+  "koreanName": "Musaengchae",
+  "hangul": "무생채",
+  "romanization": "musaengchae",
+  "category": "banchan",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 19,
+  "canonicalSlug": "musaengchae-spicy-radish-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/musaengchae-spicy-radish-salad/",
+  "shortDescription": "Crisp Korean radish matchsticks are quickly seasoned with gochugaru, vinegar, fish sauce, garlic, scallions, sugar, and sesame for a bright sweet-tart banchan.",
+  "culturalContext": "Musaengchae is a fresh seasoned radish dish whose name refers to raw radish prepared as a salad-like banchan. Some versions are fish-free or less tart; this draft uses fish sauce and vinegar and is not presented as the only style.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "side-dish servings",
+  "prepTime": { "minutes": 25, "display": "25 minutes" },
+  "marinateTime": { "minutes": 10, "display": "10 minutes seasoning rest" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 0, "display": "No additional rest" },
+  "totalTime": { "minutes": 35, "display": "35 minutes" },
+  "equipment": [
+    "Vegetable peeler",
+    "Chef’s knife and cutting board or mandoline with hand guard",
+    "Large nonreactive bowl",
+    "Food-safe gloves",
+    "Airtight refrigerator container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "radish-salad",
+      "heading": "Radish and seasoning",
+      "ingredients": [
+        {
+          "id": "korean-radish",
+          "item": "Korean radish",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "peeled and cut into 3 mm / 1/8-inch matchsticks",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean gochugaru",
+          "metricAmount": 20,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce",
+          "item": "Korean fish sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["fish"]
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Wash and peel",
+      "action": "Wash the radish under cool running water, trim the ends, and peel thinly.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The exposed flesh is firm, white, and free of soft or discolored areas.",
+      "safetyNote": "Use a clean produce brush if the exterior is heavily soiled and sanitize the board afterward.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Cut matchsticks",
+      "action": "Cut radish into uniform 3 mm / 1/8-inch matchsticks with a knife, or use a mandoline with its hand guard.",
+      "estimatedTime": "15 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Matchsticks are slender, crisp, and similar in length and thickness.",
+      "safetyNote": "Always use the mandoline hand guard and stop before the radish becomes too small to hold safely.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Color with gochugaru",
+      "action": "Wearing gloves, toss the radish with gochugaru first and massage gently for 1 minute.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The matchsticks take on an even red-orange color.",
+      "safetyNote": "Avoid touching eyes and wash gloved hands before handling other foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Season",
+      "action": "Add vinegar, fish sauce, sugar, salt, garlic, scallions, and optional sesame seeds. Toss gently until evenly distributed.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Sugar begins to dissolve and the radish remains crisp rather than crushed.",
+      "safetyNote": "Contains fish and may contain sesame; declare allergens before serving.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Rest briefly",
+      "action": "Rest 10 minutes, then toss again and assess seasoning only with a clean utensil.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Cool room temperature",
+      "visualOrTactileCue": "A small amount of bright red dressing collects while matchsticks stay crisp.",
+      "safetyNote": "Do not extend room-temperature holding; refrigerate promptly after the brief rest.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve or chill",
+      "action": "Serve immediately or transfer to a clean covered container and refrigerate.",
+      "estimatedTime": "Immediate",
+      "temperature": "Cool or chilled",
+      "visualOrTactileCue": "The salad looks vivid, juicy, and crisp.",
+      "safetyNote": "Keep at or below 40°F / 4°C and use clean serving utensils.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan does not use a grill.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Radish matchsticks are uniform and crisp",
+    "Gochugaru coats them evenly",
+    "A small amount of dressing forms without softening the radish"
+  ],
+  "foodSafetyNotes": [
+    "Wash the radish before peeling and cutting.",
+    "Use the mandoline guard and a stable cutting surface.",
+    "Declare fish and optional sesame allergens.",
+    "Keep the finished salad refrigerated at or below 40°F / 4°C.",
+    "Discard if the radish becomes slimy, moldy, or develops an off odor."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": true,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains fish and, when used, sesame; check all packaged seasoning labels for facility cross-contact."
+  },
+  "substitutions": [
+    "Daikon may replace Korean radish but is generally wetter and should be assessed separately.",
+    "A fish-free version needs separately tested salt and umami adjustments."
+  ],
+  "ingredientSourcing": [
+    "Choose a heavy Korean radish with smooth skin, firm flesh, and fresh green shoulder if attached.",
+    "Use coarse Korean gochugaru rather than cayenne for the intended texture and chile profile."
+  ],
+  "makeAhead": "Cut radish up to 4 hours ahead and refrigerate covered; season close to serving for the best crunch.",
+  "storage": "Refrigerate in an airtight container and use within 3 days; this conservative limit requires food-safety approval.",
+  "reheating": "Do not reheat; serve cold or cool.",
+  "leftovers": "Use properly refrigerated leftovers in bibimbap or a cold noodle bowl within the approved storage window.",
+  "servingSuggestions": [
+    "Serve with rice and grilled meat",
+    "Use as a crisp component in bibimbap"
+  ],
+  "menuPairings": ["M03", "SF13", "F03", "SA03"],
+  "relatedRecipeIds": ["B07", "B09"],
+  "faq": [
+    {
+      "question": "Why add gochugaru before the liquid seasonings?",
+      "answer": "Coating the radish first helps distribute color and chile flakes evenly before liquid begins drawing out moisture."
+    },
+    {
+      "question": "Is musaengchae fermented?",
+      "answer": "This version is a fresh seasoned salad and is refrigerated promptly rather than fermented at room temperature."
+    }
+  ],
+  "seoTitle": "Musaengchae Spicy Korean Radish Salad",
+  "metaDescription": "Make crisp musaengchae with Korean radish, gochugaru, vinegar, fish sauce, garlic, and scallion, plus precise cutting and storage guidance.",
+  "primaryKeyword": "musaengchae spicy radish salad",
+  "secondaryTopics": [
+    "Korean radish salad",
+    "fresh radish banchan",
+    "mu saengchae recipe"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["recipe card", "knife-safety notes", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention and sequencing reference: https://www.maangchi.com/recipe/musaeng-chae",
+    "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Draft synthesized for this project; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

@@ -1,0 +1,291 @@
+{
+  "contentStatus": "complete",
+  "id": "B15",
+  "title": "Hobak Bokkeum Stir-Fried Zucchini",
+  "koreanName": "Hobak Bokkeum",
+  "hangul": "호박볶음",
+  "romanization": "hobak-bokkeum",
+  "category": "banchan",
+  "releaseCohort": "week-05",
+  "publicReleaseOrder": 48,
+  "canonicalSlug": "hobak-bokkeum-stir-fried-zucchini",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/hobak-bokkeum-stir-fried-zucchini/",
+  "shortDescription": "Korean zucchini is salted briefly, then stir-fried with garlic, scallion, salted shrimp, and sesame until just tender.",
+  "culturalContext": "Hobak bokkeum is a Korean stir-fried summer-squash banchan often made with aehobak. Seasoning may use salt, salted shrimp, or other savory elements; cut and texture vary.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 8,
+    "display": "8 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "totalTime": {
+    "minutes": 28,
+    "display": "About 28 minutes"
+  },
+  "equipment": [
+    "Colander",
+    "Large skillet",
+    "Clean cutting board and knife",
+    "Heatproof spatula",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "zucchini",
+      "heading": "Zucchini",
+      "ingredients": [
+        {
+          "id": "korean-zucchini",
+          "item": "Korean zucchini (aehobak)",
+          "metricAmount": 500,
+          "metricUnit": "g",
+          "customaryAmount": 1.1,
+          "customaryUnit": "pounds",
+          "preparation": "washed; halved lengthwise and sliced 6 mm / 1/4 inch",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "seasoning",
+      "heading": "Seasoning",
+      "ingredients": [
+        {
+          "id": "saeujeot",
+          "item": "salted fermented shrimp (saeujeot)",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "finely chopped; label checked",
+          "optional": false,
+          "allergenNotes": ["shellfish; verify label"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Wash and cut",
+      "action": "Rinse the zucchini and scallion under cool running water, dry, and cut on a clean board.",
+      "estimatedTime": "6 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Produce is clean, dry, and evenly cut.",
+      "safetyNote": "Keep clean produce away from raw-meat and seafood tools.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Salt briefly",
+      "action": "Toss zucchini with salt in a colander and rest 5 minutes, then blot released moisture without rinsing.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Slices bend slightly but remain firm.",
+      "safetyNote": "Use a clean colander and towels.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Check the seasoning",
+      "action": "Read the saeujeot label for shellfish and other allergens, then finely chop with a clean utensil.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The exact allergen statement is known.",
+      "safetyNote": "Saeujeot contains shellfish; use salt instead only as a documented adaptation.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Start the stir-fry",
+      "action": "Heat oil over medium-high, add zucchini, and stir-fry until bright and beginning to soften.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Edges turn translucent while centers remain firm.",
+      "safetyNote": "Keep the skillet handle turned inward.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Season and finish",
+      "action": "Add garlic, saeujeot, and scallion; stir-fry until just tender, then remove from heat and add sesame oil and seeds.",
+      "estimatedTime": "3 to 4 minutes",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Zucchini is tender-crisp, not watery or mushy.",
+      "safetyNote": "Cook fermented shrimp seasoning through the hot dish and avoid splatter.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve or chill",
+      "action": "Transfer to a clean dish, rest 5 minutes, and serve warm or cool.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Warm or cool",
+      "visualOrTactileCue": "Slices remain intact with little liquid.",
+      "safetyNote": "Refrigerate within 2 hours.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is stir-fried on the stovetop.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Zucchini is bright and tender-crisp",
+    "Slices remain intact",
+    "Little liquid collects in the pan"
+  ],
+  "foodSafetyNotes": [
+    "Wash produce under cool running water.",
+    "Verify shellfish and other allergens on the saeujeot label.",
+    "Use clean ready-to-eat serving ware.",
+    "Refrigerate within 2 hours at or below 40°F / 4°C."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains shellfish and sesame; verify the saeujeot label and prevent cross-contact."
+  },
+  "substitutions": [
+    "For a shellfish-free adaptation, omit saeujeot and season with salt only after test cooking.",
+    "Standard zucchini may replace aehobak, but moisture and timing require retesting."
+  ],
+  "ingredientSourcing": [
+    "Choose firm, glossy Korean zucchini without soft spots.",
+    "Buy refrigerated saeujeot in a sealed labeled container and follow its storage direction."
+  ],
+  "makeAhead": "Best cooked close to serving; vegetables may be cut a few hours ahead and refrigerated.",
+  "storage": "Refrigerate in a covered shallow container within 2 hours and use within 4 days pending food-safety approval.",
+  "reheating": "Reheat gently until steaming or serve properly refrigerated portions cool.",
+  "leftovers": "Use properly refrigerated leftovers within the approved window.",
+  "servingSuggestions": ["Serve with rice and grilled meats or fish."],
+  "menuPairings": ["M10", "SF05", "F10", "SA05"],
+  "relatedRecipeIds": ["B14", "B16"],
+  "faq": [
+    {
+      "question": "What is aehobak?",
+      "answer": "It is a Korean summer squash often used for this dish; standard zucchini behaves somewhat differently."
+    },
+    {
+      "question": "Can I omit saeujeot?",
+      "answer": "Yes for a documented shellfish-free adaptation, but salt balance requires test cooking."
+    }
+  ],
+  "seoTitle": "Hobak Bokkeum Stir-Fried Zucchini",
+  "metaDescription": "Make Korean hobak bokkeum with tender-crisp zucchini, garlic, scallion, saeujeot, sesame, produce washing, and shellfish label guidance.",
+  "primaryKeyword": "hobak bokkeum",
+  "secondaryTopics": ["Korean zucchini banchan", "aehobak recipe"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "The locked hobak-bokkeum framing is an editorial synthesis of common aehobak and saeujeot practice requiring Korean food-editor review.",
+    "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

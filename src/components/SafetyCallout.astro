@@ -1,0 +1,15 @@
+---
+interface Props {
+  title?: string;
+  notes: string[];
+}
+
+const { title = 'Safety controls that stay visible', notes } = Astro.props;
+---
+
+<aside class="safety-callout" aria-labelledby="safety-heading">
+  <h2 id="safety-heading">{title}</h2>
+  <ul class="plain-list">
+    {notes.map((note) => <li>{note}</li>)}
+  </ul>
+</aside>

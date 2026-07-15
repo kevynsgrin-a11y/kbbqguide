@@ -1,0 +1,300 @@
+{
+  "contentStatus": "complete",
+  "id": "B21",
+  "title": "Korean Potato Salad",
+  "koreanName": "Gamja Saelleodeu",
+  "hangul": "감자 샐러드",
+  "romanization": "gamja saelleodeu",
+  "category": "banchan",
+  "releaseCohort": "week-09",
+  "publicReleaseOrder": 62,
+  "canonicalSlug": "korean-potato-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/korean-potato-salad/",
+  "shortDescription": "Tender potatoes are mashed coarsely with firm-cooked egg, salted cucumber, carrot, apple, and commercial mayonnaise for a creamy Korean restaurant-style side.",
+  "culturalContext": "Korean potato salad is a creamy modern banchan influenced by Western-style salads and often includes vegetables, fruit, egg, or ham. Additions and sweetness vary.",
+  "adaptationLabel": "restaurant-style",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "restTime": {
+    "minutes": 30,
+    "display": "30 minutes"
+  },
+  "totalTime": {
+    "minutes": 80,
+    "display": "About 1 hour 20 minutes including cooling"
+  },
+  "equipment": [
+    "Two saucepans",
+    "Colander",
+    "Potato masher",
+    "Clean mixing bowl",
+    "Shallow cooling tray",
+    "Clean covered storage container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "salad",
+      "heading": "Potato salad",
+      "ingredients": [
+        {
+          "id": "potatoes",
+          "item": "Yukon Gold potatoes",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "scrubbed, peeled, and cut into chunks",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "eggs",
+          "item": "large eggs",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "large eggs",
+          "preparation": "refrigerated, clean, and uncracked",
+          "optional": false,
+          "allergenNotes": ["egg"]
+        },
+        {
+          "id": "cucumber",
+          "item": "Persian cucumbers",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "small cucumbers",
+          "preparation": "washed and thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot",
+          "metricAmount": 80,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "medium carrot",
+          "preparation": "peeled and finely diced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "apple",
+          "item": "crisp apple",
+          "metricAmount": 120,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "apple",
+          "preparation": "washed, cored, and finely diced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mayonnaise",
+          "item": "commercial pasteurized mayonnaise",
+          "metricAmount": 180,
+          "metricUnit": "g",
+          "customaryAmount": 0.75,
+          "customaryUnit": "cup",
+          "preparation": "kept refrigerated",
+          "optional": false,
+          "allergenNotes": ["egg"]
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 0.75,
+          "customaryUnit": "teaspoon",
+          "preparation": "divided",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Wash and prepare",
+      "action": "Wash potatoes, cucumber, carrot, and apple under running water; prepare on clean boards.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Produce is clean and evenly cut.",
+      "safetyNote": "Keep ready-to-eat produce away from raw eggshells.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Cook potatoes",
+      "action": "Boil potato chunks until a tester enters easily; drain well and mash coarsely.",
+      "estimatedTime": "15 to 18 minutes",
+      "temperature": "Boiling",
+      "visualOrTactileCue": "Potatoes are fully tender with no hard center.",
+      "safetyNote": "Avoid steam burns and use a clean tester.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Hard-cook eggs",
+      "action": "Cook eggs until whites and yolks are firm, cool in ice water, peel with clean hands, and chop.",
+      "estimatedTime": "12 minutes",
+      "temperature": "Boiling then cold",
+      "visualOrTactileCue": "Whites and yolks are fully firm.",
+      "safetyNote": "Discard cracked or contaminated eggs and wash hands after shell contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Salt cucumber and cool",
+      "action": "Salt cucumber briefly and squeeze dry. Spread potatoes in a shallow tray until no longer hot, then refrigerate to cool.",
+      "estimatedTime": "20 to 30 minutes",
+      "temperature": "Cooling then refrigerated",
+      "visualOrTactileCue": "Potatoes are cooled and cucumber is dry.",
+      "safetyNote": "Do not mix mayonnaise into hot potatoes or leave cooling food at room temperature beyond safe limits.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Mix cold",
+      "action": "Combine cooled potatoes, egg, cucumber, carrot, apple, mayonnaise, sugar, remaining salt, and pepper with clean utensils.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Salad is creamy with visible pieces.",
+      "safetyNote": "Keep mayonnaise and finished salad at or below 40°F / 4°C.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Chill and serve",
+      "action": "Cover, refrigerate at least 30 minutes, and portion with a clean utensil.",
+      "estimatedTime": "30 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "Salad is cold and set.",
+      "safetyNote": "Discard portions held above refrigeration limits or contacted by shared/raw utensils.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is prepared without a grill.",
+  "targetInternalTemperature": "Cook shell eggs until yolks and whites are firm and potatoes until fully tender; cool ingredients promptly before mixing.",
+  "visualDonenessCues": [
+    "Potatoes have no hard centers",
+    "Egg whites and yolks are firm",
+    "Finished salad is thoroughly chilled"
+  ],
+  "foodSafetyNotes": [
+    "Use clean uncracked refrigerated eggs and cook until firm.",
+    "Use commercial pasteurized mayonnaise and keep refrigerated.",
+    "Cool potatoes promptly in a shallow layer before mixing.",
+    "Keep finished salad at or below 40°F / 4°C and discard after unsafe holding."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": true,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains egg; commercial mayonnaise labels may declare additional allergens, so verify the exact product."
+  },
+  "substitutions": [
+    "Omit egg only as a documented adaptation after retesting moisture and seasoning."
+  ],
+  "ingredientSourcing": [
+    "Choose firm potatoes without green portions or sprouts and commercial pasteurized mayonnaise."
+  ],
+  "makeAhead": "Prepare up to 1 day ahead and keep covered and refrigerated.",
+  "storage": "Refrigerate promptly at or below 40°F / 4°C and use within 3 days pending review.",
+  "reheating": "Do not reheat; serve cold.",
+  "leftovers": "Discard table-exposed portions and keep only clean continuously refrigerated salad.",
+  "servingSuggestions": ["Serve cold in small portions with grilled foods."],
+  "menuPairings": ["M16", "SF11", "F06", "SA01"],
+  "relatedRecipeIds": ["B20", "B22"],
+  "faq": [
+    {
+      "question": "Why cool potatoes before mayonnaise?",
+      "answer": "It limits warm holding and protects the cold emulsion."
+    },
+    {
+      "question": "Can the eggs be soft?",
+      "answer": "No. This draft requires firm whites and yolks."
+    }
+  ],
+  "seoTitle": "Korean Potato Salad Recipe",
+  "metaDescription": "Make creamy Korean potato salad with tender potatoes, firm-cooked egg, pasteurized mayonnaise, shallow cooling, refrigeration, and clean service.",
+  "primaryKeyword": "Korean potato salad",
+  "secondaryTopics": ["restaurant-style banchan", "creamy potato salad"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Restaurant-style Korean potato salad formulation requiring test-kitchen and cultural review.",
+    "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 25,
+  "cook": 25,
+  "rest": 30,
+  "totalDisplay": "About 1 hour 20 minutes including cooling",
+  "source": "Restaurant-style Korean potato salad formulation requiring test-kitchen and cultural review."
+}

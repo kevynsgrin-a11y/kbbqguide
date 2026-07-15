@@ -1,0 +1,355 @@
+{
+  "contentStatus": "complete",
+  "id": "B01",
+  "title": "Baechu Kimchi",
+  "koreanName": "Baechu Kimchi",
+  "hangul": "배추김치",
+  "romanization": "baechu gimchi",
+  "category": "banchan",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 12,
+  "canonicalSlug": "baechu-kimchi",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/baechu-kimchi/",
+  "shortDescription": "Napa cabbage quarters are salted until flexible, coated leaf by leaf with a gochugaru, radish, scallion, garlic, ginger, fish-sauce, and salted-shrimp paste, then refrigerated as they ferment.",
+  "culturalContext": "Baechu kimchi is one of many Korean kimchi traditions and is often simply called kimchi in everyday contexts. Recipes vary by household, region, season, dietary practice, and fermentation preference; this draft does not claim one universal formula.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 16,
+  "servingUnit": "side-dish servings",
+  "prepTime": { "minutes": 60, "display": "1 hour active" },
+  "marinateTime": { "minutes": 120, "display": "2 hours salting" },
+  "cookTime": { "minutes": 12, "display": "12 minutes for porridge" },
+  "restTime": { "minutes": 60, "display": "1 hour draining and cooling" },
+  "totalTime": {
+    "minutes": 252,
+    "display": "About 4 hours 15 minutes, before optional fermentation"
+  },
+  "equipment": [
+    "Large food-safe basin",
+    "Chef’s knife and cutting board",
+    "Colander",
+    "Small saucepan",
+    "Large nonreactive mixing bowl",
+    "Food-safe gloves",
+    "Clean 4-liter glass or food-safe plastic container with headspace"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "kimchi",
+      "heading": "Cabbage, salting, and seasoning paste",
+      "ingredients": [
+        {
+          "id": "napa-cabbage",
+          "item": "napa cabbage",
+          "metricAmount": 2700,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "pounds",
+          "preparation": "about 2 large heads",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "kosher-salt",
+          "item": "Diamond Crystal kosher salt",
+          "metricAmount": 72,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": "do not substitute table salt by volume",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 480,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "cups",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sweet-rice-flour",
+          "item": "sweet rice flour",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 25,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "korean-radish",
+          "item": "Korean radish",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cups",
+          "preparation": "cut into matchsticks",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot",
+          "metricAmount": 120,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": "cut into matchsticks",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 120,
+          "metricUnit": "g",
+          "customaryAmount": 8,
+          "customaryUnit": "scallions",
+          "preparation": "cut into 2.5 cm / 1-inch pieces",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 90,
+          "metricUnit": "g",
+          "customaryAmount": 24,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 10,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 180,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "medium onion",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce",
+          "item": "Korean fish sauce",
+          "metricAmount": 120,
+          "metricUnit": "ml",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["fish"]
+        },
+        {
+          "id": "saeujeot",
+          "item": "saeujeot fermented salted shrimp with brine",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": "finely chopped",
+          "optional": false,
+          "allergenNotes": ["shellfish"]
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean gochugaru",
+          "metricAmount": 180,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cups",
+          "preparation": "adjust only after test-kitchen review",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Split and salt the cabbage",
+      "action": "Trim only protruding core, slit each cabbage through the base, and pull into halves. Wet the leaves, then distribute salt between them, concentrating near the thick white stems.",
+      "estimatedTime": "20 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Salt is distributed leaf by leaf and the cores still hold each half together.",
+      "safetyNote": "Wash cabbage under cool running water before cutting and use a clean food-safe basin.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Turn during salting",
+      "action": "Rest 2 hours, turning every 30 minutes and ladling accumulated brine over the cabbage.",
+      "estimatedTime": "2 hours",
+      "temperature": "Cool room temperature",
+      "visualOrTactileCue": "The thick stems bend without snapping and the leaves look wilted.",
+      "safetyNote": "Keep the basin away from raw meat and seafood preparation areas.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Rinse and drain",
+      "action": "Rinse the cabbage thoroughly in several changes of cold water, split into quarters along the core, and drain cut-side down in a colander.",
+      "estimatedTime": "45 to 60 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "No visible salt remains and water no longer pools between leaves.",
+      "safetyNote": "Use potable water and a sanitized colander and sink area.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Cook and cool the porridge",
+      "action": "Whisk water and sweet rice flour in a saucepan. Cook over medium heat, stirring, until bubbling and thickened; add sugar for 1 minute, then cool completely.",
+      "estimatedTime": "12 minutes plus cooling",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "The porridge coats the spoon and is fully cool before seasonings are added.",
+      "safetyNote": "Do not mix hot porridge with raw vegetables or pack it warm.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Make the seasoning paste",
+      "action": "Mix cooled porridge with garlic, ginger, onion, fish sauce, saeujeot, and gochugaru. Fold in radish, carrot, and scallions.",
+      "estimatedTime": "15 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Vegetables are evenly coated in a thick red paste.",
+      "safetyNote": "Wear food-safe gloves and avoid touching eyes; verify fish and shellfish allergens before serving.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Coat and pack",
+      "action": "Spread a thin layer of paste over every cabbage leaf. Fold each quarter into a packet and press into a clean container, leaving at least 5 cm / 2 inches of headspace.",
+      "estimatedTime": "25 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Cabbage is compactly packed with minimal trapped air and no paste on the rim.",
+      "safetyNote": "Use a clean, nonreactive food-grade container; never pack to the lid because fermentation can create gas and overflow.",
+      "mediaReference": null
+    },
+    {
+      "step": 7,
+      "heading": "Ferment conservatively and refrigerate",
+      "action": "For a fresher result, refrigerate immediately. For a more active ferment, hold in a cool room for no more than 8 to 12 hours in this unreviewed draft, venting as needed, then refrigerate at or below 40°F / 4°C.",
+      "estimatedTime": "Optional 8 to 12 hours",
+      "temperature": "Cool room, then refrigerator at or below 40°F / 4°C",
+      "visualOrTactileCue": "Early fermentation may show small bubbles and a clean sour aroma; cabbage stays submerged or coated.",
+      "safetyNote": "Fermentation duration is pending qualified safety review; discard the batch if mold, putrid odor, or unusual discoloration appears.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan does not use a grill.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Salted cabbage stems bend without snapping",
+    "Paste coats every leaf",
+    "Early fermentation may create small bubbles and a clean sour aroma"
+  ],
+  "foodSafetyNotes": [
+    "Use clean hands, gloves, tools, containers, and potable water throughout.",
+    "Keep fish sauce and saeujeot refrigerated as directed on their labels and declare fish and shellfish allergens.",
+    "Leave headspace and vent a sealed vessel carefully because fermentation creates gas.",
+    "Refrigerate at or below 40°F / 4°C after the chosen short room-temperature stage.",
+    "Discard kimchi with visible mold, putrid odor, or unusual discoloration; normal souring alone is not the same as spoilage."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": false,
+    "fish": true,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains fish and crustacean shellfish; verify gochugaru and other packaged ingredients for facility cross-contact."
+  },
+  "substitutions": [
+    "A vegan kimchi requires a separately developed and reviewed seasoning system; do not simply omit both fermented seafood ingredients without retesting salt and umami balance.",
+    "Daikon may replace Korean radish, with texture and moisture differences noted for testing."
+  ],
+  "ingredientSourcing": [
+    "Choose dense napa cabbage with crisp pale stems and fresh leaves.",
+    "Korean markets stock gochugaru, Korean fish sauce, saeujeot, and Korean radish; inspect allergen and storage labels."
+  ],
+  "makeAhead": "Prepare and cool the rice-flour porridge up to 1 day ahead under refrigeration; prepare fresh vegetables and seasoning the day of assembly.",
+  "storage": "Keep refrigerated at or below 40°F / 4°C in a clean container with headspace. Flavor continues to sour; a validated shelf-life claim requires food-safety review, so label the batch date and inspect before use.",
+  "reheating": "Serve cold or at cool room temperature; do not reheat as a standalone banchan.",
+  "leftovers": "Use increasingly sour, otherwise sound kimchi in thoroughly cooked dishes only after the final review defines an approved storage window.",
+  "servingSuggestions": [
+    "Cut a cabbage quarter crosswise just before serving",
+    "Serve in small portions with rice and grilled dishes"
+  ],
+  "menuPairings": ["M16", "SF06", "F06", "SA01"],
+  "relatedRecipeIds": ["B25", "B02"],
+  "faq": [
+    {
+      "question": "Can I eat baechu kimchi before it ferments?",
+      "answer": "Yes. It can be served freshly seasoned, then refrigerated as flavor and acidity develop."
+    },
+    {
+      "question": "Why leave headspace in the container?",
+      "answer": "Fermentation can produce gas and lift liquid or vegetables, so empty space reduces pressure and overflow risk."
+    }
+  ],
+  "seoTitle": "Baechu Kimchi Recipe with Napa Cabbage",
+  "metaDescription": "Make napa cabbage baechu kimchi with leaf-by-leaf salting, a rice-flour seasoning paste, cautious fermentation guidance, and explicit allergen notes.",
+  "primaryKeyword": "baechu kimchi recipe",
+  "secondaryTopics": [
+    "napa cabbage kimchi",
+    "Korean fermented vegetables",
+    "tongbaechu kimchi"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["recipe card", "fermentation safety", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention and method reference: https://www.maangchi.com/recipe/tongbaechu-kimchi",
+    "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "The shortened room-temperature option is deliberately conservative but still requires qualified fermentation-safety review.",
+    "Draft synthesized for this project; not test-cooked. Korean-language, cultural, fermentation-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

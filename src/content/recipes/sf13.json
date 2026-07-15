@@ -1,0 +1,294 @@
+{
+  "contentStatus": "complete",
+  "id": "SF13",
+  "title": "Garlic-Scallion Grilled Mussels",
+  "koreanName": "Maneul-Pa Honghap Gui",
+  "hangul": "마늘 파 홍합구이",
+  "romanization": "maneul-pa honghap-gui",
+  "category": "seafood",
+  "releaseCohort": "week-10",
+  "publicReleaseOrder": 66,
+  "canonicalSlug": "garlic-scallion-grilled-mussels",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/garlic-scallion-grilled-mussels/",
+  "shortDescription": "Live mussels are grilled until their shells open, then tossed with a separately prepared hot garlic-scallion sesame dressing.",
+  "culturalContext": "Mussels appear in Korean soups, stews, and contemporary grilled preparations. This garlic-scallion grill draft is an adaptation requiring shellfish and cultural review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 10,
+    "display": "8 to 10 minutes"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No rest"
+  },
+  "totalTime": {
+    "minutes": 30,
+    "display": "About 30 minutes"
+  },
+  "equipment": [
+    "Colander",
+    "Stiff clean shell brush",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Heat-safe grill tray",
+    "Long tongs",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "mussels",
+      "heading": "Live mussels",
+      "ingredients": [
+        {
+          "id": "mussels",
+          "item": "live mussels in the shell",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "required source tag or label retained",
+          "optional": false,
+          "allergenNotes": ["shellfish"]
+        }
+      ]
+    },
+    {
+      "id": "dressing",
+      "heading": "Garlic-scallion dressing",
+      "ingredients": [
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 45,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Verify source and shells",
+      "action": "Retain required tag or label, keep mussels cold, and discard cracked shells or open shells that do not close when tapped.",
+      "estimatedTime": "5 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Only live responsive mussels remain.",
+      "safetyNote": "Do not cook dead, cracked, untagged, or temperature-abused mussels.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Clean briefly",
+      "action": "Scrub shells and remove loose beards immediately before cooking; do not soak in fresh water.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Shells are clean and mussels remain closed or responsive.",
+      "safetyNote": "Sanitize the sink and brush after raw-shellfish contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Cook dressing",
+      "action": "Warm neutral oil in a small clean pan, cook garlic until fragrant, then add scallions, soy sauce, and sesame oil; keep separate.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "Garlic is fragrant without browning deeply.",
+      "safetyNote": "Keep this clean dressing free of raw-mussel liquid.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Grill until open",
+      "action": "Spread mussels on the hot grill tray, cover, and cook until shells open.",
+      "estimatedTime": "5 to 8 minutes",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Shells open and release steam.",
+      "safetyNote": "Discard every mussel that does not open; do not pry it open to eat.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Dress with clean tools",
+      "action": "Transfer only opened mussels to a clean bowl and toss with the hot dressing.",
+      "estimatedTime": "1 minute",
+      "temperature": "Hot",
+      "visualOrTactileCue": "Opened mussels are glossy and steaming.",
+      "safetyNote": "Use clean tongs and avoid hot shell edges and steam.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve promptly",
+      "action": "Move to a clean platter and serve immediately.",
+      "estimatedTime": "1 minute",
+      "temperature": "Hot",
+      "visualOrTactileCue": "Only opened cooked mussels are served.",
+      "safetyNote": "Refrigerate within 2 hours; discard table-exposed portions after unsafe holding.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or approved indoor electric grill with a stable heat-safe tray over medium-high heat; keep raw and cooked shellfish tools separate.",
+  "targetInternalTemperature": "Cook until shells open during cooking; discard every mussel that does not open.",
+  "visualDonenessCues": [
+    "Shells open during cooking",
+    "Flesh is firm and opaque",
+    "Mussels are steaming"
+  ],
+  "foodSafetyNotes": [
+    "Buy tagged or labeled live mussels and keep cold.",
+    "Discard cracked, dead, unresponsive, or non-opening mussels.",
+    "Never soak live mussels in fresh water.",
+    "Prevent raw-shellfish cross-contact and shell/steam injuries."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains shellfish, soy, wheat/gluten, and sesame; verify labels."
+  },
+  "substitutions": [
+    "Do not substitute frozen or pre-cooked mussels without a separate process."
+  ],
+  "ingredientSourcing": [
+    "Buy live mussels from a reputable certified dealer and retain required source information."
+  ],
+  "makeAhead": "Buy and cook live shellfish the same day when possible; prepare topping separately and refrigerate.",
+  "storage": "Refrigerate cooked shellfish in a shallow covered container within 2 hours and use within 2 days pending qualified review.",
+  "reheating": "Reheat only the needed portion until steaming; discard any shellfish held unsafely.",
+  "leftovers": "Use only properly refrigerated leftovers within the approved window.",
+  "servingSuggestions": ["Serve hot with rice or noodles."],
+  "menuPairings": ["B12", "F05", "SA05", "D04"],
+  "relatedRecipeIds": ["SF12", "SF14"],
+  "faq": [
+    {
+      "question": "Why discard closed mussels?",
+      "answer": "A shell that does not open during cooking must not be eaten."
+    },
+    {
+      "question": "Can I soak mussels to clean them?",
+      "answer": "No. Scrub briefly under running water and keep them cold."
+    }
+  ],
+  "seoTitle": "Garlic-Scallion Grilled Mussels",
+  "metaDescription": "Grill live mussels with source-label checks, shell-opening discard rules, clean garlic-scallion dressing, cross-contact controls, and prompt service.",
+  "primaryKeyword": "grilled mussels garlic scallion",
+  "secondaryTopics": ["Korean-inspired mussels", "live shellfish grilling"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Contemporary locked-title formulation; live-mussel controls follow FDA guidance and require qualified seafood review.",
+    "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Buy live shellfish from a reputable certified source with required tag or label information.",
+      "Shells are closed or close when tapped; discard cracked shells and nonresponsive open shells.",
+      "Product is cold, smells fresh and mild, and was not stored in fresh water."
+    ],
+    "thawing": "Not applicable; use live shellfish. Do not freeze or thaw live shellfish for this draft.",
+    "cleaningOrShellPreparation": "Scrub closed responsive shells under cool running water and remove loose beards immediately before cooking; do not soak in fresh water.",
+    "drying": "Drain well after scrubbing; do not soak live shellfish in fresh water.",
+    "scoringOrSkewering": null,
+    "grillSurfacePreparation": "Preheat a stable heat-safe grill tray over medium-high heat.",
+    "stickingPrevention": "Keep shellfish on the tray in their shells so juices remain contained.",
+    "approximateTime": "8 to 10 minutes, controlled by shell opening and product-specific guidance.",
+    "donenessCues": [
+      "Shells open during cooking",
+      "Flesh is firm and opaque",
+      "Mussels are steaming"
+    ],
+    "applicableTemperature": null,
+    "shellOpeningAndDiscardGuidance": "Cook until shells open during cooking and discard every shell that does not open; never pry open a non-opening shell to eat it.",
+    "crossContactNotes": [
+      "Keep live raw shellfish and their liquids away from ready-to-eat foods.",
+      "Wash hands and sanitize sink, brush, and utensils after raw-shellfish contact.",
+      "Use clean tongs and a clean platter for opened cooked shellfish."
+    ]
+  },
+  "source": "Contemporary locked-title formulation; live-mussel controls follow FDA guidance and require qualified seafood review."
+}

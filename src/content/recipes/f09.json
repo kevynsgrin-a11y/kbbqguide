@@ -1,0 +1,281 @@
+{
+  "contentStatus": "complete",
+  "id": "F09",
+  "title": "Watercress-Apple Yuja Salad",
+  "koreanName": "Minari-sae-gwa Yuja Saelleodeu",
+  "hangul": "워터크레스 사과 유자 샐러드",
+  "romanization": "woteokeureseu-sagwa-yuja-saelleodeu",
+  "category": "fresh",
+  "releaseCohort": "week-12",
+  "publicReleaseOrder": 75,
+  "canonicalSlug": "watercress-apple-yuja-salad",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fresh/watercress-apple-yuja-salad/",
+  "shortDescription": "Peppery watercress and crisp apple are tossed just before service with a bright commercial yuja-cheong vinaigrette.",
+  "culturalContext": "This is a contemporary salad pairing Korean yuja preserve with watercress and apple; it is not presented as a canonical Korean dish. The Korean display name is a descriptive transliteration pending language review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "Serve immediately"
+  },
+  "totalTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "equipment": [
+    "Clean colander",
+    "Salad spinner or clean towels",
+    "Clean cutting board and knife",
+    "Small jar",
+    "Large clean bowl"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "salad",
+      "heading": "Salad and yuja dressing",
+      "ingredients": [
+        {
+          "id": "watercress",
+          "item": "watercress",
+          "metricAmount": 170,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cups",
+          "preparation": "washed and thoroughly dried",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "apple",
+          "item": "crisp apple",
+          "metricAmount": 180,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "large",
+          "preparation": "washed, cored, and thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "yuja-cheong",
+          "item": "commercial yuja-cheong",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": "label checked",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 20,
+          "metricUnit": "ml",
+          "customaryAmount": 4,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "oil",
+          "item": "neutral oil",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "salt",
+          "item": "fine salt",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect produce",
+      "action": "Discard slimy, bruised, or moldy watercress and apple; wash hands and clean the work area.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Only sound produce remains.",
+      "safetyNote": "Keep ready-to-eat produce separate from raw meat and seafood.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Wash under running water",
+      "action": "Rinse watercress and apple under cool running water without soap or produce wash.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "No visible soil remains.",
+      "safetyNote": "Washing reduces surface contamination but does not sterilize produce.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Dry thoroughly",
+      "action": "Spin or pat watercress dry with clean single-use or freshly laundered towels.",
+      "estimatedTime": "4 minutes",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Leaves are dry and crisp.",
+      "safetyNote": "Use clean equipment reserved from raw-food preparation.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Mix dressing",
+      "action": "Shake yuja-cheong, vinegar, oils, and salt in a clean jar.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Dressing is emulsified and label-listed allergens are confirmed.",
+      "safetyNote": "Use a clean spoon and verify the yuja-cheong label.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Cut apple",
+      "action": "Core and thinly slice the washed apple on a clean board.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Cool",
+      "visualOrTactileCue": "Slices are even with seeds and core removed.",
+      "safetyNote": "Use a stable cutting surface and a clean knife.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Toss and serve",
+      "action": "Toss watercress and apple with dressing immediately before serving.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Leaves are lightly coated, not wilted.",
+      "safetyNote": "Serve promptly; discard salad left above 40°F / 4°C beyond 2 hours, or 1 hour above 90°F / 32°C.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill required; prepare only on cleaned and sanitized ready-to-eat surfaces.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Watercress is crisp and dry",
+    "Apple has no bruised or moldy areas",
+    "Salad is lightly coated immediately before service"
+  ],
+  "foodSafetyNotes": [
+    "Wash produce under running water; do not use soap, detergent, or bleach.",
+    "Use clean tools and keep ready-to-eat produce away from raw meat and seafood.",
+    "Verify the commercial yuja-cheong label for allergens and damaged seals.",
+    "Keep prepared salad cold and observe the 2-hour limit, or 1 hour above 90°F / 32°C."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Verify every packaged-ingredient label and segregate tools for diners with allergies."
+  },
+  "substitutions": [
+    "Asian pear may replace apple after washing and coring.",
+    "A verified sesame-free neutral oil may replace sesame oil."
+  ],
+  "ingredientSourcing": [
+    "Choose crisp watercress without slime or yellowing.",
+    "Use commercial yuja-cheong from an intact package and verify its label."
+  ],
+  "makeAhead": "Wash and dry watercress and mix dressing up to 1 day ahead; store separately and cut apple near service.",
+  "storage": "Refrigerate components separately at or below 40°F / 4°C; use tossed salad the same day.",
+  "reheating": "Do not reheat.",
+  "leftovers": "Discard dressed salad after extended service; undressed, uncontaminated components may remain refrigerated for 1 day.",
+  "servingSuggestions": [
+    "Toss at the table just before eating.",
+    "Serve with rich grilled meat or seafood."
+  ],
+  "menuPairings": ["M12", "SF10", "B24", "SA04"],
+  "relatedRecipeIds": ["F08", "F10"],
+  "faq": [
+    {
+      "question": "Can I wash watercress with soap?",
+      "answer": "No. Rinse produce under running water and use clean hands and tools."
+    },
+    {
+      "question": "Can I dress it early?",
+      "answer": "Keep the dressing separate until service for texture and cold-control quality."
+    }
+  ],
+  "seoTitle": "Watercress Apple Yuja Salad Recipe",
+  "metaDescription": "Toss crisp watercress and apple with a bright yuja dressing using clean ready-to-eat tools, label checks, running-water washing, and cold holding.",
+  "primaryKeyword": "watercress apple yuja salad",
+  "secondaryTopics": [
+    "yuja dressing",
+    "Korean-inspired salad",
+    "fresh banchan"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe-header",
+    "ingredient-list",
+    "instructions",
+    "food-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Produce-safety basis: https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
+    "Editorial framing: contemporary adaptation; Korean display name requires review.",
+    "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
+  ],
+  "seafoodPreparation": null
+}

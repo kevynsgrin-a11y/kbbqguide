@@ -1,0 +1,305 @@
+{
+  "contentStatus": "complete",
+  "id": "SF12",
+  "title": "Scallion-Gochujang Grilled Oysters",
+  "koreanName": "Pa-Gochujang Gul Gui",
+  "hangul": "파 고추장 굴구이",
+  "romanization": "pa-gochujang gul-gui",
+  "category": "seafood",
+  "releaseCohort": "week-09",
+  "publicReleaseOrder": 61,
+  "canonicalSlug": "scallion-gochujang-grilled-oysters",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/scallion-gochujang-grilled-oysters/",
+  "shortDescription": "Live oysters are grilled in their shells until they open, then topped with a separately prepared scallion-gochujang sauce and cooked until bubbling.",
+  "culturalContext": "This scallion-gochujang grilled oyster is a contemporary Korean-inspired preparation. Oyster species, harvest controls, sauce balance, and grill practice vary and require seafood and cultural review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 10,
+    "display": "8 to 10 minutes"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No rest"
+  },
+  "totalTime": {
+    "minutes": 30,
+    "display": "About 30 minutes"
+  },
+  "equipment": [
+    "Colander",
+    "Stiff clean shell brush",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Heat-safe grill tray",
+    "Long tongs",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "oysters",
+      "heading": "Live oysters",
+      "ingredients": [
+        {
+          "id": "oysters",
+          "item": "live oysters in the shell",
+          "metricAmount": 1800,
+          "metricUnit": "g",
+          "customaryAmount": 12,
+          "customaryUnit": "large oysters",
+          "preparation": "required harvest tag retained",
+          "optional": false,
+          "allergenNotes": ["shellfish"]
+        }
+      ]
+    },
+    {
+      "id": "topping",
+      "heading": "Scallion-gochujang topping",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 45,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "finely sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "clove",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Verify source and shells",
+      "action": "Retain the harvest tag, keep oysters cold, and discard cracked shells or open shells that do not close when tapped.",
+      "estimatedTime": "5 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Only live responsive oysters with intact shells remain.",
+      "safetyNote": "Do not cook or eat dead, cracked, untagged, or temperature-abused oysters.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Scrub safely",
+      "action": "Scrub shells under cool running water with a dedicated clean brush; do not soak in fresh water.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Cool running water",
+      "visualOrTactileCue": "Shell exteriors are free of visible debris.",
+      "safetyNote": "Sanitize the sink and brush after raw-shellfish contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Mix topping separately",
+      "action": "Combine gochujang, rice syrup, vinegar, scallions, garlic, and sesame oil in a clean bowl.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Topping is smooth and remains free of raw-shellfish contact.",
+      "safetyNote": "Verify gochujang, soy, wheat/gluten, and sesame allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Grill until open",
+      "action": "Place oysters cupped-side down on the hot tray, cover, and grill until shells open.",
+      "estimatedTime": "5 to 8 minutes",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Shells open during cooking.",
+      "safetyNote": "Discard every oyster that does not open; do not pry it open to eat.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Top and finish",
+      "action": "Using clean tongs, remove top shells from opened oysters, add a small amount of topping, and grill until the topping bubbles and oyster is fully hot.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Medium-high",
+      "visualOrTactileCue": "Topping bubbles and oyster flesh is firm and opaque.",
+      "safetyNote": "Avoid shell cuts, hot steam, and spilled liquor.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve promptly",
+      "action": "Transfer opened cooked oysters to a clean platter and serve immediately.",
+      "estimatedTime": "1 minute",
+      "temperature": "Hot",
+      "visualOrTactileCue": "Only opened oysters are on the clean platter.",
+      "safetyNote": "At-risk diners should never receive raw or undercooked oysters.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or approved indoor electric grill with a stable heat-safe tray over medium-high heat; keep raw and cooked shellfish tools separate.",
+  "targetInternalTemperature": "Cook until shells open; discard any that do not open. After topping, cook until oyster flesh is firm and opaque and the sauce bubbles.",
+  "visualDonenessCues": [
+    "Shells open during cooking",
+    "Flesh is firm and opaque",
+    "Topping bubbles"
+  ],
+  "foodSafetyNotes": [
+    "Buy tagged live oysters from a certified source and keep cold.",
+    "Discard cracked, dead, unresponsive, or non-opening oysters.",
+    "Cook thoroughly; never serve raw or undercooked oysters in this draft.",
+    "Prevent raw-shellfish cross-contact and shell/steam injuries."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains shellfish, soy, wheat/gluten, and sesame; verify the gochujang label."
+  },
+  "substitutions": [
+    "Do not substitute pre-shucked oysters without a separately validated process."
+  ],
+  "ingredientSourcing": [
+    "Buy tagged live oysters from a reputable certified dealer and retain the tag as required."
+  ],
+  "makeAhead": "Buy and cook live shellfish the same day when possible; prepare topping separately and refrigerate.",
+  "storage": "Refrigerate cooked shellfish in a shallow covered container within 2 hours and use within 2 days pending qualified review.",
+  "reheating": "Reheat only the needed portion until steaming; discard any shellfish held unsafely.",
+  "leftovers": "Use only properly refrigerated leftovers within the approved window.",
+  "servingSuggestions": ["Serve hot with rice and fresh banchan."],
+  "menuPairings": ["B11", "F04", "SA04", "D03"],
+  "relatedRecipeIds": ["SF11", "SF13"],
+  "faq": [
+    {
+      "question": "Can I eat an oyster that stays closed?",
+      "answer": "No. Discard every shell that does not open during cooking."
+    },
+    {
+      "question": "Can these be served lightly cooked?",
+      "answer": "No. This draft requires thorough cooking."
+    }
+  ],
+  "seoTitle": "Scallion-Gochujang Grilled Oysters",
+  "metaDescription": "Grill live oysters safely with harvest-tag checks, shell-opening discard rules, scallion-gochujang topping, clean tools, and thorough cooking.",
+  "primaryKeyword": "gochujang grilled oysters",
+  "secondaryTopics": ["Korean-inspired oysters", "grilled shellfish"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Contemporary locked-title formulation; live-oyster controls follow FDA guidance and require qualified seafood review.",
+    "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Buy live shellfish from a reputable certified source with required tag or label information.",
+      "Shells are closed or close when tapped; discard cracked shells and nonresponsive open shells.",
+      "Product is cold, smells fresh and mild, and was not stored in fresh water."
+    ],
+    "thawing": "Not applicable; use live shellfish. Do not freeze or thaw live shellfish for this draft.",
+    "cleaningOrShellPreparation": "Scrub closed responsive shells under cool running water with a dedicated brush; discard cracked or nonresponsive shells and do not shuck before the opening cook.",
+    "drying": "Drain well after scrubbing; do not soak live shellfish in fresh water.",
+    "scoringOrSkewering": null,
+    "grillSurfacePreparation": "Preheat a stable heat-safe grill tray over medium-high heat.",
+    "stickingPrevention": "Keep shellfish on the tray in their shells so juices remain contained.",
+    "approximateTime": "8 to 10 minutes, controlled by shell opening and product-specific guidance.",
+    "donenessCues": [
+      "Shells open during cooking",
+      "Flesh is firm and opaque",
+      "Topping bubbles"
+    ],
+    "applicableTemperature": null,
+    "shellOpeningAndDiscardGuidance": "Cook until shells open during cooking and discard every shell that does not open; never pry open a non-opening shell to eat it.",
+    "crossContactNotes": [
+      "Keep live raw shellfish and their liquids away from ready-to-eat foods.",
+      "Wash hands and sanitize sink, brush, and utensils after raw-shellfish contact.",
+      "Use clean tongs and a clean platter for opened cooked shellfish."
+    ]
+  },
+  "source": "Contemporary locked-title formulation; live-oyster controls follow FDA guidance and require qualified seafood review."
+}

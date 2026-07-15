@@ -1,0 +1,71 @@
+---
+import registryData from '../../../data/url-registry.json';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { menus } from '../../lib/menus';
+import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
+import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_MENUS');
+---
+
+<BaseLayout
+  title="Korean BBQ Menus"
+  description="Workload-aware Korean BBQ menus for two, four, and eight guests with linked recipes, service order, and equipment checks."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+      { name: 'Menus', path },
+    ]),
+    itemListJsonLd(
+      'Korean BBQ menus by guest count',
+      menus.map((menu) => ({
+        name: menu.title,
+        path: registryPathById(registry, menu.id),
+      })),
+    ),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+          { label: 'Menus' },
+        ]}
+      />
+      <p class="eyebrow">Guest-count planning</p>
+      <h1>Scale the workload with the table.</h1>
+      <p class="lede">
+        Start with a balanced set of dishes, then adjust for appetite, dietary
+        needs, appliance capacity, prep time, and the way your guests like to
+        gather.
+      </p>
+    </div>
+  </header>
+
+  <section class="section tinted" aria-labelledby="menu-list-title">
+    <div class="shell">
+      <h2 id="menu-list-title">Choose a table size</h2>
+      <div class="card-grid">
+        {
+          menus.map((menu) => (
+            <article class="support-card menu-card">
+              <p class="menu-number" aria-hidden="true">
+                {menu.guests}
+              </p>
+              <p class="eyebrow">Guests</p>
+              <h3>
+                <a href={registryPathById(registry, menu.id)}>{menu.title}</a>
+              </h3>
+              <p>{menu.description}</p>
+              <p>{menu.recipeIds.length} linked recipe drafts</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

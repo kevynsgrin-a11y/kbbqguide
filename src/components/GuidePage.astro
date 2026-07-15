@@ -1,0 +1,107 @@
+---
+import registryData from '../../data/url-registry.json';
+import type { Guide } from '../lib/guides';
+import { breadcrumbJsonLd } from '../lib/seo';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import DraftNotice from './DraftNotice.astro';
+import SafetyCallout from './SafetyCallout.astro';
+
+interface Props {
+  guide: Guide;
+}
+
+const { guide } = Astro.props;
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, guide.id);
+const related = guide.relatedIds.map((id) => {
+  const entry = registry.entries.find((candidate) => candidate.id === id);
+  if (!entry) throw new Error(`Missing related guide destination ${id}`);
+  return entry;
+});
+const breadcrumbs = breadcrumbJsonLd([
+  { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+  { name: 'Guides', path: registryPathById(registry, 'SYS_GUIDES') },
+  { name: guide.title, path },
+]);
+---
+
+<BaseLayout
+  title={guide.title}
+  description={guide.description}
+  canonicalPath={path}
+  jsonLd={[breadcrumbs]}
+  pageClass="guide-page"
+>
+  <header class="category-hero guide-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+          { label: 'Guides', href: registryPathById(registry, 'SYS_GUIDES') },
+          { label: guide.title },
+        ]}
+      />
+      <p class="eyebrow">{guide.eyebrow} · Draft {guide.id}</p>
+      <h1>{guide.title}</h1>
+      <p class="lede">{guide.description}</p>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="guide-status-title">
+    <div class="shell support-grid">
+      <DraftNotice />
+      <section class="support-card">
+        <h2 id="guide-status-title">How to use this draft</h2>
+        <p>
+          Treat each section as a decision checkpoint. Open the linked recipe
+          before acting on ingredient quantities, timing, storage, doneness, or
+          appliance instructions.
+        </p>
+      </section>
+    </div>
+  </section>
+
+  <article class="section tinted">
+    <div class="shell reading-width guide-sections">
+      {
+        guide.sections.map((section, index) => (
+          <section aria-labelledby={`${guide.id}-section-${index + 1}`}>
+            <p class="eyebrow">Checkpoint {index + 1}</p>
+            <h2 id={`${guide.id}-section-${index + 1}`}>{section.heading}</h2>
+            <p>{section.body}</p>
+            <ul class="plain-list checklist-list">
+              {section.checklist.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </article>
+
+  <section class="section" aria-label="Guide safety review">
+    <div class="shell reading-width">
+      <SafetyCallout notes={[guide.safetyNote]} />
+    </div>
+  </section>
+
+  <section class="section tinted" aria-labelledby="guide-next-title">
+    <div class="shell">
+      <p class="eyebrow">Continue planning</p>
+      <h2 id="guide-next-title">Related pages</h2>
+      <div class="support-grid">
+        {
+          related.map((entry) => (
+            <a class="support-card" href={registryPathById(registry, entry.id)}>
+              <strong>{entry.title}</strong>
+              <span>Open the next checkpoint</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

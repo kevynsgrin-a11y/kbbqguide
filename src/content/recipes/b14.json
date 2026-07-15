@@ -1,0 +1,281 @@
+{
+  "contentStatus": "complete",
+  "id": "B14",
+  "title": "Myeolchi Bokkeum Stir-Fried Anchovies",
+  "koreanName": "Myeolchi Bokkeum",
+  "hangul": "멸치볶음",
+  "romanization": "myeolchi-bokkeum",
+  "category": "banchan",
+  "releaseCohort": "week-04",
+  "publicReleaseOrder": 44,
+  "canonicalSlug": "myeolchi-bokkeum-stir-fried-anchovies",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/myeolchi-bokkeum-stir-fried-anchovies/",
+  "shortDescription": "Small dried anchovies are toasted until crisp, then coated lightly with a glossy soy and rice-syrup glaze plus sesame.",
+  "culturalContext": "Myeolchi bokkeum is a Korean stir-fried dried-anchovy banchan. Anchovy size, sweetness, nuts, chile, and texture vary; this draft is nut-free and uses very small anchovies.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 8,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 10,
+    "display": "10 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 10,
+    "display": "10 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "totalTime": {
+    "minutes": 25,
+    "display": "About 25 minutes"
+  },
+  "equipment": [
+    "Large dry skillet",
+    "Fine-mesh sieve",
+    "Heatproof spatula",
+    "Clean sheet pan or wide plate",
+    "Clean lidded container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "anchovies",
+      "heading": "Anchovies",
+      "ingredients": [
+        {
+          "id": "dried-anchovies",
+          "item": "small dried anchovies for bokkeum",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cups",
+          "preparation": "package checked and sifted",
+          "optional": false,
+          "allergenNotes": ["fish; verify package for other allergens"]
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "glaze",
+      "heading": "Glaze",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 5,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Check the package",
+      "action": "Read the dried-anchovy label for fish and any facility or added-ingredient allergens; discard damaged, moldy, rancid, or pest-affected product.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Anchovies smell clean and savory, not rancid.",
+      "safetyNote": "The package label controls allergen and storage guidance.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Sift",
+      "action": "Shake anchovies in a fine-mesh sieve to remove loose powder.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Excess powder has fallen away.",
+      "safetyNote": "Avoid inhaling seafood dust and clean the area afterward.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Toast dry",
+      "action": "Toast anchovies in a dry skillet over medium heat, stirring, until crisp and fragrant; transfer out.",
+      "estimatedTime": "4 to 6 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "Anchovies are dry and crisp without scorching.",
+      "safetyNote": "Do not taste if the product has a rancid or abnormal odor.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Build the glaze",
+      "action": "Add oil, soy sauce, rice syrup, and water to the skillet and simmer briefly.",
+      "estimatedTime": "1 to 2 minutes",
+      "temperature": "Medium-low",
+      "visualOrTactileCue": "The glaze bubbles and begins to thicken.",
+      "safetyNote": "Hot syrup can cause burns; avoid splashing.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Coat briefly",
+      "action": "Return anchovies and toss only until thinly coated; remove from heat and add sesame oil and seeds.",
+      "estimatedTime": "1 minute",
+      "temperature": "Low heat",
+      "visualOrTactileCue": "Anchovies are glossy but remain separate.",
+      "safetyNote": "Do not over-reduce the hot sugar glaze.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Cool and store",
+      "action": "Spread on a clean plate for 5 minutes, then serve or transfer to a clean container.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cooling",
+      "visualOrTactileCue": "The glaze is set and anchovies remain crisp.",
+      "safetyNote": "Follow the package storage direction; refrigerate the cooked dish within 2 hours unless a qualified reviewer approves otherwise.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is stir-fried on the stovetop.",
+  "targetInternalTemperature": "Use a commercially dried ready-to-cook anchovy product and follow any package heating direction; toast until hot, crisp, and fragrant.",
+  "visualDonenessCues": [
+    "Anchovies are dry and crisp",
+    "Glaze coats without a sticky pool",
+    "No rancid or scorched odor"
+  ],
+  "foodSafetyNotes": [
+    "Verify fish and all other allergens on the exact package.",
+    "Discard rancid, moldy, damaged, or pest-affected dried seafood.",
+    "Handle hot syrup carefully.",
+    "Follow the stricter package storage and heating directions."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": true,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains fish, soy, wheat/gluten, and sesame; the dried-anchovy package may declare additional cross-contact."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying every label.",
+    "Do not add nuts without a new allergen and cross-contact review."
+  ],
+  "ingredientSourcing": [
+    "Choose small dried anchovies intended for bokkeum in a sealed, dated package from a high-turnover market."
+  ],
+  "makeAhead": "Prepare up to 3 days ahead pending package and food-safety review.",
+  "storage": "Follow the package direction; absent a stricter instruction, refrigerate in a covered container within 2 hours and use within 4 days pending review.",
+  "reheating": "Serve cool or briefly refresh in a dry skillet; do not repeatedly reheat.",
+  "leftovers": "Use only properly stored leftovers within the approved package or review window.",
+  "servingSuggestions": [
+    "Serve in small portions with rice and other banchan."
+  ],
+  "menuPairings": ["M09", "SF04", "F09", "SA04"],
+  "relatedRecipeIds": ["B13", "B15"],
+  "faq": [
+    {
+      "question": "Do I need to remove heads and guts?",
+      "answer": "Very small anchovies are often used whole, but package size and test cooking control."
+    },
+    {
+      "question": "Can I add peanuts?",
+      "answer": "Not in this draft; adding nuts requires a new allergen review."
+    }
+  ],
+  "seoTitle": "Myeolchi Bokkeum Stir-Fried Anchovies",
+  "metaDescription": "Make Korean myeolchi bokkeum with crisp dried anchovies, a light soy-rice-syrup glaze, package-first allergen checks, and safe storage.",
+  "primaryKeyword": "myeolchi bokkeum",
+  "secondaryTopics": ["Korean dried anchovies", "anchovy banchan"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi myeolchi-bokkeum technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/myeolchi-bokkeum",
+    "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

@@ -1,0 +1,265 @@
+{
+  "contentStatus": "complete",
+  "id": "B23",
+  "title": "Maneul Jangajji Soy-Pickled Garlic",
+  "koreanName": "Maneul Jangajji",
+  "hangul": "마늘장아찌",
+  "romanization": "maneul jangajji",
+  "category": "banchan",
+  "releaseCohort": "week-10",
+  "publicReleaseOrder": 67,
+  "canonicalSlug": "maneul-jangajji-soy-pickled-garlic",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/maneul-jangajji-soy-pickled-garlic/",
+  "shortDescription": "Peeled garlic is submerged in a boiled, fully cooled soy-vinegar brine and held only under refrigeration for a short, unvalidated pickling window.",
+  "culturalContext": "Maneul jangajji is Korean pickled garlic, with whole-bulb and peeled-clove methods, staged brines, aging periods, and regional preferences. This conservative draft is refrigerator-only and not a canning or fermentation process.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 12,
+  "servingUnit": "side-dish servings",
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "marinateTime": {
+    "minutes": 10080,
+    "display": "7 days refrigerated"
+  },
+  "cookTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "restTime": {
+    "minutes": 30,
+    "display": "30 minutes"
+  },
+  "totalTime": {
+    "minutes": 10140,
+    "display": "7 days plus about 1 hour preparation and cooling"
+  },
+  "equipment": [
+    "Heat-safe nonreactive saucepan",
+    "Clean glass refrigerator container with nonreactive lid",
+    "Clean nonreactive weight",
+    "Tongs",
+    "Refrigerator thermometer"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "garlic",
+      "heading": "Garlic",
+      "ingredients": [
+        {
+          "id": "garlic",
+          "item": "fresh garlic cloves",
+          "metricAmount": 450,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "pound",
+          "preparation": "peeled; damaged cloves discarded",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "brine",
+      "heading": "Soy-vinegar refrigerator brine",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 240,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "vinegar",
+          "item": "commercial distilled vinegar labeled 5% acidity",
+          "metricAmount": 240,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 240,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect and clean",
+      "action": "Discard moldy, bruised, soft, sprouted, or damaged garlic; wash hands and use a clean container and tools.",
+      "estimatedTime": "12 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Only firm sound cloves remain.",
+      "safetyNote": "Do not use recalled, temperature-abused, or spoiled peeled garlic.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Make brine",
+      "action": "Combine soy sauce, commercial 5%-acidity vinegar, water, and sugar; bring to a full boil while stirring.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Full boil",
+      "visualOrTactileCue": "Sugar dissolves and brine reaches a full boil.",
+      "safetyNote": "Hot acidic brine can burn; avoid splashing and use nonreactive cookware.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Cool completely",
+      "action": "Cover the brine against contamination and cool completely, then refrigerate until cold.",
+      "estimatedTime": "30 minutes plus chilling",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Brine is at or below 40°F / 4°C.",
+      "safetyNote": "Do not pour warm brine over garlic for an extended room-temperature hold.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Submerge cold",
+      "action": "Place garlic in the clean refrigerator container, pour over cold brine, apply a clean nonreactive weight, cover, label, and refrigerate immediately.",
+      "estimatedTime": "5 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Cloves are fully submerged and the container is labeled.",
+      "safetyNote": "This is not canned, shelf-stable, or fermented; never store at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Pickle under refrigeration",
+      "action": "Keep continuously at or below 40°F / 4°C for 7 days, checking that cloves remain submerged and discarding the batch for mold, gas, bulging, slime, or off odor.",
+      "estimatedTime": "7 days",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "Cloves remain submerged with no spoilage signs.",
+      "safetyNote": "Do not taste a suspect batch; when in doubt, discard it.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve with clean utensils",
+      "action": "Remove only the needed cloves with clean tongs and return the container immediately to refrigeration.",
+      "estimatedTime": "1 minute",
+      "temperature": "Cold",
+      "visualOrTactileCue": "Master container remains cold and uncontaminated.",
+      "safetyNote": "Use within 7 days after the first serving pending process review; never reuse the brine.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is prepared without a grill.",
+  "targetInternalTemperature": "Bring the brine to a full boil, cool it completely, then keep the garlic continuously at or below 40°F / 4°C; this is not a shelf-stable process.",
+  "visualDonenessCues": [
+    "Garlic remains fully submerged",
+    "Brine shows no mold, gas, bulging, slime, or off odor",
+    "Container stays continuously refrigerated"
+  ],
+  "foodSafetyNotes": [
+    "Use commercial vinegar labeled 5% acidity and do not change the vinegar-water ratio.",
+    "This is a refrigerator pickle only—not canned, fermented, or shelf-stable.",
+    "Keep continuously at or below 40°F / 4°C with garlic submerged.",
+    "Discard the entire batch for mold, gas, bulging, slime, off odor, temperature abuse, or uncertainty."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy and wheat/gluten; verify soy sauce and vinegar labels."
+  },
+  "substitutions": [
+    "Do not alter the vinegar, water, garlic, or container process without a tested recipe and qualified process review."
+  ],
+  "ingredientSourcing": [
+    "Choose firm sound garlic and commercial vinegar clearly labeled 5% acidity."
+  ],
+  "makeAhead": "The required 7-day refrigerated pickling period is part of the draft and still needs qualified process validation.",
+  "storage": "Keep continuously at or below 40°F / 4°C. Use within 7 days after first serving and within 14 days of assembly pending qualified review; discard sooner for any concern.",
+  "reheating": "Do not reheat or can this draft.",
+  "leftovers": "Never reuse brine or return served cloves to the master container.",
+  "servingSuggestions": [
+    "Serve a small refrigerated portion beside grilled foods."
+  ],
+  "menuPairings": ["M18", "SF13", "F08", "SA03"],
+  "relatedRecipeIds": ["B22", "B24"],
+  "faq": [
+    {
+      "question": "Is this shelf-stable?",
+      "answer": "No. It must remain refrigerated and is not a canning or fermentation recipe."
+    },
+    {
+      "question": "Can I reduce the vinegar?",
+      "answer": "No. Do not change the acid-water ratio without a tested process."
+    }
+  ],
+  "seoTitle": "Maneul Jangajji Soy-Pickled Garlic",
+  "metaDescription": "Make conservative refrigerator-only maneul jangajji with 5%-acidity vinegar, boiled and cooled brine, continuous refrigeration, and discard rules.",
+  "primaryKeyword": "maneul jangajji",
+  "secondaryTopics": ["Korean pickled garlic", "refrigerator garlic pickle"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Locked maneul-jangajji concept drafted conservatively for refrigerator-only use; qualified process authority review is mandatory before publication.",
+    "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null,
+  "prep": 25,
+  "marinate": 10080,
+  "marinateDisplay": "7 days refrigerated",
+  "cook": 5,
+  "rest": 30,
+  "totalDisplay": "7 days plus about 1 hour preparation and cooling",
+  "source": "Locked maneul-jangajji concept drafted conservatively for refrigerator-only use; qualified process authority review is mandatory before publication."
+}

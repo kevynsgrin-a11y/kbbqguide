@@ -1,0 +1,273 @@
+{
+  "contentStatus": "complete",
+  "id": "B05",
+  "title": "Kongnamul Muchim Seasoned Soybean Sprouts",
+  "koreanName": "Kongnamul Muchim",
+  "hangul": "콩나물무침",
+  "romanization": "kongnamul muchim",
+  "category": "banchan",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 16,
+  "canonicalSlug": "kongnamul-muchim-seasoned-soybean-sprouts",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/kongnamul-muchim-seasoned-soybean-sprouts/",
+  "shortDescription": "Soybean sprouts are cooked until tender but crisp, drained, and seasoned with garlic, scallion, toasted sesame oil, sesame seeds, and a restrained touch of gochugaru.",
+  "culturalContext": "Kongnamul muchim is an everyday Korean soybean-sprout banchan with mild and spicy variations. Some cooks simmer with little water while others blanch; this draft uses a covered simmer and requires testing for the exact sprout size and stove output.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "side-dish servings",
+  "prepTime": { "minutes": 12, "display": "12 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 8, "display": "7 to 8 minutes" },
+  "restTime": { "minutes": 10, "display": "10 minutes cooling" },
+  "totalTime": { "minutes": 30, "display": "30 minutes" },
+  "equipment": [
+    "Large bowl and colander",
+    "Medium saucepan with tight-fitting lid",
+    "Timer",
+    "Clean mixing bowl",
+    "Airtight refrigerator container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "seasoned-sprouts",
+      "heading": "Soybean sprouts and seasoning",
+      "ingredients": [
+        {
+          "id": "soybean-sprouts",
+          "item": "fresh soybean sprouts",
+          "metricAmount": 450,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "pound",
+          "preparation": "discolored sprouts and loose hulls removed",
+          "optional": false,
+          "allergenNotes": ["soy"]
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 240,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": "divided",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": "lightly crushed",
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean gochugaru",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Sort and rinse",
+      "action": "Discard slimy, dark, or damaged sprouts. Rinse the remaining sprouts thoroughly under cool running water and drain.",
+      "estimatedTime": "8 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Sprouts look firm and pale with crisp yellow heads and no off odor.",
+      "safetyNote": "Sprouts can carry pathogens; keep them refrigerated and do not taste them raw.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Set the covered simmer",
+      "action": "Put sprouts, water, and half the salt in a saucepan. Cover tightly and bring to a boil over medium-high heat.",
+      "estimatedTime": "3 to 4 minutes",
+      "temperature": "Medium-high heat",
+      "visualOrTactileCue": "Steam escapes around the lid and the liquid boils steadily.",
+      "safetyNote": "Once heating begins, keep the lid closed for the timed cook to maintain consistent heat.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Cook through",
+      "action": "Reduce to medium and cook covered for 5 minutes. Remove from heat, uncover away from your face, and check that the sprouts are hot and tender-crisp with no raw-bean aroma.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "Stems bend easily but retain a slight snap, and the raw grassy aroma is gone.",
+      "safetyNote": "Do not shorten the cooking step or serve raw sprouts in this recipe.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Drain and cool",
+      "action": "Drain immediately in a clean colander and spread in a clean bowl for 10 minutes; do not rinse after cooking.",
+      "estimatedTime": "10 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Steam subsides and no water pools in the bowl.",
+      "safetyNote": "Use clean equipment so cooked sprouts do not contact the raw-sprout sink area.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Season",
+      "action": "Add garlic, scallions, sesame oil, sesame seeds, optional gochugaru, and remaining salt. Toss gently until evenly coated.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Sprouts are glossy and evenly flecked with scallion and sesame.",
+      "safetyNote": "Declare soy and sesame allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve or refrigerate",
+      "action": "Serve warm or cool, or transfer promptly to a shallow covered container and refrigerate.",
+      "estimatedTime": "Immediate",
+      "temperature": "Warm or chilled",
+      "visualOrTactileCue": "Sprouts remain separate and tender-crisp.",
+      "safetyNote": "Refrigerate within 2 hours and keep at or below 40°F / 4°C.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is simmered on the stovetop.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Sprouts are steaming hot throughout",
+    "Raw grassy aroma is gone",
+    "Stems bend easily while retaining a slight snap"
+  ],
+  "foodSafetyNotes": [
+    "Buy refrigerated sprouts and reject slimy, darkened, or sour-smelling packages.",
+    "Keep sprouts refrigerated and do not taste them raw.",
+    "Cook covered until hot throughout and the raw-bean aroma is gone.",
+    "Separate cooked sprouts from raw-sprout tools and sink splash.",
+    "Refrigerate within 2 hours at or below 40°F / 4°C."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy and sesame; verify packaged gochugaru and sesame labels for facility cross-contact."
+  },
+  "substitutions": [
+    "Mung bean sprouts are not a direct substitute for this named dish and need a separate cooking-time test.",
+    "Omit gochugaru for a mild version."
+  ],
+  "ingredientSourcing": [
+    "Choose refrigerated soybean sprouts with firm white stems, bright yellow heads, and no excess liquid.",
+    "Use freshly toasted sesame seeds for a clear nutty aroma."
+  ],
+  "makeAhead": "This dish is best cooked and seasoned the day it is served; aromatics may be prepared several hours ahead under refrigeration.",
+  "storage": "Refrigerate in a shallow airtight container within 2 hours and use within 3 days; this conservative limit requires food-safety approval.",
+  "reheating": "Serve cold, cool, or briefly warm in a covered skillet; do not repeatedly reheat and cool.",
+  "leftovers": "Add properly refrigerated leftovers to a hot rice bowl just before serving within the approved storage window.",
+  "servingSuggestions": [
+    "Serve in small portions with rice",
+    "Offer mild and gochugaru-seasoned versions as separate batches"
+  ],
+  "menuPairings": ["M20", "SF10", "F10", "SA05"],
+  "relatedRecipeIds": ["B04", "B06"],
+  "faq": [
+    {
+      "question": "Why keep the lid on while cooking?",
+      "answer": "A covered cook provides steady steam and heat so the sprouts cook evenly and lose their raw grassy aroma."
+    },
+    {
+      "question": "Can I serve soybean sprouts raw?",
+      "answer": "Not in this recipe; the sprouts are intentionally cooked through before seasoning."
+    }
+  ],
+  "seoTitle": "Kongnamul Muchim Soybean Sprout Banchan",
+  "metaDescription": "Make kongnamul muchim with safely cooked soybean sprouts, garlic, scallion, sesame, tender-crisp cues, allergen notes, and cold-storage guidance.",
+  "primaryKeyword": "kongnamul muchim",
+  "secondaryTopics": [
+    "soybean sprout banchan",
+    "Korean seasoned sprouts",
+    "Korean side dishes"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["recipe card", "sprout safety", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention and covered-cooking reference: https://www.maangchi.com/recipe/kongnamul-muchim",
+    "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Draft synthesized for this project; not test-cooked. Sprout safety, Korean-language, cultural, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

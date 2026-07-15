@@ -1,0 +1,21 @@
+<nav class="recipe-controls" aria-label="Recipe page controls">
+  <div class="shell recipe-controls-inner">
+    <a class="button secondary" href="#ingredients">Ingredients</a>
+    <a class="button secondary" href="#instructions">Instructions</a>
+    <a class="button secondary" href="#safety">Safety</a>
+    <button class="button" type="button" data-print-recipe>
+      Print recipe
+    </button>
+    <noscript>
+      <span>Use your browser’s Print command for the print-friendly view.</span>
+    </noscript>
+  </div>
+</nav>
+
+<script>
+  document
+    .querySelectorAll<HTMLButtonElement>('[data-print-recipe]')
+    .forEach((button) => {
+      button.addEventListener('click', () => window.print());
+    });
+</script>

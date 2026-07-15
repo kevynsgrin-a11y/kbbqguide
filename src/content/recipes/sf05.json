@@ -1,0 +1,318 @@
+{
+  "contentStatus": "complete",
+  "id": "SF05",
+  "title": "Spicy Grilled Nakji Octopus",
+  "koreanName": "Nakji Gui",
+  "hangul": "낙지구이",
+  "romanization": "nakji-gui",
+  "category": "seafood",
+  "releaseCohort": "week-04",
+  "publicReleaseOrder": 42,
+  "canonicalSlug": "spicy-grilled-nakji-octopus",
+  "canonicalUrl": "https://kbbqguide.com/recipes/seafood/spicy-grilled-nakji-octopus/",
+  "shortDescription": "Small octopus is coated in a spicy gochujang-garlic seasoning and grilled quickly in a perforated pan until lightly charred and opaque.",
+  "culturalContext": "Nakji is commonly translated as long-arm octopus. Korean nakji dishes include stir-fried, raw, and grilled preparations; this locked grilled version is an editorial adaptation requiring species and naming review.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "marinateTime": {
+    "minutes": 20,
+    "display": "20 minutes refrigerated"
+  },
+  "cookTime": {
+    "minutes": 8,
+    "display": "8 minutes"
+  },
+  "restTime": {
+    "minutes": 2,
+    "display": "2 minutes"
+  },
+  "totalTime": {
+    "minutes": 55,
+    "display": "About 55 minutes"
+  },
+  "equipment": [
+    "Separate seafood cutting board",
+    "Paper towels",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Fish basket, perforated grill pan, or narrow-spaced grate",
+    "Long spatula or tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "octopus",
+      "heading": "Octopus",
+      "ingredients": [
+        {
+          "id": "octopus",
+          "item": "cleaned small octopus (nakji)",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "thawed in refrigerator if frozen",
+          "optional": false,
+          "allergenNotes": [
+            "molluscan shellfish classification and labeling require review"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spicy-seasoning",
+      "heading": "Spicy seasoning",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean red pepper flakes (gochugaru)",
+          "metricAmount": 10,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect and thaw safely",
+      "action": "Inspect refrigerated or properly thawed octopus; reject damaged packaging or any sour, rancid, fishy, or ammonia odor.",
+      "estimatedTime": "Overnight thawing if frozen",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Octopus smells mild and is cold, with intact flesh.",
+      "safetyNote": "Reject sour, rancid, fishy, or ammonia odors and damaged or temperature-abused packages.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Clean and dry",
+      "action": "Follow the seller’s cleaning state and package directions; remove any remaining beak and internal material if qualified to do so, rinse briefly only as needed, and dry thoroughly.",
+      "estimatedTime": "10 to 15 minutes",
+      "temperature": "Cold preparation",
+      "visualOrTactileCue": "The required cleaning is complete and surfaces are dry.",
+      "safetyNote": "Keep raw seafood and its juices off ready-to-eat foods; wash hands and sanitize tools afterward.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Season under refrigeration",
+      "action": "Combine the spicy seasoning, coat the octopus lightly, cover, and refrigerate for 20 minutes.",
+      "estimatedTime": "20 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "A thin coating covers the octopus without pooling.",
+      "safetyNote": "Keep seafood refrigerated until the grill is ready.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Prepare the grill",
+      "action": "Preheat a perforated grill pan or fine-mesh basket over medium-high heat and oil it lightly.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium-high heat",
+      "visualOrTactileCue": "The surface is hot, clean, and lightly oiled.",
+      "safetyNote": "Never use a fuel-burning grill indoors; follow appliance ventilation instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Drain heavy excess seasoning, spread in one layer, and grill quickly while turning until opaque, firm, lightly charred, and 145°F / 63°C in representative thick portions.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Medium-high heat",
+      "visualOrTactileCue": "Flesh is opaque and firm, suckers are lightly charred, and representative thick portions reach 145°F / 63°C.",
+      "safetyNote": "Use a clean thermometer and clean tools after the final turn; verify 145°F / 63°C in the thickest edible portion.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve safely",
+      "action": "Move to a clean platter, cut with clean tools if needed, and serve promptly.",
+      "estimatedTime": "2 minutes",
+      "temperature": "Hot",
+      "visualOrTactileCue": "The seafood is on a clean platter and served promptly.",
+      "safetyNote": "Cephalopods can be chewy and pose a choking risk; cut into manageable pieces for the diner.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or approved indoor electric grill with a perforated pan or fine-mesh basket over medium-high heat; oil lightly and prevent small pieces from falling through.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest edible portion; visual cues supplement but do not replace thermometer verification.",
+  "visualDonenessCues": [
+    "Flesh changes from translucent to opaque",
+    "Exterior is lightly charred without burned sugar",
+    "Representative thick portions reach 145°F / 63°C"
+  ],
+  "foodSafetyNotes": [
+    "Buy seafood cold and keep at or below 40°F / 4°C.",
+    "Thaw only under refrigeration or a safe rapid method.",
+    "Prevent raw-seafood cross-contact.",
+    "Cook to 145°F / 63°C and cut chewy pieces appropriately."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": true,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains octopus plus soy, wheat/gluten, and sesame; U.S. molluscan-shellfish classification and exact label handling require qualified review."
+  },
+  "substitutions": [
+    "Do not substitute a different cephalopod without retesting cleaning, cook time, allergen language, and texture."
+  ],
+  "ingredientSourcing": [
+    "Buy cleaned octopus from a reputable seafood counter or sealed frozen package; verify species, origin, cleaning state, and allergen label."
+  ],
+  "makeAhead": "Mix seasoning up to 2 days ahead; clean and season seafood only within the stated refrigerated window.",
+  "storage": "Refrigerate cooked seafood in a shallow covered container within 2 hours and use within 3 days pending food-safety approval.",
+  "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
+  "leftovers": "Use properly refrigerated leftovers within the approved window; discard table-exposed portions after unsafe holding.",
+  "servingSuggestions": ["Serve promptly with rice and fresh banchan."],
+  "menuPairings": ["B04", "F07", "SA02", "D01"],
+  "relatedRecipeIds": ["SF04", "SF06"],
+  "faq": [
+    {
+      "question": "Why use a grill basket?",
+      "answer": "It keeps small tentacles from falling through while allowing surface browning."
+    },
+    {
+      "question": "Why is allergen review still required?",
+      "answer": "Octopus classification and labeling language must be confirmed for the intended jurisdiction."
+    }
+  ],
+  "seoTitle": "Spicy Grilled Nakji Octopus",
+  "metaDescription": "Grill spicy Korean nakji octopus with gochujang seasoning, cold-chain and cleaning controls, a grill basket, and a verified seafood endpoint.",
+  "primaryKeyword": "grilled nakji octopus",
+  "secondaryTopics": ["Korean spicy octopus", "grilled cephalopod"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi nakji-bokkeum cleaning and spicy-seasoning convention reference, accessed 2026-07-14: https://www.maangchi.com/recipe/nakji-bokkeum",
+    "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": {
+    "buyingCues": [
+      "Product is refrigerated on ice or frozen solid in intact packaging.",
+      "Odor is fresh and mild, never sour, rancid, fishy, or ammonia-like.",
+      "Seller identifies species, origin, and cleaning state."
+    ],
+    "thawing": "Thaw overnight in a covered container in the refrigerator. For rapid thawing, seal in a leakproof bag under cold water and cook immediately; never thaw on the counter.",
+    "cleaningOrShellPreparation": "Confirm whether the head cavity, beak, and internal material were removed; follow package or fishmonger directions and do not improvise unfamiliar live-animal processing.",
+    "drying": "Pat every surface thoroughly dry with disposable paper towels; immediately discard towels and sanitize the work area.",
+    "scoringOrSkewering": "Leave small octopus whole or separate into large manageable sections only after qualified cleaning; cutting plan requires test cooking.",
+    "grillSurfacePreparation": "Preheat and lightly oil a perforated grill pan or fine-mesh basket.",
+    "stickingPrevention": "Dry thoroughly, use a thin oil film, and turn only after the surface releases.",
+    "approximateTime": "8 minutes, subject to product size and grill output; thermometer verification controls.",
+    "donenessCues": [
+      "Flesh changes from translucent to opaque",
+      "Exterior is lightly charred without burned sugar",
+      "Representative thick portions reach 145°F / 63°C"
+    ],
+    "applicableTemperature": "145°F / 63°C in the thickest edible portion.",
+    "shellOpeningAndDiscardGuidance": null,
+    "crossContactNotes": [
+      "Use a dedicated board and tools for raw seafood.",
+      "Wash hands with soap and water after raw-seafood contact.",
+      "Use a clean thermometer, tools, and platter for cooked seafood."
+    ]
+  }
+}

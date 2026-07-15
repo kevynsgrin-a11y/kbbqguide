@@ -1,0 +1,370 @@
+{
+  "contentStatus": "complete",
+  "id": "M19",
+  "title": "Korean-Style Grilled Duck Breast",
+  "koreanName": "Hanguk-sik Ori Gaseumsal Gui",
+  "hangul": "한국식 오리 가슴살 구이",
+  "romanization": "hanguk-sik ori gaseumsal-gui",
+  "category": "grilled-meat",
+  "releaseCohort": "week-12",
+  "publicReleaseOrder": 73,
+  "canonicalSlug": "korean-style-grilled-duck-breast",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/korean-style-grilled-duck-breast/",
+  "shortDescription": "Duck breasts are scored, marinated cold with pear, soy, garlic, and ginger, then grilled until the poultry-safe endpoint of 165°F / 74°C.",
+  "culturalContext": "Duck is enjoyed in varied Korean preparations, including gui and bulgogi-style dishes. This is a contemporary Korean-style marinade applied to duck breast, not a claim of one canonical regional recipe.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 120,
+    "display": "2 hours refrigerated"
+  },
+  "cookTime": {
+    "minutes": 22,
+    "display": "18 to 22 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "totalTime": {
+    "minutes": 167,
+    "display": "About 2 hours 45 minutes"
+  },
+  "equipment": [
+    "Separate raw-poultry cutting board",
+    "Nonreactive covered container",
+    "Outdoor grill or approved electric grill",
+    "Long tongs",
+    "Calibrated instant-read thermometer",
+    "Clean resting platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "duck",
+      "heading": "Duck",
+      "ingredients": [
+        {
+          "id": "duck-breasts",
+          "item": "boneless duck breasts",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "skin scored without cutting into meat; do not wash",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "marinade",
+      "heading": "Pear-soy marinade",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "pear",
+          "item": "Asian pear",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "black-pepper",
+          "item": "black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "soy-sauce",
+        "item": "soy sauce",
+        "metricAmount": 45,
+        "metricUnit": "ml",
+        "customaryAmount": 3,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "pear",
+        "item": "Asian pear",
+        "metricAmount": 60,
+        "metricUnit": "g",
+        "customaryAmount": 0.25,
+        "customaryUnit": "cup",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 12,
+        "metricUnit": "g",
+        "customaryAmount": 4,
+        "customaryUnit": "cloves",
+        "preparation": "minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "ginger",
+        "item": "fresh ginger",
+        "metricAmount": 6,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "teaspoons",
+        "preparation": "grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 10,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "teaspoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "black-pepper",
+        "item": "black pepper",
+        "metricAmount": 1,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 160 ml / 2/3 cup",
+    "meatWeightCovered": "900 g / 2 pounds duck breast",
+    "mixOrder": [
+      "Combine soy sauce and pear.",
+      "Stir in garlic, ginger, sesame oil, and pepper.",
+      "Coat chilled duck without contaminating reserved sauce."
+    ],
+    "marinationVessel": "Nonreactive covered container at or below 40°F / 4°C",
+    "refrigeratedMarinationTimeRange": "1 to 4 hours under refrigeration.",
+    "maximumPracticalMarinationWarning": "Do not exceed 8 hours without test-cook approval.",
+    "reserveBeforeRawContactInstruction": "Reserve any serving sauce before the marinade contacts raw duck.",
+    "rawContactDiscardOrReboilInstruction": "Discard all marinade that contacted raw duck; do not brush it onto cooked meat.",
+    "substitutions": [
+      "Use certified gluten-free tamari only after label verification."
+    ],
+    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Score without washing",
+      "action": "Keep duck cold, pat dry with disposable towels, and score only the skin in a shallow crosshatch; do not wash.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Refrigerated",
+      "visualOrTactileCue": "Skin is scored but flesh is not cut.",
+      "safetyNote": "Treat duck as raw poultry and prevent sink and tool cross-contamination.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix marinade",
+      "action": "Combine marinade ingredients and reserve any serving sauce before raw contact.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Mixture is uniform.",
+      "safetyNote": "Never serve marinade that has touched raw duck.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate cold",
+      "action": "Coat duck, cover, and refrigerate for 2 hours.",
+      "estimatedTime": "2 hours",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Duck remains cold and evenly coated.",
+      "safetyNote": "Never marinate poultry at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Prepare two zones",
+      "action": "Preheat a medium direct zone and a cooler zone; remove duck from marinade and discard the marinade.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium direct and cooler zones",
+      "visualOrTactileCue": "Grates are clean and lightly oiled.",
+      "safetyNote": "Rendered duck fat can flare; keep the cooler zone available and never leave the grill.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Start skin-side down, move as needed to control flare-ups, turn, and cook until every breast reaches 165°F / 74°C in its thickest point.",
+      "estimatedTime": "18 to 22 minutes",
+      "temperature": "Medium heat",
+      "visualOrTactileCue": "Skin is browned and the thermometer reads at least 165°F / 74°C.",
+      "safetyNote": "Visual color is not a safety test; use a calibrated thermometer.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and slice",
+      "action": "Transfer with clean tongs to a clean platter, rest 5 minutes, then slice with a clean knife.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "Juices settle and slices remain hot.",
+      "safetyNote": "Do not return cooked duck to raw-contact serviceware.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or manufacturer-approved indoor electric grill with direct and cooler zones; expect rendered-fat flare-ups and keep raw and cooked tools separate.",
+  "targetInternalTemperature": "165°F / 74°C in the thickest part of every duck breast.",
+  "visualDonenessCues": [
+    "Skin is browned without sustained flare-up charring",
+    "Surface is cooked throughout",
+    "Calibrated thermometer reads at least 165°F / 74°C"
+  ],
+  "foodSafetyNotes": [
+    "Duck is poultry: cook every breast to 165°F / 74°C.",
+    "Do not wash raw duck; prevent cross-contamination from hands, boards, knives, marinade, and towels.",
+    "Discard marinade after raw contact.",
+    "Control rendered-fat flare-ups by moving duck to the cooler zone."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Verify every packaged-ingredient label and segregate tools for diners with allergies."
+  },
+  "substitutions": [
+    "Boneless chicken thigh is not a direct timing substitute; it still requires 165°F / 74°C.",
+    "Use certified gluten-free tamari only after label verification."
+  ],
+  "ingredientSourcing": [
+    "Purchase duck cold from a reputable supplier and refrigerate promptly.",
+    "Choose intact packaging within its use-by date."
+  ],
+  "makeAhead": "Mix marinade 1 day ahead; marinate duck only within the stated refrigerated range.",
+  "storage": "Refrigerate cooked duck within 2 hours in a shallow covered container and use within 3 to 4 days.",
+  "reheating": "Reheat leftovers to 165°F / 74°C.",
+  "leftovers": "Slice only what will be served and refrigerate remaining cooked duck promptly.",
+  "servingSuggestions": [
+    "Slice across the grain and serve with perilla leaves.",
+    "Offer reserved, uncontaminated sauce separately."
+  ],
+  "menuPairings": ["B19", "F09", "SA04", "D04"],
+  "relatedRecipeIds": ["M18", "M20"],
+  "faq": [
+    {
+      "question": "Can duck breast be served medium?",
+      "answer": "Not in this safety-reviewed draft. Duck is poultry and the required endpoint is 165°F / 74°C."
+    },
+    {
+      "question": "Can I reuse the marinade?",
+      "answer": "No. Discard marinade after it contacts raw duck."
+    }
+  ],
+  "seoTitle": "Korean-Style Grilled Duck Breast",
+  "metaDescription": "Grill pear-soy marinated duck breast with two heat zones, flare-up control, strict raw-poultry separation, and a 165°F safety endpoint.",
+  "primaryKeyword": "Korean grilled duck breast",
+  "secondaryTopics": ["duck gui", "pear soy marinade", "Korean-style grilling"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "recipe-header",
+    "ingredient-list",
+    "instructions",
+    "food-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Temperature basis: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Editorial framing: contemporary Korean-style adaptation; naming requires Korean-language review.",
+    "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
+  ],
+  "seafoodPreparation": null
+}

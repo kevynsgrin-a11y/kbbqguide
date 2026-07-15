@@ -1,0 +1,47 @@
+---
+interface Field {
+  readonly label: string;
+  readonly type?: 'text' | 'email' | 'url' | 'textarea';
+}
+
+interface Props {
+  formId: string;
+  title: string;
+  fields: readonly Field[];
+  buttonLabel: string;
+  explanation: string;
+}
+
+const { formId, title, fields, buttonLabel, explanation } = Astro.props;
+---
+
+<section class="disabled-form-panel" data-collection-status="disabled">
+  <p class="eyebrow">Interface preview only</p>
+  <h2>{title}</h2>
+  <p id={`${formId}-status`} class="disclosure-box">
+    {explanation} No value entered here is submitted, stored, or sent.
+  </p>
+  <form class="disabled-form" aria-describedby={`${formId}-status`}>
+    {
+      fields.map((field) => (
+        <label>
+          {field.label}
+          {field.type === 'textarea' ? (
+            <textarea
+              disabled
+              rows="4"
+              placeholder="Disabled until provider and privacy approval"
+            />
+          ) : (
+            <input
+              disabled
+              type={field.type ?? 'text'}
+              placeholder="Disabled until provider and privacy approval"
+            />
+          )}
+        </label>
+      ))
+    }
+    <button class="button" type="submit" disabled>{buttonLabel}</button>
+  </form>
+</section>

@@ -1,0 +1,448 @@
+{
+  "contentStatus": "complete",
+  "id": "M07",
+  "title": "Chadolbaegi with Scallion-Soy Dipping Sauce",
+  "koreanName": "Chadolbaegi",
+  "hangul": "차돌박이",
+  "romanization": "chadolbaegi",
+  "category": "grilled-meat",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 7,
+  "canonicalSlug": "chadolbaegi-with-scallion-soy-dipping-sauce",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/chadolbaegi-with-scallion-soy-dipping-sauce/",
+  "shortDescription": "Paper-thin beef brisket grilled without marinade and served with a bright scallion-soy, rice-vinegar, garlic, and sesame dipping sauce.",
+  "culturalContext": "Chadolbaegi is very thinly sliced beef brisket cooked rapidly at the grill, commonly without a sweet marinade. Dipping sauces vary; the scallion-soy sauce here is a defined pairing for this guide rather than a claim of one mandatory restaurant formula.",
+  "adaptationLabel": "none",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 18,
+    "display": "18 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 8,
+    "display": "6 to 8 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 29,
+    "display": "29 minutes, including rest"
+  },
+  "equipment": [
+    "Chef’s knife",
+    "Cutting board",
+    "Nonreactive mixing bowl or food-safe zip bag",
+    "Measuring cups and spoons",
+    "Outdoor grill or manufacturer-approved indoor electric tabletop grill",
+    "Long-handled tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "beef",
+      "heading": "Beef",
+      "ingredients": [
+        {
+          "id": "chadolbaegi",
+          "item": "paper-thin sliced beef brisket for Korean BBQ",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "kept refrigerated and separated into loose slices",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "scallion-soy-sauce",
+      "heading": "Scallion-soy dipping sauce",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "regular soy sauce",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "finely sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sugar",
+          "item": "granulated sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "paired-grilling-preparation",
+    "ingredients": [
+      {
+        "id": "soy-sauce",
+        "item": "regular soy sauce",
+        "metricAmount": 45,
+        "metricUnit": "ml",
+        "customaryAmount": 3,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "water",
+        "item": "water",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "rice-vinegar",
+        "item": "unseasoned rice vinegar",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "scallions",
+        "preparation": "finely sliced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 10,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "teaspoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "sugar",
+        "item": "granulated sugar",
+        "metricAmount": 12,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-seeds",
+        "item": "toasted sesame seeds",
+        "metricAmount": 6,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "teaspoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 6,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "cloves",
+        "preparation": "finely minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "gochugaru",
+        "item": "gochugaru",
+        "metricAmount": 2,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": true,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 180 ml / 3/4 cup dipping sauce",
+    "meatWeightCovered": "Serves alongside 680 g / 1.5 lb paper-thin beef brisket",
+    "mixOrder": [
+      "Whisk soy sauce, water, vinegar, sugar, sesame oil, and gochugaru if using.",
+      "Stir in scallions, garlic, and sesame seeds immediately before serving."
+    ],
+    "marinationVessel": "No marination; prepare sauce in a clean serving bowl and keep beef refrigerated separately",
+    "refrigeratedMarinationTimeRange": "No marination; keep beef at 40°F / 4°C or below until grilling",
+    "maximumPracticalMarinationWarning": null,
+    "reserveBeforeRawContactInstruction": "The dipping sauce is a ready-to-eat item and must remain completely separate from raw beef, raw tongs, and the raw-meat platter.",
+    "rawContactDiscardOrReboilInstruction": "Discard any portion contaminated by raw beef or raw utensils; do not combine individual used dipping bowls back into the serving bowl.",
+    "substitutions": [
+      "Certified gluten-free tamari may replace soy sauce after label review.",
+      "Finely sliced mild onion may replace half the scallion, changing the flavor."
+    ],
+    "allergenNotes": [
+      "Contains soy and sesame.",
+      "Regular soy sauce usually contains wheat."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Make the clean dipping sauce",
+      "action": "Whisk soy sauce, water, vinegar, sugar, sesame oil, and optional gochugaru. Stir in scallions, garlic, and sesame seeds; divide into individual bowls.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Refrigerate if held longer than 30 minutes",
+      "visualOrTactileCue": "Sugar is dissolved and scallions remain crisp and bright.",
+      "safetyNote": "Prepare the sauce before handling raw beef and keep it outside the raw-meat work zone.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Separate the chilled slices",
+      "action": "With clean raw-meat tongs, loosen the paper-thin brisket slices onto a raw-meat platter; keep chilled until the grill is ready.",
+      "estimatedTime": "5 minutes",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Slices are loose rather than frozen in a solid block and remain cold.",
+      "safetyNote": "Do not place ready-to-eat scallions or sauce on the raw-beef platter.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Preheat the approved grill",
+      "action": "Heat a clean grill to medium-high. Because brisket releases fat, keep the grease channel or drip tray installed exactly as the manufacturer directs.",
+      "estimatedTime": "10 minutes",
+      "temperature": "400–425°F / 204–218°C grill surface",
+      "visualOrTactileCue": "A slice begins sizzling immediately without uncontrolled smoking.",
+      "safetyNote": "Use only an appliance approved for the location; maintain ventilation and never improvise with an indoor fuel-burning stove.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Grill a few slices at a time",
+      "action": "Lay slices flat without overlapping and turn after the first side browns, about 30 to 60 seconds per side depending on thickness.",
+      "estimatedTime": "1 to 2 minutes per batch",
+      "temperature": "145°F / 63°C in the thickest practical folded portion, then rest 3 minutes",
+      "visualOrTactileCue": "Fat renders, edges brown, and no raw-looking areas remain; a practical folded sample reaches target temperature.",
+      "safetyNote": "Time is only an estimate. Use separate clean cooked-food tongs and do not let raw tongs touch the dipping sauce.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Manage grease safely",
+      "action": "Between batches, follow the appliance manual for grease control; stop and cool the unit before emptying any tray.",
+      "estimatedTime": "As needed",
+      "temperature": null,
+      "visualOrTactileCue": "Fat drains normally without overflow, flare, or heavy smoke.",
+      "safetyNote": "Never pour water onto hot grease or move a hot grease tray; stop cooking if the manufacturer’s limits are exceeded.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and dip",
+      "action": "Move cooked brisket to a clean platter, rest at least 3 minutes, and serve with individual bowls of scallion-soy sauce.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Slices are browned, flexible, and lightly crisp at some edges.",
+      "safetyNote": "Do not return used sauce to the shared bowl; discard sauce contaminated by raw utensils.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high, about 400–450°F / 204–232°C. Follow the appliance manual for clearance and ventilation; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest practical portion, followed by a 3-minute rest",
+  "visualDonenessCues": [
+    "Fat is rendered and edges are browned while slices remain flexible.",
+    "A thick practical folded sample reaches 145°F / 63°C before the 3-minute rest."
+  ],
+  "foodSafetyNotes": [
+    "Keep raw beef and its marinade separate from ready-to-eat foods; wash hands and sanitize contacted surfaces.",
+    "Use separate raw and cooked plates and utensils, or wash and sanitize them fully before reuse.",
+    "Measure the thickest practical portion with a calibrated food thermometer; grill marks and time alone do not establish doneness.",
+    "For whole-cut beef, reach 145°F / 63°C and rest for at least 3 minutes before serving.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use; follow ventilation and clearance instructions."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "Ask for Korean BBQ chadolbaegi; generic sandwich brisket is cooked/cured and is not an equivalent raw grilling cut.",
+    "Certified gluten-free tamari may replace soy sauce after label review, but sesame remains present."
+  ],
+  "ingredientSourcing": [
+    "Purchase raw paper-thin sliced brisket labeled for Korean BBQ from a trusted butcher or Korean market.",
+    "Keep frozen packages frozen until refrigerator thawing; reject torn or leaking packages."
+  ],
+  "makeAhead": "Prepare the sauce up to 4 hours ahead and refrigerate; stir in scallions shortly before serving. Thaw frozen chadolbaegi in the refrigerator, never on the counter.",
+  "storage": "Refrigerate cooked beef within 2 hours in a shallow airtight container at 40°F / 4°C or below; use within 3 days.",
+  "reheating": "Reheat leftovers to 165°F / 74°C. Reheat only the portion needed and avoid prolonged cooking that toughens thin beef.",
+  "leftovers": "Reheat cooked brisket to 165°F / 74°C and use in a rice bowl. Discard individual dipping sauce after service rather than storing it.",
+  "servingSuggestions": [
+    "Serve with rice, crisp lettuce, and banchan that can cut through the brisket’s richness.",
+    "Give each diner a separate sauce bowl to reduce cross-contact at the table."
+  ],
+  "menuPairings": ["B07", "F07", "SA02", "D02"],
+  "relatedRecipeIds": ["M06", "M08"],
+  "faq": [
+    {
+      "question": "Does chadolbaegi need a marinade?",
+      "answer": "No. The thin, fatty brisket is commonly grilled without marinade; this recipe puts seasoning in a separate dipping sauce."
+    },
+    {
+      "question": "How can I check such thin beef with a thermometer?",
+      "answer": "Cook a small folded or naturally thicker sample and measure its center with a thin-tip calibrated thermometer, while also ensuring no raw-looking areas remain."
+    }
+  ],
+  "seoTitle": "Chadolbaegi with Scallion-Soy Sauce",
+  "metaDescription": "Grill paper-thin chadolbaegi safely with grease-control guidance and serve it with a clean, tangy scallion-soy sesame dipping sauce.",
+  "primaryKeyword": "chadolbaegi dipping sauce",
+  "secondaryTopics": [
+    "Korean brisket BBQ",
+    "scallion soy sauce",
+    "unmarinated Korean beef",
+    "tabletop grill grease safety"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "raw-food-safety",
+    "marination-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Cut/preparation context: https://en.wikipedia.org/wiki/Korean_barbecue (secondary overview only; qualified Korean review required).",
+    "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Cross-contact and no-rinsing guidance: https://www.foodsafety.gov/blog/how-grill-safely-summer",
+    "Dipping-sauce formula is an editorial pairing for this guide, not a claim of one canonical restaurant sauce. Draft not test-cooked."
+  ],
+  "seafoodPreparation": null
+}

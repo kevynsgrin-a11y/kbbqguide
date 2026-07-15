@@ -1,0 +1,90 @@
+---
+import { getCollection } from 'astro:content';
+import registryData from '../../../data/url-registry.json';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PlannerTools from '../../components/PlannerTools.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { menus } from '../../lib/menus';
+import { consolidateShoppingList } from '../../lib/planner';
+import { breadcrumbJsonLd } from '../../lib/seo';
+import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+import type { CompleteRecipe } from '../../schemas/recipe';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_TOOLS');
+const recipes = (await getCollection('recipes'))
+  .map((entry) => entry.data)
+  .filter(
+    (recipe): recipe is CompleteRecipe => recipe.contentStatus === 'complete',
+  );
+const byId = new Map(recipes.map((recipe) => [recipe.id, recipe]));
+const menuPayload = menus.map((menu) => {
+  const menuRecipes = menu.recipeIds.map((id) => {
+    const recipe = byId.get(id);
+    if (!recipe) throw new Error(`Missing planner recipe ${id}`);
+    return recipe;
+  });
+  return {
+    id: menu.id,
+    guests: menu.guests,
+    title: menu.title,
+    path: registryPathById(registry, menu.id),
+    recipes: menuRecipes.map((recipe) => ({
+      title: recipe.title,
+      path: registryPathById(registry, recipe.id),
+    })),
+    shopping: consolidateShoppingList(menuRecipes, menu.guests).map((line) => ({
+      item: line.item,
+      amount: line.amount,
+      unit: line.unit,
+      optional: line.optional,
+    })),
+  };
+});
+const allergenRecipes = recipes
+  .map((recipe) => ({
+    title: recipe.title,
+    path: registryPathById(registry, recipe.id),
+    allergens: Object.entries(recipe.allergens)
+      .filter(([key, value]) => key !== 'crossContactWarning' && value === true)
+      .map(([key]) => key),
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+---
+
+<BaseLayout
+  title="Korean BBQ Planning Tools"
+  description="Progressive first-party tools for servings, marinades, menus, shopping lists, prep timelines, equipment, and non-medical allergen display."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+      { name: 'Planning Tools', path },
+    ]),
+  ]}
+  pageClass="tools-page"
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+          { label: 'Planning Tools' },
+        ]}
+      />
+      <p class="eyebrow">Progressive enhancement, transparent limits</p>
+      <h1>Turn draft recipes into a working checklist.</h1>
+      <p class="lede">
+        The tools run locally, send no form data, and preserve server-rendered
+        fallbacks. Their results remain planning aids—not test-kitchen,
+        appliance, allergen, medical, or food-safety approvals.
+      </p>
+    </div>
+  </header>
+
+  <section class="section tinted">
+    <div class="shell">
+      <PlannerTools menus={menuPayload} {allergenRecipes} />
+    </div>
+  </section>
+</BaseLayout>

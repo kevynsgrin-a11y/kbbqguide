@@ -1,0 +1,448 @@
+{
+  "contentStatus": "complete",
+  "id": "M04",
+  "title": "Spicy Gochujang Galbi",
+  "koreanName": "Gochujang galbi",
+  "hangul": "고추장 갈비",
+  "romanization": "gochujang-galbi",
+  "category": "grilled-meat",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 4,
+  "canonicalSlug": "spicy-gochujang-galbi",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/spicy-gochujang-galbi/",
+  "shortDescription": "A contemporary spicy galbi with flanken-cut beef ribs coated in gochujang, Korean pear, gochugaru, garlic, and sesame.",
+  "culturalContext": "Soy-forward sweet-savory marinades are a familiar baseline for beef galbi. This gochujang-heavy version is explicitly a contemporary spicy adaptation developed for the locked inventory title, not a claim about a single traditional standard.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 30,
+    "display": "30 minutes"
+  },
+  "marinateTime": {
+    "minutes": 120,
+    "display": "2 to 8 hours"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "10 to 12 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 165,
+    "display": "2 hours 45 minutes, including minimum marination and rest"
+  },
+  "equipment": [
+    "Chef’s knife",
+    "Cutting board",
+    "Nonreactive mixing bowl or food-safe zip bag",
+    "Measuring cups and spoons",
+    "Outdoor grill or manufacturer-approved indoor electric tabletop grill",
+    "Long-handled tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "ribs",
+      "heading": "Short ribs",
+      "ingredients": [
+        {
+          "id": "flanken-short-ribs",
+          "item": "flanken-cut beef short ribs, about 6 mm / 1/4 inch thick",
+          "metricAmount": 1200,
+          "metricUnit": "g",
+          "customaryAmount": 2.6,
+          "customaryUnit": "pounds",
+          "preparation": "ask the butcher to remove bone dust; inspect each strip",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "spicy-marinade",
+      "heading": "Spicy gochujang marinade",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 120,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+        },
+        {
+          "id": "pear",
+          "item": "Korean or Asian pear",
+          "metricAmount": 180,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": "peeled, cored, and finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "regular soy sauce",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "rice syrup or honey",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 14,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 24,
+          "metricUnit": "g",
+          "customaryAmount": 8,
+          "customaryUnit": "cloves",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 8,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "gochujang",
+        "item": "gochujang",
+        "metricAmount": 120,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+      },
+      {
+        "id": "pear",
+        "item": "Korean or Asian pear",
+        "metricAmount": 180,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "cup",
+        "preparation": "peeled, cored, and finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "soy-sauce",
+        "item": "regular soy sauce",
+        "metricAmount": 60,
+        "metricUnit": "ml",
+        "customaryAmount": 0.25,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "rice-syrup",
+        "item": "rice syrup or honey",
+        "metricAmount": 45,
+        "metricUnit": "ml",
+        "customaryAmount": 3,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "gochugaru",
+        "item": "gochugaru",
+        "metricAmount": 14,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 24,
+        "metricUnit": "g",
+        "customaryAmount": 8,
+        "customaryUnit": "cloves",
+        "preparation": "finely minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "ginger",
+        "item": "fresh ginger",
+        "metricAmount": 8,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "teaspoons",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "rice-vinegar",
+        "item": "unseasoned rice vinegar",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      }
+    ],
+    "batchYield": "About 500 ml / 2 cups",
+    "meatWeightCovered": "1.2 kg / 2.6 lb flanken-cut beef short ribs",
+    "mixOrder": [
+      "Whisk gochujang, soy sauce, rice syrup, gochugaru, and rice vinegar until smooth.",
+      "Stir in pear, garlic, ginger, and sesame oil."
+    ],
+    "marinationVessel": "Large nonreactive dish or food-safe zip bags on a rimmed tray",
+    "refrigeratedMarinationTimeRange": "2 to 8 hours at 40°F / 4°C or below",
+    "maximumPracticalMarinationWarning": "Do not exceed 12 hours for thin ribs; pear, vinegar, salt, and chile paste can soften and over-season the surface.",
+    "reserveBeforeRawContactInstruction": "Reserve any finishing glaze before raw ribs enter the marinade.",
+    "rawContactDiscardOrReboilInstruction": "Discard all marinade that contacted raw beef; use only the clean reserved portion for finishing.",
+    "substitutions": [
+      "Adjust heat with less gochugaru, not by removing gochujang without reformulating the salt and sugar balance.",
+      "Use certified gluten-free tamari and a verified gluten-free gochujang only after label review."
+    ],
+    "allergenNotes": [
+      "Contains soy and sesame.",
+      "Gochujang and soy sauce may contain wheat; verify both labels."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect and chill the ribs",
+      "action": "Keep ribs cold, inspect the saw-cut surfaces, and remove visible loose bone fragments with a clean damp disposable towel. Do not rinse.",
+      "estimatedTime": "10 minutes",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Rib strips are evenly thin and free of visible loose bone chips.",
+      "safetyNote": "Sanitize surfaces after handling raw ribs; rinsing can spread contamination.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the spicy marinade",
+      "action": "Whisk gochujang, soy sauce, rice syrup, gochugaru, and vinegar until smooth; stir in pear, garlic, ginger, and sesame oil.",
+      "estimatedTime": "8 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The sauce is smooth, brick-red, and spoonable without dry chile clumps.",
+      "safetyNote": "Reserve finishing glaze now, before adding raw beef.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate briefly",
+      "action": "Coat ribs on both sides, cover, and refrigerate for 2 to 8 hours, turning once.",
+      "estimatedTime": "2 to 8 hours",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Each strip has a thin, even red coating rather than a heavy paste layer.",
+      "safetyNote": "Do not marinate at room temperature or longer than 12 hours; discard raw-contact marinade.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat and reduce sticking",
+      "action": "Preheat the approved grill to medium-high, clean it thoroughly, oil lightly, and let heavy excess marinade drip from the ribs.",
+      "estimatedTime": "10 minutes",
+      "temperature": "400–425°F / 204–218°C grill surface",
+      "visualOrTactileCue": "Ribs sizzle promptly without the coating immediately burning.",
+      "safetyNote": "Sugary gochujang can scorch; control heat rather than serving blackened coating as a doneness cue.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and turn",
+      "action": "Grill in a single layer about 2 to 3 minutes per side, turning more often if hot spots darken the glaze.",
+      "estimatedTime": "4 to 6 minutes per batch",
+      "temperature": "145°F / 63°C, then rest 3 minutes",
+      "visualOrTactileCue": "The glaze is set and caramelized, not charred, and the thickest meat reaches target temperature.",
+      "safetyNote": "Measure between bones without touching bone; transfer with clean utensils to a clean platter.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and finish safely",
+      "action": "Rest at least 3 minutes. If desired, brush lightly with a clean reserved glaze warmed separately; never use raw-contact marinade.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The glaze remains glossy and red-brown, with the meat moist beneath it.",
+      "safetyNote": "Identify bones clearly for diners, especially children.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high, about 400–450°F / 204–232°C. Follow the appliance manual for clearance and ventilation; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest practical portion, followed by a 3-minute rest",
+  "visualDonenessCues": [
+    "Gochujang coating is set and caramelized but not blackened.",
+    "Thickest meat between bones reaches 145°F / 63°C and rests 3 minutes."
+  ],
+  "foodSafetyNotes": [
+    "Keep raw beef and its marinade separate from ready-to-eat foods; wash hands and sanitize contacted surfaces.",
+    "Use separate raw and cooked plates and utensils, or wash and sanitize them fully before reuse.",
+    "Measure the thickest practical portion with a calibrated food thermometer; grill marks and time alone do not establish doneness.",
+    "For whole-cut beef, reach 145°F / 63°C and rest for at least 3 minutes before serving.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use; follow ventilation and clearance instructions."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "For less heat, reduce gochugaru while retaining gochujang for body; verify the gochujang heat level on its label.",
+    "Gluten-related substitutions require both certified tamari and a verified gluten-free gochujang."
+  ],
+  "ingredientSourcing": [
+    "Choose gochujang by declared heat level and inspect its soy and wheat allergen statement.",
+    "Request flanken ribs about 6 mm / 1/4 inch thick and ask the butcher to remove bone dust."
+  ],
+  "makeAhead": "Mix the marinade up to 1 day ahead and refrigerate before raw contact. Marinate ribs 2 to 8 hours and never beyond 12 hours.",
+  "storage": "Refrigerate cooked beef within 2 hours in a shallow airtight container at 40°F / 4°C or below; use within 3 days.",
+  "reheating": "Reheat leftovers to 165°F / 74°C. Reheat only the portion needed and avoid prolonged cooking that toughens thin beef.",
+  "leftovers": "Remove meat from bones, refrigerate promptly, and reheat to 165°F / 74°C. Use in rice bowls with fresh vegetables added after reheating.",
+  "servingSuggestions": [
+    "Serve with rice and cooling fresh greens or cucumber dishes.",
+    "Offer additional clean sauce separately rather than pouring over the platter."
+  ],
+  "menuPairings": ["B04", "F04", "SA04", "D04"],
+  "relatedRecipeIds": ["M03", "M05"],
+  "faq": [
+    {
+      "question": "Is spicy gochujang galbi a classic galbi formula?",
+      "answer": "This is explicitly a contemporary spicy variation. Classic beef galbi is commonly soy-forward, while gochujang and gochugaru define this adaptation."
+    },
+    {
+      "question": "How do I keep the glaze from burning?",
+      "answer": "Drain excess marinade, use medium-high rather than maximum heat, turn around hot spots, and judge safety with a thermometer rather than dark color."
+    }
+  ],
+  "seoTitle": "Spicy Gochujang Galbi Recipe",
+  "metaDescription": "Make contemporary spicy gochujang galbi with flanken ribs, Korean pear, controlled marination, anti-scorch grilling, and safety checks.",
+  "primaryKeyword": "spicy gochujang galbi",
+  "secondaryTopics": [
+    "spicy Korean short ribs",
+    "gochujang marinade",
+    "flanken ribs",
+    "Korean BBQ heat"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "raw-food-safety",
+    "marination-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Baseline galbi reference: https://www.maangchi.com/recipe/la-galbi",
+    "Gochujang context reference: https://en.wikipedia.org/wiki/Gochujang (used only for general condiment context; human cultural review required).",
+    "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Contemporary formulation developed for the locked title; no traditional-origin or test-cooked claim is made."
+  ],
+  "seafoodPreparation": null
+}

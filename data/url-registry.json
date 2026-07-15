@@ -1,0 +1,1259 @@
+{
+  "version": 1,
+  "lockedAt": "2026-07-13",
+  "trailingSlash": "always",
+  "baseUrl": "https://kbbqguide.com",
+  "entries": [
+    {
+      "id": "SYS_HOME",
+      "type": "system",
+      "title": "Home",
+      "slug": "home",
+      "path": "/",
+      "canonicalUrl": "https://kbbqguide.com/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_START",
+      "type": "system",
+      "title": "Start Here",
+      "slug": "start-here",
+      "path": "/start-here/",
+      "canonicalUrl": "https://kbbqguide.com/start-here/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_RECIPES",
+      "type": "system",
+      "title": "Recipes",
+      "slug": "recipes",
+      "path": "/recipes/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "CAT_MEAT",
+      "type": "category",
+      "title": "Grilled Meat",
+      "slug": "grilled-meat",
+      "path": "/recipes/grilled-meat/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "CAT_SEAFOOD",
+      "type": "category",
+      "title": "Seafood",
+      "slug": "seafood",
+      "path": "/recipes/seafood/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "CAT_BANCHAN",
+      "type": "category",
+      "title": "Banchan",
+      "slug": "banchan",
+      "path": "/recipes/banchan/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "CAT_FRESH",
+      "type": "category",
+      "title": "Fresh and Palate Refresh",
+      "slug": "fresh",
+      "path": "/recipes/fresh/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "CAT_SAUCES",
+      "type": "category",
+      "title": "Sauces",
+      "slug": "sauces",
+      "path": "/recipes/sauces/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/sauces/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "CAT_DESSERTS",
+      "type": "category",
+      "title": "Desserts",
+      "slug": "desserts",
+      "path": "/recipes/desserts/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/desserts/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_GUIDES",
+      "type": "system",
+      "title": "Guides",
+      "slug": "guides",
+      "path": "/guides/",
+      "canonicalUrl": "https://kbbqguide.com/guides/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G01",
+      "type": "guide",
+      "title": "Korean BBQ at Home for Beginners",
+      "slug": "korean-bbq-at-home-for-beginners",
+      "path": "/guides/korean-bbq-at-home-for-beginners/",
+      "canonicalUrl": "https://kbbqguide.com/guides/korean-bbq-at-home-for-beginners/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G02",
+      "type": "guide",
+      "title": "Indoor vs. Outdoor Korean BBQ Safety",
+      "slug": "indoor-vs-outdoor-korean-bbq-safety",
+      "path": "/guides/indoor-vs-outdoor-korean-bbq-safety/",
+      "canonicalUrl": "https://kbbqguide.com/guides/indoor-vs-outdoor-korean-bbq-safety/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G03",
+      "type": "guide",
+      "title": "Tabletop Grill and Ventilation Guide",
+      "slug": "tabletop-grill-and-ventilation",
+      "path": "/guides/tabletop-grill-and-ventilation/",
+      "canonicalUrl": "https://kbbqguide.com/guides/tabletop-grill-and-ventilation/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G04",
+      "type": "guide",
+      "title": "Essential Korean Pantry Guide",
+      "slug": "essential-korean-pantry",
+      "path": "/guides/essential-korean-pantry/",
+      "canonicalUrl": "https://kbbqguide.com/guides/essential-korean-pantry/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G05",
+      "type": "guide",
+      "title": "Korean BBQ Meat Cuts Guide",
+      "slug": "korean-bbq-meat-cuts",
+      "path": "/guides/korean-bbq-meat-cuts/",
+      "canonicalUrl": "https://kbbqguide.com/guides/korean-bbq-meat-cuts/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G06",
+      "type": "guide",
+      "title": "Seafood Buying, Cleaning, and Grilling Guide",
+      "slug": "seafood-buying-cleaning-and-grilling",
+      "path": "/guides/seafood-buying-cleaning-and-grilling/",
+      "canonicalUrl": "https://kbbqguide.com/guides/seafood-buying-cleaning-and-grilling/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G07",
+      "type": "guide",
+      "title": "Ssam Greens, Herbs, and Wraps Guide",
+      "slug": "ssam-greens-herbs-and-wraps",
+      "path": "/guides/ssam-greens-herbs-and-wraps/",
+      "canonicalUrl": "https://kbbqguide.com/guides/ssam-greens-herbs-and-wraps/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G08",
+      "type": "guide",
+      "title": "Menus and Shopping Lists for 2, 4, and 8 Guests",
+      "slug": "menus-and-shopping-lists",
+      "path": "/guides/menus-and-shopping-lists/",
+      "canonicalUrl": "https://kbbqguide.com/guides/menus-and-shopping-lists/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G09",
+      "type": "guide",
+      "title": "Two-Day, One-Day, and Two-Hour Prep Timelines",
+      "slug": "prep-timelines",
+      "path": "/guides/prep-timelines/",
+      "canonicalUrl": "https://kbbqguide.com/guides/prep-timelines/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G10",
+      "type": "guide",
+      "title": "Banchan Batch-Prep Guide",
+      "slug": "banchan-batch-prep",
+      "path": "/guides/banchan-batch-prep/",
+      "canonicalUrl": "https://kbbqguide.com/guides/banchan-batch-prep/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G11",
+      "type": "guide",
+      "title": "Cleanup, Grease, Smoke, and Odor-Control Guide",
+      "slug": "cleanup-grease-smoke-and-odor-control",
+      "path": "/guides/cleanup-grease-smoke-and-odor-control/",
+      "canonicalUrl": "https://kbbqguide.com/guides/cleanup-grease-smoke-and-odor-control/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "G12",
+      "type": "guide",
+      "title": "Leftovers, Storage, and Next-Day Meals Guide",
+      "slug": "leftovers-storage-and-next-day-meals",
+      "path": "/guides/leftovers-storage-and-next-day-meals/",
+      "canonicalUrl": "https://kbbqguide.com/guides/leftovers-storage-and-next-day-meals/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_MENUS",
+      "type": "system",
+      "title": "Menus",
+      "slug": "menus",
+      "path": "/menus/",
+      "canonicalUrl": "https://kbbqguide.com/menus/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_SHOP",
+      "type": "system",
+      "title": "Shop",
+      "slug": "shop",
+      "path": "/shop/",
+      "canonicalUrl": "https://kbbqguide.com/shop/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_VIDEOS",
+      "type": "system",
+      "title": "Videos",
+      "slug": "videos",
+      "path": "/videos/",
+      "canonicalUrl": "https://kbbqguide.com/videos/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_ABOUT",
+      "type": "system",
+      "title": "About",
+      "slug": "about",
+      "path": "/about/",
+      "canonicalUrl": "https://kbbqguide.com/about/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_CONTACT",
+      "type": "system",
+      "title": "Contact",
+      "slug": "contact",
+      "path": "/contact/",
+      "canonicalUrl": "https://kbbqguide.com/contact/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_NEWSLETTER",
+      "type": "system",
+      "title": "Newsletter",
+      "slug": "newsletter",
+      "path": "/newsletter/",
+      "canonicalUrl": "https://kbbqguide.com/newsletter/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "POL_AFFILIATE",
+      "type": "policy",
+      "title": "Affiliate Disclosure",
+      "slug": "affiliate-disclosure",
+      "path": "/affiliate-disclosure/",
+      "canonicalUrl": "https://kbbqguide.com/affiliate-disclosure/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "POL_SPONSORED",
+      "type": "policy",
+      "title": "Sponsored Content Policy",
+      "slug": "sponsored-content-policy",
+      "path": "/sponsored-content-policy/",
+      "canonicalUrl": "https://kbbqguide.com/sponsored-content-policy/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "POL_EDITORIAL",
+      "type": "policy",
+      "title": "Editorial Policy",
+      "slug": "editorial-policy",
+      "path": "/editorial-policy/",
+      "canonicalUrl": "https://kbbqguide.com/editorial-policy/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "POL_TESTING",
+      "type": "policy",
+      "title": "Recipe Testing Policy",
+      "slug": "recipe-testing-policy",
+      "path": "/recipe-testing-policy/",
+      "canonicalUrl": "https://kbbqguide.com/recipe-testing-policy/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "POL_PRIVACY",
+      "type": "policy",
+      "title": "Privacy",
+      "slug": "privacy",
+      "path": "/privacy/",
+      "canonicalUrl": "https://kbbqguide.com/privacy/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "POL_TERMS",
+      "type": "policy",
+      "title": "Terms",
+      "slug": "terms",
+      "path": "/terms/",
+      "canonicalUrl": "https://kbbqguide.com/terms/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "POL_ACCESSIBILITY",
+      "type": "policy",
+      "title": "Accessibility",
+      "slug": "accessibility",
+      "path": "/accessibility/",
+      "canonicalUrl": "https://kbbqguide.com/accessibility/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "POL_COOKIE",
+      "type": "policy",
+      "title": "Cookie Preferences",
+      "slug": "cookie-preferences",
+      "path": "/cookie-preferences/",
+      "canonicalUrl": "https://kbbqguide.com/cookie-preferences/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "MENU_2",
+      "type": "system",
+      "title": "Korean BBQ Menu for 2",
+      "slug": "2-guests",
+      "path": "/menus/2-guests/",
+      "canonicalUrl": "https://kbbqguide.com/menus/2-guests/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "MENU_4",
+      "type": "system",
+      "title": "Korean BBQ Menu for 4",
+      "slug": "4-guests",
+      "path": "/menus/4-guests/",
+      "canonicalUrl": "https://kbbqguide.com/menus/4-guests/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "MENU_8",
+      "type": "system",
+      "title": "Korean BBQ Menu for 8",
+      "slug": "8-guests",
+      "path": "/menus/8-guests/",
+      "canonicalUrl": "https://kbbqguide.com/menus/8-guests/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_TOOLS",
+      "type": "system",
+      "title": "Planning Tools",
+      "slug": "tools",
+      "path": "/tools/",
+      "canonicalUrl": "https://kbbqguide.com/tools/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_SITEMAP",
+      "type": "system",
+      "title": "HTML Sitemap",
+      "slug": "sitemap",
+      "path": "/sitemap/",
+      "canonicalUrl": "https://kbbqguide.com/sitemap/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SYS_CLASS",
+      "type": "system",
+      "title": "Live Class",
+      "slug": "live-class",
+      "path": "/live-class/",
+      "canonicalUrl": "https://kbbqguide.com/live-class/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_MEDIA_KIT",
+      "type": "system",
+      "title": "Sponsorship and Media Kit",
+      "slug": "media-kit",
+      "path": "/media-kit/",
+      "canonicalUrl": "https://kbbqguide.com/media-kit/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_LICENSING",
+      "type": "system",
+      "title": "UGC and Licensing Inquiry",
+      "slug": "licensing-inquiry",
+      "path": "/licensing-inquiry/",
+      "canonicalUrl": "https://kbbqguide.com/licensing-inquiry/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "SYS_PARTNERSHIPS",
+      "type": "system",
+      "title": "Brand Partnership Intake",
+      "slug": "brand-partnerships",
+      "path": "/brand-partnerships/",
+      "canonicalUrl": "https://kbbqguide.com/brand-partnerships/",
+      "status": "locked",
+      "indexable": true
+    },
+    {
+      "id": "M01",
+      "type": "recipe",
+      "title": "Classic Korean Pear Beef Bulgogi",
+      "slug": "classic-korean-pear-beef-bulgogi",
+      "path": "/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M02",
+      "type": "recipe",
+      "title": "Mushroom-Soy Beef Bulgogi",
+      "slug": "mushroom-soy-beef-bulgogi",
+      "path": "/recipes/grilled-meat/mushroom-soy-beef-bulgogi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/mushroom-soy-beef-bulgogi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M03",
+      "type": "recipe",
+      "title": "LA-Style Galbi",
+      "slug": "la-style-galbi",
+      "path": "/recipes/grilled-meat/la-style-galbi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/la-style-galbi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M04",
+      "type": "recipe",
+      "title": "Spicy Gochujang Galbi",
+      "slug": "spicy-gochujang-galbi",
+      "path": "/recipes/grilled-meat/spicy-gochujang-galbi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/spicy-gochujang-galbi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M05",
+      "type": "recipe",
+      "title": "Garlic-Sesame Galbisal",
+      "slug": "garlic-sesame-galbisal",
+      "path": "/recipes/grilled-meat/garlic-sesame-galbisal/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/garlic-sesame-galbisal/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M06",
+      "type": "recipe",
+      "title": "Jumulleok Sesame-Garlic Steak Bites",
+      "slug": "jumulleok-sesame-garlic-steak-bites",
+      "path": "/recipes/grilled-meat/jumulleok-sesame-garlic-steak-bites/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/jumulleok-sesame-garlic-steak-bites/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M07",
+      "type": "recipe",
+      "title": "Chadolbaegi with Scallion-Soy Dipping Sauce",
+      "slug": "chadolbaegi-with-scallion-soy-dipping-sauce",
+      "path": "/recipes/grilled-meat/chadolbaegi-with-scallion-soy-dipping-sauce/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/chadolbaegi-with-scallion-soy-dipping-sauce/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M08",
+      "type": "recipe",
+      "title": "Neobiani Royal-Style Grilled Beef",
+      "slug": "neobiani-royal-style-grilled-beef",
+      "path": "/recipes/grilled-meat/neobiani-royal-style-grilled-beef/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/neobiani-royal-style-grilled-beef/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M09",
+      "type": "recipe",
+      "title": "Tteokgalbi Grilled Beef-and-Pork Patties",
+      "slug": "tteokgalbi-grilled-beef-and-pork-patties",
+      "path": "/recipes/grilled-meat/tteokgalbi-grilled-beef-and-pork-patties/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/tteokgalbi-grilled-beef-and-pork-patties/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M10",
+      "type": "recipe",
+      "title": "Classic Samgyeopsal with Sesame-Salt Seasoning",
+      "slug": "classic-samgyeopsal-with-sesame-salt-seasoning",
+      "path": "/recipes/grilled-meat/classic-samgyeopsal-with-sesame-salt-seasoning/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/classic-samgyeopsal-with-sesame-salt-seasoning/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M11",
+      "type": "recipe",
+      "title": "Gochujang Samgyeopsal",
+      "slug": "gochujang-samgyeopsal",
+      "path": "/recipes/grilled-meat/gochujang-samgyeopsal/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/gochujang-samgyeopsal/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M12",
+      "type": "recipe",
+      "title": "Doenjang-Garlic Moksal Gui",
+      "slug": "doenjang-garlic-moksal-gui",
+      "path": "/recipes/grilled-meat/doenjang-garlic-moksal-gui/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/doenjang-garlic-moksal-gui/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M13",
+      "type": "recipe",
+      "title": "Spicy Dwaeji Bulgogi",
+      "slug": "spicy-dwaeji-bulgogi",
+      "path": "/recipes/grilled-meat/spicy-dwaeji-bulgogi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/spicy-dwaeji-bulgogi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M14",
+      "type": "recipe",
+      "title": "Ganjang Pork Bulgogi",
+      "slug": "ganjang-pork-bulgogi",
+      "path": "/recipes/grilled-meat/ganjang-pork-bulgogi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/ganjang-pork-bulgogi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M15",
+      "type": "recipe",
+      "title": "Korean-Style Gochujang Grilled Pork Ribs",
+      "slug": "korean-style-gochujang-grilled-pork-ribs",
+      "path": "/recipes/grilled-meat/korean-style-gochujang-grilled-pork-ribs/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/korean-style-gochujang-grilled-pork-ribs/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M16",
+      "type": "recipe",
+      "title": "Soy-Pear Dak Bulgogi",
+      "slug": "soy-pear-dak-bulgogi",
+      "path": "/recipes/grilled-meat/soy-pear-dak-bulgogi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/soy-pear-dak-bulgogi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M17",
+      "type": "recipe",
+      "title": "Spicy Gochujang Grilled Chicken Thighs",
+      "slug": "spicy-gochujang-grilled-chicken-thighs",
+      "path": "/recipes/grilled-meat/spicy-gochujang-grilled-chicken-thighs/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/spicy-gochujang-grilled-chicken-thighs/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M18",
+      "type": "recipe",
+      "title": "Garlic-Scallion Chicken Skewers",
+      "slug": "garlic-scallion-chicken-skewers",
+      "path": "/recipes/grilled-meat/garlic-scallion-chicken-skewers/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/garlic-scallion-chicken-skewers/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M19",
+      "type": "recipe",
+      "title": "Korean-Style Grilled Duck Breast",
+      "slug": "korean-style-grilled-duck-breast",
+      "path": "/recipes/grilled-meat/korean-style-grilled-duck-breast/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/korean-style-grilled-duck-breast/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "M20",
+      "type": "recipe",
+      "title": "Contemporary Doenjang-Gochujang Lamb Shoulder",
+      "slug": "contemporary-doenjang-gochujang-lamb-shoulder",
+      "path": "/recipes/grilled-meat/contemporary-doenjang-gochujang-lamb-shoulder/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/contemporary-doenjang-gochujang-lamb-shoulder/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF01",
+      "type": "recipe",
+      "title": "Gochujang Grilled Shrimp",
+      "slug": "gochujang-grilled-shrimp",
+      "path": "/recipes/seafood/gochujang-grilled-shrimp/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/gochujang-grilled-shrimp/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF02",
+      "type": "recipe",
+      "title": "Soy-Garlic Grilled Shrimp",
+      "slug": "soy-garlic-grilled-shrimp",
+      "path": "/recipes/seafood/soy-garlic-grilled-shrimp/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/soy-garlic-grilled-shrimp/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF03",
+      "type": "recipe",
+      "title": "Doenjang-Butter Grilled Scallops",
+      "slug": "doenjang-butter-grilled-scallops",
+      "path": "/recipes/seafood/doenjang-butter-grilled-scallops/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/doenjang-butter-grilled-scallops/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF04",
+      "type": "recipe",
+      "title": "Ojingeo Gui Spicy Grilled Squid",
+      "slug": "ojingeo-gui-spicy-grilled-squid",
+      "path": "/recipes/seafood/ojingeo-gui-spicy-grilled-squid/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/ojingeo-gui-spicy-grilled-squid/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF05",
+      "type": "recipe",
+      "title": "Spicy Grilled Nakji Octopus",
+      "slug": "spicy-grilled-nakji-octopus",
+      "path": "/recipes/seafood/spicy-grilled-nakji-octopus/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/spicy-grilled-nakji-octopus/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF06",
+      "type": "recipe",
+      "title": "Jjukkumi Gui Grilled Baby Octopus",
+      "slug": "jjukkumi-gui-grilled-baby-octopus",
+      "path": "/recipes/seafood/jjukkumi-gui-grilled-baby-octopus/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jjukkumi-gui-grilled-baby-octopus/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF07",
+      "type": "recipe",
+      "title": "Godeungeo Gui Grilled Mackerel",
+      "slug": "godeungeo-gui-grilled-mackerel",
+      "path": "/recipes/seafood/godeungeo-gui-grilled-mackerel/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/godeungeo-gui-grilled-mackerel/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF08",
+      "type": "recipe",
+      "title": "Galchi Gui Grilled Hairtail",
+      "slug": "galchi-gui-grilled-hairtail",
+      "path": "/recipes/seafood/galchi-gui-grilled-hairtail/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/galchi-gui-grilled-hairtail/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF09",
+      "type": "recipe",
+      "title": "Jogi Gui Grilled Yellow Croaker",
+      "slug": "jogi-gui-grilled-yellow-croaker",
+      "path": "/recipes/seafood/jogi-gui-grilled-yellow-croaker/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jogi-gui-grilled-yellow-croaker/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF10",
+      "type": "recipe",
+      "title": "Gochujang-Glazed Grilled Salmon",
+      "slug": "gochujang-glazed-grilled-salmon",
+      "path": "/recipes/seafood/gochujang-glazed-grilled-salmon/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/gochujang-glazed-grilled-salmon/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF11",
+      "type": "recipe",
+      "title": "Doenjang-Glazed Grilled Black Cod",
+      "slug": "doenjang-glazed-grilled-black-cod",
+      "path": "/recipes/seafood/doenjang-glazed-grilled-black-cod/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/doenjang-glazed-grilled-black-cod/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF12",
+      "type": "recipe",
+      "title": "Scallion-Gochujang Grilled Oysters",
+      "slug": "scallion-gochujang-grilled-oysters",
+      "path": "/recipes/seafood/scallion-gochujang-grilled-oysters/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/scallion-gochujang-grilled-oysters/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF13",
+      "type": "recipe",
+      "title": "Garlic-Scallion Grilled Mussels",
+      "slug": "garlic-scallion-grilled-mussels",
+      "path": "/recipes/seafood/garlic-scallion-grilled-mussels/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/garlic-scallion-grilled-mussels/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF14",
+      "type": "recipe",
+      "title": "Jeonbok Gui Grilled Abalone",
+      "slug": "jeonbok-gui-grilled-abalone",
+      "path": "/recipes/seafood/jeonbok-gui-grilled-abalone/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jeonbok-gui-grilled-abalone/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SF15",
+      "type": "recipe",
+      "title": "Jogae Gui Grilled Clams",
+      "slug": "jogae-gui-grilled-clams",
+      "path": "/recipes/seafood/jogae-gui-grilled-clams/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jogae-gui-grilled-clams/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B01",
+      "type": "recipe",
+      "title": "Baechu Kimchi",
+      "slug": "baechu-kimchi",
+      "path": "/recipes/banchan/baechu-kimchi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/baechu-kimchi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B02",
+      "type": "recipe",
+      "title": "Kkakdugi Radish Kimchi",
+      "slug": "kkakdugi-radish-kimchi",
+      "path": "/recipes/banchan/kkakdugi-radish-kimchi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/kkakdugi-radish-kimchi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B03",
+      "type": "recipe",
+      "title": "Oi Sobagi Cucumber Kimchi",
+      "slug": "oi-sobagi-cucumber-kimchi",
+      "path": "/recipes/banchan/oi-sobagi-cucumber-kimchi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/oi-sobagi-cucumber-kimchi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B04",
+      "type": "recipe",
+      "title": "Baechu Geotjeori Fresh Kimchi",
+      "slug": "baechu-geotjeori-fresh-kimchi",
+      "path": "/recipes/banchan/baechu-geotjeori-fresh-kimchi/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/baechu-geotjeori-fresh-kimchi/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B05",
+      "type": "recipe",
+      "title": "Kongnamul Muchim Seasoned Soybean Sprouts",
+      "slug": "kongnamul-muchim-seasoned-soybean-sprouts",
+      "path": "/recipes/banchan/kongnamul-muchim-seasoned-soybean-sprouts/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/kongnamul-muchim-seasoned-soybean-sprouts/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B06",
+      "type": "recipe",
+      "title": "Sigeumchi Namul Seasoned Spinach",
+      "slug": "sigeumchi-namul-seasoned-spinach",
+      "path": "/recipes/banchan/sigeumchi-namul-seasoned-spinach/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/sigeumchi-namul-seasoned-spinach/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B07",
+      "type": "recipe",
+      "title": "Oi Muchim Spicy Cucumber Banchan",
+      "slug": "oi-muchim-spicy-cucumber-banchan",
+      "path": "/recipes/banchan/oi-muchim-spicy-cucumber-banchan/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/oi-muchim-spicy-cucumber-banchan/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B08",
+      "type": "recipe",
+      "title": "Musaengchae Spicy Radish Salad",
+      "slug": "musaengchae-spicy-radish-salad",
+      "path": "/recipes/banchan/musaengchae-spicy-radish-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/musaengchae-spicy-radish-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B09",
+      "type": "recipe",
+      "title": "Gamja Jorim Soy-Braised Potatoes",
+      "slug": "gamja-jorim-soy-braised-potatoes",
+      "path": "/recipes/banchan/gamja-jorim-soy-braised-potatoes/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gamja-jorim-soy-braised-potatoes/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B10",
+      "type": "recipe",
+      "title": "Dubu Jorim Braised Tofu",
+      "slug": "dubu-jorim-braised-tofu",
+      "path": "/recipes/banchan/dubu-jorim-braised-tofu/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/dubu-jorim-braised-tofu/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B11",
+      "type": "recipe",
+      "title": "Gyeran Mari Rolled Omelet",
+      "slug": "gyeran-mari-rolled-omelet",
+      "path": "/recipes/banchan/gyeran-mari-rolled-omelet/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gyeran-mari-rolled-omelet/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B12",
+      "type": "recipe",
+      "title": "Gyeran Jjim Steamed Eggs",
+      "slug": "gyeran-jjim-steamed-eggs",
+      "path": "/recipes/banchan/gyeran-jjim-steamed-eggs/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gyeran-jjim-steamed-eggs/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B13",
+      "type": "recipe",
+      "title": "Eomuk Bokkeum Stir-Fried Fish Cake",
+      "slug": "eomuk-bokkeum-stir-fried-fish-cake",
+      "path": "/recipes/banchan/eomuk-bokkeum-stir-fried-fish-cake/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/eomuk-bokkeum-stir-fried-fish-cake/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B14",
+      "type": "recipe",
+      "title": "Myeolchi Bokkeum Stir-Fried Anchovies",
+      "slug": "myeolchi-bokkeum-stir-fried-anchovies",
+      "path": "/recipes/banchan/myeolchi-bokkeum-stir-fried-anchovies/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/myeolchi-bokkeum-stir-fried-anchovies/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B15",
+      "type": "recipe",
+      "title": "Hobak Bokkeum Stir-Fried Zucchini",
+      "slug": "hobak-bokkeum-stir-fried-zucchini",
+      "path": "/recipes/banchan/hobak-bokkeum-stir-fried-zucchini/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/hobak-bokkeum-stir-fried-zucchini/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B16",
+      "type": "recipe",
+      "title": "Gosari Namul Seasoned Fernbrake",
+      "slug": "gosari-namul-seasoned-fernbrake",
+      "path": "/recipes/banchan/gosari-namul-seasoned-fernbrake/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gosari-namul-seasoned-fernbrake/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B17",
+      "type": "recipe",
+      "title": "Doraji Muchim Spicy Bellflower Root",
+      "slug": "doraji-muchim-spicy-bellflower-root",
+      "path": "/recipes/banchan/doraji-muchim-spicy-bellflower-root/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/doraji-muchim-spicy-bellflower-root/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B18",
+      "type": "recipe",
+      "title": "Yeongeun Jorim Soy-Braised Lotus Root",
+      "slug": "yeongeun-jorim-soy-braised-lotus-root",
+      "path": "/recipes/banchan/yeongeun-jorim-soy-braised-lotus-root/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/yeongeun-jorim-soy-braised-lotus-root/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B19",
+      "type": "recipe",
+      "title": "Mechurial Jangjorim Soy-Braised Quail Eggs",
+      "slug": "mechurial-jangjorim-soy-braised-quail-eggs",
+      "path": "/recipes/banchan/mechurial-jangjorim-soy-braised-quail-eggs/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/mechurial-jangjorim-soy-braised-quail-eggs/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B20",
+      "type": "recipe",
+      "title": "Jangjorim Soy-Braised Beef",
+      "slug": "jangjorim-soy-braised-beef",
+      "path": "/recipes/banchan/jangjorim-soy-braised-beef/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/jangjorim-soy-braised-beef/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B21",
+      "type": "recipe",
+      "title": "Korean Potato Salad",
+      "slug": "korean-potato-salad",
+      "path": "/recipes/banchan/korean-potato-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/korean-potato-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B22",
+      "type": "recipe",
+      "title": "Korean BBQ Restaurant-Style Macaroni Salad",
+      "slug": "korean-bbq-restaurant-style-macaroni-salad",
+      "path": "/recipes/banchan/korean-bbq-restaurant-style-macaroni-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/korean-bbq-restaurant-style-macaroni-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B23",
+      "type": "recipe",
+      "title": "Maneul Jangajji Soy-Pickled Garlic",
+      "slug": "maneul-jangajji-soy-pickled-garlic",
+      "path": "/recipes/banchan/maneul-jangajji-soy-pickled-garlic/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/maneul-jangajji-soy-pickled-garlic/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B24",
+      "type": "recipe",
+      "title": "Kkaennip Jangajji Pickled Perilla Leaves",
+      "slug": "kkaennip-jangajji-pickled-perilla-leaves",
+      "path": "/recipes/banchan/kkaennip-jangajji-pickled-perilla-leaves/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/kkaennip-jangajji-pickled-perilla-leaves/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "B25",
+      "type": "recipe",
+      "title": "Gim Muchim Seasoned Seaweed",
+      "slug": "gim-muchim-seasoned-seaweed",
+      "path": "/recipes/banchan/gim-muchim-seasoned-seaweed/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gim-muchim-seasoned-seaweed/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F01",
+      "type": "recipe",
+      "title": "Ssam Lettuce and Herb Platter",
+      "slug": "ssam-lettuce-and-herb-platter",
+      "path": "/recipes/fresh/ssam-lettuce-and-herb-platter/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/ssam-lettuce-and-herb-platter/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F02",
+      "type": "recipe",
+      "title": "Pajeori Korean Scallion Salad",
+      "slug": "pajeori-korean-scallion-salad",
+      "path": "/recipes/fresh/pajeori-korean-scallion-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/pajeori-korean-scallion-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F03",
+      "type": "recipe",
+      "title": "Sangchu Geotjeori Fresh Lettuce Salad",
+      "slug": "sangchu-geotjeori-fresh-lettuce-salad",
+      "path": "/recipes/fresh/sangchu-geotjeori-fresh-lettuce-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/sangchu-geotjeori-fresh-lettuce-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F04",
+      "type": "recipe",
+      "title": "Minari Muchim Water Parsley Salad",
+      "slug": "minari-muchim-water-parsley-salad",
+      "path": "/recipes/fresh/minari-muchim-water-parsley-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/minari-muchim-water-parsley-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F05",
+      "type": "recipe",
+      "title": "Gochugaru-Yuja Cabbage Slaw",
+      "slug": "gochugaru-yuja-cabbage-slaw",
+      "path": "/recipes/fresh/gochugaru-yuja-cabbage-slaw/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/gochugaru-yuja-cabbage-slaw/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F06",
+      "type": "recipe",
+      "title": "Asian Pear and Cucumber Salad",
+      "slug": "asian-pear-and-cucumber-salad",
+      "path": "/recipes/fresh/asian-pear-and-cucumber-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/asian-pear-and-cucumber-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F07",
+      "type": "recipe",
+      "title": "Tomato-Onion Sesame Salad",
+      "slug": "tomato-onion-sesame-salad",
+      "path": "/recipes/fresh/tomato-onion-sesame-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/tomato-onion-sesame-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F08",
+      "type": "recipe",
+      "title": "Radish Sprout and Perilla Salad",
+      "slug": "radish-sprout-and-perilla-salad",
+      "path": "/recipes/fresh/radish-sprout-and-perilla-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/radish-sprout-and-perilla-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F09",
+      "type": "recipe",
+      "title": "Watercress-Apple Yuja Salad",
+      "slug": "watercress-apple-yuja-salad",
+      "path": "/recipes/fresh/watercress-apple-yuja-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/watercress-apple-yuja-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "F10",
+      "type": "recipe",
+      "title": "Contemporary Sesame Broccoli and Bell Pepper Salad",
+      "slug": "contemporary-sesame-broccoli-and-bell-pepper-salad",
+      "path": "/recipes/fresh/contemporary-sesame-broccoli-and-bell-pepper-salad/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/fresh/contemporary-sesame-broccoli-and-bell-pepper-salad/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SA01",
+      "type": "recipe",
+      "title": "Classic Ssamjang",
+      "slug": "classic-ssamjang",
+      "path": "/recipes/sauces/classic-ssamjang/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/sauces/classic-ssamjang/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SA02",
+      "type": "recipe",
+      "title": "Gireumjang Sesame-Oil Salt Dip",
+      "slug": "gireumjang-sesame-oil-salt-dip",
+      "path": "/recipes/sauces/gireumjang-sesame-oil-salt-dip/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/sauces/gireumjang-sesame-oil-salt-dip/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SA03",
+      "type": "recipe",
+      "title": "Cho-Gochujang Sweet-Tangy Chili Sauce",
+      "slug": "cho-gochujang-sweet-tangy-chili-sauce",
+      "path": "/recipes/sauces/cho-gochujang-sweet-tangy-chili-sauce/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/sauces/cho-gochujang-sweet-tangy-chili-sauce/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SA04",
+      "type": "recipe",
+      "title": "Yangnyeom Ganjang Scallion-Soy Dipping Sauce",
+      "slug": "yangnyeom-ganjang-scallion-soy-dipping-sauce",
+      "path": "/recipes/sauces/yangnyeom-ganjang-scallion-soy-dipping-sauce/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/sauces/yangnyeom-ganjang-scallion-soy-dipping-sauce/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "SA05",
+      "type": "recipe",
+      "title": "Korean BBQ Onion Soy-Vinegar Dipping Sauce",
+      "slug": "korean-bbq-onion-soy-vinegar-dipping-sauce",
+      "path": "/recipes/sauces/korean-bbq-onion-soy-vinegar-dipping-sauce/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/sauces/korean-bbq-onion-soy-vinegar-dipping-sauce/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "D01",
+      "type": "recipe",
+      "title": "Hotteok Brown-Sugar Seed Pancakes",
+      "slug": "hotteok-brown-sugar-seed-pancakes",
+      "path": "/recipes/desserts/hotteok-brown-sugar-seed-pancakes/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/desserts/hotteok-brown-sugar-seed-pancakes/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "D02",
+      "type": "recipe",
+      "title": "Patbingsu Red-Bean Shaved Ice",
+      "slug": "patbingsu-red-bean-shaved-ice",
+      "path": "/recipes/desserts/patbingsu-red-bean-shaved-ice/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/desserts/patbingsu-red-bean-shaved-ice/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "D03",
+      "type": "recipe",
+      "title": "Yakgwa Honey-Ginger Cookies",
+      "slug": "yakgwa-honey-ginger-cookies",
+      "path": "/recipes/desserts/yakgwa-honey-ginger-cookies/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/desserts/yakgwa-honey-ginger-cookies/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "D04",
+      "type": "recipe",
+      "title": "Injeolmi Toast with Ice Cream",
+      "slug": "injeolmi-toast-with-ice-cream",
+      "path": "/recipes/desserts/injeolmi-toast-with-ice-cream/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/desserts/injeolmi-toast-with-ice-cream/",
+      "status": "locked",
+      "indexable": false
+    },
+    {
+      "id": "D05",
+      "type": "recipe",
+      "title": "Sikhye Sweet Rice Punch",
+      "slug": "sikhye-sweet-rice-punch",
+      "path": "/recipes/desserts/sikhye-sweet-rice-punch/",
+      "canonicalUrl": "https://kbbqguide.com/recipes/desserts/sikhye-sweet-rice-punch/",
+      "status": "locked",
+      "indexable": false
+    }
+  ],
+  "redirects": []
+}

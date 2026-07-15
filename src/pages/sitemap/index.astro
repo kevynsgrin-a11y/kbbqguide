@@ -1,0 +1,142 @@
+---
+import registryData from '../../../data/url-registry.json';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { itemListJsonLd } from '../../lib/seo';
+import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const renderedIds = new Set([
+  'SYS_HOME',
+  'SYS_START',
+  'SYS_RECIPES',
+  'CAT_MEAT',
+  'CAT_SEAFOOD',
+  'CAT_BANCHAN',
+  'CAT_FRESH',
+  'CAT_SAUCES',
+  'CAT_DESSERTS',
+  'SYS_GUIDES',
+  ...Array.from(
+    { length: 12 },
+    (_, index) => `G${String(index + 1).padStart(2, '0')}`,
+  ),
+  'SYS_MENUS',
+  'MENU_2',
+  'MENU_4',
+  'MENU_8',
+  'SYS_TOOLS',
+  'SYS_SITEMAP',
+  'SYS_SHOP',
+  'SYS_NEWSLETTER',
+  'POL_AFFILIATE',
+  'POL_SPONSORED',
+  'SYS_CLASS',
+  'SYS_MEDIA_KIT',
+  'SYS_LICENSING',
+  'SYS_PARTNERSHIPS',
+  ...registry.entries
+    .filter((entry) => entry.type === 'recipe')
+    .map((entry) => entry.id),
+]);
+const entries = registry.entries.filter((entry) => renderedIds.has(entry.id));
+const groups = [
+  { title: 'Start and plan', types: ['SYS_HOME', 'SYS_START', 'SYS_TOOLS'] },
+  {
+    title: 'Recipe collections',
+    types: [
+      'SYS_RECIPES',
+      'CAT_MEAT',
+      'CAT_SEAFOOD',
+      'CAT_BANCHAN',
+      'CAT_FRESH',
+      'CAT_SAUCES',
+      'CAT_DESSERTS',
+    ],
+  },
+  {
+    title: 'Guides',
+    types: [
+      'SYS_GUIDES',
+      ...entries
+        .filter((entry) => entry.type === 'guide')
+        .map((entry) => entry.id),
+    ],
+  },
+  { title: 'Menus', types: ['SYS_MENUS', 'MENU_2', 'MENU_4', 'MENU_8'] },
+  {
+    title: 'Revenue and communication previews',
+    types: [
+      'SYS_SHOP',
+      'SYS_NEWSLETTER',
+      'SYS_CLASS',
+      'SYS_MEDIA_KIT',
+      'SYS_LICENSING',
+      'SYS_PARTNERSHIPS',
+    ],
+  },
+  {
+    title: 'Disclosure policies',
+    types: ['POL_AFFILIATE', 'POL_SPONSORED'],
+  },
+  {
+    title: 'Recipe drafts',
+    types: entries
+      .filter((entry) => entry.type === 'recipe')
+      .map((entry) => entry.id),
+  },
+];
+const path = registryPathById(registry, 'SYS_SITEMAP');
+---
+
+<BaseLayout
+  title="HTML Sitemap"
+  description="A human-readable map of every route emitted in the non-production Phase 6 static preview."
+  canonicalPath={path}
+  jsonLd={[
+    itemListJsonLd(
+      'Phase 6 preview routes',
+      entries.map((entry) => ({ name: entry.title, path: entry.path })),
+    ),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+          { label: 'HTML Sitemap' },
+        ]}
+      />
+      <p class="eyebrow">116 preview routes</p>
+      <h1>Everything in the static handoff.</h1>
+      <p class="lede">
+        This map intentionally omits policy, video, about, contact, and account
+        routes that remain reserved without an implementation.
+      </p>
+    </div>
+  </header>
+
+  <section class="section tinted">
+    <div class="shell sitemap-grid">
+      {
+        groups.map((group) => (
+          <section class="support-card">
+            <h2>{group.title}</h2>
+            <ul class="plain-list">
+              {group.types.map((id) => {
+                const entry = entries.find((candidate) => candidate.id === id);
+                if (!entry) return null;
+                return (
+                  <li>
+                    <a href={entry.path}>{entry.title}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

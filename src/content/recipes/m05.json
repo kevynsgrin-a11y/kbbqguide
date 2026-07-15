@@ -1,0 +1,404 @@
+{
+  "contentStatus": "complete",
+  "id": "M05",
+  "title": "Garlic-Sesame Galbisal",
+  "koreanName": "Galbisal gui",
+  "hangul": "갈비살구이",
+  "romanization": "galbisal-gui",
+  "category": "grilled-meat",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 5,
+  "canonicalSlug": "garlic-sesame-galbisal",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/garlic-sesame-galbisal/",
+  "shortDescription": "Boneless beef rib meat lightly seasoned with garlic, soy, toasted sesame, scallions, salt, and pepper for fast high-heat grilling.",
+  "culturalContext": "Galbisal refers to boneless meat from around or between the ribs and is commonly treated as a premium grilling cut. It may be served unseasoned or lightly seasoned; this garlic-sesame version is one defined preparation, not a universal standard.",
+  "adaptationLabel": "none",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 30,
+    "display": "30 minutes"
+  },
+  "cookTime": {
+    "minutes": 10,
+    "display": "8 to 10 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 63,
+    "display": "1 hour 3 minutes, including seasoning and rest"
+  },
+  "equipment": [
+    "Chef’s knife",
+    "Cutting board",
+    "Nonreactive mixing bowl or food-safe zip bag",
+    "Measuring cups and spoons",
+    "Outdoor grill or manufacturer-approved indoor electric tabletop grill",
+    "Long-handled tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "beef",
+      "heading": "Beef",
+      "ingredients": [
+        {
+          "id": "galbisal",
+          "item": "boneless beef rib meat or well-marbled boneless short-rib meat",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "trimmed and cut into 4 cm / 1 1/2-inch pieces",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "garlic-sesame-seasoning",
+      "heading": "Garlic-sesame seasoning",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "regular soy sauce",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": "lightly crushed",
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "kosher-salt",
+          "item": "kosher salt",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "seasoning",
+    "ingredients": [
+      {
+        "id": "soy-sauce",
+        "item": "regular soy sauce",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 18,
+        "metricUnit": "g",
+        "customaryAmount": 6,
+        "customaryUnit": "cloves",
+        "preparation": "finely minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "scallions",
+        "preparation": "thinly sliced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-seeds",
+        "item": "toasted sesame seeds",
+        "metricAmount": 9,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": "lightly crushed",
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "kosher-salt",
+        "item": "kosher salt",
+        "metricAmount": 3,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "black-pepper",
+        "item": "ground black pepper",
+        "metricAmount": 2,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 125 ml / 1/2 cup",
+    "meatWeightCovered": "900 g / 2 lb boneless beef rib meat",
+    "mixOrder": [
+      "Whisk soy sauce, sesame oil, salt, and pepper.",
+      "Fold in garlic, scallions, and crushed sesame seeds."
+    ],
+    "marinationVessel": "Nonreactive bowl or food-safe zip bag on a rimmed tray",
+    "refrigeratedMarinationTimeRange": "20 to 30 minutes at 40°F / 4°C or below",
+    "maximumPracticalMarinationWarning": "Do not exceed 4 hours; the small pieces can become overly salty and garlic-dominant.",
+    "reserveBeforeRawContactInstruction": "This batch is for raw beef only; make a separate clean batch if extra sauce is wanted.",
+    "rawContactDiscardOrReboilInstruction": "Discard seasoning liquid remaining after raw-beef contact; do not spoon it onto cooked meat.",
+    "substitutions": [
+      "Boneless short-rib meat may substitute for labeled galbisal; marbling and chew will vary.",
+      "Certified gluten-free tamari may replace soy sauce after label review."
+    ],
+    "allergenNotes": [
+      "Contains soy and sesame.",
+      "Regular soy sauce usually contains wheat."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Cut the beef evenly",
+      "action": "Trim only hard exterior fat or silverskin and cut the chilled meat into 4 cm / 1 1/2-inch pieces of even thickness.",
+      "estimatedTime": "10 minutes",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Pieces are evenly sized with visible marbling and no thick bands of tough silverskin.",
+      "safetyNote": "Sanitize the knife, board, and counter after raw-beef preparation.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the seasoning",
+      "action": "Whisk soy sauce, sesame oil, salt, and pepper; fold in garlic, scallions, and crushed sesame seeds.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Garlic and scallions are evenly suspended in a thin glossy seasoning.",
+      "safetyNote": "Make any serving sauce as a separate batch before raw beef is added.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Season briefly under refrigeration",
+      "action": "Massage seasoning into the beef, cover, and refrigerate 20 to 30 minutes.",
+      "estimatedTime": "20 to 30 minutes",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Every piece is lightly coated; no large pool of sauce remains.",
+      "safetyNote": "Do not leave raw seasoned beef at room temperature or hold it longer than 4 hours.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the cooking surface",
+      "action": "Preheat a clean approved grill to medium-high and oil lightly. Arrange a clean cooked-food platter and clean utensils.",
+      "estimatedTime": "10 minutes",
+      "temperature": "425–450°F / 218–232°C grill surface",
+      "visualOrTactileCue": "A piece of beef produces an immediate strong sizzle.",
+      "safetyNote": "For indoor use, follow the manufacturer’s ventilation and clearance instructions for an approved electric appliance.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill in a single layer",
+      "action": "Grill pieces without crowding, turning to brown multiple sides, about 6 to 9 minutes depending on thickness.",
+      "estimatedTime": "6 to 9 minutes",
+      "temperature": "145°F / 63°C, then rest 3 minutes",
+      "visualOrTactileCue": "Surfaces are deeply browned; the center of the thickest piece reaches the target temperature.",
+      "safetyNote": "Use the thermometer in the center of the thickest piece and transfer with clean utensils.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest before serving",
+      "action": "Move the beef to the clean platter and rest at least 3 minutes before serving.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Juices settle and the pieces remain springy and moist.",
+      "safetyNote": "Do not add leftover raw-contact seasoning.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high, about 400–450°F / 204–232°C. Follow the appliance manual for clearance and ventilation; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest practical portion, followed by a 3-minute rest",
+  "visualDonenessCues": [
+    "Multiple sides are browned while the interior remains moist.",
+    "The center of the thickest piece reaches 145°F / 63°C before a 3-minute rest."
+  ],
+  "foodSafetyNotes": [
+    "Keep raw beef and its marinade separate from ready-to-eat foods; wash hands and sanitize contacted surfaces.",
+    "Use separate raw and cooked plates and utensils, or wash and sanitize them fully before reuse.",
+    "Measure the thickest practical portion with a calibrated food thermometer; grill marks and time alone do not establish doneness.",
+    "For whole-cut beef, reach 145°F / 63°C and rest for at least 3 minutes before serving.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use; follow ventilation and clearance instructions."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "Boneless short-rib meat is the closest practical substitute; chuck or lean stew meat will not cook the same way.",
+    "Certified gluten-free tamari changes only the soy sauce component; all labels and cross-contact still require review."
+  ],
+  "ingredientSourcing": [
+    "Ask a Korean butcher for galbisal or boneless rib meat intended for grilling.",
+    "Choose evenly marbled pieces rather than lean stew cubes."
+  ],
+  "makeAhead": "Cut the beef and mix the seasoning separately up to 1 day ahead. Combine only 20 to 30 minutes before grilling; do not season longer than 4 hours.",
+  "storage": "Refrigerate cooked beef within 2 hours in a shallow airtight container at 40°F / 4°C or below; use within 3 days.",
+  "reheating": "Reheat leftovers to 165°F / 74°C. Reheat only the portion needed and avoid prolonged cooking that toughens thin beef.",
+  "leftovers": "Reheat to 165°F / 74°C and slice into rice bowls or wraps; avoid repeated reheating.",
+  "servingSuggestions": [
+    "Serve with rice, fresh ssam greens, and a light salad.",
+    "Place additional salt-sesame dip on the table only if prepared separately with reviewed allergen labeling."
+  ],
+  "menuPairings": ["B05", "F05", "SA05", "D05"],
+  "relatedRecipeIds": ["M04", "M06"],
+  "faq": [
+    {
+      "question": "What cut can replace galbisal?",
+      "answer": "Well-marbled boneless short-rib meat is the closest practical substitute. Lean stew meat is likely to be tougher with this fast grilling method."
+    },
+    {
+      "question": "Why is the seasoning time short?",
+      "answer": "Small beef pieces absorb salt and garlic quickly; a brief refrigerated rest seasons the surface without turning the dish excessively salty."
+    }
+  ],
+  "seoTitle": "Garlic-Sesame Galbisal Grilled Beef",
+  "metaDescription": "Grill garlic-sesame galbisal with boneless rib meat, brief refrigerated seasoning, high-heat browning, and calibrated doneness guidance.",
+  "primaryKeyword": "garlic sesame galbisal",
+  "secondaryTopics": [
+    "galbisal gui",
+    "boneless Korean BBQ beef",
+    "rib meat grilling",
+    "garlic sesame beef"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "raw-food-safety",
+    "marination-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Cut/preparation context: https://en.wikipedia.org/wiki/Korean_barbecue (used only as a secondary terminology overview; qualified Korean review required).",
+    "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Cross-contact reference verified 2026-07-14: https://www.foodsafety.gov/blog/how-grill-safely-summer",
+    "This is a restrained garlic-sesame preparation for the locked title; no universal-tradition or test-cooked claim is made."
+  ],
+  "seafoodPreparation": null
+}

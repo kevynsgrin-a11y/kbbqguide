@@ -1,0 +1,69 @@
+---
+import registryData from '../../data/url-registry.json';
+import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd } from '../lib/seo';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'POL_AFFILIATE');
+---
+
+<BaseLayout
+  title="Affiliate Disclosure"
+  description="The material-connection and affiliate-link policy for this non-production Korean BBQ guide preview."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: '/' },
+      { name: 'Affiliate Disclosure', path },
+    ]),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[
+          { label: 'Home', href: '/' },
+          { label: 'Affiliate Disclosure' },
+        ]}
+      />
+      <p class="eyebrow">Material connections must be unmistakable</p>
+      <h1>Affiliate disclosure</h1>
+      <p class="lede">
+        This preview currently earns no affiliate commission and contains no
+        active merchant link.
+      </p>
+    </div>
+  </header>
+  <section class="section">
+    <div class="shell reading-width policy-stack">
+      <AffiliateDisclosure />
+      <section>
+        <h2>If monetization is approved later</h2>
+        <p>
+          We will disclose a material connection before or adjacent to a
+          recommendation, mark paid links as sponsored, and distinguish
+          editorial criteria from compensation.
+        </p>
+      </section>
+      <section>
+        <h2>What payment will not establish</h2>
+        <p>
+          Payment will not prove product quality, safety, suitability, stock,
+          value, rank, or firsthand testing. Those claims require separate,
+          current evidence.
+        </p>
+      </section>
+      <section>
+        <h2>Prices and availability</h2>
+        <p>
+          No price or availability data is displayed. A future price-check
+          statement requires merchant permission, a real check, and a visible
+          date.
+        </p>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,299 @@
+{
+  "contentStatus": "complete",
+  "id": "M10",
+  "title": "Classic Samgyeopsal with Sesame-Salt Seasoning",
+  "koreanName": "Samgyeopsal-gui",
+  "hangul": "삼겹살구이",
+  "romanization": "samgyeopsal-gui",
+  "category": "grilled-meat",
+  "releaseCohort": "week-02",
+  "publicReleaseOrder": 33,
+  "canonicalSlug": "classic-samgyeopsal-with-sesame-salt-seasoning",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/classic-samgyeopsal-with-sesame-salt-seasoning/",
+  "shortDescription": "Unmarinated pork belly is grilled until browned, verified with a thermometer, and served with individual portions of sesame-salt seasoning.",
+  "culturalContext": "Samgyeopsal-gui is a widely enjoyed Korean pork-belly grilling format often cooked at the table and eaten in wraps with condiments and banchan. Cuts, accompaniments, and seasoning practices vary.",
+  "adaptationLabel": "restaurant-style",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "12 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 35,
+    "display": "About 35 minutes"
+  },
+  "equipment": [
+    "Separate raw-meat cutting board",
+    "Nonreactive covered container",
+    "Outdoor grill or manufacturer-approved indoor electric grill",
+    "Long tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "pork",
+      "heading": "Pork",
+      "ingredients": [
+        {
+          "id": "pork",
+          "item": "skinless pork belly slab",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "cut across the grain into 6 mm / 1/4-inch slices",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "seasoning",
+      "heading": "Sesame-salt dipping seasoning",
+      "ingredients": [
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine salt",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "paired-grilling-preparation",
+    "ingredients": [
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "fine-salt",
+        "item": "fine salt",
+        "metricAmount": 3,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "black-pepper",
+        "item": "ground black pepper",
+        "metricAmount": 1,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 45 ml / 3 tablespoons dipping seasoning",
+    "meatWeightCovered": "900 g / 2 pounds pork",
+    "mixOrder": [
+      "Combine sesame oil, salt, and pepper.",
+      "Portion into individual clean dishes before raw pork is handled."
+    ],
+    "marinationVessel": "Nonreactive covered container kept at or below 40°F / 4°C",
+    "refrigeratedMarinationTimeRange": "No marination; keep pork refrigerated until grilling.",
+    "maximumPracticalMarinationWarning": "Do not leave raw pork at room temperature while the grill heats.",
+    "reserveBeforeRawContactInstruction": "Portion all dipping seasoning before raw pork or raw-meat utensils are brought to the table.",
+    "rawContactDiscardOrReboilInstruction": "Discard any individual dipping portion contacted by raw pork or raw-meat utensils; do not return it to the master batch.",
+    "substitutions": [
+      "Use a verified sesame-free neutral-oil and salt dip only for a documented sesame-free adaptation."
+    ],
+    "allergenNotes": ["sesame"]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare safely",
+      "action": "Trim and portion the skinless pork belly slab on a dedicated raw-meat board, then wash hands.",
+      "estimatedTime": "8 minutes",
+      "temperature": "Refrigerated until needed",
+      "visualOrTactileCue": "Pieces are even in thickness.",
+      "safetyNote": "Keep raw pork and its juices away from ready-to-eat foods.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix the seasoning",
+      "action": "Stir sesame oil, salt, and pepper in a clean bowl; divide into individual dipping dishes.",
+      "estimatedTime": "4 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The seasoning is homogeneous.",
+      "safetyNote": "Reserve any table sauce before raw-pork contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Set up the accompaniments",
+      "action": "Keep the sliced pork covered and refrigerated while portioning the sesame-salt seasoning into individual dishes.",
+      "estimatedTime": "5 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Raw pork is cold and each diner has a clean dipping portion.",
+      "safetyNote": "Never marinate pork at room temperature.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the grill",
+      "action": "Preheat a clean outdoor grill or manufacturer-approved indoor electric grill and lightly oil the grate.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Medium-high heat",
+      "visualOrTactileCue": "The grate is hot and clean.",
+      "safetyNote": "Do not use a fuel-burning grill indoors; follow the appliance manufacturer’s ventilation instructions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill and verify",
+      "action": "Lay pork belly in one layer and grill, turning and moving pieces as fat renders, until browned and the thickest slice reaches at least 145°F / 63°C.",
+      "estimatedTime": "8 to 12 minutes",
+      "temperature": "Medium-high heat",
+      "visualOrTactileCue": "The thickest pieces reach at least 145°F / 63°C on a calibrated thermometer.",
+      "safetyNote": "Use clean tongs after the final turn and never place cooked pork on the raw-meat platter.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and serve",
+      "action": "Transfer to a clean platter and rest 3 minutes before slicing or serving.",
+      "estimatedTime": "3 minutes",
+      "temperature": "Off heat",
+      "visualOrTactileCue": "Juices settle during the full 3-minute rest.",
+      "safetyNote": "Whole cuts of pork require 145°F / 63°C followed by a 3-minute rest.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Use an outdoor grill or a manufacturer-approved indoor electric grill on a heat-safe surface. Preheat, clean, and lightly oil the grate; keep raw and cooked zones and utensils separate.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest part, followed by a 3-minute rest for whole cuts of pork.",
+  "visualDonenessCues": [
+    "Edges are browned and lightly charred",
+    "Surface is sizzling, not wet with raw marinade",
+    "Thermometer confirms 145°F / 63°C before the 3-minute rest"
+  ],
+  "foodSafetyNotes": [
+    "Keep raw pork refrigerated at or below 40°F / 4°C until cooking.",
+    "Prevent raw-pork juices and utensils from contacting cooked food or banchan.",
+    "Cook whole cuts of pork to at least 145°F / 63°C and rest 3 minutes.",
+    "Never operate charcoal, gas, or other fuel-burning grills indoors."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains sesame; keep raw-pork utensils out of individual dipping dishes."
+  },
+  "substitutions": [
+    "Use a verified sesame-free neutral-oil and salt dip only for a documented sesame-free adaptation."
+  ],
+  "ingredientSourcing": [
+    "Choose cold skinless pork belly slab from a reputable retailer with intact packaging.",
+    "Check every prepared seasoning label for allergens."
+  ],
+  "makeAhead": "Slice pork up to 1 day ahead and refrigerate tightly covered; mix dipping seasoning just before service.",
+  "storage": "Refrigerate cooked pork in a shallow covered container within 2 hours and use within 4 days pending food-safety approval.",
+  "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
+  "leftovers": "Use properly refrigerated leftovers in rice bowls or lettuce wraps within the approved storage window.",
+  "servingSuggestions": ["Serve with lettuce, garlic, ssamjang, and banchan."],
+  "menuPairings": ["B10", "F10", "SA05", "D05"],
+  "relatedRecipeIds": ["M09", "M11"],
+  "faq": [
+    {
+      "question": "Is classic samgyeopsal marinated?",
+      "answer": "Often it is grilled unseasoned and dipped or wrapped with condiments; preparations vary."
+    },
+    {
+      "question": "Why verify thin slices with a thermometer?",
+      "answer": "Color is not a reliable safety test; check the thickest representative pieces."
+    }
+  ],
+  "seoTitle": "Classic Samgyeopsal Korean Pork Belly",
+  "metaDescription": "Grill classic Korean samgyeopsal pork belly with sesame-salt dipping seasoning, thermometer guidance, clean zones, and a full rest.",
+  "primaryKeyword": "samgyeopsal recipe",
+  "secondaryTopics": ["Korean pork belly", "sesame salt dip"],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "before-first-instruction",
+    "inside-ingredient-list",
+    "inside-instructions",
+    "adjacent-to-safety-notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Maangchi samgyeopsal-gui technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/samgyeopsal-gui",
+    "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
+  ],
+  "seafoodPreparation": null
+}

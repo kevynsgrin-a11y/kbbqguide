@@ -1,0 +1,82 @@
+---
+import registryData from '../../data/url-registry.json';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import DisabledForm from '../components/DisabledForm.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd } from '../lib/seo';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_LICENSING');
+---
+
+<BaseLayout
+  title="UGC and Licensing Inquiry Preview"
+  description="A disabled inquiry framework for permissioned user-generated content and media licensing with rights, credit, safety, privacy, and cultural review."
+  canonicalPath={path}
+  jsonLd={[
+    breadcrumbJsonLd([
+      { name: 'Home', path: '/' },
+      { name: 'Licensing Inquiry', path },
+    ]),
+  ]}
+>
+  <header class="category-hero">
+    <div class="shell reading-width">
+      <Breadcrumbs
+        items={[{ label: 'Home', href: '/' }, { label: 'Licensing Inquiry' }]}
+      /><p class="eyebrow">
+        Permission is specific, documented, and revocable as agreed
+      </p><h1>UGC and licensing inquiry</h1><p class="lede">
+        Reposting, editing, advertising, and licensing are different
+        permissions. No submission is collected and no default rights grant
+        exists in this preview.
+      </p>
+    </div>
+  </header>
+  <section class="section tinted">
+    <div class="shell support-grid">
+      <section class="support-card">
+        <h2>Ownership and people</h2><p>
+          Confirm the submitter owns or controls the work and has permission
+          from every identifiable person, property, music, brand, and location.
+        </p>
+      </section>
+      <section class="support-card">
+        <h2>Requested use</h2><p>
+          State the exact asset, edit rights, channels, paid or organic use,
+          territory, term, credit, compensation, sublicensing, and archival
+          treatment.
+        </p>
+      </section>
+      <section class="support-card">
+        <h2>Content review</h2><p>
+          Food safety, cultural context, Korean language, ingredient labels,
+          sponsored relationships, and misleading demonstrations require review
+          before use.
+        </p>
+      </section>
+      <section class="support-card">
+        <h2>Privacy and withdrawal</h2><p>
+          Document contact purpose, retention, access, deletion, withdrawal
+          limits, and what happens to already-authorized distributions.
+        </p>
+      </section>
+    </div>
+  </section>
+  <section class="section">
+    <div class="shell reading-width">
+      <DisabledForm
+        formId="licensing-inquiry"
+        title="Licensing inquiry preview"
+        fields={[
+          { label: 'Rights holder' },
+          { label: 'Asset reference or URL', type: 'url' },
+          { label: 'Requested use', type: 'textarea' },
+        ]}
+        buttonLabel="Inquiry disabled"
+        explanation="No upload storage, legal identity, contact endpoint, rights agreement, moderation, or deletion workflow is configured."
+      />
+    </div>
+  </section>
+</BaseLayout>

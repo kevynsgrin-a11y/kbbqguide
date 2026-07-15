@@ -1,0 +1,218 @@
+{
+  "contentStatus": "complete",
+  "id": "SA02",
+  "title": "Gireumjang Sesame-Oil Salt Dip",
+  "koreanName": "Gireumjang",
+  "hangul": "기름장",
+  "romanization": "gireumjang",
+  "category": "sauces",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 25,
+  "canonicalSlug": "gireumjang-sesame-oil-salt-dip",
+  "canonicalUrl": "https://kbbqguide.com/recipes/sauces/gireumjang-sesame-oil-salt-dip/",
+  "shortDescription": "Toasted sesame oil, fine salt, and freshly ground black pepper form a minimalist individual dipping sauce for simply seasoned grilled foods.",
+  "culturalContext": "Gireumjang literally points to an oil-based sauce and commonly accompanies unseasoned Korean grilled meat. Some versions include only sesame oil and salt, while pepper and other details vary; this draft keeps the formula intentionally spare.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 8,
+  "servingUnit": "tablespoons",
+  "prepTime": { "minutes": 5, "display": "5 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 0, "display": "No rest" },
+  "totalTime": { "minutes": 5, "display": "5 minutes" },
+  "equipment": [
+    "Measuring spoons or small digital scale",
+    "Small clean mixing bowl",
+    "Whisk or spoon",
+    "Individual dipping dishes",
+    "Airtight dark refrigerator container"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "oil-salt-dip",
+      "heading": "Sesame oil dip",
+      "ingredients": [
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "fine-salt",
+          "item": "fine sea salt",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 0.75,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "freshly ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect the oil",
+      "action": "Check the sesame-oil label, best-by date, storage directions, and aroma before measuring.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "Oil smells clean and nutty, not paint-like, bitter, or rancid.",
+      "safetyNote": "Sesame is a major allergen; do not use an unlabeled decanted oil for guests.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Measure",
+      "action": "Measure sesame oil into a clean dry bowl, then measure salt and optional pepper separately.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "No water or food debris enters the oil.",
+      "safetyNote": "Use completely clean, dry tools to limit contamination and splatter near the grill.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Combine",
+      "action": "Stir the salt and optional pepper into the sesame oil for 15 seconds.",
+      "estimatedTime": "1 minute",
+      "temperature": null,
+      "visualOrTactileCue": "Salt remains partly crystalline and evenly distributed at the bottom.",
+      "safetyNote": "Do not add raw garlic or other fresh aromatics to stored oil without a separately reviewed safety plan.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Portion",
+      "action": "Divide immediately among clean individual dipping dishes, about 1 tablespoon per person.",
+      "estimatedTime": "1 minute",
+      "temperature": "Cool room temperature",
+      "visualOrTactileCue": "Each dish has a shallow layer with visible salt crystals.",
+      "safetyNote": "Individual portions prevent raw-meat tongs and used bites from contaminating the master batch.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Stir during service",
+      "action": "Invite diners to stir lightly before dipping because salt does not dissolve fully in oil.",
+      "estimatedTime": "As needed",
+      "temperature": null,
+      "visualOrTactileCue": "A few salt grains cling to each dipped cooked bite.",
+      "safetyNote": "Dip only fully cooked food with clean eating utensils, never raw meat or raw-meat tongs.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Discard served portions",
+      "action": "At the end of service, discard all individual portions and wipe oil spills promptly.",
+      "estimatedTime": "Immediate",
+      "temperature": null,
+      "visualOrTactileCue": "No used table sauce is returned to storage.",
+      "safetyNote": "Oil spills create a slip and fire-spread hazard; keep the sauce away from open flame and wipe spills promptly.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill is used to make the dip; place individual dishes outside the heat and raw-meat zones, away from open flame and grill edges.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Sesame oil smells fresh and nutty",
+    "Salt is evenly dispersed but partly crystalline",
+    "Dip is served only in individual clean dishes"
+  ],
+  "foodSafetyNotes": [
+    "Sesame is a major allergen; use labeled oil and disclose it clearly.",
+    "Use clean, dry measuring and serving tools.",
+    "Do not add fresh garlic to oil intended for storage without a validated safety process.",
+    "Dip only fully cooked food with clean utensils.",
+    "Discard all table-served portions and clean oil spills promptly."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains sesame. Use dedicated dishes and utensils, and keep the dip away from peanut, tree-nut, soy, and raw-meat cross-contact at the grill."
+  },
+  "substitutions": [
+    "No neutral-oil substitution preserves the named sesame-oil character.",
+    "Omit black pepper for the simplest two-ingredient version."
+  ],
+  "ingredientSourcing": [
+    "Choose toasted sesame oil in an opaque or dark container and check the sesame allergen statement.",
+    "Buy quantities small enough to use while the aroma remains fresh."
+  ],
+  "makeAhead": "Measure ingredients up to 1 day ahead but store oil in its original container and combine just before service.",
+  "storage": "Discard served portions. If an untouched master mixture remains, refrigerate in a clean dark airtight container for up to 3 days, following the oil label; bring briefly to cool room temperature before stirring.",
+  "reheating": "Do not heat; keep away from open flame.",
+  "leftovers": "Never save sauce from individual dipping dishes. Retain only an untouched master portion that stayed clean and was refrigerated promptly.",
+  "servingSuggestions": [
+    "Serve with simply seasoned cooked beef or pork",
+    "Use one shallow individual dish per diner"
+  ],
+  "menuPairings": ["M14", "SF08", "B10", "F03"],
+  "relatedRecipeIds": ["SA01", "SA03"],
+  "faq": [
+    {
+      "question": "Should the salt dissolve?",
+      "answer": "No. Salt is not soluble in oil, so a light stir before dipping redistributes the crystals."
+    },
+    {
+      "question": "Can I add raw garlic?",
+      "answer": "Not to a stored oil mixture in this draft; fresh garlic-in-oil requires separate validated safety controls."
+    }
+  ],
+  "seoTitle": "Gireumjang Korean Sesame-Oil Salt Dip",
+  "metaDescription": "Make minimalist gireumjang with toasted sesame oil, salt, and optional pepper, including allergen, individual-service, spill, and storage controls.",
+  "primaryKeyword": "gireumjang sesame oil salt dip",
+  "secondaryTopics": [
+    "Korean BBQ oil dip",
+    "sesame salt sauce",
+    "Korean dipping sauces"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["allergen notes", "recipe card", "oil-safety notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Terminology and service convention require qualified Korean editorial confirmation; no single formula is represented as universal.",
+    "Current cross-contamination framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
+    "Draft synthesized for the locked title; not test-cooked. Sesame labeling, Korean-language, cultural, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

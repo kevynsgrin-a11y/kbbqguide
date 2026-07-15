@@ -1,0 +1,449 @@
+{
+  "contentStatus": "complete",
+  "id": "M03",
+  "title": "LA-Style Galbi",
+  "koreanName": "LA galbi",
+  "hangul": "LA 갈비",
+  "romanization": "LA galbi",
+  "category": "grilled-meat",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 3,
+  "canonicalSlug": "la-style-galbi",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/la-style-galbi/",
+  "shortDescription": "Flanken-cut beef short ribs marinated with Korean pear, soy, onion, garlic, and sesame, then grilled quickly across their thin cut.",
+  "culturalContext": "LA galbi uses short ribs sliced thinly across several bones. It is strongly associated with Korean-American cooking, but explanations for the name and precise origin vary; this draft avoids presenting any one origin theory as settled fact.",
+  "adaptationLabel": "regional",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 6,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 30,
+    "display": "30 minutes"
+  },
+  "marinateTime": {
+    "minutes": 240,
+    "display": "4 to 12 hours"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "10 to 12 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 285,
+    "display": "4 hours 45 minutes, including minimum marination and rest"
+  },
+  "equipment": [
+    "Chef’s knife",
+    "Cutting board",
+    "Nonreactive mixing bowl or food-safe zip bag",
+    "Measuring cups and spoons",
+    "Outdoor grill or manufacturer-approved indoor electric tabletop grill",
+    "Long-handled tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "ribs",
+      "heading": "Short ribs",
+      "ingredients": [
+        {
+          "id": "flanken-short-ribs",
+          "item": "flanken-cut beef short ribs, about 6 mm / 1/4 inch thick",
+          "metricAmount": 1500,
+          "metricUnit": "g",
+          "customaryAmount": 3.3,
+          "customaryUnit": "pounds",
+          "preparation": "ask the butcher to remove bone dust; inspect each strip",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "pear-soy-marinade",
+      "heading": "Pear-soy marinade",
+      "ingredients": [
+        {
+          "id": "pear",
+          "item": "Korean or Asian pear",
+          "metricAmount": 250,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "large pear",
+          "preparation": "peeled, cored, and blended",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "medium onion",
+          "preparation": "roughly chopped and blended",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "regular soy sauce",
+          "metricAmount": 180,
+          "metricUnit": "ml",
+          "customaryAmount": 0.75,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "water",
+          "item": "cold water",
+          "metricAmount": 120,
+          "metricUnit": "ml",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "brown-sugar",
+          "item": "packed brown sugar",
+          "metricAmount": 65,
+          "metricUnit": "g",
+          "customaryAmount": 0.33,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 10,
+          "customaryUnit": "cloves",
+          "preparation": "finely minced or blended",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 8,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "pear",
+        "item": "Korean or Asian pear",
+        "metricAmount": 250,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "large pear",
+        "preparation": "peeled, cored, and blended",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "onion",
+        "item": "yellow onion",
+        "metricAmount": 200,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "medium onion",
+        "preparation": "roughly chopped and blended",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "soy-sauce",
+        "item": "regular soy sauce",
+        "metricAmount": 180,
+        "metricUnit": "ml",
+        "customaryAmount": 0.75,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "water",
+        "item": "cold water",
+        "metricAmount": 120,
+        "metricUnit": "ml",
+        "customaryAmount": 0.5,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "brown-sugar",
+        "item": "packed brown sugar",
+        "metricAmount": 65,
+        "metricUnit": "g",
+        "customaryAmount": 0.33,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 10,
+        "customaryUnit": "cloves",
+        "preparation": "finely minced or blended",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "ginger",
+        "item": "fresh ginger",
+        "metricAmount": 8,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "teaspoons",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "black-pepper",
+        "item": "ground black pepper",
+        "metricAmount": 2,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 750 ml / 3 cups",
+    "meatWeightCovered": "1.5 kg / 3.3 lb flanken-cut beef short ribs",
+    "mixOrder": [
+      "Whisk soy sauce, water, and brown sugar until partly dissolved.",
+      "Blend pear, onion, garlic, and ginger until smooth.",
+      "Combine the blended mixture with the soy base, sesame oil, and pepper."
+    ],
+    "marinationVessel": "Large nonreactive dish or food-safe zip bags arranged in a single layer on a rimmed tray",
+    "refrigeratedMarinationTimeRange": "4 to 12 hours at 40°F / 4°C or below",
+    "maximumPracticalMarinationWarning": "Do not exceed 24 hours; thin flanken ribs can become overly soft from pear and overly salty from extended contact.",
+    "reserveBeforeRawContactInstruction": "Reserve any portion intended for basting or serving before the ribs enter the marinade.",
+    "rawContactDiscardOrReboilInstruction": "Discard marinade that contacted raw ribs. Do not brush it onto cooked ribs.",
+    "substitutions": [
+      "Ripe Bosc pear may replace Korean pear by weight.",
+      "Certified gluten-free tamari may replace soy sauce after full label review."
+    ],
+    "allergenNotes": [
+      "Contains soy and sesame.",
+      "Regular soy sauce usually contains wheat."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Inspect the flanken ribs",
+      "action": "Keep ribs cold. Ask the butcher to remove bone dust; inspect each strip and lift off visible fragments with a clean damp disposable towel. Do not rinse the beef.",
+      "estimatedTime": "10 minutes",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Each strip is about 6 mm / 1/4 inch thick with no visible loose bone fragments.",
+      "safetyNote": "FoodSafety.gov advises against rinsing raw meat because splashing spreads contamination; sanitize contacted surfaces.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Blend the marinade",
+      "action": "Whisk soy sauce, water, and sugar. Blend pear, onion, garlic, and ginger, then combine with the soy base, sesame oil, and pepper.",
+      "estimatedTime": "10 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The marinade is pourable and evenly blended with no large onion pieces.",
+      "safetyNote": "Reserve any serving portion before raw ribs are added.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate flat and cold",
+      "action": "Arrange ribs in the vessel, coat every surface, cover, and refrigerate 4 to 12 hours, turning once.",
+      "estimatedTime": "4 to 12 hours",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "All strips are submerged or evenly coated without folded dry sections.",
+      "safetyNote": "Never marinate on the counter; discard marinade after removing the ribs.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat and drain",
+      "action": "Preheat the approved grill to medium-high. Clean and oil the surface. Lift ribs from marinade and let excess drip off.",
+      "estimatedTime": "10 minutes",
+      "temperature": "400–450°F / 204–232°C grill surface",
+      "visualOrTactileCue": "The ribs sizzle immediately and lie flat across the grate.",
+      "safetyNote": "Use only outdoor grills outdoors or manufacturer-approved indoor electric appliances indoors.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Grill the ribs",
+      "action": "Grill in a single layer for about 2 to 3 minutes per side, moving pieces away from flare-ups and checking the thickest meat between bones.",
+      "estimatedTime": "4 to 6 minutes per batch",
+      "temperature": "145°F / 63°C, then rest 3 minutes",
+      "visualOrTactileCue": "The surface is caramelized without blackened sugar, and the thickest meat reaches target temperature.",
+      "safetyNote": "Avoid touching bone with the thermometer tip; use clean tongs and a clean cooked-food platter.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest, cut, and serve",
+      "action": "Rest ribs for at least 3 minutes. Use clean kitchen shears to cut meat into manageable pieces if desired, leaving bones easy to identify.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Juices settle and pieces remain moist; bones are clearly visible for diners.",
+      "safetyNote": "Warn children and guests about bone pieces; do not return cooked ribs to the raw vessel.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high, about 400–450°F / 204–232°C. Follow the appliance manual for clearance and ventilation; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest practical portion, followed by a 3-minute rest",
+  "visualDonenessCues": [
+    "Ribs are caramelized at the edges without a charred sugar crust.",
+    "The thickest meat between bones reaches 145°F / 63°C and rests 3 minutes."
+  ],
+  "foodSafetyNotes": [
+    "Keep raw beef and its marinade separate from ready-to-eat foods; wash hands and sanitize contacted surfaces.",
+    "Use separate raw and cooked plates and utensils, or wash and sanitize them fully before reuse.",
+    "Measure the thickest practical portion with a calibrated food thermometer; grill marks and time alone do not establish doneness.",
+    "For whole-cut beef, reach 145°F / 63°C and rest for at least 3 minutes before serving.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use; follow ventilation and clearance instructions."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "Use ripe Bosc pear by weight if Korean pear is unavailable.",
+    "Do not replace flanken ribs with thick English-cut ribs without developing a different cooking method and timing."
+  ],
+  "ingredientSourcing": [
+    "Request flanken-cut short ribs approximately 6 mm / 1/4 inch thick from a Korean market or butcher.",
+    "Ask the butcher to remove bone dust from the saw cut and inspect again at home."
+  ],
+  "makeAhead": "Blend the marinade up to 1 day ahead and refrigerate it before raw contact. Marinate ribs 4 to 12 hours; do not exceed 24 hours.",
+  "storage": "Refrigerate cooked beef within 2 hours in a shallow airtight container at 40°F / 4°C or below; use within 3 days.",
+  "reheating": "Reheat leftovers to 165°F / 74°C. Reheat only the portion needed and avoid prolonged cooking that toughens thin beef.",
+  "leftovers": "Remove meat from bones, reheat to 165°F / 74°C, and use in rice bowls or lettuce wraps. Discard bones and any food left out beyond safe holding time.",
+  "servingSuggestions": [
+    "Serve with rice, ssam greens, scallion salad, and a reviewed ssamjang.",
+    "Provide a small bone plate and make bones visible to children and guests."
+  ],
+  "menuPairings": ["B03", "F03", "SA03", "D03"],
+  "relatedRecipeIds": ["M02", "M04"],
+  "faq": [
+    {
+      "question": "What makes the cut “LA-style”?",
+      "answer": "The ribs are cut flanken-style across several bones into thin strips. Multiple origin explanations circulate, so this draft does not present one as definitive."
+    },
+    {
+      "question": "Should I rinse away bone fragments?",
+      "answer": "No. Ask the butcher to remove bone dust and wipe visible loose fragments with a clean damp disposable towel; rinsing raw beef can spread contamination around the sink."
+    }
+  ],
+  "seoTitle": "LA-Style Galbi Korean Short Ribs Recipe",
+  "metaDescription": "Prepare LA-style galbi with thin flanken ribs, Korean pear soy marinade, bone-fragment handling, fast grilling, and thermometer guidance.",
+  "primaryKeyword": "LA-style galbi recipe",
+  "secondaryTopics": [
+    "Korean short ribs",
+    "flanken ribs",
+    "pear soy marinade",
+    "Korean American barbecue"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "raw-food-safety",
+    "marination-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Core preparation reference: https://www.maangchi.com/recipe/la-galbi",
+    "Cultural-context comparison: https://www.bonappetit.com/recipe/la-kalbi (Korean-American flanken-cut framing; origin language treated as non-definitive).",
+    "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "No origin theory is presented as settled. Draft not test-cooked; cultural, Korean-language, and safety approval remain required."
+  ],
+  "seafoodPreparation": null
+}

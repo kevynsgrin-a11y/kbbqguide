@@ -1,0 +1,437 @@
+{
+  "contentStatus": "complete",
+  "id": "M02",
+  "title": "Mushroom-Soy Beef Bulgogi",
+  "koreanName": "Beoseot bulgogi",
+  "hangul": "버섯불고기",
+  "romanization": "beoseot-bulgogi",
+  "category": "grilled-meat",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 2,
+  "canonicalSlug": "mushroom-soy-beef-bulgogi",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/mushroom-soy-beef-bulgogi/",
+  "shortDescription": "A mushroom-forward beef bulgogi with shiitake and cremini mushrooms in a savory soy, onion, garlic, and sesame marinade.",
+  "culturalContext": "Mushrooms are commonly cooked alongside or in variations of bulgogi. This mushroom-heavy formulation is presented as a contemporary home-cooking adaptation, not as a separate ancient or regionally fixed dish.",
+  "adaptationLabel": "contemporary",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes"
+  },
+  "marinateTime": {
+    "minutes": 60,
+    "display": "1 to 8 hours"
+  },
+  "cookTime": {
+    "minutes": 15,
+    "display": "12 to 15 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 103,
+    "display": "1 hour 43 minutes, including minimum marination and rest"
+  },
+  "equipment": [
+    "Chef’s knife",
+    "Cutting board",
+    "Nonreactive mixing bowl or food-safe zip bag",
+    "Measuring cups and spoons",
+    "Outdoor grill or manufacturer-approved indoor electric tabletop grill",
+    "Long-handled tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "beef-and-mushrooms",
+      "heading": "Beef and mushrooms",
+      "ingredients": [
+        {
+          "id": "beef-sirloin",
+          "item": "beef sirloin or ribeye",
+          "metricAmount": 680,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "pounds",
+          "preparation": "sliced 3 mm / 1/8 inch thick against the grain",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "shiitake",
+          "item": "fresh shiitake mushrooms",
+          "metricAmount": 170,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "ounces",
+          "preparation": "stems removed and caps sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "cremini",
+          "item": "cremini mushrooms",
+          "metricAmount": 170,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "ounces",
+          "preparation": "sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 45,
+          "metricUnit": "g",
+          "customaryAmount": 3,
+          "customaryUnit": "scallions",
+          "preparation": "cut into 5 cm / 2-inch lengths",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "soy-onion-marinade",
+      "heading": "Soy-onion marinade",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "regular soy sauce",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "rice-syrup",
+          "item": "rice syrup or honey",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion-puree",
+          "item": "yellow onion",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": "finely grated or blended",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 5,
+          "customaryUnit": "cloves",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "ginger",
+          "item": "fresh ginger",
+          "metricAmount": 5,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": "finely grated",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "ground black pepper",
+          "metricAmount": 1,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "marinade",
+    "ingredients": [
+      {
+        "id": "soy-sauce",
+        "item": "regular soy sauce",
+        "metricAmount": 60,
+        "metricUnit": "ml",
+        "customaryAmount": 0.25,
+        "customaryUnit": "cup",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+      },
+      {
+        "id": "rice-syrup",
+        "item": "rice syrup or honey",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "onion-puree",
+        "item": "yellow onion",
+        "metricAmount": 100,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "cup",
+        "preparation": "finely grated or blended",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 15,
+        "metricUnit": "g",
+        "customaryAmount": 5,
+        "customaryUnit": "cloves",
+        "preparation": "finely minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 15,
+        "metricUnit": "ml",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "ginger",
+        "item": "fresh ginger",
+        "metricAmount": 5,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "teaspoon",
+        "preparation": "finely grated",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "black-pepper",
+        "item": "ground black pepper",
+        "metricAmount": 1,
+        "metricUnit": "g",
+        "customaryAmount": 0.5,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      }
+    ],
+    "batchYield": "About 250 ml / 1 cup",
+    "meatWeightCovered": "680 g / 1.5 lb thinly sliced beef plus 340 g / 12 oz mushrooms",
+    "mixOrder": [
+      "Whisk soy sauce with rice syrup.",
+      "Stir in onion purée, garlic, sesame oil, ginger, and black pepper."
+    ],
+    "marinationVessel": "Nonreactive bowl or food-safe zip bag set on a rimmed tray",
+    "refrigeratedMarinationTimeRange": "Marinate beef 1 to 8 hours at 40°F / 4°C or below; add mushrooms only for the final 20 minutes.",
+    "maximumPracticalMarinationWarning": "Do not exceed 24 hours; the salt can over-season thin beef and mushrooms absorb sauce quickly.",
+    "reserveBeforeRawContactInstruction": "Reserve any serving sauce before adding the beef; the planned recipe does not require a finishing sauce.",
+    "rawContactDiscardOrReboilInstruction": "Discard marinade that contacted raw beef; do not use it to dress cooked mushrooms or meat.",
+    "substitutions": [
+      "Fresh oyster mushrooms may replace cremini by weight.",
+      "Certified gluten-free tamari may replace soy sauce after label review."
+    ],
+    "allergenNotes": [
+      "Contains soy and sesame.",
+      "Regular soy sauce usually contains wheat."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Prepare the beef and mushrooms",
+      "action": "Slice the chilled beef thinly against the grain. Brush visible soil from mushrooms with a clean towel, trim stems, and slice; do not soak the mushrooms.",
+      "estimatedTime": "15 minutes",
+      "temperature": "Keep beef at or below 40°F / 4°C",
+      "visualOrTactileCue": "Beef slices are even; mushrooms are dry and clean with broad surfaces for browning.",
+      "safetyNote": "Use a separate clean board and knife for ready-to-eat garnishes after raw-beef prep, or wash and sanitize fully.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Make the soy-onion marinade",
+      "action": "Whisk soy sauce and rice syrup, then mix in onion purée, garlic, sesame oil, ginger, and pepper.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The marinade is uniform and lightly thickened by onion.",
+      "safetyNote": "Portion any intended finishing sauce before adding raw beef.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Marinate in stages",
+      "action": "Coat the beef and refrigerate 1 to 8 hours. Add shiitake, cremini, and scallions for only the final 20 minutes, folding gently.",
+      "estimatedTime": "1 to 8 hours",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Beef is coated and mushrooms are glossy but not waterlogged.",
+      "safetyNote": "Marinate only under refrigeration and discard all raw-contact liquid.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the approved grill",
+      "action": "Preheat to medium-high and lightly oil the clean surface. Drain excess marinade from the beef and mushrooms.",
+      "estimatedTime": "10 minutes",
+      "temperature": "400–450°F / 204–232°C grill surface",
+      "visualOrTactileCue": "Food sizzles immediately when it touches the surface.",
+      "safetyNote": "For indoor cooking, use only an electric appliance approved for indoor use and follow its ventilation and clearance directions.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Cook beef and mushrooms separately",
+      "action": "Cook mushrooms in a single layer until browned and tender, then move them to a clean platter. Grill beef in small batches, turning until browned and cooked through.",
+      "estimatedTime": "12 to 15 minutes total",
+      "temperature": "Beef to 145°F / 63°C, then rest 3 minutes",
+      "visualOrTactileCue": "Mushrooms have browned edges; beef is browned and the thickest practical cluster reaches the target.",
+      "safetyNote": "Do not move cooked mushrooms with raw-beef tongs unless the tongs have been washed and sanitized.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and combine",
+      "action": "Rest the beef for at least 3 minutes, then combine it with the cooked mushrooms and scallions on the clean platter.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The mixture is glossy with distinct browned mushrooms rather than pooled liquid.",
+      "safetyNote": "Do not add raw-contact marinade after cooking.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high, about 400–450°F / 204–232°C. Follow the appliance manual for clearance and ventilation; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest practical portion, followed by a 3-minute rest",
+  "visualDonenessCues": [
+    "Mushrooms are browned and tender without pooled raw marinade.",
+    "Beef reaches 145°F / 63°C in the thickest practical cluster and rests 3 minutes."
+  ],
+  "foodSafetyNotes": [
+    "Keep raw beef and its marinade separate from ready-to-eat foods; wash hands and sanitize contacted surfaces.",
+    "Use separate raw and cooked plates and utensils, or wash and sanitize them fully before reuse.",
+    "Measure the thickest practical portion with a calibrated food thermometer; grill marks and time alone do not establish doneness.",
+    "For whole-cut beef, reach 145°F / 63°C and rest for at least 3 minutes before serving.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use; follow ventilation and clearance instructions."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "Use fresh oyster mushrooms for cremini by weight; texture and water release will differ.",
+    "Use certified gluten-free tamari only after checking every packaged ingredient."
+  ],
+  "ingredientSourcing": [
+    "Choose dry, firm mushrooms without slimy spots or a sour odor.",
+    "Ask for thin bulgogi-cut sirloin or ribeye, or partially freeze the meat before slicing."
+  ],
+  "makeAhead": "Prepare the soy-onion marinade up to 1 day ahead. Marinate the beef the same day; add mushrooms only during the final 20 minutes so they do not absorb excessive salt.",
+  "storage": "Refrigerate cooked beef within 2 hours in a shallow airtight container at 40°F / 4°C or below; use within 3 days.",
+  "reheating": "Reheat leftovers to 165°F / 74°C. Reheat only the portion needed and avoid prolonged cooking that toughens thin beef.",
+  "leftovers": "Reheat to 165°F / 74°C and serve over rice; store fresh herbs or greens separately.",
+  "servingSuggestions": [
+    "Serve with steamed rice and crisp fresh greens to balance the savory mushroom sauce.",
+    "Pair only with banchan and sauces whose allergen labels have been reviewed."
+  ],
+  "menuPairings": ["B02", "F02", "SA02", "D02"],
+  "relatedRecipeIds": ["M01", "M03"],
+  "faq": [
+    {
+      "question": "Can I marinate the mushrooms as long as the beef?",
+      "answer": "No. Add them only for the final 20 minutes; their porous texture absorbs salty marinade quickly and can release water on the grill."
+    },
+    {
+      "question": "Can this be cooked in a skillet?",
+      "answer": "Yes. Use a broad heavy skillet in batches under effective ventilation so the meat and mushrooms brown rather than steam."
+    }
+  ],
+  "seoTitle": "Mushroom-Soy Beef Bulgogi Recipe",
+  "metaDescription": "Grill mushroom-soy beef bulgogi with shiitake, cremini, thin sirloin, staged marination, and clear temperature and cross-contact guidance.",
+  "primaryKeyword": "mushroom beef bulgogi",
+  "secondaryTopics": [
+    "beoseot bulgogi",
+    "shiitake bulgogi",
+    "soy onion marinade",
+    "Korean BBQ mushrooms"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "raw-food-safety",
+    "marination-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Foundation reference: https://www.maangchi.com/recipe/bulgogi (bulgogi marinade and mushroom variation).",
+    "Comparative reference: https://www.koreanbapsang.com/bulgogi-korean-bbq-beef/",
+    "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Contemporary mushroom-forward formulation created for the locked title; not represented as a canonical historical recipe and not test-cooked. Human reviews remain required."
+  ],
+  "seafoodPreparation": null
+}

@@ -1,0 +1,263 @@
+{
+  "contentStatus": "complete",
+  "id": "B06",
+  "title": "Sigeumchi Namul Seasoned Spinach",
+  "koreanName": "Sigeumchi Namul",
+  "hangul": "시금치나물",
+  "romanization": "sigeumchi namul",
+  "category": "banchan",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 17,
+  "canonicalSlug": "sigeumchi-namul-seasoned-spinach",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/sigeumchi-namul-seasoned-spinach/",
+  "shortDescription": "Spinach is briefly blanched, cooled, squeezed, and gently seasoned with garlic, soy sauce, toasted sesame oil, scallion, and sesame seeds.",
+  "culturalContext": "Sigeumchi namul is a familiar Korean vegetable banchan and a common component of meals and bibimbap. Seasoning can be soy-based or salt-based and may include doenjang; this draft uses a restrained soy-sesame profile.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": { "minutes": 12, "display": "12 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 2, "display": "1 to 2 minutes" },
+  "restTime": { "minutes": 5, "display": "5 minutes cooling and draining" },
+  "totalTime": { "minutes": 19, "display": "About 20 minutes" },
+  "equipment": [
+    "Large pot",
+    "Large bowl for cold water",
+    "Colander",
+    "Chef’s knife and cutting board",
+    "Clean mixing bowl",
+    "Tongs"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "spinach",
+      "heading": "Spinach and seasoning",
+      "ingredients": [
+        {
+          "id": "spinach",
+          "item": "mature spinach with stems",
+          "metricAmount": 450,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "pound",
+          "preparation": "washed thoroughly, tough root ends trimmed",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "salt-water",
+          "item": "fine salt for blanching water",
+          "metricAmount": 10,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "clove",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "scallion",
+          "item": "scallion",
+          "metricAmount": 15,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "scallion",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": "lightly crushed",
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Wash and trim",
+      "action": "Wash spinach in repeated changes of cool water until no grit remains. Trim only tough root ends, keeping tender stems attached.",
+      "estimatedTime": "8 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The final rinse water is clear and leaves look fresh, not slimy.",
+      "safetyNote": "Discard slimy or spoiled leaves and use a clean sink and bowl.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Prepare water",
+      "action": "Bring a large pot of water to a rolling boil, add the blanching salt, and prepare a separate bowl of cold water.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Rolling boil",
+      "visualOrTactileCue": "Water boils vigorously before spinach is added.",
+      "safetyNote": "Keep pot handles turned inward and lower spinach away from your body to avoid splashes.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Blanch",
+      "action": "Add spinach stems first, then leaves. Press under the water with tongs and blanch 45 to 60 seconds until uniformly wilted and vivid green.",
+      "estimatedTime": "45 to 60 seconds",
+      "temperature": "Boiling water",
+      "visualOrTactileCue": "Leaves are bright green and collapsed while stems remain tender.",
+      "safetyNote": "Use clean tongs and avoid overfilling the pot.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Cool and squeeze",
+      "action": "Transfer immediately to cold water, swish, drain, and squeeze gently in small handfuls. Cut the squeezed bundle into 5 cm / 2-inch lengths.",
+      "estimatedTime": "5 minutes",
+      "temperature": "Cold water",
+      "visualOrTactileCue": "Spinach is cool, moist but not dripping, and separates easily.",
+      "safetyNote": "Use potable water and clean hands or gloves when handling the cooked spinach.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Season",
+      "action": "Loosen spinach in a clean bowl. Add soy sauce, garlic, sesame oil, scallion, and sesame seeds; mix gently by hand or with clean tongs.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Every strand is lightly glossy without a pool of dressing.",
+      "safetyNote": "Declare soy, wheat/gluten, and sesame allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve or chill",
+      "action": "Taste only after mixing with clean utensils. Serve promptly or refrigerate in a shallow covered container.",
+      "estimatedTime": "Immediate",
+      "temperature": "Cool or chilled",
+      "visualOrTactileCue": "Spinach stays bright green and tender rather than mushy.",
+      "safetyNote": "Refrigerate within 2 hours at or below 40°F / 4°C.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan is blanched on the stovetop.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Spinach is vivid green and uniformly wilted",
+    "Tender stems bend easily",
+    "Seasoned leaves are moist but not watery"
+  ],
+  "foodSafetyNotes": [
+    "Wash spinach thoroughly to remove grit and discard spoiled leaves.",
+    "Use potable cold water and clean tools after blanching.",
+    "Avoid leaving cooked spinach at room temperature for more than 2 hours.",
+    "Refrigerate at or below 40°F / 4°C in a shallow covered container.",
+    "Declare soy, wheat/gluten, and sesame allergens."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; use verified tamari for a gluten-free adaptation and prevent shared-utensil cross-contact."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari for soy sauce only after checking the full label.",
+    "Baby spinach cooks faster and needs a separately tested blanch time."
+  ],
+  "ingredientSourcing": [
+    "Choose spinach with crisp leaves and tender stems, avoiding slimy bags.",
+    "Korean soup soy sauce may be evaluated in testing as a saltier alternative to regular soy sauce."
+  ],
+  "makeAhead": "Blanch, cool, and squeeze spinach up to 1 day ahead; refrigerate covered and season closer to serving.",
+  "storage": "Refrigerate within 2 hours and use within 3 days; texture and color are best earlier and the limit requires food-safety review.",
+  "reheating": "Serve cold or cool; if warming, heat briefly in a covered skillet and do not repeatedly cool and reheat.",
+  "leftovers": "Use properly refrigerated leftovers in bibimbap or a rice bowl within the approved storage window.",
+  "servingSuggestions": [
+    "Serve as a small banchan with rice",
+    "Use as one component of bibimbap"
+  ],
+  "menuPairings": ["M01", "SF11", "F01", "SA01"],
+  "relatedRecipeIds": ["B05", "B07"],
+  "faq": [
+    {
+      "question": "Why cool spinach after blanching?",
+      "answer": "Cooling stops carryover cooking and helps preserve bright color and a tender, distinct texture."
+    },
+    {
+      "question": "How dry should the spinach be?",
+      "answer": "Squeeze out free water without crushing the stems; the spinach should remain moist but not dilute the seasoning."
+    }
+  ],
+  "seoTitle": "Sigeumchi Namul Korean Seasoned Spinach",
+  "metaDescription": "Make sigeumchi namul with briefly blanched spinach, soy, garlic, scallion, and sesame, plus precise texture cues and cold-storage guidance.",
+  "primaryKeyword": "sigeumchi namul",
+  "secondaryTopics": [
+    "Korean spinach side dish",
+    "seasoned spinach banchan",
+    "bibimbap spinach"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["recipe card", "food-safety notes", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention and blanching reference: https://www.maangchi.com/recipe/sigumchi-namul",
+    "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Draft synthesized for this project; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

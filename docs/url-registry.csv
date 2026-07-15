@@ -1,0 +1,126 @@
+id,type,title,slug,path,canonical_url,status,indexable
+SYS_HOME,system,Home,home,/,https://kbbqguide.com/,locked,true
+SYS_START,system,Start Here,start-here,/start-here/,https://kbbqguide.com/start-here/,locked,true
+SYS_RECIPES,system,Recipes,recipes,/recipes/,https://kbbqguide.com/recipes/,locked,true
+CAT_MEAT,category,Grilled Meat,grilled-meat,/recipes/grilled-meat/,https://kbbqguide.com/recipes/grilled-meat/,locked,true
+CAT_SEAFOOD,category,Seafood,seafood,/recipes/seafood/,https://kbbqguide.com/recipes/seafood/,locked,true
+CAT_BANCHAN,category,Banchan,banchan,/recipes/banchan/,https://kbbqguide.com/recipes/banchan/,locked,true
+CAT_FRESH,category,Fresh and Palate Refresh,fresh,/recipes/fresh/,https://kbbqguide.com/recipes/fresh/,locked,true
+CAT_SAUCES,category,Sauces,sauces,/recipes/sauces/,https://kbbqguide.com/recipes/sauces/,locked,true
+CAT_DESSERTS,category,Desserts,desserts,/recipes/desserts/,https://kbbqguide.com/recipes/desserts/,locked,true
+SYS_GUIDES,system,Guides,guides,/guides/,https://kbbqguide.com/guides/,locked,true
+G01,guide,Korean BBQ at Home for Beginners,korean-bbq-at-home-for-beginners,/guides/korean-bbq-at-home-for-beginners/,https://kbbqguide.com/guides/korean-bbq-at-home-for-beginners/,locked,true
+G02,guide,Indoor vs. Outdoor Korean BBQ Safety,indoor-vs-outdoor-korean-bbq-safety,/guides/indoor-vs-outdoor-korean-bbq-safety/,https://kbbqguide.com/guides/indoor-vs-outdoor-korean-bbq-safety/,locked,true
+G03,guide,Tabletop Grill and Ventilation Guide,tabletop-grill-and-ventilation,/guides/tabletop-grill-and-ventilation/,https://kbbqguide.com/guides/tabletop-grill-and-ventilation/,locked,true
+G04,guide,Essential Korean Pantry Guide,essential-korean-pantry,/guides/essential-korean-pantry/,https://kbbqguide.com/guides/essential-korean-pantry/,locked,true
+G05,guide,Korean BBQ Meat Cuts Guide,korean-bbq-meat-cuts,/guides/korean-bbq-meat-cuts/,https://kbbqguide.com/guides/korean-bbq-meat-cuts/,locked,true
+G06,guide,"Seafood Buying, Cleaning, and Grilling Guide",seafood-buying-cleaning-and-grilling,/guides/seafood-buying-cleaning-and-grilling/,https://kbbqguide.com/guides/seafood-buying-cleaning-and-grilling/,locked,true
+G07,guide,"Ssam Greens, Herbs, and Wraps Guide",ssam-greens-herbs-and-wraps,/guides/ssam-greens-herbs-and-wraps/,https://kbbqguide.com/guides/ssam-greens-herbs-and-wraps/,locked,true
+G08,guide,"Menus and Shopping Lists for 2, 4, and 8 Guests",menus-and-shopping-lists,/guides/menus-and-shopping-lists/,https://kbbqguide.com/guides/menus-and-shopping-lists/,locked,true
+G09,guide,"Two-Day, One-Day, and Two-Hour Prep Timelines",prep-timelines,/guides/prep-timelines/,https://kbbqguide.com/guides/prep-timelines/,locked,true
+G10,guide,Banchan Batch-Prep Guide,banchan-batch-prep,/guides/banchan-batch-prep/,https://kbbqguide.com/guides/banchan-batch-prep/,locked,true
+G11,guide,"Cleanup, Grease, Smoke, and Odor-Control Guide",cleanup-grease-smoke-and-odor-control,/guides/cleanup-grease-smoke-and-odor-control/,https://kbbqguide.com/guides/cleanup-grease-smoke-and-odor-control/,locked,true
+G12,guide,"Leftovers, Storage, and Next-Day Meals Guide",leftovers-storage-and-next-day-meals,/guides/leftovers-storage-and-next-day-meals/,https://kbbqguide.com/guides/leftovers-storage-and-next-day-meals/,locked,true
+SYS_MENUS,system,Menus,menus,/menus/,https://kbbqguide.com/menus/,locked,true
+SYS_SHOP,system,Shop,shop,/shop/,https://kbbqguide.com/shop/,locked,true
+SYS_VIDEOS,system,Videos,videos,/videos/,https://kbbqguide.com/videos/,locked,true
+SYS_ABOUT,system,About,about,/about/,https://kbbqguide.com/about/,locked,true
+SYS_CONTACT,system,Contact,contact,/contact/,https://kbbqguide.com/contact/,locked,true
+SYS_NEWSLETTER,system,Newsletter,newsletter,/newsletter/,https://kbbqguide.com/newsletter/,locked,true
+POL_AFFILIATE,policy,Affiliate Disclosure,affiliate-disclosure,/affiliate-disclosure/,https://kbbqguide.com/affiliate-disclosure/,locked,true
+POL_SPONSORED,policy,Sponsored Content Policy,sponsored-content-policy,/sponsored-content-policy/,https://kbbqguide.com/sponsored-content-policy/,locked,true
+POL_EDITORIAL,policy,Editorial Policy,editorial-policy,/editorial-policy/,https://kbbqguide.com/editorial-policy/,locked,true
+POL_TESTING,policy,Recipe Testing Policy,recipe-testing-policy,/recipe-testing-policy/,https://kbbqguide.com/recipe-testing-policy/,locked,true
+POL_PRIVACY,policy,Privacy,privacy,/privacy/,https://kbbqguide.com/privacy/,locked,true
+POL_TERMS,policy,Terms,terms,/terms/,https://kbbqguide.com/terms/,locked,true
+POL_ACCESSIBILITY,policy,Accessibility,accessibility,/accessibility/,https://kbbqguide.com/accessibility/,locked,true
+POL_COOKIE,policy,Cookie Preferences,cookie-preferences,/cookie-preferences/,https://kbbqguide.com/cookie-preferences/,locked,false
+MENU_2,system,Korean BBQ Menu for 2,2-guests,/menus/2-guests/,https://kbbqguide.com/menus/2-guests/,locked,true
+MENU_4,system,Korean BBQ Menu for 4,4-guests,/menus/4-guests/,https://kbbqguide.com/menus/4-guests/,locked,true
+MENU_8,system,Korean BBQ Menu for 8,8-guests,/menus/8-guests/,https://kbbqguide.com/menus/8-guests/,locked,true
+SYS_TOOLS,system,Planning Tools,tools,/tools/,https://kbbqguide.com/tools/,locked,true
+SYS_SITEMAP,system,HTML Sitemap,sitemap,/sitemap/,https://kbbqguide.com/sitemap/,locked,false
+SYS_CLASS,system,Live Class,live-class,/live-class/,https://kbbqguide.com/live-class/,locked,true
+SYS_MEDIA_KIT,system,Sponsorship and Media Kit,media-kit,/media-kit/,https://kbbqguide.com/media-kit/,locked,true
+SYS_LICENSING,system,UGC and Licensing Inquiry,licensing-inquiry,/licensing-inquiry/,https://kbbqguide.com/licensing-inquiry/,locked,true
+SYS_PARTNERSHIPS,system,Brand Partnership Intake,brand-partnerships,/brand-partnerships/,https://kbbqguide.com/brand-partnerships/,locked,true
+M01,recipe,Classic Korean Pear Beef Bulgogi,classic-korean-pear-beef-bulgogi,/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/,https://kbbqguide.com/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/,locked,false
+M02,recipe,Mushroom-Soy Beef Bulgogi,mushroom-soy-beef-bulgogi,/recipes/grilled-meat/mushroom-soy-beef-bulgogi/,https://kbbqguide.com/recipes/grilled-meat/mushroom-soy-beef-bulgogi/,locked,false
+M03,recipe,LA-Style Galbi,la-style-galbi,/recipes/grilled-meat/la-style-galbi/,https://kbbqguide.com/recipes/grilled-meat/la-style-galbi/,locked,false
+M04,recipe,Spicy Gochujang Galbi,spicy-gochujang-galbi,/recipes/grilled-meat/spicy-gochujang-galbi/,https://kbbqguide.com/recipes/grilled-meat/spicy-gochujang-galbi/,locked,false
+M05,recipe,Garlic-Sesame Galbisal,garlic-sesame-galbisal,/recipes/grilled-meat/garlic-sesame-galbisal/,https://kbbqguide.com/recipes/grilled-meat/garlic-sesame-galbisal/,locked,false
+M06,recipe,Jumulleok Sesame-Garlic Steak Bites,jumulleok-sesame-garlic-steak-bites,/recipes/grilled-meat/jumulleok-sesame-garlic-steak-bites/,https://kbbqguide.com/recipes/grilled-meat/jumulleok-sesame-garlic-steak-bites/,locked,false
+M07,recipe,Chadolbaegi with Scallion-Soy Dipping Sauce,chadolbaegi-with-scallion-soy-dipping-sauce,/recipes/grilled-meat/chadolbaegi-with-scallion-soy-dipping-sauce/,https://kbbqguide.com/recipes/grilled-meat/chadolbaegi-with-scallion-soy-dipping-sauce/,locked,false
+M08,recipe,Neobiani Royal-Style Grilled Beef,neobiani-royal-style-grilled-beef,/recipes/grilled-meat/neobiani-royal-style-grilled-beef/,https://kbbqguide.com/recipes/grilled-meat/neobiani-royal-style-grilled-beef/,locked,false
+M09,recipe,Tteokgalbi Grilled Beef-and-Pork Patties,tteokgalbi-grilled-beef-and-pork-patties,/recipes/grilled-meat/tteokgalbi-grilled-beef-and-pork-patties/,https://kbbqguide.com/recipes/grilled-meat/tteokgalbi-grilled-beef-and-pork-patties/,locked,false
+M10,recipe,Classic Samgyeopsal with Sesame-Salt Seasoning,classic-samgyeopsal-with-sesame-salt-seasoning,/recipes/grilled-meat/classic-samgyeopsal-with-sesame-salt-seasoning/,https://kbbqguide.com/recipes/grilled-meat/classic-samgyeopsal-with-sesame-salt-seasoning/,locked,false
+M11,recipe,Gochujang Samgyeopsal,gochujang-samgyeopsal,/recipes/grilled-meat/gochujang-samgyeopsal/,https://kbbqguide.com/recipes/grilled-meat/gochujang-samgyeopsal/,locked,false
+M12,recipe,Doenjang-Garlic Moksal Gui,doenjang-garlic-moksal-gui,/recipes/grilled-meat/doenjang-garlic-moksal-gui/,https://kbbqguide.com/recipes/grilled-meat/doenjang-garlic-moksal-gui/,locked,false
+M13,recipe,Spicy Dwaeji Bulgogi,spicy-dwaeji-bulgogi,/recipes/grilled-meat/spicy-dwaeji-bulgogi/,https://kbbqguide.com/recipes/grilled-meat/spicy-dwaeji-bulgogi/,locked,false
+M14,recipe,Ganjang Pork Bulgogi,ganjang-pork-bulgogi,/recipes/grilled-meat/ganjang-pork-bulgogi/,https://kbbqguide.com/recipes/grilled-meat/ganjang-pork-bulgogi/,locked,false
+M15,recipe,Korean-Style Gochujang Grilled Pork Ribs,korean-style-gochujang-grilled-pork-ribs,/recipes/grilled-meat/korean-style-gochujang-grilled-pork-ribs/,https://kbbqguide.com/recipes/grilled-meat/korean-style-gochujang-grilled-pork-ribs/,locked,false
+M16,recipe,Soy-Pear Dak Bulgogi,soy-pear-dak-bulgogi,/recipes/grilled-meat/soy-pear-dak-bulgogi/,https://kbbqguide.com/recipes/grilled-meat/soy-pear-dak-bulgogi/,locked,false
+M17,recipe,Spicy Gochujang Grilled Chicken Thighs,spicy-gochujang-grilled-chicken-thighs,/recipes/grilled-meat/spicy-gochujang-grilled-chicken-thighs/,https://kbbqguide.com/recipes/grilled-meat/spicy-gochujang-grilled-chicken-thighs/,locked,false
+M18,recipe,Garlic-Scallion Chicken Skewers,garlic-scallion-chicken-skewers,/recipes/grilled-meat/garlic-scallion-chicken-skewers/,https://kbbqguide.com/recipes/grilled-meat/garlic-scallion-chicken-skewers/,locked,false
+M19,recipe,Korean-Style Grilled Duck Breast,korean-style-grilled-duck-breast,/recipes/grilled-meat/korean-style-grilled-duck-breast/,https://kbbqguide.com/recipes/grilled-meat/korean-style-grilled-duck-breast/,locked,false
+M20,recipe,Contemporary Doenjang-Gochujang Lamb Shoulder,contemporary-doenjang-gochujang-lamb-shoulder,/recipes/grilled-meat/contemporary-doenjang-gochujang-lamb-shoulder/,https://kbbqguide.com/recipes/grilled-meat/contemporary-doenjang-gochujang-lamb-shoulder/,locked,false
+SF01,recipe,Gochujang Grilled Shrimp,gochujang-grilled-shrimp,/recipes/seafood/gochujang-grilled-shrimp/,https://kbbqguide.com/recipes/seafood/gochujang-grilled-shrimp/,locked,false
+SF02,recipe,Soy-Garlic Grilled Shrimp,soy-garlic-grilled-shrimp,/recipes/seafood/soy-garlic-grilled-shrimp/,https://kbbqguide.com/recipes/seafood/soy-garlic-grilled-shrimp/,locked,false
+SF03,recipe,Doenjang-Butter Grilled Scallops,doenjang-butter-grilled-scallops,/recipes/seafood/doenjang-butter-grilled-scallops/,https://kbbqguide.com/recipes/seafood/doenjang-butter-grilled-scallops/,locked,false
+SF04,recipe,Ojingeo Gui Spicy Grilled Squid,ojingeo-gui-spicy-grilled-squid,/recipes/seafood/ojingeo-gui-spicy-grilled-squid/,https://kbbqguide.com/recipes/seafood/ojingeo-gui-spicy-grilled-squid/,locked,false
+SF05,recipe,Spicy Grilled Nakji Octopus,spicy-grilled-nakji-octopus,/recipes/seafood/spicy-grilled-nakji-octopus/,https://kbbqguide.com/recipes/seafood/spicy-grilled-nakji-octopus/,locked,false
+SF06,recipe,Jjukkumi Gui Grilled Baby Octopus,jjukkumi-gui-grilled-baby-octopus,/recipes/seafood/jjukkumi-gui-grilled-baby-octopus/,https://kbbqguide.com/recipes/seafood/jjukkumi-gui-grilled-baby-octopus/,locked,false
+SF07,recipe,Godeungeo Gui Grilled Mackerel,godeungeo-gui-grilled-mackerel,/recipes/seafood/godeungeo-gui-grilled-mackerel/,https://kbbqguide.com/recipes/seafood/godeungeo-gui-grilled-mackerel/,locked,false
+SF08,recipe,Galchi Gui Grilled Hairtail,galchi-gui-grilled-hairtail,/recipes/seafood/galchi-gui-grilled-hairtail/,https://kbbqguide.com/recipes/seafood/galchi-gui-grilled-hairtail/,locked,false
+SF09,recipe,Jogi Gui Grilled Yellow Croaker,jogi-gui-grilled-yellow-croaker,/recipes/seafood/jogi-gui-grilled-yellow-croaker/,https://kbbqguide.com/recipes/seafood/jogi-gui-grilled-yellow-croaker/,locked,false
+SF10,recipe,Gochujang-Glazed Grilled Salmon,gochujang-glazed-grilled-salmon,/recipes/seafood/gochujang-glazed-grilled-salmon/,https://kbbqguide.com/recipes/seafood/gochujang-glazed-grilled-salmon/,locked,false
+SF11,recipe,Doenjang-Glazed Grilled Black Cod,doenjang-glazed-grilled-black-cod,/recipes/seafood/doenjang-glazed-grilled-black-cod/,https://kbbqguide.com/recipes/seafood/doenjang-glazed-grilled-black-cod/,locked,false
+SF12,recipe,Scallion-Gochujang Grilled Oysters,scallion-gochujang-grilled-oysters,/recipes/seafood/scallion-gochujang-grilled-oysters/,https://kbbqguide.com/recipes/seafood/scallion-gochujang-grilled-oysters/,locked,false
+SF13,recipe,Garlic-Scallion Grilled Mussels,garlic-scallion-grilled-mussels,/recipes/seafood/garlic-scallion-grilled-mussels/,https://kbbqguide.com/recipes/seafood/garlic-scallion-grilled-mussels/,locked,false
+SF14,recipe,Jeonbok Gui Grilled Abalone,jeonbok-gui-grilled-abalone,/recipes/seafood/jeonbok-gui-grilled-abalone/,https://kbbqguide.com/recipes/seafood/jeonbok-gui-grilled-abalone/,locked,false
+SF15,recipe,Jogae Gui Grilled Clams,jogae-gui-grilled-clams,/recipes/seafood/jogae-gui-grilled-clams/,https://kbbqguide.com/recipes/seafood/jogae-gui-grilled-clams/,locked,false
+B01,recipe,Baechu Kimchi,baechu-kimchi,/recipes/banchan/baechu-kimchi/,https://kbbqguide.com/recipes/banchan/baechu-kimchi/,locked,false
+B02,recipe,Kkakdugi Radish Kimchi,kkakdugi-radish-kimchi,/recipes/banchan/kkakdugi-radish-kimchi/,https://kbbqguide.com/recipes/banchan/kkakdugi-radish-kimchi/,locked,false
+B03,recipe,Oi Sobagi Cucumber Kimchi,oi-sobagi-cucumber-kimchi,/recipes/banchan/oi-sobagi-cucumber-kimchi/,https://kbbqguide.com/recipes/banchan/oi-sobagi-cucumber-kimchi/,locked,false
+B04,recipe,Baechu Geotjeori Fresh Kimchi,baechu-geotjeori-fresh-kimchi,/recipes/banchan/baechu-geotjeori-fresh-kimchi/,https://kbbqguide.com/recipes/banchan/baechu-geotjeori-fresh-kimchi/,locked,false
+B05,recipe,Kongnamul Muchim Seasoned Soybean Sprouts,kongnamul-muchim-seasoned-soybean-sprouts,/recipes/banchan/kongnamul-muchim-seasoned-soybean-sprouts/,https://kbbqguide.com/recipes/banchan/kongnamul-muchim-seasoned-soybean-sprouts/,locked,false
+B06,recipe,Sigeumchi Namul Seasoned Spinach,sigeumchi-namul-seasoned-spinach,/recipes/banchan/sigeumchi-namul-seasoned-spinach/,https://kbbqguide.com/recipes/banchan/sigeumchi-namul-seasoned-spinach/,locked,false
+B07,recipe,Oi Muchim Spicy Cucumber Banchan,oi-muchim-spicy-cucumber-banchan,/recipes/banchan/oi-muchim-spicy-cucumber-banchan/,https://kbbqguide.com/recipes/banchan/oi-muchim-spicy-cucumber-banchan/,locked,false
+B08,recipe,Musaengchae Spicy Radish Salad,musaengchae-spicy-radish-salad,/recipes/banchan/musaengchae-spicy-radish-salad/,https://kbbqguide.com/recipes/banchan/musaengchae-spicy-radish-salad/,locked,false
+B09,recipe,Gamja Jorim Soy-Braised Potatoes,gamja-jorim-soy-braised-potatoes,/recipes/banchan/gamja-jorim-soy-braised-potatoes/,https://kbbqguide.com/recipes/banchan/gamja-jorim-soy-braised-potatoes/,locked,false
+B10,recipe,Dubu Jorim Braised Tofu,dubu-jorim-braised-tofu,/recipes/banchan/dubu-jorim-braised-tofu/,https://kbbqguide.com/recipes/banchan/dubu-jorim-braised-tofu/,locked,false
+B11,recipe,Gyeran Mari Rolled Omelet,gyeran-mari-rolled-omelet,/recipes/banchan/gyeran-mari-rolled-omelet/,https://kbbqguide.com/recipes/banchan/gyeran-mari-rolled-omelet/,locked,false
+B12,recipe,Gyeran Jjim Steamed Eggs,gyeran-jjim-steamed-eggs,/recipes/banchan/gyeran-jjim-steamed-eggs/,https://kbbqguide.com/recipes/banchan/gyeran-jjim-steamed-eggs/,locked,false
+B13,recipe,Eomuk Bokkeum Stir-Fried Fish Cake,eomuk-bokkeum-stir-fried-fish-cake,/recipes/banchan/eomuk-bokkeum-stir-fried-fish-cake/,https://kbbqguide.com/recipes/banchan/eomuk-bokkeum-stir-fried-fish-cake/,locked,false
+B14,recipe,Myeolchi Bokkeum Stir-Fried Anchovies,myeolchi-bokkeum-stir-fried-anchovies,/recipes/banchan/myeolchi-bokkeum-stir-fried-anchovies/,https://kbbqguide.com/recipes/banchan/myeolchi-bokkeum-stir-fried-anchovies/,locked,false
+B15,recipe,Hobak Bokkeum Stir-Fried Zucchini,hobak-bokkeum-stir-fried-zucchini,/recipes/banchan/hobak-bokkeum-stir-fried-zucchini/,https://kbbqguide.com/recipes/banchan/hobak-bokkeum-stir-fried-zucchini/,locked,false
+B16,recipe,Gosari Namul Seasoned Fernbrake,gosari-namul-seasoned-fernbrake,/recipes/banchan/gosari-namul-seasoned-fernbrake/,https://kbbqguide.com/recipes/banchan/gosari-namul-seasoned-fernbrake/,locked,false
+B17,recipe,Doraji Muchim Spicy Bellflower Root,doraji-muchim-spicy-bellflower-root,/recipes/banchan/doraji-muchim-spicy-bellflower-root/,https://kbbqguide.com/recipes/banchan/doraji-muchim-spicy-bellflower-root/,locked,false
+B18,recipe,Yeongeun Jorim Soy-Braised Lotus Root,yeongeun-jorim-soy-braised-lotus-root,/recipes/banchan/yeongeun-jorim-soy-braised-lotus-root/,https://kbbqguide.com/recipes/banchan/yeongeun-jorim-soy-braised-lotus-root/,locked,false
+B19,recipe,Mechurial Jangjorim Soy-Braised Quail Eggs,mechurial-jangjorim-soy-braised-quail-eggs,/recipes/banchan/mechurial-jangjorim-soy-braised-quail-eggs/,https://kbbqguide.com/recipes/banchan/mechurial-jangjorim-soy-braised-quail-eggs/,locked,false
+B20,recipe,Jangjorim Soy-Braised Beef,jangjorim-soy-braised-beef,/recipes/banchan/jangjorim-soy-braised-beef/,https://kbbqguide.com/recipes/banchan/jangjorim-soy-braised-beef/,locked,false
+B21,recipe,Korean Potato Salad,korean-potato-salad,/recipes/banchan/korean-potato-salad/,https://kbbqguide.com/recipes/banchan/korean-potato-salad/,locked,false
+B22,recipe,Korean BBQ Restaurant-Style Macaroni Salad,korean-bbq-restaurant-style-macaroni-salad,/recipes/banchan/korean-bbq-restaurant-style-macaroni-salad/,https://kbbqguide.com/recipes/banchan/korean-bbq-restaurant-style-macaroni-salad/,locked,false
+B23,recipe,Maneul Jangajji Soy-Pickled Garlic,maneul-jangajji-soy-pickled-garlic,/recipes/banchan/maneul-jangajji-soy-pickled-garlic/,https://kbbqguide.com/recipes/banchan/maneul-jangajji-soy-pickled-garlic/,locked,false
+B24,recipe,Kkaennip Jangajji Pickled Perilla Leaves,kkaennip-jangajji-pickled-perilla-leaves,/recipes/banchan/kkaennip-jangajji-pickled-perilla-leaves/,https://kbbqguide.com/recipes/banchan/kkaennip-jangajji-pickled-perilla-leaves/,locked,false
+B25,recipe,Gim Muchim Seasoned Seaweed,gim-muchim-seasoned-seaweed,/recipes/banchan/gim-muchim-seasoned-seaweed/,https://kbbqguide.com/recipes/banchan/gim-muchim-seasoned-seaweed/,locked,false
+F01,recipe,Ssam Lettuce and Herb Platter,ssam-lettuce-and-herb-platter,/recipes/fresh/ssam-lettuce-and-herb-platter/,https://kbbqguide.com/recipes/fresh/ssam-lettuce-and-herb-platter/,locked,false
+F02,recipe,Pajeori Korean Scallion Salad,pajeori-korean-scallion-salad,/recipes/fresh/pajeori-korean-scallion-salad/,https://kbbqguide.com/recipes/fresh/pajeori-korean-scallion-salad/,locked,false
+F03,recipe,Sangchu Geotjeori Fresh Lettuce Salad,sangchu-geotjeori-fresh-lettuce-salad,/recipes/fresh/sangchu-geotjeori-fresh-lettuce-salad/,https://kbbqguide.com/recipes/fresh/sangchu-geotjeori-fresh-lettuce-salad/,locked,false
+F04,recipe,Minari Muchim Water Parsley Salad,minari-muchim-water-parsley-salad,/recipes/fresh/minari-muchim-water-parsley-salad/,https://kbbqguide.com/recipes/fresh/minari-muchim-water-parsley-salad/,locked,false
+F05,recipe,Gochugaru-Yuja Cabbage Slaw,gochugaru-yuja-cabbage-slaw,/recipes/fresh/gochugaru-yuja-cabbage-slaw/,https://kbbqguide.com/recipes/fresh/gochugaru-yuja-cabbage-slaw/,locked,false
+F06,recipe,Asian Pear and Cucumber Salad,asian-pear-and-cucumber-salad,/recipes/fresh/asian-pear-and-cucumber-salad/,https://kbbqguide.com/recipes/fresh/asian-pear-and-cucumber-salad/,locked,false
+F07,recipe,Tomato-Onion Sesame Salad,tomato-onion-sesame-salad,/recipes/fresh/tomato-onion-sesame-salad/,https://kbbqguide.com/recipes/fresh/tomato-onion-sesame-salad/,locked,false
+F08,recipe,Radish Sprout and Perilla Salad,radish-sprout-and-perilla-salad,/recipes/fresh/radish-sprout-and-perilla-salad/,https://kbbqguide.com/recipes/fresh/radish-sprout-and-perilla-salad/,locked,false
+F09,recipe,Watercress-Apple Yuja Salad,watercress-apple-yuja-salad,/recipes/fresh/watercress-apple-yuja-salad/,https://kbbqguide.com/recipes/fresh/watercress-apple-yuja-salad/,locked,false
+F10,recipe,Contemporary Sesame Broccoli and Bell Pepper Salad,contemporary-sesame-broccoli-and-bell-pepper-salad,/recipes/fresh/contemporary-sesame-broccoli-and-bell-pepper-salad/,https://kbbqguide.com/recipes/fresh/contemporary-sesame-broccoli-and-bell-pepper-salad/,locked,false
+SA01,recipe,Classic Ssamjang,classic-ssamjang,/recipes/sauces/classic-ssamjang/,https://kbbqguide.com/recipes/sauces/classic-ssamjang/,locked,false
+SA02,recipe,Gireumjang Sesame-Oil Salt Dip,gireumjang-sesame-oil-salt-dip,/recipes/sauces/gireumjang-sesame-oil-salt-dip/,https://kbbqguide.com/recipes/sauces/gireumjang-sesame-oil-salt-dip/,locked,false
+SA03,recipe,Cho-Gochujang Sweet-Tangy Chili Sauce,cho-gochujang-sweet-tangy-chili-sauce,/recipes/sauces/cho-gochujang-sweet-tangy-chili-sauce/,https://kbbqguide.com/recipes/sauces/cho-gochujang-sweet-tangy-chili-sauce/,locked,false
+SA04,recipe,Yangnyeom Ganjang Scallion-Soy Dipping Sauce,yangnyeom-ganjang-scallion-soy-dipping-sauce,/recipes/sauces/yangnyeom-ganjang-scallion-soy-dipping-sauce/,https://kbbqguide.com/recipes/sauces/yangnyeom-ganjang-scallion-soy-dipping-sauce/,locked,false
+SA05,recipe,Korean BBQ Onion Soy-Vinegar Dipping Sauce,korean-bbq-onion-soy-vinegar-dipping-sauce,/recipes/sauces/korean-bbq-onion-soy-vinegar-dipping-sauce/,https://kbbqguide.com/recipes/sauces/korean-bbq-onion-soy-vinegar-dipping-sauce/,locked,false
+D01,recipe,Hotteok Brown-Sugar Seed Pancakes,hotteok-brown-sugar-seed-pancakes,/recipes/desserts/hotteok-brown-sugar-seed-pancakes/,https://kbbqguide.com/recipes/desserts/hotteok-brown-sugar-seed-pancakes/,locked,false
+D02,recipe,Patbingsu Red-Bean Shaved Ice,patbingsu-red-bean-shaved-ice,/recipes/desserts/patbingsu-red-bean-shaved-ice/,https://kbbqguide.com/recipes/desserts/patbingsu-red-bean-shaved-ice/,locked,false
+D03,recipe,Yakgwa Honey-Ginger Cookies,yakgwa-honey-ginger-cookies,/recipes/desserts/yakgwa-honey-ginger-cookies/,https://kbbqguide.com/recipes/desserts/yakgwa-honey-ginger-cookies/,locked,false
+D04,recipe,Injeolmi Toast with Ice Cream,injeolmi-toast-with-ice-cream,/recipes/desserts/injeolmi-toast-with-ice-cream/,https://kbbqguide.com/recipes/desserts/injeolmi-toast-with-ice-cream/,locked,false
+D05,recipe,Sikhye Sweet Rice Punch,sikhye-sweet-rice-punch,/recipes/desserts/sikhye-sweet-rice-punch/,https://kbbqguide.com/recipes/desserts/sikhye-sweet-rice-punch/,locked,false

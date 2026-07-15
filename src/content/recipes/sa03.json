@@ -1,0 +1,256 @@
+{
+  "contentStatus": "complete",
+  "id": "SA03",
+  "title": "Cho-Gochujang Sweet-Tangy Chili Sauce",
+  "koreanName": "Cho-Gochujang",
+  "hangul": "초고추장",
+  "romanization": "cho-gochujang",
+  "category": "sauces",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 26,
+  "canonicalSlug": "cho-gochujang-sweet-tangy-chili-sauce",
+  "canonicalUrl": "https://kbbqguide.com/recipes/sauces/cho-gochujang-sweet-tangy-chili-sauce/",
+  "shortDescription": "Gochujang is loosened with rice vinegar and rice syrup, then balanced with sugar, garlic, and sesame seeds for a glossy sweet-tart dipping and dressing sauce.",
+  "culturalContext": "Cho-gochujang, often shortened to chogochujang, is a vinegar-brightened gochujang sauce served with foods including seafood and vegetables. Sweetness, acidity, garlic, and sesame vary; this draft is one practical ratio awaiting Korean review.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 16,
+  "servingUnit": "tablespoons",
+  "prepTime": { "minutes": 10, "display": "10 minutes" },
+  "marinateTime": { "minutes": 0, "display": "No marination" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 20, "display": "20 minutes chilled rest" },
+  "totalTime": { "minutes": 30, "display": "30 minutes" },
+  "equipment": [
+    "Small digital scale or measuring cups",
+    "Medium clean mixing bowl",
+    "Whisk",
+    "Clean glass refrigerator container",
+    "Individual sauce dishes"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "vinegar-chile-sauce",
+      "heading": "Sweet-tangy gochujang sauce",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "Korean gochujang",
+          "metricAmount": 120,
+          "metricUnit": "g",
+          "customaryAmount": 0.5,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "often wheat/gluten; check label"]
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": 0.25,
+          "customaryUnit": "cup",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-syrup",
+          "item": "Korean rice syrup",
+          "metricAmount": 45,
+          "metricUnit": "ml",
+          "customaryAmount": 3,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 3,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "clove",
+          "preparation": "finely grated",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": true,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Check labels",
+      "action": "Read the gochujang, vinegar, and rice-syrup labels for soy, wheat/gluten, alcohol, sesame, and other declared allergens.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Products are within date, properly stored, and match the intended unseasoned vinegar and plain rice syrup.",
+      "safetyNote": "Gochujang formulations vary; never infer gluten-free or alcohol-free status from the product name alone.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Loosen the gochujang",
+      "action": "Whisk gochujang with half the vinegar until smooth before adding the remaining vinegar.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "No dense paste pockets remain and the sauce flows slowly from the whisk.",
+      "safetyNote": "Use a clean bowl and whisk for this ready-to-eat sauce.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Sweeten",
+      "action": "Whisk in rice syrup and sugar until the sugar is fully dissolved.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Sauce is glossy with no gritty sugar at the bottom.",
+      "safetyNote": "Do not taste with a utensil that will return to the master batch.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Finish",
+      "action": "Stir in optional grated garlic and sesame seeds. Adjust consistency only after the test kitchen evaluates the locked ratio.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The sauce is pourable but thick enough to coat a spoon.",
+      "safetyNote": "Declare soy, possible wheat/gluten and alcohol, and optional sesame allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Rest cold",
+      "action": "Transfer to a clean covered glass container and refrigerate for 20 minutes.",
+      "estimatedTime": "20 minutes",
+      "temperature": "At or below 40°F / 4°C",
+      "visualOrTactileCue": "Sauce remains smooth and cohesive after chilling.",
+      "safetyNote": "Refrigerate promptly, especially when fresh garlic is included.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Portion for service",
+      "action": "Spoon into individual dishes and keep the master container refrigerated, replenishing only with a clean spoon.",
+      "estimatedTime": "Immediate",
+      "temperature": "Cold or cool",
+      "visualOrTactileCue": "Table portions are shallow and the stored batch remains untouched.",
+      "safetyNote": "Discard any portion contacted by raw seafood, raw meat, or used eating utensils.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "No grill is used to make the sauce; position individual dishes outside the raw-food and heat zones and keep the master batch refrigerated.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Gochujang is fully dispersed",
+    "Sugar is dissolved",
+    "Sauce is glossy, pourable, and thick enough to coat a spoon"
+  ],
+  "foodSafetyNotes": [
+    "Check packaged ingredients for soy, wheat/gluten, alcohol, and sesame.",
+    "Use clean tools and avoid double-dipping into the master batch.",
+    "Refrigerate at or below 40°F / 4°C, particularly when garlic is included.",
+    "Use individual dishes to control raw-seafood and raw-meat cross-contact.",
+    "Discard contaminated or temperature-abused table portions."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": true,
+    "crossContactWarning": "Contains soy and may contain wheat/gluten or alcohol; optional sesame adds another major allergen. Verify labels and portion separately from raw seafood."
+  },
+  "substitutions": [
+    "Use only a verified gluten-free gochujang for a gluten-free adaptation.",
+    "Corn syrup may replace rice syrup at equal volume after taste testing.",
+    "Omit sesame seeds for a sesame-free version only after checking gochujang cross-contact."
+  ],
+  "ingredientSourcing": [
+    "Choose gochujang after comparing heat, sweetness, sodium, and allergen labels.",
+    "Use unseasoned rice vinegar so the recipe controls salt and sugar."
+  ],
+  "makeAhead": "Make up to 1 day ahead and refrigerate; whisk before portioning.",
+  "storage": "Refrigerate in a clean airtight container at or below 40°F / 4°C and use within 7 days; this conservative draft limit requires food-safety review.",
+  "reheating": "Do not heat; serve cold or cool.",
+  "leftovers": "Save only untouched sauce from the clean master container; discard all individual table portions after service.",
+  "servingSuggestions": [
+    "Serve with chilled cooked seafood or blanched vegetables",
+    "Use sparingly as a sweet-tangy dressing"
+  ],
+  "menuPairings": ["M17", "SF10", "B14", "F05"],
+  "relatedRecipeIds": ["SA02", "SA04"],
+  "faq": [
+    {
+      "question": "What does cho add to gochujang?",
+      "answer": "The vinegar component brightens and loosens the fermented chile paste, creating a tangy dipping consistency."
+    },
+    {
+      "question": "Can the sauce touch raw seafood?",
+      "answer": "Only a separate disposable portion should contact raw food; never return it to the refrigerated master batch."
+    }
+  ],
+  "seoTitle": "Cho-Gochujang Sweet-Tangy Korean Chili Sauce",
+  "metaDescription": "Make glossy cho-gochujang with gochujang, rice vinegar, rice syrup, and optional garlic and sesame, with label and cross-contact controls.",
+  "primaryKeyword": "cho-gochujang sauce",
+  "secondaryTopics": [
+    "Korean vinegar chili sauce",
+    "chogochujang",
+    "Korean seafood dipping sauce"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "allergen label checks",
+    "recipe card",
+    "cross-contact notes"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Method and naming comparison: https://www.koreanbapsang.com/cho-gochujang-korean-red-chili-pepper-sauce-with-vinegar/ (direct retrieval unavailable during drafting; URL retained for human verification).",
+    "Current cross-contamination and refrigeration framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
+    "Draft synthesized for the locked title; not test-cooked. Korean-language, cultural, brand-allergen, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

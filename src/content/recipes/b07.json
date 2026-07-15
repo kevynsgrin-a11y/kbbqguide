@@ -1,0 +1,305 @@
+{
+  "contentStatus": "complete",
+  "id": "B07",
+  "title": "Oi Muchim Spicy Cucumber Banchan",
+  "koreanName": "Oi Muchim",
+  "hangul": "오이무침",
+  "romanization": "oi muchim",
+  "category": "banchan",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 18,
+  "canonicalSlug": "oi-muchim-spicy-cucumber-banchan",
+  "canonicalUrl": "https://kbbqguide.com/recipes/banchan/oi-muchim-spicy-cucumber-banchan/",
+  "shortDescription": "Crisp cucumber is salted briefly and tossed with gochugaru, rice vinegar, soy sauce, garlic, scallion, sesame oil, and sesame seeds just before serving.",
+  "culturalContext": "Oi muchim is a quickly seasoned Korean cucumber banchan rather than a stuffed kimchi. The balance of chile, tang, sweetness, and sesame differs by household and by what accompanies it; this draft favors a bright, lightly sweet profile.",
+  "adaptationLabel": "classic",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "side-dish servings",
+  "prepTime": { "minutes": 15, "display": "15 minutes" },
+  "marinateTime": { "minutes": 10, "display": "10 minutes salting" },
+  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "restTime": { "minutes": 5, "display": "5 minutes draining" },
+  "totalTime": { "minutes": 30, "display": "30 minutes" },
+  "equipment": [
+    "Chef’s knife and cutting board",
+    "Colander",
+    "Medium nonreactive mixing bowl",
+    "Clean serving dish"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "cucumber-salad",
+      "heading": "Cucumber and spicy dressing",
+      "ingredients": [
+        {
+          "id": "cucumbers",
+          "item": "Korean, Persian, or small pickling cucumbers",
+          "metricAmount": 500,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "pound",
+          "preparation": "sliced 6 mm / 1/4 inch thick",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "kosher-salt",
+          "item": "kosher salt",
+          "metricAmount": 8,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "yellow onion",
+          "metricAmount": 50,
+          "metricUnit": "g",
+          "customaryAmount": 0.33,
+          "customaryUnit": "cup",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "Korean gochugaru",
+          "metricAmount": 10,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "unseasoned rice vinegar",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 15,
+          "metricUnit": "ml",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 12,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 10,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 6,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": null,
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Wash and slice",
+      "action": "Wash and dry cucumbers, trim the ends, and slice evenly. Thinly slice the onion and scallions with clean tools.",
+      "estimatedTime": "10 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Cucumber slices are crisp and evenly thick with no soft spots.",
+      "safetyNote": "Wash produce under cool running water and use a clean board.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Salt briefly",
+      "action": "Toss cucumber with salt and rest 10 minutes.",
+      "estimatedTime": "10 minutes",
+      "temperature": "Cool room temperature",
+      "visualOrTactileCue": "Moisture beads on the slices but they remain rigid and crisp.",
+      "safetyNote": "Keep the bowl away from raw meat and seafood preparation areas.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Drain",
+      "action": "Drain in a clean colander for 5 minutes and blot gently; do not squeeze or rinse.",
+      "estimatedTime": "5 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Slices are moist but no liquid pools beneath them.",
+      "safetyNote": "Use a sanitized colander and clean towel or disposable paper towels.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Mix the dressing",
+      "action": "In a clean bowl, stir gochugaru, vinegar, soy sauce, sugar, garlic, sesame oil, and sesame seeds until the sugar begins to dissolve.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "The dressing is glossy and evenly red.",
+      "safetyNote": "Declare soy, wheat/gluten, and sesame allergens.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Toss",
+      "action": "Add cucumber, onion, and scallions and toss gently until evenly coated.",
+      "estimatedTime": "2 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Every piece is lightly coated and the cucumber edges remain crisp.",
+      "safetyNote": "Use clean utensils and a clean serving dish.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Serve immediately",
+      "action": "Transfer to a serving dish and serve at once for maximum crunch, or cover and refrigerate briefly.",
+      "estimatedTime": "Immediate",
+      "temperature": "Cool or chilled",
+      "visualOrTactileCue": "Only a small amount of dressing has collected at the bottom.",
+      "safetyNote": "Refrigerate leftovers within 2 hours at or below 40°F / 4°C.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Not applicable; this banchan does not use a grill.",
+  "targetInternalTemperature": null,
+  "visualDonenessCues": [
+    "Cucumber slices stay crisp after brief salting",
+    "Sugar is mostly dissolved in the dressing",
+    "Finished salad is glossy without excessive pooled liquid"
+  ],
+  "foodSafetyNotes": [
+    "Wash cucumbers and aromatics under cool running water before cutting.",
+    "Use clean tools, colander, bowl, and serving utensils.",
+    "Declare soy, wheat/gluten, and sesame allergens.",
+    "Serve promptly and refrigerate leftovers within 2 hours.",
+    "Discard if the cucumber becomes slimy or develops an off odor."
+  ],
+  "allergens": {
+    "soy": true,
+    "wheatGluten": true,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Contains soy, wheat/gluten, and sesame; verify soy sauce and gochugaru labels and prevent shared-utensil cross-contact."
+  },
+  "substitutions": [
+    "Use certified gluten-free tamari only after verifying the label.",
+    "Persian or small pickling cucumbers can replace Korean cucumbers; avoid waxed slicing cucumbers."
+  ],
+  "ingredientSourcing": [
+    "Choose small, firm, unwaxed cucumbers with no wrinkling or soft spots.",
+    "Use unseasoned rice vinegar so salt and sugar remain controllable."
+  ],
+  "makeAhead": "Mix the dressing up to 1 day ahead and refrigerate; slice and season cucumbers close to serving.",
+  "storage": "Refrigerate in an airtight container and use within 2 days; texture is best immediately and the limit requires food-safety review.",
+  "reheating": "Do not reheat; serve cold or cool.",
+  "leftovers": "Drain and add properly refrigerated leftover oi muchim to a cold rice bowl within the approved storage window.",
+  "servingSuggestions": [
+    "Serve immediately with rice and grilled dishes",
+    "Spoon lightly so excess dressing remains in the serving bowl"
+  ],
+  "menuPairings": ["M02", "SF12", "F02", "SA02"],
+  "relatedRecipeIds": ["B06", "B08"],
+  "faq": [
+    {
+      "question": "Why salt the cucumber first?",
+      "answer": "A short salting draws off surface moisture and seasons the slices while preserving their crisp center."
+    },
+    {
+      "question": "Can I make oi muchim ahead?",
+      "answer": "The dressing can be made ahead, but toss it with cucumber near serving to limit watery softening."
+    }
+  ],
+  "seoTitle": "Oi Muchim Spicy Korean Cucumber Banchan",
+  "metaDescription": "Make crisp oi muchim with gochugaru, rice vinegar, soy, garlic, and sesame, including brief salting, allergen notes, and storage guidance.",
+  "primaryKeyword": "oi muchim spicy cucumber banchan",
+  "secondaryTopics": [
+    "Korean cucumber salad",
+    "spicy cucumber banchan",
+    "quick Korean side dish"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": ["recipe card", "food-safety notes", "allergen notes"],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Primary convention and seasoning reference: https://www.maangchi.com/recipe/oi-muchim",
+    "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
+    "Draft synthesized for this project; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."
+  ],
+  "seafoodPreparation": null
+}

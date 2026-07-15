@@ -1,0 +1,364 @@
+---
+import registryData from '../../data/url-registry.json';
+import type { CompleteRecipe } from '../schemas/recipe';
+import { categoryBySlug } from '../lib/categories';
+import { breadcrumbJsonLd, recipeJsonLd } from '../lib/seo';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import DraftNotice from './DraftNotice.astro';
+import MediaPlaceholder from './MediaPlaceholder.astro';
+import RecipeControls from './RecipeControls.astro';
+import RelatedContent from './RelatedContent.astro';
+import SafetyCallout from './SafetyCallout.astro';
+import VideoPlaceholder from './VideoPlaceholder.astro';
+
+interface LinkedRecipe {
+  recipe: CompleteRecipe;
+  href: string;
+}
+
+interface Props {
+  recipe: CompleteRecipe;
+  related: LinkedRecipe[];
+}
+
+const { recipe, related } = Astro.props;
+const registry = registryData as UrlRegistry;
+const category = categoryBySlug(recipe.category);
+const canonicalPath = registryPathById(registry, recipe.id);
+const structuredData = [
+  breadcrumbJsonLd([
+    { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+    { name: 'Recipes', path: registryPathById(registry, 'SYS_RECIPES') },
+    { name: category.label, path: registryPathById(registry, category.id) },
+    { name: recipe.title, path: canonicalPath },
+  ]),
+  recipeJsonLd(recipe, canonicalPath),
+];
+const truthyAllergens = Object.entries(recipe.allergens)
+  .filter(([key, value]) => key !== 'crossContactWarning' && value === true)
+  .map(
+    ([key]) =>
+      ({
+        soy: 'Soy',
+        wheatGluten: 'Wheat / gluten',
+        sesame: 'Sesame',
+        fish: 'Fish',
+        shellfish: 'Shellfish',
+        egg: 'Egg',
+        dairy: 'Dairy',
+        peanuts: 'Peanuts',
+        treeNuts: 'Tree nuts',
+        alcohol: 'Alcohol',
+      })[key],
+  )
+  .filter(Boolean);
+
+const measure = (
+  ingredient: CompleteRecipe['ingredientGroups'][number]['ingredients'][number],
+) => {
+  const metric =
+    ingredient.metricAmount && ingredient.metricUnit
+      ? `${ingredient.metricAmount} ${ingredient.metricUnit}`
+      : null;
+  const customary =
+    ingredient.customaryAmount && ingredient.customaryUnit
+      ? `${ingredient.customaryAmount} ${ingredient.customaryUnit}`
+      : null;
+  return [metric, customary].filter(Boolean).join(' / ');
+};
+---
+
+<BaseLayout
+  title={recipe.seoTitle}
+  description={recipe.metaDescription}
+  canonicalPath={canonicalPath}
+  jsonLd={structuredData}
+  pageClass={`recipe-page category-${category.accent}`}
+>
+  <header class="recipe-hero">
+    <div class="shell recipe-hero-grid">
+      <div>
+        <Breadcrumbs
+          items={[
+            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+            {
+              label: 'Recipes',
+              href: registryPathById(registry, 'SYS_RECIPES'),
+            },
+            {
+              label: category.label,
+              href: registryPathById(registry, category.id),
+            },
+            { label: recipe.title },
+          ]}
+        />
+        <p class="eyebrow">{category.label} · Draft {recipe.id}</p>
+        <h1>{recipe.title}</h1>
+        {
+          (recipe.hangul || recipe.romanization) && (
+            <p class="recipe-names">
+              {recipe.hangul && <span lang="ko">{recipe.hangul}</span>}
+              {recipe.hangul && recipe.romanization && ' · '}
+              {recipe.romanization}
+            </p>
+          )
+        }
+        <p class="lede">{recipe.shortDescription}</p>
+        <div class="badge-row" aria-label="Recipe draft status">
+          <span class="badge">{recipe.adaptationLabel}</span>
+          <span class="badge">Test cook required</span>
+          <span class="badge">Safety review required</span>
+          <span class="badge">Language review required</span>
+        </div>
+      </div>
+      <MediaPlaceholder
+        mediaId={`${recipe.id}-hero`}
+        label="Planned finished-dish hero"
+        altDraft={`Finished ${recipe.title}, plated for service with visible safe-doneness cues`}
+        ratio="4:3"
+        priority
+      />
+    </div>
+  </header>
+
+  <RecipeControls />
+
+  <section class="section" aria-labelledby="recipe-overview-title">
+    <div class="shell">
+      <h2 id="recipe-overview-title" class="reading-width">Before you cook</h2>
+      <div class="support-grid">
+        <DraftNotice />
+        <div class="support-card">
+          <h3>Context, not a claim of one canon</h3>
+          <p>{recipe.culturalContext}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tinted">
+    <div class="shell recipe-layout">
+      <aside class="recipe-sidebar" aria-labelledby="ingredients">
+        <dl class="time-grid">
+          <div><dt>Prep</dt><dd>{recipe.prepTime.display}</dd></div>
+          <div><dt>Marinate</dt><dd>{recipe.marinateTime.display}</dd></div>
+          <div><dt>Cook</dt><dd>{recipe.cookTime.display}</dd></div>
+          <div><dt>Rest</dt><dd>{recipe.restTime.display}</dd></div>
+          <div><dt>Total</dt><dd>{recipe.totalTime.display}</dd></div>
+          <div><dt>Yield</dt><dd>{recipe.yield} {recipe.servingUnit}</dd></div>
+        </dl>
+
+        <h2 id="ingredients">Ingredients</h2>
+        {
+          recipe.ingredientGroups.map((group) => (
+            <section
+              class="ingredient-group"
+              aria-labelledby={`${recipe.id}-${group.id}`}
+            >
+              <h3 id={`${recipe.id}-${group.id}`}>{group.heading}</h3>
+              <ul class="ingredient-list">
+                {group.ingredients.map((ingredient) => (
+                  <li>
+                    {measure(ingredient) && (
+                      <span class="ingredient-measure">
+                        {measure(ingredient)}{' '}
+                      </span>
+                    )}
+                    {ingredient.item}
+                    {ingredient.preparation && `, ${ingredient.preparation}`}
+                    {ingredient.optional && ' (optional)'}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))
+        }
+
+        <h2>Equipment</h2>
+        <ul class="equipment-list">
+          {recipe.equipment.map((item) => <li>{item}</li>)}
+        </ul>
+      </aside>
+
+      <div>
+        <section aria-labelledby="instructions">
+          <p class="eyebrow">
+            Use time, temperature, and sensory cues together
+          </p>
+          <h2 id="instructions">Instructions</h2>
+          <ol class="instruction-list">
+            {
+              recipe.instructions.map((instruction) => (
+                <li class="instruction-card">
+                  <h3>{instruction.heading}</h3>
+                  <p>{instruction.action}</p>
+                  <p class="step-details">
+                    {instruction.estimatedTime && (
+                      <span>Time: {instruction.estimatedTime}</span>
+                    )}
+                    {instruction.temperature && (
+                      <span>Temperature: {instruction.temperature}</span>
+                    )}
+                  </p>
+                  <p class="step-cue">
+                    <strong>Look and feel:</strong>{' '}
+                    {instruction.visualOrTactileCue}
+                  </p>
+                  {instruction.safetyNote && (
+                    <p class="step-safety">Safety: {instruction.safetyNote}</p>
+                  )}
+                </li>
+              ))
+            }
+          </ol>
+        </section>
+
+        <section id="safety" class="section" aria-label="Food safety section">
+          <SafetyCallout notes={recipe.foodSafetyNotes} />
+        </section>
+      </div>
+    </div>
+  </section>
+
+  {
+    recipe.marinadeOrSeasoning && (
+      <section class="section" aria-labelledby="marinade-title">
+        <div class="shell reading-width">
+          <p class="eyebrow">Raw-contact boundary</p>
+          <h2 id="marinade-title">Marinade and seasoning controls</h2>
+          <div class="support-grid">
+            <div class="support-card">
+              <h3>Batch and timing</h3>
+              <p>{recipe.marinadeOrSeasoning.batchYield}</p>
+              <p>{recipe.marinadeOrSeasoning.meatWeightCovered}</p>
+              <p>
+                {recipe.marinadeOrSeasoning.refrigeratedMarinationTimeRange}
+              </p>
+            </div>
+            <div class="support-card">
+              <h3>Keep service sauce clean</h3>
+              <p>
+                {recipe.marinadeOrSeasoning.reserveBeforeRawContactInstruction}
+              </p>
+              <p>
+                {
+                  recipe.marinadeOrSeasoning
+                    .rawContactDiscardOrReboilInstruction
+                }
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    recipe.seafoodPreparation && (
+      <section class="section" aria-labelledby="seafood-prep-title">
+        <div class="shell">
+          <p class="eyebrow">Species-aware preparation</p>
+          <h2 id="seafood-prep-title">Seafood handling</h2>
+          <div class="support-grid">
+            <div class="support-card">
+              <h3>Buy and prepare</h3>
+              <ul class="plain-list">
+                {recipe.seafoodPreparation.buyingCues.map((cue) => (
+                  <li>{cue}</li>
+                ))}
+              </ul>
+              <p>{recipe.seafoodPreparation.thawing}</p>
+              <p>{recipe.seafoodPreparation.cleaningOrShellPreparation}</p>
+            </div>
+            <div class="support-card">
+              <h3>Grill and verify</h3>
+              <p>{recipe.seafoodPreparation.stickingPrevention}</p>
+              <p>{recipe.seafoodPreparation.approximateTime}</p>
+              <ul class="plain-list">
+                {recipe.seafoodPreparation.donenessCues.map((cue) => (
+                  <li>{cue}</li>
+                ))}
+              </ul>
+              {recipe.seafoodPreparation.shellOpeningAndDiscardGuidance && (
+                <p class="step-safety">
+                  {recipe.seafoodPreparation.shellOpeningAndDiscardGuidance}
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <section class="section tinted" aria-labelledby="recipe-support-title">
+    <div class="shell">
+      <p class="eyebrow">Storage, sourcing, and substitutions</p>
+      <h2 id="recipe-support-title">Finish the plan</h2>
+      <div class="support-grid">
+        <section class="support-card">
+          <h3>Allergens</h3>
+          {
+            truthyAllergens.length > 0 ? (
+              <ul class="allergen-list">
+                {truthyAllergens.map((allergen) => (
+                  <li>{allergen}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>
+                No primary allergen flag is set; labels and cross-contact still
+                require checking.
+              </p>
+            )
+          }
+          <p>{recipe.allergens.crossContactWarning}</p>
+        </section>
+        <section class="support-card">
+          <h3>Make ahead and storage</h3>
+          <p><strong>Make ahead:</strong> {recipe.makeAhead}</p>
+          <p><strong>Storage:</strong> {recipe.storage}</p>
+          <p><strong>Reheating:</strong> {recipe.reheating}</p>
+          <p><strong>Leftovers:</strong> {recipe.leftovers}</p>
+        </section>
+        <section class="support-card">
+          <h3>Ingredient sourcing</h3>
+          <ul class="plain-list">
+            {recipe.ingredientSourcing.map((item) => <li>{item}</li>)}
+          </ul>
+        </section>
+        <section class="support-card">
+          <h3>Substitutions</h3>
+          <ul class="plain-list">
+            {recipe.substitutions.map((item) => <li>{item}</li>)}
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-title">
+    <div class="shell reading-width faq-list">
+      <p class="eyebrow">Questions this draft anticipates</p>
+      <h2 id="faq-title">Recipe FAQ</h2>
+      {
+        recipe.faq.map((item) => (
+          <details>
+            <summary>{item.question}</summary>
+            <p>{item.answer}</p>
+          </details>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section tinted">
+    <div class="shell">
+      <VideoPlaceholder recipeId={recipe.id} title={recipe.title} />
+    </div>
+  </section>
+
+  <RelatedContent recipes={related} />
+</BaseLayout>

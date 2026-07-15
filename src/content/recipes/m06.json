@@ -1,0 +1,382 @@
+{
+  "contentStatus": "complete",
+  "id": "M06",
+  "title": "Jumulleok Sesame-Garlic Steak Bites",
+  "koreanName": "Jumulleok",
+  "hangul": "주물럭",
+  "romanization": "jumulleok",
+  "category": "grilled-meat",
+  "releaseCohort": "initial",
+  "publicReleaseOrder": 6,
+  "canonicalSlug": "jumulleok-sesame-garlic-steak-bites",
+  "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/jumulleok-sesame-garlic-steak-bites/",
+  "shortDescription": "Tender steak pieces hand-mixed with toasted sesame oil, garlic, salt, pepper, scallions, and sesame seeds, then grilled quickly.",
+  "culturalContext": "Jumulleok is used for Korean grilled meat preparations that are hand-mixed with seasoning; beef versions may be minimally seasoned with sesame oil, salt, and pepper. This draft adds garlic and scallion as stated in the locked title and avoids a fixed historical claim.",
+  "adaptationLabel": "none",
+  "editorialStatus": "draft",
+  "testCookStatus": "required",
+  "foodSafetyReview": "required",
+  "koreanLanguageReview": "required",
+  "author": "{{LEGAL_NAME}}",
+  "reviewer": null,
+  "createdAt": "2026-07-13",
+  "updatedAt": "2026-07-14",
+  "publishedAt": null,
+  "yield": 4,
+  "servingUnit": "servings",
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 15,
+    "display": "15 to 30 minutes"
+  },
+  "cookTime": {
+    "minutes": 10,
+    "display": "8 to 10 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 43,
+    "display": "43 minutes, including minimum seasoning and rest"
+  },
+  "equipment": [
+    "Chef’s knife",
+    "Cutting board",
+    "Nonreactive mixing bowl or food-safe zip bag",
+    "Measuring cups and spoons",
+    "Outdoor grill or manufacturer-approved indoor electric tabletop grill",
+    "Long-handled tongs",
+    "Calibrated instant-read thermometer",
+    "Clean serving platter"
+  ],
+  "ingredientGroups": [
+    {
+      "id": "steak",
+      "heading": "Steak",
+      "ingredients": [
+        {
+          "id": "beef-steak",
+          "item": "well-marbled sirloin, strip steak, or ribeye",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "pounds",
+          "preparation": "cut into 3.5 cm / 1 1/2-inch pieces",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "sesame-garlic-seasoning",
+      "heading": "Sesame-garlic seasoning",
+      "ingredients": [
+        {
+          "id": "sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 30,
+          "metricUnit": "ml",
+          "customaryAmount": 2,
+          "customaryUnit": "tablespoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        },
+        {
+          "id": "garlic",
+          "item": "garlic",
+          "metricAmount": 18,
+          "metricUnit": "g",
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "finely minced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "kosher-salt",
+          "item": "kosher salt",
+          "metricAmount": 8,
+          "metricUnit": "g",
+          "customaryAmount": 1.5,
+          "customaryUnit": "teaspoons",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper",
+          "item": "coarsely ground black pepper",
+          "metricAmount": 2,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "teaspoon",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": 2,
+          "customaryUnit": "scallions",
+          "preparation": "thinly sliced",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 9,
+          "metricUnit": "g",
+          "customaryAmount": 1,
+          "customaryUnit": "tablespoon",
+          "preparation": "lightly crushed",
+          "optional": false,
+          "allergenNotes": ["sesame"]
+        }
+      ]
+    }
+  ],
+  "marinadeOrSeasoning": {
+    "type": "seasoning",
+    "ingredients": [
+      {
+        "id": "sesame-oil",
+        "item": "toasted sesame oil",
+        "metricAmount": 30,
+        "metricUnit": "ml",
+        "customaryAmount": 2,
+        "customaryUnit": "tablespoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      },
+      {
+        "id": "garlic",
+        "item": "garlic",
+        "metricAmount": 18,
+        "metricUnit": "g",
+        "customaryAmount": 6,
+        "customaryUnit": "cloves",
+        "preparation": "finely minced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "kosher-salt",
+        "item": "kosher salt",
+        "metricAmount": 8,
+        "metricUnit": "g",
+        "customaryAmount": 1.5,
+        "customaryUnit": "teaspoons",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "black-pepper",
+        "item": "coarsely ground black pepper",
+        "metricAmount": 2,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "teaspoon",
+        "preparation": null,
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "scallions",
+        "item": "scallions",
+        "metricAmount": 30,
+        "metricUnit": "g",
+        "customaryAmount": 2,
+        "customaryUnit": "scallions",
+        "preparation": "thinly sliced",
+        "optional": false,
+        "allergenNotes": []
+      },
+      {
+        "id": "sesame-seeds",
+        "item": "toasted sesame seeds",
+        "metricAmount": 9,
+        "metricUnit": "g",
+        "customaryAmount": 1,
+        "customaryUnit": "tablespoon",
+        "preparation": "lightly crushed",
+        "optional": false,
+        "allergenNotes": ["sesame"]
+      }
+    ],
+    "batchYield": "About 120 ml / 1/2 cup",
+    "meatWeightCovered": "900 g / 2 lb steak pieces",
+    "mixOrder": [
+      "Combine sesame oil, garlic, salt, and pepper.",
+      "Add scallions and sesame seeds immediately before mixing with beef."
+    ],
+    "marinationVessel": "Nonreactive bowl",
+    "refrigeratedMarinationTimeRange": "15 to 30 minutes at 40°F / 4°C or below",
+    "maximumPracticalMarinationWarning": "Do not exceed 2 hours; salt can draw moisture from the small pieces and garlic can dominate.",
+    "reserveBeforeRawContactInstruction": "No serving sauce is taken from this seasoning; prepare any table dip separately.",
+    "rawContactDiscardOrReboilInstruction": "Discard seasoning residue left in the raw-beef bowl; do not scrape it onto cooked meat.",
+    "substitutions": [
+      "Strip steak or ribeye may replace sirloin at equal weight.",
+      "If omitting sesame, the dish requires an editorially reviewed reformulation and must not be called allergen-free."
+    ],
+    "allergenNotes": [
+      "Contains sesame.",
+      "This formulation contains no soy or wheat ingredients, but labels and cross-contact still require checking."
+    ]
+  },
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Cut and chill the steak",
+      "action": "Cut chilled steak into even 3.5 cm / 1 1/2-inch pieces, trimming hard silverskin but retaining normal marbling.",
+      "estimatedTime": "10 minutes",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Pieces are evenly thick and marbled, with no long tough membrane attached.",
+      "safetyNote": "Wash hands and sanitize the board, knife, and surrounding surface after raw-beef contact.",
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Mix by hand or spatula",
+      "action": "Combine sesame oil, garlic, salt, and pepper. Add beef, scallions, and sesame seeds and massage or fold until every piece is lightly glossy.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Seasoning forms a thin sheen; there is no pool of liquid.",
+      "safetyNote": "Use a clean food-safe glove or wash hands thoroughly immediately after hand-mixing raw beef.",
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Rest under refrigeration",
+      "action": "Cover and refrigerate 15 to 30 minutes.",
+      "estimatedTime": "15 to 30 minutes",
+      "temperature": "40°F / 4°C or below",
+      "visualOrTactileCue": "Salt is dissolved on the surface and the pieces remain firm, not wet.",
+      "safetyNote": "Do not season at room temperature or hold longer than 2 hours.",
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Preheat the approved grill",
+      "action": "Heat a clean grill to medium-high and oil lightly. Set out clean tongs and a clean platter.",
+      "estimatedTime": "10 minutes",
+      "temperature": "425–450°F / 218–232°C grill surface",
+      "visualOrTactileCue": "Beef sizzles immediately and releases after a browned crust forms.",
+      "safetyNote": "Use indoor electric equipment only when the manufacturer approves it for indoor use.",
+      "mediaReference": null
+    },
+    {
+      "step": 5,
+      "heading": "Brown all sides",
+      "action": "Grill in a single layer, turning to brown several sides, until the thickest piece reaches the target temperature.",
+      "estimatedTime": "6 to 9 minutes",
+      "temperature": "145°F / 63°C, then rest 3 minutes",
+      "visualOrTactileCue": "The outside is browned and the center of the thickest piece reaches 145°F / 63°C.",
+      "safetyNote": "Use a calibrated thermometer; do not rely on springiness or color alone.",
+      "mediaReference": null
+    },
+    {
+      "step": 6,
+      "heading": "Rest and serve",
+      "action": "Transfer to a clean platter and rest at least 3 minutes before serving.",
+      "estimatedTime": "3 minutes",
+      "temperature": null,
+      "visualOrTactileCue": "Juices remain inside the pieces when one is cut after resting.",
+      "safetyNote": "Discard raw-bowl residue and keep cooked beef away from raw utensils.",
+      "mediaReference": null
+    }
+  ],
+  "grillSetup": "Preheat a clean outdoor grill or manufacturer-approved indoor electric tabletop grill to medium-high, about 400–450°F / 204–232°C. Follow the appliance manual for clearance and ventilation; never use charcoal, propane, butane camping stoves, or outdoor grills indoors.",
+  "targetInternalTemperature": "145°F / 63°C in the thickest practical portion, followed by a 3-minute rest",
+  "visualDonenessCues": [
+    "Steak bites are browned on multiple sides without burned garlic.",
+    "The center of the thickest piece reaches 145°F / 63°C and rests 3 minutes."
+  ],
+  "foodSafetyNotes": [
+    "Keep raw beef and its marinade separate from ready-to-eat foods; wash hands and sanitize contacted surfaces.",
+    "Use separate raw and cooked plates and utensils, or wash and sanitize them fully before reuse.",
+    "Measure the thickest practical portion with a calibrated food thermometer; grill marks and time alone do not establish doneness.",
+    "For whole-cut beef, reach 145°F / 63°C and rest for at least 3 minutes before serving.",
+    "Use only an outdoor grill or an electric tabletop appliance explicitly approved by its manufacturer for indoor use; follow ventilation and clearance instructions."
+  ],
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": true,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check every packaged-ingredient label and prevent cross-contact; substitutions do not guarantee an allergen-free result."
+  },
+  "substitutions": [
+    "Use strip steak, sirloin, or ribeye with similar thickness and marbling.",
+    "Sesame is structurally central to this preparation; omission requires a separately reviewed version and cannot guarantee allergen safety."
+  ],
+  "ingredientSourcing": [
+    "Choose a tender, well-marbled steak suitable for fast grilling rather than pre-cut stew beef.",
+    "Use pure toasted sesame oil and check the label for cross-contact."
+  ],
+  "makeAhead": "Cut the steak and mix dry aromatics separately up to 1 day ahead. Add sesame oil and salt only 15 to 30 minutes before grilling.",
+  "storage": "Refrigerate cooked beef within 2 hours in a shallow airtight container at 40°F / 4°C or below; use within 3 days.",
+  "reheating": "Reheat leftovers to 165°F / 74°C. Reheat only the portion needed and avoid prolonged cooking that toughens thin beef.",
+  "leftovers": "Reheat steak bites to 165°F / 74°C and slice for a rice bowl; use once and avoid repeated reheating.",
+  "servingSuggestions": [
+    "Serve with rice, ssam greens, and a separately prepared dipping sauce.",
+    "Pair with crisp vegetables to balance the rich sesame-seasoned beef."
+  ],
+  "menuPairings": ["B06", "F06", "SA01", "D01"],
+  "relatedRecipeIds": ["M05", "M07"],
+  "faq": [
+    {
+      "question": "Is jumulleok the same as bulgogi?",
+      "answer": "No. Bulgogi is generally thinly sliced and marinated; this jumulleok preparation uses thicker steak pieces and a short, minimal sesame-oil seasoning."
+    },
+    {
+      "question": "Can I use stew beef?",
+      "answer": "It is not recommended for this fast method because common stew cuts need longer cooking to become tender."
+    }
+  ],
+  "seoTitle": "Jumulleok Sesame-Garlic Steak Bites",
+  "metaDescription": "Make jumulleok-style sesame-garlic steak bites with brief hand seasoning, fast Korean BBQ grilling, and clear thermometer and rest guidance.",
+  "primaryKeyword": "jumulleok steak bites",
+  "secondaryTopics": [
+    "Korean sesame steak",
+    "Korean BBQ steak bites",
+    "garlic grilled beef",
+    "minimal beef seasoning"
+  ],
+  "imageManifestIds": [],
+  "videoManifestId": null,
+  "transcriptId": null,
+  "affiliateModuleIds": [],
+  "adExclusionZones": [
+    "ingredient-list",
+    "raw-food-safety",
+    "marination-safety",
+    "grilling-doneness",
+    "instruction-steps"
+  ],
+  "nutritionStatus": "not-calculated",
+  "sourcesAndEditorialNotes": [
+    "Terminology/preparation context: https://en.wikipedia.org/wiki/Korean_barbecue (secondary overview only; Korean-language and cultural review required).",
+    "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+    "Grilling hygiene reference verified 2026-07-14: https://www.foodsafety.gov/blog/how-grill-safely-summer",
+    "Draft formulation not test-cooked; no fixed-origin or universal-authenticity claim is made."
+  ],
+  "seafoodPreparation": null
+}

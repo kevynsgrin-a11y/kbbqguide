@@ -1,0 +1,566 @@
+{
+  "version": 1,
+  "lockedAt": "2026-07-13",
+  "nodes": [
+    {
+      "id": "M01",
+      "relatedRecipeIds": ["M20", "M02"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B01", "F01", "SA01", "D01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M02",
+      "relatedRecipeIds": ["M01", "M03"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B02", "F02", "SA02", "D02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M03",
+      "relatedRecipeIds": ["M02", "M04"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B03", "F03", "SA03", "D03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M04",
+      "relatedRecipeIds": ["M03", "M05"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B04", "F04", "SA04", "D04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M05",
+      "relatedRecipeIds": ["M04", "M06"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B05", "F05", "SA05", "D05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M06",
+      "relatedRecipeIds": ["M05", "M07"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B06", "F06", "SA01", "D01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M07",
+      "relatedRecipeIds": ["M06", "M08"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B07", "F07", "SA02", "D02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M08",
+      "relatedRecipeIds": ["M07", "M09"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B08", "F08", "SA03", "D03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M09",
+      "relatedRecipeIds": ["M08", "M10"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B09", "F09", "SA04", "D04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M10",
+      "relatedRecipeIds": ["M09", "M11"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B10", "F10", "SA05", "D05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M11",
+      "relatedRecipeIds": ["M10", "M12"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B11", "F01", "SA01", "D01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M12",
+      "relatedRecipeIds": ["M11", "M13"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B12", "F02", "SA02", "D02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M13",
+      "relatedRecipeIds": ["M12", "M14"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B13", "F03", "SA03", "D03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M14",
+      "relatedRecipeIds": ["M13", "M15"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B14", "F04", "SA04", "D04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M15",
+      "relatedRecipeIds": ["M14", "M16"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B15", "F05", "SA05", "D05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M16",
+      "relatedRecipeIds": ["M15", "M17"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B16", "F06", "SA01", "D01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M17",
+      "relatedRecipeIds": ["M16", "M18"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B17", "F07", "SA02", "D02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M18",
+      "relatedRecipeIds": ["M17", "M19"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B18", "F08", "SA03", "D03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M19",
+      "relatedRecipeIds": ["M18", "M20"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B19", "F09", "SA04", "D04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "M20",
+      "relatedRecipeIds": ["M19", "M01"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B20", "F10", "SA05", "D05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF01",
+      "relatedRecipeIds": ["SF15", "SF02"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B25", "F03", "SA03", "D02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF02",
+      "relatedRecipeIds": ["SF01", "SF03"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B01", "F04", "SA04", "D03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF03",
+      "relatedRecipeIds": ["SF02", "SF04"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B02", "F05", "SA05", "D04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF04",
+      "relatedRecipeIds": ["SF03", "SF05"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B03", "F06", "SA01", "D05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF05",
+      "relatedRecipeIds": ["SF04", "SF06"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B04", "F07", "SA02", "D01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF06",
+      "relatedRecipeIds": ["SF05", "SF07"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B05", "F08", "SA03", "D02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF07",
+      "relatedRecipeIds": ["SF06", "SF08"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B06", "F09", "SA04", "D03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF08",
+      "relatedRecipeIds": ["SF07", "SF09"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B07", "F10", "SA05", "D04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF09",
+      "relatedRecipeIds": ["SF08", "SF10"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B08", "F01", "SA01", "D05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF10",
+      "relatedRecipeIds": ["SF09", "SF11"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B09", "F02", "SA02", "D01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF11",
+      "relatedRecipeIds": ["SF10", "SF12"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B10", "F03", "SA03", "D02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF12",
+      "relatedRecipeIds": ["SF11", "SF13"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B11", "F04", "SA04", "D03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF13",
+      "relatedRecipeIds": ["SF12", "SF14"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B12", "F05", "SA05", "D04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF14",
+      "relatedRecipeIds": ["SF13", "SF15"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B13", "F06", "SA01", "D05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SF15",
+      "relatedRecipeIds": ["SF14", "SF01"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["B14", "F07", "SA02", "D01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B01",
+      "relatedRecipeIds": ["B25", "B02"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M16", "SF06", "F06", "SA01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B02",
+      "relatedRecipeIds": ["B01", "B03"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M17", "SF07", "F07", "SA02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B03",
+      "relatedRecipeIds": ["B02", "B04"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M18", "SF08", "F08", "SA03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B04",
+      "relatedRecipeIds": ["B03", "B05"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M19", "SF09", "F09", "SA04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B05",
+      "relatedRecipeIds": ["B04", "B06"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M20", "SF10", "F10", "SA05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B06",
+      "relatedRecipeIds": ["B05", "B07"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M01", "SF11", "F01", "SA01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B07",
+      "relatedRecipeIds": ["B06", "B08"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M02", "SF12", "F02", "SA02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B08",
+      "relatedRecipeIds": ["B07", "B09"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M03", "SF13", "F03", "SA03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B09",
+      "relatedRecipeIds": ["B08", "B10"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M04", "SF14", "F04", "SA04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B10",
+      "relatedRecipeIds": ["B09", "B11"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M05", "SF15", "F05", "SA05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B11",
+      "relatedRecipeIds": ["B10", "B12"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M06", "SF01", "F06", "SA01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B12",
+      "relatedRecipeIds": ["B11", "B13"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M07", "SF02", "F07", "SA02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B13",
+      "relatedRecipeIds": ["B12", "B14"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M08", "SF03", "F08", "SA03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B14",
+      "relatedRecipeIds": ["B13", "B15"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M09", "SF04", "F09", "SA04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B15",
+      "relatedRecipeIds": ["B14", "B16"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M10", "SF05", "F10", "SA05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B16",
+      "relatedRecipeIds": ["B15", "B17"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M11", "SF06", "F01", "SA01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B17",
+      "relatedRecipeIds": ["B16", "B18"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M12", "SF07", "F02", "SA02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B18",
+      "relatedRecipeIds": ["B17", "B19"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M13", "SF08", "F03", "SA03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B19",
+      "relatedRecipeIds": ["B18", "B20"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M14", "SF09", "F04", "SA04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B20",
+      "relatedRecipeIds": ["B19", "B21"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M15", "SF10", "F05", "SA05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B21",
+      "relatedRecipeIds": ["B20", "B22"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M16", "SF11", "F06", "SA01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B22",
+      "relatedRecipeIds": ["B21", "B23"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M17", "SF12", "F07", "SA02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B23",
+      "relatedRecipeIds": ["B22", "B24"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M18", "SF13", "F08", "SA03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B24",
+      "relatedRecipeIds": ["B23", "B25"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M19", "SF14", "F09", "SA04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "B25",
+      "relatedRecipeIds": ["B24", "B01"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M20", "SF15", "F10", "SA05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F01",
+      "relatedRecipeIds": ["F10", "F02"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M04", "SF02", "B16", "SA01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F02",
+      "relatedRecipeIds": ["F01", "F03"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M05", "SF03", "B17", "SA02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F03",
+      "relatedRecipeIds": ["F02", "F04"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M06", "SF04", "B18", "SA03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F04",
+      "relatedRecipeIds": ["F03", "F05"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M07", "SF05", "B19", "SA04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F05",
+      "relatedRecipeIds": ["F04", "F06"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M08", "SF06", "B20", "SA05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F06",
+      "relatedRecipeIds": ["F05", "F07"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M09", "SF07", "B21", "SA01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F07",
+      "relatedRecipeIds": ["F06", "F08"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M10", "SF08", "B22", "SA02"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F08",
+      "relatedRecipeIds": ["F07", "F09"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M11", "SF09", "B23", "SA03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F09",
+      "relatedRecipeIds": ["F08", "F10"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M12", "SF10", "B24", "SA04"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "F10",
+      "relatedRecipeIds": ["F09", "F01"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M13", "SF11", "B25", "SA05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SA01",
+      "relatedRecipeIds": ["SA05", "SA02"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M11", "SF06", "B06", "F01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SA02",
+      "relatedRecipeIds": ["SA01", "SA03"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M14", "SF08", "B10", "F03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SA03",
+      "relatedRecipeIds": ["SA02", "SA04"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M17", "SF10", "B14", "F05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SA04",
+      "relatedRecipeIds": ["SA03", "SA05"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M20", "SF12", "B18", "F07"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "SA05",
+      "relatedRecipeIds": ["SA04", "SA01"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M03", "SF14", "B22", "F09"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "D01",
+      "relatedRecipeIds": ["D05", "D02"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M01", "SF01", "B01", "F01"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "D02",
+      "relatedRecipeIds": ["D01", "D03"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M05", "SF04", "B06", "F03"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "D03",
+      "relatedRecipeIds": ["D02", "D04"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M09", "SF07", "B11", "F05"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "D04",
+      "relatedRecipeIds": ["D03", "D05"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M13", "SF10", "B16", "F07"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    },
+    {
+      "id": "D05",
+      "relatedRecipeIds": ["D04", "D01"],
+      "relatedBasis": "adjacent recipes in the same locked category",
+      "menuPairings": ["M17", "SF13", "B21", "F09"],
+      "pairingBasis": "cross-category menu-balance rotation; human editorial review required before display"
+    }
+  ]
+}
