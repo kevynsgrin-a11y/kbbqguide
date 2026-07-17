@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-15T04:31:00-07:00",
-  "currentPhase": 8,
+  "updatedAt": "2026-07-16T12:00:00-07:00",
+  "currentPhase": 9,
   "phaseStatus": "complete",
   "lockedStack": {
     "framework": "Astro 7.0.9",
@@ -35,7 +35,7 @@
     "outboundAnchors": 0,
     "deploymentAuthorization": "authorized-noindex-editorial-preview",
     "indexingAuthorized": false,
-    "gitRepositoryPresent": false,
+    "gitRepositoryPresent": true,
     "cloudflareAuthenticated": false,
     "productionDeployment": false
   },
@@ -448,5 +448,32 @@
     "noIndexPreviewDeploymentAuthorized": true,
     "productionDeployment": false
   },
-  "nextCommand": "Create an initialized GitHub repository for KBBQGuide and provide its owner/name, then push this verified release candidate and connect it to Cloudflare Pages; alternatively authenticate Wrangler and explicitly accept Direct Upload's project-type tradeoff. Attach kbbqguide.com as the custom apex domain for the authorized no-index editorial preview. Do not publish or index the site without separate explicit public release authorization. Keep collection, providers, messaging, merchants, and unapproved-content claims disabled."
+  "phase9": {
+    "visualEditorialOverhaulComplete": true,
+    "recipeHeroMasters": 80,
+    "brandLifestyleMasters": 1,
+    "socialDerivatives": 1,
+    "registeredMediaAssets": 81,
+    "remainingPlannedMediaDeliverables": 960,
+    "assetStatus": "synthetic-labeled",
+    "responsiveFormats": ["avif", "webp", "jpeg"],
+    "responsiveWidths": [360, 640, 960, 1280, 1600],
+    "implementationVisualQa": "pass",
+    "automatedTests": 130,
+    "phaseGateTests": 118,
+    "staticHtmlPages": 116,
+    "optimizedImageOutputs": 1296,
+    "browserViewportChecks": 84,
+    "browserViewportChecksPassed": 84,
+    "visualScreenshotsInspected": 10,
+    "maxLocalLcpMilliseconds": 88,
+    "maxLocalCls": 0,
+    "maxEstimatedInitialCompressedTransferBytes": 32949,
+    "humanEditorialReview": "required",
+    "processStillPlaceholdersRetained": true,
+    "videoPlaceholdersRetained": true,
+    "publicReleaseAuthorized": false,
+    "productionDeployment": false
+  },
+  "nextCommand": "Review the Phase 9 draft pull request and Cloudflare branch preview. Before any deploy or public release, do not publish, merge, or index without separate explicit public release authorization. Complete the named human media review lanes first."
 }

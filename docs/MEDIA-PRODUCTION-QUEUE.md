@@ -4,19 +4,19 @@ Queue owner: unassigned
 Queue status: open  
 Machine authority: `data/media-manifest.json`  
 Production worksheet: `docs/media-production-plan.csv`  
-Checkpoint date: 2026-07-14
+Checkpoint date: 2026-07-16
 
-The queue contains **80 recipe plans**, zero registered production assets, and **1,040 planned deliverables**: 720 stills, 160 videos, and 160 poster frames. Every current asset reference is a placeholder; every rights status is pending; every recipe media QA status is not started.
+The queue contains **81 active hero assets** (80 finished dishes and one brand lifestyle image) plus the retained **80 recipe plans**. Phase 9 completes the hero slot for every recipe. The remaining queue contains **960 planned deliverables**: 640 non-hero stills, 160 videos, and 160 poster frames. Remaining process/video references are placeholders; active heroes are `synthetic-labeled` with local source, provenance, rights scope, dimensions, alt/caption/credit decisions, and implementation QA.
 
 ## Priority bands
 
-| Priority              | Recipes | Planned deliverables | Purpose                         | Status      |
-| --------------------- | ------: | -------------------: | ------------------------------- | ----------- |
-| P0 initial cohort     |      28 |                  364 | Minimum public launch candidate | Not started |
-| P1 remaining calendar |      52 |                  676 | 13-week follow-on program       | Not started |
-| Total                 |      80 |                1,040 | Complete library                | Not started |
+| Priority              | Recipes | Planned deliverables | Purpose                      | Status      |
+| --------------------- | ------: | -------------------: | ---------------------------- | ----------- |
+| P0 initial cohort     |      28 |                  336 | Complete non-hero capture    | Not started |
+| P1 remaining calendar |      52 |                  624 | Complete non-hero capture    | Not started |
+| Total                 |      80 |                  960 | Remaining library production | Not started |
 
-Each recipe plan calls for one hero, one finished-dish overhead, one measured-ingredient layout, four critical-step stills, one primary cooking-action still, one serving-table still, one 16:9 long-form video, one 9:16 short-form video, and two poster frames. Shot-list references may reuse an approved still composition, but each declared asset ID must have an explicit final disposition.
+Each recipe now has its hero. The remaining plan calls for one finished-dish overhead, one measured-ingredient layout, four critical-step stills, one primary cooking-action still, one serving-table still, one 16:9 long-form video, one 9:16 short-form video, and two poster frames. Shot-list references may reuse an approved still composition, but each declared asset ID must have an explicit final disposition.
 
 ## Production workflow
 
@@ -26,8 +26,8 @@ Each recipe plan calls for one hero, one finished-dish overhead, one measured-in
 4. Record source files, creator, capture date, model/property releases where applicable, license, territory, duration, modification rights, and expiration.
 5. Produce responsive 16:9, 4:3, and 1:1 still variants; poster frames; captioned videos; and transcripts.
 6. Review identity, cultural context, food safety, subject accuracy, crop/focal point, color/contrast, alt text, captions, transcripts, compression, and performance.
-7. Register only approved assets in `data/media-manifest.json`; replace placeholders in a new release candidate; rerun the full Phase 8 gate and browser QA.
+7. Register only approved assets in `data/media-manifest.json`; replace placeholders in a new release candidate; rerun the full Phase 9 gate and browser QA.
 
 ## Acceptance rule
 
-No asset is production-ready until provenance and rights are approved, subject QA passes, accessibility text is human-approved, required transcripts/captions exist, responsive outputs meet the contract, and the release owner records approval. AI-generated or stock imagery must not be used to imply a tested result, a real person, or an authentic documentary context without an explicit, approved policy and disclosure.
+No remaining asset is production-ready until provenance and rights are approved, subject QA passes, accessibility text is human-approved, required transcripts/captions exist, responsive outputs meet the contract, and the release owner records approval. Phase 9 hero images may be used in the no-index preview because their synthetic status and provenance are explicit; human editorial sign-off is still required before public release.

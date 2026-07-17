@@ -1,0 +1,13 @@
+---
+interface Props {
+  caption: string;
+  credit: string;
+}
+
+const { caption, credit } = Astro.props;
+---
+
+<figcaption class="media-credit">
+  <span>{caption}</span>
+  <small>{credit}</small>
+</figcaption>

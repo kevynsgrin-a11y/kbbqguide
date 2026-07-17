@@ -1,10 +1,16 @@
 ---
+import { resolveMedia } from '../lib/media';
+import ResponsiveMedia from './ResponsiveMedia.astro';
+
 interface Props {
   mediaId: string;
   label: string;
   altDraft: string;
-  ratio?: '16:9' | '4:3';
+  ratio?: '16:9' | '4:3' | '3:2' | '1:1';
   priority?: boolean;
+  showCredit?: boolean;
+  class?: string;
+  sizes?: string | undefined;
 }
 
 const {
@@ -13,24 +19,47 @@ const {
   altDraft,
   ratio = '4:3',
   priority = false,
+  showCredit = false,
+  class: className = '',
+  sizes,
 } = Astro.props;
+const media = resolveMedia(mediaId);
 ---
 
-<figure
-  class="media-placeholder"
-  data-ratio={ratio}
-  data-media-id={mediaId}
-  data-asset-status="placeholder"
-  data-loading={priority ? 'priority-contract' : 'lazy-contract'}
-  role="img"
-  aria-label={`${label}. Planned alt text: ${altDraft}`}
->
-  <span class="placeholder-brand" aria-hidden="true">KBBQGuide</span>
-  <span class="placeholder-emblem" aria-hidden="true">
-    <span></span><span></span><span></span>
-  </span>
-  <figcaption class="placeholder-label">
-    {label}
-    <span>Photography in production · frame {mediaId}</span>
-  </figcaption>
-</figure>
+{
+  media ? (
+    <ResponsiveMedia
+      {media}
+      {ratio}
+      {priority}
+      {showCredit}
+      {sizes}
+      class={className}
+    />
+  ) : (
+    <figure
+      class:list={['media-placeholder', className]}
+      data-ratio={ratio}
+      data-media-id={mediaId}
+      data-asset-status="placeholder"
+      data-loading={priority ? 'priority-contract' : 'lazy-contract'}
+      role="img"
+      aria-label={`${label}. Planned alt text: ${altDraft}`}
+    >
+      <span class="placeholder-brand" aria-hidden="true">
+        KBBQGuide
+      </span>
+      <span class="placeholder-emblem" aria-hidden="true">
+        <>
+          <span />
+          <span />
+          <span />
+        </>
+      </span>
+      <figcaption class="placeholder-label">
+        {label}
+        <span>Photography in production · frame {mediaId}</span>
+      </figcaption>
+    </figure>
+  )
+}

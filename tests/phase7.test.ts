@@ -40,7 +40,7 @@ describe('Phase 7 full QA and hardening gate', () => {
     const packageData = JSON.parse(source('package.json')) as {
       scripts: Record<string, string>;
     };
-    expect(packageData.scripts.build).toMatch(/validate:phase(?:7|8)/);
+    expect(packageData.scripts.build).toMatch(/validate:phase(?:7|8|9)/);
     expect(packageData.scripts.build).toContain('validate:headers');
     expect(packageData.scripts['validate:headers']).toContain(
       'validate-security-headers.mjs',

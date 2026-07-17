@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
 import PlannerTools from '../../components/PlannerTools.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { menus } from '../../lib/menus';
@@ -65,20 +66,29 @@ const allergenRecipes = recipes
   pageClass="tools-page"
 >
   <header class="category-hero">
-    <div class="shell reading-width">
-      <Breadcrumbs
-        items={[
-          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-          { label: 'Planning Tools' },
-        ]}
+    <div class="shell hero-grid">
+      <div>
+        <Breadcrumbs
+          items={[
+            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+            { label: 'Planning Tools' },
+          ]}
+        />
+        <p class="eyebrow">Progressive enhancement, transparent limits</p>
+        <h1>Turn draft recipes into a working checklist.</h1>
+        <p class="lede">
+          The tools run locally, send no form data, and preserve server-rendered
+          fallbacks. Their results remain planning aids—not test-kitchen,
+          appliance, allergen, medical, or food-safety approvals.
+        </p>
+      </div>
+      <MediaPlaceholder
+        mediaId="SYS_TOOLS-hero"
+        label="Planning tools editorial hero"
+        altDraft="Prepared Korean barbecue side dishes organized for service"
+        ratio="16:9"
+        priority
       />
-      <p class="eyebrow">Progressive enhancement, transparent limits</p>
-      <h1>Turn draft recipes into a working checklist.</h1>
-      <p class="lede">
-        The tools run locally, send no form data, and preserve server-rendered
-        fallbacks. Their results remain planning aids—not test-kitchen,
-        appliance, allergen, medical, or food-safety approvals.
-      </p>
     </div>
   </header>
 
