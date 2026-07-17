@@ -1,6 +1,7 @@
 ---
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
 import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { menus } from '../../lib/menus';
@@ -29,32 +30,26 @@ const path = registryPathById(registry, 'SYS_MENUS');
     ),
   ]}
 >
-  <header class="category-hero">
-    <div class="shell hero-grid">
-      <div>
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-            { label: 'Menus' },
-          ]}
-        />
-        <p class="eyebrow">Guest-count planning</p>
-        <h1>Scale the workload with the table.</h1>
-        <p class="lede">
-          Start with a balanced set of dishes, then adjust for appetite, dietary
-          needs, appliance capacity, prep time, and the way your guests like to
-          gather.
-        </p>
-      </div>
-      <MediaPlaceholder
-        mediaId="SYS_MENUS-hero"
-        label="Korean barbecue menus"
-        altDraft="A finished Korean barbecue main arranged for the table"
-        ratio="16:9"
-        priority
-      />
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_MENUS-hero"
+    label="Korean barbecue menus"
+    altDraft="A balanced Korean barbecue menu arranged around a tabletop grill"
+    class="category-hero menu-hero"
+  >
+    <Breadcrumbs
+      items={[
+        { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+        { label: 'Menus' },
+      ]}
+    />
+    <p class="eyebrow">Guest-count planning</p>
+    <h1>Scale the workload with the table.</h1>
+    <p class="lede">
+      Start with a balanced set of dishes, then adjust for appetite, dietary
+      needs, appliance capacity, prep time, and the way your guests like to
+      gather.
+    </p>
+  </EditorialHero>
 
   <section class="section tinted" aria-labelledby="menu-list-title">
     <div class="shell">

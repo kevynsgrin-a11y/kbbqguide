@@ -2,6 +2,7 @@
 import registryData from '../../data/url-registry.json';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import DisabledForm from '../components/DisabledForm.astro';
+import EditorialHero from '../components/EditorialHero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { breadcrumbJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
@@ -21,20 +22,23 @@ const path = registryPathById(registry, 'SYS_MEDIA_KIT');
     ]),
   ]}
 >
-  <header class="category-hero">
-    <div class="shell reading-width">
-      <Breadcrumbs
-        items={[{ label: 'Home', href: '/' }, { label: 'Media Kit' }]}
-      /><p class="eyebrow">No audience or performance claim is published</p><h1>
-        Partnership structure before sales claims.
-      </h1><p class="lede">
-        A future media kit may package one reviewed recipe, one long video,
-        three distinct shorts, one email placement, and separately negotiated
-        usage rights. Rates, reach, demographics, results, and availability
-        remain blank until supported by real records.
-      </p>
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_MEDIA_KIT-hero"
+    label="Media kit editorial hero"
+    altDraft="Korean barbecue photographs and unmarked material swatches on a charcoal studio table"
+    class="category-hero"
+  >
+    <Breadcrumbs
+      items={[{ label: 'Home', href: '/' }, { label: 'Media Kit' }]}
+    /><p class="eyebrow">No audience or performance claim is published</p><h1>
+      Partnership structure before sales claims.
+    </h1><p class="lede">
+      A future media kit may package one reviewed recipe, one long video, three
+      distinct shorts, one email placement, and separately negotiated usage
+      rights. Rates, reach, demographics, results, and availability remain blank
+      until supported by real records.
+    </p>
+  </EditorialHero>
   <section class="section tinted">
     <div class="shell support-grid">
       <section class="support-card">

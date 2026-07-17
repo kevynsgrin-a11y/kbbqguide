@@ -4,9 +4,9 @@ Queue owner: unassigned
 Queue status: open  
 Machine authority: `data/media-manifest.json`  
 Production worksheet: `docs/media-production-plan.csv`  
-Checkpoint date: 2026-07-16
+Checkpoint date: 2026-07-17
 
-The queue contains **81 active hero assets** (80 finished dishes and one brand lifestyle image) plus the retained **80 recipe plans**. Phase 9 completes the hero slot for every recipe. The remaining queue contains **960 planned deliverables**: 640 non-hero stills, 160 videos, and 160 poster frames. Remaining process/video references are placeholders; active heroes are `synthetic-labeled` with local source, provenance, rights scope, dimensions, alt/caption/credit decisions, and implementation QA.
+The queue contains **115 active editorial assets** (80 finished dishes plus 35 brand, category, guide, menu, system, and policy frames) and the retained **80 recipe plans**. Phase 9 completes every major site entry point and the hero slot for every recipe. The remaining queue contains **960 planned deliverables**: 640 non-hero recipe stills, 160 videos, and 160 poster frames. Remaining process/video references are placeholders; active assets are `synthetic-labeled` with local source, provenance, rights scope, dimensions, alt/caption/credit decisions, and implementation QA.
 
 ## Priority bands
 

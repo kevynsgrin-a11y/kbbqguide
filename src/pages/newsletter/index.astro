@@ -3,6 +3,7 @@ import automationData from '../../../data/automation-registry.json';
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import DisabledForm from '../../components/DisabledForm.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { breadcrumbJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
@@ -22,20 +23,23 @@ const path = registryPathById(registry, 'SYS_NEWSLETTER');
     ]),
   ]}
 >
-  <header class="category-hero">
-    <div class="shell reading-width">
-      <Breadcrumbs
-        items={[{ label: 'Home', href: '/' }, { label: 'Newsletter' }]}
-      />
-      <p class="eyebrow">Consent first · provider not selected</p>
-      <h1>Design the relationship before collecting an address.</h1>
-      <p class="lede">
-        The planned Friday email combines one menu, technique, banchan or fresh
-        idea, safety note, community question, and clearly disclosed shopping
-        module. Signup and sending remain disabled.
-      </p>
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_NEWSLETTER-hero"
+    label="Newsletter editorial hero"
+    altDraft="An adult editor writing on a blank page beside a Korean barbecue table"
+    class="category-hero"
+  >
+    <Breadcrumbs
+      items={[{ label: 'Home', href: '/' }, { label: 'Newsletter' }]}
+    />
+    <p class="eyebrow">Consent first · provider not selected</p>
+    <h1>Design the relationship before collecting an address.</h1>
+    <p class="lede">
+      The planned Friday email combines one menu, technique, banchan or fresh
+      idea, safety note, community question, and clearly disclosed shopping
+      module. Signup and sending remain disabled.
+    </p>
+  </EditorialHero>
 
   <section class="section tinted">
     <div class="shell support-grid">

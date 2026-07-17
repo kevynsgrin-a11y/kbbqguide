@@ -1,7 +1,7 @@
 ---
 import registryData from '../../data/url-registry.json';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import MediaPlaceholder from '../components/MediaPlaceholder.astro';
+import EditorialHero from '../components/EditorialHero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { breadcrumbJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
@@ -21,32 +21,26 @@ const path = registryPathById(registry, 'SYS_START');
     ]),
   ]}
 >
-  <header class="category-hero">
-    <div class="shell hero-grid">
-      <div>
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-            { label: 'Start Here' },
-          ]}
-        />
-        <p class="eyebrow">Your first safe, manageable table</p>
-        <h1>Start with decisions, then choose dishes.</h1>
-        <p class="lede">
-          Confirm the cooking setting, pick a guest count, choose one
-          centerpiece, and work backward from service. KBBQGuide keeps each
-          decision visible so the meal feels generous without becoming chaotic.
-        </p>
-      </div>
-      <MediaPlaceholder
-        mediaId="SYS_START-hero"
-        label="Start here editorial hero"
-        altDraft="Friends sharing a Korean barbecue table around a safe indoor grill"
-        ratio="16:9"
-        priority
-      />
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_START-hero"
+    label="Start here editorial hero"
+    altDraft="Friends setting a Korean barbecue table before the gathering"
+    class="category-hero"
+  >
+    <Breadcrumbs
+      items={[
+        { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+        { label: 'Start Here' },
+      ]}
+    />
+    <p class="eyebrow">Your first safe, manageable table</p>
+    <h1>Start with decisions, then choose dishes.</h1>
+    <p class="lede">
+      Confirm the cooking setting, pick a guest count, choose one centerpiece,
+      and work backward from service. KBBQGuide keeps each decision visible so
+      the meal feels generous without becoming chaotic.
+    </p>
+  </EditorialHero>
 
   <section class="section tinted" aria-labelledby="start-steps-title">
     <div class="shell reading-width">

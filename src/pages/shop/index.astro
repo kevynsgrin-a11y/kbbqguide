@@ -5,7 +5,7 @@ import registryData from '../../../data/url-registry.json';
 import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import DisabledAdSlot from '../../components/DisabledAdSlot.astro';
-import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { breadcrumbJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
@@ -56,32 +56,26 @@ const assets = [
   ]}
   pageClass="revenue-page"
 >
-  <header class="category-hero">
-    <div class="shell hero-grid">
-      <div>
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-            { label: 'Shop' },
-          ]}
-        />
-        <p class="eyebrow">Transparent architecture, zero active commerce</p>
-        <h1>Plan helpful recommendations before monetizing them.</h1>
-        <p class="lede">
-          Every module starts with the reader’s decision, evidence, safety, and
-          disclosure needs. Merchant activation, prices, product links, and
-          checkout remain disabled.
-        </p>
-      </div>
-      <MediaPlaceholder
-        mediaId="SYS_SHOP-hero"
-        label="Recommendation preview editorial hero"
-        altDraft="Classic ssamjang served in a ceramic bowl"
-        ratio="16:9"
-        priority
-      />
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_SHOP-hero"
+    label="Recommendation preview editorial hero"
+    altDraft="A curated Korean barbecue equipment still life with a tabletop electric grill, thermometer, and serving pieces"
+    class="category-hero"
+  >
+    <Breadcrumbs
+      items={[
+        { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+        { label: 'Shop' },
+      ]}
+    />
+    <p class="eyebrow">Transparent architecture, zero active commerce</p>
+    <h1>Plan helpful recommendations before monetizing them.</h1>
+    <p class="lede">
+      Every module starts with the reader’s decision, evidence, safety, and
+      disclosure needs. Merchant activation, prices, product links, and checkout
+      remain disabled.
+    </p>
+  </EditorialHero>
 
   <section class="section">
     <div class="shell reading-width">

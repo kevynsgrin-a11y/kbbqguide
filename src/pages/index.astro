@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import registryData from '../../data/url-registry.json';
+import EditorialBanner from '../components/EditorialBanner.astro';
 import MediaPlaceholder from '../components/MediaPlaceholder.astro';
 import RecipeCard from '../components/RecipeCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -37,10 +38,12 @@ const categoryList = itemListJsonLd(
   pageClass="home-page"
   socialImage="/social/kbbqguide-home.jpg"
   socialImageAlt="Four friends sharing a Korean barbecue table around an indoor grill"
+  socialImageWidth={1200}
+  socialImageHeight={630}
 >
   <section class="marketing-hero">
     <MediaPlaceholder
-      mediaId="HOME-hero"
+      mediaId="HOME-gathering-hero"
       label="Friends gathering around a Korean barbecue table"
       altDraft="Four adult friends sharing a Korean barbecue table around an indoor electric grill"
       ratio="3:2"
@@ -144,21 +147,20 @@ const categoryList = itemListJsonLd(
     </div>
   </section>
 
-  <section class="section" aria-labelledby="media-contract-title">
-    <div class="shell support-grid">
-      <div>
-        <p class="eyebrow">Honest by design</p>
-        <h2 id="media-contract-title">
-          Clear guidance without borrowed certainty.
-        </h2>
-      </div>
-      <div>
-        <p class="lede">
-          KBBQGuide keeps planned photography visibly labeled until each image
-          is produced, rights-cleared, and checked against the recipe. The
-          guidance stays useful without pretending an untested image is proof.
-        </p>
-      </div>
-    </div>
-  </section>
+  <EditorialBanner
+    mediaId="HOME-editorial-banner"
+    label="Friends sharing ssam and banchan"
+    altDraft="Adult friends passing lettuce wraps and banchan across a Korean barbecue table"
+  >
+    <p class="eyebrow">The ritual is shared</p>
+    <h2 id="media-contract-title">Pass a dish. Build a wrap. Stay awhile.</h2>
+    <p class="lede">
+      The best table is not a performance. It is a sequence of small acts—one
+      clean platter, one hot batch, one fresh leaf, passed from hand to hand.
+      Campaign imagery is visibly disclosed and remains pending human review.
+    </p>
+    <a class="button" href={registryPathById(registry, 'SYS_START')}>
+      Plan your first table
+    </a>
+  </EditorialBanner>
 </BaseLayout>

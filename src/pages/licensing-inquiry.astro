@@ -2,6 +2,7 @@
 import registryData from '../../data/url-registry.json';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import DisabledForm from '../components/DisabledForm.astro';
+import EditorialHero from '../components/EditorialHero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { breadcrumbJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
@@ -21,19 +22,22 @@ const path = registryPathById(registry, 'SYS_LICENSING');
     ]),
   ]}
 >
-  <header class="category-hero">
-    <div class="shell reading-width">
-      <Breadcrumbs
-        items={[{ label: 'Home', href: '/' }, { label: 'Licensing Inquiry' }]}
-      /><p class="eyebrow">
-        Permission is specific, documented, and revocable as agreed
-      </p><h1>UGC and licensing inquiry</h1><p class="lede">
-        Reposting, editing, advertising, and licensing are different
-        permissions. No submission is collected and no default rights grant
-        exists in this preview.
-      </p>
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_LICENSING-hero"
+    label="Licensing editorial hero"
+    altDraft="Korean barbecue photographs, blank archival sleeves, cotton gloves, and an unmarked metal case"
+    class="category-hero"
+  >
+    <Breadcrumbs
+      items={[{ label: 'Home', href: '/' }, { label: 'Licensing Inquiry' }]}
+    /><p class="eyebrow">
+      Permission is specific, documented, and revocable as agreed
+    </p><h1>UGC and licensing inquiry</h1><p class="lede">
+      Reposting, editing, advertising, and licensing are different permissions.
+      No submission is collected and no default rights grant exists in this
+      preview.
+    </p>
+  </EditorialHero>
   <section class="section tinted">
     <div class="shell support-grid">
       <section class="support-card">

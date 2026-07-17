@@ -6,7 +6,7 @@ import { registryPathById, type UrlRegistry } from '../lib/url-registry';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from './Breadcrumbs.astro';
 import DraftNotice from './DraftNotice.astro';
-import MediaPlaceholder from './MediaPlaceholder.astro';
+import EditorialHero from './EditorialHero.astro';
 import SafetyCallout from './SafetyCallout.astro';
 
 interface Props {
@@ -35,30 +35,23 @@ const breadcrumbs = breadcrumbJsonLd([
   jsonLd={[breadcrumbs]}
   pageClass="guide-page"
 >
-  <header class="category-hero guide-hero">
-    <div class="shell hero-grid">
-      <div>
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-            { label: 'Guides', href: registryPathById(registry, 'SYS_GUIDES') },
-            { label: guide.title },
-          ]}
-        />
-        <p class="eyebrow">{guide.eyebrow} · Draft {guide.id}</p>
-        <h1>{guide.title}</h1>
-        <p class="lede">{guide.description}</p>
-      </div>
-      <MediaPlaceholder
-        mediaId={`${guide.id}-hero`}
-        label={`${guide.title} editorial hero`}
-        altDraft={`Editorial image introducing ${guide.title}`}
-        ratio="16:9"
-        priority
-        showCredit
-      />
-    </div>
-  </header>
+  <EditorialHero
+    mediaId={`${guide.id}-hero`}
+    label={`${guide.title} editorial hero`}
+    altDraft={`Editorial image introducing ${guide.title}`}
+    class="category-hero guide-hero"
+  >
+    <Breadcrumbs
+      items={[
+        { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+        { label: 'Guides', href: registryPathById(registry, 'SYS_GUIDES') },
+        { label: guide.title },
+      ]}
+    />
+    <p class="eyebrow">{guide.eyebrow} · Draft {guide.id}</p>
+    <h1>{guide.title}</h1>
+    <p class="lede">{guide.description}</p>
+  </EditorialHero>
 
   <section class="section" aria-labelledby="guide-status-title">
     <div class="shell support-grid">

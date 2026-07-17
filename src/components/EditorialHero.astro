@@ -1,0 +1,45 @@
+---
+import MediaPlaceholder from './MediaPlaceholder.astro';
+
+interface Props {
+  mediaId: string;
+  label: string;
+  altDraft: string;
+  ratio?: '16:9' | '4:3' | '3:2' | '1:1';
+  variant?: 'light' | 'dark';
+  priority?: boolean;
+  showCredit?: boolean;
+  class?: string;
+  sizes?: string | undefined;
+}
+
+const {
+  mediaId,
+  label,
+  altDraft,
+  ratio = '16:9',
+  variant = 'light',
+  priority = true,
+  showCredit = true,
+  class: className = '',
+  sizes = '(max-width: 60rem) 100vw, 52vw',
+} = Astro.props;
+---
+
+<header class:list={['editorial-hero', `editorial-hero-${variant}`, className]}>
+  <div class="shell editorial-hero-grid">
+    <div class="editorial-hero-copy">
+      <slot />
+    </div>
+    <MediaPlaceholder
+      {mediaId}
+      {label}
+      {altDraft}
+      {ratio}
+      {priority}
+      {showCredit}
+      {sizes}
+      class="editorial-hero-media"
+    />
+  </div>
+</header>

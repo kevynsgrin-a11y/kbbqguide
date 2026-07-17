@@ -7,7 +7,7 @@ import { registryPathById, type UrlRegistry } from '../lib/url-registry';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from './Breadcrumbs.astro';
 import DraftNotice from './DraftNotice.astro';
-import MediaPlaceholder from './MediaPlaceholder.astro';
+import EditorialHero from './EditorialHero.astro';
 import RecipeControls from './RecipeControls.astro';
 import RelatedContent from './RelatedContent.astro';
 import SafetyCallout from './SafetyCallout.astro';
@@ -77,52 +77,47 @@ const measure = (
   jsonLd={structuredData}
   pageClass={`recipe-page category-${category.accent}`}
 >
-  <header class="recipe-hero">
-    <div class="shell recipe-hero-grid">
-      <div>
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-            {
-              label: 'Recipes',
-              href: registryPathById(registry, 'SYS_RECIPES'),
-            },
-            {
-              label: category.label,
-              href: registryPathById(registry, category.id),
-            },
-            { label: recipe.title },
-          ]}
-        />
-        <p class="eyebrow">{category.label} · Draft {recipe.id}</p>
-        <h1>{recipe.title}</h1>
+  <EditorialHero
+    mediaId={`${recipe.id}-hero`}
+    label="Finished-dish editorial hero"
+    altDraft={`Finished ${recipe.title}, plated for service with visible safe-doneness cues`}
+    ratio="4:3"
+    variant="dark"
+    class="recipe-hero"
+  >
+    <Breadcrumbs
+      items={[
+        { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
         {
-          (recipe.hangul || recipe.romanization) && (
-            <p class="recipe-names">
-              {recipe.hangul && <span lang="ko">{recipe.hangul}</span>}
-              {recipe.hangul && recipe.romanization && ' · '}
-              {recipe.romanization}
-            </p>
-          )
-        }
-        <p class="lede">{recipe.shortDescription}</p>
-        <div class="badge-row" aria-label="Recipe draft status">
-          <span class="badge">{recipe.adaptationLabel}</span>
-          <span class="badge">Test cook required</span>
-          <span class="badge">Safety review required</span>
-          <span class="badge">Language review required</span>
-        </div>
-      </div>
-      <MediaPlaceholder
-        mediaId={`${recipe.id}-hero`}
-        label="Planned finished-dish hero"
-        altDraft={`Finished ${recipe.title}, plated for service with visible safe-doneness cues`}
-        ratio="4:3"
-        priority
-        showCredit
-      />
+          label: 'Recipes',
+          href: registryPathById(registry, 'SYS_RECIPES'),
+        },
+        {
+          label: category.label,
+          href: registryPathById(registry, category.id),
+        },
+        { label: recipe.title },
+      ]}
+    />
+    <p class="eyebrow">{category.label} · Draft {recipe.id}</p>
+    <h1>{recipe.title}</h1>
+    {
+      (recipe.hangul || recipe.romanization) && (
+        <p class="recipe-names">
+          {recipe.hangul && <span lang="ko">{recipe.hangul}</span>}
+          {recipe.hangul && recipe.romanization && ' · '}
+          {recipe.romanization}
+        </p>
+      )
+    }
+    <p class="lede">{recipe.shortDescription}</p>
+    <div class="badge-row" aria-label="Recipe draft status">
+      <span class="badge">{recipe.adaptationLabel}</span>
+      <span class="badge">Test cook required</span>
+      <span class="badge">Safety review required</span>
+      <span class="badge">Language review required</span>
     </div>
-  </header>
+  </EditorialHero>
 
   <RecipeControls />
 

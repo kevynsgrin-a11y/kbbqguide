@@ -2,6 +2,7 @@
 import registryData from '../../data/url-registry.json';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import DisabledForm from '../components/DisabledForm.astro';
+import EditorialHero from '../components/EditorialHero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { breadcrumbJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
@@ -21,21 +22,24 @@ const path = registryPathById(registry, 'SYS_CLASS');
     ]),
   ]}
 >
-  <header class="category-hero">
-    <div class="shell reading-width">
-      <Breadcrumbs
-        items={[{ label: 'Home', href: '/' }, { label: 'Live Class' }]}
-      />
-      <p class="eyebrow">Concept only · no class scheduled</p>
-      <h1>Practice the table as a system.</h1>
-      <p class="lede">
-        A possible class would cover menu scope, appliance-setting decisions,
-        raw/cooked zones, batch flow, thermometer cues, ssam service, and
-        cleanup. Instructor, curriculum, platform, date, capacity, price, refund
-        terms, and accessibility are unapproved.
-      </p>
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_CLASS-hero"
+    label="Live class editorial hero"
+    altDraft="An adult instructor checking cooked food with a thermometer beside an approved electric tabletop grill"
+    class="category-hero"
+  >
+    <Breadcrumbs
+      items={[{ label: 'Home', href: '/' }, { label: 'Live Class' }]}
+    />
+    <p class="eyebrow">Concept only · no class scheduled</p>
+    <h1>Practice the table as a system.</h1>
+    <p class="lede">
+      A possible class would cover menu scope, appliance-setting decisions,
+      raw/cooked zones, batch flow, thermometer cues, ssam service, and cleanup.
+      Instructor, curriculum, platform, date, capacity, price, refund terms, and
+      accessibility are unapproved.
+    </p>
+  </EditorialHero>
   <section class="section tinted">
     <div class="shell support-grid">
       <section class="support-card">

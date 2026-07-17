@@ -8,8 +8,9 @@ Public release: not authorized
 
 - 80 original synthetic finished-dish recipe masters, one per recipe.
 - One original synthetic home lifestyle master and a 1200 × 630 social derivative.
-- Six distinct category heroes resolved from subject-appropriate recipe assets.
-- Image-led recipe, guide, menu, recipe-index, guide-index, and menu-index entry points.
+- Six distinct category campaign frames, twelve subject-specific guide frames, and three guest-count-accurate menu frames.
+- Dedicated recipe-, guide-, and menu-index imagery plus Start Here, tools, shop, newsletter, class, media-kit, partnerships, licensing, policy, and sitemap treatments.
+- Shared typed `ResponsiveMedia`, `EditorialHero`, `EditorialBanner`, and `MediaCredit` components with honest fallback behavior.
 - Manifest-backed attribution, provenance, rights scope, alt/caption decisions, focal points, dimensions, and QA state.
 - Astro AVIF/WebP/JPEG responsive delivery at five widths with intrinsic aspect ratios.
 - Eager/high-priority hero loading; lazy card loading; no remote image runtime.
@@ -20,12 +21,12 @@ All active assets are `synthetic-labeled`. They are not described as photographs
 
 ## Final evidence
 
-- **Asset inventory:** 81 registered 2400 × 1600 masters (80 recipe heroes and one home lifestyle hero), 46.14 MiB of local source media, plus one 1200 × 630 social derivative. The flat review inventory contains 81 rows in `docs/media-assets-phase9.csv`.
-- **Responsive build:** 1,296 generated outputs: 405 AVIF, 405 WebP, and JPEG fallbacks/masters. The largest optimized output is 533,340 bytes.
-- **Static output:** 116 pages, including 80 recipe pages, 12 guide pages, and three menu detail pages; 4,180 internal links validated.
-- **Automated validation:** 130 of 130 full-suite tests and 118 of 118 Phase 9 gate tests passed; Astro checked 77 files with zero errors, warnings, or hints.
+- **Asset inventory:** 115 registered 2400 × 1600 masters (80 recipe heroes and 35 editorial entry-point assets), 60.50 MiB of local source media, plus one 1200 × 630 social derivative. The flat review inventory contains 115 data rows in `docs/media-assets-phase9.csv`.
+- **Responsive build:** 1,840 generated outputs: 575 AVIF, 575 WebP, and 690 JPEG fallbacks/masters. The largest optimized output is 562,978 bytes.
+- **Static output:** 116 pages, including 80 recipe pages, 12 guide pages, and three menu detail pages; 4,181 internal links validated.
+- **Automated validation:** 132 of 132 full-suite tests and 120 of 120 Phase 9 gate tests passed; Astro checked 79 files with zero errors, warnings, or hints.
 - **Browser evidence:** 84 of 84 route/viewport checks passed across 390, 768, 1440, and 1920 CSS pixels. Ten inspected screenshots are retained in `docs/screenshots/phase9/`; see `docs/PHASE-9-BROWSER-QA.md`.
-- **Performance/security:** maximum estimated compressed initial non-media transfer is 32,949 bytes; compressed CSS is 6,817 bytes; external JavaScript and third-party scripts are zero; local LCP smoke max is 88 ms and CLS is zero. Seven security headers and 16 CSP directives passed with zero inline styles.
+- **Performance/security:** maximum estimated compressed initial non-media transfer is 34,090 bytes and maximum estimated mobile initial transfer including hero media is 112,640 bytes; compressed CSS is 7,431 bytes; external JavaScript and third-party scripts are zero. The largest mobile hero candidate is 78,550 bytes and desktop hero candidate is 562,978 bytes. Seven security headers and 16 CSP directives passed with zero inline styles.
 
 The GitHub draft PR and Cloudflare branch-preview URLs are delivery metadata, not production-release approval. They are reported with the final delivery after the pushed branch is verified.
 
