@@ -1,8 +1,13 @@
 # Phase 9 Visual Editorial Handoff
 
 Branch: `phase-9-visual-editorial-overhaul`  
-Status: implementation and local QA complete; draft PR and branch preview pending  
+Status: implementation, validation, and public branch-preview QA complete
+
 Public release: not authorized
+
+Draft pull request: `https://github.com/kevynsgrin-a11y/kbbqguide/pull/2`
+
+Cloudflare branch preview: `https://phase-9-visual-editorial-ove.kbbqguide.pages.dev/`
 
 ## Implemented campaign
 
@@ -25,10 +30,11 @@ All active assets are `synthetic-labeled`. They are not described as photographs
 - **Responsive build:** 1,840 generated outputs: 575 AVIF, 575 WebP, and 690 JPEG fallbacks/masters. The largest optimized output is 562,978 bytes.
 - **Static output:** 116 pages, including 80 recipe pages, 12 guide pages, and three menu detail pages; 4,181 internal links validated.
 - **Automated validation:** 132 of 132 full-suite tests and 120 of 120 Phase 9 gate tests passed; Astro checked 79 files with zero errors, warnings, or hints.
-- **Browser evidence:** 84 of 84 route/viewport checks passed across 390, 768, 1440, and 1920 CSS pixels. Ten inspected screenshots are retained in `docs/screenshots/phase9/`; see `docs/PHASE-9-BROWSER-QA.md`.
+- **Browser evidence:** 84 of 84 local route/viewport checks passed across 390, 768, 1440, and 1920 CSS pixels. A further 24-route public-preview sweep passed at 1363 × 936 with zero broken images, missing alt attributes, horizontal overflow, or site-origin console errors. Eleven inspected screenshots are retained in `docs/screenshots/phase9/`; see `docs/PHASE-9-BROWSER-QA.md`.
 - **Performance/security:** maximum estimated compressed initial non-media transfer is 34,090 bytes and maximum estimated mobile initial transfer including hero media is 112,640 bytes; compressed CSS is 7,431 bytes; external JavaScript and third-party scripts are zero. The largest mobile hero candidate is 78,550 bytes and desktop hero candidate is 562,978 bytes. Seven security headers and 16 CSP directives passed with zero inline styles.
 
-The GitHub draft PR and Cloudflare branch-preview URLs are delivery metadata, not production-release approval. They are reported with the final delivery after the pushed branch is verified.
+The GitHub draft PR and Cloudflare branch preview are approval surfaces only. The pull
+request remains draft and unmerged; production release remains explicitly unauthorized.
 
 ## Deliberately retained placeholders
 
