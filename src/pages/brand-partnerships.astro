@@ -2,6 +2,7 @@
 import registryData from '../../data/url-registry.json';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import DisabledForm from '../components/DisabledForm.astro';
+import EditorialHero from '../components/EditorialHero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { breadcrumbJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
@@ -21,19 +22,22 @@ const path = registryPathById(registry, 'SYS_PARTNERSHIPS');
     ]),
   ]}
 >
-  <header class="category-hero">
-    <div class="shell reading-width">
-      <Breadcrumbs
-        items={[{ label: 'Home', href: '/' }, { label: 'Brand Partnerships' }]}
-      /><p class="eyebrow">Fit and evidence before deliverables</p><h1>
-        Brand partnership intake
-      </h1><p class="lede">
-        A future intake must surface the product, contracting entity, audience
-        fit, claims, compensation, timing, usage, exclusivity, platform rules,
-        and conflicts before a proposal is drafted.
-      </p>
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_PARTNERSHIPS-hero"
+    label="Brand partnerships editorial hero"
+    altDraft="Three adult collaborators reviewing blank packaging and Korean barbecue ingredients"
+    class="category-hero"
+  >
+    <Breadcrumbs
+      items={[{ label: 'Home', href: '/' }, { label: 'Brand Partnerships' }]}
+    /><p class="eyebrow">Fit and evidence before deliverables</p><h1>
+      Brand partnership intake
+    </h1><p class="lede">
+      A future intake must surface the product, contracting entity, audience
+      fit, claims, compensation, timing, usage, exclusivity, platform rules, and
+      conflicts before a proposal is drafted.
+    </p>
+  </EditorialHero>
   <section class="section tinted">
     <div class="shell support-grid">
       <section class="support-card">

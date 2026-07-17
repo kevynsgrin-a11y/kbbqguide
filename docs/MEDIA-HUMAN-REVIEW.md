@@ -1,25 +1,25 @@
 # Phase 9 Human Media Review
 
 Status: **required before public release**  
-Scope: 81 active `synthetic-labeled` hero assets  
+Scope: 115 active `synthetic-labeled` editorial assets
 Machine inventory: `data/media-manifest.json`  
 Flat inventory: `docs/media-assets-phase9.csv`
 
 ## What has been completed
 
-The Phase 9 implementation screened every promoted master at full composition for subject identity, obvious ingredient conflicts, unsafe doneness or raw/cooked-contact depiction, bivalve shell cues, crop safety, artifacts, logos, text, and watermarks. Two first-pass generations were rejected and replaced: M19 for a rosy duck interior that conflicted with the recipe’s safe-doneness cue, and SF01 for raw shrimp appearing behind a cooked serving. The promoted set has no implementation-screen failures.
+The Phase 9 implementation screened every promoted master at full composition for subject identity, obvious ingredient conflicts, unsafe doneness or raw/cooked-contact depiction, bivalve shell cues, guest-count accuracy, crop safety, anatomy, artifacts, logos, text, and watermarks. Rejected first passes were replaced rather than promoted: M19 for a rosy duck interior, SF01 for raw shrimp behind a cooked serving, the guides-index frame for raw meat in a planning workspace, the eight-guest menu for showing only six settings, the menu-scaling guide for baked-in calculator numerals, and the media-kit/licensing frames for small device or calibration markings. The promoted set has no implementation-screen failures.
 
 This is an implementation QA pass, not a human editorial approval. No human sign-off is inferred in the manifest.
 
 ## Required human review lanes
 
-| Lane                              | Scope                                                      | Required decision                                                            |
-| --------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Food editor / test kitchen        | 80 recipe heroes                                           | Dish identity, ingredient plausibility, yield, texture, and serving state    |
-| Food-safety reviewer              | All recipes; prioritize meats and seafood                  | Doneness, raw/cooked separation, appliance context, shells, and holding cues |
-| Korean cultural/language reviewer | 80 recipe heroes plus home                                 | Names, context, table setting, adaptation framing, and stereotype avoidance  |
-| Accessibility editor              | All 81 assets                                              | Alt decision, final alt text, caption usefulness, and credit clarity         |
-| Brand/editorial lead              | Home, six category aliases, guides, menus, system surfaces | Tone, crop, repetition, and release suitability                              |
+| Lane                              | Scope                                                    | Required decision                                                            |
+| --------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Food editor / test kitchen        | 80 recipe heroes                                         | Dish identity, ingredient plausibility, yield, texture, and serving state    |
+| Food-safety reviewer              | All recipes; prioritize meats and seafood                | Doneness, raw/cooked separation, appliance context, shells, and holding cues |
+| Korean cultural/language reviewer | All recipe, gathering, category, guide, and menu imagery | Names, context, table setting, adaptation framing, and stereotype avoidance  |
+| Accessibility editor              | All 115 assets                                           | Alt decision, final alt text, caption usefulness, and credit clarity         |
+| Brand/editorial lead              | All 115 assets                                           | Tone, crop, cohesion, repetition, and release suitability                    |
 
 ## Review protocol
 

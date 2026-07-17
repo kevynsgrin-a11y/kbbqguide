@@ -1,6 +1,7 @@
 ---
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { itemListJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
@@ -114,6 +115,14 @@ const path = registryPathById(registry, 'SYS_SITEMAP');
         This map intentionally omits policy, video, about, contact, and account
         routes that remain reserved without an implementation.
       </p>
+      <MediaPlaceholder
+        mediaId="POLICY-tabletop-texture"
+        label="Editorial sitemap banner"
+        altDraft="Decorative charcoal tabletop texture with cream ceramic and brushed metal"
+        ratio="16:9"
+        class="policy-media-banner"
+        showCredit
+      />
     </div>
   </header>
 

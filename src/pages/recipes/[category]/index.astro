@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import registryData from '../../../../data/url-registry.json';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
-import MediaPlaceholder from '../../../components/MediaPlaceholder.astro';
+import EditorialHero from '../../../components/EditorialHero.astro';
 import RecipeCard from '../../../components/RecipeCard.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import {
@@ -59,33 +59,27 @@ const structuredData = [
   jsonLd={structuredData}
   pageClass={`category-${category.accent}`}
 >
-  <header class="category-hero">
-    <div class="shell hero-grid">
-      <div>
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-            {
-              label: 'Recipes',
-              href: registryPathById(registry, 'SYS_RECIPES'),
-            },
-            { label: category.label },
-          ]}
-        />
-        <p class="eyebrow">{category.eyebrow}</p>
-        <h1>{category.label}</h1>
-        <p class="lede">{category.description}</p>
-        <p class="card-meta"><span>{recipes.length} recipes</span></p>
-      </div>
-      <MediaPlaceholder
-        mediaId={`${category.id}-hero`}
-        label={`${category.label} at the table`}
-        altDraft={`Representative ${category.label.toLowerCase()} dishes arranged on a warm tabletop`}
-        ratio="16:9"
-        priority
-      />
-    </div>
-  </header>
+  <EditorialHero
+    mediaId={`${category.id}-hero`}
+    label={`${category.label} at the table`}
+    altDraft={`Representative ${category.label.toLowerCase()} dishes arranged on a warm tabletop`}
+    class="category-hero"
+  >
+    <Breadcrumbs
+      items={[
+        { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+        {
+          label: 'Recipes',
+          href: registryPathById(registry, 'SYS_RECIPES'),
+        },
+        { label: category.label },
+      ]}
+    />
+    <p class="eyebrow">{category.eyebrow}</p>
+    <h1>{category.label}</h1>
+    <p class="lede">{category.description}</p>
+    <p class="card-meta"><span>{recipes.length} recipes</span></p>
+  </EditorialHero>
 
   <section class="section tinted" aria-labelledby="category-recipes-title">
     <div class="shell">

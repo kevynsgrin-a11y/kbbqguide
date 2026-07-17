@@ -1,6 +1,7 @@
 ---
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
 import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { guides } from '../../lib/guides';
@@ -27,32 +28,25 @@ const guideItems = guides.map((guide) => ({
     itemListJsonLd('Korean BBQ planning guides', guideItems),
   ]}
 >
-  <header class="category-hero">
-    <div class="shell hero-grid">
-      <div>
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-            { label: 'Guides' },
-          ]}
-        />
-        <p class="eyebrow">Twelve decision guides</p>
-        <h1>Plan the room, table, work, and cleanup.</h1>
-        <p class="lede">
-          Move from room setup to cleanup with practical checkpoints that
-          respect different homes, equipment, appetites, and ways of building
-          the table.
-        </p>
-      </div>
-      <MediaPlaceholder
-        mediaId="SYS_GUIDES-hero"
-        label="Korean barbecue planning guides"
-        altDraft="Friends gathered around a Korean barbecue table"
-        ratio="16:9"
-        priority
-      />
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_GUIDES-hero"
+    label="Korean barbecue planning guides"
+    altDraft="A clean Korean barbecue planning workspace with table map and approved electric grill"
+    class="category-hero guide-hero"
+  >
+    <Breadcrumbs
+      items={[
+        { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+        { label: 'Guides' },
+      ]}
+    />
+    <p class="eyebrow">Twelve decision guides</p>
+    <h1>Plan the room, table, work, and cleanup.</h1>
+    <p class="lede">
+      Move from room setup to cleanup with practical checkpoints that respect
+      different homes, equipment, appetites, and ways of building the table.
+    </p>
+  </EditorialHero>
 
   <section class="section tinted" aria-labelledby="guide-index-title">
     <div class="shell">

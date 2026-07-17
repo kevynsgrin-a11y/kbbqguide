@@ -1626,8 +1626,11 @@ a.support-card:hover {
 
   .hero-table,
   .category-card,
-  .recipe-card {
+  .recipe-card,
+  .editorial-hero-copy,
+  .editorial-hero-media {
     transform: none !important;
+    animation: none !important;
   }
 }
 
@@ -1745,6 +1748,42 @@ a.support-card:hover {
   object-position: var(--media-focal-point);
 }
 
+.responsive-media.focal-50-50 {
+  --media-focal-point: 50% 50%;
+}
+
+.responsive-media.focal-54-50 {
+  --media-focal-point: 54% 50%;
+}
+
+.responsive-media.focal-56-50 {
+  --media-focal-point: 56% 50%;
+}
+
+.responsive-media.focal-56-52 {
+  --media-focal-point: 56% 52%;
+}
+
+.responsive-media.focal-58-48 {
+  --media-focal-point: 58% 48%;
+}
+
+.responsive-media.focal-58-50 {
+  --media-focal-point: 58% 50%;
+}
+
+.responsive-media.focal-58-52 {
+  --media-focal-point: 58% 52%;
+}
+
+.responsive-media.focal-60-50 {
+  --media-focal-point: 60% 50%;
+}
+
+.responsive-media.focal-62-48 {
+  --media-focal-point: 62% 48%;
+}
+
 .media-credit {
   position: absolute;
   z-index: 2;
@@ -1771,6 +1810,13 @@ a.support-card:hover {
   border-bottom: 1px solid var(--color-cream-200);
 }
 
+.recipe-card .responsive-media img,
+.category-card .responsive-media img,
+.guide-card .responsive-media img,
+.menu-card .responsive-media img {
+  transition: transform 420ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
 .guide-card .responsive-media,
 .menu-card .responsive-media {
   margin: calc(-1 * var(--space-6)) calc(-1 * var(--space-6)) var(--space-5);
@@ -1788,10 +1834,127 @@ a.support-card:hover {
 }
 
 .category-hero .responsive-media,
-.recipe-hero .responsive-media {
+.recipe-hero .responsive-media,
+.editorial-hero .responsive-media {
   border: 1px solid rgb(67 55 43 / 14%);
   border-radius: var(--radius-lg);
   box-shadow: 0 1.5rem 3.5rem rgb(35 28 21 / 14%);
+}
+
+.editorial-hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(3.5rem, 7vw, 7rem);
+  background:
+    radial-gradient(
+      circle at 12% 12%,
+      rgb(155 111 46 / 10%),
+      transparent 28rem
+    ),
+    var(--color-cream-50);
+}
+
+.editorial-hero-dark {
+  color: var(--color-cream-50);
+  background:
+    radial-gradient(circle at 14% 8%, rgb(177 125 50 / 17%), transparent 30rem),
+    #171914;
+}
+
+.editorial-hero-dark .lede,
+.editorial-hero-dark .breadcrumbs a,
+.editorial-hero-dark .breadcrumbs li,
+.editorial-hero-dark .recipe-names {
+  color: #e7e0d4;
+}
+
+.editorial-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.editorial-hero-copy {
+  max-width: 43rem;
+  animation: editorial-copy-reveal 520ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.editorial-hero-copy h1 {
+  max-width: 14ch;
+  text-wrap: balance;
+}
+
+.editorial-hero-media {
+  min-height: clamp(20rem, 34vw, 34rem);
+  aspect-ratio: auto !important;
+  animation: editorial-media-reveal 620ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.recipe-hero.editorial-hero .editorial-hero-media {
+  min-height: clamp(24rem, 39vw, 39rem);
+}
+
+.editorial-banner {
+  position: relative;
+  display: grid;
+  min-height: clamp(22rem, 43vw, 34rem);
+  overflow: hidden;
+  color: #fffaf1;
+  background: #171914;
+  isolation: isolate;
+}
+
+.editorial-banner-media {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  aspect-ratio: auto !important;
+}
+
+.editorial-banner::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(11 13 10 / 88%), rgb(11 13 10 / 30%));
+  content: '';
+  pointer-events: none;
+}
+
+.editorial-banner-copy {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  width: min(100% - 2rem, var(--content-wide));
+  padding-block: clamp(4rem, 9vw, 8rem);
+}
+
+.editorial-banner-copy > * {
+  max-width: 39rem;
+}
+
+.editorial-banner-copy h2 {
+  max-width: 13ch;
+  color: #fffaf1;
+  text-wrap: balance;
+}
+
+.editorial-banner-copy .lede {
+  color: #ebe3d7;
+}
+
+@keyframes editorial-copy-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(0.6rem);
+  }
+}
+
+@keyframes editorial-media-reveal {
+  from {
+    opacity: 0;
+    transform: scale(1.012);
+  }
 }
 
 .marketing-hero {
@@ -1850,6 +2013,10 @@ a.support-card:hover {
 }
 
 @media (max-width: 60rem) {
+  .editorial-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
   .category-hero .hero-grid,
   .guide-hero .hero-grid,
   .menu-hero .hero-grid {
@@ -1857,8 +2024,15 @@ a.support-card:hover {
   }
 
   .category-hero .responsive-media,
-  .recipe-hero .responsive-media {
+  .recipe-hero .responsive-media,
+  .editorial-hero .responsive-media {
     width: min(44rem, 100%);
+  }
+
+  .editorial-hero-media,
+  .recipe-hero.editorial-hero .editorial-hero-media {
+    min-height: 0;
+    aspect-ratio: 4 / 3 !important;
   }
 }
 
@@ -1867,8 +2041,16 @@ a.support-card:hover {
     min-height: max(42rem, 82svh);
   }
 
-  .home-hero-media {
+  .responsive-media.mobile-center-safe {
+    --media-focal-point: 50% 50%;
+  }
+
+  .responsive-media.mobile-subject-right {
     --media-focal-point: 64% 50%;
+  }
+
+  .responsive-media.mobile-people-right {
+    --media-focal-point: 70% 48%;
   }
 
   .home-hero-scrim {
@@ -1886,10 +2068,45 @@ a.support-card:hover {
     inset: auto var(--space-2) var(--space-2);
     max-width: calc(100% - 2 * var(--space-2));
   }
+
+  .editorial-hero {
+    padding-block: var(--space-7);
+  }
+
+  .editorial-hero-grid {
+    gap: var(--space-6);
+  }
+
+  .editorial-banner {
+    min-height: 30rem;
+  }
+
+  .editorial-banner::after {
+    background: linear-gradient(
+      0deg,
+      rgb(11 13 10 / 90%) 0%,
+      rgb(11 13 10 / 32%) 80%
+    );
+  }
+
+  .editorial-banner-copy {
+    align-content: end;
+    padding-block: 8rem 3rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .recipe-card:hover .responsive-media img,
+  .category-card:hover .responsive-media img,
+  .guide-card:hover .responsive-media img,
+  .menu-card:hover .responsive-media img {
+    transform: scale(1.035);
+  }
 }
 
 @media print {
-  .responsive-media {
+  .responsive-media,
+  .editorial-banner {
     display: none !important;
   }
 }

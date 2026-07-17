@@ -28,12 +28,19 @@ const sizes =
 ---
 
 <figure
-  class:list={['responsive-media', className]}
+  class:list={[
+    'responsive-media',
+    media.focalPointClass,
+    media.mobileCropClass,
+    className,
+  ]}
   data-ratio={ratio}
   data-media-id={media.assetId}
   data-asset-status={media.assetStatus}
   data-disclosure={media.provenance.disclosure}
   data-focal-point={media.focalPoint}
+  data-mobile-crop={media.mobileCrop}
+  data-loading={priority ? 'eager-high' : 'lazy'}
 >
   <Picture
     src={media.image}
@@ -44,7 +51,7 @@ const sizes =
     alt={media.altDecision === 'decorative' ? '' : media.altText}
     loading={priority ? 'eager' : 'lazy'}
     decoding="async"
-    fetchpriority={priority ? 'high' : 'auto'}
+    fetchpriority={priority ? 'high' : undefined}
   />
   {showCredit && <MediaCredit caption={media.caption} credit={media.credit} />}
 </figure>

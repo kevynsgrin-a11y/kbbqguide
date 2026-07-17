@@ -6,6 +6,29 @@ import { stdout } from 'node:process';
 
 const root = resolve(import.meta.dirname, '..');
 const dist = resolve(root, 'dist');
+const manifest = JSON.parse(
+  readFileSync(resolve(root, 'data/media-manifest.json'), 'utf8'),
+);
+const allowedActiveStatuses = new Set([
+  'original-approved',
+  'licensed-approved',
+  'synthetic-labeled',
+]);
+const manifestAssetsById = new Map(
+  manifest.assets.map((asset) => [asset.assetId, asset]),
+);
+if (manifestAssetsById.size !== manifest.assets.length)
+  throw new Error('Media manifest contains duplicate immutable asset IDs.');
+for (const asset of manifest.assets) {
+  if (!allowedActiveStatuses.has(asset.assetStatus))
+    throw new Error(
+      `Active asset ${asset.assetId} has unapproved status ${asset.assetStatus}.`,
+    );
+  if (/^(?:https?:)?\/\//i.test(asset.path))
+    throw new Error(`Remote media path is forbidden: ${asset.path}`);
+  if (!existsSync(resolve(root, asset.path)))
+    throw new Error(`Manifest media master is missing: ${asset.path}`);
+}
 
 function walk(directory) {
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -28,8 +51,16 @@ let maxCompressedHtml = 0;
 let maxUncompressedHtml = 0;
 let thirdPartyScripts = 0;
 const referencedAssetPaths = new Set();
+const renderedMediaIds = new Set();
+const eagerImageCandidates = new Map();
+const routesWithoutLcpMedia = new Set([
+  'affiliate-disclosure/index.html',
+  'sponsored-content-policy/index.html',
+  'sitemap/index.html',
+]);
 for (const file of htmlFiles) {
   const html = readFileSync(file, 'utf8');
+  const route = relative(dist, file);
   maxCompressedHtml = Math.max(maxCompressedHtml, gzipSync(html).byteLength);
   maxUncompressedHtml = Math.max(maxUncompressedHtml, Buffer.byteLength(html));
   const title = html.match(/<title>(.*?)<\/title>/)?.[1];
@@ -55,6 +86,78 @@ for (const file of htmlFiles) {
     .length;
   if (/<iframe\b/i.test(html))
     throw new Error(`Unexpected iframe: ${relative(dist, file)}`);
+  if (/\sstyle\s*=/i.test(html))
+    throw new Error(`Inline style attribute: ${relative(dist, file)}`);
+  if (/<(?:img|source)[^>]+(?:src|srcset)="(?:https?:)?\/\//i.test(html))
+    throw new Error(`Remote or hotlinked image: ${relative(dist, file)}`);
+
+  const renderedIds = [...html.matchAll(/data-media-id="([^"]+)"/g)].map(
+    (match) => match[1],
+  );
+  for (const mediaId of renderedIds) {
+    const asset = manifestAssetsById.get(mediaId);
+    if (!asset)
+      throw new Error(`Unregistered rendered media ${mediaId} in ${route}.`);
+    if (!allowedActiveStatuses.has(asset.assetStatus))
+      throw new Error(`Unapproved rendered media ${mediaId} in ${route}.`);
+    if (!html.includes(`data-media-id="${mediaId}"`))
+      throw new Error(
+        `Media ID serialization failed for ${mediaId} in ${route}.`,
+      );
+    renderedMediaIds.add(mediaId);
+  }
+  for (const figure of html.matchAll(/<figure\b[^>]*>/gi)) {
+    const tag = figure[0];
+    const mediaId = tag.match(/data-media-id="([^"]+)"/)?.[1];
+    if (!mediaId) continue;
+    const status = tag.match(/data-asset-status="([^"]+)"/)?.[1];
+    const asset = manifestAssetsById.get(mediaId);
+    if (!asset || status !== asset.assetStatus)
+      throw new Error(
+        `Rendered media status mismatch for ${mediaId} in ${route}.`,
+      );
+  }
+
+  const imageTags = [...html.matchAll(/<img\b[^>]*>/gi)].map(
+    (match) => match[0],
+  );
+  const eagerImages = imageTags.filter((tag) => /\bloading="eager"/i.test(tag));
+  const highPriorityImages = imageTags.filter((tag) =>
+    /\bfetchpriority="high"/i.test(tag),
+  );
+  if (eagerImages.length > 1 || highPriorityImages.length > 1)
+    throw new Error(`More than one prioritized image in ${route}.`);
+  if (eagerImages.length !== highPriorityImages.length)
+    throw new Error(`Eager/high-priority mismatch in ${route}.`);
+  if (routesWithoutLcpMedia.has(route)) {
+    if (eagerImages.length !== 0)
+      throw new Error(`Policy route unexpectedly prioritizes media: ${route}.`);
+  } else if (eagerImages.length !== 1) {
+    throw new Error(`Expected exactly one LCP image in ${route}.`);
+  }
+  for (const tag of imageTags) {
+    if (!/\bwidth="\d+"/i.test(tag) || !/\bheight="\d+"/i.test(tag))
+      throw new Error(`Image lacks intrinsic dimensions in ${route}.`);
+    if (!/\balt(?:="[^"]*")?(?=\s|>)/i.test(tag))
+      throw new Error(`Image lacks an alt attribute in ${route}.`);
+    if (!/\bloading="(?:eager|lazy)"/i.test(tag))
+      throw new Error(`Image lacks an explicit loading policy in ${route}.`);
+    if (/\bloading="eager"/i.test(tag) && !/\bfetchpriority="high"/i.test(tag))
+      throw new Error(`Eager image lacks high priority in ${route}.`);
+    if (/\bloading="lazy"/i.test(tag) && /\bfetchpriority="high"/i.test(tag))
+      throw new Error(`Lazy image has high priority in ${route}.`);
+  }
+
+  for (const picture of html.matchAll(/<picture\b[\s\S]*?<\/picture>/gi)) {
+    const markup = picture[0];
+    if (!/\bloading="eager"/i.test(markup)) continue;
+    for (const match of markup.matchAll(/(?:src|srcset)="([^"]+)"/gi)) {
+      for (const candidate of (match[1] ?? '').split(',')) {
+        const [path, descriptor = ''] = candidate.trim().split(/\s+/, 2);
+        if (path?.startsWith('/')) eagerImageCandidates.set(path, descriptor);
+      }
+    }
+  }
 
   for (const match of html.matchAll(
     /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
@@ -102,6 +205,16 @@ for (const file of htmlFiles) {
         `Broken internal link ${href} in ${relative(dist, file)}.`,
       );
   }
+}
+
+for (const asset of manifest.assets) {
+  if (!renderedMediaIds.has(asset.assetId))
+    throw new Error(`Registered active media is orphaned: ${asset.assetId}.`);
+}
+for (const assetPath of referencedAssetPaths) {
+  const localPath = join(dist, assetPath.replace(/^\//, ''));
+  if (!existsSync(localPath))
+    throw new Error(`Broken built asset request: ${assetPath}.`);
 }
 
 const recipePages = htmlFiles.filter((file) => {
@@ -292,6 +405,39 @@ const imageFiles = files.filter((file) =>
 const deliveredImageFiles = imageFiles.filter((file) =>
   referencedAssetPaths.has('/' + relative(dist, file)),
 );
+const eagerCandidateRecords = [...eagerImageCandidates].map(
+  ([assetPath, descriptor]) => {
+    const file = join(dist, assetPath.replace(/^\//, ''));
+    if (!existsSync(file))
+      throw new Error(`Broken eager image candidate: ${assetPath}.`);
+    return {
+      assetPath,
+      width: Number.parseInt(descriptor.replace(/w$/, ''), 10) || null,
+      bytes: readFileSync(file).byteLength,
+    };
+  },
+);
+const mobileEagerCandidates = eagerCandidateRecords.filter(
+  (candidate) => candidate.width !== null && candidate.width <= 640,
+);
+if (mobileEagerCandidates.length === 0)
+  throw new Error('No mobile eager image candidate was emitted.');
+const maxMobileHeroImageBytes = mobileEagerCandidates.reduce(
+  (max, candidate) => Math.max(max, candidate.bytes),
+  0,
+);
+const maxDesktopHeroImageBytes = eagerCandidateRecords.reduce(
+  (max, candidate) => Math.max(max, candidate.bytes),
+  0,
+);
+if (maxMobileHeroImageBytes > 350 * 1024)
+  throw new Error(
+    `A mobile hero candidate exceeds 350 KB: ${maxMobileHeroImageBytes} bytes.`,
+  );
+if (maxDesktopHeroImageBytes > 600 * 1024)
+  throw new Error(
+    `A desktop hero candidate exceeds 600 KB: ${maxDesktopHeroImageBytes} bytes.`,
+  );
 const avifFiles = deliveredImageFiles.filter(
   (file) => extname(file) === '.avif',
 );
@@ -318,6 +464,8 @@ const compressedJs = jsFiles.reduce(
 );
 const maxEstimatedInitialCompressedTransfer =
   maxCompressedHtml + compressedCss + compressedJs;
+const maxEstimatedMobileInitialTransfer =
+  maxEstimatedInitialCompressedTransfer + maxMobileHeroImageBytes;
 if (compressedCss > 45 * 1024)
   throw new Error(`Compressed CSS exceeds 45 KB: ${compressedCss} bytes.`);
 if (compressedJs > 35 * 1024)
@@ -328,9 +476,9 @@ if (maxCompressedInlineJavaScript > 35 * 1024)
   throw new Error(
     `Compressed inline JavaScript exceeds 35 KB: ${maxCompressedInlineJavaScript} bytes.`,
   );
-if (maxEstimatedInitialCompressedTransfer > 900 * 1024)
+if (maxEstimatedMobileInitialTransfer > 900 * 1024)
   throw new Error(
-    `Estimated initial transfer exceeds 900 KB: ${maxEstimatedInitialCompressedTransfer} bytes.`,
+    `Estimated mobile initial transfer exceeds 900 KB: ${maxEstimatedMobileInitialTransfer} bytes.`,
   );
 if (thirdPartyScripts !== 0)
   throw new Error(
@@ -357,7 +505,12 @@ stdout.write(
     maxUncompressedHtmlBytes: maxUncompressedHtml,
     maxEstimatedInitialCompressedTransferBytes:
       maxEstimatedInitialCompressedTransfer,
+    maxEstimatedMobileInitialTransferBytes: maxEstimatedMobileInitialTransfer,
+    maxMobileHeroImageBytes,
+    maxDesktopHeroImageBytes,
     thirdPartyScripts,
+    registeredMediaAssets: manifest.assets.length,
+    renderedMediaAssets: renderedMediaIds.size,
     optimizedImages: deliveredImageFiles.length,
     avifImages: avifFiles.length,
     webpImages: webpFiles.length,

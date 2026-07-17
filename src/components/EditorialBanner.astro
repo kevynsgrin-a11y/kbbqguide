@@ -1,0 +1,38 @@
+---
+import MediaPlaceholder from './MediaPlaceholder.astro';
+
+interface Props {
+  mediaId: string;
+  label: string;
+  altDraft: string;
+  variant?: 'overlay' | 'texture';
+  class?: string;
+  showCredit?: boolean;
+}
+
+const {
+  mediaId,
+  label,
+  altDraft,
+  variant = 'overlay',
+  class: className = '',
+  showCredit = true,
+} = Astro.props;
+---
+
+<section
+  class:list={['editorial-banner', `editorial-banner-${variant}`, className]}
+>
+  <MediaPlaceholder
+    {mediaId}
+    {label}
+    {altDraft}
+    ratio="16:9"
+    {showCredit}
+    class="editorial-banner-media"
+    sizes="(max-width: 60rem) 100vw, 1200px"
+  />
+  <div class="shell editorial-banner-copy">
+    <slot />
+  </div>
+</section>

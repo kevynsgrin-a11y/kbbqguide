@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "phase": 9,
   "status": "implementation-screened-synthetic-hero-campaign-active",
   "allowedAssetStatuses": [
@@ -49,7 +49,7 @@
       "height": 1600,
       "aspectRatio": "3:2",
       "focalPoint": "58% 50%",
-      "mobileCrop": "center-safe",
+      "mobileCrop": "people-right",
       "altDecision": "informative",
       "altText": "Four adult friends sharing a Korean barbecue table around an indoor electric grill.",
       "caption": "A warm, shared Korean barbecue table, visualized for KBBQGuide.",
@@ -2940,6 +2940,1230 @@
         "sourceRecord": "D05",
         "promptBasis": "Recipe title, short description, ingredients, instructions, and food-safety cues",
         "disclosure": "AI-generated editorial visualization; not a photograph of a test-kitchen cook."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "HOME-editorial-banner",
+      "kind": "image",
+      "role": "brand-lifestyle-banner",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/brand/home-editorial-banner-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "62% 48%",
+      "mobileCrop": "people-right",
+      "altDecision": "informative",
+      "altText": "Adult friends passing lettuce wraps and banchan across a warmly lit Korean barbecue table.",
+      "caption": "The table comes together through passing, wrapping, and sharing.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "HOME-lower-banner",
+        "promptBasis": "Adult friends passing ssam and banchan across a safely staged Korean barbecue table",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "CAT_MEAT-hero",
+      "kind": "image",
+      "role": "category-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/categories/grilled-meat-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Cooked marinated meat browning on a stainless tabletop grill beside ssam greens and banchan.",
+      "caption": "Grilled meat, paced in small batches for the shared table.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "CAT_MEAT",
+        "promptBasis": "Safe tabletop grilling of marinated meat with cooked-food landing zone and ssam",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "CAT_SEAFOOD-hero",
+      "kind": "image",
+      "role": "category-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/categories/seafood-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "56% 52%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Grilled shrimp, fish, and shellfish arranged with clean serving dishes on a Korean barbecue table.",
+      "caption": "Seafood with species-specific preparation and doneness in view.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "CAT_SEAFOOD",
+        "promptBasis": "Distinct cooked seafood selection with species-aware grilling cues and clean service dishes",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "CAT_BANCHAN-hero",
+      "kind": "image",
+      "role": "category-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/categories/banchan-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "54% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "An assortment of colorful banchan in cream ceramic dishes on a charcoal table.",
+      "caption": "Small plates bring contrast, rhythm, and make-ahead ease.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "CAT_BANCHAN",
+        "promptBasis": "Varied cooked, seasoned, chilled, and pickled banchan in cream ceramics",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "CAT_FRESH-hero",
+      "kind": "image",
+      "role": "category-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/categories/fresh-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 48%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Fresh lettuce, perilla leaves, sliced vegetables, and composed wraps on clean serving dishes.",
+      "caption": "Crisp greens and wraps keep the table bright.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "CAT_FRESH",
+        "promptBasis": "Washed, dried ssam greens and crisp fresh sides ready for clean service",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "CAT_SAUCES-hero",
+      "kind": "image",
+      "role": "category-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/categories/sauces-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 52%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Ssamjang and several Korean barbecue dipping sauces in small cream ceramic bowls.",
+      "caption": "Measured sauces and condiments finish each bite.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "CAT_SAUCES",
+        "promptBasis": "Clean-service Korean dipping sauces and condiments in individual ceramic dishes",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "CAT_DESSERTS-hero",
+      "kind": "image",
+      "role": "category-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/categories/desserts-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "56% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Korean sweets, fruit, and chilled drinks arranged as a calm finish to dinner.",
+      "caption": "A warm, restrained finish after the grill.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "CAT_DESSERTS",
+        "promptBasis": "Distinct Korean desserts and drinks served after the grill is safely shut down",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_RECIPES-hero",
+      "kind": "image",
+      "role": "collection-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/recipes-index-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "A complete Korean barbecue table with grilled dishes, banchan, greens, sauces, and dessert.",
+      "caption": "Six sections, composed as one deliberate table.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_RECIPES",
+        "promptBasis": "Complete Korean barbecue table showing the six recipe-library sections without unsafe raw/cooked contact",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_GUIDES-hero",
+      "kind": "image",
+      "role": "collection-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/guides-index-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "60% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "A Korean barbecue planning table with a blank table map, thermometer, greens, and electric grill.",
+      "caption": "Plan the room, table, work, and cleanup before service.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_GUIDES",
+        "promptBasis": "Clean planning workspace with table map, thermometer, greens, and approved electric grill",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_MENUS-hero",
+      "kind": "image",
+      "role": "collection-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/menus-index-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "A balanced Korean barbecue menu arranged around a stainless tabletop grill.",
+      "caption": "A menu grows with appetite, capacity, and workload.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_MENUS",
+        "promptBasis": "A balanced Korean barbecue menu staged for guest-count planning",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G01-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g01-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "A small first-night Korean barbecue table being calmly set by two adult friends.",
+      "caption": "A calm first-night plan with clean raw and ready-to-eat zones.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G01",
+        "promptBasis": "Subject-relevant editorial campaign frame for the beginners-table guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G02-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g02-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "54% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "An indoor-approved electric grill near a window with clear space and a manual-ready setup.",
+      "caption": "Setting and appliance approval come before atmosphere.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G02",
+        "promptBasis": "Subject-relevant editorial campaign frame for the indoor-outdoor-safety guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G03-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g03-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "A manufacturer-approved electric tabletop grill positioned with clear airflow and safe cord routing.",
+      "caption": "A workable grill setup keeps heat, air, and traffic in view.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G03",
+        "promptBasis": "Subject-relevant editorial campaign frame for the grill-ventilation guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G04-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g04-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "54% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "Korean pantry staples in unmarked jars beside garlic, scallions, sesame, and dried chile.",
+      "caption": "A label-first pantry built around real recipe needs.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G04",
+        "promptBasis": "Subject-relevant editorial campaign frame for the pantry guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G05-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g05-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Evenly sliced Korean barbecue meat arranged on a chilled raw-food tray with separate clean tools.",
+      "caption": "Cut, thickness, and method work together.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G05",
+        "promptBasis": "Subject-relevant editorial campaign frame for the meat-cuts guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G06-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g06-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "54% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "Fresh seafood on a chilled purchasing tray beside clean preparation tools and lemon.",
+      "caption": "Species-aware buying, preparation, and grilling.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G06",
+        "promptBasis": "Subject-relevant editorial campaign frame for the seafood-buying guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G07-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g07-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Fresh lettuce and perilla leaves being washed and dried for a clean ssam platter.",
+      "caption": "Washed, dried greens ready for wrapping.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G07",
+        "promptBasis": "Subject-relevant editorial campaign frame for the ssam-greens guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G08-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g08-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "54% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "Three blank overhead table plans scaled for two, four, and eight Korean barbecue guests.",
+      "caption": "Guest count changes quantity, appliance capacity, and workload.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G08",
+        "promptBasis": "Subject-relevant editorial campaign frame for the menu-scaling guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G09-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g09-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "A blank prep timeline beside labeled-by-shape containers and a safely cooled Korean barbecue table.",
+      "caption": "A calm timeline protects the last hour before guests arrive.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G09",
+        "promptBasis": "Subject-relevant editorial campaign frame for the prep-timeline guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G10-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g10-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "54% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "An assortment of make-ahead banchan in covered cream ceramic dishes.",
+      "caption": "Banchan variety with a manageable workload.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G10",
+        "promptBasis": "Subject-relevant editorial campaign frame for the banchan-planning guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G11-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g11-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "A cooled electric tabletop grill being cleaned with approved brushes and separate cloths.",
+      "caption": "Cleanup begins only after safe shutdown and cooling.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G11",
+        "promptBasis": "Subject-relevant editorial campaign frame for the cleanup guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "G12-hero",
+      "kind": "image",
+      "role": "guide-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/guides/g12-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "54% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "Korean barbecue leftovers cooling in shallow covered containers beside a refrigerator shelf.",
+      "caption": "Prompt cooling and clear leftovers planning.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "G12",
+        "promptBasis": "Subject-relevant editorial campaign frame for the leftovers guide",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "MENU_2-hero",
+      "kind": "image",
+      "role": "menu-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/menus/two-guests-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "50% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "A Korean barbecue table arranged with exactly two place settings.",
+      "caption": "A balanced table and workload for two.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "MENU_2",
+        "promptBasis": "Korean barbecue table visibly scaled to exactly two place settings",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "MENU_4-hero",
+      "kind": "image",
+      "role": "menu-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/menus/four-guests-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "50% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "A Korean barbecue table arranged with exactly four place settings.",
+      "caption": "A balanced table and workload for four.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "MENU_4",
+        "promptBasis": "Korean barbecue table visibly scaled to exactly four place settings",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "MENU_8-hero",
+      "kind": "image",
+      "role": "menu-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/menus/eight-guests-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "50% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "informative",
+      "altText": "A Korean barbecue table arranged with exactly eight place settings.",
+      "caption": "A balanced table and workload for eight.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "MENU_8",
+        "promptBasis": "Korean barbecue table visibly scaled to exactly eight place settings",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_START-hero",
+      "kind": "image",
+      "role": "system-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/start-here-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Friends setting a Korean barbecue table before guests gather.",
+      "caption": "A welcoming place to begin planning the whole table.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_START",
+        "promptBasis": "Subject-specific editorial campaign frame for SYS_START",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_TOOLS-hero",
+      "kind": "image",
+      "role": "system-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/planning-tools-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "A Korean barbecue planning workspace with an unmarked scale, thermometer, blank checklist, and ingredients.",
+      "caption": "Quantities and timing stay connected to the real table.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_TOOLS",
+        "promptBasis": "Subject-specific editorial campaign frame for SYS_TOOLS",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_SHOP-hero",
+      "kind": "image",
+      "role": "system-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/shop-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "A curated Korean barbecue equipment still life with a tabletop electric grill, thermometer, tongs, and cream ceramics.",
+      "caption": "A preview collection held behind evidence and approval gates.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_SHOP",
+        "promptBasis": "Subject-specific editorial campaign frame for SYS_SHOP",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_NEWSLETTER-hero",
+      "kind": "image",
+      "role": "system-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/newsletter-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "An adult editor writing on a blank cream page beside a warm Korean barbecue table.",
+      "caption": "Editorial notes, held until consent and delivery systems exist.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_NEWSLETTER",
+        "promptBasis": "Subject-specific editorial campaign frame for SYS_NEWSLETTER",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_CLASS-hero",
+      "kind": "image",
+      "role": "system-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/live-class-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "An adult instructor checking cooked food with a thermometer beside an approved electric tabletop grill.",
+      "caption": "Instruction keeps safety cues adjacent to the action.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_CLASS",
+        "promptBasis": "Subject-specific editorial campaign frame for SYS_CLASS",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_MEDIA_KIT-hero",
+      "kind": "image",
+      "role": "system-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/media-kit-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Borderless Korean barbecue photographs and unmarked material swatches arranged on a charcoal studio table.",
+      "caption": "A visual system for evidence-led partnership materials.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_MEDIA_KIT",
+        "promptBasis": "Subject-specific editorial campaign frame for SYS_MEDIA_KIT",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_PARTNERSHIPS-hero",
+      "kind": "image",
+      "role": "system-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/brand-partnerships-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Three adult collaborators reviewing blank packaging and Korean barbecue ingredients at a studio table.",
+      "caption": "Fit, claims, and editorial independence before deliverables.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_PARTNERSHIPS",
+        "promptBasis": "Subject-specific editorial campaign frame for SYS_PARTNERSHIPS",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "SYS_LICENSING-hero",
+      "kind": "image",
+      "role": "system-editorial-hero",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/licensing-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "58% 50%",
+      "mobileCrop": "subject-right",
+      "altDecision": "informative",
+      "altText": "Korean barbecue photographs, blank archival sleeves, cotton gloves, and an unmarked metal storage case.",
+      "caption": "Rights begin with a specific asset and a documented use.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "SYS_LICENSING",
+        "promptBasis": "Subject-specific editorial campaign frame for SYS_LICENSING",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
+      },
+      "rights": {
+        "source": "Original synthetic campaign created for this repository",
+        "scope": "KBBQGuide site, social preview, and editorial promotion",
+        "externalLicense": null
+      },
+      "qa": {
+        "implementationVisualReview": "pass",
+        "implementationFoodSafetyScreen": "pass",
+        "implementationCulturalAndIngredientScreen": "pass",
+        "responsiveCropReview": "pass",
+        "humanEditorialReview": "required",
+        "reviewer": "Phase 9 implementation agent; human sign-off not inferred"
+      }
+    },
+    {
+      "assetId": "POLICY-tabletop-texture",
+      "kind": "image",
+      "role": "policy-editorial-banner",
+      "assetStatus": "synthetic-labeled",
+      "path": "src/assets/media/system/policy-tabletop-texture-master.jpg",
+      "width": 2400,
+      "height": 1600,
+      "aspectRatio": "3:2",
+      "focalPoint": "50% 50%",
+      "mobileCrop": "center-safe",
+      "altDecision": "decorative",
+      "altText": "",
+      "caption": "KBBQGuide editorial policy artwork.",
+      "credit": "Synthetic image · KBBQGuide editorial direction / OpenAI",
+      "provenance": {
+        "creator": "OpenAI image generation under KBBQGuide editorial direction",
+        "generatedAt": "2026-07-17",
+        "sourceRecord": "POLICY-pages",
+        "promptBasis": "Lightweight charcoal linen, brushed metal, cream ceramic, sesame, and scallion tabletop texture",
+        "disclosure": "AI-generated editorial visualization; not documentary photography or test-kitchen evidence."
       },
       "rights": {
         "source": "Original synthetic campaign created for this repository",
@@ -14478,6 +15702,6 @@
       "qaStatus": "hero-implementation-screen-pass-human-review-required; remaining-assets-not-started"
     }
   ],
-  "notes": "Phase 9 activates one implementation-screened synthetic finished-dish hero for every recipe plus a brand lifestyle hero. Named human review remains required. Planned process stills and videos remain honest placeholders.",
+  "notes": "Phase 9 activates implementation-screened synthetic editorial media for all recipe heroes and major visual entry points. Named human review remains required. Planned recipe process stills and videos remain honest placeholders.",
   "generatedAt": "2026-07-16"
 }

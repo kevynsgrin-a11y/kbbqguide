@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
+import EditorialHero from '../../components/EditorialHero.astro';
 import RecipeCard from '../../components/RecipeCard.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { categories } from '../../lib/categories';
@@ -39,32 +39,26 @@ const structuredData = [
   canonicalPath={canonicalPath}
   jsonLd={structuredData}
 >
-  <header class="category-hero">
-    <div class="shell hero-grid">
-      <div>
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-            { label: 'Recipes' },
-          ]}
-        />
-        <p class="eyebrow">The KBBQGuide recipe library</p>
-        <h1>80 recipes. One deliberate table.</h1>
-        <p class="lede">
-          Browse by category or follow the suggested table-building order. Every
-          recipe keeps timing, sensory cues, context, and safety notes in the
-          same easy-to-scan structure.
-        </p>
-      </div>
-      <MediaPlaceholder
-        mediaId="SYS_RECIPES-hero"
-        label="Recipe library editorial hero"
-        altDraft="A finished Korean barbecue side dish on a warm table"
-        ratio="16:9"
-        priority
-      />
-    </div>
-  </header>
+  <EditorialHero
+    mediaId="SYS_RECIPES-hero"
+    label="Recipe library editorial hero"
+    altDraft="A complete Korean barbecue table showing the recipe library sections"
+    class="category-hero"
+  >
+    <Breadcrumbs
+      items={[
+        { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+        { label: 'Recipes' },
+      ]}
+    />
+    <p class="eyebrow">The KBBQGuide recipe library</p>
+    <h1>80 recipes. One deliberate table.</h1>
+    <p class="lede">
+      Browse by category or follow the suggested table-building order. Every
+      recipe keeps timing, sensory cues, context, and safety notes in the same
+      easy-to-scan structure.
+    </p>
+  </EditorialHero>
 
   <section class="section tinted" aria-labelledby="category-links-title">
     <div class="shell">

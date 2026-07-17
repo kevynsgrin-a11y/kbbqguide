@@ -39,7 +39,23 @@ export interface MediaManifestAsset {
 
 export interface ResolvedMedia extends MediaManifestAsset {
   image: ImageMetadata;
+  focalPointClass: FocalPointClass;
+  mobileCropClass: MobileCropClass;
 }
+
+export type FocalPointClass =
+  | 'focal-50-50'
+  | 'focal-54-50'
+  | 'focal-56-50'
+  | 'focal-56-52'
+  | 'focal-58-48'
+  | 'focal-58-50'
+  | 'focal-58-52'
+  | 'focal-60-50'
+  | 'focal-62-48';
+
+export type MobileCropClass =
+  'mobile-center-safe' | 'mobile-subject-right' | 'mobile-people-right';
 
 const modules = import.meta.glob<{ default: ImageMetadata }>(
   '../assets/media/**/*.jpg',
@@ -56,47 +72,43 @@ const imagesByManifestPath = new Map(
 const assets = (manifestData.assets ?? []) as MediaManifestAsset[];
 const assetsById = new Map(assets.map((asset) => [asset.assetId, asset]));
 
-const aliases: Record<string, string> = {
-  'HOME-hero': 'HOME-gathering-hero',
-  'CAT_MEAT-hero': 'M01-hero',
-  'CAT_SEAFOOD-hero': 'SF10-hero',
-  'CAT_BANCHAN-hero': 'B01-hero',
-  'CAT_FRESH-hero': 'F01-hero',
-  'CAT_SAUCES-hero': 'SA01-hero',
-  'CAT_DESSERTS-hero': 'D01-hero',
-  'SYS_RECIPES-hero': 'B01-hero',
-  'SYS_GUIDES-hero': 'HOME-gathering-hero',
-  'SYS_MENUS-hero': 'M01-hero',
-  'SYS_TOOLS-hero': 'B10-hero',
-  'SYS_START-hero': 'HOME-gathering-hero',
-  'SYS_SHOP-hero': 'SA01-hero',
-  'G01-hero': 'HOME-gathering-hero',
-  'G02-hero': 'M01-hero',
-  'G03-hero': 'M05-hero',
-  'G04-hero': 'SA01-hero',
-  'G05-hero': 'M08-hero',
-  'G06-hero': 'SF10-hero',
-  'G07-hero': 'F01-hero',
-  'G08-hero': 'HOME-gathering-hero',
-  'G09-hero': 'B10-hero',
-  'G10-hero': 'B01-hero',
-  'G11-hero': 'M05-hero',
-  'G12-hero': 'B07-hero',
-  'MENU_2-hero': 'M03-hero',
-  'MENU_4-hero': 'M01-hero',
-  'MENU_8-hero': 'HOME-gathering-hero',
-  'POLICY-hero': 'HOME-gathering-hero',
+const focalPointClasses: Record<string, FocalPointClass> = {
+  '50% 50%': 'focal-50-50',
+  '54% 50%': 'focal-54-50',
+  '56% 50%': 'focal-56-50',
+  '56% 52%': 'focal-56-52',
+  '58% 48%': 'focal-58-48',
+  '58% 50%': 'focal-58-50',
+  '58% 52%': 'focal-58-52',
+  '60% 50%': 'focal-60-50',
+  '62% 48%': 'focal-62-48',
+};
+
+const mobileCropClasses: Record<string, MobileCropClass> = {
+  'center-safe': 'mobile-center-safe',
+  'subject-right': 'mobile-subject-right',
+  'people-right': 'mobile-people-right',
 };
 
 export function resolveMedia(mediaId: string): ResolvedMedia | null {
-  const asset = assetsById.get(aliases[mediaId] ?? mediaId);
+  const asset = assetsById.get(mediaId);
   if (!asset || asset.assetStatus === 'placeholder') return null;
   const image = imagesByManifestPath.get(asset.path);
   if (!image)
     throw new Error(
       `Manifest asset ${asset.assetId} references missing image ${asset.path}`,
     );
-  return { ...asset, image };
+  const focalPointClass = focalPointClasses[asset.focalPoint];
+  const mobileCropClass = mobileCropClasses[asset.mobileCrop];
+  if (!focalPointClass)
+    throw new Error(
+      `Manifest asset ${asset.assetId} has unsupported focal point ${asset.focalPoint}`,
+    );
+  if (!mobileCropClass)
+    throw new Error(
+      `Manifest asset ${asset.assetId} has unsupported mobile crop ${asset.mobileCrop}`,
+    );
+  return { ...asset, image, focalPointClass, mobileCropClass };
 }
 
 export function mediaAssetCount(): number {
