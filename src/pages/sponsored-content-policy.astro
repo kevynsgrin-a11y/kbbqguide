@@ -1,6 +1,7 @@
 ---
 import registryData from '../../data/url-registry.json';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import MediaPlaceholder from '../components/MediaPlaceholder.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { breadcrumbJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
@@ -34,6 +35,13 @@ const path = registryPathById(registry, 'POL_SPONSORED');
         Commercial support must be visible, bounded, and unable to bypass
         editorial, safety, cultural, or audience-trust controls.
       </p>
+      <MediaPlaceholder
+        mediaId="POLICY-hero"
+        label="Editorial policy banner"
+        altDraft="A shared Korean barbecue table in a warm dining room"
+        ratio="16:9"
+        class="policy-media-banner"
+      />
     </div>
   </header>
   <section class="section tinted">

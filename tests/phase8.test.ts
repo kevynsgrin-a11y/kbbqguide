@@ -53,12 +53,12 @@ describe('Phase 8 final operational handoff gate', () => {
     }
   });
 
-  it('maps all 80 placeholder recipe plans into the media queue', () => {
+  it('migrates all recipe heroes while preserving the remaining production queue', () => {
     const queue = source('docs/MEDIA-PRODUCTION-QUEUE.md');
     expect(mediaData.recipePlans).toHaveLength(80);
-    expect(mediaData.assets).toHaveLength(0);
-    expect(queue).toContain('80 recipe plans');
-    expect(queue).toContain('1,040');
+    expect(mediaData.assets).toHaveLength(81);
+    expect(queue).toContain('81 active hero assets');
+    expect(queue).toContain('960');
     expect(queue).toContain('docs/media-production-plan.csv');
   });
 
@@ -102,7 +102,7 @@ describe('Phase 8 final operational handoff gate', () => {
   });
 
   it('records the final build phase complete without claiming release approval', () => {
-    expect(stateData.currentPhase).toBe(8);
+    expect(stateData.currentPhase).toBeGreaterThanOrEqual(8);
     expect(stateData.phaseStatus).toBe('complete');
     expect(stateData.phase8).toMatchObject({
       operationalHandoffComplete: true,

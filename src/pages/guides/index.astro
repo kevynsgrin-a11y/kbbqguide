@@ -1,6 +1,7 @@
 ---
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { guides } from '../../lib/guides';
 import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
@@ -27,19 +28,29 @@ const guideItems = guides.map((guide) => ({
   ]}
 >
   <header class="category-hero">
-    <div class="shell reading-width">
-      <Breadcrumbs
-        items={[
-          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-          { label: 'Guides' },
-        ]}
+    <div class="shell hero-grid">
+      <div>
+        <Breadcrumbs
+          items={[
+            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+            { label: 'Guides' },
+          ]}
+        />
+        <p class="eyebrow">Twelve decision guides</p>
+        <h1>Plan the room, table, work, and cleanup.</h1>
+        <p class="lede">
+          Move from room setup to cleanup with practical checkpoints that
+          respect different homes, equipment, appetites, and ways of building
+          the table.
+        </p>
+      </div>
+      <MediaPlaceholder
+        mediaId="SYS_GUIDES-hero"
+        label="Korean barbecue planning guides"
+        altDraft="Friends gathered around a Korean barbecue table"
+        ratio="16:9"
+        priority
       />
-      <p class="eyebrow">Twelve decision guides</p>
-      <h1>Plan the room, table, work, and cleanup.</h1>
-      <p class="lede">
-        Move from room setup to cleanup with practical checkpoints that respect
-        different homes, equipment, appetites, and ways of building the table.
-      </p>
     </div>
   </header>
 
@@ -50,6 +61,12 @@ const guideItems = guides.map((guide) => ({
         {
           guides.map((guide, index) => (
             <article class="support-card guide-card">
+              <MediaPlaceholder
+                mediaId={`${guide.id}-hero`}
+                label={`${guide.title} thumbnail`}
+                altDraft={`Editorial image for ${guide.title}`}
+                ratio="16:9"
+              />
               <p class="eyebrow">Guide {String(index + 1).padStart(2, '0')}</p>
               <h3>
                 <a href={registryPathById(registry, guide.id)}>{guide.title}</a>

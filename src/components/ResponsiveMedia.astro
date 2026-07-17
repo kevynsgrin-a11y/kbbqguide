@@ -1,0 +1,50 @@
+---
+import { Picture } from 'astro:assets';
+import type { ResolvedMedia } from '../lib/media';
+import MediaCredit from './MediaCredit.astro';
+
+interface Props {
+  media: ResolvedMedia;
+  ratio?: '16:9' | '4:3' | '3:2' | '1:1';
+  priority?: boolean;
+  showCredit?: boolean;
+  class?: string;
+  sizes?: string | undefined;
+}
+
+const {
+  media,
+  ratio = '4:3',
+  priority = false,
+  showCredit = false,
+  class: className = '',
+  sizes: sizesOverride,
+} = Astro.props;
+const sizes =
+  sizesOverride ??
+  (priority
+    ? '(max-width: 60rem) 100vw, 58vw'
+    : '(max-width: 42rem) 100vw, (max-width: 60rem) 50vw, 33vw');
+---
+
+<figure
+  class:list={['responsive-media', className]}
+  data-ratio={ratio}
+  data-media-id={media.assetId}
+  data-asset-status={media.assetStatus}
+  data-disclosure={media.provenance.disclosure}
+  data-focal-point={media.focalPoint}
+>
+  <Picture
+    src={media.image}
+    formats={['avif', 'webp']}
+    widths={[360, 640, 960, 1280, 1600]}
+    quality={75}
+    {sizes}
+    alt={media.altDecision === 'decorative' ? '' : media.altText}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding="async"
+    fetchpriority={priority ? 'high' : 'auto'}
+  />
+  {showCredit && <MediaCredit caption={media.caption} credit={media.credit} />}
+</figure>

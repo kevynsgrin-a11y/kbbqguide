@@ -27,6 +27,7 @@ let maxCompressedInlineJavaScript = 0;
 let maxCompressedHtml = 0;
 let maxUncompressedHtml = 0;
 let thirdPartyScripts = 0;
+const referencedAssetPaths = new Set();
 for (const file of htmlFiles) {
   const html = readFileSync(file, 'utf8');
   maxCompressedHtml = Math.max(maxCompressedHtml, gzipSync(html).byteLength);
@@ -78,6 +79,13 @@ for (const file of htmlFiles) {
     ...html.matchAll(/<script[^>]*\bsrc="(https?:\/\/[^"]+)"/gi),
   ].length;
 
+  for (const match of html.matchAll(/(?:src|srcset)="([^"]+)"/gi)) {
+    for (const candidate of (match[1] ?? '').split(',')) {
+      const path = candidate.trim().split(/\s+/, 1)[0];
+      if (path?.startsWith('/')) referencedAssetPaths.add(path);
+    }
+  }
+
   for (const match of html.matchAll(/href="(\/[^"]*)"/g)) {
     const href = match[1]?.split(/[?#]/, 1)[0];
     if (!href || href.startsWith('//')) continue;
@@ -104,12 +112,20 @@ if (recipePages.length !== 80)
   throw new Error(`Expected 80 recipe pages; found ${recipePages.length}.`);
 for (const file of recipePages) {
   const html = readFileSync(file, 'utf8');
-  if (!html.includes('data-asset-status="placeholder"'))
+  if (!html.includes('data-asset-status="synthetic-labeled"'))
     throw new Error(
-      `Missing explicit media placeholder: ${relative(dist, file)}`,
+      `Missing approved labeled recipe media: ${relative(dist, file)}`,
     );
-  if (/<img\b|<video\b/i.test(html))
-    throw new Error(`Unapproved real media markup: ${relative(dist, file)}`);
+  if (!/<picture\b/i.test(html) || !/<img\b/i.test(html))
+    throw new Error(`Missing responsive recipe image: ${relative(dist, file)}`);
+  if (!/type="image\/avif"/i.test(html) || !/type="image\/webp"/i.test(html))
+    throw new Error(
+      `Missing modern recipe image formats: ${relative(dist, file)}`,
+    );
+  if (!/loading="eager"/i.test(html) || !/fetchpriority="high"/i.test(html))
+    throw new Error(`Recipe hero is not prioritized: ${relative(dist, file)}`);
+  if (/<video\b/i.test(html))
+    throw new Error(`Unapproved video markup: ${relative(dist, file)}`);
   if (!html.includes('<noscript>'))
     throw new Error(
       `Missing no-JavaScript print fallback: ${relative(dist, file)}`,
@@ -270,6 +286,28 @@ JSON.parse(readFileSync(join(dist, 'site.webmanifest'), 'utf8'));
 
 const cssFiles = files.filter((file) => extname(file) === '.css');
 const jsFiles = files.filter((file) => extname(file) === '.js');
+const imageFiles = files.filter((file) =>
+  ['.avif', '.webp', '.jpg', '.jpeg', '.png'].includes(extname(file)),
+);
+const deliveredImageFiles = imageFiles.filter((file) =>
+  referencedAssetPaths.has('/' + relative(dist, file)),
+);
+const avifFiles = deliveredImageFiles.filter(
+  (file) => extname(file) === '.avif',
+);
+const webpFiles = deliveredImageFiles.filter(
+  (file) => extname(file) === '.webp',
+);
+if (avifFiles.length === 0 || webpFiles.length === 0)
+  throw new Error('Responsive build emitted no AVIF or WebP assets.');
+const maxOptimizedImageBytes = deliveredImageFiles.reduce(
+  (max, file) => Math.max(max, readFileSync(file).byteLength),
+  0,
+);
+if (maxOptimizedImageBytes > 600 * 1024)
+  throw new Error(
+    `A delivered image exceeds 600 KB: ${maxOptimizedImageBytes} bytes.`,
+  );
 const compressedCss = cssFiles.reduce(
   (total, file) => total + gzipSync(readFileSync(file)).byteLength,
   0,
@@ -320,5 +358,9 @@ stdout.write(
     maxEstimatedInitialCompressedTransferBytes:
       maxEstimatedInitialCompressedTransfer,
     thirdPartyScripts,
+    optimizedImages: deliveredImageFiles.length,
+    avifImages: avifFiles.length,
+    webpImages: webpFiles.length,
+    maxOptimizedImageBytes,
   })}\n`,
 );

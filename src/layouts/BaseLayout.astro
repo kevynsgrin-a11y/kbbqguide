@@ -11,6 +11,8 @@ interface Props {
   pageClass?: string;
   canonicalPath?: string;
   jsonLd?: readonly unknown[];
+  socialImage?: string;
+  socialImageAlt?: string;
 }
 
 const {
@@ -19,9 +21,14 @@ const {
   pageClass = '',
   canonicalPath = '/',
   jsonLd = [],
+  socialImage,
+  socialImageAlt,
 } = Astro.props;
 const siteName = 'KBBQGuide';
 const canonical = canonicalUrl(canonicalPath);
+const socialImageUrl = socialImage
+  ? new globalThis.URL(socialImage, canonical).href
+  : null;
 ---
 
 <!doctype html>
@@ -42,9 +49,24 @@ const canonical = canonicalUrl(canonicalPath);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta name="twitter:card" content="summary" />
+    {socialImageUrl && <meta property="og:image" content={socialImageUrl} />}
+    {
+      socialImageAlt && (
+        <meta property="og:image:alt" content={socialImageAlt} />
+      )
+    }
+    <meta
+      name="twitter:card"
+      content={socialImageUrl ? 'summary_large_image' : 'summary'}
+    />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
+    {
+      socialImageAlt && (
+        <meta name="twitter:image:alt" content={socialImageAlt} />
+      )
+    }
     {jsonLd.map((data) => <StructuredData {data} />)}
   </head>
   <body class={pageClass}>

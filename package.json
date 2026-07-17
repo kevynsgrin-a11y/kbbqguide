@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro dev",
-    "build": "npm run validate:phase8 && cross-env ASTRO_TELEMETRY_DISABLED=1 astro build && npm run validate:preview && npm run validate:headers",
+    "build": "npm run validate:phase9 && cross-env ASTRO_TELEMETRY_DISABLED=1 astro build && npm run validate:preview && npm run validate:headers",
     "preview": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro preview",
     "typecheck": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro check",
     "lint": "eslint .",
@@ -32,6 +32,7 @@
     "validate:phase6": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts tests/phase4.test.ts tests/phase5.test.ts tests/phase6.test.ts",
     "validate:phase7": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts tests/phase4.test.ts tests/phase5.test.ts tests/phase6.test.ts tests/phase7.test.ts",
     "validate:phase8": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts tests/phase4.test.ts tests/phase5.test.ts tests/phase6.test.ts tests/phase7.test.ts tests/phase8.test.ts",
+    "validate:phase9": "vitest run tests/phase1.test.ts tests/phase2.test.ts tests/phase3-batch1.test.ts tests/phase3-batch2.test.ts tests/phase3-batch3.test.ts tests/phase3-batch4.test.ts tests/phase3-batch5.test.ts tests/phase3-batch6.test.ts tests/phase3-batch7.test.ts tests/phase3-batch8.test.ts tests/phase4.test.ts tests/phase5.test.ts tests/phase6.test.ts tests/phase7.test.ts tests/phase8.test.ts tests/phase9.test.ts",
     "validate:preview": "node scripts/validate-built-preview.mjs",
     "validate:headers": "node scripts/validate-security-headers.mjs",
     "audit": "npm audit --audit-level=high",

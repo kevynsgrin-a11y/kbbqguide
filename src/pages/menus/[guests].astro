@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import DraftNotice from '../../components/DraftNotice.astro';
+import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
 import SafetyCallout from '../../components/SafetyCallout.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { menus, type MenuPlan } from '../../lib/menus';
@@ -60,20 +61,30 @@ const path = registryPathById(registry, menu.id);
   pageClass="menu-page"
 >
   <header class="category-hero menu-hero">
-    <div class="shell reading-width">
-      <Breadcrumbs
-        items={[
-          { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
-          { label: 'Menus', href: registryPathById(registry, 'SYS_MENUS') },
-          { label: `${menu.guests} guests` },
-        ]}
+    <div class="shell hero-grid">
+      <div>
+        <Breadcrumbs
+          items={[
+            { label: 'Home', href: registryPathById(registry, 'SYS_HOME') },
+            { label: 'Menus', href: registryPathById(registry, 'SYS_MENUS') },
+            { label: `${menu.guests} guests` },
+          ]}
+        />
+        <p class="eyebrow">A planning draft for {menu.guests}</p>
+        <h1>{menu.title}</h1>
+        <p class="lede">{menu.description}</p>
+        <a class="button" href={registryPathById(registry, 'SYS_TOOLS')}>
+          Customize in the planner
+        </a>
+      </div>
+      <MediaPlaceholder
+        mediaId={`${menu.id}-hero`}
+        label={`${menu.title} editorial hero`}
+        altDraft={`A Korean barbecue table scaled for ${menu.guests} guests`}
+        ratio="16:9"
+        priority
+        showCredit
       />
-      <p class="eyebrow">A planning draft for {menu.guests}</p>
-      <h1>{menu.title}</h1>
-      <p class="lede">{menu.description}</p>
-      <a class="button" href={registryPathById(registry, 'SYS_TOOLS')}>
-        Customize in the planner
-      </a>
     </div>
   </header>
 

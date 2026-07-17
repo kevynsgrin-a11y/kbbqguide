@@ -35,9 +35,21 @@ const categoryList = itemListJsonLd(
   canonicalPath={canonicalPath}
   jsonLd={[categoryList]}
   pageClass="home-page"
+  socialImage="/social/kbbqguide-home.jpg"
+  socialImageAlt="Four friends sharing a Korean barbecue table around an indoor grill"
 >
   <section class="marketing-hero">
-    <div class="shell hero-grid">
+    <MediaPlaceholder
+      mediaId="HOME-hero"
+      label="Friends gathering around a Korean barbecue table"
+      altDraft="Four adult friends sharing a Korean barbecue table around an indoor electric grill"
+      ratio="3:2"
+      priority
+      class="home-hero-media"
+      sizes="100vw"
+    />
+    <div class="home-hero-scrim" aria-hidden="true"></div>
+    <div class="shell home-hero-content">
       <div class="hero-copy">
         <p class="eyebrow">Korean BBQ, from first prep to final plate</p>
         <h1>The whole Korean BBQ table, made clear.</h1>
@@ -60,21 +72,6 @@ const categoryList = itemListJsonLd(
           <div><dt>6</dt><dd>table sections</dd></div>
           <div><dt>1</dt><dd>clear plan</dd></div>
         </dl>
-      </div>
-      <div
-        class="hero-table"
-        role="img"
-        aria-label="Stylized overhead Korean barbecue table with a central grill, side dishes, and serving plates"
-      >
-        <span class="hero-bowl hero-bowl-kimchi" aria-hidden="true"></span>
-        <span class="hero-bowl hero-bowl-greens" aria-hidden="true"></span>
-        <span class="hero-bowl hero-bowl-rice" aria-hidden="true"></span>
-        <span class="hero-bowl hero-bowl-sauce" aria-hidden="true"></span>
-        <span class="hero-grill" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span>
-        </span>
-        <span class="hero-chopsticks" aria-hidden="true"></span>
-        <span class="hero-table-label">Gather · grill · share</span>
       </div>
     </div>
   </section>

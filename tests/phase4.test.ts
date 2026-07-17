@@ -85,12 +85,13 @@ describe('Phase 4 UI, media, motion, and preview handoff gate', () => {
     expect(css).toMatch(/min-width: 20rem/);
   });
 
-  it('plans honest responsive still and video media for every recipe without claiming an asset exists', () => {
-    expect(mediaData.version).toBe(2);
-    expect(mediaData.phase).toBe(4);
-    expect(mediaData.assets).toEqual([]);
+  it('preserves the Phase 4 shot plan while activating audited Phase 9 recipe heroes', () => {
+    expect(mediaData.version).toBe(3);
+    expect(mediaData.phase).toBe(9);
+    expect(mediaData.assets).toHaveLength(81);
     expect(mediaData.recipePlans).toHaveLength(80);
     expect(mediaData.responsiveImageContract.requiredAspectRatios).toEqual([
+      '3:2',
       '16:9',
       '4:3',
       '1:1',
@@ -105,11 +106,13 @@ describe('Phase 4 UI, media, motion, and preview handoff gate', () => {
     for (const plan of mediaData.recipePlans) {
       expect(plan.hero).toMatchObject({
         assetId: `${plan.recipeId}-hero`,
-        assetStatus: 'placeholder',
-        loading: 'priority',
+        assetStatus: 'synthetic-labeled',
+        width: 2400,
+        height: 1600,
+        loading: 'priority-on-detail-lazy-elsewhere',
       });
-      expect(plan.hero.altTextDraft).toContain(plan.title);
-      expect(plan.hero.captionDraft).toContain(plan.title);
+      expect(plan.hero.altText).toContain(plan.title);
+      expect(plan.hero.caption).toContain(plan.title);
       expect(plan.stillShots.finishedDishOverhead.assetStatus).toBe(
         'placeholder',
       );
@@ -128,8 +131,8 @@ describe('Phase 4 UI, media, motion, and preview handoff gate', () => {
       expect(plan.videoPlans.longForm.posterFrameId).toBeTruthy();
       expect(plan.videoPlans.shortForm.posterFrameId).toBeTruthy();
       expect(plan.transcriptRequired).toBe(true);
-      expect(plan.provenance).toMatch(/pending/i);
-      expect(plan.rightsStatus).toBe('pending');
+      expect(plan.provenance).toMatch(/synthetic-labeled/i);
+      expect(plan.rightsStatus).toMatch(/hero-cleared/i);
     }
   });
 
@@ -143,12 +146,12 @@ describe('Phase 4 UI, media, motion, and preview handoff gate', () => {
       expect(rows.some((row) => row.startsWith(`"${recipe.id}",`))).toBe(true);
   });
 
-  it('renders explicit media and video placeholders without fake image, video, date, or duration markup', () => {
+  it('resolves approved still media while retaining honest video placeholders', () => {
     const media = source('src/components/MediaPlaceholder.astro');
     const video = source('src/components/VideoPlaceholder.astro');
     expect(media).toContain('data-asset-status="placeholder"');
+    expect(media).toContain('ResponsiveMedia');
     expect(media).toContain('Photography in production');
-    expect(media).not.toMatch(/<img|<picture/);
     expect(video).toContain('video is not yet produced');
     expect(video).not.toMatch(/<video\b/i);
     expect(video).toContain(
