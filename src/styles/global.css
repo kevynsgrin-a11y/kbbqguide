@@ -10,7 +10,7 @@
   --color-metal-700: #4e524a;
   --color-leaf-700: #386242;
   --color-leaf-800: #294a31;
-  --color-pepper-600: #c84a35;
+  --color-pepper-600: #b83c2b;
   --color-warning-700: #8a381f;
   --color-gold-500: #d39a43;
   --radius-sm: 0.5rem;
@@ -1789,20 +1789,22 @@ a.support-card:hover {
   z-index: 2;
   inset: auto var(--space-3) var(--space-3);
   display: grid;
-  gap: 0.15rem;
-  padding: 0.55rem 0.7rem;
-  border: 1px solid rgb(255 255 255 / 16%);
+  gap: 0.2rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgb(255 255 255 / 22%);
   border-radius: 0.45rem;
   color: #fffaf1;
-  background: rgb(17 19 16 / 78%);
-  font-size: 0.7rem;
-  line-height: 1.35;
+  /* Phase 10 (P1-8): opaque-enough dark panel keeps text contrast >= 4.5:1 even
+     over a bright synthetic image behind it. */
+  background: rgb(15 17 14 / 90%);
+  font-size: 0.875rem; /* 14px — was 0.7rem/11.2px */
+  line-height: 1.4;
   backdrop-filter: blur(0.45rem);
 }
 
 .media-credit small {
-  color: #e1dbd0;
-  font-size: 0.62rem;
+  color: #eee7db;
+  font-size: 0.8125rem; /* 13px — was 0.62rem/9.92px (P1-8) */
 }
 
 .recipe-card .responsive-media,
@@ -1990,6 +1992,34 @@ a.support-card:hover {
     ),
     linear-gradient(0deg, rgb(12 14 11 / 52%), transparent 48%);
   pointer-events: none;
+}
+
+/* Phase 10 (P1-8): scoped synthetic-content disclosure adjacent to the home hero.
+   >= 13px, on an opaque dark panel so contrast stays >= 4.5:1 over the image. */
+.home-hero-disclosure {
+  position: absolute;
+  z-index: 2;
+  right: var(--space-3);
+  bottom: var(--space-3);
+  left: auto;
+  max-width: min(32rem, 72%);
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgb(255 255 255 / 22%);
+  border-radius: 0.45rem;
+  background: rgb(15 17 14 / 90%);
+  color: #f3ede2;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 48rem) {
+  .home-hero-disclosure {
+    right: var(--space-2);
+    bottom: var(--space-2);
+    left: var(--space-2);
+    max-width: none;
+  }
 }
 
 .home-hero-content {

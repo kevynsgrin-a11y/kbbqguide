@@ -6,11 +6,14 @@ import MediaPlaceholder from '../components/MediaPlaceholder.astro';
 import RecipeCard from '../components/RecipeCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { categories } from '../lib/categories';
+import { resolveMedia } from '../lib/media';
 import { itemListJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
 import type { CompleteRecipe } from '../schemas/recipe';
 
 const registry = registryData as UrlRegistry;
+// Phase 10 (P1-8): scoped synthetic-content disclosure adjacent to the home hero.
+const heroMedia = resolveMedia('HOME-gathering-hero');
 const recipes = (await getCollection('recipes'))
   .map((entry) => entry.data)
   .filter(
@@ -52,6 +55,13 @@ const categoryList = itemListJsonLd(
       sizes="100vw"
     />
     <div class="home-hero-scrim" aria-hidden="true"></div>
+    {
+      heroMedia && (
+        <p class="home-hero-disclosure">
+          {heroMedia.provenance.disclosure} {heroMedia.credit}
+        </p>
+      )
+    }
     <div class="shell home-hero-content">
       <div class="hero-copy">
         <p class="eyebrow">Korean BBQ, from first prep to final plate</p>

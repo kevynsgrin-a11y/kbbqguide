@@ -1,0 +1,1986 @@
+{
+  "sha": "2301006",
+  "generatedBy": "phase-10-agent",
+  "totalRoutes": 116,
+  "passed": 116,
+  "failed": 0,
+  "overflowWidths": [
+    390,
+    768
+  ],
+  "axeGate": "zero serious/critical",
+  "pages": [
+    {
+      "route": "/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/affiliate-disclosure/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/brand-partnerships/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/banchan-batch-prep/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/cleanup-grease-smoke-and-odor-control/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/essential-korean-pantry/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/indoor-vs-outdoor-korean-bbq-safety/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/korean-bbq-at-home-for-beginners/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/korean-bbq-meat-cuts/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/leftovers-storage-and-next-day-meals/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/menus-and-shopping-lists/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/prep-timelines/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/seafood-buying-cleaning-and-grilling/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/ssam-greens-herbs-and-wraps/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/guides/tabletop-grill-and-ventilation/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/licensing-inquiry/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/live-class/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/media-kit/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/menus/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/menus/2-guests/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/menus/4-guests/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/menus/8-guests/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/newsletter/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/baechu-geotjeori-fresh-kimchi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/baechu-kimchi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/doraji-muchim-spicy-bellflower-root/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/dubu-jorim-braised-tofu/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/eomuk-bokkeum-stir-fried-fish-cake/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/gamja-jorim-soy-braised-potatoes/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/gim-muchim-seasoned-seaweed/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/gosari-namul-seasoned-fernbrake/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/gyeran-jjim-steamed-eggs/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/gyeran-mari-rolled-omelet/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/hobak-bokkeum-stir-fried-zucchini/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/jangjorim-soy-braised-beef/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/kkaennip-jangajji-pickled-perilla-leaves/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/kkakdugi-radish-kimchi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/kongnamul-muchim-seasoned-soybean-sprouts/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/korean-bbq-restaurant-style-macaroni-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/korean-potato-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/maneul-jangajji-soy-pickled-garlic/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/mechurial-jangjorim-soy-braised-quail-eggs/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/musaengchae-spicy-radish-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/myeolchi-bokkeum-stir-fried-anchovies/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/oi-muchim-spicy-cucumber-banchan/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/oi-sobagi-cucumber-kimchi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/sigeumchi-namul-seasoned-spinach/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/banchan/yeongeun-jorim-soy-braised-lotus-root/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/desserts/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/desserts/hotteok-brown-sugar-seed-pancakes/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/desserts/injeolmi-toast-with-ice-cream/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/desserts/patbingsu-red-bean-shaved-ice/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/desserts/sikhye-sweet-rice-punch/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/desserts/yakgwa-honey-ginger-cookies/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/asian-pear-and-cucumber-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/contemporary-sesame-broccoli-and-bell-pepper-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/gochugaru-yuja-cabbage-slaw/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/minari-muchim-water-parsley-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/pajeori-korean-scallion-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/radish-sprout-and-perilla-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/sangchu-geotjeori-fresh-lettuce-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/ssam-lettuce-and-herb-platter/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/tomato-onion-sesame-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/fresh/watercress-apple-yuja-salad/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/chadolbaegi-with-scallion-soy-dipping-sauce/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/classic-samgyeopsal-with-sesame-salt-seasoning/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/contemporary-doenjang-gochujang-lamb-shoulder/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/doenjang-garlic-moksal-gui/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/ganjang-pork-bulgogi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/garlic-scallion-chicken-skewers/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/garlic-sesame-galbisal/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/gochujang-samgyeopsal/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/jumulleok-sesame-garlic-steak-bites/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/korean-style-gochujang-grilled-pork-ribs/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/korean-style-grilled-duck-breast/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/la-style-galbi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/mushroom-soy-beef-bulgogi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/neobiani-royal-style-grilled-beef/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/soy-pear-dak-bulgogi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/spicy-dwaeji-bulgogi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/spicy-gochujang-galbi/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/spicy-gochujang-grilled-chicken-thighs/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/grilled-meat/tteokgalbi-grilled-beef-and-pork-patties/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/sauces/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/sauces/cho-gochujang-sweet-tangy-chili-sauce/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/sauces/classic-ssamjang/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/sauces/gireumjang-sesame-oil-salt-dip/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/sauces/korean-bbq-onion-soy-vinegar-dipping-sauce/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/sauces/yangnyeom-ganjang-scallion-soy-dipping-sauce/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/doenjang-butter-grilled-scallops/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/doenjang-glazed-grilled-black-cod/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/galchi-gui-grilled-hairtail/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/garlic-scallion-grilled-mussels/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/gochujang-glazed-grilled-salmon/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/gochujang-grilled-shrimp/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/godeungeo-gui-grilled-mackerel/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/jeonbok-gui-grilled-abalone/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/jjukkumi-gui-grilled-baby-octopus/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/jogae-gui-grilled-clams/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/jogi-gui-grilled-yellow-croaker/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/ojingeo-gui-spicy-grilled-squid/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/scallion-gochujang-grilled-oysters/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/soy-garlic-grilled-shrimp/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/recipes/seafood/spicy-grilled-nakji-octopus/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/shop/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/sitemap/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/sponsored-content-policy/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/start-here/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    },
+    {
+      "route": "/tools/",
+      "structural": {
+        "h1s": 1,
+        "mains": 1,
+        "lang": "en",
+        "imgsMissingAlt": 0,
+        "emptyLinks": 0,
+        "unnamedControls": 0
+      },
+      "overflow": {
+        "390": false,
+        "768": false
+      },
+      "axeViolations": [],
+      "problems": []
+    }
+  ]
+}
