@@ -35,6 +35,9 @@ export interface MediaManifestAsset {
     externalLicense: string | null;
   };
   qa: Record<string, string>;
+  /** Set by media:ingest when this asset has been superseded by a replacement. */
+  status?: string;
+  replacedBy?: string;
 }
 
 export interface ResolvedMedia extends MediaManifestAsset {
@@ -91,7 +94,17 @@ const mobileCropClasses: Record<string, MobileCropClass> = {
 };
 
 export function resolveMedia(mediaId: string): ResolvedMedia | null {
-  const asset = assetsById.get(mediaId);
+  let asset = assetsById.get(mediaId);
+  // Follow the supersede chain (media:ingest marks the old entry replaced) so a
+  // stable slot id keeps resolving to the current active asset.
+  const seen = new Set<string>();
+  while (asset && asset.status === 'replaced' && asset.replacedBy) {
+    if (seen.has(asset.assetId)) break;
+    seen.add(asset.assetId);
+    const next = assetsById.get(asset.replacedBy);
+    if (!next) break;
+    asset = next;
+  }
   if (!asset || asset.assetStatus === 'placeholder') return null;
   const image = imagesByManifestPath.get(asset.path);
   if (!image)
