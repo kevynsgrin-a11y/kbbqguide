@@ -36,7 +36,7 @@ so keep the key subjects and the raw/cooked separation out of the far-left third
 
 ## Aspect ratios & responsive crop
 
-- Master **2400×1600 (3:2)**; derivatives at **360/640/960/1280/1600** in **avif/webp/jpeg**.
+- Master **2400×1600 (3:2)**; derivatives at **360/640/960/1280/1600** in **webp/jpeg**.
 - The raw zone + dedicated tongs must survive the `people-right` mobile crop — keep them in the
   right-central region, clear of the left text scrim.
 

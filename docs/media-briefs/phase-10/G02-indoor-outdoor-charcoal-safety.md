@@ -41,7 +41,7 @@ warmth; natural daylight; rounded frame. Focal point ~54% / 50% with a `center-s
 
 ## Aspect ratios & responsive crop
 
-- Master **2400×1600 (3:2)**; derivatives at **360/640/960/1280/1600** in **avif/webp/jpeg**.
+- Master **2400×1600 (3:2)**; derivatives at **360/640/960/1280/1600** in **webp/jpeg**.
 - The clearance gap must remain readable at 390px — keep the grill-to-structure gap within the
   `center-safe` zone.
 

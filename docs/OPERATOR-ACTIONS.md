@@ -20,6 +20,9 @@ decisions. Every page remains `noindex,nofollow,noarchive`._
 - Hardened media ingest, active-asset filtering, preview validation, regression coverage, and the
   release gate. CI now regenerates and uploads structural/axe, disclosure, and 90 responsive
   screenshots at the exact checked-out SHA.
+- Removed the redundant AVIF rendition tier after the Pages preview exceeded Cloudflare's
+  20-minute build limit. Five responsive WebP widths and JPEG fallback remain; the cold local
+  build now emits 1,265 optimized files while preserving crop, loading, and transfer budgets.
 
 ## 1. Resolve the production origin (P0-2)
 
@@ -80,7 +83,7 @@ remain operator actions.
 | ----------------------------------- | ------------------------------------------------------- |
 | Build, data integrity, content lint | ✅ local full gate passed on 2026-07-18                 |
 | Four flagged image remediations     | ✅ implemented as new immutable candidates              |
-| Responsive/structural evidence      | 🔄 regenerated and uploaded by PR CI at the exact SHA   |
+| Responsive/structural evidence      | 🔄 exact-SHA PR CI reruns after every runtime change    |
 | Human media decisions               | 🔶 0/115; `review/decisions.json` still required        |
 | Manual device / screen-reader QA    | 🔶 operator required                                    |
 | Production origin                   | 🔶 operator Cloudflare action; apex and `www` still 502 |

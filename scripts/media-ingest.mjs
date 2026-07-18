@@ -8,7 +8,7 @@
 //   npm run media:ingest -- <file> --supersedes <oldId> [--id <newId>] [--role <role>]
 //                            [--date YYYY-MM-DD] [--dry-run] [--manifest <path>]
 //
-// Responsive derivatives (avif/webp + widths 360-1600) are emitted by the build
+// Responsive derivatives (WebP plus JPEG fallback, widths 360-1600) are emitted by the build
 // pipeline (`astro build` via <Picture>) from the master this command installs;
 // see docs/media-briefs/phase-10/README.md. This command never marks an asset
 // human-approved; approval is operator-only (Phase 10.6 workbench).

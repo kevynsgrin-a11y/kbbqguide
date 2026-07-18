@@ -73,7 +73,7 @@ generatedAt, sourceRecord, promptBasis, disclosure}`, `rights{source, scope, ext
 implementationCulturalAndIngredientScreen, responsiveCropReview, humanEditorialReview,
 reviewer}`. `humanEditorialReview` is currently a **string** `"required"`; Phase 10.6 extends
   it to the lane object defined in §10 of the directive.
-- **Contracts in the manifest:** `responsiveImageContract` (formats avif/webp/jpeg; widths
+- **Contracts in the manifest:** `responsiveImageContract` (formats webp/jpeg; widths
   360/640/960/1280/1600), `stillShotContract`, `videoContract`.
 
 ## Where alt text lives

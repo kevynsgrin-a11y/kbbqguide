@@ -236,9 +236,9 @@ for (const file of recipePages) {
     );
   if (!/<picture\b/i.test(html) || !/<img\b/i.test(html))
     throw new Error(`Missing responsive recipe image: ${relative(dist, file)}`);
-  if (!/type="image\/avif"/i.test(html) || !/type="image\/webp"/i.test(html))
+  if (!/type="image\/webp"/i.test(html))
     throw new Error(
-      `Missing modern recipe image formats: ${relative(dist, file)}`,
+      `Missing modern recipe image format: ${relative(dist, file)}`,
     );
   if (!/loading="eager"/i.test(html) || !/fetchpriority="high"/i.test(html))
     throw new Error(`Recipe hero is not prioritized: ${relative(dist, file)}`);
@@ -449,8 +449,8 @@ const avifFiles = deliveredImageFiles.filter(
 const webpFiles = deliveredImageFiles.filter(
   (file) => extname(file) === '.webp',
 );
-if (avifFiles.length === 0 || webpFiles.length === 0)
-  throw new Error('Responsive build emitted no AVIF or WebP assets.');
+if (webpFiles.length === 0)
+  throw new Error('Responsive build emitted no WebP assets.');
 const maxOptimizedImageBytes = deliveredImageFiles.reduce(
   (max, file) => Math.max(max, readFileSync(file).byteLength),
   0,

@@ -41,7 +41,7 @@ warmth; rounded frame. Focal point 50% / 50%, `center-safe` mobile crop.
 
 ## Aspect ratios & responsive crop
 
-- Master **2400×1600 (3:2)**; derivatives at **360/640/960/1280/1600** in **avif/webp/jpeg**.
+- Master **2400×1600 (3:2)**; derivatives at **360/640/960/1280/1600** in **webp/jpeg**.
 - Keep the scored fat cap + silhouette within the center-safe zone for the mobile crop.
 
 ## Target filename + manifest slot

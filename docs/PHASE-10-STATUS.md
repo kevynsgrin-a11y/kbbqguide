@@ -30,21 +30,24 @@ all 116 built pages retain `noindex,nofollow,noarchive`._
   commits is accepted, while any later runtime change or dirty runtime tree fails.
 - Made PR CI generate and upload 90 responsive screenshots plus sitewide structural/axe and
   disclosure evidence at the checked-out SHA.
+- Reduced the responsive encoding set from AVIF/WebP/JPEG to WebP/JPEG after the Cloudflare Pages
+  preview exceeded its 20-minute build limit. The same five responsive widths, master JPEG
+  fallback, crop metadata, and byte budgets remain, while generated outputs drop from 1,840 to
+  1,265.
 
 ## Local verification
 
 `npm run check` passed on 2026-07-18:
 
 - formatting, ESLint, and Astro type checks: clean;
-- 21 test files / 149 tests: passed;
+- 21 test files / 151 tests: passed;
 - 116 static pages: built;
-- 115 active media assets / 119 immutable records / 1,840 optimized derivatives: validated;
+- 115 active media assets / 119 immutable records / 1,265 optimized outputs: validated;
 - 4,181 internal links checked; content lint: 0 findings;
 - 7 security headers and 16 CSP directives validated.
 
-Local Chromium installation was unavailable in the managed environment, so fresh browser evidence
-is intentionally delegated to the Node 24 GitHub Actions job and then verified again on the public
-Cloudflare preview. No browser result is claimed until that job completes.
+Fresh browser evidence is delegated to the Node 24 GitHub Actions job and then verified again on
+the public Cloudflare preview. No live-preview result is claimed until the deployment completes.
 
 ## Remaining release gates
 

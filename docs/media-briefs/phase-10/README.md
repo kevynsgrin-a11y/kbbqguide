@@ -23,7 +23,7 @@ asset must still pass the brief checklist and the five-lane review workbench bef
    and marks the old entry `status: "replaced", replacedBy: <newId>`. Use `--dry-run` first to
    validate without writing.
 
-4. Rebuild (`npm run build`) — the responsive avif/webp derivatives (widths 360–1600) are emitted
+4. Rebuild (`npm run build`) — responsive WebP derivatives plus JPEG fallbacks (widths 360–1600) are emitted
    from the new master by Astro's `<Picture>`. The stable slot id (e.g. `G03-hero`) keeps
    resolving to the new asset via the supersede chain in `src/lib/media.ts`.
 5. The new asset then goes through the Phase 10.6 review workbench like any other (all five lanes),

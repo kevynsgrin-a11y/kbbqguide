@@ -14,7 +14,7 @@ Budgets apply to representative home, category, recipe, guide, and shop pages on
 | LCP in lab smoke test                  | ≤ 2.5 s target, measured and reported          |
 | INP proxy/interaction delay            | ≤ 200 ms target, measured and reported         |
 
-Static generation is the default. Media reserves dimensions and serves responsive AVIF/WebP with fallback. Below-fold media and widgets lazy load. Analytics, ads, email, and affiliate scripts are deferred and consent-aware where required. A >10% material regression in transfer, JavaScript, or lab timing fails without a documented exception.
+Static generation is the default. Media reserves dimensions and serves responsive WebP with JPEG fallback. Below-fold media and widgets lazy load. Analytics, ads, email, and affiliate scripts are deferred and consent-aware where required. A >10% material regression in transfer, JavaScript, or lab timing fails without a documented exception.
 
 ## Phase 7 production-build smoke
 
@@ -27,3 +27,12 @@ The final build contains 4,987 compressed CSS bytes, zero external JavaScript by
 The expanded Phase 9 production build emits 1,840 optimized image outputs (575 AVIF, 575 WebP, and 690 JPEG fallbacks/masters). Across every eager route, the largest mobile hero candidate through 640 pixels is 78,550 bytes and the largest desktop hero candidate is 562,978 bytes. Both remain below the initial above-fold media budgets.
 
 The static validator reports 7,431 compressed CSS bytes, zero external JavaScript, at most 5,631 compressed inline JavaScript bytes, maximum compressed HTML of 26,659 bytes, maximum estimated compressed initial non-media transfer of 34,090 bytes, maximum estimated mobile initial transfer including hero media of 112,640 bytes, and zero third-party scripts. Browser timing remains a public-preview release gate rather than a production field claim.
+
+## Phase 10 deployment-build hardening
+
+The exact-SHA Phase 10 build initially produced the same 1,840-file AVIF/WebP/JPEG set but took
+14 minutes 12 seconds for Astro image processing on GitHub Actions and exceeded Cloudflare Pages'
+20-minute build limit. The active contract now emits five WebP widths with JPEG fallback: 1,265
+optimized outputs, zero AVIF, and unchanged crop/loading semantics. The cold local validation
+reported a 69,507-byte largest mobile hero candidate, a 562,978-byte largest desktop candidate,
+and a 99,938-byte maximum estimated mobile initial transfer.

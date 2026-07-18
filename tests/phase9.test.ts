@@ -192,7 +192,7 @@ describe('Phase 9 visual editorial overhaul', () => {
     expect(registry).toContain('import.meta.glob');
     expect(registry).toContain('../assets/media/**/*.jpg');
     expect(registry).not.toContain('const aliases');
-    expect(responsive).toContain("formats={['avif', 'webp']}");
+    expect(responsive).toContain("formats={['webp']}");
     expect(responsive).toContain('widths={[360, 640, 960, 1280, 1600]}');
     expect(responsive).toContain("loading={priority ? 'eager' : 'lazy'}");
     expect(responsive).toContain(
