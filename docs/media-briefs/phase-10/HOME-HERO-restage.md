@@ -45,12 +45,13 @@ so keep the key subjects and the raw/cooked separation out of the far-left third
 - File: `src/assets/media/brand/home-gathering-master-<newId>.jpg` (installed by `media:ingest`).
 - Slot id stays `HOME-gathering-hero`; new immutable id `HOME-gathering-hero-r1`; old `replaced`.
 
-## Operator decision (framed in the punch list)
+## Operator decision — Option A selected
 
-**Option A — Restage** (regenerate to this brief), or **Option B — Approve current with a note**
-(accept the existing frame as brand-lifestyle and record that raw/cooked separation is taught
-elsewhere, not shown here). The home-hero synthetic disclosure and honesty-corrected alt already
-ship regardless; this decision only affects whether the image itself is regenerated.
+On 2026-07-18 the operator instructed the agent to move forward with all recommendations. The
+recommended **Option A — Restage** was implemented and ingested as `HOME-gathering-hero-r1`.
+The candidate visibly separates a red raw-meat tray and red-handled raw tongs from browned food
+handled with stainless tongs. It remains `humanEditorialReview: required`; this implementation
+record does not certify any review lane.
 
 ## Acceptance checklist (operator ticks before slotting in)
 

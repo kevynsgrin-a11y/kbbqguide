@@ -56,7 +56,9 @@ describe('Phase 8 final operational handoff gate', () => {
   it('migrates all recipe heroes while preserving the remaining production queue', () => {
     const queue = source('docs/MEDIA-PRODUCTION-QUEUE.md');
     expect(mediaData.recipePlans).toHaveLength(80);
-    expect(mediaData.assets).toHaveLength(115);
+    expect(
+      mediaData.assets.filter((asset) => asset.status !== 'replaced'),
+    ).toHaveLength(115);
     expect(queue).toContain('115 active editorial assets');
     expect(queue).toContain('960');
     expect(queue).toContain('docs/media-production-plan.csv');

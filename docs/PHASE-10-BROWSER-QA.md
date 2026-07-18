@@ -1,80 +1,67 @@
-# Phase 10 — Browser QA (supersedes the Phase 9 record)
+# Phase 10 — Browser QA
 
-_Addresses P1-4 (stale browser-QA evidence). All evidence here is captured against the local
-build of the current HEAD; the SHA is recorded into every artifact so it can never silently go
-stale again. This record supersedes `docs/PHASE-9-BROWSER-QA.md`._
+_The committed JSON reports are a historical baseline. The authoritative PR evidence is regenerated
+at the exact GitHub checkout SHA and uploaded by `.github/workflows/release-readiness.yml`; the
+manual release job regenerates it again before `release:check`._
 
-## HEAD and build
+## Automated exact-SHA evidence
 
-- **Evidence HEAD:** `88919d2` (recorded in `qa/phase-10/qa-manifest.json` and
-  `qa/phase-10/structural-report.json`). The matrix regenerates at any HEAD with:
-  ```bash
-  npm run build
-  node scripts/qa/structural-axe.mjs --sha=$(git rev-parse HEAD)
-  node scripts/qa/disclosure-audit.mjs --sha=$(git rev-parse HEAD)
-  node scripts/qa/screenshots.mjs     --sha=$(git rev-parse HEAD)   # add --full for full-page
-  ```
-- **Build command:** `npm run build` (phase gate + validators + `lint:content`), output `dist/`.
-- **Note:** committing these artifacts advances HEAD by one evidence-only commit. The
-  `release:check` SHA gate is re-established at the Phase 10.7 closing run, when the operator
-  re-runs the matrix as the final step (directive §12.3). The source tree the evidence reflects
-  is unchanged by an artifacts-only commit.
+The PR workflow builds under Node 24 with Chromium and produces one downloadable artifact named
+`phase-10-qa-release-readiness-<sha>` containing:
 
-## Screenshot matrix
+- `qa/phase-10/structural-report.json` for all **116 routes**;
+- `qa/phase-10/qa-manifest.json` plus **90 viewport screenshots**;
+- `docs/DISCLOSURE-AUDIT.md` from computed browser styles.
 
-- **18 representative routes × 5 widths = 90 captures**, written to
-  `qa/phase-10/screenshots/` as `{route-slug}--{width}w--{sha7}.png` and indexed by the committed
-  `qa/phase-10/qa-manifest.json` (`{sha,timestamp,route,width,path,fullPage,buildCommand}` per
-  capture).
-- **Widths:** 320 (WCAG 1.4.10 reflow proxy), 390, 768, 1440, 1920.
-- **Routes:** home; recipe index; all six category pages; bulgogi, gochujang grilled shrimp,
-  grilled duck breast, gyeran mari; guide index; tabletop-grill/ventilation guide;
-  indoor/outdoor safety guide; menu index; four-guest and eight-guest menus.
-- **What is committed vs regenerated (deviation — flagged in `docs/PHASE-10-STATUS.md`):** the
-  SHA-stamped `qa-manifest.json`, `structural-report.json`, and the generator script are
-  committed; the **PNG binaries are `.gitignore`d** (≈41 MB viewport / ≈141 MB full-page) rather
-  than baked into git history, because they are large and are regenerated at the Phase 10.7 final
-  HEAD anyway. This is a stronger, non-stale answer to P1-4 than committing soon-obsolete
-  binaries: the exact matrix is reproducible on demand and in CI with
-  `node scripts/qa/screenshots.mjs --sha=$(git rev-parse HEAD)` (add `--full` for full-page), and
-  the manifest records precisely what was captured at which SHA.
+The screenshot matrix covers 18 representative routes at **320, 390, 768, 1440, and 1920 px**:
+home; recipe library; all six categories; bulgogi, shrimp, duck, and gyeran-mari details; guide
+index; G02 and G03 guide details; menu index; and four- and eight-guest menus. The new home, G02,
+G03, and duck replacements are therefore all included.
 
-## Structural + axe results (sitewide, all 116 routes)
+The structural suite requires, on every route:
 
-From `qa/phase-10/structural-report.json` — **116/116 pass, 0 failures**:
+- exactly one `<h1>` and one main landmark, with `html[lang]` present;
+- an `alt` attribute on every image;
+- no unnamed controls or empty links;
+- no horizontal overflow at 390 or 768 px;
+- zero serious or critical axe violations.
 
-- Exactly one `<h1>` and one `<main>` per page; `html[lang]` set.
-- Zero images missing an `alt` attribute; no unnamed controls; no empty links.
-- No horizontal overflow at 390 or 768.
-- **axe-core: zero serious/critical violations** (the pre-existing sitewide eyebrow
-  color-contrast AA failure, `#c84a35`→`#b83c2b`, was fixed in Phase 10.3).
+The disclosure audit requires each synthetic-content disclosure/credit to be at least 13 CSS px
+and 4.5:1 in the tool's worst-case compositing check.
 
-## Disclosure audit
+To reproduce locally when Chromium is available:
 
-From `docs/DISCLOSURE-AUDIT.md` — **23 synthetic-disclosure elements measured headlessly, 0
-failing**: every synthetic-content credit/disclosure is ≥ 13px with ≥ 4.5:1 worst-case contrast.
+```bash
+npm run build
+node scripts/qa/structural-axe.mjs --sha=<exact-commit-sha>
+node scripts/qa/disclosure-audit.mjs --sha=<exact-commit-sha>
+node scripts/qa/screenshots.mjs --sha=<exact-commit-sha>
+```
 
-## Readiness gate snapshot (`npm run release:check`)
+`release:check` rejects missing/mismatched reports, anything other than 90 screenshot captures and
+116/116 structural passes, later runtime changes, or uncommitted runtime changes. Evidence followed
+only by QA/documentation commits remains valid.
 
-At `88919d2`: `lint:content` clean, QA matrix SHA + coverage PASS, disclosure audit PASS,
-noindex present on 116/116 pages. The two remaining gates are **operator-gated and expected to
-fail until the operator acts**: asset review lanes (0/115 approved — awaiting the Phase 10.6
-workbench pass) and `production.originStatus` (`failing-502` — awaiting the operator's
-Cloudflare fix). Release authorization is **PENDING** and is never performed by any gate.
+## Manual gates — outstanding until a person records them
 
-## Manual gates OUTSTANDING (operator — not simulated, not claimed)
+Automation does not certify perception, physical-device interaction, cultural judgment, or
+assistive-technology reading quality. Check each box only after performing the test on the latest
+immutable Pages preview.
 
-These require a real browser / device / assistive technology and are **not** covered by the
-headless suite. Do not treat them as passed until ticked here.
+| Gate                         | How to verify                                                           | Per-template checklist                            |
+| ---------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------- |
+| True text zoom 200%          | Browser zoom to 200%; no loss of content or function                    | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu ☐ tools |
+| True text zoom 400% / reflow | Browser zoom to 400%; single-axis reading and no clipped controls       | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu ☐ tools |
+| Physical-device focus order  | Keyboard through every template; visible focus and logical order        | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu ☐ tools |
+| Menu / disclosure behavior   | Keyboard and touch open/close behavior                                  | ☐ home ☐ recipe ☐ guide ☐ menu ☐ tools            |
+| Screen-reader pass           | VoiceOver/NVDA headings, landmarks, alt text, and controls              | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu ☐ tools |
+| Responsive crop / identity   | At all five widths, key food/safety details remain visible              | ☐ home ☐ G02 ☐ G03 ☐ duck                         |
+| Overlay contrast             | Credit/disclosure remains legible over each live hero crop              | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu         |
+| Cultural accuracy            | Qualified reviewer checks food naming, visual cues, and language claims | ☐ replacement set ☐ representative library set    |
 
-| Gate                               | How to verify                                                                    | Per-route checklist                               |
-| ---------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------- |
-| True text zoom 200%                | Browser zoom to 200%, confirm no loss of content/function                        | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu ☐ tools |
-| True text zoom 400% / reflow       | Zoom to 400% (or 320px), confirm single-column reflow, no 2-D scroll             | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu ☐ tools |
-| Physical-device focus order        | Tab through each template on a real device; visible focus, logical order         | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu ☐ tools |
-| Menu / disclosure behavior         | Keyboard + touch open/close of nav and any disclosures                           | ☐ home ☐ recipe ☐ guide ☐ menu ☐ tools            |
-| Screen-reader pass                 | VoiceOver/NVDA read of headings, alt, landmarks, controls                        | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu ☐ tools |
-| Final contrast over image overlays | Real device: credit/disclosure legibility over the live hero image at each width | ☐ home ☐ recipe ☐ category ☐ guide ☐ menu         |
+## Current readiness interpretation
 
-The headless disclosure audit already bounds contrast over any image (panel composited over
-white and black); this manual gate confirms it on the live production image at real breakpoints.
+A green PR browser-QA job proves automated structural, axe, disclosure, and responsive-capture
+coverage for that SHA. It does **not** satisfy the 115 asset-level human decisions, the checklist
+above, production-origin repair, merge approval, deployment authorization, or robots/indexing
+authorization.

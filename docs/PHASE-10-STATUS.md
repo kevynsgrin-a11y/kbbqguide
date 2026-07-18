@@ -1,95 +1,56 @@
-# Phase 10 — Status Report (§11 checkpoint)
+# Phase 10 — Draft Readiness Status
 
-**HEAD at this report:** `07cc0ea` (branch `claude/document-instructions-25h9z9`, DRAFT PR #3).
-**Base:** `f2a8cc2` (Phase 9 / PR #2 merge). **Nothing is released; every page is `noindex`.**
+_Updated 2026-07-18 on `claude/document-instructions-25h9z9` / draft PR #3. Nothing is released;
+all 116 built pages retain `noindex,nofollow,noarchive`._
 
-## Blocker-by-blocker status
+## Blocker status
 
-| ID   | Blocker                                            | Status                                                                                                                      | Evidence                                                                                                  |
-| ---- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| P0-1 | Unauthorized merge / governance drift              | **resolved** (recorded + hardened)                                                                                          | `docs/GOVERNANCE.md`, `project-state.governanceIncident`                                                  |
-| P0-2 | Apex origin 502                                    | **tooled-awaiting-operator** (diagnosed read-only; operator fixes in Cloudflare)                                            | `docs/ops/ORIGIN-DIAGNOSIS-2026-07.md`                                                                    |
-| P1-3 | 115 assets lack named human approval               | **tooled-awaiting-operator** (workbench built; operator runs review)                                                        | `review/index.html`, `npm run review:apply`, `docs/MEDIA-HUMAN-REVIEW.md`                                 |
-| P1-4 | Browser-QA evidence stale                          | **resolved** (matrix + structural report at recorded HEAD, reproducible)                                                    | `docs/PHASE-10-BROWSER-QA.md`, `qa/phase-10/`                                                             |
-| P1-5 | Safety imagery (G02/G03) + alt overclaim           | **resolved (alt) + tooled (image)** — overclaiming alts corrected live now; regen briefs ready for operator                 | `docs/media-briefs/phase-10/G02*,G03*`, manifest `phase10Proposal`                                        |
-| P1-6 | Home hero raw/cooked/tool separation               | **tooled-awaiting-operator** (brief + interim honesty shipped; operator decides restage vs approve)                         | `docs/media-briefs/phase-10/HOME-HERO-restage.md`                                                         |
-| P1-7 | All 80 recipe alts identically templated           | **resolved (proposed) + awaiting approval** — per-image proposals for all 115 from a multimodal pass                        | manifest `phase10Proposal`, workbench                                                                     |
-| P1-8 | Synthetic disclosure ~9.92px; missing on home hero | **resolved** — ≥13px, ≥4.5:1 worst-case; scoped home-hero disclosure added                                                  | `docs/DISCLOSURE-AUDIT.md`                                                                                |
-| P1-9 | Visible data defects                               | **resolved** — taxonomy, duplicate nouns, canonical consolidation, display rounding; `lint:content` clean; regression tests | `src/lib/ingredients.ts`, `src/lib/planner.ts`, `data/ingredient-canonical.json`, `tests/phase10.test.ts` |
+| ID    | Blocker                                    | Status                                                              | Evidence                                                                 |
+| ----- | ------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| P0-1  | Merge / release governance                 | **resolved in code; operator-only action remains**                  | `docs/GOVERNANCE.md`, `scripts/release-check.mjs`                        |
+| P0-2  | Apex and `www` return 502                  | **awaiting operator Cloudflare action**                             | `docs/ops/ORIGIN-DIAGNOSIS-2026-07.md`, `project-state.json`             |
+| P1-3  | Named human approval for 115 active assets | **awaiting decisions export (0/115)**                               | `review/index.html`, `scripts/review-apply.mjs`                          |
+| P1-4  | Browser QA evidence and manual checks      | **automated exact-SHA CI evidence ready; manual gates outstanding** | `.github/workflows/release-readiness.yml`, `docs/PHASE-10-BROWSER-QA.md` |
+| P1-5  | G02/G03 safety imagery                     | **replacement candidates implemented; human lanes pending**         | `G02-hero-r1`, `G03-hero-r1`, corrected briefs                           |
+| P1-6  | Home raw/cooked/tool separation            | **recommended restage implemented; human lanes pending**            | `HOME-gathering-hero-r1`, `public/social/kbbqguide-home.jpg`             |
+| P1-7  | Overclaiming / templated alt text          | **visibility-honest proposals live; human lanes pending**           | `data/media-manifest.json`, `review/data.js`                             |
+| P1-8  | Synthetic disclosure size/contrast         | **resolved; exact-SHA audit runs in CI**                            | `scripts/qa/disclosure-audit.mjs`                                        |
+| P1-9  | Visible data defects                       | **resolved**                                                        | `scripts/lint-content.mjs`, `tests/phase10.test.ts`                      |
+| Added | Duck image conflicts with safe endpoint    | **cooked-through replacement implemented; 74 °C / 165 °F retained** | `M19-hero-r1`, `docs/media-briefs/phase-10/DUCK-ALT.md`                  |
 
-Legend: **resolved** = agent-fixable and done; **tooled-awaiting-operator** = tooling built, human-gated action remains (see `docs/OPERATOR-ACTIONS.md`).
+## 2026-07-18 implementation pass
 
-## Deliverable index
+- Added four new 2400×1600 immutable JPEG masters and marked the former records replaced.
+- Corrected the crossed G02/G03 generation briefs and their subject/crop metadata.
+- Regenerated the 115-active-asset review dataset without duplicate or replaced records.
+- Prevented replacement ingest from inheriting human approvals or stale proposal/status fields.
+- Updated active/immutable media accounting throughout runtime validation and Phase 4/8/9/10
+  regression tests.
+- Reworked the QA evidence gate so exact-SHA evidence or evidence followed only by documentation
+  commits is accepted, while any later runtime change or dirty runtime tree fails.
+- Made PR CI generate and upload 90 responsive screenshots plus sitewide structural/axe and
+  disclosure evidence at the checked-out SHA.
 
-| Area                                | Path                                                                                                                                                                                                                       |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Governance + incident               | `docs/GOVERNANCE.md`                                                                                                                                                                                                       |
-| Discovery                           | `docs/PHASE-10-DISCOVERY.md`                                                                                                                                                                                               |
-| Origin diagnosis (read-only)        | `docs/ops/ORIGIN-DIAGNOSIS-2026-07.md`                                                                                                                                                                                     |
-| Data integrity code                 | `src/lib/ingredients.ts`, `src/lib/planner.ts`, `src/components/RecipePage.astro`, `src/components/RecipeCard.astro`, `src/pages/menus/[guests].astro`, `src/pages/tools/index.astro`, `src/components/PlannerTools.astro` |
-| Canonical ingredients               | `data/ingredient-canonical.json`                                                                                                                                                                                           |
-| Content lint                        | `scripts/lint-content.mjs`, `npm run lint:content`                                                                                                                                                                         |
-| Regression tests                    | `tests/phase10.test.ts`                                                                                                                                                                                                    |
-| Alt proposals + interim corrections | `data/media-manifest.json` (`phase10Proposal`, `phase10AltPass`)                                                                                                                                                           |
-| Disclosure fixes + audit            | `src/styles/global.css`, `src/pages/index.astro`, `docs/DISCLOSURE-AUDIT.md`, `scripts/qa/disclosure-audit.mjs`                                                                                                            |
-| Structural + axe suite              | `scripts/qa/structural-axe.mjs`, `qa/phase-10/structural-report.json`                                                                                                                                                      |
-| Safety media briefs                 | `docs/media-briefs/phase-10/`                                                                                                                                                                                              |
-| Media ingest                        | `scripts/media-ingest.mjs`, `npm run media:ingest`, `src/lib/media.ts` (supersede chain)                                                                                                                                   |
-| QA matrix                           | `scripts/qa/screenshots.mjs`, `qa/phase-10/qa-manifest.json`                                                                                                                                                               |
-| Review workbench                    | `review/index.html`, `review/app.js`, `scripts/build-review-data.mjs`, `scripts/review-apply.mjs`                                                                                                                          |
-| Readiness gate                      | `scripts/release-check.mjs`, `npm run release:check`                                                                                                                                                                       |
-| CI                                  | `.github/workflows/release-readiness.yml`                                                                                                                                                                                  |
-| Operator punch list                 | `docs/OPERATOR-ACTIONS.md`                                                                                                                                                                                                 |
+## Local verification
 
-## Deviations from the directive (with rationale)
+`npm run check` passed on 2026-07-18:
 
-1. **Working branch.** The directive named `phase-10/release-hardening`; this session was
-   provisioned with `claude/document-instructions-25h9z9` and a binding rule against pushing
-   elsewhere. The operator confirmed using the session branch. All other §1 rules honored.
-2. **`phaseStatus` / `nextCommand` in `project-state.json` kept gate-compatible.** The Phase 5–8
-   gate tests assert `phaseStatus === "complete"` and specific `nextCommand` phrasing. Rather than
-   weaken historical gates, `currentPhase` is `10`, `phaseStatus` stays `"complete"` (the Phase 9
-   baseline genuinely is), and Phase 10 progress lives in `phase10.status`. Documented inline via
-   `phaseStatusNote`.
-3. **QA screenshot binaries are `.gitignore`d, not committed.** The SHA-stamped `qa-manifest.json`,
-   `structural-report.json`, and the generator are committed; the 90 PNGs (≈41 MB viewport /
-   ≈141 MB full-page) are regenerated at HEAD on demand and in CI. This is a stronger, non-stale
-   answer to P1-4 than baking soon-obsolete binaries into git history. See `docs/PHASE-10-BROWSER-QA.md`.
-4. **`humanEditorialReview` added as a new top-level lane object** alongside the legacy
-   `qa.humanEditorialReview: "required"` string (which a Phase 9 test asserts), rather than
-   replacing it. Both coexist; the workbench/`review:apply` operate on the object.
-5. **`release:check` built now (not deferred to §12).** §9.6 wires it into CI, so the gate script
-   exists at the §11 checkpoint. It only ever reports pass/fail and reports authorization as
-   pending; the §12 closing _run_ is not performed and awaits operator instruction.
-6. **Node version.** The pinned toolchain is Node 24; this sandbox ran Node 22. Build/tests/QA all
-   pass here, and CI/`.node-version` pin Node 24. Flagged in `docs/PHASE-10-DISCOVERY.md`.
+- formatting, ESLint, and Astro type checks: clean;
+- 21 test files / 149 tests: passed;
+- 116 static pages: built;
+- 115 active media assets / 119 immutable records / 1,840 optimized derivatives: validated;
+- 4,181 internal links checked; content lint: 0 findings;
+- 7 security headers and 16 CSP directives validated.
 
-## Things the 2026-07-17 review appears to have missed (flagged loudly)
+Local Chromium installation was unavailable in the managed environment, so fresh browser evidence
+is intentionally delegated to the Node 24 GitHub Actions job and then verified again on the public
+Cloudflare preview. No browser result is claimed until that job completes.
 
-1. **Overclaiming alt text is sitewide, not just G02/G03.** A multimodal pass that viewed every
-   image found **18** overclaiming alts — **all 12 guide heroes (G01–G12)** plus HOME-gathering,
-   CAT_FRESH, SYS_START, SYS_CLASS, SYS_GUIDES, and M19 — asserting people, objects, actions,
-   "electric"/"approved"/"covered"/temperature claims not visible in frame. All 18 were corrected
-   live immediately (interim, pending approval).
-2. **A second taxonomy leak the review didn't itemize:** the menu pages rendered the **raw
-   category slug** (`grilled-meat`) directly (`{recipe.category}`), not only the `DRAFT M05 · NONE`
-   card case. Fixed to the category label.
-3. **A pre-existing sitewide WCAG AA color-contrast failure.** The eyebrow accent `#c84a35` on the
-   tinted cream background measured **4.09:1** (needs 4.5:1) — flagged on **104 of 116 pages** by
-   axe. Not in the review. Fixed to `#b83c2b` (4.94:1).
-4. **`0 g` rounding trap.** Naive "nearest 5" rounding turned tiny spice amounts (0.44 g cinnamon)
-   into a misleading `0 g`; the display rounder now floors sub-5 g to 0.5 g.
-5. **M19 duck doneness vs recipe endpoint conflict:** the recipe states a poultry-safe 74 °C
-   endpoint while the image shows a rosy-pink interior. Surfaced for operator reconciliation in the
-   duck brief; agents do not silently change a safety endpoint.
+## Remaining release gates
 
-## Verification at this HEAD
-
-- `npm run check` green (format, lint, typecheck, 146 tests, build, `lint:content` clean).
-- Structural + axe sitewide: **116/116 pass, 0 serious/critical**.
-- Disclosure audit: **23 synthetic elements, 0 failing** (headless computed sizes/contrast).
-- `npm run release:check`: agent-fixable gates PASS; operator-gated gates (lane approvals, origin)
-  correctly report **NOT READY**; authorization **PENDING**.
-
-**STOP.** Awaiting the operator to complete `docs/OPERATOR-ACTIONS.md` steps 1–4 and say
-**"Run Phase 10.7."**
+1. Operator resolves and records the production origin.
+2. A named reviewer exports and applies five-lane decisions for all 115 active assets.
+3. Operator completes the real-device, true-zoom, and screen-reader checklist.
+4. Operator requests the exact **"Run Phase 10.7"** closing run.
+5. After all gates pass, the operator—not an agent—decides whether to merge, deploy production,
+   and later authorize indexing in a separate recorded action.

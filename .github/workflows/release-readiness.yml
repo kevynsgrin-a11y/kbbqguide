@@ -1,9 +1,9 @@
 name: release-readiness
 
 # Phase 10.5 CI. On every PR: install, build (which runs the phase gate, validators,
-# and lint:content), then the sitewide structural + axe suite — all required. A
-# separate, manually-dispatched job runs the full Phase 10.7 readiness gate; it only
-# ever reports authorization as pending and never performs it.
+# and lint:content), then regenerate browser evidence at the exact checked-out SHA.
+# A separate, manually-dispatched job regenerates the same evidence before running
+# the full Phase 10.7 readiness gate. It reports only and never authorizes a release.
 
 on:
   pull_request:
@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   release-readiness:
-    name: build + lint:content + structural/axe
+    name: build + sitewide browser QA
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -33,6 +33,20 @@ jobs:
         run: node scripts/qa/structural-axe.mjs --sha=${GITHUB_SHA}
       - name: Disclosure audit (headless computed sizes/contrast)
         run: node scripts/qa/disclosure-audit.mjs --sha=${GITHUB_SHA}
+      - name: Responsive screenshot matrix (18 routes × 5 widths)
+        run: node scripts/qa/screenshots.mjs --sha=${GITHUB_SHA}
+      - name: Upload exact-SHA browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase-10-qa-${{ github.job }}-${{ github.sha }}
+          path: |
+            qa/phase-10/qa-manifest.json
+            qa/phase-10/structural-report.json
+            qa/phase-10/screenshots/
+            docs/DISCLOSURE-AUDIT.md
+          if-no-files-found: warn
+          retention-days: 14
 
   release-check:
     name: release:check (manual — Phase 10.7 gate, reports only)
@@ -50,5 +64,21 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Build
         run: npm run build
+      - name: Structural + axe suite (sitewide)
+        run: node scripts/qa/structural-axe.mjs --sha=${GITHUB_SHA}
+      - name: Responsive screenshot matrix (18 routes × 5 widths)
+        run: node scripts/qa/screenshots.mjs --sha=${GITHUB_SHA}
       - name: Release readiness gate (reports pass/fail; never authorizes)
         run: npm run release:check
+      - name: Upload release-gate evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase-10-qa-${{ github.job }}-${{ github.sha }}
+          path: |
+            qa/phase-10/qa-manifest.json
+            qa/phase-10/structural-report.json
+            qa/phase-10/screenshots/
+            docs/DISCLOSURE-AUDIT.md
+          if-no-files-found: warn
+          retention-days: 14

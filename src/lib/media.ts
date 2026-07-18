@@ -36,8 +36,11 @@ export interface MediaManifestAsset {
   };
   qa: Record<string, string>;
   /** Set by media:ingest when this asset has been superseded by a replacement. */
-  status?: string;
+  status?: 'replaced';
   replacedBy?: string;
+  supersedes?: string;
+  ingestedBy?: string;
+  ingestedDate?: string;
 }
 
 export interface ResolvedMedia extends MediaManifestAsset {
@@ -125,5 +128,5 @@ export function resolveMedia(mediaId: string): ResolvedMedia | null {
 }
 
 export function mediaAssetCount(): number {
-  return assets.length;
+  return assets.filter((asset) => asset.status !== 'replaced').length;
 }

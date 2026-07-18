@@ -174,3 +174,94 @@ describe('Phase 10.2 — canonical shopping consolidation (P1-9)', () => {
     expect(honey.length).toBe(1);
   });
 });
+
+describe('Phase 10.7 — immutable media review workbench', () => {
+  it('contains every active asset exactly once and excludes replaced assets', () => {
+    const manifest = JSON.parse(
+      readFileSync('data/media-manifest.json', 'utf8'),
+    ) as {
+      assets: Array<{ assetId: string; status?: string }>;
+    };
+    const source = readFileSync('review/data.js', 'utf8');
+    const match = source.match(
+      /window\.__REVIEW_DATA__ = ([\s\S]*?);\nwindow\.__REVIEW_LANES__/,
+    );
+    expect(match).not.toBeNull();
+    const reviewJson = match?.[1];
+    expect(reviewJson).toBeTruthy();
+    const review = JSON.parse(reviewJson ?? '[]') as Array<{
+      assetId: string;
+    }>;
+    const active = manifest.assets.filter((a) => a.status !== 'replaced');
+    const replaced = new Set(
+      manifest.assets
+        .filter((a) => a.status === 'replaced')
+        .map((a) => a.assetId),
+    );
+    const reviewIds = review.map((a) => a.assetId);
+
+    expect(reviewIds).toHaveLength(active.length);
+    expect(new Set(reviewIds).size).toBe(reviewIds.length);
+    expect(reviewIds.sort()).toEqual(active.map((a) => a.assetId).sort());
+    expect(reviewIds.some((id) => replaced.has(id))).toBe(false);
+  });
+
+  it('release gate checks matching screenshot and structural evidence SHAs', () => {
+    const source = readFileSync('scripts/release-check.mjs', 'utf8');
+    expect(source).toContain('sameEvidenceSha');
+    expect(source).toContain('structural-report.json');
+    expect(source).toContain('runtime changes after evidence');
+  });
+
+  it('never lets replacement media inherit human approvals or lifecycle flags', () => {
+    const source = readFileSync('scripts/media-ingest.mjs', 'utf8');
+    expect(source).toContain('humanEditorialReview: {');
+    expect(source).toContain("status: 'required'");
+    expect(source).toContain('delete newAsset.status');
+    expect(source).toContain('delete newAsset.replacedBy');
+    expect(source).toContain("oldAsset.status === 'replaced'");
+    expect(source).toContain('generatedAt: ingestDate');
+  });
+
+  it('keeps the G02 outdoor-charcoal and G03 tabletop-ventilation briefs mapped correctly', () => {
+    const g02 = readFileSync(
+      'docs/media-briefs/phase-10/G02-indoor-outdoor-charcoal-safety.md',
+      'utf8',
+    );
+    const g03 = readFileSync(
+      'docs/media-briefs/phase-10/G03-tabletop-grill-ventilation.md',
+      'utf8',
+    );
+    expect(g02).toContain('`G02-hero`');
+    expect(g02).toContain('open-air charcoal');
+    expect(g02).not.toContain('`G03-hero`');
+    expect(g03).toContain('`G03-hero`');
+    expect(g03).toContain('power cord fully visible');
+    expect(g03).not.toContain('`G02-hero`');
+
+    for (const legacy of [
+      'docs/media-briefs/phase-10/G02-tabletop-grill-ventilation.md',
+      'docs/media-briefs/phase-10/G03-indoor-outdoor-charcoal-safety.md',
+    ]) {
+      const pointer = readFileSync(legacy, 'utf8');
+      expect(pointer).toContain('Legacy filename — do not use');
+      expect(pointer).toContain('G02-indoor-outdoor-charcoal-safety.md');
+      expect(pointer).toContain('G03-tabletop-grill-ventilation.md');
+    }
+  });
+
+  it('regenerates and uploads exact-SHA browser evidence in CI', () => {
+    const workflow = readFileSync(
+      '.github/workflows/release-readiness.yml',
+      'utf8',
+    );
+    expect(workflow).toContain(
+      'node scripts/qa/structural-axe.mjs --sha=${GITHUB_SHA}',
+    );
+    expect(workflow).toContain(
+      'node scripts/qa/screenshots.mjs --sha=${GITHUB_SHA}',
+    );
+    expect(workflow).toContain('actions/upload-artifact@v4');
+    expect(workflow).toContain('qa/phase-10/screenshots/');
+  });
+});

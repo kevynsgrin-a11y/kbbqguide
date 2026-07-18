@@ -78,6 +78,10 @@ if (!size) fail('could not read JPEG dimensions (is this a valid JPEG?)');
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const oldAsset = manifest.assets.find((a) => a.assetId === oldId);
 if (!oldAsset) fail(`--supersedes id not in manifest: ${oldId}`);
+if (oldAsset.status === 'replaced')
+  fail(
+    `${oldId} is already replaced by ${oldAsset.replacedBy || 'an unknown asset'}; supersede the current active asset instead`,
+  );
 
 function gcd(a, b) {
   return b === 0 ? a : gcd(b, a % b);
@@ -131,13 +135,29 @@ const newAsset = {
       0,
       300,
     ),
+  provenance: {
+    ...oldAsset.provenance,
+    generatedAt: ingestDate,
+    promptBasis: `Replacement for ${oldId}; acceptance brief in docs/media-briefs/phase-10/`,
+  },
   qa: {
     ...oldAsset.qa,
     humanEditorialReview: 'required',
     reviewer: 'phase-10-agent; new asset, human sign-off not inferred',
   },
+  humanEditorialReview: {
+    status: 'required',
+    lanes: Object.fromEntries(
+      ['food', 'safety', 'cultural', 'accessibility', 'brand'].map((lane) => [
+        lane,
+        { decision: '', reviewer: '', date: '', notes: '' },
+      ]),
+    ),
+  },
 };
 delete newAsset.phase10Proposal;
+delete newAsset.status;
+delete newAsset.replacedBy;
 
 const summary = {
   supersedes: oldId,

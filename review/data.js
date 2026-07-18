@@ -2,56 +2,6 @@
 // Regenerate: npm run review:data
 window.__REVIEW_DATA__ = [
   {
-    "assetId": "HOME-gathering-hero",
-    "imageSrc": "../src/assets/media/brand/home-gathering-master.jpg",
-    "role": "brand-lifestyle-hero",
-    "usage": "Home page hero",
-    "currentAlt": "Four adults smiling around a table with an inset stainless grill cooking beef, amid lettuce, perilla, rice, and many banchan bowls.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Four adults smiling around a table with an inset stainless grill cooking beef, amid lettuce, perilla, rice, and many banchan bowls.",
-    "proposedRole": "informative",
-    "roleRationale": "Depicts the brand's communal Korean BBQ scene and conveys content beyond the adjacent text.",
-    "overclaimFlag": true,
-    "overclaimNote": "Current alt calls it an 'electric' grill, but the power source is not visible (no cord or controls in frame); the inset stainless grill is visible but its type is not. 'Friends' is a social inference, not something the image confirms.",
-    "interimAltCorrectionApplied": true,
-    "visibleSummary": "Four adults at a table with an inset stainless grill cooking beef, plus lettuce, perilla, rice, and numerous banchan bowls; a plate of raw marbled beef with tongs at right.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      }
-    }
-  },
-  {
     "assetId": "M01-hero",
     "imageSrc": "../src/assets/media/recipes/m01/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -3652,56 +3602,6 @@ window.__REVIEW_DATA__ = [
     }
   },
   {
-    "assetId": "M19-hero",
-    "imageSrc": "../src/assets/media/recipes/m19/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Korean-Style Grilled Duck Breast",
-    "currentAlt": "Sliced grilled duck breast with a seared crosshatched crust and rosy-pink interior, fanned on an oval plate beside sprouts and a dipping sauce.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Sliced grilled duck breast with a seared crosshatched crust and rosy-pink interior, fanned on an oval plate beside sprouts and a dipping sauce.",
-    "proposedRole": "informative",
-    "roleRationale": "Depicts the specific dish (grilled duck breast); content-bearing. Interior doneness is a visible, safety-relevant detail.",
-    "overclaimFlag": true,
-    "overclaimNote": "This is a finished-dish-hero, not a guide-editorial-hero, and the CURRENT alt does not itself state doneness. However, the recipe context asserts a poultry-safe endpoint of 165 F / 74 C (fully cooked), while the sliced duck breast in the image visibly shows a rosy-pink interior, which does not support a fully-cooked / 165 F doneness claim. Flagging so the operator can reconcile the page's safety endpoint against the image. What IS visible: a seared crosshatched crust with distinctly pink centers on the slices.",
-    "interimAltCorrectionApplied": true,
-    "visibleSummary": "Sliced grilled duck breast with a browned crosshatched crust and rosy-pink interior fanned on an oval plate, with a small mound of sprouts and a dipping sauce bowl.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      }
-    }
-  },
-  {
     "assetId": "SF15-hero",
     "imageSrc": "../src/assets/media/recipes/sf15/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -4565,106 +4465,6 @@ window.__REVIEW_DATA__ = [
     "overclaimNote": "Current alt claims the table is 'being calmly set by two adult friends,' but no people are visible in the frame; it shows only an unlit tabletop grill, a plate of grilled ribs, a ssam vegetable platter, banchan bowls, and empty serving trays.",
     "interimAltCorrectionApplied": true,
     "visibleSummary": "An unlit round tabletop grill beside a lamp, a plate of grilled ribs, a fresh vegetable platter, kimchi, bean sprouts, a sauce bowl, and empty trays; no people.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      }
-    }
-  },
-  {
-    "assetId": "G02-hero",
-    "imageSrc": "../src/assets/media/guides/g02-master.jpg",
-    "role": "guide-editorial-hero",
-    "usage": "Guide hero — Indoor vs. Outdoor Korean BBQ Safety",
-    "currentAlt": "Stainless electric tabletop grill on a stone counter under a lit range hood; an open glass door reveals a black charcoal kettle grill on the patio.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Stainless electric tabletop grill on a stone counter under a lit range hood; an open glass door reveals a black charcoal kettle grill on the patio.",
-    "proposedRole": "informative",
-    "roleRationale": "Guide hero illustrating the indoor electric grill versus outdoor charcoal grill contrast central to the topic.",
-    "overclaimFlag": true,
-    "overclaimNote": "Current alt claims an 'indoor-approved electric grill' and 'a manual-ready setup': neither is visible. No approval mark/label and no manual or instructions appear in the frame. What is visible is a stainless electric tabletop grill on a stone counter under a lit range hood, and an open glass door to a patio with a black charcoal kettle grill; also, it is an open sliding glass door, not clearly a 'window.' Per the guide's safety focus, avoid asserting approval, ventilation, or clearance facts not shown.",
-    "interimAltCorrectionApplied": true,
-    "visibleSummary": "An indoor stone counter holds a stainless electric tabletop grill under a lit range hood; through an open glass door a black charcoal kettle grill stands on a patio at dusk.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      }
-    }
-  },
-  {
-    "assetId": "G03-hero",
-    "imageSrc": "../src/assets/media/guides/g03-master.jpg",
-    "role": "guide-editorial-hero",
-    "usage": "Guide hero — Tabletop Grill and Ventilation Guide",
-    "currentAlt": "Black electric tabletop grill with an empty grate on a dark counter, its power cord trailing off to the right; a lit range hood behind, with tongs and a probe thermometer nearby.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Black electric tabletop grill with an empty grate on a dark counter, its power cord trailing off to the right; a lit range hood behind, with tongs and a probe thermometer nearby.",
-    "proposedRole": "informative",
-    "roleRationale": "Guide hero depicts the actual equipment and setup elements (grill, cord, range hood, tools) relevant to the ventilation guide; content-bearing.",
-    "overclaimFlag": true,
-    "overclaimNote": "Guide-editorial-hero for a grill and ventilation safety guide. The CURRENT alt claims 'manufacturer-approved,' 'clear airflow,' and 'safe cord routing' — none visibly supported. No branding, label, or certification is visible, so 'manufacturer-approved' cannot be verified. A range hood appears in the background but ventilation adequacy / 'clear airflow' is not demonstrable from the frame. A power cord IS visible trailing off the right edge, but it simply runs off-frame; 'safe routing' is a safety claim the image does not prove. What IS visible: a black electric tabletop grill with an empty grate, its cord running off-frame to the right, a lit range hood behind, and tongs plus a probe thermometer on the counter.",
-    "interimAltCorrectionApplied": true,
-    "visibleSummary": "A black electric tabletop grill with an empty grate sits on a dark counter with its cord trailing to the right, a lit range hood in the background, and tongs and a probe thermometer in front.",
     "review": {
       "status": "required",
       "lanes": {
@@ -5715,6 +5515,206 @@ window.__REVIEW_DATA__ = [
     "overclaimNote": "",
     "interimAltCorrectionApplied": false,
     "visibleSummary": "A mostly empty dark textured tabletop crossed by a soft leaf shadow, with a brass grill rim, a plate edge and linen napkin, and a few scattered sesame seeds and scallion rings at the right.",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "HOME-gathering-hero-r1",
+    "imageSrc": "../src/assets/media/brand/home-gathering-master-HOME-gathering-hero-r1.jpg",
+    "role": "brand-lifestyle-hero",
+    "usage": "Home page hero",
+    "currentAlt": "Four adults gather around an inset grill; red-handled tongs rest on a separate tray of raw marbled beef while stainless tongs handle browned beef beside lettuce, perilla, rice, and banchan.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Four adults gather around an inset grill; red-handled tongs rest on a separate tray of raw marbled beef while stainless tongs handle browned beef beside lettuce, perilla, rice, and banchan.",
+    "proposedRole": "informative",
+    "roleRationale": "The home hero conveys the gathering and visibly distinct raw-handling and cooked-food utensil zones; content-bearing.",
+    "overclaimFlag": false,
+    "overclaimNote": "Replacement generated from the safety-restage brief. Red-handled raw tongs remain on the raw tray; a separate stainless tong is used over browned food on the grill.",
+    "interimAltCorrectionApplied": true,
+    "visibleSummary": "Four adults share a Korean barbecue table with raw marbled beef and red-handled tongs on a separate tray, browned beef on the grill, stainless tongs, greens, rice, and banchan.",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "G02-hero-r1",
+    "imageSrc": "../src/assets/media/guides/g02-master-G02-hero-r1.jpg",
+    "role": "guide-editorial-hero",
+    "usage": "Guide hero — Indoor vs. Outdoor Korean BBQ Safety",
+    "currentAlt": "Black charcoal kettle grill on a wide stone-paver pad in an open lawn, with a distant house and a chimney starter plus long tongs on a separate paver.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Black charcoal kettle grill on a wide stone-paver pad in an open lawn, with a distant house and a chimney starter plus long tongs on a separate paver.",
+    "proposedRole": "informative",
+    "roleRationale": "The safety-guide hero visibly shows open-air charcoal placement, a non-combustible base, and broad structural clearance; content-bearing.",
+    "overclaimFlag": false,
+    "overclaimNote": "Replacement generated for the correct G02 indoor-versus-outdoor guide slot after correcting crossed brief metadata.",
+    "interimAltCorrectionApplied": true,
+    "visibleSummary": "An open black kettle grill stands on a broad stone-paver area in a large lawn, far from the only visible house; a chimney starter and tongs sit on a separate paver.",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "G03-hero-r1",
+    "imageSrc": "../src/assets/media/guides/g03-master-G03-hero-r1.jpg",
+    "role": "guide-editorial-hero",
+    "usage": "Guide hero — Tabletop Grill and Ventilation Guide",
+    "currentAlt": "Black electric tabletop grill on a stone counter directly beneath a lit range hood; one visible cord runs from the grill's left side to a wall outlet, with tongs and a probe thermometer in front.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Black electric tabletop grill on a stone counter directly beneath a lit range hood; one visible cord runs from the grill's left side to a wall outlet, with tongs and a probe thermometer in front.",
+    "proposedRole": "informative",
+    "roleRationale": "The ventilation-guide hero visibly shows the appliance, both power-cord endpoints, stable surface, aligned lit hood, and tools; content-bearing.",
+    "overclaimFlag": false,
+    "overclaimNote": "Replacement was iterated until exactly one continuous cord and both endpoints were visible; no certification or airflow performance is claimed.",
+    "interimAltCorrectionApplied": true,
+    "visibleSummary": "An empty black electric tabletop grill sits on stone under a lit hood, with one cord visibly connecting its left side to a backsplash outlet; tongs and a probe thermometer rest in front.",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M19-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m19/hero-master-M19-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Korean-Style Grilled Duck Breast",
+    "currentAlt": "Cooked-through sliced duck breast with a crosshatched browned fat cap, fanned on a black oval plate beside radish sprouts and a red dipping sauce.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Cooked-through sliced duck breast with a crosshatched browned fat cap, fanned on a black oval plate beside radish sprouts and a red dipping sauce.",
+    "proposedRole": "informative",
+    "roleRationale": "The recipe hero conveys the finished dish, duck-specific scored fat cap, plating, and visibly opaque cooked-through interior; content-bearing.",
+    "overclaimFlag": false,
+    "overclaimNote": "Option A replacement follows the recipe. The safe 165 °F / 74 °C endpoint remains unchanged; the image contains no rosy-pink interior claim.",
+    "interimAltCorrectionApplied": true,
+    "visibleSummary": "A browned elongated duck breast with crosshatched fat cap is sliced to show an opaque tan-brown interior and fanned on a black plate with sprouts and red sauce.",
     "review": {
       "status": "required",
       "lanes": {

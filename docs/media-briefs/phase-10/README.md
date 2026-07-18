@@ -1,8 +1,9 @@
 # Phase 10 media remediation briefs
 
 Paste-ready regeneration briefs for the images the 2026-07-17 review flagged (P1-5, P1-6)
-plus the duck-breast flag. **Agents do not generate images.** The operator feeds each brief to
-the image pipeline, checks the result against the brief's acceptance checklist, then slots it in.
+plus the duck-breast flag. An automated image pipeline may generate replacement candidates after
+operator authorization, but generation never constitutes human approval. Every new immutable
+asset must still pass the brief checklist and the five-lane review workbench before release.
 
 ## Slot-in path (per brief)
 
@@ -35,9 +36,9 @@ from the manifest. History is preserved.
 
 ## Briefs in this folder
 
-| File                                    | Slot (oldId)          | Why                                                                         |
-| --------------------------------------- | --------------------- | --------------------------------------------------------------------------- |
-| `G02-tabletop-grill-ventilation.md`     | `G02-hero`            | Alt/image implied approval + ventilation the frame can't support            |
-| `G03-indoor-outdoor-charcoal-safety.md` | `G03-hero`            | "safe cord routing" / "manufacturer-approved" / "clear airflow" not visible |
-| `HOME-HERO-restage.md`                  | `HOME-gathering-hero` | Raw/cooked/tool separation unclear (P1-6)                                   |
-| `DUCK-ALT.md`                           | `M19-hero`            | Duck may read as pork / doneness vs recipe endpoint (operator's call)       |
+| File                                    | Slot (oldId)          | Why                                                                     |
+| --------------------------------------- | --------------------- | ----------------------------------------------------------------------- |
+| `G03-tabletop-grill-ventilation.md`     | `G03-hero`            | Fully visible cord + credible ventilation relationship                  |
+| `G02-indoor-outdoor-charcoal-safety.md` | `G02-hero`            | Unambiguous open-air charcoal placement + generous structural clearance |
+| `HOME-HERO-restage.md`                  | `HOME-gathering-hero` | Raw/cooked/tool separation unclear (P1-6)                               |
+| `DUCK-ALT.md`                           | `M19-hero`            | Duck may read as pork / doneness vs recipe endpoint (operator's call)   |

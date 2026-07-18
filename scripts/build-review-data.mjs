@@ -33,7 +33,12 @@ function usageFor(asset) {
   return `${asset.role} — ${sr}`;
 }
 
-const data = manifest.assets.map((a) => ({
+// Superseded entries remain in the immutable manifest for provenance, but they
+// must not re-enter the operator workbench. Only the current asset at the end
+// of each supersede chain is reviewable and counts toward release readiness.
+const activeAssets = manifest.assets.filter((a) => a.status !== 'replaced');
+
+const data = activeAssets.map((a) => ({
   assetId: a.assetId,
   imageSrc: `../${a.path}`,
   role: a.role,

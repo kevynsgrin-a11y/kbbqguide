@@ -88,7 +88,9 @@ describe('Phase 4 UI, media, motion, and preview handoff gate', () => {
   it('preserves the Phase 4 shot plan while activating audited Phase 9 recipe heroes', () => {
     expect(mediaData.version).toBe(4);
     expect(mediaData.phase).toBe(9);
-    expect(mediaData.assets).toHaveLength(115);
+    expect(
+      mediaData.assets.filter((asset) => asset.status !== 'replaced'),
+    ).toHaveLength(115);
     expect(mediaData.recipePlans).toHaveLength(80);
     expect(mediaData.responsiveImageContract.requiredAspectRatios).toEqual([
       '3:2',
