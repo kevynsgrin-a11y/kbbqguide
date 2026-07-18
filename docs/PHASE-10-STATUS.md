@@ -34,13 +34,15 @@ all 116 built pages retain `noindex,nofollow,noarchive`._
   preview exceeded its 20-minute build limit. The same five responsive widths, master JPEG
   fallback, crop metadata, and byte budgets remain, while generated outputs drop from 1,840 to
   1,265.
+- Corrected the 320/390px home disclosure/stat overlap and moved narrow-screen editorial-hero
+  credits into a dedicated band below the image so safety evidence is not obscured by its caption.
 
 ## Local verification
 
 `npm run check` passed on 2026-07-18:
 
 - formatting, ESLint, and Astro type checks: clean;
-- 21 test files / 151 tests: passed;
+- 21 test files / 152 tests: passed;
 - 116 static pages: built;
 - 115 active media assets / 119 immutable records / 1,265 optimized outputs: validated;
 - 4,181 internal links checked; content lint: 0 findings;

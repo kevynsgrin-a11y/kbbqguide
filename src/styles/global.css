@@ -2091,12 +2091,32 @@ a.support-card:hover {
 
   .home-hero-content {
     align-self: end;
-    padding-block: 6rem 3.5rem;
+    /* Keep the library stats clear of the absolute disclosure panel, which can
+       wrap to four lines at 320px. */
+    padding-block: 6rem 9rem;
   }
 
   .media-credit {
     inset: auto var(--space-2) var(--space-2);
     max-width: calc(100% - 2 * var(--space-2));
+  }
+
+  /* On narrow screens a credit overlay can cover the safety evidence the image
+     exists to show (clearance, cord routing, or doneness). Give hero credits a
+     dedicated band beneath the 4:3 image instead. */
+  .editorial-hero-media {
+    aspect-ratio: auto !important;
+  }
+
+  .editorial-hero-media picture {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .editorial-hero-media .media-credit {
+    position: static;
+    max-width: none;
+    margin: var(--space-2);
   }
 
   .editorial-hero {

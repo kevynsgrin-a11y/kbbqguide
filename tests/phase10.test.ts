@@ -264,4 +264,12 @@ describe('Phase 10.7 — immutable media review workbench', () => {
     expect(workflow).toContain('actions/upload-artifact@v4');
     expect(workflow).toContain('qa/phase-10/screenshots/');
   });
+
+  it('keeps narrow-screen disclosures clear of content and safety imagery', () => {
+    const css = readFileSync('src/styles/global.css', 'utf8');
+    expect(css).toContain('padding-block: 6rem 9rem');
+    expect(css).toContain('.editorial-hero-media picture');
+    expect(css).toContain('.editorial-hero-media .media-credit');
+    expect(css).toContain('position: static');
+  });
 });

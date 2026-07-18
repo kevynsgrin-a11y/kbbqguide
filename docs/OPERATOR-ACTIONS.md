@@ -23,6 +23,8 @@ decisions. Every page remains `noindex,nofollow,noarchive`._
 - Removed the redundant AVIF rendition tier after the Pages preview exceeded Cloudflare's
   20-minute build limit. Five responsive WebP widths and JPEG fallback remain; the cold local
   build now emits 1,265 optimized files while preserving crop, loading, and transfer budgets.
+- Fixed narrow-screen disclosure overlap and kept guide/recipe safety subjects visible by placing
+  mobile hero credits in a separate band below the image.
 
 ## 1. Resolve the production origin (P0-2)
 
