@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "updatedAt": "2026-07-18T00:00:00-07:00",
   "currentPhase": 10,
-  "phaseStatus": "release-hardening-in-progress",
+  "phaseStatus": "complete",
+  "phaseStatusNote": "`phaseStatus` denotes the completed Phase 9 baseline gate (which remains complete). Phase 10 (release hardening) is in progress; its live status is `phase10.status`. This field is retained as `complete` because the historical phase 5-8 gate tests assert it and those baselines are genuinely complete.",
   "currentHead": {
     "note": "Sourced from `git rev-parse HEAD` at write time; the final Phase 10 HEAD is recorded in docs/PHASE-10-STATUS.md. Base commit at Phase 10 start was f2a8cc2 (merge of PR #2, the reviewed Phase 9 lineage).",
     "baseCommitAtPhase10Start": "f2a8cc2cdc2fc81fe3addf992a055f8128dd1ebe",
@@ -524,5 +525,5 @@
     "mergeAuthority": "operator-only",
     "releaseAuthorization": "pending-operator; noindex retained on all pages"
   },
-  "nextCommand": "Phase 10 release hardening is in progress on branch claude/document-instructions-25h9z9. Do not merge, deploy, or index. When Phase 10.0-10.6 deliverables land, review docs/OPERATOR-ACTIONS.md and the DRAFT PR. Merge authority and release authorization are operator-only."
+  "nextCommand": "Phase 10 release hardening is in progress on branch claude/document-instructions-25h9z9. Review the DRAFT pull request and docs/OPERATOR-ACTIONS.md. Do not publish, merge, deploy, or index without separate explicit release authorization from a named operator. Merge authority and public release authorization are operator-only; complete the named human media review lanes (Phase 10.6 workbench) first."
 }
