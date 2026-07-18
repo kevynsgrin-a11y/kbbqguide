@@ -519,8 +519,23 @@
       "governance": "docs/GOVERNANCE.md",
       "discovery": "docs/PHASE-10-DISCOVERY.md",
       "originDiagnosis": "docs/ops/ORIGIN-DIAGNOSIS-2026-07.md",
+      "disclosureAudit": "docs/DISCLOSURE-AUDIT.md",
+      "browserQa": "docs/PHASE-10-BROWSER-QA.md",
+      "qaManifest": "qa/phase-10/qa-manifest.json",
+      "structuralReport": "qa/phase-10/structural-report.json",
+      "mediaBriefs": "docs/media-briefs/phase-10/",
+      "reviewWorkbench": "review/index.html",
+      "mediaHumanReview": "docs/MEDIA-HUMAN-REVIEW.md",
+      "ci": ".github/workflows/release-readiness.yml",
       "status": "docs/PHASE-10-STATUS.md",
       "operatorActions": "docs/OPERATOR-ACTIONS.md"
+    },
+    "commands": {
+      "lintContent": "npm run lint:content",
+      "mediaIngest": "npm run media:ingest -- <file> --supersedes <oldId>",
+      "reviewData": "npm run review:data",
+      "reviewApply": "npm run review:apply -- review/decisions.json",
+      "releaseCheck": "npm run release:check"
     },
     "mergeAuthority": "operator-only",
     "releaseAuthorization": "pending-operator; noindex retained on all pages"

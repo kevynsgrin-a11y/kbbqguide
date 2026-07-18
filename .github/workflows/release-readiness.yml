@@ -1,0 +1,54 @@
+name: release-readiness
+
+# Phase 10.5 CI. On every PR: install, build (which runs the phase gate, validators,
+# and lint:content), then the sitewide structural + axe suite — all required. A
+# separate, manually-dispatched job runs the full Phase 10.7 readiness gate; it only
+# ever reports authorization as pending and never performs it.
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  release-readiness:
+    name: build + lint:content + structural/axe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Chromium for the structural/axe suite
+        run: npx playwright install --with-deps chromium
+      - name: Build (phase gate, validators, lint:content)
+        run: npm run build
+      - name: Structural + axe suite (sitewide)
+        run: node scripts/qa/structural-axe.mjs --sha=${GITHUB_SHA}
+      - name: Disclosure audit (headless computed sizes/contrast)
+        run: node scripts/qa/disclosure-audit.mjs --sha=${GITHUB_SHA}
+
+  release-check:
+    name: release:check (manual — Phase 10.7 gate, reports only)
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Build
+        run: npm run build
+      - name: Release readiness gate (reports pass/fail; never authorizes)
+        run: npm run release:check

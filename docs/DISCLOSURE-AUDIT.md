@@ -1,6 +1,6 @@
 # Disclosure Audit — Phase 10.3 (P1-8)
 
-_Computed sizes and worst-case contrast measured headlessly (Chromium, 1440×900) against the built site. HEAD `2301006`. Pass = synthetic-content disclosure ≥ 13px and ≥ 4.5:1 worst-case contrast (panel composited over both white and black, so it holds over any image behind it)._
+_Computed sizes and worst-case contrast measured headlessly (Chromium, 1440×900) against the built site. HEAD `88919d21d6313a4354b5855519b71ac6084d7b86`. Pass = synthetic-content disclosure ≥ 13px and ≥ 4.5:1 worst-case contrast (panel composited over both white and black, so it holds over any image behind it)._
 
 - Synthetic disclosure elements measured: **23**
 - Failing (< 13px or < 4.5:1): **0**

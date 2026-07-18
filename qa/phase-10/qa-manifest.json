@@ -1,0 +1,826 @@
+{
+  "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+  "timestamp": "2026-07-18T14:15:50.056Z",
+  "buildCommand": "npm run build",
+  "widths": [
+    320,
+    390,
+    768,
+    1440,
+    1920
+  ],
+  "routes": 18,
+  "captures": 90,
+  "matrix": [
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/home--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/home--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/home--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/home--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/home--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-seafood--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-seafood--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-seafood--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-seafood--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-seafood--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-banchan--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-banchan--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-banchan--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-banchan--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-banchan--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/fresh/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-fresh--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/fresh/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-fresh--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/fresh/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-fresh--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/fresh/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-fresh--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/fresh/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-fresh--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/sauces/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-sauces--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/sauces/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-sauces--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/sauces/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-sauces--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/sauces/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-sauces--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/sauces/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-sauces--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/desserts/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-desserts--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/desserts/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-desserts--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/desserts/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-desserts--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/desserts/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-desserts--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/desserts/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-desserts--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-classic-korean-pear-beef-bulgogi--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-classic-korean-pear-beef-bulgogi--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-classic-korean-pear-beef-bulgogi--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-classic-korean-pear-beef-bulgogi--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-classic-korean-pear-beef-bulgogi--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/gochujang-grilled-shrimp/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-seafood-gochujang-grilled-shrimp--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/gochujang-grilled-shrimp/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-seafood-gochujang-grilled-shrimp--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/gochujang-grilled-shrimp/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-seafood-gochujang-grilled-shrimp--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/gochujang-grilled-shrimp/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-seafood-gochujang-grilled-shrimp--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/seafood/gochujang-grilled-shrimp/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-seafood-gochujang-grilled-shrimp--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/korean-style-grilled-duck-breast/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-korean-style-grilled-duck-breast--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/korean-style-grilled-duck-breast/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-korean-style-grilled-duck-breast--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/korean-style-grilled-duck-breast/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-korean-style-grilled-duck-breast--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/korean-style-grilled-duck-breast/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-korean-style-grilled-duck-breast--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/grilled-meat/korean-style-grilled-duck-breast/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-grilled-meat-korean-style-grilled-duck-breast--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/gyeran-mari-rolled-omelet/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/recipes-banchan-gyeran-mari-rolled-omelet--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/gyeran-mari-rolled-omelet/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/recipes-banchan-gyeran-mari-rolled-omelet--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/gyeran-mari-rolled-omelet/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/recipes-banchan-gyeran-mari-rolled-omelet--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/gyeran-mari-rolled-omelet/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/recipes-banchan-gyeran-mari-rolled-omelet--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/recipes/banchan/gyeran-mari-rolled-omelet/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/recipes-banchan-gyeran-mari-rolled-omelet--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/guides--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/guides--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/guides--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/guides--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/guides--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/tabletop-grill-and-ventilation/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/guides-tabletop-grill-and-ventilation--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/tabletop-grill-and-ventilation/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/guides-tabletop-grill-and-ventilation--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/tabletop-grill-and-ventilation/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/guides-tabletop-grill-and-ventilation--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/tabletop-grill-and-ventilation/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/guides-tabletop-grill-and-ventilation--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/tabletop-grill-and-ventilation/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/guides-tabletop-grill-and-ventilation--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/indoor-vs-outdoor-korean-bbq-safety/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/guides-indoor-vs-outdoor-korean-bbq-safety--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/indoor-vs-outdoor-korean-bbq-safety/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/guides-indoor-vs-outdoor-korean-bbq-safety--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/indoor-vs-outdoor-korean-bbq-safety/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/guides-indoor-vs-outdoor-korean-bbq-safety--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/indoor-vs-outdoor-korean-bbq-safety/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/guides-indoor-vs-outdoor-korean-bbq-safety--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/guides/indoor-vs-outdoor-korean-bbq-safety/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/guides-indoor-vs-outdoor-korean-bbq-safety--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/menus--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/menus--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/menus--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/menus--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/menus--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/4-guests/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/menus-4-guests--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/4-guests/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/menus-4-guests--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/4-guests/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/menus-4-guests--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/4-guests/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/menus-4-guests--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/4-guests/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/menus-4-guests--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/8-guests/",
+      "width": 320,
+      "path": "qa/phase-10/screenshots/menus-8-guests--320w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/8-guests/",
+      "width": 390,
+      "path": "qa/phase-10/screenshots/menus-8-guests--390w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/8-guests/",
+      "width": 768,
+      "path": "qa/phase-10/screenshots/menus-8-guests--768w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/8-guests/",
+      "width": 1440,
+      "path": "qa/phase-10/screenshots/menus-8-guests--1440w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    },
+    {
+      "sha": "88919d21d6313a4354b5855519b71ac6084d7b86",
+      "timestamp": "2026-07-18T14:15:50.056Z",
+      "route": "/menus/8-guests/",
+      "width": 1920,
+      "path": "qa/phase-10/screenshots/menus-8-guests--1920w--88919d2.png",
+      "fullPage": false,
+      "buildCommand": "npm run build"
+    }
+  ]
+}

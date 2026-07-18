@@ -11,3 +11,6 @@ coverage/
 # Phase 10 scratch/work area (not part of the site)
 scratchpad/
 review/decisions.json
+
+# Phase 10 QA screenshot binaries — regenerated at HEAD via scripts/qa/screenshots.mjs
+qa/phase-10/screenshots/
