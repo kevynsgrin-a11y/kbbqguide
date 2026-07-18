@@ -7,3 +7,6 @@ dist/
 coverage/
 .DS_Store
 *.log
+
+# Phase 10 scratch/work area (not part of the site)
+scratchpad/

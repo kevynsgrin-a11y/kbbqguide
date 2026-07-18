@@ -70,7 +70,7 @@ Ranked by likelihood given "healthy `*.pages.dev`, dead apex 502/refused".
 
 - **Mechanism:** a Pages project serves its `*.pages.dev` host immediately, but the apex only
   serves once the custom domain is **added to that specific project** (Pages → project → Custom
-  domains) *and* validated. If it was never added, or was detached, the apex has no route to the
+  domains) _and_ validated. If it was never added, or was detached, the apex has no route to the
   project and returns a 502/again-nothing at the edge.
 - **Evidence for:** `*.pages.dev` healthy while apex fails is the textbook signature. No repo
   redirect/Workers config exists to explain the failure elsewhere.
@@ -119,13 +119,13 @@ Ranked by likelihood given "healthy `*.pages.dev`, dead apex 502/refused".
 
 ## Decision matrix (operator)
 
-| If `dig`/`curl` shows… | Most likely | Do |
-|---|---|---|
-| Apex `NS` ≠ Cloudflare nameservers | Zone not on Cloudflare | Fix registrar nameservers to Cloudflare's, then H1 |
-| Apex has no `A`/`AAAA`/`CNAME` | H1 | Attach custom domain to Pages project |
-| Apex record present, points at old IP | H2 | Remove stale record; attach domain to Pages |
-| Apex proxied, 502 from edge | H3/H4 | Ensure Pages serves apex; remove stray Workers/redirect rules |
-| TLS handshake error to origin | H5 | Align SSL mode / use Pages-managed cert |
+| If `dig`/`curl` shows…                | Most likely            | Do                                                            |
+| ------------------------------------- | ---------------------- | ------------------------------------------------------------- |
+| Apex `NS` ≠ Cloudflare nameservers    | Zone not on Cloudflare | Fix registrar nameservers to Cloudflare's, then H1            |
+| Apex has no `A`/`AAAA`/`CNAME`        | H1                     | Attach custom domain to Pages project                         |
+| Apex record present, points at old IP | H2                     | Remove stale record; attach domain to Pages                   |
+| Apex proxied, 502 from edge           | H3/H4                  | Ensure Pages serves apex; remove stray Workers/redirect rules |
+| TLS handshake error to origin         | H5                     | Align SSL mode / use Pages-managed cert                       |
 
 The canonical configuration (`site: https://kbbqguide.com`) means the **apex should serve the
 Pages project directly**. The single highest-value action is **H1: attach `kbbqguide.com` (and

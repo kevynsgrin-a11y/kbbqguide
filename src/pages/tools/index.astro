@@ -36,8 +36,7 @@ const menuPayload = menus.map((menu) => {
     })),
     shopping: consolidateShoppingList(menuRecipes, menu.guests).map((line) => ({
       item: line.item,
-      amount: line.amount,
-      unit: line.unit,
+      display: line.display,
       optional: line.optional,
     })),
   };

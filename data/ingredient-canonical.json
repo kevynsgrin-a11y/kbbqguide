@@ -1,0 +1,937 @@
+{
+  "version": 1,
+  "generatedBy": "phase-10-agent",
+  "note": "Canonical ingredient identity for shopping-list consolidation. Keys are the exact `item` strings found in recipe data. Consolidation keys on `id`; `displayName` is what renders. Prep notes stay separate from identity (never encoded here). Only high-confidence spelling/plural/qualifier variants are merged; ambiguous clusters are listed under `ambiguousFlaggedForOperator` and are intentionally NOT merged (each keeps its own identity) pending operator review.",
+  "map": {
+    "80% lean ground beef": {
+      "id": "80-lean-ground-beef",
+      "displayName": "80% lean ground beef",
+      "plural": "80% lean ground beef"
+    },
+    "Asian chives": {
+      "id": "asian-chives",
+      "displayName": "Asian chives",
+      "plural": "Asian chives"
+    },
+    "Asian pear": {
+      "id": "asian-pear",
+      "displayName": "Asian or Korean pear",
+      "plural": "Asian or Korean pears"
+    },
+    "Diamond Crystal kosher salt": {
+      "id": "diamond-crystal-kosher-salt",
+      "displayName": "Diamond Crystal kosher salt",
+      "plural": "Diamond Crystal kosher salt"
+    },
+    "Korean doenjang": {
+      "id": "doenjang",
+      "displayName": "Doenjang",
+      "plural": "Doenjang"
+    },
+    "Korean fermented soybean paste": {
+      "id": "doenjang",
+      "displayName": "Doenjang",
+      "plural": "Doenjang"
+    },
+    "Korean fermented soybean paste (doenjang)": {
+      "id": "doenjang",
+      "displayName": "Doenjang",
+      "plural": "Doenjang"
+    },
+    "Korean fish sauce": {
+      "id": "korean-fish-sauce",
+      "displayName": "Korean fish sauce",
+      "plural": "Korean fish sauce"
+    },
+    "Korean gochugaru": {
+      "id": "gochugaru",
+      "displayName": "Gochugaru (Korean red pepper flakes)",
+      "plural": "Gochugaru (Korean red pepper flakes)"
+    },
+    "Korean gochujang": {
+      "id": "gochujang",
+      "displayName": "Gochujang",
+      "plural": "Gochujang"
+    },
+    "Korean or Asian pear": {
+      "id": "asian-pear",
+      "displayName": "Asian or Korean pear",
+      "plural": "Asian or Korean pears"
+    },
+    "Korean or Persian cucumber": {
+      "id": "korean-persian-cucumber",
+      "displayName": "Korean or Persian cucumbers",
+      "plural": "Korean or Persian cucumbers"
+    },
+    "Korean or Persian cucumbers": {
+      "id": "korean-persian-cucumber",
+      "displayName": "Korean or Persian cucumbers",
+      "plural": "Korean or Persian cucumbers"
+    },
+    "Korean pear": {
+      "id": "asian-pear",
+      "displayName": "Asian or Korean pear",
+      "plural": "Asian or Korean pears"
+    },
+    "Korean perilla leaves": {
+      "id": "perilla-leaves",
+      "displayName": "Perilla leaves",
+      "plural": "Perilla leaves"
+    },
+    "Korean plum syrup or rice syrup": {
+      "id": "korean-plum-syrup-or-rice-syrup",
+      "displayName": "Korean plum syrup or rice syrup",
+      "plural": "Korean plum syrup or rice syrup"
+    },
+    "Korean radish": {
+      "id": "korean-radish",
+      "displayName": "Korean radish",
+      "plural": "Korean radish"
+    },
+    "Korean red pepper flakes": {
+      "id": "gochugaru",
+      "displayName": "Gochugaru (Korean red pepper flakes)",
+      "plural": "Gochugaru (Korean red pepper flakes)"
+    },
+    "Korean red pepper flakes (gochugaru)": {
+      "id": "gochugaru",
+      "displayName": "Gochugaru (Korean red pepper flakes)",
+      "plural": "Gochugaru (Korean red pepper flakes)"
+    },
+    "Korean rice syrup": {
+      "id": "korean-rice-syrup",
+      "displayName": "Korean rice syrup",
+      "plural": "Korean rice syrup"
+    },
+    "Korean rice syrup or honey": {
+      "id": "korean-rice-syrup-or-honey",
+      "displayName": "Korean rice syrup or honey",
+      "plural": "Korean rice syrup or honey"
+    },
+    "Korean zucchini (aehobak)": {
+      "id": "korean-zucchini-aehobak",
+      "displayName": "Korean zucchini (aehobak)",
+      "plural": "Korean zucchini (aehobak)"
+    },
+    "Korean, Persian, or small pickling cucumbers": {
+      "id": "korean-persian-or-small-pickling-cucumbers",
+      "displayName": "Korean, Persian, or small pickling cucumbers",
+      "plural": "Korean, Persian, or small pickling cucumbers"
+    },
+    "Persian cucumbers": {
+      "id": "korean-persian-cucumber",
+      "displayName": "Korean or Persian cucumbers",
+      "plural": "Korean or Persian cucumbers"
+    },
+    "Yukon Gold potatoes": {
+      "id": "yukon-gold-potatoes",
+      "displayName": "Yukon Gold potatoes",
+      "plural": "Yukon Gold potatoes"
+    },
+    "all-purpose flour": {
+      "id": "all-purpose-flour",
+      "displayName": "all-purpose flour",
+      "plural": "all-purpose flour"
+    },
+    "beef sirloin or ribeye": {
+      "id": "beef-sirloin-or-ribeye",
+      "displayName": "beef sirloin or ribeye",
+      "plural": "beef sirloin or ribeye"
+    },
+    "black pepper": {
+      "id": "black-pepper",
+      "displayName": "black pepper",
+      "plural": "black pepper"
+    },
+    "boneless beef rib meat or well-marbled boneless short-rib meat": {
+      "id": "boneless-beef-rib-meat-or-well-marbled-boneless-short-rib-meat",
+      "displayName": "boneless beef rib meat or well-marbled boneless short-rib meat",
+      "plural": "boneless beef rib meat or well-marbled boneless short-rib meat"
+    },
+    "boneless beef short rib, ribeye, or sirloin": {
+      "id": "boneless-beef-short-rib-ribeye-or-sirloin",
+      "displayName": "boneless beef short rib, ribeye, or sirloin",
+      "plural": "boneless beef short rib, ribeye, or sirloin"
+    },
+    "boneless duck breasts": {
+      "id": "boneless-duck-breasts",
+      "displayName": "boneless duck breasts",
+      "plural": "boneless duck breasts"
+    },
+    "boneless lamb-shoulder steaks": {
+      "id": "boneless-lamb-shoulder-steaks",
+      "displayName": "boneless lamb-shoulder steaks",
+      "plural": "boneless lamb-shoulder steaks"
+    },
+    "boneless pork collar or neck": {
+      "id": "boneless-pork-collar-or-neck",
+      "displayName": "boneless pork collar or neck",
+      "plural": "boneless pork collar or neck"
+    },
+    "boneless pork shoulder": {
+      "id": "boneless-pork-shoulder",
+      "displayName": "boneless pork shoulder",
+      "plural": "boneless pork shoulder"
+    },
+    "boneless skinless chicken thighs": {
+      "id": "boneless-skinless-chicken-thighs",
+      "displayName": "boneless skinless chicken thighs",
+      "plural": "boneless skinless chicken thighs"
+    },
+    "broccoli florets": {
+      "id": "broccoli-florets",
+      "displayName": "broccoli florets",
+      "plural": "broccoli florets"
+    },
+    "brown sugar": {
+      "id": "brown-sugar",
+      "displayName": "brown sugar",
+      "plural": "brown sugar"
+    },
+    "canned corn kernels": {
+      "id": "canned-corn-kernels",
+      "displayName": "canned corn kernels",
+      "plural": "canned corn kernels"
+    },
+    "carrot": {
+      "id": "carrot",
+      "displayName": "carrot",
+      "plural": "carrot"
+    },
+    "cleaned baby octopus (jjukkumi)": {
+      "id": "cleaned-baby-octopus-jjukkumi",
+      "displayName": "cleaned baby octopus (jjukkumi)",
+      "plural": "cleaned baby octopus (jjukkumi)"
+    },
+    "cleaned hairtail sections": {
+      "id": "cleaned-hairtail-sections",
+      "displayName": "cleaned hairtail sections",
+      "plural": "cleaned hairtail sections"
+    },
+    "cleaned small octopus (nakji)": {
+      "id": "cleaned-small-octopus-nakji",
+      "displayName": "cleaned small octopus (nakji)",
+      "plural": "cleaned small octopus (nakji)"
+    },
+    "coarse salt": {
+      "id": "coarse-salt",
+      "displayName": "coarse salt",
+      "plural": "coarse salt"
+    },
+    "coarse salt for rubbing": {
+      "id": "coarse-salt-for-rubbing",
+      "displayName": "coarse salt for rubbing",
+      "plural": "coarse salt for rubbing"
+    },
+    "coarsely ground black pepper": {
+      "id": "coarsely-ground-black-pepper",
+      "displayName": "coarsely ground black pepper",
+      "plural": "coarsely ground black pepper"
+    },
+    "cold water": {
+      "id": "cold-water",
+      "displayName": "cold water",
+      "plural": "cold water"
+    },
+    "commercial distilled vinegar labeled 5% acidity": {
+      "id": "commercial-distilled-vinegar-labeled-5-acidity",
+      "displayName": "commercial distilled vinegar labeled 5% acidity",
+      "plural": "commercial distilled vinegar labeled 5% acidity"
+    },
+    "commercial pasteurized mayonnaise": {
+      "id": "commercial-pasteurized-mayonnaise",
+      "displayName": "commercial pasteurized mayonnaise",
+      "plural": "commercial pasteurized mayonnaise"
+    },
+    "commercial pasteurized vanilla ice cream": {
+      "id": "commercial-pasteurized-vanilla-ice-cream",
+      "displayName": "commercial pasteurized vanilla ice cream",
+      "plural": "commercial pasteurized vanilla ice cream"
+    },
+    "commercial prepared injeolmi rice cake": {
+      "id": "commercial-prepared-injeolmi-rice-cake",
+      "displayName": "commercial prepared injeolmi rice cake",
+      "plural": "commercial prepared injeolmi rice cake"
+    },
+    "commercial refrigerated radish sprouts": {
+      "id": "commercial-refrigerated-radish-sprouts",
+      "displayName": "commercial refrigerated radish sprouts",
+      "plural": "commercial refrigerated radish sprouts"
+    },
+    "commercial rice vinegar labeled 5% acidity": {
+      "id": "commercial-rice-vinegar-labeled-5-acidity",
+      "displayName": "commercial rice vinegar labeled 5% acidity",
+      "plural": "commercial rice vinegar labeled 5% acidity"
+    },
+    "commercial yeotgireum-garu barley malt powder": {
+      "id": "commercial-yeotgireum-garu-barley-malt-powder",
+      "displayName": "commercial yeotgireum-garu barley malt powder",
+      "plural": "commercial yeotgireum-garu barley malt powder"
+    },
+    "commercial yuja-cheong": {
+      "id": "commercial-yuja-cheong",
+      "displayName": "commercial yuja-cheong",
+      "plural": "commercial yuja-cheong"
+    },
+    "commercially prepared sweetened Korean red beans": {
+      "id": "commercially-prepared-sweetened-korean-red-beans",
+      "displayName": "commercially prepared sweetened Korean red beans",
+      "plural": "commercially prepared sweetened Korean red beans"
+    },
+    "commercially processed, fully softened gosari": {
+      "id": "commercially-processed-fully-softened-gosari",
+      "displayName": "commercially processed, fully softened gosari",
+      "plural": "commercially processed, fully softened gosari"
+    },
+    "cooked short-grain rice": {
+      "id": "cooked-short-grain-rice",
+      "displayName": "cooked short-grain rice",
+      "plural": "cooked short-grain rice"
+    },
+    "cool potable water": {
+      "id": "cool-potable-water",
+      "displayName": "cool potable water",
+      "plural": "cool potable water"
+    },
+    "cremini mushrooms": {
+      "id": "cremini-mushrooms",
+      "displayName": "cremini mushrooms",
+      "plural": "cremini mushrooms"
+    },
+    "crisp apple": {
+      "id": "crisp-apple",
+      "displayName": "crisp apple",
+      "plural": "crisp apple"
+    },
+    "crown daisy leaves": {
+      "id": "crown-daisy-leaves",
+      "displayName": "crown daisy leaves",
+      "plural": "crown daisy leaves"
+    },
+    "doenjang": {
+      "id": "doenjang",
+      "displayName": "Doenjang",
+      "plural": "Doenjang"
+    },
+    "dried bellflower root (doraji)": {
+      "id": "dried-bellflower-root-doraji",
+      "displayName": "dried bellflower root (doraji)",
+      "plural": "dried bellflower root (doraji)"
+    },
+    "dried kelp": {
+      "id": "dried-kelp",
+      "displayName": "dried kelp",
+      "plural": "dried kelp"
+    },
+    "dry elbow macaroni": {
+      "id": "dry-elbow-macaroni",
+      "displayName": "dry elbow macaroni",
+      "plural": "dry elbow macaroni"
+    },
+    "dry-packed large sea scallops": {
+      "id": "dry-packed-large-sea-scallops",
+      "displayName": "dry-packed large sea scallops",
+      "plural": "dry-packed large sea scallops"
+    },
+    "fine salt": {
+      "id": "fine-salt",
+      "displayName": "fine salt",
+      "plural": "fine salt"
+    },
+    "fine salt for blanching water": {
+      "id": "fine-salt-for-blanching-water",
+      "displayName": "fine salt for blanching water",
+      "plural": "fine salt for blanching water"
+    },
+    "fine sea salt": {
+      "id": "fine-sea-salt",
+      "displayName": "fine sea salt",
+      "plural": "fine sea salt"
+    },
+    "firm tofu": {
+      "id": "firm-tofu",
+      "displayName": "firm tofu",
+      "plural": "firm tofu"
+    },
+    "fish sauce": {
+      "id": "fish-sauce",
+      "displayName": "fish sauce",
+      "plural": "fish sauce"
+    },
+    "flanken-cut beef short ribs, about 6 mm / 1/4 inch thick": {
+      "id": "flanken-cut-beef-short-ribs-about-6-mm-1-4-inch-thick",
+      "displayName": "flanken-cut beef short ribs, about 6 mm / 1/4 inch thick",
+      "plural": "flanken-cut beef short ribs, about 6 mm / 1/4 inch thick"
+    },
+    "flat metal skewers": {
+      "id": "flat-metal-skewers",
+      "displayName": "flat metal skewers",
+      "plural": "flat metal skewers"
+    },
+    "fresh garlic cloves": {
+      "id": "fresh-garlic-cloves",
+      "displayName": "fresh garlic cloves",
+      "plural": "fresh garlic cloves"
+    },
+    "fresh ginger": {
+      "id": "fresh-ginger",
+      "displayName": "fresh ginger",
+      "plural": "fresh ginger"
+    },
+    "fresh lemon juice": {
+      "id": "fresh-lemon-juice",
+      "displayName": "fresh lemon juice",
+      "plural": "fresh lemon juice"
+    },
+    "fresh lotus root": {
+      "id": "fresh-lotus-root",
+      "displayName": "fresh lotus root",
+      "plural": "fresh lotus root"
+    },
+    "fresh minari (Korean water parsley)": {
+      "id": "fresh-minari-korean-water-parsley",
+      "displayName": "fresh minari (Korean water parsley)",
+      "plural": "fresh minari (Korean water parsley)"
+    },
+    "fresh perilla leaves": {
+      "id": "perilla-leaves",
+      "displayName": "Perilla leaves",
+      "plural": "Perilla leaves"
+    },
+    "fresh shiitake mushrooms": {
+      "id": "fresh-shiitake-mushrooms",
+      "displayName": "fresh shiitake mushrooms",
+      "plural": "fresh shiitake mushrooms"
+    },
+    "fresh soybean sprouts": {
+      "id": "fresh-soybean-sprouts",
+      "displayName": "fresh soybean sprouts",
+      "plural": "fresh soybean sprouts"
+    },
+    "freshly ground black pepper": {
+      "id": "freshly-ground-black-pepper",
+      "displayName": "freshly ground black pepper",
+      "plural": "freshly ground black pepper"
+    },
+    "garlic": {
+      "id": "garlic",
+      "displayName": "garlic",
+      "plural": "garlic"
+    },
+    "gochugaru": {
+      "id": "gochugaru",
+      "displayName": "Gochugaru (Korean red pepper flakes)",
+      "plural": "Gochugaru (Korean red pepper flakes)"
+    },
+    "gochujang": {
+      "id": "gochujang",
+      "displayName": "Gochujang",
+      "plural": "Gochujang"
+    },
+    "granulated sugar": {
+      "id": "granulated-sugar",
+      "displayName": "granulated sugar",
+      "plural": "granulated sugar"
+    },
+    "green cabbage": {
+      "id": "green-cabbage",
+      "displayName": "green cabbage",
+      "plural": "green cabbage"
+    },
+    "green leaf lettuce": {
+      "id": "green-leaf-lettuce",
+      "displayName": "green leaf lettuce",
+      "plural": "green leaf lettuce"
+    },
+    "ground black pepper": {
+      "id": "ground-black-pepper",
+      "displayName": "ground black pepper",
+      "plural": "ground black pepper"
+    },
+    "ground cinnamon": {
+      "id": "ground-cinnamon",
+      "displayName": "ground cinnamon",
+      "plural": "ground cinnamon"
+    },
+    "ground pork": {
+      "id": "ground-pork",
+      "displayName": "ground pork",
+      "plural": "ground pork"
+    },
+    "ground toasted sesame seeds": {
+      "id": "ground-toasted-sesame-seeds",
+      "displayName": "ground toasted sesame seeds",
+      "plural": "ground toasted sesame seeds"
+    },
+    "honey": {
+      "id": "honey",
+      "displayName": "honey",
+      "plural": "honey"
+    },
+    "ice made from potable water": {
+      "id": "ice-made-from-potable-water",
+      "displayName": "ice made from potable water",
+      "plural": "ice made from potable water"
+    },
+    "instant yeast": {
+      "id": "instant-yeast",
+      "displayName": "instant yeast",
+      "plural": "instant yeast"
+    },
+    "kosher salt": {
+      "id": "kosher-salt",
+      "displayName": "kosher salt",
+      "plural": "kosher salt"
+    },
+    "large eggs": {
+      "id": "large-eggs",
+      "displayName": "large eggs",
+      "plural": "large eggs"
+    },
+    "large scallions": {
+      "id": "scallions",
+      "displayName": "Scallions",
+      "plural": "Scallions"
+    },
+    "large whole squid": {
+      "id": "large-whole-squid",
+      "displayName": "large whole squid",
+      "plural": "large whole squid"
+    },
+    "lean beef eye of round or brisket": {
+      "id": "lean-beef-eye-of-round-or-brisket",
+      "displayName": "lean beef eye of round or brisket",
+      "plural": "lean beef eye of round or brisket"
+    },
+    "live farmed abalone in shells": {
+      "id": "live-farmed-abalone-in-shells",
+      "displayName": "live farmed abalone in shells",
+      "plural": "live farmed abalone in shells"
+    },
+    "live hard-shell clams from an approved source": {
+      "id": "live-hard-shell-clams-from-an-approved-source",
+      "displayName": "live hard-shell clams from an approved source",
+      "plural": "live hard-shell clams from an approved source"
+    },
+    "live mussels in the shell": {
+      "id": "live-mussels-in-the-shell",
+      "displayName": "live mussels in the shell",
+      "plural": "live mussels in the shell"
+    },
+    "live oysters in the shell": {
+      "id": "live-oysters-in-the-shell",
+      "displayName": "live oysters in the shell",
+      "plural": "live oysters in the shell"
+    },
+    "mature spinach with stems": {
+      "id": "mature-spinach-with-stems",
+      "displayName": "mature spinach with stems",
+      "plural": "mature spinach with stems"
+    },
+    "mild Korean green chiles": {
+      "id": "mild-korean-green-chiles",
+      "displayName": "mild Korean green chiles",
+      "plural": "mild Korean green chiles"
+    },
+    "mild green chile": {
+      "id": "mild-green-chile",
+      "displayName": "mild green chile",
+      "plural": "mild green chile"
+    },
+    "mild green chiles": {
+      "id": "mild-green-chiles",
+      "displayName": "mild green chiles",
+      "plural": "mild green chiles"
+    },
+    "napa cabbage": {
+      "id": "napa-cabbage",
+      "displayName": "napa cabbage",
+      "plural": "napa cabbage"
+    },
+    "neutral cooking oil": {
+      "id": "neutral-oil",
+      "displayName": "Neutral cooking oil",
+      "plural": "Neutral cooking oil"
+    },
+    "neutral high-heat oil": {
+      "id": "neutral-high-heat-oil",
+      "displayName": "neutral high-heat oil",
+      "plural": "neutral high-heat oil"
+    },
+    "neutral oil": {
+      "id": "neutral-oil",
+      "displayName": "Neutral cooking oil",
+      "plural": "Neutral cooking oil"
+    },
+    "neutral oil for pan-frying": {
+      "id": "neutral-oil",
+      "displayName": "Neutral cooking oil",
+      "plural": "Neutral cooking oil"
+    },
+    "packaged Korean fish-cake sheets": {
+      "id": "packaged-korean-fish-cake-sheets",
+      "displayName": "packaged Korean fish-cake sheets",
+      "plural": "packaged Korean fish-cake sheets"
+    },
+    "packed brown sugar": {
+      "id": "packed-brown-sugar",
+      "displayName": "packed brown sugar",
+      "plural": "packed brown sugar"
+    },
+    "packed dark brown sugar": {
+      "id": "packed-dark-brown-sugar",
+      "displayName": "packed dark brown sugar",
+      "plural": "packed dark brown sugar"
+    },
+    "packed light brown sugar": {
+      "id": "packed-light-brown-sugar",
+      "displayName": "packed light brown sugar",
+      "plural": "packed light brown sugar"
+    },
+    "paper-thin sliced beef brisket for Korean BBQ": {
+      "id": "paper-thin-sliced-beef-brisket-for-korean-bbq",
+      "displayName": "paper-thin sliced beef brisket for Korean BBQ",
+      "plural": "paper-thin sliced beef brisket for Korean BBQ"
+    },
+    "pasteurized sweetened condensed milk": {
+      "id": "pasteurized-sweetened-condensed-milk",
+      "displayName": "pasteurized sweetened condensed milk",
+      "plural": "pasteurized sweetened condensed milk"
+    },
+    "pine nuts": {
+      "id": "pine-nuts",
+      "displayName": "pine nuts",
+      "plural": "pine nuts"
+    },
+    "plain unseasoned roasted gim sheets": {
+      "id": "plain-unseasoned-roasted-gim-sheets",
+      "displayName": "plain unseasoned roasted gim sheets",
+      "plural": "plain unseasoned roasted gim sheets"
+    },
+    "pork spare ribs": {
+      "id": "pork-spare-ribs",
+      "displayName": "pork spare ribs",
+      "plural": "pork spare ribs"
+    },
+    "potable water for soaking and rinsing": {
+      "id": "potable-water-for-soaking-and-rinsing",
+      "displayName": "potable water for soaking and rinsing",
+      "plural": "potable water for soaking and rinsing"
+    },
+    "prepared Korean or yellow mustard": {
+      "id": "prepared-korean-or-yellow-mustard",
+      "displayName": "prepared Korean or yellow mustard",
+      "plural": "prepared Korean or yellow mustard"
+    },
+    "raw large shrimp, about 16–20 count per pound": {
+      "id": "raw-large-shrimp-about-16-20-count-per-pound",
+      "displayName": "raw large shrimp, about 16–20 count per pound",
+      "plural": "raw large shrimp, about 16–20 count per pound"
+    },
+    "red bell pepper": {
+      "id": "red-bell-pepper",
+      "displayName": "red bell pepper",
+      "plural": "red bell pepper"
+    },
+    "red leaf lettuce": {
+      "id": "red-leaf-lettuce",
+      "displayName": "red leaf lettuce",
+      "plural": "red leaf lettuce"
+    },
+    "red or green leaf lettuce": {
+      "id": "red-or-green-leaf-lettuce",
+      "displayName": "red or green leaf lettuce",
+      "plural": "red or green leaf lettuce"
+    },
+    "refrigerated quail eggs": {
+      "id": "refrigerated-quail-eggs",
+      "displayName": "refrigerated quail eggs",
+      "plural": "refrigerated quail eggs"
+    },
+    "regular soy sauce": {
+      "id": "soy-sauce",
+      "displayName": "Soy sauce",
+      "plural": "Soy sauce"
+    },
+    "rice syrup": {
+      "id": "korean-rice-syrup",
+      "displayName": "Korean rice syrup",
+      "plural": "Korean rice syrup"
+    },
+    "rice syrup or honey": {
+      "id": "rice-syrup-or-honey",
+      "displayName": "rice syrup or honey",
+      "plural": "rice syrup or honey"
+    },
+    "rice vinegar": {
+      "id": "rice-vinegar",
+      "displayName": "rice vinegar",
+      "plural": "rice vinegar"
+    },
+    "rice vinegar for blanching water": {
+      "id": "rice-vinegar-for-blanching-water",
+      "displayName": "rice vinegar for blanching water",
+      "plural": "rice vinegar for blanching water"
+    },
+    "ripe firm tomatoes": {
+      "id": "ripe-firm-tomatoes",
+      "displayName": "ripe firm tomatoes",
+      "plural": "ripe firm tomatoes"
+    },
+    "ripe mango flesh": {
+      "id": "ripe-mango-flesh",
+      "displayName": "ripe mango flesh",
+      "plural": "ripe mango flesh"
+    },
+    "roasted soybean powder": {
+      "id": "roasted-soybean-powder",
+      "displayName": "roasted soybean powder",
+      "plural": "roasted soybean powder"
+    },
+    "roasted unsalted pumpkin seeds": {
+      "id": "roasted-unsalted-pumpkin-seeds",
+      "displayName": "roasted unsalted pumpkin seeds",
+      "plural": "roasted unsalted pumpkin seeds"
+    },
+    "roasted unsalted sunflower seeds": {
+      "id": "roasted-unsalted-sunflower-seeds",
+      "displayName": "roasted unsalted sunflower seeds",
+      "plural": "roasted unsalted sunflower seeds"
+    },
+    "saeujeot fermented salted shrimp": {
+      "id": "saeujeot",
+      "displayName": "Saeujeot (salted fermented shrimp)",
+      "plural": "Saeujeot (salted fermented shrimp)"
+    },
+    "saeujeot fermented salted shrimp with brine": {
+      "id": "saeujeot",
+      "displayName": "Saeujeot (salted fermented shrimp)",
+      "plural": "Saeujeot (salted fermented shrimp)"
+    },
+    "salted fermented shrimp (saeujeot)": {
+      "id": "saeujeot",
+      "displayName": "Saeujeot (salted fermented shrimp)",
+      "plural": "Saeujeot (salted fermented shrimp)"
+    },
+    "scallion": {
+      "id": "scallions",
+      "displayName": "Scallions",
+      "plural": "Scallions"
+    },
+    "scallions": {
+      "id": "scallions",
+      "displayName": "Scallions",
+      "plural": "Scallions"
+    },
+    "skin-on black cod (sablefish) fillet": {
+      "id": "skin-on-black-cod-sablefish-fillet",
+      "displayName": "skin-on black cod (sablefish) fillet",
+      "plural": "skin-on black cod (sablefish) fillet"
+    },
+    "skin-on salmon fillet": {
+      "id": "skin-on-salmon-fillet",
+      "displayName": "skin-on salmon fillet",
+      "plural": "skin-on salmon fillet"
+    },
+    "skinless pork belly slab": {
+      "id": "skinless-pork-belly-slab",
+      "displayName": "skinless pork belly slab",
+      "plural": "skinless pork belly slab"
+    },
+    "small dried anchovies for bokkeum": {
+      "id": "small-dried-anchovies-for-bokkeum",
+      "displayName": "small dried anchovies for bokkeum",
+      "plural": "small dried anchovies for bokkeum"
+    },
+    "small waxy baby potatoes": {
+      "id": "small-waxy-baby-potatoes",
+      "displayName": "small waxy baby potatoes",
+      "plural": "small waxy baby potatoes"
+    },
+    "soft Korean injeolmi or plain rice-cake pieces": {
+      "id": "soft-korean-injeolmi-or-plain-rice-cake-pieces",
+      "displayName": "soft Korean injeolmi or plain rice-cake pieces",
+      "plural": "soft Korean injeolmi or plain rice-cake pieces"
+    },
+    "soy sauce": {
+      "id": "soy-sauce",
+      "displayName": "Soy sauce",
+      "plural": "Soy sauce"
+    },
+    "strawberries": {
+      "id": "strawberries",
+      "displayName": "strawberries",
+      "plural": "strawberries"
+    },
+    "sugar": {
+      "id": "sugar",
+      "displayName": "sugar",
+      "plural": "sugar"
+    },
+    "sweet onion": {
+      "id": "sweet-onion",
+      "displayName": "sweet onion",
+      "plural": "sweet onion"
+    },
+    "sweet rice flour": {
+      "id": "sweet-rice-flour",
+      "displayName": "sweet rice flour",
+      "plural": "sweet rice flour"
+    },
+    "thick-cut sandwich bread": {
+      "id": "thick-cut-sandwich-bread",
+      "displayName": "thick-cut sandwich bread",
+      "plural": "thick-cut sandwich bread"
+    },
+    "toasted perilla oil": {
+      "id": "toasted-perilla-oil",
+      "displayName": "toasted perilla oil",
+      "plural": "toasted perilla oil"
+    },
+    "toasted sesame oil": {
+      "id": "toasted-sesame-oil",
+      "displayName": "toasted sesame oil",
+      "plural": "toasted sesame oil"
+    },
+    "toasted sesame seeds": {
+      "id": "toasted-sesame-seeds",
+      "displayName": "toasted sesame seeds",
+      "plural": "toasted sesame seeds"
+    },
+    "unsalted anchovy-kelp broth": {
+      "id": "unsalted-anchovy-kelp-broth",
+      "displayName": "unsalted anchovy-kelp broth",
+      "plural": "unsalted anchovy-kelp broth"
+    },
+    "unsalted butter": {
+      "id": "unsalted-butter",
+      "displayName": "unsalted butter",
+      "plural": "unsalted butter"
+    },
+    "unseasoned rice vinegar": {
+      "id": "unseasoned-rice-vinegar",
+      "displayName": "unseasoned rice vinegar",
+      "plural": "unseasoned rice vinegar"
+    },
+    "warm water": {
+      "id": "warm-water",
+      "displayName": "warm water",
+      "plural": "warm water"
+    },
+    "water": {
+      "id": "water",
+      "displayName": "water",
+      "plural": "water"
+    },
+    "water for blanching": {
+      "id": "water-for-blanching",
+      "displayName": "water for blanching",
+      "plural": "water for blanching"
+    },
+    "watercress": {
+      "id": "watercress",
+      "displayName": "watercress",
+      "plural": "watercress"
+    },
+    "well-marbled beef ribeye or sirloin": {
+      "id": "well-marbled-beef-ribeye-or-sirloin",
+      "displayName": "well-marbled beef ribeye or sirloin",
+      "plural": "well-marbled beef ribeye or sirloin"
+    },
+    "well-marbled sirloin, strip steak, or ribeye": {
+      "id": "well-marbled-sirloin-strip-steak-or-ribeye",
+      "displayName": "well-marbled sirloin, strip steak, or ribeye",
+      "plural": "well-marbled sirloin, strip steak, or ribeye"
+    },
+    "whole mackerel": {
+      "id": "whole-mackerel",
+      "displayName": "whole mackerel",
+      "plural": "whole mackerel"
+    },
+    "whole yellow croaker": {
+      "id": "whole-yellow-croaker",
+      "displayName": "whole yellow croaker",
+      "plural": "whole yellow croaker"
+    },
+    "yellow bell pepper": {
+      "id": "yellow-bell-pepper",
+      "displayName": "yellow bell pepper",
+      "plural": "yellow bell pepper"
+    },
+    "yellow onion": {
+      "id": "yellow-onion",
+      "displayName": "yellow onion",
+      "plural": "yellow onion"
+    },
+    "yuja marmalade or yuja-cheong": {
+      "id": "yuja-marmalade-or-yuja-cheong",
+      "displayName": "yuja marmalade or yuja-cheong",
+      "plural": "yuja marmalade or yuja-cheong"
+    }
+  },
+  "ambiguousFlaggedForOperator": [
+    {
+      "note": "Salt types differ by density/purpose; do not auto-merge",
+      "members": [
+        "fine salt",
+        "fine salt for blanching water",
+        "fine sea salt",
+        "coarse salt",
+        "coarse salt for rubbing",
+        "kosher salt",
+        "Diamond Crystal kosher salt"
+      ]
+    },
+    {
+      "note": "White vs granulated vs brown sugars differ; do not auto-merge",
+      "members": [
+        "sugar",
+        "granulated sugar",
+        "brown sugar",
+        "packed brown sugar",
+        "packed dark brown sugar",
+        "packed light brown sugar"
+      ]
+    },
+    {
+      "note": "Black pepper grinds differ (whole/ground/coarse/fresh); shopping identity vs grind",
+      "members": [
+        "black pepper",
+        "ground black pepper",
+        "coarsely ground black pepper",
+        "freshly ground black pepper"
+      ]
+    },
+    {
+      "note": "Substitution phrasings (\"X or Y\") — canonical identity unclear",
+      "members": [
+        "rice syrup or honey",
+        "Korean rice syrup or honey",
+        "Korean plum syrup or rice syrup",
+        "yuja marmalade or yuja-cheong"
+      ]
+    },
+    {
+      "note": "Sesame seeds whole vs ground are different forms",
+      "members": ["toasted sesame seeds", "ground toasted sesame seeds"]
+    },
+    {
+      "note": "\"neutral high-heat oil\" is functionally neutral oil but carries a heat spec",
+      "members": ["neutral high-heat oil"]
+    },
+    {
+      "note": "Cucumber variant adds pickling context",
+      "members": ["Korean, Persian, or small pickling cucumbers"]
+    },
+    {
+      "note": "Vinegars differ by type/acidity/use",
+      "members": [
+        "rice vinegar",
+        "unseasoned rice vinegar",
+        "rice vinegar for blanching water",
+        "commercial rice vinegar labeled 5% acidity",
+        "commercial distilled vinegar labeled 5% acidity"
+      ]
+    }
+  ]
+}

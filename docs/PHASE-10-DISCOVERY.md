@@ -39,18 +39,18 @@ Phase 10 base commit, not assumed._
 
 116 HTML pages. Full list captured in `qa/phase-10/` during Phase 10.5. Summary:
 
-| Group | Count | Examples |
-|---|---|---|
-| Home | 1 | `/` |
-| Recipe index | 1 | `/recipes/` |
-| Category indexes | 6 | `/recipes/grilled-meat/`, `/recipes/seafood/`, `/recipes/banchan/`, `/recipes/fresh/`, `/recipes/sauces/`, `/recipes/desserts/` |
-| Recipe detail pages | 80 | `/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/`, `/recipes/seafood/gochujang-grilled-shrimp/`, `/recipes/grilled-meat/korean-style-grilled-duck-breast/`, `/recipes/banchan/gyeran-mari-rolled-omelet/` |
-| Guide index | 1 | `/guides/` |
-| Guide pages | 12 | `/guides/tabletop-grill-and-ventilation/`, `/guides/indoor-vs-outdoor-korean-bbq-safety/`, … |
-| Menu index | 1 | `/menus/` |
-| Menu pages | 3 | `/menus/2-guests/`, `/menus/4-guests/`, `/menus/8-guests/` |
-| System / policy / tools | 11 | `/`, `/start-here/`, `/tools/`, `/shop/`, `/newsletter/`, `/media-kit/`, `/live-class/`, `/sitemap/`, `/affiliate-disclosure/`, `/brand-partnerships/`, `/licensing-inquiry/`, `/sponsored-content-policy/` |
-| Non-HTML routes | — | `/robots.txt`, `/feed.xml`, `/sitemap-index.xml`, `/sitemap-preview.xml`, `/site.webmanifest`, `/_headers`, `/favicon.svg`, `/social/kbbqguide-home.jpg` |
+| Group                   | Count | Examples                                                                                                                                                                                                          |
+| ----------------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Home                    | 1     | `/`                                                                                                                                                                                                               |
+| Recipe index            | 1     | `/recipes/`                                                                                                                                                                                                       |
+| Category indexes        | 6     | `/recipes/grilled-meat/`, `/recipes/seafood/`, `/recipes/banchan/`, `/recipes/fresh/`, `/recipes/sauces/`, `/recipes/desserts/`                                                                                   |
+| Recipe detail pages     | 80    | `/recipes/grilled-meat/classic-korean-pear-beef-bulgogi/`, `/recipes/seafood/gochujang-grilled-shrimp/`, `/recipes/grilled-meat/korean-style-grilled-duck-breast/`, `/recipes/banchan/gyeran-mari-rolled-omelet/` |
+| Guide index             | 1     | `/guides/`                                                                                                                                                                                                        |
+| Guide pages             | 12    | `/guides/tabletop-grill-and-ventilation/`, `/guides/indoor-vs-outdoor-korean-bbq-safety/`, …                                                                                                                      |
+| Menu index              | 1     | `/menus/`                                                                                                                                                                                                         |
+| Menu pages              | 3     | `/menus/2-guests/`, `/menus/4-guests/`, `/menus/8-guests/`                                                                                                                                                        |
+| System / policy / tools | 11    | `/`, `/start-here/`, `/tools/`, `/shop/`, `/newsletter/`, `/media-kit/`, `/live-class/`, `/sitemap/`, `/affiliate-disclosure/`, `/brand-partnerships/`, `/licensing-inquiry/`, `/sponsored-content-policy/`       |
+| Non-HTML routes         | —     | `/robots.txt`, `/feed.xml`, `/sitemap-index.xml`, `/sitemap-preview.xml`, `/site.webmanifest`, `/_headers`, `/favicon.svg`, `/social/kbbqguide-home.jpg`                                                          |
 
 Route → recipe/category/menu IDs are resolved through `data/url-registry.json` via
 `src/lib/url-registry.ts` (`registryPathById`). Category slugs live in `src/lib/categories.ts`;
@@ -68,10 +68,10 @@ menu slugs (`{guests}-guests`) in `src/lib/menus.ts`; guide slugs in `src/lib/gu
 - **Schema per asset (key fields):** `assetId` (immutable), `kind`, `role`, `assetStatus`,
   `path`, `width`, `height`, `aspectRatio`, `focalPoint`, `mobileCrop`, `altDecision`
   (`informative`/`decorative`), `altText`, `caption`, `credit`, `provenance{creator,
-  generatedAt, sourceRecord, promptBasis, disclosure}`, `rights{source, scope, externalLicense}`,
+generatedAt, sourceRecord, promptBasis, disclosure}`, `rights{source, scope, externalLicense}`,
   `qa{implementationVisualReview, implementationFoodSafetyScreen,
-  implementationCulturalAndIngredientScreen, responsiveCropReview, humanEditorialReview,
-  reviewer}`. `humanEditorialReview` is currently a **string** `"required"`; Phase 10.6 extends
+implementationCulturalAndIngredientScreen, responsiveCropReview, humanEditorialReview,
+reviewer}`. `humanEditorialReview` is currently a **string** `"required"`; Phase 10.6 extends
   it to the lane object defined in §10 of the directive.
 - **Contracts in the manifest:** `responsiveImageContract` (formats avif/webp/jpeg; widths
   360/640/960/1280/1600), `stillShotContract`, `videoContract`.

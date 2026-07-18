@@ -4,7 +4,7 @@ import tsParser from '@typescript-eslint/parser';
 import astro from 'eslint-plugin-astro';
 
 export default [
-  { ignores: ['.astro/**', 'dist/**', 'node_modules/**'] },
+  { ignores: ['.astro/**', 'dist/**', 'node_modules/**', 'scratchpad/**'] },
   eslint.configs.recommended,
   ...astro.configs['flat/recommended'],
   {

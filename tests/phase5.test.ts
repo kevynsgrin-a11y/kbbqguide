@@ -78,7 +78,7 @@ describe('Phase 5 SEO, guides, menus, and tools handoff gate', () => {
     const list = consolidateShoppingList(selected, 8);
     expect(list.length).toBeGreaterThan(10);
     expect(list.every((line) => line.recipeIds.length > 0)).toBe(true);
-    expect(list.some((line) => line.amount !== null)).toBe(true);
+    expect(list.some((line) => line.display !== '')).toBe(true);
     expect(JSON.stringify(list)).not.toMatch(/price|stock|coupon|package/i);
     expect(() => consolidateShoppingList(selected, 0)).toThrow(
       /positive integer/,
