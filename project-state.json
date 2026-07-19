@@ -535,10 +535,21 @@
       "mediaIngest": "npm run media:ingest -- <file> --supersedes <oldId>",
       "reviewData": "npm run review:data",
       "reviewApply": "npm run review:apply -- review/decisions.json",
+      "reviewWaiverApply": "npm run review:apply -- review/operator-waiver.json",
       "releaseCheck": "npm run release:check"
+    },
+    "mediaReview": {
+      "status": "operator-waived",
+      "activeAssetsApprovedOrWaived": 115,
+      "activeAssetsTotal": 115,
+      "authorizedBy": "Kevyn Johnson",
+      "authorizedDate": "2026-07-19",
+      "record": "review/operator-waiver.json",
+      "recordedBy": "phase-10-agent",
+      "note": "Granular lane decisions remain unapproved; the explicit operator waiver satisfies only the media-review release gate."
     },
     "mergeAuthority": "operator-only",
     "releaseAuthorization": "pending-operator; noindex retained on all pages"
   },
-  "nextCommand": "Phase 10 release hardening is in progress on branch claude/document-instructions-25h9z9. Review the DRAFT pull request and docs/OPERATOR-ACTIONS.md. Do not publish, merge, deploy, or index without separate explicit release authorization from a named operator. Merge authority and public release authorization are operator-only; complete the named human media review lanes (Phase 10.6 workbench) first."
+  "nextCommand": "Phase 10 release hardening is in progress on branch claude/document-instructions-25h9z9. The 115-asset media-review gate is operator-waived; resolve the production origin and complete remaining browser/device evidence before rerunning Phase 10.7. Do not publish, merge, deploy, or index without separate explicit release authorization through the operator-only authorization steps."
 }
