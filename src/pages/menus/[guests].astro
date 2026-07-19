@@ -7,6 +7,7 @@ import EditorialHero from '../../components/EditorialHero.astro';
 import SafetyCallout from '../../components/SafetyCallout.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { menus, type MenuPlan } from '../../lib/menus';
+import { categoryBySlug } from '../../lib/categories';
 import { consolidateShoppingList } from '../../lib/planner';
 import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
@@ -106,7 +107,8 @@ const path = registryPathById(registry, menu.id);
             >
               <strong>{recipe.title}</strong>
               <span>
-                {recipe.category} · base yield {recipe.yield}
+                {categoryBySlug(recipe.category).label} · base yield{' '}
+                {recipe.yield}
               </span>
             </a>
           ))
@@ -148,7 +150,7 @@ const path = registryPathById(registry, menu.id);
           shopping.map((line) => (
             <div class="shopping-line">
               <span>
-                {line.amount !== null && `${line.amount} ${line.unit} · `}
+                {line.display && `${line.display} · `}
                 <strong>{line.item}</strong>
                 {line.optional && ' (optional)'}
               </span>

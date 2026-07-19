@@ -3,3 +3,6 @@ dist/
 node_modules/
 package-lock.json
 docs/*.csv
+scratchpad/
+review/data.js
+qa/**

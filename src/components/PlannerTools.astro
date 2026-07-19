@@ -7,8 +7,7 @@ interface MenuPayload {
   recipes: readonly { title: string; path: string }[];
   shopping: readonly {
     item: string;
-    amount: number | null;
-    unit: string | null;
+    display: string;
     optional: boolean;
   }[];
 }
@@ -182,7 +181,7 @@ const allergenOptions = [
           {
             initialMenu?.shopping.map((line) => (
               <li>
-                {line.amount !== null && `${line.amount} ${line.unit} · `}
+                {line.display && `${line.display} · `}
                 {line.item}
                 {line.optional && ' (optional)'}
               </li>
@@ -312,8 +311,7 @@ const allergenOptions = [
       recipes: Array<{ title: string; path: string }>;
       shopping: Array<{
         item: string;
-        amount: number | null;
-        unit: string | null;
+        display: string;
         optional: boolean;
       }>;
     }>;
@@ -389,7 +387,7 @@ const allergenOptions = [
     shoppingList.replaceChildren(
       ...menu.shopping.map((line) => {
         const item = document.createElement('li');
-        item.textContent = `${line.amount === null ? '' : `${line.amount} ${line.unit} · `}${line.item}${line.optional ? ' (optional)' : ''}`;
+        item.textContent = `${line.display ? `${line.display} · ` : ''}${line.item}${line.optional ? ' (optional)' : ''}`;
         return item;
       }),
     );

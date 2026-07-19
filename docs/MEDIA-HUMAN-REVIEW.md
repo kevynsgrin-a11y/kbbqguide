@@ -28,3 +28,74 @@ This is an implementation QA pass, not a human editorial approval. No human sign
 3. Add reviewer name, date, and concise evidence to the manifest QA object.
 4. A `revise` or `replace` decision blocks public release for that surface but does not require removing the honest no-index preview.
 5. Never change `synthetic-labeled` to `original-approved`; a replacement photographed asset needs its own provenance and status.
+
+---
+
+## Phase 10.6 update — the review workbench (2026-07-18)
+
+Phase 10 operationalizes the protocol above with a local, keyboard-operable sign-off
+tool so the five lanes can be completed in one sitting, and an apply step that writes
+the operator's decisions back into the manifest. **Agents propose; only the operator
+approves — nothing below is ever run by an agent with real decisions.** (This section is
+appended, not a replacement: the lanes and protocol above still govern.)
+
+### Per-asset schema (added in Phase 10.6)
+
+Every active asset now carries a top-level `humanEditorialReview` object alongside the
+legacy `qa.humanEditorialReview` flag:
+
+```json
+"humanEditorialReview": {
+  "status": "required | approved | rejected | replaced",
+  "lanes": {
+    "food":          { "decision": "", "reviewer": "", "date": "", "notes": "" },
+    "safety":        { "decision": "", "reviewer": "", "date": "", "notes": "" },
+    "cultural":      { "decision": "", "reviewer": "", "date": "", "notes": "" },
+    "accessibility": { "decision": "", "reviewer": "", "date": "", "notes": "" },
+    "brand":         { "decision": "", "reviewer": "", "date": "", "notes": "" }
+  }
+}
+```
+
+Lane `decision` is one of `approve | reject | replace | defer | ""` (empty = undecided).
+Each asset also carries a machine-attributed `phase10Proposal` (proposed alt text and
+informative/decorative role from a multimodal pass that viewed every image), which the
+workbench pre-loads for the operator to accept or edit.
+
+### Workbench
+
+`review/index.html` — plain HTML+JS, opens over `file://` or any local server, excluded
+from the site build (`dist/`) and marked `noindex`. Per asset it shows the image, id, where
+it is used, the current live alt, an **editable textarea prefilled with the proposed alt**,
+the proposed informative/decorative role, and the five lane controls plus per-lane notes.
+It offers **bulk-apply per lane** (stamp one lane across all shown assets with a reviewer
+name + date — e.g. after an outsourced cultural pass) and an **Export decisions** button
+that writes `review/decisions.json`.
+
+Regenerate its data after any manifest change: `npm run review:data`.
+
+### Applying decisions
+
+```bash
+npm run review:apply -- review/decisions.json          # all lanes must be decided
+npm run review:apply -- review/decisions.json --partial # apply a partial pass
+```
+
+`review:apply` records every lane into the manifest, rolls `status` up from the lane
+decisions (`reject`→rejected, `replace`→replaced, all `approve`→approved, else required),
+and applies **approved** alt text (accessibility lane = approve) to the live manifest
+`altText`/`altDecision` (decorative ⇒ empty alt). It **refuses** to run if any active asset
+has an undecided lane unless `--partial` is passed.
+
+### Interim alt corrections (Phase 10.3)
+
+18 assets whose original alt text overclaimed (asserted something not visible — e.g. the
+G02/G03 safety heroes) had their live alt corrected to visibility-honest text immediately,
+per the directive's "false safety claims must not survive" exception. These remain
+`proposals subject to operator approval`; see each asset's `phase10Proposal.previousAltText`.
+
+### Cultural/language lane
+
+The cultural lane is built so a hired heritage-speaker reviewer can complete all 115 assets
+in one sitting (bulk-apply after the pass). The operator either commissions that pass or
+records an explicit waiver — an honest recorded decision either way, never silence.

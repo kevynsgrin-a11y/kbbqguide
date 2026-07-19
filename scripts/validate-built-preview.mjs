@@ -17,12 +17,15 @@ const allowedActiveStatuses = new Set([
 const manifestAssetsById = new Map(
   manifest.assets.map((asset) => [asset.assetId, asset]),
 );
+const activeAssets = manifest.assets.filter(
+  (asset) => asset.status !== 'replaced',
+);
 if (manifestAssetsById.size !== manifest.assets.length)
   throw new Error('Media manifest contains duplicate immutable asset IDs.');
 for (const asset of manifest.assets) {
   if (!allowedActiveStatuses.has(asset.assetStatus))
     throw new Error(
-      `Active asset ${asset.assetId} has unapproved status ${asset.assetStatus}.`,
+      `Manifest asset ${asset.assetId} has unapproved provenance status ${asset.assetStatus}.`,
     );
   if (/^(?:https?:)?\/\//i.test(asset.path))
     throw new Error(`Remote media path is forbidden: ${asset.path}`);
@@ -98,6 +101,8 @@ for (const file of htmlFiles) {
     const asset = manifestAssetsById.get(mediaId);
     if (!asset)
       throw new Error(`Unregistered rendered media ${mediaId} in ${route}.`);
+    if (asset.status === 'replaced')
+      throw new Error(`Superseded media ${mediaId} rendered in ${route}.`);
     if (!allowedActiveStatuses.has(asset.assetStatus))
       throw new Error(`Unapproved rendered media ${mediaId} in ${route}.`);
     if (!html.includes(`data-media-id="${mediaId}"`))
@@ -207,7 +212,7 @@ for (const file of htmlFiles) {
   }
 }
 
-for (const asset of manifest.assets) {
+for (const asset of activeAssets) {
   if (!renderedMediaIds.has(asset.assetId))
     throw new Error(`Registered active media is orphaned: ${asset.assetId}.`);
 }
@@ -231,9 +236,9 @@ for (const file of recipePages) {
     );
   if (!/<picture\b/i.test(html) || !/<img\b/i.test(html))
     throw new Error(`Missing responsive recipe image: ${relative(dist, file)}`);
-  if (!/type="image\/avif"/i.test(html) || !/type="image\/webp"/i.test(html))
+  if (!/type="image\/webp"/i.test(html))
     throw new Error(
-      `Missing modern recipe image formats: ${relative(dist, file)}`,
+      `Missing modern recipe image format: ${relative(dist, file)}`,
     );
   if (!/loading="eager"/i.test(html) || !/fetchpriority="high"/i.test(html))
     throw new Error(`Recipe hero is not prioritized: ${relative(dist, file)}`);
@@ -444,8 +449,8 @@ const avifFiles = deliveredImageFiles.filter(
 const webpFiles = deliveredImageFiles.filter(
   (file) => extname(file) === '.webp',
 );
-if (avifFiles.length === 0 || webpFiles.length === 0)
-  throw new Error('Responsive build emitted no AVIF or WebP assets.');
+if (webpFiles.length === 0)
+  throw new Error('Responsive build emitted no WebP assets.');
 const maxOptimizedImageBytes = deliveredImageFiles.reduce(
   (max, file) => Math.max(max, readFileSync(file).byteLength),
   0,
@@ -509,7 +514,8 @@ stdout.write(
     maxMobileHeroImageBytes,
     maxDesktopHeroImageBytes,
     thirdPartyScripts,
-    registeredMediaAssets: manifest.assets.length,
+    registeredMediaAssets: activeAssets.length,
+    immutableMediaRecords: manifest.assets.length,
     renderedMediaAssets: renderedMediaIds.size,
     optimizedImages: deliveredImageFiles.length,
     avifImages: avifFiles.length,

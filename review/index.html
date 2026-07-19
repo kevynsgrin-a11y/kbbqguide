@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>KBBQGuide — Media Human-Review Workbench (Phase 10.6)</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6efe3;
+        --card: #fffdf8;
+        --ink: #1b1d18;
+        --muted: #4a4d44;
+        --line: #d9d2c4;
+        --accent: #b83c2b;
+        --ok: #2f6b34;
+        --warn: #9a5b00;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font:
+          15px/1.5 system-ui,
+          sans-serif;
+        color: var(--ink);
+        background: var(--bg);
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: #fffdf8ee;
+        backdrop-filter: blur(6px);
+        border-bottom: 1px solid var(--line);
+        padding: 0.75rem 1rem;
+      }
+      h1 {
+        font-size: 1.15rem;
+        margin: 0 0 0.35rem;
+      }
+      .note {
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin: 0.15rem 0;
+      }
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: end;
+        margin-top: 0.5rem;
+      }
+      .toolbar label {
+        display: grid;
+        gap: 0.15rem;
+        font-size: 0.75rem;
+        color: var(--muted);
+      }
+      input,
+      select,
+      textarea,
+      button {
+        font: inherit;
+        padding: 0.4rem 0.5rem;
+        border: 1px solid var(--line);
+        border-radius: 0.35rem;
+        background: #fff;
+        color: var(--ink);
+      }
+      button {
+        cursor: pointer;
+        background: #fff;
+      }
+      button.primary {
+        background: var(--accent);
+        color: #fff;
+        border-color: var(--accent);
+      }
+      main {
+        padding: 1rem;
+        display: grid;
+        gap: 1rem;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 0.6rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 1rem;
+      }
+      @media (max-width: 720px) {
+        .card {
+          grid-template-columns: 1fr;
+        }
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.4rem;
+        border: 1px solid var(--line);
+        background: #eee;
+      }
+      .idrow {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .pill {
+        font-size: 0.72rem;
+        padding: 0.1rem 0.45rem;
+        border-radius: 1rem;
+        border: 1px solid var(--line);
+        color: var(--muted);
+      }
+      .pill.warn {
+        color: #fff;
+        background: var(--warn);
+        border-color: var(--warn);
+      }
+      .pill.ok {
+        color: #fff;
+        background: var(--ok);
+        border-color: var(--ok);
+      }
+      textarea {
+        width: 100%;
+        min-height: 4.5rem;
+        resize: vertical;
+      }
+      .lanes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .lane {
+        border: 1px solid var(--line);
+        border-radius: 0.4rem;
+        padding: 0.4rem 0.5rem;
+      }
+      .lane strong {
+        text-transform: capitalize;
+        font-size: 0.8rem;
+      }
+      .lane select,
+      .lane input {
+        width: 100%;
+        margin-top: 0.25rem;
+      }
+      details summary {
+        cursor: pointer;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+      .field {
+        margin: 0.4rem 0;
+      }
+      .field > span {
+        display: block;
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+      .role-row {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font-size: 0.85rem;
+      }
+      .status-line {
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Media Human-Review Workbench — Phase 10.6</h1>
+      <p class="note">
+        Operator-only. Approve or edit each asset's alt text and tick the five
+        review lanes you certify (food, safety, cultural, accessibility, brand).
+        Nothing here is applied to the site until you Export and run
+        <code>npm run review:apply -- review/decisions.json</code>. Agents never
+        approve.
+      </p>
+      <p class="note" id="counts"></p>
+      <div class="toolbar">
+        <label
+          >Reviewer name<input id="reviewerName" placeholder="Your name"
+        /></label>
+        <label>Date<input id="reviewDate" type="date" /></label>
+        <label
+          >Filter<select id="filter">
+            <option value="all">All assets</option>
+            <option value="overclaim">Overclaim-corrected only</option>
+            <option value="undecided">Undecided lanes only</option>
+          </select></label
+        >
+        <label
+          >Bulk lane<select id="bulkLane">
+            <option value="food">food</option>
+            <option value="safety">safety</option>
+            <option value="cultural">cultural</option>
+            <option value="accessibility">accessibility</option>
+            <option value="brand">brand</option>
+          </select></label
+        >
+        <label
+          >Bulk decision<select id="bulkDecision">
+            <option value="approve">approve</option>
+            <option value="reject">reject</option>
+            <option value="replace">replace</option>
+            <option value="defer">defer-to-specialist</option>
+          </select></label
+        >
+        <button id="bulkApply" type="button">
+          Bulk-apply lane to all shown
+        </button>
+        <button id="export" class="primary" type="button">
+          Export decisions.json
+        </button>
+      </div>
+    </header>
+    <main id="list"></main>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

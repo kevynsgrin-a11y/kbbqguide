@@ -494,7 +494,7 @@ manifest.notes =
   'Phase 9 activates implementation-screened synthetic editorial media for all recipe heroes and major visual entry points. Named human review remains required. Planned recipe process stills and videos remain honest placeholders.';
 manifest.responsiveImageContract = {
   ...manifest.responsiveImageContract,
-  formats: ['avif', 'webp', 'jpeg'],
+  formats: ['webp', 'jpeg'],
   requiredAspectRatios: ['3:2', '16:9', '4:3', '1:1'],
   widths: [360, 640, 960, 1280, 1600],
   intrinsicDimensionsRequiredBeforeActivation: true,

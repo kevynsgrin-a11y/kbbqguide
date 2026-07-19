@@ -2,6 +2,11 @@
 import registryData from '../../data/url-registry.json';
 import type { CompleteRecipe } from '../schemas/recipe';
 import { categoryBySlug } from '../lib/categories';
+import {
+  formatIngredientMeasure,
+  formatIngredientTail,
+  isDisplayableTaxonomy,
+} from '../lib/ingredients';
 import { breadcrumbJsonLd, recipeJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -54,20 +59,6 @@ const truthyAllergens = Object.entries(recipe.allergens)
       })[key],
   )
   .filter(Boolean);
-
-const measure = (
-  ingredient: CompleteRecipe['ingredientGroups'][number]['ingredients'][number],
-) => {
-  const metric =
-    ingredient.metricAmount && ingredient.metricUnit
-      ? `${ingredient.metricAmount} ${ingredient.metricUnit}`
-      : null;
-  const customary =
-    ingredient.customaryAmount && ingredient.customaryUnit
-      ? `${ingredient.customaryAmount} ${ingredient.customaryUnit}`
-      : null;
-  return [metric, customary].filter(Boolean).join(' / ');
-};
 ---
 
 <BaseLayout
@@ -112,7 +103,11 @@ const measure = (
     }
     <p class="lede">{recipe.shortDescription}</p>
     <div class="badge-row" aria-label="Recipe draft status">
-      <span class="badge">{recipe.adaptationLabel}</span>
+      {
+        isDisplayableTaxonomy(recipe.adaptationLabel) && (
+          <span class="badge">{recipe.adaptationLabel}</span>
+        )
+      }
       <span class="badge">Test cook required</span>
       <span class="badge">Safety review required</span>
       <span class="badge">Language review required</span>
@@ -155,18 +150,23 @@ const measure = (
             >
               <h3 id={`${recipe.id}-${group.id}`}>{group.heading}</h3>
               <ul class="ingredient-list">
-                {group.ingredients.map((ingredient) => (
-                  <li>
-                    {measure(ingredient) && (
-                      <span class="ingredient-measure">
-                        {measure(ingredient)}{' '}
-                      </span>
-                    )}
-                    {ingredient.item}
-                    {ingredient.preparation && `, ${ingredient.preparation}`}
-                    {ingredient.optional && ' (optional)'}
-                  </li>
-                ))}
+                {group.ingredients.map((ingredient) => {
+                  const measureText = formatIngredientMeasure(ingredient);
+                  const tailText = formatIngredientTail(ingredient);
+                  const separator =
+                    measureText && tailText && !tailText.startsWith(',')
+                      ? ' '
+                      : '';
+                  return (
+                    <li>
+                      {measureText && (
+                        <span class="ingredient-measure">{measureText}</span>
+                      )}
+                      {separator}
+                      {tailText}
+                    </li>
+                  );
+                })}
               </ul>
             </section>
           ))

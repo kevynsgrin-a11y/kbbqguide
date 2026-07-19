@@ -36,6 +36,20 @@ function jpegDimensions(path: string): { width: number; height: number } {
 const assetsById = new Map(
   mediaData.assets.map((asset) => [asset.assetId, asset]),
 );
+const activeAssets = mediaData.assets.filter(
+  (asset) => asset.status !== 'replaced',
+);
+function resolveActiveAsset(stableId: string) {
+  let asset = assetsById.get(stableId);
+  const seen = new Set<string>();
+  while (asset?.status === 'replaced' && asset.replacedBy) {
+    if (seen.has(asset.assetId))
+      throw new Error(`Supersede cycle at ${stableId}`);
+    seen.add(asset.assetId);
+    asset = assetsById.get(asset.replacedBy);
+  }
+  return asset;
+}
 const recipePlans = mediaData.recipePlans;
 const approvedStatuses = new Set([
   'original-approved',
@@ -50,12 +64,13 @@ describe('Phase 9 visual editorial overhaul', () => {
       phase: 9,
       status: 'implementation-screened-synthetic-hero-campaign-active',
     });
-    expect(mediaData.assets).toHaveLength(115);
+    expect(activeAssets).toHaveLength(115);
+    expect(mediaData.assets.length).toBeGreaterThanOrEqual(activeAssets.length);
     expect(assetsById.size).toBe(mediaData.assets.length);
 
     for (const asset of mediaData.assets) {
       expect(asset.assetId).toMatch(
-        /^[A-Za-z0-9_-]+(?:-hero|-banner|-texture)$/,
+        /^[A-Za-z0-9_-]+(?:-hero|-banner|-texture)(?:-r\d+)?$/,
       );
       expect(approvedStatuses.has(asset.assetStatus)).toBe(true);
       expect(asset.kind).toBe('image');
@@ -92,7 +107,7 @@ describe('Phase 9 visual editorial overhaul', () => {
 
   it('has no missing, remote, undersized, duplicate, or orphaned master', () => {
     const manifestPaths = new Set(mediaData.assets.map((asset) => asset.path));
-    expect(manifestPaths.size).toBe(115);
+    expect(manifestPaths.size).toBe(mediaData.assets.length);
     for (const asset of mediaData.assets) {
       expect(existsSync(resolve(root, asset.path))).toBe(true);
       expect(statSync(resolve(root, asset.path)).size).toBeGreaterThan(100_000);
@@ -105,14 +120,14 @@ describe('Phase 9 visual editorial overhaul', () => {
     const localMasters = filesUnder('src/assets/media')
       .filter((path) => extname(path) === '.jpg')
       .sort();
-    expect(localMasters).toHaveLength(115);
+    expect(localMasters).toHaveLength(mediaData.assets.length);
     expect([...manifestPaths].sort()).toEqual(localMasters);
   });
 
   it('activates all recipe heroes and preserves honest process-media fallbacks', () => {
     expect(recipePlans).toHaveLength(80);
     const recipeHeroIds = new Set(
-      mediaData.assets
+      activeAssets
         .filter((asset) => asset.role === 'finished-dish-hero')
         .map((asset) => asset.assetId),
     );
@@ -122,7 +137,7 @@ describe('Phase 9 visual editorial overhaul', () => {
       const heroId = `${plan.recipeId}-hero`;
       expect(plan.hero.assetId).toBe(heroId);
       expect(plan.hero.assetStatus).toBe('synthetic-labeled');
-      expect(recipeHeroIds.has(heroId)).toBe(true);
+      expect(resolveActiveAsset(heroId)?.role).toBe('finished-dish-hero');
       expect(assetsById.get(heroId)?.path).toBe(plan.hero.path);
       expect(plan.stillShots.finishedDishOverhead.assetStatus).toBe(
         'placeholder',
@@ -177,7 +192,7 @@ describe('Phase 9 visual editorial overhaul', () => {
     expect(registry).toContain('import.meta.glob');
     expect(registry).toContain('../assets/media/**/*.jpg');
     expect(registry).not.toContain('const aliases');
-    expect(responsive).toContain("formats={['avif', 'webp']}");
+    expect(responsive).toContain("formats={['webp']}");
     expect(responsive).toContain('widths={[360, 640, 960, 1280, 1600]}');
     expect(responsive).toContain("loading={priority ? 'eager' : 'lazy'}");
     expect(responsive).toContain(

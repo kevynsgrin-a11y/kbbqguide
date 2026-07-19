@@ -1,5 +1,6 @@
 ---
 import type { CompleteRecipe } from '../schemas/recipe';
+import { isDisplayableTaxonomy } from '../lib/ingredients';
 import MediaPlaceholder from './MediaPlaceholder.astro';
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
 }
 
 const { recipe, href } = Astro.props;
+const showAdaptation = isDisplayableTaxonomy(recipe.adaptationLabel);
 ---
 
 <article class="recipe-card">
@@ -19,7 +21,9 @@ const { recipe, href } = Astro.props;
       ratio="4:3"
     />
     <div class="recipe-card-content">
-      <p class="eyebrow">Draft {recipe.id} · {recipe.adaptationLabel}</p>
+      <p class="eyebrow">
+        Draft {recipe.id}{showAdaptation && ` · ${recipe.adaptationLabel}`}
+      </p>
       <h3>{recipe.title}</h3>
       <p>{recipe.shortDescription}</p>
       <p class="card-meta">
