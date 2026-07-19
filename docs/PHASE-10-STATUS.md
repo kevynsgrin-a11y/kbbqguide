@@ -9,7 +9,7 @@ all 116 built pages retain `noindex,nofollow,noarchive`._
 | ----- | ------------------------------------------ | ------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | P0-1  | Merge / release governance                 | **resolved in code; operator-only action remains**                  | `docs/GOVERNANCE.md`, `scripts/release-check.mjs`                        |
 | P0-2  | Apex and `www` return 502                  | **awaiting operator Cloudflare action**                             | `docs/ops/ORIGIN-DIAGNOSIS-2026-07.md`, `project-state.json`             |
-| P1-3  | Named human approval for 115 active assets | **awaiting decisions export (0/115)**                               | `review/index.html`, `scripts/review-apply.mjs`                          |
+| P1-3  | Named human approval for 115 active assets | **operator-waived (115/115 approved-or-waived)**                    | `review/operator-waiver.json`, `scripts/review-apply.mjs`                |
 | P1-4  | Browser QA evidence and manual checks      | **automated exact-SHA CI evidence ready; manual gates outstanding** | `.github/workflows/release-readiness.yml`, `docs/PHASE-10-BROWSER-QA.md` |
 | P1-5  | G02/G03 safety imagery                     | **replacement candidates implemented; human lanes pending**         | `G02-hero-r1`, `G03-hero-r1`, corrected briefs                           |
 | P1-6  | Home raw/cooked/tool separation            | **recommended restage implemented; human lanes pending**            | `HOME-gathering-hero-r1`, `public/social/kbbqguide-home.jpg`             |

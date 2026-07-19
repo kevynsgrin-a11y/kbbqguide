@@ -87,6 +87,16 @@ and applies **approved** alt text (accessibility lane = approve) to the live man
 `altText`/`altDecision` (decorative ⇒ empty alt). It **refuses** to run if any active asset
 has an undecided lane unless `--partial` is passed.
 
+### Explicit operator waiver
+
+The operator may explicitly waive the granular five-lane review without representing the lanes as
+approved. A waiver file uses `operatorWaiver.scope: "all-active-assets"` and records the named
+operator, date, exact authorization statement, rationale, source, and the machine identity that
+transcribed the instruction. Applying it leaves every lane decision unchanged, writes
+`humanEditorialReview.waiver: true` plus the audit fields to every active asset, and satisfies only
+the media-review portion of `release:check`. It does not satisfy origin, browser/device, evidence,
+merge, deployment, or indexing gates.
+
 ### Interim alt corrections (Phase 10.3)
 
 18 assets whose original alt text overclaimed (asserted something not visible — e.g. the

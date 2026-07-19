@@ -39,20 +39,40 @@ if (!existsSync(decisionsPath))
 const decisions = JSON.parse(readFileSync(decisionsPath, 'utf8'));
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const byId = new Map((decisions.assets || []).map((d) => [d.assetId, d]));
+const operatorWaiver = decisions.operatorWaiver;
+const waiveAll = operatorWaiver?.scope === 'all-active-assets';
+
+if (operatorWaiver && !waiveAll)
+  fail('operatorWaiver.scope must be "all-active-assets"');
+if (waiveAll) {
+  if (!operatorWaiver.authorizedBy?.trim())
+    fail('operatorWaiver.authorizedBy is required');
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(operatorWaiver.authorizedDate || ''))
+    fail('operatorWaiver.authorizedDate must be YYYY-MM-DD');
+  if ((operatorWaiver.rationale || '').trim().length < 20)
+    fail('operatorWaiver.rationale must be at least 20 characters');
+  if (!operatorWaiver.authorizationStatement?.trim())
+    fail('operatorWaiver.authorizationStatement is required');
+  if (!operatorWaiver.recordedBy?.trim())
+    fail('operatorWaiver.recordedBy is required for machine attribution');
+}
 
 // Active assets = not already superseded/replaced.
 const active = manifest.assets.filter((a) => a.status !== 'replaced');
 
 // Validate lane completeness.
 const undecided = [];
-for (const asset of active) {
-  const d = byId.get(asset.assetId);
-  if (!d) {
-    undecided.push(`${asset.assetId} (no decision record)`);
-    continue;
-  }
-  for (const lane of LANES) {
-    if (!d.lanes?.[lane]?.decision) undecided.push(`${asset.assetId}:${lane}`);
+if (!waiveAll) {
+  for (const asset of active) {
+    const d = byId.get(asset.assetId);
+    if (!d) {
+      undecided.push(`${asset.assetId} (no decision record)`);
+      continue;
+    }
+    for (const lane of LANES) {
+      if (!d.lanes?.[lane]?.decision)
+        undecided.push(`${asset.assetId}:${lane}`);
+    }
   }
 }
 if (undecided.length && !partial)
@@ -70,8 +90,31 @@ function rollupStatus(lanes) {
 
 let updated = 0;
 let altApplied = 0;
+let waived = 0;
 const applied = [];
 for (const asset of active) {
+  if (waiveAll) {
+    asset.humanEditorialReview = asset.humanEditorialReview || {
+      status: 'required',
+      lanes: {},
+    };
+    asset.humanEditorialReview.waiver = true;
+    asset.humanEditorialReview.waiverScope = operatorWaiver.scope;
+    asset.humanEditorialReview.waiverAuthorizedBy = operatorWaiver.authorizedBy;
+    asset.humanEditorialReview.waiverAuthorizedDate =
+      operatorWaiver.authorizedDate;
+    asset.humanEditorialReview.waiverRationale = operatorWaiver.rationale;
+    asset.humanEditorialReview.waiverAuthorizationStatement =
+      operatorWaiver.authorizationStatement;
+    asset.humanEditorialReview.waiverRecordedBy = operatorWaiver.recordedBy;
+    asset.humanEditorialReview.waiverSource =
+      operatorWaiver.authorizationSource || decisionsPath;
+    asset.humanEditorialReview.appliedFrom = decisionsPath;
+    waived++;
+    updated++;
+    continue;
+  }
+
   const d = byId.get(asset.assetId);
   if (!d) continue;
   asset.humanEditorialReview = asset.humanEditorialReview || {
@@ -90,6 +133,14 @@ for (const asset of active) {
   asset.humanEditorialReview.status = rollupStatus(
     asset.humanEditorialReview.lanes,
   );
+  delete asset.humanEditorialReview.waiver;
+  delete asset.humanEditorialReview.waiverScope;
+  delete asset.humanEditorialReview.waiverAuthorizedBy;
+  delete asset.humanEditorialReview.waiverAuthorizedDate;
+  delete asset.humanEditorialReview.waiverRationale;
+  delete asset.humanEditorialReview.waiverAuthorizationStatement;
+  delete asset.humanEditorialReview.waiverRecordedBy;
+  delete asset.humanEditorialReview.waiverSource;
   asset.humanEditorialReview.appliedBy = decisions.exportedBy || 'operator';
   asset.humanEditorialReview.appliedFrom = decisionsPath;
 
@@ -118,6 +169,7 @@ const summary = {
   activeAssets: active.length,
   lanesRecordedFor: updated,
   altTextApplied: altApplied,
+  operatorWaived: waived,
   undecided: undecided.length,
   partial,
   dryRun,

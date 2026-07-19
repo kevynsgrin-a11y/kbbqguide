@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "operatorWaiver": {
+    "scope": "all-active-assets",
+    "authorizedBy": "Kevyn Johnson",
+    "authorizedDate": "2026-07-19",
+    "authorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+    "rationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+    "authorizationSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+    "recordedBy": "phase-10-agent"
+  }
+}

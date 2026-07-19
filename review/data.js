@@ -48,7 +48,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -98,7 +107,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -148,7 +166,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -198,7 +225,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -248,7 +284,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -298,7 +343,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -348,7 +402,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -398,7 +461,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -448,7 +520,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -498,7 +579,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -548,7 +638,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -598,7 +697,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -648,7 +756,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -698,7 +815,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -748,7 +874,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -798,7 +933,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -848,7 +992,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -898,7 +1051,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -948,7 +1110,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -998,7 +1169,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1048,7 +1228,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1098,7 +1287,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1148,7 +1346,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1198,7 +1405,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1248,7 +1464,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1298,7 +1523,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1348,7 +1582,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1398,7 +1641,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1448,7 +1700,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1498,7 +1759,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1548,7 +1818,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1598,7 +1877,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1648,7 +1936,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1698,7 +1995,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1748,7 +2054,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1798,7 +2113,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1848,7 +2172,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1898,7 +2231,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1948,7 +2290,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -1998,7 +2349,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2048,7 +2408,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2098,7 +2467,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2148,7 +2526,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2198,7 +2585,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2248,7 +2644,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2298,7 +2703,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2348,7 +2762,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2398,7 +2821,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2448,7 +2880,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2498,7 +2939,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2548,7 +2998,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2598,7 +3057,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2648,7 +3116,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2698,7 +3175,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2748,7 +3234,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2798,7 +3293,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2848,7 +3352,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2898,7 +3411,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2948,7 +3470,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -2998,7 +3529,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3048,7 +3588,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3098,7 +3647,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3148,7 +3706,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3198,7 +3765,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3248,7 +3824,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3298,7 +3883,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3348,7 +3942,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3398,7 +4001,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3448,7 +4060,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3498,7 +4119,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3548,7 +4178,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3598,7 +4237,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3648,7 +4296,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3698,7 +4355,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3748,7 +4414,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3798,7 +4473,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3848,7 +4532,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3898,7 +4591,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3948,7 +4650,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -3998,7 +4709,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4048,7 +4768,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4098,7 +4827,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4148,7 +4886,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4198,7 +4945,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4248,7 +5004,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4298,7 +5063,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4348,7 +5122,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4398,7 +5181,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4448,7 +5240,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4498,7 +5299,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4548,7 +5358,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4598,7 +5417,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4648,7 +5476,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4698,7 +5535,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4748,7 +5594,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4798,7 +5653,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4848,7 +5712,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4898,7 +5771,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4948,7 +5830,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -4998,7 +5889,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5048,7 +5948,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5098,7 +6007,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5148,7 +6066,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5198,7 +6125,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5248,7 +6184,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5298,7 +6243,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5348,7 +6302,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5398,7 +6361,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5448,7 +6420,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5498,7 +6479,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5548,7 +6538,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5598,7 +6597,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5648,7 +6656,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5698,7 +6715,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   },
   {
@@ -5748,7 +6774,16 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      }
+      },
+      "waiver": true,
+      "waiverScope": "all-active-assets",
+      "waiverAuthorizedBy": "Kevyn Johnson",
+      "waiverAuthorizedDate": "2026-07-19",
+      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
+      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
+      "waiverRecordedBy": "phase-10-agent",
+      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
+      "appliedFrom": "review/operator-waiver.json"
     }
   }
 ];
