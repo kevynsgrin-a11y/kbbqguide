@@ -1,5 +1,38 @@
+---
+interface Props {
+  contentLabel?: string;
+  pendingGates?: readonly string[];
+}
+
+const {
+  contentLabel = 'This content',
+  pendingGates = [
+    'test-cook review',
+    'food-safety review',
+    'Korean-language review',
+    'editorial review',
+  ],
+} = Astro.props;
+const pendingGateCount = pendingGates.length;
+const pendingGateList = new Intl.ListFormat('en', {
+  style: 'long',
+  type: 'conjunction',
+}).format(pendingGates);
+---
+
 <aside class="draft-notice" aria-label="Editorial status">
-  <strong>Editorial draft — four human gates remain.</strong>
-  This recipe has not been test-cooked, food-safety approved, Korean-language approved,
-  or editorially approved. It is visible only in a non-indexed implementation preview.
+  <strong>
+    Editorial draft —
+    {
+      pendingGateCount > 0
+        ? `${pendingGateCount} human review ${pendingGateCount === 1 ? 'gate remains' : 'gates remain'}.`
+        : 'publication approval remains.'
+    }
+  </strong>
+  {contentLabel} is not approved for public indexing.
+  {
+    pendingGateCount > 0
+      ? ` It still needs complete accountable evidence for ${pendingGateList}.`
+      : ' It still needs complete publication accountability details.'
+  }
 </aside>

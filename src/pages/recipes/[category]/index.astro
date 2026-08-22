@@ -10,6 +10,8 @@ import {
   categoryBySlug,
   type RecipeCategory,
 } from '../../../lib/categories';
+import { isRecipePublishable } from '../../../lib/publication-governance';
+import { releaseState } from '../../../lib/release-state';
 import { breadcrumbJsonLd, itemListJsonLd } from '../../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../../lib/url-registry';
 import type { CompleteRecipe } from '../../../schemas/recipe';
@@ -28,33 +30,45 @@ interface Props {
 const { categorySlug } = Astro.props as Props;
 const category = categoryBySlug(categorySlug);
 const registry = registryData as UrlRegistry;
-const recipes = (await getCollection('recipes'))
+const allRecipes = (await getCollection('recipes'))
   .map((entry) => entry.data)
   .filter(
     (recipe): recipe is CompleteRecipe =>
       recipe.contentStatus === 'complete' && recipe.category === categorySlug,
   )
   .sort((a, b) => a.publicReleaseOrder - b.publicReleaseOrder);
+const recipes = allRecipes.filter(
+  (recipe) =>
+    releaseState.mode === 'restricted-preview' || isRecipePublishable(recipe),
+);
 const canonicalPath = registryPathById(registry, category.id);
-const structuredData = [
-  breadcrumbJsonLd([
-    { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
-    { name: 'Recipes', path: registryPathById(registry, 'SYS_RECIPES') },
-    { name: category.label, path: canonicalPath },
-  ]),
-  itemListJsonLd(
-    `${category.label} recipe drafts`,
-    recipes.map((recipe) => ({
-      name: recipe.title,
-      path: registryPathById(registry, recipe.id),
-    })),
-  ),
-];
+const structuredData =
+  releaseState.isIndexable && recipes.length > 0
+    ? [
+        breadcrumbJsonLd([
+          { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+          {
+            name: 'Recipes',
+            path: registryPathById(registry, 'SYS_RECIPES'),
+          },
+          { name: category.label, path: canonicalPath },
+        ]),
+        itemListJsonLd(
+          `${category.label} recipes`,
+          recipes.map((recipe) => ({
+            name: recipe.title,
+            path: registryPathById(registry, recipe.id),
+          })),
+        ),
+      ]
+    : [];
 ---
 
 <BaseLayout
   title={category.label}
-  description={`${recipes.length} ${category.label.toLowerCase()} recipes with practical timing, sensory cues, and safety-aware guidance.`}
+  description={recipes.length > 0
+    ? `${recipes.length} published ${category.label.toLowerCase()} recipes with practical timing, sensory cues, and safety-aware guidance.`
+    : `${category.label} recipes are published after named human review is complete.`}
   canonicalPath={canonicalPath}
   jsonLd={structuredData}
   pageClass={`category-${category.accent}`}
@@ -104,7 +118,9 @@ const structuredData = [
             ))}
           </div>
         ) : (
-          <div class="empty-state">No recipe drafts in this category.</div>
+          <div class="empty-state">
+            No recipes are published in this category yet.
+          </div>
         )
       }
     </div>

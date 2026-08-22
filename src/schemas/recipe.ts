@@ -1,5 +1,13 @@
 import { z } from 'zod';
 
+import {
+  hasCompleteHumanGateEvidence,
+  humanReviewGateKeys,
+  isActualPublicationText,
+  isActualProfileUrl,
+  publicationStatuses,
+} from '../lib/publication-governance';
+
 export const recipeCategories = [
   'grilled-meat',
   'seafood',
@@ -10,12 +18,7 @@ export const recipeCategories = [
 ] as const;
 
 const reviewStatusSchema = z.enum(['required', 'approved']);
-const editorialStatusSchema = z.enum([
-  'draft',
-  'in-review',
-  'approved',
-  'published',
-]);
+const editorialStatusSchema = z.enum(publicationStatuses);
 const releaseCohortSchema = z.enum([
   'initial',
   'week-01',
@@ -116,6 +119,56 @@ const faqSchema = z.object({
   answer: z.string().min(1),
 });
 
+const profileUrlSchema = z
+  .string()
+  .url()
+  .refine(isActualProfileUrl, {
+    message:
+      'Profile URLs must be real HTTPS URLs without credentials or placeholders.',
+  })
+  .nullable()
+  .default(null);
+
+/**
+ * A status alone is not review evidence. Each gate records the accountable
+ * person, their role, the review date, and a durable evidence reference. Draft
+ * records receive the deny-by-default values below until a human completes the
+ * work; no name, credential, date, or evidence is invented by the build.
+ */
+const humanReviewGateSchema = z.object({
+  status: reviewStatusSchema,
+  reviewerName: z.string().trim().min(2).nullable().default(null),
+  reviewerProfileUrl: profileUrlSchema,
+  reviewerRole: z.string().trim().min(2).nullable().default(null),
+  reviewerCredential: z.string().trim().min(2).nullable().default(null),
+  reviewedAt: z.iso.date().nullable().default(null),
+  evidence: z.string().trim().min(3).nullable().default(null),
+});
+
+const pendingHumanReviewGate = {
+  status: 'required' as const,
+  reviewerName: null,
+  reviewerProfileUrl: null,
+  reviewerRole: null,
+  reviewerCredential: null,
+  reviewedAt: null,
+  evidence: null,
+};
+
+const reviewGatesSchema = z
+  .object({
+    testCook: humanReviewGateSchema,
+    foodSafety: humanReviewGateSchema,
+    koreanLanguage: humanReviewGateSchema,
+    editorial: humanReviewGateSchema,
+  })
+  .default({
+    testCook: pendingHumanReviewGate,
+    foodSafety: pendingHumanReviewGate,
+    koreanLanguage: pendingHumanReviewGate,
+    editorial: pendingHumanReviewGate,
+  });
+
 const canonicalUrlSchema = z.string().refine(
   (value) =>
     value.startsWith('https://kbbqguide.com/') ||
@@ -155,11 +208,15 @@ export const completeRecipeSchema = z
     testCookStatus: reviewStatusSchema,
     foodSafetyReview: reviewStatusSchema,
     koreanLanguageReview: reviewStatusSchema,
+    editorialReviewStatus: reviewStatusSchema.default('required'),
     author: z.string().min(1),
+    authorProfileUrl: profileUrlSchema,
     reviewer: z.string().nullable(),
     createdAt: z.iso.date(),
     updatedAt: z.iso.date(),
+    materiallyUpdatedAt: z.iso.date().nullable().default(null),
     publishedAt: z.iso.date().nullable(),
+    reviewGates: reviewGatesSchema,
     yield: z.number().positive(),
     servingUnit: z.string().min(1),
     prepTime: durationSchema,
@@ -238,6 +295,44 @@ export const completeRecipeSchema = z
       });
     }
 
+    const reviewStatusPairs = [
+      ['testCook', 'testCookStatus'],
+      ['foodSafety', 'foodSafetyReview'],
+      ['koreanLanguage', 'koreanLanguageReview'],
+      ['editorial', 'editorialReviewStatus'],
+    ] as const;
+
+    for (const [gateKey, legacyStatusField] of reviewStatusPairs) {
+      if (recipe.reviewGates[gateKey].status !== recipe[legacyStatusField]) {
+        context.addIssue({
+          code: 'custom',
+          path: ['reviewGates', gateKey, 'status'],
+          message: `${gateKey} gate status must match ${legacyStatusField}.`,
+        });
+      }
+    }
+
+    const requiresCompletedHumanReview =
+      recipe.editorialStatus === 'reviewed' ||
+      recipe.editorialStatus === 'published';
+
+    if (requiresCompletedHumanReview) {
+      for (const gateKey of humanReviewGateKeys) {
+        if (
+          !hasCompleteHumanGateEvidence(
+            recipe.reviewGates[gateKey],
+            gateKey === 'foodSafety',
+          )
+        ) {
+          context.addIssue({
+            code: 'custom',
+            path: ['reviewGates', gateKey],
+            message: `${gateKey} requires an approved status, named reviewer, reviewer profile URL, reviewer role${gateKey === 'foodSafety' ? ', reviewer credential' : ''}, review date, and evidence reference before a recipe can be reviewed or published.`,
+          });
+        }
+      }
+    }
+
     if (recipe.editorialStatus === 'published' && recipe.publishedAt === null) {
       context.addIssue({
         code: 'custom',
@@ -248,16 +343,56 @@ export const completeRecipeSchema = z
 
     if (
       recipe.editorialStatus === 'published' &&
-      [
-        recipe.testCookStatus,
-        recipe.foodSafetyReview,
-        recipe.koreanLanguageReview,
-      ].includes('required')
+      !isActualPublicationText(recipe.author)
     ) {
       context.addIssue({
         code: 'custom',
-        path: ['editorialStatus'],
-        message: 'Recipes with required human reviews cannot be published.',
+        path: ['author'],
+        message:
+          'Published recipes require a named author, not a placeholder or generic value.',
+      });
+    }
+
+    if (
+      recipe.editorialStatus === 'published' &&
+      !isActualProfileUrl(recipe.authorProfileUrl)
+    ) {
+      context.addIssue({
+        code: 'custom',
+        path: ['authorProfileUrl'],
+        message:
+          'Published recipes require a real HTTPS author profile URL, not a placeholder.',
+      });
+    }
+
+    if (
+      recipe.editorialStatus === 'published' &&
+      recipe.materiallyUpdatedAt === null
+    ) {
+      context.addIssue({
+        code: 'custom',
+        path: ['materiallyUpdatedAt'],
+        message: 'Published recipes require a materially updated date.',
+      });
+    }
+
+    if (
+      recipe.materiallyUpdatedAt !== null &&
+      recipe.materiallyUpdatedAt < recipe.createdAt
+    ) {
+      context.addIssue({
+        code: 'custom',
+        path: ['materiallyUpdatedAt'],
+        message:
+          'Materially updated date cannot precede the recipe creation date.',
+      });
+    }
+
+    if (recipe.publishedAt !== null && recipe.publishedAt < recipe.createdAt) {
+      context.addIssue({
+        code: 'custom',
+        path: ['publishedAt'],
+        message: 'Publication date cannot precede the recipe creation date.',
       });
     }
   });

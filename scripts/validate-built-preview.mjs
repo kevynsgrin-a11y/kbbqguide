@@ -9,6 +9,9 @@ const dist = resolve(root, 'dist');
 const manifest = JSON.parse(
   readFileSync(resolve(root, 'data/media-manifest.json'), 'utf8'),
 );
+const urlRegistry = JSON.parse(
+  readFileSync(resolve(root, 'data/url-registry.json'), 'utf8'),
+);
 const allowedActiveStatuses = new Set([
   'original-approved',
   'licensed-approved',
@@ -40,15 +43,35 @@ function walk(directory) {
   });
 }
 
+function routeFor(file) {
+  return relative(dist, file).replaceAll('\\', '/');
+}
+
 const files = walk(dist);
 const htmlFiles = files.filter((file) => extname(file) === '.html');
-if (htmlFiles.length !== 116)
-  throw new Error(`Expected 116 static pages; found ${htmlFiles.length}.`);
+const errorDocument = join(dist, '404.html');
+if (!existsSync(errorDocument))
+  throw new Error('Missing static 404.html error document.');
+const errorDocumentHtml = readFileSync(errorDocument, 'utf8');
+if (!/<h1>Page not found\.<\/h1>/.test(errorDocumentHtml))
+  throw new Error('Static 404.html does not render the not-found page.');
+if (
+  !/<meta name="robots" content="noindex,nofollow,noarchive">/.test(
+    errorDocumentHtml,
+  )
+)
+  throw new Error('Static 404.html must remain noindex in the preview.');
+const contentHtmlFiles = htmlFiles.filter((file) => file !== errorDocument);
+if (contentHtmlFiles.length < 116)
+  throw new Error(
+    `Expected at least 116 static content pages plus 404.html; found ${contentHtmlFiles.length} content pages.`,
+  );
 
 const titles = new Set();
 const canonicals = new Set();
 let internalLinkCount = 0;
 let outboundAnchorCount = 0;
+let structuredDataBlockCount = 0;
 let maxCompressedInlineJavaScript = 0;
 let maxCompressedHtml = 0;
 let maxUncompressedHtml = 0;
@@ -59,40 +82,39 @@ const eagerImageCandidates = new Map();
 const routesWithoutLcpMedia = new Set([
   'affiliate-disclosure/index.html',
   'sponsored-content-policy/index.html',
+  'privacy/index.html',
   'sitemap/index.html',
 ]);
-for (const file of htmlFiles) {
+for (const file of contentHtmlFiles) {
   const html = readFileSync(file, 'utf8');
-  const route = relative(dist, file);
+  const route = routeFor(file);
   maxCompressedHtml = Math.max(maxCompressedHtml, gzipSync(html).byteLength);
   maxUncompressedHtml = Math.max(maxUncompressedHtml, Buffer.byteLength(html));
   const title = html.match(/<title>(.*?)<\/title>/)?.[1];
-  if (!title) throw new Error(`Missing title: ${relative(dist, file)}`);
+  if (!title) throw new Error(`Missing title: ${routeFor(file)}`);
   if (titles.has(title)) throw new Error(`Duplicate title: ${title}`);
   titles.add(title);
   const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
-  if (!canonical) throw new Error(`Missing canonical: ${relative(dist, file)}`);
+  if (!canonical) throw new Error(`Missing canonical: ${routeFor(file)}`);
   if (!canonical.startsWith('https://kbbqguide.com/'))
     throw new Error(`Unsafe preview canonical: ${canonical}`);
   if (canonicals.has(canonical))
     throw new Error(`Duplicate canonical: ${canonical}`);
   canonicals.add(canonical);
   if (!html.includes(`<meta property="og:url" content="${canonical}">`))
-    throw new Error(`Open Graph URL mismatch: ${relative(dist, file)}`);
+    throw new Error(`Open Graph URL mismatch: ${routeFor(file)}`);
   if (!/<meta name="robots" content="noindex,nofollow,noarchive">/.test(html))
-    throw new Error(
-      `Missing preview robots directive: ${relative(dist, file)}`,
-    );
+    throw new Error(`Missing preview robots directive: ${routeFor(file)}`);
   if (!/<main id="main-content"/.test(html))
-    throw new Error(`Missing main landmark: ${relative(dist, file)}`);
+    throw new Error(`Missing main landmark: ${routeFor(file)}`);
   outboundAnchorCount += [...html.matchAll(/<a[^>]+href="https?:\/\//gi)]
     .length;
   if (/<iframe\b/i.test(html))
-    throw new Error(`Unexpected iframe: ${relative(dist, file)}`);
+    throw new Error(`Unexpected iframe: ${routeFor(file)}`);
   if (/\sstyle\s*=/i.test(html))
-    throw new Error(`Inline style attribute: ${relative(dist, file)}`);
+    throw new Error(`Inline style attribute: ${routeFor(file)}`);
   if (/<(?:img|source)[^>]+(?:src|srcset)="(?:https?:)?\/\//i.test(html))
-    throw new Error(`Remote or hotlinked image: ${relative(dist, file)}`);
+    throw new Error(`Remote or hotlinked image: ${routeFor(file)}`);
 
   const renderedIds = [...html.matchAll(/data-media-id="([^"]+)"/g)].map(
     (match) => match[1],
@@ -164,13 +186,21 @@ for (const file of htmlFiles) {
     }
   }
 
-  for (const match of html.matchAll(
-    /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
-  )) {
+  const jsonLdBlocks = [
+    ...html.matchAll(
+      /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
+    ),
+  ];
+  if (jsonLdBlocks.length !== 0)
+    throw new Error(
+      `Public noindex preview must not emit JSON-LD: ${routeFor(file)}`,
+    );
+  structuredDataBlockCount += jsonLdBlocks.length;
+  for (const match of jsonLdBlocks) {
     try {
       JSON.parse(match[1] ?? '');
     } catch {
-      throw new Error(`Invalid JSON-LD: ${relative(dist, file)}`);
+      throw new Error(`Invalid JSON-LD: ${routeFor(file)}`);
     }
   }
 
@@ -206,9 +236,7 @@ for (const file of htmlFiles) {
           ? join(dist, relativeHref)
           : join(dist, relativeHref, 'index.html');
     if (!existsSync(target))
-      throw new Error(
-        `Broken internal link ${href} in ${relative(dist, file)}.`,
-      );
+      throw new Error(`Broken internal link ${href} in ${routeFor(file)}.`);
   }
 }
 
@@ -222,8 +250,8 @@ for (const assetPath of referencedAssetPaths) {
     throw new Error(`Broken built asset request: ${assetPath}.`);
 }
 
-const recipePages = htmlFiles.filter((file) => {
-  const route = relative(dist, file);
+const recipePages = contentHtmlFiles.filter((file) => {
+  const route = routeFor(file);
   return route.startsWith('recipes/') && route.split('/').length === 4;
 });
 if (recipePages.length !== 80)
@@ -231,54 +259,36 @@ if (recipePages.length !== 80)
 for (const file of recipePages) {
   const html = readFileSync(file, 'utf8');
   if (!html.includes('data-asset-status="synthetic-labeled"'))
-    throw new Error(
-      `Missing approved labeled recipe media: ${relative(dist, file)}`,
-    );
+    throw new Error(`Missing approved labeled recipe media: ${routeFor(file)}`);
   if (!/<picture\b/i.test(html) || !/<img\b/i.test(html))
-    throw new Error(`Missing responsive recipe image: ${relative(dist, file)}`);
+    throw new Error(`Missing responsive recipe image: ${routeFor(file)}`);
   if (!/type="image\/webp"/i.test(html))
-    throw new Error(
-      `Missing modern recipe image format: ${relative(dist, file)}`,
-    );
+    throw new Error(`Missing modern recipe image format: ${routeFor(file)}`);
   if (!/loading="eager"/i.test(html) || !/fetchpriority="high"/i.test(html))
-    throw new Error(`Recipe hero is not prioritized: ${relative(dist, file)}`);
+    throw new Error(`Recipe hero is not prioritized: ${routeFor(file)}`);
   if (/<video\b/i.test(html))
-    throw new Error(`Unapproved video markup: ${relative(dist, file)}`);
+    throw new Error(`Unapproved video markup: ${routeFor(file)}`);
   if (!html.includes('<noscript>'))
-    throw new Error(
-      `Missing no-JavaScript print fallback: ${relative(dist, file)}`,
-    );
+    throw new Error(`Missing no-JavaScript print fallback: ${routeFor(file)}`);
   if (!html.includes('Safety controls that stay visible'))
-    throw new Error(`Missing visible safety section: ${relative(dist, file)}`);
+    throw new Error(`Missing visible safety section: ${routeFor(file)}`);
   const linkedData = [
     ...html.matchAll(
       /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
     ),
   ].map((match) => JSON.parse(match[1] ?? '{}'));
-  if (!linkedData.some((item) => item['@type'] === 'Recipe'))
-    throw new Error(`Missing Recipe JSON-LD: ${relative(dist, file)}`);
-  if (!linkedData.some((item) => item['@type'] === 'BreadcrumbList'))
+  if (linkedData.some((item) => item['@type'] === 'Recipe'))
     throw new Error(
-      `Missing recipe breadcrumbs JSON-LD: ${relative(dist, file)}`,
+      `Unpublished preview must not emit Recipe JSON-LD: ${routeFor(file)}`,
     );
-  const recipeData = linkedData.find((item) => item['@type'] === 'Recipe');
-  for (const prohibited of [
-    'aggregateRating',
-    'review',
-    'nutrition',
-    'video',
-    'datePublished',
-    'image',
-  ]) {
-    if (prohibited in recipeData)
-      throw new Error(
-        `Unapproved Recipe JSON-LD field ${prohibited}: ${relative(dist, file)}`,
-      );
-  }
+  if (linkedData.length !== 0)
+    throw new Error(
+      `Unpublished preview must not emit recipe-page JSON-LD: ${routeFor(file)}`,
+    );
 }
 
-const guidePages = htmlFiles.filter((file) => {
-  const route = relative(dist, file);
+const guidePages = contentHtmlFiles.filter((file) => {
+  const route = routeFor(file);
   return route.startsWith('guides/') && route.split('/').length === 3;
 });
 if (guidePages.length !== 12)
@@ -286,22 +296,22 @@ if (guidePages.length !== 12)
 for (const file of guidePages) {
   const html = readFileSync(file, 'utf8');
   if (!html.includes('Safety controls that stay visible'))
-    throw new Error(`Missing guide safety review: ${relative(dist, file)}`);
+    throw new Error(`Missing guide safety review: ${routeFor(file)}`);
   if (!html.includes('Draft G'))
-    throw new Error(`Missing guide draft identity: ${relative(dist, file)}`);
+    throw new Error(`Missing guide draft identity: ${routeFor(file)}`);
 }
 
-const menuPages = htmlFiles.filter((file) =>
-  /^menus\/(2|4|8)-guests\/index\.html$/.test(relative(dist, file)),
+const menuPages = contentHtmlFiles.filter((file) =>
+  /^menus\/(2|4|8)-guests\/index\.html$/.test(routeFor(file)),
 );
 if (menuPages.length !== 3)
   throw new Error(`Expected 3 menu pages; found ${menuPages.length}.`);
 for (const file of menuPages) {
   const html = readFileSync(file, 'utf8');
   if (!html.includes('Consolidated planning list'))
-    throw new Error(`Missing menu shopping list: ${relative(dist, file)}`);
+    throw new Error(`Missing menu shopping list: ${routeFor(file)}`);
   if (!html.includes('Guest count does not change safety limits'))
-    throw new Error(`Missing menu safety limit: ${relative(dist, file)}`);
+    throw new Error(`Missing menu safety limit: ${routeFor(file)}`);
 }
 
 const toolsHtml = readFileSync(join(dist, 'tools', 'index.html'), 'utf8');
@@ -370,8 +380,8 @@ if (outboundAnchorCount !== 0)
 
 const requiredArtifacts = [
   'robots.txt',
+  'sitemap.xml',
   'sitemap-index.xml',
-  'sitemap-preview.xml',
   'feed.xml',
   'site.webmanifest',
   'favicon.svg',
@@ -381,22 +391,32 @@ for (const artifact of requiredArtifacts) {
     throw new Error(`Missing discovery artifact: ${artifact}`);
 }
 const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
-if (!robots.includes('Disallow: /'))
-  throw new Error('Preview robots.txt must disallow the complete site.');
-const sitemap = readFileSync(join(dist, 'sitemap-preview.xml'), 'utf8');
+if (!robots.includes('Allow: /'))
+  throw new Error(
+    'Public noindex preview robots.txt must allow crawlers to observe page-level noindex directives.',
+  );
+if (robots.includes('Sitemap:'))
+  throw new Error('Preview robots.txt must not advertise a public sitemap.');
+if (existsSync(join(dist, 'sitemap-preview.xml')))
+  throw new Error('Preview sitemap inventory must not be emitted.');
+const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8');
 const sitemapLocations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
   (match) => match[1],
 );
-if (sitemapLocations.length !== 116)
-  throw new Error(
-    `Expected 116 preview sitemap URLs; found ${sitemapLocations.length}.`,
-  );
-if (new Set(sitemapLocations).size !== 116)
-  throw new Error('Preview sitemap contains duplicate URLs.');
-for (const canonical of canonicals) {
-  if (!sitemapLocations.includes(canonical))
-    throw new Error(`Canonical missing from preview sitemap: ${canonical}`);
+const sitemapEligibleUrls = new Set(
+  urlRegistry.entries
+    .filter((entry) => entry.type === 'recipe')
+    .map((entry) => entry.canonicalUrl),
+);
+for (const location of sitemapLocations) {
+  if (!sitemapEligibleUrls.has(location))
+    throw new Error(`Sitemap exposes a non-recipe or unknown URL: ${location}`);
 }
+if (new Set(sitemapLocations).size !== sitemapLocations.length)
+  throw new Error('Sitemap contains duplicate URLs.');
+const sitemapIndex = readFileSync(join(dist, 'sitemap-index.xml'), 'utf8');
+if (/<loc>[^<]+<\/loc>/.test(sitemapIndex))
+  throw new Error('Preview sitemap index must not advertise a public sitemap.');
 const feed = readFileSync(join(dist, 'feed.xml'), 'utf8');
 if (/<entry[\s>]/.test(feed))
   throw new Error('Preview feed must not claim unapproved published entries.');
@@ -408,7 +428,7 @@ const imageFiles = files.filter((file) =>
   ['.avif', '.webp', '.jpg', '.jpeg', '.png'].includes(extname(file)),
 );
 const deliveredImageFiles = imageFiles.filter((file) =>
-  referencedAssetPaths.has('/' + relative(dist, file)),
+  referencedAssetPaths.has('/' + routeFor(file)),
 );
 const eagerCandidateRecords = [...eagerImageCandidates].map(
   ([assetPath, descriptor]) => {
@@ -494,7 +514,8 @@ if (files.some((file) => /node_modules|\.map$/.test(file)))
 
 stdout.write(
   `${JSON.stringify({
-    pages: htmlFiles.length,
+    pages: contentHtmlFiles.length,
+    errorDocument: '404.html',
     recipePages: recipePages.length,
     guidePages: guidePages.length,
     menuPages: menuPages.length,
@@ -503,6 +524,7 @@ stdout.write(
     sitemapUrls: sitemapLocations.length,
     internalLinksChecked: internalLinkCount,
     outboundAnchors: outboundAnchorCount,
+    structuredDataBlocks: structuredDataBlockCount,
     compressedCssBytes: compressedCss,
     compressedExternalJavaScriptBytes: compressedJs,
     maxCompressedInlineJavaScriptBytes: maxCompressedInlineJavaScript,

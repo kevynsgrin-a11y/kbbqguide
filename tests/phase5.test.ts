@@ -127,15 +127,21 @@ describe('Phase 5 SEO, guides, menus, and tools handoff gate', () => {
   it('emits every preview discovery artifact while blocking indexing and publication claims', () => {
     for (const file of [
       'src/pages/robots.txt.ts',
+      'src/pages/sitemap.xml.ts',
       'src/pages/sitemap-index.xml.ts',
-      'src/pages/sitemap-preview.xml.ts',
       'src/pages/feed.xml.ts',
       'src/pages/site.webmanifest.ts',
+      'src/pages/404.astro',
       'src/pages/sitemap/index.astro',
       'public/favicon.svg',
     ])
       expect(existsSync(resolve(root, file)), file).toBe(true);
-    expect(source('src/pages/robots.txt.ts')).toContain('Disallow: /');
+    expect(source('src/pages/robots.txt.ts')).toContain('Allow: /');
+    expect(source('src/pages/robots.txt.ts')).toContain('sitemap.xml');
+    expect(source('src/pages/sitemap.xml.ts')).toContain('isRecipePublishable');
+    expect(existsSync(resolve(root, 'src/pages/sitemap-preview.xml.ts'))).toBe(
+      false,
+    );
     expect(source('src/pages/feed.xml.ts')).toContain('no entries');
     expect(source('src/layouts/BaseLayout.astro')).toContain(
       'noindex,nofollow,noarchive',

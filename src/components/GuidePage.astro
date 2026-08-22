@@ -1,6 +1,8 @@
 ---
 import registryData from '../../data/url-registry.json';
 import type { Guide } from '../lib/guides';
+import { nonRecipePageEligibility } from '../lib/nonrecipe-publication-governance';
+import { releaseState } from '../lib/release-state';
 import { breadcrumbJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -26,14 +28,17 @@ const breadcrumbs = breadcrumbJsonLd([
   { name: 'Guides', path: registryPathById(registry, 'SYS_GUIDES') },
   { name: guide.title, path },
 ]);
+const publication = nonRecipePageEligibility(guide.publication, releaseState);
+const isGuideDraft = guide.publication.editorialStatus === 'draft';
 ---
 
 <BaseLayout
   title={guide.title}
   description={guide.description}
   canonicalPath={path}
-  jsonLd={[breadcrumbs]}
+  jsonLd={publication.emitsJsonLd ? [breadcrumbs] : []}
   pageClass="guide-page"
+  robotsContent={publication.robotsContent}
 >
   <EditorialHero
     mediaId={`${guide.id}-hero`}
@@ -48,16 +53,20 @@ const breadcrumbs = breadcrumbJsonLd([
         { label: guide.title },
       ]}
     />
-    <p class="eyebrow">{guide.eyebrow} · Draft {guide.id}</p>
+    <p class="eyebrow">
+      {guide.eyebrow} · {isGuideDraft ? `Draft ${guide.id}` : guide.id}
+    </p>
     <h1>{guide.title}</h1>
     <p class="lede">{guide.description}</p>
   </EditorialHero>
 
   <section class="section" aria-labelledby="guide-status-title">
     <div class="shell support-grid">
-      <DraftNotice />
+      {isGuideDraft && <DraftNotice contentLabel="This guide" />}
       <section class="support-card">
-        <h2 id="guide-status-title">How to use this draft</h2>
+        <h2 id="guide-status-title">
+          {isGuideDraft ? 'How to use this draft' : 'How to use this guide'}
+        </h2>
         <p>
           Treat each section as a decision checkpoint. Open the linked recipe
           before acting on ingredient quantities, timing, storage, doneness, or

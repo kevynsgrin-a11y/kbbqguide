@@ -8,7 +8,10 @@ import SafetyCallout from '../../components/SafetyCallout.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { menus, type MenuPlan } from '../../lib/menus';
 import { categoryBySlug } from '../../lib/categories';
+import { relatedRecipeDataEligibility } from '../../lib/nonrecipe-publication-governance';
 import { consolidateShoppingList } from '../../lib/planner';
+import { isRecipePublishable } from '../../lib/publication-governance';
+import { releaseState } from '../../lib/release-state';
 import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
 import type { CompleteRecipe } from '../../schemas/recipe';
@@ -32,34 +35,50 @@ const allRecipes = (await getCollection('recipes'))
     (recipe): recipe is CompleteRecipe => recipe.contentStatus === 'complete',
   );
 const byId = new Map(allRecipes.map((recipe) => [recipe.id, recipe]));
-const recipes = menu.recipeIds.map((id) => {
+const allMenuRecipes = menu.recipeIds.map((id) => {
   const recipe = byId.get(id);
   if (!recipe) throw new Error(`Missing menu recipe ${id}`);
   return recipe;
 });
-const shopping = consolidateShoppingList(recipes, menu.guests);
 const path = registryPathById(registry, menu.id);
+const publication = relatedRecipeDataEligibility(
+  menu.publication,
+  releaseState,
+  allMenuRecipes.every(isRecipePublishable),
+);
+const isMenuDraft = menu.publication.editorialStatus === 'draft';
+const linkedRecipeStatus = allMenuRecipes.every(isRecipePublishable)
+  ? 'published recipe'
+  : 'draft';
+const recipes = publication.canExposeRecipeData ? allMenuRecipes : [];
+const shopping = publication.canExposeRecipeData
+  ? consolidateShoppingList(allMenuRecipes, menu.guests)
+  : [];
+const structuredData = publication.emitsJsonLd
+  ? [
+      breadcrumbJsonLd([
+        { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+        { name: 'Menus', path: registryPathById(registry, 'SYS_MENUS') },
+        { name: `${menu.guests} guests`, path },
+      ]),
+      itemListJsonLd(
+        menu.title,
+        recipes.map((recipe) => ({
+          name: recipe.title,
+          path: registryPathById(registry, recipe.id),
+        })),
+      ),
+    ]
+  : [];
 ---
 
 <BaseLayout
   title={`Korean BBQ Menu for ${menu.guests}`}
   description={menu.description}
   canonicalPath={path}
-  jsonLd={[
-    breadcrumbJsonLd([
-      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
-      { name: 'Menus', path: registryPathById(registry, 'SYS_MENUS') },
-      { name: `${menu.guests} guests`, path },
-    ]),
-    itemListJsonLd(
-      menu.title,
-      recipes.map((recipe) => ({
-        name: recipe.title,
-        path: registryPathById(registry, recipe.id),
-      })),
-    ),
-  ]}
+  jsonLd={structuredData}
   pageClass="menu-page"
+  robotsContent={publication.robotsContent}
 >
   <EditorialHero
     mediaId={`${menu.id}-hero`}
@@ -74,7 +93,13 @@ const path = registryPathById(registry, menu.id);
         { label: `${menu.guests} guests` },
       ]}
     />
-    <p class="eyebrow">A planning draft for {menu.guests}</p>
+    <p class="eyebrow">
+      {
+        isMenuDraft
+          ? `A planning draft for ${menu.guests}`
+          : `A reviewed plan for ${menu.guests}`
+      }
+    </p>
     <h1>{menu.title}</h1>
     <p class="lede">{menu.description}</p>
     <a class="button" href={registryPathById(registry, 'SYS_TOOLS')}>
@@ -82,83 +107,101 @@ const path = registryPathById(registry, menu.id);
     </a>
   </EditorialHero>
 
-  <section class="section">
-    <div class="shell support-grid">
-      <DraftNotice />
-      <SafetyCallout
-        title="Guest count does not change safety limits"
-        notes={[
-          'Scaling changes quantity, not appliance approval, marination limits, cooking temperatures, rest rules, or cross-contact controls.',
-        ]}
-      />
-    </div>
-  </section>
+  {
+    publication.canExposeRecipeData ? (
+      <>
+        <section class="section">
+          <div class="shell support-grid">
+            {isMenuDraft && <DraftNotice contentLabel="This menu" />}
+            <SafetyCallout
+              title="Guest count does not change safety limits"
+              notes={[
+                'Scaling changes quantity, not appliance approval, marination limits, cooking temperatures, rest rules, or cross-contact controls.',
+              ]}
+            />
+          </div>
+        </section>
 
-  <section class="section tinted" aria-labelledby="menu-recipes-title">
-    <div class="shell">
-      <p class="eyebrow">Linked by immutable recipe ID</p>
-      <h2 id="menu-recipes-title">The menu</h2>
-      <div class="support-grid">
-        {
-          recipes.map((recipe) => (
-            <a
-              class="support-card"
-              href={registryPathById(registry, recipe.id)}
-            >
-              <strong>{recipe.title}</strong>
-              <span>
-                {categoryBySlug(recipe.category).label} · base yield{' '}
-                {recipe.yield}
-              </span>
-            </a>
-          ))
-        }
-      </div>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="menu-service-title">
-    <div class="shell support-grid">
-      <div>
-        <p class="eyebrow">Sequence</p>
-        <h2 id="menu-service-title">Service order</h2>
-        <ol class="plain-list">
-          {menu.serviceOrder.map((item) => <li>{item}</li>)}
-        </ol>
-      </div>
-      <div>
-        <p class="eyebrow">Capacity and separation</p>
-        <h2>Equipment checklist</h2>
-        <ul class="plain-list checklist-list">
-          {menu.equipment.map((item) => <li>{item}</li>)}
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section tinted" aria-labelledby="shopping-title">
-    <div class="shell">
-      <p class="eyebrow">Generated from recipe records</p>
-      <h2 id="shopping-title">Consolidated planning list</h2>
-      <p class="lede">
-        Quantities scale each linked draft to {menu.guests} servings and combine matching
-        item names and units. Verify package sizes, pantry stock, optional items,
-        preparation notes, and every recipe before purchasing.
-      </p>
-      <div class="shopping-grid">
-        {
-          shopping.map((line) => (
-            <div class="shopping-line">
-              <span>
-                {line.display && `${line.display} · `}
-                <strong>{line.item}</strong>
-                {line.optional && ' (optional)'}
-              </span>
-              <small>{line.recipeIds.join(', ')}</small>
+        <section class="section tinted" aria-labelledby="menu-recipes-title">
+          <div class="shell">
+            <p class="eyebrow">Linked by immutable recipe ID</p>
+            <h2 id="menu-recipes-title">The menu</h2>
+            <div class="support-grid">
+              {recipes.map((recipe) => (
+                <a
+                  class="support-card"
+                  href={registryPathById(registry, recipe.id)}
+                >
+                  <strong>{recipe.title}</strong>
+                  <span>
+                    {categoryBySlug(recipe.category).label} · base yield{' '}
+                    {recipe.yield}
+                  </span>
+                </a>
+              ))}
             </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="menu-service-title">
+          <div class="shell support-grid">
+            <div>
+              <p class="eyebrow">Sequence</p>
+              <h2 id="menu-service-title">Service order</h2>
+              <ol class="plain-list">
+                {menu.serviceOrder.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ol>
+            </div>
+            <div>
+              <p class="eyebrow">Capacity and separation</p>
+              <h2>Equipment checklist</h2>
+              <ul class="plain-list checklist-list">
+                {menu.equipment.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section tinted" aria-labelledby="shopping-title">
+          <div class="shell">
+            <p class="eyebrow">Generated from recipe records</p>
+            <h2 id="shopping-title">Consolidated planning list</h2>
+            <p class="lede">
+              Quantities scale each linked {linkedRecipeStatus} to {menu.guests}{' '}
+              servings and combine matching item names and units. Verify package
+              sizes, pantry stock, optional items, preparation notes, and every
+              recipe before purchasing.
+            </p>
+            <div class="shopping-grid">
+              {shopping.map((line) => (
+                <div class="shopping-line">
+                  <span>
+                    {line.display && `${line.display} · `}
+                    <strong>{line.item}</strong>
+                    {line.optional && ' (optional)'}
+                  </span>
+                  <small>{line.recipeIds.join(', ')}</small>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </>
+    ) : (
+      <section class="section tinted" aria-labelledby="menu-review-title">
+        <div class="shell reading-width">
+          <p class="eyebrow">Editorial review</p>
+          <h2 id="menu-review-title">This menu is not publicly released.</h2>
+          <p>
+            Its linked recipe and shopping data remain withheld until the menu
+            has named review evidence and every referenced recipe is published.
+          </p>
+        </div>
+      </section>
+    )
+  }
 </BaseLayout>

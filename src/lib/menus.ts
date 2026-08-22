@@ -1,3 +1,8 @@
+import {
+  createDraftNonRecipePublication,
+  type NonRecipePublication,
+} from './nonrecipe-publication-governance';
+
 export interface MenuPlan {
   readonly id: 'MENU_2' | 'MENU_4' | 'MENU_8';
   readonly guests: 2 | 4 | 8;
@@ -6,9 +11,13 @@ export interface MenuPlan {
   readonly recipeIds: readonly string[];
   readonly serviceOrder: readonly string[];
   readonly equipment: readonly string[];
+  readonly publication: NonRecipePublication;
 }
 
-export const menus: readonly MenuPlan[] = [
+/** The menu index requires its own review record before public indexing. */
+export const menusIndexPublication = createDraftNonRecipePublication();
+
+const menuDrafts: readonly Omit<MenuPlan, 'publication'>[] = [
   {
     id: 'MENU_2',
     guests: 2,
@@ -84,6 +93,15 @@ export const menus: readonly MenuPlan[] = [
     ],
   },
 ];
+
+/**
+ * Menu plans are individual unpublished records. The referenced recipe list
+ * never substitutes for named review evidence on the menu itself.
+ */
+export const menus: readonly MenuPlan[] = menuDrafts.map((menu) => ({
+  ...menu,
+  publication: createDraftNonRecipePublication(),
+}));
 
 export function menuByGuests(guests: number): MenuPlan {
   const menu = menus.find((candidate) => candidate.guests === guests);

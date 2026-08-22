@@ -1,34 +1,67 @@
 ---
+import { getCollection } from 'astro:content';
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { menus } from '../../lib/menus';
+import { menus, menusIndexPublication } from '../../lib/menus';
+import {
+  isNonRecipePublishable,
+  nonRecipePageEligibility,
+} from '../../lib/nonrecipe-publication-governance';
+import { isRecipePublishable } from '../../lib/publication-governance';
+import { releaseState } from '../../lib/release-state';
 import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+import type { CompleteRecipe } from '../../schemas/recipe';
 
 const registry = registryData as UrlRegistry;
 const path = registryPathById(registry, 'SYS_MENUS');
+const publication = nonRecipePageEligibility(
+  menusIndexPublication,
+  releaseState,
+);
+const publishedRecipeIds = new Set(
+  (await getCollection('recipes'))
+    .map((entry) => entry.data)
+    .filter(
+      (recipe): recipe is CompleteRecipe =>
+        recipe.contentStatus === 'complete' && isRecipePublishable(recipe),
+    )
+    .map((recipe) => recipe.id),
+);
+const visibleMenus = releaseState.isIndexable
+  ? menus.filter(
+      (menu) =>
+        isNonRecipePublishable(menu.publication) &&
+        menu.recipeIds.every((id) => publishedRecipeIds.has(id)),
+    )
+  : menus;
+const structuredData =
+  publication.emitsJsonLd && visibleMenus.length > 0
+    ? [
+        breadcrumbJsonLd([
+          { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+          { name: 'Menus', path },
+        ]),
+        itemListJsonLd(
+          'Korean BBQ menus by guest count',
+          visibleMenus.map((menu) => ({
+            name: menu.title,
+            path: registryPathById(registry, menu.id),
+          })),
+        ),
+      ]
+    : [];
 ---
 
 <BaseLayout
   title="Korean BBQ Menus"
   description="Workload-aware Korean BBQ menus for two, four, and eight guests with linked recipes, service order, and equipment checks."
   canonicalPath={path}
-  jsonLd={[
-    breadcrumbJsonLd([
-      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
-      { name: 'Menus', path },
-    ]),
-    itemListJsonLd(
-      'Korean BBQ menus by guest count',
-      menus.map((menu) => ({
-        name: menu.title,
-        path: registryPathById(registry, menu.id),
-      })),
-    ),
-  ]}
+  jsonLd={structuredData}
+  robotsContent={publication.robotsContent}
 >
   <EditorialHero
     mediaId="SYS_MENUS-hero"
@@ -56,7 +89,7 @@ const path = registryPathById(registry, 'SYS_MENUS');
       <h2 id="menu-list-title">Choose a table size</h2>
       <div class="card-grid">
         {
-          menus.map((menu) => (
+          visibleMenus.map((menu) => (
             <article class="support-card menu-card">
               <MediaPlaceholder
                 mediaId={`${menu.id}-hero`}
@@ -72,9 +105,21 @@ const path = registryPathById(registry, 'SYS_MENUS');
                 <a href={registryPathById(registry, menu.id)}>{menu.title}</a>
               </h3>
               <p>{menu.description}</p>
-              <p>{menu.recipeIds.length} linked recipe drafts</p>
+              <p>
+                {releaseState.isIndexable
+                  ? 'Linked recipes are available after publication.'
+                  : `${menu.recipeIds.length} linked recipe drafts`}
+              </p>
             </article>
           ))
+        }
+        {
+          visibleMenus.length === 0 && (
+            <div class="empty-state">
+              Menus are published after their named review evidence and every
+              linked recipe are ready for public release.
+            </div>
+          )
         }
       </div>
     </div>

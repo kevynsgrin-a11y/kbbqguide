@@ -184,7 +184,7 @@ describe('Phase 10.7 — immutable media review workbench', () => {
     };
     const source = readFileSync('review/data.js', 'utf8');
     const match = source.match(
-      /window\.__REVIEW_DATA__ = ([\s\S]*?);\nwindow\.__REVIEW_LANES__/,
+      /window\.__REVIEW_DATA__ = ([\s\S]*?);\r?\nwindow\.__REVIEW_LANES__/,
     );
     expect(match).not.toBeNull();
     const reviewJson = match?.[1];

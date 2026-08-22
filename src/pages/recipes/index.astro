@@ -6,36 +6,47 @@ import EditorialHero from '../../components/EditorialHero.astro';
 import RecipeCard from '../../components/RecipeCard.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { categories } from '../../lib/categories';
+import { isRecipePublishable } from '../../lib/publication-governance';
+import { releaseState } from '../../lib/release-state';
 import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
 import type { CompleteRecipe } from '../../schemas/recipe';
 
 const registry = registryData as UrlRegistry;
-const recipes = (await getCollection('recipes'))
+const allRecipes = (await getCollection('recipes'))
   .map((entry) => entry.data)
   .filter(
     (recipe): recipe is CompleteRecipe => recipe.contentStatus === 'complete',
   )
   .sort((a, b) => a.publicReleaseOrder - b.publicReleaseOrder);
+const recipes = allRecipes.filter(
+  (recipe) =>
+    releaseState.mode === 'restricted-preview' || isRecipePublishable(recipe),
+);
 const canonicalPath = registryPathById(registry, 'SYS_RECIPES');
-const structuredData = [
-  breadcrumbJsonLd([
-    { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
-    { name: 'Recipes', path: canonicalPath },
-  ]),
-  itemListJsonLd(
-    'All Korean BBQ recipe drafts',
-    recipes.map((recipe) => ({
-      name: recipe.title,
-      path: registryPathById(registry, recipe.id),
-    })),
-  ),
-];
+const structuredData =
+  releaseState.isIndexable && recipes.length > 0
+    ? [
+        breadcrumbJsonLd([
+          { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+          { name: 'Recipes', path: canonicalPath },
+        ]),
+        itemListJsonLd(
+          'Published Korean BBQ recipes',
+          recipes.map((recipe) => ({
+            name: recipe.title,
+            path: registryPathById(registry, recipe.id),
+          })),
+        ),
+      ]
+    : [];
 ---
 
 <BaseLayout
   title="Korean BBQ Recipe Library"
-  description="Browse 80 Korean BBQ recipes for grilled meat, seafood, banchan, fresh sides, sauces, and desserts."
+  description={recipes.length > 0
+    ? 'Browse published Korean BBQ recipes for grilled meat, seafood, banchan, fresh sides, sauces, and desserts.'
+    : 'Korean BBQ recipes are published only after named human review is complete.'}
   canonicalPath={canonicalPath}
   jsonLd={structuredData}
 >
@@ -52,11 +63,19 @@ const structuredData = [
       ]}
     />
     <p class="eyebrow">The KBBQGuide recipe library</p>
-    <h1>80 recipes. One deliberate table.</h1>
+    <h1>
+      {
+        recipes.length > 0
+          ? `${recipes.length} recipes. One deliberate table.`
+          : 'Recipes are being reviewed.'
+      }
+    </h1>
     <p class="lede">
-      Browse by category or follow the suggested table-building order. Every
-      recipe keeps timing, sensory cues, context, and safety notes in the same
-      easy-to-scan structure.
+      {
+        recipes.length > 0
+          ? 'Browse by category or follow the suggested table-building order. Every recipe keeps timing, sensory cues, context, and safety notes in the same easy-to-scan structure.'
+          : 'A recipe appears here only after its named test-cook, food-safety, Korean-language, and editorial reviews are complete.'
+      }
     </p>
   </EditorialHero>
 
@@ -96,13 +115,22 @@ const structuredData = [
           <h2 id="all-recipes-title">All recipes</h2>
         </div>
       </div>
-      <div class="card-grid">
-        {
-          recipes.map((recipe) => (
-            <RecipeCard {recipe} href={registryPathById(registry, recipe.id)} />
-          ))
-        }
-      </div>
+      {
+        recipes.length > 0 ? (
+          <div class="card-grid">
+            {recipes.map((recipe) => (
+              <RecipeCard
+                {recipe}
+                href={registryPathById(registry, recipe.id)}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="empty-state">
+            No recipes are published yet. Editorial review is in progress.
+          </div>
+        )
+      }
     </div>
   </section>
 </BaseLayout>

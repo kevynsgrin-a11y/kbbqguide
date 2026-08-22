@@ -1,6 +1,7 @@
 ---
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import { releaseState } from '../lib/release-state';
 import StructuredData from '../components/StructuredData.astro';
 import { canonicalUrl } from '../lib/seo';
 import '../styles/global.css';
@@ -15,6 +16,7 @@ interface Props {
   socialImageAlt?: string;
   socialImageWidth?: number;
   socialImageHeight?: number;
+  robotsContent?: 'noindex,nofollow,noarchive' | 'index,follow';
 }
 
 const {
@@ -27,9 +29,14 @@ const {
   socialImageAlt,
   socialImageWidth,
   socialImageHeight,
+  robotsContent,
 } = Astro.props;
 const siteName = 'KBBQGuide';
 const canonical = canonicalUrl(canonicalPath);
+const metaRobots = robotsContent ?? releaseState.metaRobots;
+const canEmitStructuredData =
+  releaseState.isIndexable && metaRobots === 'index,follow';
+const isPreview = releaseState.mode !== 'public-launch';
 const socialImageUrl = socialImage
   ? new globalThis.URL(socialImage, canonical).href
   : null;
@@ -40,7 +47,7 @@ const socialImageUrl = socialImage
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta name="robots" content={metaRobots} />
     <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#151713" />
     <title>{title} | {siteName}</title>
@@ -81,13 +88,18 @@ const socialImageUrl = socialImage
         <meta name="twitter:image:alt" content={socialImageAlt} />
       )
     }
-    {jsonLd.map((data) => <StructuredData {data} />)}
+    {canEmitStructuredData && jsonLd.map((data) => <StructuredData {data} />)}
   </head>
   <body class={pageClass}>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <div class="preview-strip">
-      KBBQGuide editorial preview · recipes await test-kitchen and expert review
-    </div>
+    {
+      isPreview && (
+        <div class="preview-strip">
+          KBBQGuide editorial preview · recipes await test-kitchen and expert
+          review
+        </div>
+      )
+    }
     <Header />
     <main id="main-content" class="site-main" tabindex="-1">
       <slot />

@@ -6,20 +6,45 @@ import EditorialHero from '../../components/EditorialHero.astro';
 import PlannerTools from '../../components/PlannerTools.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { menus } from '../../lib/menus';
+import {
+  isNonRecipePublishable,
+  nonRecipePageEligibility,
+  planningToolsPublication,
+} from '../../lib/nonrecipe-publication-governance';
 import { consolidateShoppingList } from '../../lib/planner';
+import { isRecipePublishable } from '../../lib/publication-governance';
+import { releaseState } from '../../lib/release-state';
 import { breadcrumbJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
 import type { CompleteRecipe } from '../../schemas/recipe';
 
 const registry = registryData as UrlRegistry;
 const path = registryPathById(registry, 'SYS_TOOLS');
-const recipes = (await getCollection('recipes'))
+const publication = nonRecipePageEligibility(
+  planningToolsPublication,
+  releaseState,
+);
+const allRecipes = (await getCollection('recipes'))
   .map((entry) => entry.data)
   .filter(
     (recipe): recipe is CompleteRecipe => recipe.contentStatus === 'complete',
   );
+const recipes = releaseState.isIndexable
+  ? allRecipes.filter(isRecipePublishable)
+  : allRecipes;
+const canExposeRecipeData =
+  !releaseState.isIndexable || publication.isContentPublishable;
 const byId = new Map(recipes.map((recipe) => [recipe.id, recipe]));
-const menuPayload = menus.map((menu) => {
+const visibleMenus = canExposeRecipeData
+  ? releaseState.isIndexable
+    ? menus.filter(
+        (menu) =>
+          isNonRecipePublishable(menu.publication) &&
+          menu.recipeIds.every((id) => byId.has(id)),
+      )
+    : menus
+  : [];
+const menuPayload = visibleMenus.map((menu) => {
   const menuRecipes = menu.recipeIds.map((id) => {
     const recipe = byId.get(id);
     if (!recipe) throw new Error(`Missing planner recipe ${id}`);
@@ -41,7 +66,7 @@ const menuPayload = menus.map((menu) => {
     })),
   };
 });
-const allergenRecipes = recipes
+const allergenRecipes = (canExposeRecipeData ? recipes : [])
   .map((recipe) => ({
     title: recipe.title,
     path: registryPathById(registry, recipe.id),
@@ -56,13 +81,16 @@ const allergenRecipes = recipes
   title="Korean BBQ Planning Tools"
   description="Progressive first-party tools for servings, marinades, menus, shopping lists, prep timelines, equipment, and non-medical allergen display."
   canonicalPath={path}
-  jsonLd={[
-    breadcrumbJsonLd([
-      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
-      { name: 'Planning Tools', path },
-    ]),
-  ]}
+  jsonLd={publication.emitsJsonLd
+    ? [
+        breadcrumbJsonLd([
+          { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+          { name: 'Planning Tools', path },
+        ]),
+      ]
+    : []}
   pageClass="tools-page"
+  robotsContent={publication.robotsContent}
 >
   <EditorialHero
     mediaId="SYS_TOOLS-hero"
@@ -77,7 +105,7 @@ const allergenRecipes = recipes
       ]}
     />
     <p class="eyebrow">Progressive enhancement, transparent limits</p>
-    <h1>Turn draft recipes into a working checklist.</h1>
+    <h1>Turn recipes into a working checklist.</h1>
     <p class="lede">
       The tools run locally, send no form data, and preserve server-rendered
       fallbacks. Their results remain planning aids—not test-kitchen, appliance,
@@ -87,7 +115,11 @@ const allergenRecipes = recipes
 
   <section class="section tinted">
     <div class="shell">
-      <PlannerTools menus={menuPayload} {allergenRecipes} />
+      <PlannerTools
+        menus={menuPayload}
+        {allergenRecipes}
+        recipeStatusLabel={releaseState.isIndexable ? 'published' : 'draft'}
+      />
     </div>
   </section>
 </BaseLayout>

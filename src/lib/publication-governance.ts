@@ -1,0 +1,247 @@
+import type { CompleteRecipe } from '../schemas/recipe';
+
+/**
+ * These are intentionally publication states, not claims about recipe quality.
+ * A recipe is public only after it has the complete, attributable evidence that
+ * the schema requires for the `published` state.
+ */
+export const publicationStatuses = ['draft', 'reviewed', 'published'] as const;
+
+export type PublicationStatus = (typeof publicationStatuses)[number];
+
+export const humanReviewGateKeys = [
+  'testCook',
+  'foodSafety',
+  'koreanLanguage',
+  'editorial',
+] as const;
+
+export type HumanReviewGateKey = (typeof humanReviewGateKeys)[number];
+type HumanReviewGate = CompleteRecipe['reviewGates'][HumanReviewGateKey];
+
+const humanReviewGateLabels: Record<HumanReviewGateKey, string> = {
+  testCook: 'test-cook review',
+  foodSafety: 'food-safety review',
+  koreanLanguage: 'Korean-language review',
+  editorial: 'editorial review',
+};
+
+const placeholderPattern =
+  /\{\{[^}]+\}\}|^\s*(?:tbd|todo|unknown|n\/a|none|legal[ _-]?name)\s*$/i;
+
+/** Reject placeholders and empty values before they can be surfaced publicly. */
+export function isActualPublicationText(
+  value: string | null | undefined,
+): value is string {
+  const normalized = value?.trim() ?? '';
+  return normalized.length >= 2 && !placeholderPattern.test(normalized);
+}
+
+/** A public accountability link must be a real HTTPS URL, never a placeholder. */
+export function isActualProfileUrl(
+  value: string | null | undefined,
+): value is string {
+  if (!isActualPublicationText(value)) return false;
+
+  try {
+    const url = new globalThis.URL(value);
+    return (
+      url.protocol === 'https:' &&
+      url.username === '' &&
+      url.password === '' &&
+      url.hostname !== 'example.com' &&
+      !placeholderPattern.test(url.hostname)
+    );
+  } catch {
+    return false;
+  }
+}
+
+export function hasCompleteHumanGateEvidence(
+  gate: HumanReviewGate,
+  requiresCredential = false,
+): boolean {
+  return (
+    gate.status === 'approved' &&
+    isActualPublicationText(gate.reviewerName) &&
+    isActualProfileUrl(gate.reviewerProfileUrl) &&
+    isActualPublicationText(gate.reviewerRole) &&
+    (!requiresCredential || isActualPublicationText(gate.reviewerCredential)) &&
+    gate.reviewedAt !== null &&
+    isActualPublicationText(gate.evidence)
+  );
+}
+
+/**
+ * Human-readable labels for the gates whose accountable evidence is still
+ * incomplete. This lets a draft notice describe partial review truthfully.
+ */
+export function incompleteHumanReviewGateLabels(
+  recipe: CompleteRecipe,
+): readonly string[] {
+  return humanReviewGateKeys
+    .filter(
+      (key) =>
+        !hasCompleteHumanGateEvidence(
+          recipe.reviewGates[key],
+          key === 'foodSafety',
+        ),
+    )
+    .map((key) => humanReviewGateLabels[key]);
+}
+
+export function publicationStatusLabel(status: PublicationStatus): string {
+  return status.charAt(0).toUpperCase() + status.slice(1);
+}
+
+export interface RecipePublishability {
+  readonly isPublishable: boolean;
+  readonly blockers: readonly string[];
+}
+
+/**
+ * The sole public-release predicate for recipes. It is deliberately stricter
+ * than `contentStatus === 'complete'`: a complete draft is still not a public
+ * food-safety or editorial claim.
+ */
+export function recipePublishability(
+  recipe: CompleteRecipe,
+): RecipePublishability {
+  const blockers: string[] = [];
+
+  if (recipe.editorialStatus !== 'published')
+    blockers.push('publication status is not published');
+  if (!isActualPublicationText(recipe.author))
+    blockers.push('named author is missing or unresolved');
+  if (!isActualProfileUrl(recipe.authorProfileUrl))
+    blockers.push('author profile URL is missing or unresolved');
+  if (recipe.materiallyUpdatedAt === null)
+    blockers.push('materially updated date is missing');
+  if (recipe.publishedAt === null) blockers.push('publication date is missing');
+
+  for (const key of humanReviewGateKeys) {
+    if (
+      !hasCompleteHumanGateEvidence(
+        recipe.reviewGates[key],
+        key === 'foodSafety',
+      )
+    )
+      blockers.push(`${key} human-review evidence is incomplete`);
+  }
+
+  return { isPublishable: blockers.length === 0, blockers };
+}
+
+export function isRecipePublishable(recipe: CompleteRecipe): boolean {
+  return recipePublishability(recipe).isPublishable;
+}
+
+function requirePublicationText(
+  value: string | null | undefined,
+  field: string,
+): string {
+  if (!isActualPublicationText(value))
+    throw new Error(`Publishable recipe has an invalid ${field}.`);
+  return value;
+}
+
+function requireProfileUrl(
+  value: string | null | undefined,
+  field: string,
+): string {
+  if (!isActualProfileUrl(value))
+    throw new Error(`Publishable recipe has an invalid ${field}.`);
+  return value;
+}
+
+function requirePublicationDate(value: string | null, field: string): string {
+  if (value === null) throw new Error(`Publishable recipe has no ${field}.`);
+  return value;
+}
+
+export interface RecipeAccountability {
+  readonly author: { readonly name: string; readonly profileUrl: string };
+  readonly testCook: { readonly name: string; readonly profileUrl: string };
+  readonly foodSafetyReviewer: {
+    readonly name: string;
+    readonly profileUrl: string;
+    readonly credential: string;
+  };
+  readonly koreanLanguageReviewer: {
+    readonly name: string;
+    readonly profileUrl: string;
+  };
+  readonly editorialReviewer: {
+    readonly name: string;
+    readonly profileUrl: string;
+  };
+  readonly materiallyUpdatedAt: string;
+  readonly publishedAt: string;
+}
+
+/**
+ * Returns only fully substantiated information suitable for the public page.
+ * Draft and partially reviewed records intentionally render no accountability
+ * line, rather than exposing placeholders or implying completed review.
+ */
+export function recipeAccountability(
+  recipe: CompleteRecipe,
+): RecipeAccountability | null {
+  if (!isRecipePublishable(recipe)) return null;
+
+  return {
+    author: {
+      name: requirePublicationText(recipe.author, 'author'),
+      profileUrl: requireProfileUrl(recipe.authorProfileUrl, 'author profile'),
+    },
+    testCook: {
+      name: requirePublicationText(
+        recipe.reviewGates.testCook.reviewerName,
+        'test-cook reviewer',
+      ),
+      profileUrl: requireProfileUrl(
+        recipe.reviewGates.testCook.reviewerProfileUrl,
+        'test-cook profile',
+      ),
+    },
+    foodSafetyReviewer: {
+      name: requirePublicationText(
+        recipe.reviewGates.foodSafety.reviewerName,
+        'food-safety reviewer',
+      ),
+      profileUrl: requireProfileUrl(
+        recipe.reviewGates.foodSafety.reviewerProfileUrl,
+        'food-safety profile',
+      ),
+      credential: requirePublicationText(
+        recipe.reviewGates.foodSafety.reviewerCredential,
+        'food-safety credential',
+      ),
+    },
+    koreanLanguageReviewer: {
+      name: requirePublicationText(
+        recipe.reviewGates.koreanLanguage.reviewerName,
+        'Korean-language reviewer',
+      ),
+      profileUrl: requireProfileUrl(
+        recipe.reviewGates.koreanLanguage.reviewerProfileUrl,
+        'Korean-language profile',
+      ),
+    },
+    editorialReviewer: {
+      name: requirePublicationText(
+        recipe.reviewGates.editorial.reviewerName,
+        'editorial reviewer',
+      ),
+      profileUrl: requireProfileUrl(
+        recipe.reviewGates.editorial.reviewerProfileUrl,
+        'editorial profile',
+      ),
+    },
+    materiallyUpdatedAt: requirePublicationDate(
+      recipe.materiallyUpdatedAt,
+      'materially updated date',
+    ),
+    publishedAt: requirePublicationDate(recipe.publishedAt, 'publication date'),
+  };
+}

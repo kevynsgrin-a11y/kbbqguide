@@ -1,6 +1,7 @@
 ---
 import type { CompleteRecipe } from '../schemas/recipe';
 import { isDisplayableTaxonomy } from '../lib/ingredients';
+import { publicationStatusLabel } from '../lib/publication-governance';
 import MediaPlaceholder from './MediaPlaceholder.astro';
 
 interface Props {
@@ -22,7 +23,9 @@ const showAdaptation = isDisplayableTaxonomy(recipe.adaptationLabel);
     />
     <div class="recipe-card-content">
       <p class="eyebrow">
-        Draft {recipe.id}{showAdaptation && ` · ${recipe.adaptationLabel}`}
+        {publicationStatusLabel(recipe.editorialStatus)}
+        {recipe.id}
+        {showAdaptation && ` · ${recipe.adaptationLabel}`}
       </p>
       <h3>{recipe.title}</h3>
       <p>{recipe.shortDescription}</p>

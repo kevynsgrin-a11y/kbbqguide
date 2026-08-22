@@ -4,29 +4,46 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { guides } from '../../lib/guides';
+import { guides, guidesIndexPublication } from '../../lib/guides';
+import {
+  isNonRecipePublishable,
+  nonRecipePageEligibility,
+} from '../../lib/nonrecipe-publication-governance';
+import { releaseState } from '../../lib/release-state';
 import { breadcrumbJsonLd, itemListJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
 
 const registry = registryData as UrlRegistry;
 const path = registryPathById(registry, 'SYS_GUIDES');
-const guideItems = guides.map((guide) => ({
+const publication = nonRecipePageEligibility(
+  guidesIndexPublication,
+  releaseState,
+);
+const visibleGuides = releaseState.isIndexable
+  ? guides.filter((guide) => isNonRecipePublishable(guide.publication))
+  : guides;
+const guideItems = visibleGuides.map((guide) => ({
   name: guide.title,
   path: registryPathById(registry, guide.id),
 }));
+const structuredData =
+  publication.emitsJsonLd && guideItems.length > 0
+    ? [
+        breadcrumbJsonLd([
+          { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+          { name: 'Guides', path },
+        ]),
+        itemListJsonLd('Korean BBQ planning guides', guideItems),
+      ]
+    : [];
 ---
 
 <BaseLayout
   title="Korean BBQ Planning Guides"
   description="Twelve practical Korean BBQ guides covering setup, safety, pantry, meat, seafood, ssam, menus, timelines, banchan, cleanup, and leftovers."
   canonicalPath={path}
-  jsonLd={[
-    breadcrumbJsonLd([
-      { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
-      { name: 'Guides', path },
-    ]),
-    itemListJsonLd('Korean BBQ planning guides', guideItems),
-  ]}
+  jsonLd={structuredData}
+  robotsContent={publication.robotsContent}
 >
   <EditorialHero
     mediaId="SYS_GUIDES-hero"
@@ -53,7 +70,7 @@ const guideItems = guides.map((guide) => ({
       <h2 id="guide-index-title">All guides</h2>
       <div class="card-grid guide-grid">
         {
-          guides.map((guide, index) => (
+          visibleGuides.map((guide, index) => (
             <article class="support-card guide-card">
               <MediaPlaceholder
                 mediaId={`${guide.id}-hero`}
@@ -68,6 +85,13 @@ const guideItems = guides.map((guide) => ({
               <p>{guide.description}</p>
             </article>
           ))
+        }
+        {
+          visibleGuides.length === 0 && (
+            <div class="empty-state">
+              Guides are published after named human review is complete.
+            </div>
+          )
         }
       </div>
     </div>

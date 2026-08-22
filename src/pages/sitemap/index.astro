@@ -1,12 +1,27 @@
 ---
+import { getCollection } from 'astro:content';
 import registryData from '../../../data/url-registry.json';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import MediaPlaceholder from '../../components/MediaPlaceholder.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { isRecipePublishable } from '../../lib/publication-governance';
+import { releaseState } from '../../lib/release-state';
 import { itemListJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
+import type { CompleteRecipe } from '../../schemas/recipe';
 
 const registry = registryData as UrlRegistry;
+const visibleRecipeIds = new Set(
+  (await getCollection('recipes'))
+    .map((entry) => entry.data)
+    .filter(
+      (recipe): recipe is CompleteRecipe =>
+        recipe.contentStatus === 'complete' &&
+        (releaseState.mode === 'restricted-preview' ||
+          isRecipePublishable(recipe)),
+    )
+    .map((recipe) => recipe.id),
+);
 const renderedIds = new Set([
   'SYS_HOME',
   'SYS_START',
@@ -37,7 +52,9 @@ const renderedIds = new Set([
   'SYS_LICENSING',
   'SYS_PARTNERSHIPS',
   ...registry.entries
-    .filter((entry) => entry.type === 'recipe')
+    .filter(
+      (entry) => entry.type === 'recipe' && visibleRecipeIds.has(entry.id),
+    )
     .map((entry) => entry.id),
 ]);
 const entries = registry.entries.filter((entry) => renderedIds.has(entry.id));
@@ -81,7 +98,10 @@ const groups = [
     types: ['POL_AFFILIATE', 'POL_SPONSORED'],
   },
   {
-    title: 'Recipe drafts',
+    title:
+      releaseState.mode === 'restricted-preview'
+        ? 'Recipe drafts'
+        : 'Published recipes',
     types: entries
       .filter((entry) => entry.type === 'recipe')
       .map((entry) => entry.id),
@@ -92,14 +112,16 @@ const path = registryPathById(registry, 'SYS_SITEMAP');
 
 <BaseLayout
   title="HTML Sitemap"
-  description="A human-readable map of every route emitted in the non-production Phase 6 static preview."
+  description="A human-readable map of the routes eligible for this KBBQGuide release state."
   canonicalPath={path}
-  jsonLd={[
-    itemListJsonLd(
-      'Phase 6 preview routes',
-      entries.map((entry) => ({ name: entry.title, path: entry.path })),
-    ),
-  ]}
+  jsonLd={releaseState.isIndexable
+    ? [
+        itemListJsonLd(
+          'KBBQGuide public routes',
+          entries.map((entry) => ({ name: entry.title, path: entry.path })),
+        ),
+      ]
+    : []}
 >
   <header class="category-hero">
     <div class="shell reading-width">
@@ -109,8 +131,14 @@ const path = registryPathById(registry, 'SYS_SITEMAP');
           { label: 'HTML Sitemap' },
         ]}
       />
-      <p class="eyebrow">116 preview routes</p>
-      <h1>Everything in the static handoff.</h1>
+      <p class="eyebrow">
+        {
+          releaseState.mode === 'restricted-preview'
+            ? 'Restricted preview routes'
+            : 'Release-eligible routes'
+        }
+      </p>
+      <h1>Everything available in this release.</h1>
       <p class="lede">
         This map intentionally omits policy, video, about, contact, and account
         routes that remain reserved without an implementation.

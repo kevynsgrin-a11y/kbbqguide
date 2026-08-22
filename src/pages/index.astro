@@ -7,6 +7,8 @@ import RecipeCard from '../components/RecipeCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { categories } from '../lib/categories';
 import { resolveMedia } from '../lib/media';
+import { isRecipePublishable } from '../lib/publication-governance';
+import { releaseState } from '../lib/release-state';
 import { itemListJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
 import type { CompleteRecipe } from '../schemas/recipe';
@@ -14,15 +16,17 @@ import type { CompleteRecipe } from '../schemas/recipe';
 const registry = registryData as UrlRegistry;
 // Phase 10 (P1-8): scoped synthetic-content disclosure adjacent to the home hero.
 const heroMedia = resolveMedia('HOME-gathering-hero');
-const recipes = (await getCollection('recipes'))
+const allRecipes = (await getCollection('recipes'))
   .map((entry) => entry.data)
   .filter(
     (recipe): recipe is CompleteRecipe => recipe.contentStatus === 'complete',
   )
   .sort((a, b) => a.publicReleaseOrder - b.publicReleaseOrder);
-const featured = [recipes[0], recipes[19], recipes[34]].filter(
-  (recipe): recipe is CompleteRecipe => Boolean(recipe),
+const recipes = allRecipes.filter(
+  (recipe) =>
+    releaseState.mode === 'restricted-preview' || isRecipePublishable(recipe),
 );
+const featured = recipes.slice(0, 3);
 const canonicalPath = registryPathById(registry, 'SYS_HOME');
 const categoryList = itemListJsonLd(
   'Korean BBQ recipe categories',
@@ -35,9 +39,11 @@ const categoryList = itemListJsonLd(
 
 <BaseLayout
   title="Korean BBQ at Home, Made Clear"
-  description="Build a complete Korean BBQ table at home with 80 structured recipe drafts, practical menus, planning tools, and visible food-safety cues."
+  description={releaseState.mode === 'restricted-preview'
+    ? 'Build a complete Korean BBQ table at home with structured recipe drafts, practical menus, planning tools, and visible food-safety cues.'
+    : 'Published Korean BBQ recipes, practical menus, and planning tools are released after named human review.'}
   canonicalPath={canonicalPath}
-  jsonLd={[categoryList]}
+  jsonLd={releaseState.isIndexable ? [categoryList] : []}
   pageClass="home-page"
   socialImage="/social/kbbqguide-home.jpg"
   socialImageAlt="Four friends sharing a Korean barbecue table around an indoor grill"
@@ -71,17 +77,35 @@ const categoryList = itemListJsonLd(
           a sweet finish into one calm system—with the timing, sensory cues, and
           safety decisions visible when you need them.
         </p>
-        <div class="hero-actions">
-          <a class="button" href={registryPathById(registry, 'SYS_RECIPES')}
-            >Explore all recipes</a
-          >
-          <a
-            class="button secondary"
-            href={registryPathById(registry, 'CAT_MEAT')}>Fire up the grill</a
-          >
-        </div>
+        {
+          recipes.length > 0 && (
+            <div class="hero-actions">
+              <a
+                class="button"
+                href={registryPathById(registry, 'SYS_RECIPES')}
+              >
+                Explore all recipes
+              </a>
+              <a
+                class="button secondary"
+                href={registryPathById(registry, 'CAT_MEAT')}
+              >
+                Fire up the grill
+              </a>
+            </div>
+          )
+        }
         <dl class="hero-stats" aria-label="KBBQGuide library overview">
-          <div><dt>80</dt><dd>recipes</dd></div>
+          <div>
+            <dt>{recipes.length}</dt>
+            <dd>
+              {
+                releaseState.mode === 'restricted-preview'
+                  ? 'recipe drafts'
+                  : 'published recipes'
+              }
+            </dd>
+          </div>
           <div><dt>6</dt><dd>table sections</dd></div>
           <div><dt>1</dt><dd>clear plan</dd></div>
         </dl>
@@ -135,27 +159,32 @@ const categoryList = itemListJsonLd(
     </div>
   </section>
 
-  <section class="section tinted" aria-labelledby="featured-title">
-    <div class="shell">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">A table worth gathering around</p>
-          <h2 id="featured-title">Start with three KBBQ essentials</h2>
+  {
+    featured.length > 0 && (
+      <section class="section tinted" aria-labelledby="featured-title">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">A table worth gathering around</p>
+              <h2 id="featured-title">Start with three KBBQ essentials</h2>
+            </div>
+            <p class="lede">
+              Pair a savory grill centerpiece with seafood and banchan, then use
+              the related-recipe paths to round out the meal.
+            </p>
+          </div>
+          <div class="card-grid">
+            {featured.map((recipe) => (
+              <RecipeCard
+                {recipe}
+                href={registryPathById(registry, recipe.id)}
+              />
+            ))}
+          </div>
         </div>
-        <p class="lede">
-          Pair a savory grill centerpiece with seafood and banchan, then use the
-          related-recipe paths to round out the meal.
-        </p>
-      </div>
-      <div class="card-grid">
-        {
-          featured.map((recipe) => (
-            <RecipeCard {recipe} href={registryPathById(registry, recipe.id)} />
-          ))
-        }
-      </div>
-    </div>
-  </section>
+      </section>
+    )
+  }
 
   <EditorialBanner
     mediaId="HOME-editorial-banner"

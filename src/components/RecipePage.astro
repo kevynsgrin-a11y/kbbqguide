@@ -7,6 +7,13 @@ import {
   formatIngredientTail,
   isDisplayableTaxonomy,
 } from '../lib/ingredients';
+import {
+  incompleteHumanReviewGateLabels,
+  isRecipePublishable,
+  publicationStatusLabel,
+  recipeAccountability,
+} from '../lib/publication-governance';
+import { releaseState } from '../lib/release-state';
 import { breadcrumbJsonLd, recipeJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -32,15 +39,29 @@ const { recipe, related } = Astro.props;
 const registry = registryData as UrlRegistry;
 const category = categoryBySlug(recipe.category);
 const canonicalPath = registryPathById(registry, recipe.id);
-const structuredData = [
-  breadcrumbJsonLd([
-    { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
-    { name: 'Recipes', path: registryPathById(registry, 'SYS_RECIPES') },
-    { name: category.label, path: registryPathById(registry, category.id) },
-    { name: recipe.title, path: canonicalPath },
-  ]),
-  recipeJsonLd(recipe, canonicalPath),
-];
+const publishable = isRecipePublishable(recipe);
+const incompleteHumanReviewGates = incompleteHumanReviewGateLabels(recipe);
+const accountability = recipeAccountability(recipe);
+const visibleRelated = releaseState.isIndexable
+  ? related.filter(({ recipe: relatedRecipe }) =>
+      isRecipePublishable(relatedRecipe),
+    )
+  : related;
+const structuredData =
+  releaseState.isIndexable && publishable
+    ? [
+        breadcrumbJsonLd([
+          { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+          { name: 'Recipes', path: registryPathById(registry, 'SYS_RECIPES') },
+          {
+            name: category.label,
+            path: registryPathById(registry, category.id),
+          },
+          { name: recipe.title, path: canonicalPath },
+        ]),
+        recipeJsonLd(recipe, canonicalPath),
+      ]
+    : [];
 const truthyAllergens = Object.entries(recipe.allergens)
   .filter(([key, value]) => key !== 'crossContactWarning' && value === true)
   .map(
@@ -67,6 +88,9 @@ const truthyAllergens = Object.entries(recipe.allergens)
   canonicalPath={canonicalPath}
   jsonLd={structuredData}
   pageClass={`recipe-page category-${category.accent}`}
+  robotsContent={publishable
+    ? releaseState.metaRobots
+    : 'noindex,nofollow,noarchive'}
 >
   <EditorialHero
     mediaId={`${recipe.id}-hero`}
@@ -90,8 +114,52 @@ const truthyAllergens = Object.entries(recipe.allergens)
         { label: recipe.title },
       ]}
     />
-    <p class="eyebrow">{category.label} · Draft {recipe.id}</p>
+    <p class="eyebrow">
+      {category.label} · {publicationStatusLabel(recipe.editorialStatus)}{' '}
+      {recipe.id}
+    </p>
     <h1>{recipe.title}</h1>
+    {
+      accountability && (
+        <p
+          class="card-meta recipe-accountability"
+          aria-label="Recipe accountability"
+        >
+          <span>
+            By{' '}
+            <a href={accountability.author.profileUrl}>
+              {accountability.author.name}
+            </a>
+          </span>
+          <span>
+            Test cook:{' '}
+            <a href={accountability.testCook.profileUrl}>
+              {accountability.testCook.name}
+            </a>
+          </span>
+          <span>
+            Reviewers: food safety{' '}
+            <a href={accountability.foodSafetyReviewer.profileUrl}>
+              {accountability.foodSafetyReviewer.name}
+            </a>{' '}
+            ({accountability.foodSafetyReviewer.credential}) ; Korean language{' '}
+            <a href={accountability.koreanLanguageReviewer.profileUrl}>
+              {accountability.koreanLanguageReviewer.name}
+            </a>
+            ; editorial{' '}
+            <a href={accountability.editorialReviewer.profileUrl}>
+              {accountability.editorialReviewer.name}
+            </a>
+          </span>
+          <span>
+            Materially updated{' '}
+            <time datetime={accountability.materiallyUpdatedAt}>
+              {accountability.materiallyUpdatedAt}
+            </time>
+          </span>
+        </p>
+      )
+    }
     {
       (recipe.hangul || recipe.romanization) && (
         <p class="recipe-names">
@@ -102,15 +170,21 @@ const truthyAllergens = Object.entries(recipe.allergens)
       )
     }
     <p class="lede">{recipe.shortDescription}</p>
-    <div class="badge-row" aria-label="Recipe draft status">
+    <div class="badge-row" aria-label="Recipe publication status">
       {
         isDisplayableTaxonomy(recipe.adaptationLabel) && (
           <span class="badge">{recipe.adaptationLabel}</span>
         )
       }
-      <span class="badge">Test cook required</span>
-      <span class="badge">Safety review required</span>
-      <span class="badge">Language review required</span>
+      <span class="badge">
+        Test cook {recipe.reviewGates.testCook.status}
+      </span>
+      <span class="badge">
+        Safety review {recipe.reviewGates.foodSafety.status}
+      </span>
+      <span class="badge">
+        Language review {recipe.reviewGates.koreanLanguage.status}
+      </span>
     </div>
   </EditorialHero>
 
@@ -120,7 +194,14 @@ const truthyAllergens = Object.entries(recipe.allergens)
     <div class="shell">
       <h2 id="recipe-overview-title" class="reading-width">Before you cook</h2>
       <div class="support-grid">
-        <DraftNotice />
+        {
+          recipe.editorialStatus === 'draft' && (
+            <DraftNotice
+              contentLabel="This recipe"
+              pendingGates={incompleteHumanReviewGates}
+            />
+          )
+        }
         <div class="support-card">
           <h3>Context, not a claim of one canon</h3>
           <p>{recipe.culturalContext}</p>
@@ -337,7 +418,13 @@ const truthyAllergens = Object.entries(recipe.allergens)
 
   <section class="section" aria-labelledby="faq-title">
     <div class="shell reading-width faq-list">
-      <p class="eyebrow">Questions this draft anticipates</p>
+      <p class="eyebrow">
+        {
+          recipe.editorialStatus === 'draft'
+            ? 'Questions this draft anticipates'
+            : 'Common questions'
+        }
+      </p>
       <h2 id="faq-title">Recipe FAQ</h2>
       {
         recipe.faq.map((item) => (
@@ -356,5 +443,5 @@ const truthyAllergens = Object.entries(recipe.allergens)
     </div>
   </section>
 
-  <RelatedContent recipes={related} />
+  {visibleRelated.length > 0 && <RelatedContent recipes={visibleRelated} />}
 </BaseLayout>

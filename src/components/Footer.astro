@@ -1,8 +1,10 @@
 ---
 import registryData from '../../data/url-registry.json';
+import { releaseState } from '../lib/release-state';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
 
 const registry = registryData as UrlRegistry;
+const isPreview = releaseState.mode !== 'public-launch';
 ---
 
 <footer class="site-footer">
@@ -19,8 +21,11 @@ const registry = registryData as UrlRegistry;
         <h2 id="footer-about">Gather around a better-planned table.</h2>
         <p>
           KBBQGuide organizes Korean barbecue at home into clear recipes,
-          practical menus, and thoughtful safety cues. Every recipe remains in
-          editorial preview until its named human reviews are complete.
+          practical menus, and thoughtful safety cues. {
+            isPreview
+              ? 'Every recipe remains in editorial preview until its named human reviews are complete.'
+              : 'Published recipes include named human-review accountability.'
+          }
         </p>
       </section>
       <nav class="footer-links" aria-label="Recipe links">
@@ -58,9 +63,11 @@ const registry = registryData as UrlRegistry;
       </nav>
     </div>
     <p class="fine-print">
-      © 2026 KBBQGuide. Editorial preview: no rating, nutrition, price, stock,
-      review, or firsthand-testing claim is made until its corresponding human
-      review is complete.
+      © 2026 KBBQGuide. {
+        isPreview
+          ? 'Editorial preview: no rating, nutrition, price, stock, review, or firsthand-testing claim is made until its corresponding human review is complete.'
+          : 'Published recipe claims are limited to records with completed, named human-review evidence.'
+      }
     </p>
   </div>
 </footer>

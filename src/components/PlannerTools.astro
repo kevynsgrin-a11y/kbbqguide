@@ -21,13 +21,15 @@ interface AllergenRecipe {
 interface Props {
   menus: readonly MenuPayload[];
   allergenRecipes: readonly AllergenRecipe[];
+  recipeStatusLabel: 'draft' | 'published';
 }
 
-const { menus, allergenRecipes } = Astro.props;
-const payload = JSON.stringify({ menus, allergenRecipes }).replaceAll(
-  '<',
-  '\\u003c',
-);
+const { menus, allergenRecipes, recipeStatusLabel } = Astro.props;
+const payload = JSON.stringify({
+  menus,
+  allergenRecipes,
+  recipeStatusLabel,
+}).replaceAll('<', '\\u003c');
 const initialMenu = menus.find((menu) => menu.guests === 4) ?? menus[0];
 const allergenOptions = [
   ['soy', 'Soy'],
@@ -265,7 +267,9 @@ const allergenOptions = [
     aria-labelledby="allergen-title"
   >
     <p class="eyebrow">Non-medical allergen display</p>
-    <h2 id="allergen-title">Hide recipes with selected draft flags</h2>
+    <h2 id="allergen-title">
+      Hide recipes with selected {recipeStatusLabel} flags
+    </h2>
     <div class="disclosure-box">
       This display cannot guarantee that a recipe, ingredient, brand, kitchen,
       or serving environment is safe for an allergy. Labels and cross-contact
@@ -284,7 +288,8 @@ const allergenOptions = [
       }
     </fieldset>
     <p data-allergen-count aria-live="polite">
-      Showing all {allergenRecipes.length} recipe drafts.
+      Showing all {allergenRecipes.length}
+      {recipeStatusLabel} recipes.
     </p>
     <ul class="plain-list allergen-results" data-allergen-results>
       {
@@ -304,6 +309,7 @@ const allergenOptions = [
 
 <script>
   interface PlannerData {
+    recipeStatusLabel: string;
     menus: Array<{
       guests: number;
       title: string;
@@ -445,7 +451,7 @@ const allergenOptions = [
       (recipe) => !recipe.allergens.some((allergen) => excluded.has(allergen)),
     );
     if (allergenCount)
-      allergenCount.textContent = `Showing ${visible.length} of ${plannerData?.allergenRecipes.length ?? 0} recipe drafts.`;
+      allergenCount.textContent = `Showing ${visible.length} of ${plannerData?.allergenRecipes.length ?? 0} ${plannerData?.recipeStatusLabel ?? 'draft'} recipes.`;
     allergenResults?.replaceChildren(
       ...visible.map((recipe) => {
         const item = document.createElement('li');

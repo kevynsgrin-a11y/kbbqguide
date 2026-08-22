@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "publicationStatus": "blocked",
+  "blockedReason": "A public privacy notice cannot be published until the owner supplies and approves the legal operator, privacy-contact, processor, retention, and rights-request facts.",
+  "legalOperatorName": null,
+  "privacyContactEmail": null,
+  "postalAddress": null,
+  "effectiveDate": null,
+  "hostingAndEdgeProvider": null,
+  "hostingAndEdgeLogRetention": null,
+  "analyticsProvider": null,
+  "analyticsRetention": null,
+  "cookieOrSimilarTechnologyStatement": null,
+  "rightsRequestMethod": null,
+  "approvedBy": null,
+  "approvedAt": null
+}

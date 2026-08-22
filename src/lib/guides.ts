@@ -1,3 +1,8 @@
+import {
+  createDraftNonRecipePublication,
+  type NonRecipePublication,
+} from './nonrecipe-publication-governance';
+
 export interface GuideSection {
   readonly heading: string;
   readonly body: string;
@@ -12,9 +17,13 @@ export interface Guide {
   readonly sections: readonly GuideSection[];
   readonly safetyNote: string;
   readonly relatedIds: readonly string[];
+  readonly publication: NonRecipePublication;
 }
 
-export const guides: readonly Guide[] = [
+/** The guide index is an editorial record, not an automatic launch surface. */
+export const guidesIndexPublication = createDraftNonRecipePublication();
+
+const guideDrafts: readonly Omit<Guide, 'publication'>[] = [
   {
     id: 'G01',
     title: 'Korean BBQ at Home for Beginners',
@@ -592,6 +601,16 @@ export const guides: readonly Guide[] = [
     relatedIds: ['G10', 'G09', 'SYS_RECIPES', 'SYS_TOOLS'],
   },
 ];
+
+/**
+ * Every inherited guide record is explicitly an unpublished draft until its
+ * own named review evidence is entered. No reviewer or publication fact is
+ * inferred from the text of a guide.
+ */
+export const guides: readonly Guide[] = guideDrafts.map((guide) => ({
+  ...guide,
+  publication: createDraftNonRecipePublication(),
+}));
 
 export function guideById(id: string): Guide {
   const guide = guides.find((candidate) => candidate.id === id);
