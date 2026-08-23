@@ -122,6 +122,30 @@ describe('publication governance (P0 #4 and #10)', () => {
     );
   });
 
+  it('fails closed instead of throwing for a legacy raw recipe resolved by a menu', () => {
+    const legacyMenuRecipe = {
+      ...draftSource,
+      editorialStatus: 'published',
+      author: 'Legacy Recipe Author',
+      authorProfileUrl: 'https://profiles.test/legacy-recipe-author',
+      materiallyUpdatedAt: '2026-08-21',
+      publishedAt: '2026-08-22',
+    };
+
+    expect(legacyMenuRecipe).not.toHaveProperty('reviewGates');
+    expect(() => recipePublishability(legacyMenuRecipe)).not.toThrow();
+    expect(isRecipePublishable(legacyMenuRecipe)).toBe(false);
+    expect(recipePublishability(legacyMenuRecipe).blockers).toEqual(
+      expect.arrayContaining([
+        'human-review gate record is missing or malformed',
+        'testCook human-review evidence is incomplete',
+        'foodSafety human-review evidence is incomplete',
+        'koreanLanguage human-review evidence is incomplete',
+        'editorial human-review evidence is incomplete',
+      ]),
+    );
+  });
+
   it('describes only the human gates whose evidence remains incomplete', () => {
     const recipe = draftRecipe();
     recipe.testCookStatus = 'approved';

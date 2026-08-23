@@ -17,7 +17,6 @@ export const humanReviewGateKeys = [
 ] as const;
 
 export type HumanReviewGateKey = (typeof humanReviewGateKeys)[number];
-type HumanReviewGate = CompleteRecipe['reviewGates'][HumanReviewGateKey];
 
 const humanReviewGateLabels: Record<HumanReviewGateKey, string> = {
   testCook: 'test-cook review',
@@ -31,17 +30,13 @@ const placeholderPattern =
 const isoDatePattern = /^(\d{4})-(\d{2})-(\d{2})$/;
 
 /** Reject placeholders and empty values before they can be surfaced publicly. */
-export function isActualPublicationText(
-  value: string | null | undefined,
-): value is string {
-  const normalized = value?.trim() ?? '';
+export function isActualPublicationText(value: unknown): value is string {
+  const normalized = typeof value === 'string' ? value.trim() : '';
   return normalized.length >= 2 && !placeholderPattern.test(normalized);
 }
 
 /** A public accountability link must be a real HTTPS URL, never a placeholder. */
-export function isActualProfileUrl(
-  value: string | null | undefined,
-): value is string {
+export function isActualProfileUrl(value: unknown): value is string {
   if (!isActualPublicationText(value)) return false;
 
   try {
@@ -59,9 +54,7 @@ export function isActualProfileUrl(
 }
 
 /** Accept only a real calendar day expressed as an ISO-8601 date. */
-export function isActualPublicationDate(
-  value: string | null | undefined,
-): value is string {
+export function isActualPublicationDate(value: unknown): value is string {
   if (typeof value !== 'string') return false;
   const match = isoDatePattern.exec(value);
   if (!match) return false;
@@ -78,9 +71,11 @@ export function isActualPublicationDate(
 }
 
 export function hasCompleteHumanGateEvidence(
-  gate: HumanReviewGate,
+  gate: unknown,
   requiresCredential = false,
 ): boolean {
+  if (!isRecord(gate)) return false;
+
   return (
     gate.status === 'approved' &&
     isActualPublicationText(gate.reviewerName) &&
@@ -92,20 +87,27 @@ export function hasCompleteHumanGateEvidence(
   );
 }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+
+function reviewGatesFrom(value: unknown): Record<string, unknown> | null {
+  if (!isRecord(value) || !isRecord(value.reviewGates)) return null;
+  return value.reviewGates;
+}
+
 /**
  * Human-readable labels for the gates whose accountable evidence is still
  * incomplete. This lets a draft notice describe partial review truthfully.
  */
 export function incompleteHumanReviewGateLabels(
-  recipe: CompleteRecipe,
+  recipe: unknown,
 ): readonly string[] {
+  const reviewGates = reviewGatesFrom(recipe);
   return humanReviewGateKeys
     .filter(
       (key) =>
-        !hasCompleteHumanGateEvidence(
-          recipe.reviewGates[key],
-          key === 'foodSafety',
-        ),
+        !hasCompleteHumanGateEvidence(reviewGates?.[key], key === 'foodSafety'),
     )
     .map((key) => humanReviewGateLabels[key]);
 }
@@ -124,11 +126,17 @@ export interface RecipePublishability {
  * than `contentStatus === 'complete'`: a complete draft is still not a public
  * food-safety or editorial claim.
  */
-export function recipePublishability(
-  recipe: CompleteRecipe,
-): RecipePublishability {
+export function recipePublishability(recipe: unknown): RecipePublishability {
   const blockers: string[] = [];
 
+  if (!isRecord(recipe))
+    return {
+      isPublishable: false,
+      blockers: ['recipe record is missing or malformed'],
+    };
+
+  if (recipe.contentStatus !== 'complete')
+    blockers.push('recipe content is not complete');
   if (recipe.editorialStatus !== 'published')
     blockers.push('publication status is not published');
   if (!isActualPublicationText(recipe.author))
@@ -140,20 +148,18 @@ export function recipePublishability(
   if (!isActualPublicationDate(recipe.publishedAt))
     blockers.push('publication date is missing');
 
+  const reviewGates = reviewGatesFrom(recipe);
+  if (reviewGates === null)
+    blockers.push('human-review gate record is missing or malformed');
   for (const key of humanReviewGateKeys) {
-    if (
-      !hasCompleteHumanGateEvidence(
-        recipe.reviewGates[key],
-        key === 'foodSafety',
-      )
-    )
+    if (!hasCompleteHumanGateEvidence(reviewGates?.[key], key === 'foodSafety'))
       blockers.push(`${key} human-review evidence is incomplete`);
   }
 
   return { isPublishable: blockers.length === 0, blockers };
 }
 
-export function isRecipePublishable(recipe: CompleteRecipe): boolean {
+export function isRecipePublishable(recipe: unknown): boolean {
   return recipePublishability(recipe).isPublishable;
 }
 
