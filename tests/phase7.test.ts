@@ -32,7 +32,7 @@ describe('Phase 7 full QA and hardening gate', () => {
     expect(headers).toContain('X-Content-Type-Options: nosniff');
     expect(headers).toContain('Permissions-Policy:');
     expect(headers).not.toMatch(/unsafe-inline|unsafe-eval/);
-    expect(headers).not.toContain('Strict-Transport-Security');
+    expect(headers).toContain('Strict-Transport-Security: max-age=31536000');
     expect(headers.match(/'sha256-/g)).toHaveLength(3);
   });
 

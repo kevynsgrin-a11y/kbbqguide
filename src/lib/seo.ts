@@ -1,4 +1,10 @@
 import type { CompleteRecipe } from '../schemas/recipe';
+import { categoryBySlug } from './categories';
+import { recipeAccountability } from './publication-governance';
+import {
+  isApprovedRecipeStructuredDataImageSet,
+  type ApprovedRecipeStructuredDataImageSet,
+} from './recipe-structured-data-images';
 
 export const siteOrigin = 'https://kbbqguide.com';
 
@@ -69,7 +75,34 @@ function ingredientText(
     .join(', ');
 }
 
-export function recipeJsonLd(recipe: CompleteRecipe, path: string) {
+/**
+ * Emits Recipe JSON-LD only for a fully attributable, published recipe with
+ * approved public image evidence. Drafts and records without that evidence
+ * return null, which keeps callers fail-closed even if they miss a release
+ * state check.
+ */
+export function recipeJsonLd(
+  recipe: CompleteRecipe,
+  path: string,
+  imageSet: ApprovedRecipeStructuredDataImageSet | null = null,
+) {
+  const accountability = recipeAccountability(recipe);
+  if (
+    accountability === null ||
+    !isApprovedRecipeStructuredDataImageSet(imageSet, recipe.id)
+  )
+    return null;
+
+  const approvedImages = imageSet.urls;
+
+  const category = categoryBySlug(recipe.category);
+  const keywords = [
+    ...new Set([recipe.primaryKeyword, ...recipe.secondaryTopics]),
+  ]
+    .map((keyword) => keyword.trim())
+    .filter(Boolean)
+    .join(', ');
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Recipe',
@@ -78,7 +111,17 @@ export function recipeJsonLd(recipe: CompleteRecipe, path: string) {
     name: recipe.title,
     description: recipe.shortDescription,
     inLanguage: 'en',
-    recipeCategory: recipe.category,
+    image: approvedImages,
+    author: {
+      '@type': 'Person',
+      name: accountability.author.name,
+      url: accountability.author.profileUrl,
+    },
+    datePublished: accountability.publishedAt,
+    dateModified: accountability.materiallyUpdatedAt,
+    recipeCuisine: 'Korean',
+    recipeCategory: category.label,
+    keywords,
     recipeYield: `${recipe.yield} ${recipe.servingUnit}`,
     prepTime: durationToIso(recipe.prepTime.minutes),
     cookTime: durationToIso(recipe.cookTime.minutes),

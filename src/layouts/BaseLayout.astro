@@ -16,6 +16,7 @@ interface Props {
   socialImageAlt?: string;
   socialImageWidth?: number;
   socialImageHeight?: number;
+  openGraphType?: 'website' | 'article';
   robotsContent?: 'noindex,nofollow,noarchive' | 'index,follow';
 }
 
@@ -29,6 +30,7 @@ const {
   socialImageAlt,
   socialImageWidth,
   socialImageHeight,
+  openGraphType = 'website',
   robotsContent,
 } = Astro.props;
 const siteName = 'KBBQGuide';
@@ -40,6 +42,10 @@ const isPreview = releaseState.mode !== 'public-launch';
 const socialImageUrl = socialImage
   ? new globalThis.URL(socialImage, canonical).href
   : null;
+// Article semantics travel with a verified social image. This prevents a
+// noindex draft or incomplete record from presenting as a published article.
+const socialOpenGraphType =
+  socialImageUrl && openGraphType === 'article' ? 'article' : 'website';
 ---
 
 <!doctype html>
@@ -55,7 +61,7 @@ const socialImageUrl = socialImage
     <link rel="canonical" href={canonical} />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={socialOpenGraphType} />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -72,7 +78,7 @@ const socialImageUrl = socialImage
       )
     }
     {
-      socialImageAlt && (
+      socialImageUrl && socialImageAlt && (
         <meta property="og:image:alt" content={socialImageAlt} />
       )
     }
@@ -84,7 +90,7 @@ const socialImageUrl = socialImage
     <meta name="twitter:description" content={description} />
     {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
     {
-      socialImageAlt && (
+      socialImageUrl && socialImageAlt && (
         <meta name="twitter:image:alt" content={socialImageAlt} />
       )
     }

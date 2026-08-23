@@ -1,0 +1,102 @@
+{
+  "contentStatus": "complete",
+  "editorialStatus": "published",
+  "id": "P02",
+  "title": "Evidence Fixture Beef",
+  "shortDescription": "A distinct fixture recipe used to verify publication evidence controls.",
+  "primaryKeyword": "evidence fixture beef",
+  "seoTitle": "Evidence Fixture Beef | KBBQ Guide",
+  "metaDescription": "A distinct publication-evidence fixture with cited temperature and storage controls for release-time validation.",
+  "canonicalUrl": "https://kbbqguide.com/recipes/fixtures/p01/",
+  "createdAt": "2026-08-01",
+  "updatedAt": "2026-08-03",
+  "materiallyUpdatedAt": "2026-08-03",
+  "publishedAt": "2026-08-02",
+  "author": "Fixture Author Two",
+  "authorProfileUrl": "https://profiles.test/fixture-author-two",
+  "testCookStatus": "approved",
+  "foodSafetyReview": "approved",
+  "koreanLanguageReview": "approved",
+  "editorialReviewStatus": "approved",
+  "reviewGates": {
+    "testCook": {
+      "status": "approved",
+      "reviewerName": "Test Cook",
+      "reviewerProfileUrl": "https://profiles.test/test-cook",
+      "reviewerRole": "Test cook",
+      "reviewerCredential": null,
+      "reviewedAt": "2026-08-01",
+      "evidence": "https://records.test/test-cook"
+    },
+    "foodSafety": {
+      "status": "approved",
+      "reviewerName": "Food Safety",
+      "reviewerProfileUrl": "https://profiles.test/food-safety",
+      "reviewerRole": "Food-safety reviewer",
+      "reviewerCredential": "Food-safety credential",
+      "reviewedAt": "2026-08-01",
+      "evidence": "https://records.test/food-safety"
+    },
+    "koreanLanguage": {
+      "status": "approved",
+      "reviewerName": "Language Reviewer",
+      "reviewerProfileUrl": "https://profiles.test/language",
+      "reviewerRole": "Korean-language reviewer",
+      "reviewerCredential": null,
+      "reviewedAt": "2026-08-01",
+      "evidence": "https://records.test/language"
+    },
+    "editorial": {
+      "status": "approved",
+      "reviewerName": "Editor",
+      "reviewerProfileUrl": "https://profiles.test/editor",
+      "reviewerRole": "Editor",
+      "reviewerCredential": null,
+      "reviewedAt": "2026-08-01",
+      "evidence": "https://records.test/editor"
+    }
+  },
+  "imageManifestIds": ["P02-hero"],
+  "prepTime": { "minutes": 10 },
+  "marinateTime": { "minutes": 0 },
+  "cookTime": { "minutes": 5 },
+  "restTime": { "minutes": 0 },
+  "totalTime": { "minutes": 99 },
+  "ingredientGroups": [
+    {
+      "ingredients": [
+        { "item": "beef", "allergenNotes": [] },
+        { "item": "gochugaru", "allergenNotes": ["soy"] }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "heading": "Cook",
+      "action": "Cook beef until it is ready.",
+      "visualOrTactileCue": "The surface is browned.",
+      "safetyNote": "Use a thermometer."
+    }
+  ],
+  "targetInternalTemperature": "145°F / 63°C",
+  "foodSafetyNotes": ["Verify temperature with a clean thermometer."],
+  "storage": "Refrigerate leftovers promptly.",
+  "reheating": "Reheat from chilled storage.",
+  "leftovers": "Store leftovers in a covered container.",
+  "allergens": {
+    "soy": false,
+    "wheatGluten": false,
+    "sesame": false,
+    "fish": false,
+    "shellfish": false,
+    "egg": false,
+    "dairy": false,
+    "peanuts": false,
+    "treeNuts": false,
+    "alcohol": false,
+    "crossContactWarning": "Check labels."
+  },
+  "relatedRecipeIds": ["P02", "MISSING"],
+  "menuPairings": ["P02"],
+  "sourcesAndEditorialNotes": ["Technique note: https://sources.test/technique"]
+}

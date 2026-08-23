@@ -50,16 +50,24 @@ const isPreview = releaseState.mode !== 'public-launch';
         <a href={registryPathById(registry, 'POL_SPONSORED')}
           >Sponsored content policy</a
         >
-        <span class="nav-future" aria-disabled="true"
-          >Editorial policy · reserved</span
+        <a href={registryPathById(registry, 'POL_EDITORIAL')}
+          >Editorial policy</a
         >
-        <span class="nav-future" aria-disabled="true"
-          >Recipe testing policy · reserved</span
+        <a href={registryPathById(registry, 'POL_TESTING')}
+          >Recipe testing policy</a
         >
-        <span class="nav-future" aria-disabled="true"
-          >Accessibility · reserved</span
+        <a href={registryPathById(registry, 'POL_ACCESSIBILITY')}
+          >Accessibility</a
         >
         <a href={registryPathById(registry, 'SYS_SITEMAP')}>HTML sitemap</a>
+      </nav>
+      <nav class="footer-links" aria-label="Trust and contact routes">
+        <strong>Trust</strong>
+        <a href={registryPathById(registry, 'SYS_ABOUT')}>About</a>
+        <a href={registryPathById(registry, 'SYS_CONTACT')}>Contact</a>
+        <a href={registryPathById(registry, 'POL_PRIVACY')}>Privacy policy</a>
+        <a href={registryPathById(registry, 'POL_TERMS')}>Terms</a>
+        <a href={registryPathById(registry, 'POL_CORRECTIONS')}>Corrections</a>
       </nav>
     </div>
     <p class="fine-print">

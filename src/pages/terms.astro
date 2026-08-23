@@ -1,0 +1,67 @@
+---
+import registryData from '../../data/url-registry.json';
+import TrustRouteStatus from '../components/TrustRouteStatus.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  trustRouteConfig,
+  trustRoutePublication,
+  trustRouteRobotsContent,
+} from '../lib/trust-routes';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'POL_TERMS');
+const publication = trustRoutePublication('terms');
+const robotsContent = trustRouteRobotsContent('terms');
+const terms = trustRouteConfig.terms;
+---
+
+<BaseLayout
+  title="Terms"
+  description="KBBQGuide terms publication status."
+  canonicalPath={path}
+  {robotsContent}
+>
+  <section class="section">
+    <div class="shell reading-width policy-stack">
+      <p class="eyebrow">Terms</p>
+      <h1>Terms of use</h1>
+      {
+        publication.status === 'approved' ? (
+          <>
+            <p>
+              <strong>Effective:</strong> {terms.effectiveDate}
+              <br />
+              <strong>Operator:</strong> {terms.legalOperatorName}
+              <br />
+              <strong>Contact:</strong>{' '}
+              <a href={`mailto:${terms.publicContactEmail}`}>
+                {terms.publicContactEmail}
+              </a>
+            </p>
+            {terms
+              .termsBody!.split(/\n\s*\n/)
+              .filter(Boolean)
+              .map((paragraph) => (
+                <p>{paragraph}</p>
+              ))}
+            <p>
+              <strong>Governing law:</strong> {terms.governingLaw}
+            </p>
+          </>
+        ) : (
+          <>
+            <p class="lede">
+              No terms are being represented as legally complete until the
+              accountable legal information and approved text are supplied.
+            </p>
+            <TrustRouteStatus
+              routeLabel="Terms of use"
+              blockers={publication.blockers}
+            />
+          </>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

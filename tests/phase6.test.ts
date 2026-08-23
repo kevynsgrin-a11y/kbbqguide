@@ -60,12 +60,12 @@ describe('Phase 6 revenue, social, email, messaging, and analytics handoff gate'
   it('renders adjacent material-connection language without active paid destinations', () => {
     const disclosure = source('src/components/AffiliateDisclosure.astro');
     const shop = source('src/pages/shop/index.astro');
-    expect(disclosure).toContain('data-affiliate-status="inactive"');
+    expect(disclosure).toContain('data-affiliate-status=');
     expect(disclosure).toContain('No affiliate relationship is active');
     expect(shop).toContain('<AffiliateDisclosure');
     expect(shop).not.toMatch(/href=["']https?:/);
     expect(source('src/pages/affiliate-disclosure.astro')).toContain(
-      'mark paid links as sponsored',
+      'rel=&quot;sponsored nofollow&quot;',
     );
     expect(source('src/pages/sponsored-content-policy.astro')).toContain(
       'Editorial independence',
@@ -174,7 +174,7 @@ describe('Phase 6 revenue, social, email, messaging, and analytics handoff gate'
   });
 
   it('adds only registry-backed implemented Phase 6 routes', () => {
-    expect(registry.entries).toHaveLength(125);
+    expect(registry.entries).toHaveLength(126);
     expect(
       registry.entries.filter((entry) => entry.type === 'recipe'),
     ).toHaveLength(80);
@@ -183,6 +183,7 @@ describe('Phase 6 revenue, social, email, messaging, and analytics handoff gate'
       'SYS_NEWSLETTER',
       'POL_AFFILIATE',
       'POL_SPONSORED',
+      'POL_CORRECTIONS',
       'SYS_CLASS',
       'SYS_MEDIA_KIT',
       'SYS_LICENSING',

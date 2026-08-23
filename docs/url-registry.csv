@@ -25,15 +25,16 @@ SYS_MENUS,system,Menus,menus,/menus/,https://kbbqguide.com/menus/,locked,true
 SYS_SHOP,system,Shop,shop,/shop/,https://kbbqguide.com/shop/,locked,true
 SYS_VIDEOS,system,Videos,videos,/videos/,https://kbbqguide.com/videos/,locked,true
 SYS_ABOUT,system,About,about,/about/,https://kbbqguide.com/about/,locked,true
-SYS_CONTACT,system,Contact,contact,/contact/,https://kbbqguide.com/contact/,locked,true
+SYS_CONTACT,system,Contact,contact,/contact/,https://kbbqguide.com/contact/,locked,false
 SYS_NEWSLETTER,system,Newsletter,newsletter,/newsletter/,https://kbbqguide.com/newsletter/,locked,true
 POL_AFFILIATE,policy,Affiliate Disclosure,affiliate-disclosure,/affiliate-disclosure/,https://kbbqguide.com/affiliate-disclosure/,locked,true
 POL_SPONSORED,policy,Sponsored Content Policy,sponsored-content-policy,/sponsored-content-policy/,https://kbbqguide.com/sponsored-content-policy/,locked,true
 POL_EDITORIAL,policy,Editorial Policy,editorial-policy,/editorial-policy/,https://kbbqguide.com/editorial-policy/,locked,true
 POL_TESTING,policy,Recipe Testing Policy,recipe-testing-policy,/recipe-testing-policy/,https://kbbqguide.com/recipe-testing-policy/,locked,true
-POL_PRIVACY,policy,Privacy,privacy,/privacy/,https://kbbqguide.com/privacy/,locked,true
-POL_TERMS,policy,Terms,terms,/terms/,https://kbbqguide.com/terms/,locked,true
-POL_ACCESSIBILITY,policy,Accessibility,accessibility,/accessibility/,https://kbbqguide.com/accessibility/,locked,true
+POL_PRIVACY,policy,Privacy Policy,privacy-policy,/privacy-policy/,https://kbbqguide.com/privacy-policy/,locked,false
+POL_TERMS,policy,Terms,terms,/terms/,https://kbbqguide.com/terms/,locked,false
+POL_ACCESSIBILITY,policy,Accessibility,accessibility,/accessibility/,https://kbbqguide.com/accessibility/,locked,false
+POL_CORRECTIONS,policy,Corrections,corrections,/corrections/,https://kbbqguide.com/corrections/,locked,false
 POL_COOKIE,policy,Cookie Preferences,cookie-preferences,/cookie-preferences/,https://kbbqguide.com/cookie-preferences/,locked,false
 MENU_2,system,Korean BBQ Menu for 2,2-guests,/menus/2-guests/,https://kbbqguide.com/menus/2-guests/,locked,true
 MENU_4,system,Korean BBQ Menu for 4,4-guests,/menus/4-guests/,https://kbbqguide.com/menus/4-guests/,locked,true

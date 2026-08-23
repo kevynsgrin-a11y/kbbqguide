@@ -1,0 +1,87 @@
+---
+import registryData from '../../data/url-registry.json';
+import TrustRouteStatus from '../components/TrustRouteStatus.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { approvedPrivacyNotice } from '../lib/privacy-notice';
+import {
+  trustRoutePublication,
+  trustRouteRobotsContent,
+} from '../lib/trust-routes';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'POL_PRIVACY');
+const publication = trustRoutePublication('privacy-policy');
+const robotsContent = trustRouteRobotsContent('privacy-policy');
+const notice =
+  publication.status === 'approved' ? approvedPrivacyNotice() : null;
+---
+
+<BaseLayout
+  title="Privacy Policy"
+  description="KBBQGuide privacy-policy publication status and approved processing disclosures."
+  canonicalPath={path}
+  {robotsContent}
+>
+  <section class="section">
+    <div class="shell reading-width policy-stack">
+      <p class="eyebrow">Privacy</p>
+      <h1>Privacy policy</h1>
+      {
+        notice ? (
+          <>
+            <p>
+              <strong>Effective:</strong> {notice.effectiveDate}
+            </p>
+            <p>
+              KBBQGuide is operated by {notice.legalOperatorName}. Questions or
+              rights requests can be sent to{' '}
+              <a href={`mailto:${notice.privacyContactEmail}`}>
+                {notice.privacyContactEmail}
+              </a>
+              .
+            </p>
+            <section>
+              <h2>Hosting and security</h2>
+              <p>
+                {notice.hostingAndEdgeProvider} provides hosting and edge
+                delivery. {notice.hostingAndEdgeLogRetention}
+              </p>
+            </section>
+            <section>
+              <h2>Analytics and network-error reporting</h2>
+              <p>{notice.analyticsProcessingStatement}</p>
+              <p>
+                The performance beacon loads from {notice.analyticsBeaconHost}{' '}
+                and sends timing data to Cloudflare's reporting endpoint.{' '}
+                {notice.networkErrorReportingStatement}
+              </p>
+              <p>{notice.crossSiteAdvertisingStatement}</p>
+            </section>
+            <section>
+              <h2>Cookies, rights, and changes</h2>
+              <p>{notice.cookieOrSimilarTechnologyStatement}</p>
+              <p>{notice.rightsRequestMethod}</p>
+              <p>
+                Material changes will be posted on this route with an updated
+                effective date.
+              </p>
+            </section>
+          </>
+        ) : (
+          <>
+            <p class="lede">
+              The full privacy policy is pending owner approval of the actual
+              controller, contact, processing, retention, and rights-request
+              facts.
+            </p>
+            <TrustRouteStatus
+              routeLabel="Privacy policy"
+              blockers={publication.blockers}
+            />
+          </>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

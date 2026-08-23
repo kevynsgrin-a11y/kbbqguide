@@ -38,8 +38,11 @@ for (const [name, expected] of Object.entries(requiredHeaders)) {
 if (!headers.get('permissions-policy')?.includes('camera=()')) {
   throw new Error('Permissions-Policy does not deny camera access.');
 }
-if (headers.has('strict-transport-security')) {
-  throw new Error('HSTS must wait for an approved HTTPS production domain.');
+const hsts = headers.get('strict-transport-security');
+if (hsts !== 'max-age=31536000') {
+  throw new Error(
+    'Expected the approved one-year, host-only HSTS rollout policy.',
+  );
 }
 
 const csp = headers.get('content-security-policy');
@@ -132,6 +135,6 @@ stdout.write(
     cspDirectives: directives.size,
     executableInlineModules: executableHashes.size,
     inlineStyles: inlineStyleCount,
-    hstsDeferred: true,
+    hstsPolicy: 'one-year-host-only',
   })}\n`,
 );

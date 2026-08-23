@@ -1,0 +1,46 @@
+---
+import registryData from '../../data/url-registry.json';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'POL_EDITORIAL');
+---
+
+<BaseLayout
+  title="Editorial Policy"
+  description="KBBQGuide editorial independence, evidence, review, and correction standards."
+  canonicalPath={path}
+>
+  <section class="section">
+    <div class="shell reading-width policy-stack">
+      <p class="eyebrow">Editorial standards</p>
+      <h1>Editorial policy</h1>
+      <section>
+        <h2>Publication is evidence-led</h2>
+        <p>
+          Content starts as a draft. A recipe is not eligible for public
+          discovery, Recipe structured data, or promotional modules until its
+          recorded gates identify a test cook, food-safety reviewer,
+          Korean-language reviewer, editorial reviewer, dates, and evidence.
+        </p>
+      </section>
+      <section>
+        <h2>Commercial arrangements do not decide conclusions</h2>
+        <p>
+          Compensation, merchant eligibility, and advertising status do not
+          establish a product's quality, safety, rank, suitability, price,
+          stock, or firsthand testing. Those claims require separate evidence.
+        </p>
+      </section>
+      <section>
+        <h2>Updates and corrections</h2>
+        <p>
+          Materially changed published content must carry a real update date.
+          Corrections are handled through the corrections protocol and must not
+          erase the evidence record that prompted the change.
+        </p>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

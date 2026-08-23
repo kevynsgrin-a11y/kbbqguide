@@ -1,20 +1,49 @@
 ---
+import {
+  affiliateDisclosureReadiness,
+  affiliateRelationshipStatus,
+  approvedAffiliateDisclosure,
+} from '../lib/affiliate-policy';
+
 interface Props {
   compact?: boolean;
 }
 
 const { compact = false } = Astro.props;
+const blockers = affiliateDisclosureReadiness();
+const policyDisclosure =
+  blockers.length === 0 ? approvedAffiliateDisclosure() : null;
+const relationshipStatus = affiliateRelationshipStatus(
+  Boolean(policyDisclosure),
+);
 ---
 
 <aside
   class:list={['affiliate-disclosure', { compact }]}
-  data-affiliate-status="inactive"
+  data-affiliate-status={relationshipStatus}
+  data-affiliate-policy-status={policyDisclosure ? 'approved' : 'blocked'}
   aria-label="Material connection disclosure"
 >
-  <strong>No affiliate relationship is active.</strong>
-  <p>
-    Merchant names appear only as pending research candidates. This preview has
-    no paid destination, affiliate ID, price, stock, coupon, ranking, or
-    firsthand product-testing claim.
-  </p>
+  {
+    relationshipStatus === 'active' && policyDisclosure ? (
+      <>
+        <strong>Affiliate relationship disclosure</strong>
+        <p>{policyDisclosure.adjacentDisclosureCopy}</p>
+        <p>
+          Paid links use <code>rel=&quot;sponsored nofollow&quot;</code>.
+          Compensation does not decide a product's inclusion, test result,
+          safety, suitability, or rank.
+        </p>
+      </>
+    ) : (
+      <>
+        <strong>No affiliate relationship is active.</strong>
+        <p>
+          Merchant names appear only as pending research candidates. This
+          preview has no paid destination, affiliate ID, price, stock, coupon,
+          ranking, or firsthand product-testing claim.
+        </p>
+      </>
+    )
+  }
 </aside>

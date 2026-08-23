@@ -35,6 +35,10 @@ export interface MediaManifestAsset {
     externalLicense: string | null;
   };
   qa: Record<string, string>;
+  /** Human sign-off is distinct from automated implementation screening. */
+  humanEditorialReview?: {
+    status?: string;
+  };
   /** Set by media:ingest when this asset has been superseded by a replacement. */
   status?: 'replaced';
   replacedBy?: string;
@@ -125,6 +129,77 @@ export function resolveMedia(mediaId: string): ResolvedMedia | null {
       `Manifest asset ${asset.assetId} has unsupported mobile crop ${asset.mobileCrop}`,
     );
   return { ...asset, image, focalPointClass, mobileCropClass };
+}
+
+const structuredDataImageStatuses = new Set<MediaAssetStatus>([
+  'original-approved',
+  'licensed-approved',
+]);
+const licensePlaceholderPattern =
+  /\{\{[^}]+\}\}|^\s*(?:tbd|todo|unknown|n\/a|none)\s*$/i;
+
+function hasRequiredExternalLicense(
+  assetStatus: MediaAssetStatus,
+  externalLicense: string | null,
+): boolean {
+  return (
+    assetStatus !== 'licensed-approved' ||
+    (typeof externalLicense === 'string' &&
+      externalLicense.trim().length >= 2 &&
+      !licensePlaceholderPattern.test(externalLicense.trim()))
+  );
+}
+
+/**
+ * The shared runtime predicate for a recipe image claim. A licensed asset is
+ * never public merely because its status says licensed: it must also carry the
+ * actual license record that substantiates that status.
+ */
+export function isApprovedRecipeStructuredDataMedia(
+  media: ResolvedMedia,
+  recipeId: string,
+): boolean {
+  return (
+    media.status !== 'replaced' &&
+    media.role === 'finished-dish-hero' &&
+    structuredDataImageStatuses.has(media.assetStatus) &&
+    hasRequiredExternalLicense(
+      media.assetStatus,
+      media.rights.externalLicense,
+    ) &&
+    media.provenance.sourceRecord === recipeId &&
+    media.altDecision === 'informative' &&
+    media.altText.trim().length >= 20 &&
+    media.humanEditorialReview?.status === 'approved'
+  );
+}
+
+/**
+ * Returns only real, reviewed finished-dish media that can substantiate a
+ * public Recipe image claim. Synthetic, placeholder, replaced, decorative,
+ * unreviewed, or cross-record assets intentionally never enter JSON-LD.
+ */
+export function approvedRecipeStructuredDataMedia(
+  recipeId: string,
+  mediaIds: readonly string[],
+): readonly ResolvedMedia[] {
+  const resolvedIds = new Set<string>();
+  const approved: ResolvedMedia[] = [];
+
+  for (const mediaId of mediaIds) {
+    const media = resolveMedia(mediaId);
+    if (
+      media === null ||
+      resolvedIds.has(media.assetId) ||
+      !isApprovedRecipeStructuredDataMedia(media, recipeId)
+    )
+      continue;
+
+    resolvedIds.add(media.assetId);
+    approved.push(media);
+  }
+
+  return approved;
 }
 
 export function mediaAssetCount(): number {

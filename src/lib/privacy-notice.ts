@@ -12,6 +12,10 @@ export interface PrivacyNoticeDraft {
   readonly hostingAndEdgeLogRetention: string | null;
   readonly analyticsProvider: string | null;
   readonly analyticsRetention: string | null;
+  readonly analyticsProcessingStatement: string | null;
+  readonly analyticsBeaconHost: string | null;
+  readonly networkErrorReportingStatement: string | null;
+  readonly crossSiteAdvertisingStatement: string | null;
   readonly cookieOrSimilarTechnologyStatement: string | null;
   readonly rightsRequestMethod: string | null;
   readonly approvedBy: string | null;
@@ -27,6 +31,10 @@ export interface ApprovedPrivacyNotice {
   readonly hostingAndEdgeLogRetention: string;
   readonly analyticsProvider: string;
   readonly analyticsRetention: string;
+  readonly analyticsProcessingStatement: string;
+  readonly analyticsBeaconHost: string;
+  readonly networkErrorReportingStatement: string;
+  readonly crossSiteAdvertisingStatement: string;
   readonly cookieOrSimilarTechnologyStatement: string;
   readonly rightsRequestMethod: string;
   readonly approvedBy: string;
@@ -44,6 +52,10 @@ const requiredFields: ReadonlyArray<keyof ApprovedPrivacyNotice> = [
   'hostingAndEdgeLogRetention',
   'analyticsProvider',
   'analyticsRetention',
+  'analyticsProcessingStatement',
+  'analyticsBeaconHost',
+  'networkErrorReportingStatement',
+  'crossSiteAdvertisingStatement',
   'cookieOrSimilarTechnologyStatement',
   'rightsRequestMethod',
   'approvedBy',
@@ -51,11 +63,12 @@ const requiredFields: ReadonlyArray<keyof ApprovedPrivacyNotice> = [
 ];
 
 function isVerifiedValue(value: string | null): value is string {
-  return Boolean(value?.trim()) && !/\{\{[^}]+\}\}/.test(value);
+  if (typeof value !== 'string' || !value.trim()) return false;
+  return !/\{\{[^}]+\}\}/.test(value);
 }
 
 export function privacyNoticeReadiness(): readonly string[] {
-  const missing = requiredFields.filter(
+  const missing: string[] = requiredFields.filter(
     (field) => !isVerifiedValue(draft[field]),
   );
   if (draft.publicationStatus !== 'approved')
@@ -66,6 +79,39 @@ export function privacyNoticeReadiness(): readonly string[] {
   )
     missing.push('blockedReason');
   return missing;
+}
+
+function materializeApprovedPrivacyNotice(): ApprovedPrivacyNotice {
+  return {
+    legalOperatorName: draft.legalOperatorName!,
+    privacyContactEmail: draft.privacyContactEmail!,
+    postalAddress: draft.postalAddress!,
+    effectiveDate: draft.effectiveDate!,
+    hostingAndEdgeProvider: draft.hostingAndEdgeProvider!,
+    hostingAndEdgeLogRetention: draft.hostingAndEdgeLogRetention!,
+    analyticsProvider: draft.analyticsProvider!,
+    analyticsRetention: draft.analyticsRetention!,
+    analyticsProcessingStatement: draft.analyticsProcessingStatement!,
+    analyticsBeaconHost: draft.analyticsBeaconHost!,
+    networkErrorReportingStatement: draft.networkErrorReportingStatement!,
+    crossSiteAdvertisingStatement: draft.crossSiteAdvertisingStatement!,
+    cookieOrSimilarTechnologyStatement:
+      draft.cookieOrSimilarTechnologyStatement!,
+    rightsRequestMethod: draft.rightsRequestMethod!,
+    approvedBy: draft.approvedBy!,
+    approvedAt: draft.approvedAt!,
+  };
+}
+
+/**
+ * Returns factual policy data only after the full notice has passed its public
+ * publication gate. Non-policy consumers can use this to fail closed without
+ * converting a missing operator identity into a build error.
+ */
+export function approvedPrivacyNoticeOrNull(): ApprovedPrivacyNotice | null {
+  return privacyNoticeReadiness().length === 0
+    ? materializeApprovedPrivacyNotice()
+    : null;
 }
 
 /**
@@ -80,19 +126,5 @@ export function approvedPrivacyNotice(): ApprovedPrivacyNotice {
     );
   }
 
-  return {
-    legalOperatorName: draft.legalOperatorName!,
-    privacyContactEmail: draft.privacyContactEmail!,
-    postalAddress: draft.postalAddress!,
-    effectiveDate: draft.effectiveDate!,
-    hostingAndEdgeProvider: draft.hostingAndEdgeProvider!,
-    hostingAndEdgeLogRetention: draft.hostingAndEdgeLogRetention!,
-    analyticsProvider: draft.analyticsProvider!,
-    analyticsRetention: draft.analyticsRetention!,
-    cookieOrSimilarTechnologyStatement:
-      draft.cookieOrSimilarTechnologyStatement!,
-    rightsRequestMethod: draft.rightsRequestMethod!,
-    approvedBy: draft.approvedBy!,
-    approvedAt: draft.approvedAt!,
-  };
+  return materializeApprovedPrivacyNotice();
 }

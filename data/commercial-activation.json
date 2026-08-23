@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "modules": [
+    {
+      "moduleId": "REV_PANTRY",
+      "status": "disabled",
+      "collectsEmail": false,
+      "offersPaidService": false,
+      "gates": {
+        "merchantOrProviderContractApproved": false,
+        "exactItemOrServiceEvidenceComplete": false,
+        "adjacentDisclosureCopyApproved": false,
+        "relSponsoredAppliedToPaidLinks": false,
+        "privacyPolicyUpdated": false,
+        "consentAndSuppressionConfiguredIfEmail": false,
+        "priceAndAvailabilityCheckedAtDisplayTime": false,
+        "refundTaxDeliveryTermsPublishedIfPaid": false,
+        "accessibilityQaComplete": false,
+        "securityAndRateLimitReviewComplete": false
+      }
+    },
+    {
+      "moduleId": "REV_BEGINNER_SETUP",
+      "status": "disabled",
+      "collectsEmail": false,
+      "offersPaidService": false,
+      "gates": {
+        "merchantOrProviderContractApproved": false,
+        "exactItemOrServiceEvidenceComplete": false,
+        "adjacentDisclosureCopyApproved": false,
+        "relSponsoredAppliedToPaidLinks": false,
+        "privacyPolicyUpdated": false,
+        "consentAndSuppressionConfiguredIfEmail": false,
+        "priceAndAvailabilityCheckedAtDisplayTime": false,
+        "refundTaxDeliveryTermsPublishedIfPaid": false,
+        "accessibilityQaComplete": false,
+        "securityAndRateLimitReviewComplete": false
+      }
+    },
+    {
+      "moduleId": "REV_SAFETY_KIT",
+      "status": "disabled",
+      "collectsEmail": false,
+      "offersPaidService": false,
+      "gates": {
+        "merchantOrProviderContractApproved": false,
+        "exactItemOrServiceEvidenceComplete": false,
+        "adjacentDisclosureCopyApproved": false,
+        "relSponsoredAppliedToPaidLinks": false,
+        "privacyPolicyUpdated": false,
+        "consentAndSuppressionConfiguredIfEmail": false,
+        "priceAndAvailabilityCheckedAtDisplayTime": false,
+        "refundTaxDeliveryTermsPublishedIfPaid": false,
+        "accessibilityQaComplete": false,
+        "securityAndRateLimitReviewComplete": false
+      }
+    },
+    {
+      "moduleId": "REV_HOSTING",
+      "status": "disabled",
+      "collectsEmail": false,
+      "offersPaidService": false,
+      "gates": {
+        "merchantOrProviderContractApproved": false,
+        "exactItemOrServiceEvidenceComplete": false,
+        "adjacentDisclosureCopyApproved": false,
+        "relSponsoredAppliedToPaidLinks": false,
+        "privacyPolicyUpdated": false,
+        "consentAndSuppressionConfiguredIfEmail": false,
+        "priceAndAvailabilityCheckedAtDisplayTime": false,
+        "refundTaxDeliveryTermsPublishedIfPaid": false,
+        "accessibilityQaComplete": false,
+        "securityAndRateLimitReviewComplete": false
+      }
+    },
+    {
+      "moduleId": "REV_PREP",
+      "status": "disabled",
+      "collectsEmail": false,
+      "offersPaidService": false,
+      "gates": {
+        "merchantOrProviderContractApproved": false,
+        "exactItemOrServiceEvidenceComplete": false,
+        "adjacentDisclosureCopyApproved": false,
+        "relSponsoredAppliedToPaidLinks": false,
+        "privacyPolicyUpdated": false,
+        "consentAndSuppressionConfiguredIfEmail": false,
+        "priceAndAvailabilityCheckedAtDisplayTime": false,
+        "refundTaxDeliveryTermsPublishedIfPaid": false,
+        "accessibilityQaComplete": false,
+        "securityAndRateLimitReviewComplete": false
+      }
+    },
+    {
+      "moduleId": "REV_SERVEWARE",
+      "status": "disabled",
+      "collectsEmail": false,
+      "offersPaidService": false,
+      "gates": {
+        "merchantOrProviderContractApproved": false,
+        "exactItemOrServiceEvidenceComplete": false,
+        "adjacentDisclosureCopyApproved": false,
+        "relSponsoredAppliedToPaidLinks": false,
+        "privacyPolicyUpdated": false,
+        "consentAndSuppressionConfiguredIfEmail": false,
+        "priceAndAvailabilityCheckedAtDisplayTime": false,
+        "refundTaxDeliveryTermsPublishedIfPaid": false,
+        "accessibilityQaComplete": false,
+        "securityAndRateLimitReviewComplete": false
+      }
+    },
+    {
+      "moduleId": "REV_RECIPE_SUPPORT",
+      "status": "disabled",
+      "collectsEmail": false,
+      "offersPaidService": false,
+      "gates": {
+        "merchantOrProviderContractApproved": false,
+        "exactItemOrServiceEvidenceComplete": false,
+        "adjacentDisclosureCopyApproved": false,
+        "relSponsoredAppliedToPaidLinks": false,
+        "privacyPolicyUpdated": false,
+        "consentAndSuppressionConfiguredIfEmail": false,
+        "priceAndAvailabilityCheckedAtDisplayTime": false,
+        "refundTaxDeliveryTermsPublishedIfPaid": false,
+        "accessibilityQaComplete": false,
+        "securityAndRateLimitReviewComplete": false
+      }
+    }
+  ]
+}

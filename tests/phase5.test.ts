@@ -98,7 +98,7 @@ describe('Phase 5 SEO, guides, menus, and tools handoff gate', () => {
     expect(tools).not.toMatch(/fetch\(|localStorage|sessionStorage/);
   });
 
-  it('builds preview-safe canonicals and honest Recipe, BreadcrumbList, and ItemList JSON-LD', () => {
+  it('builds preview-safe canonicals and suppresses draft Recipe JSON-LD', () => {
     expect(canonicalUrl('/guides/')).toBe('https://kbbqguide.com/guides/');
     expect(() => canonicalUrl('/unsafe/../path/')).toThrow(/unsafe/i);
     const recipe = recipes[0];
@@ -108,14 +108,7 @@ describe('Phase 5 SEO, guides, menus, and tools handoff gate', () => {
       recipe,
       registry.entries.find((entry) => entry.id === recipe.id)!.path,
     );
-    expect(data['@type']).toBe('Recipe');
-    expect(data.recipeIngredient.length).toBeGreaterThan(0);
-    expect(data.recipeInstructions.length).toBeGreaterThan(0);
-    expect(data).not.toHaveProperty('aggregateRating');
-    expect(data).not.toHaveProperty('review');
-    expect(data).not.toHaveProperty('nutrition');
-    expect(data).not.toHaveProperty('image');
-    expect(data).not.toHaveProperty('video');
+    expect(data).toBeNull();
     expect(breadcrumbJsonLd([{ name: 'Home', path: '/' }])['@type']).toBe(
       'BreadcrumbList',
     );

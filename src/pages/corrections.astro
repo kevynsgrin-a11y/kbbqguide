@@ -1,0 +1,60 @@
+---
+import registryData from '../../data/url-registry.json';
+import TrustRouteStatus from '../components/TrustRouteStatus.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  trustRouteConfig,
+  trustRoutePublication,
+  trustRouteRobotsContent,
+} from '../lib/trust-routes';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'POL_CORRECTIONS');
+const publication = trustRoutePublication('corrections');
+const robotsContent = trustRouteRobotsContent('corrections');
+const corrections = trustRouteConfig.corrections;
+---
+
+<BaseLayout
+  title="Corrections"
+  description="KBBQGuide correction protocol and publication status for its public reporting channel."
+  canonicalPath={path}
+  {robotsContent}
+>
+  <section class="section">
+    <div class="shell reading-width policy-stack">
+      <p class="eyebrow">Corrections</p>
+      <h1>Correction protocol</h1>
+      {
+        publication.status === 'approved' ? (
+          <>
+            <p class="lede">
+              Send a correction report to{' '}
+              <a href={`mailto:${corrections.correctionsEmail}`}>
+                {corrections.correctionsEmail}
+              </a>
+              .
+            </p>
+            <p>
+              The accountable process owner is {corrections.processOwner}. A
+              material correction will identify what changed and update the
+              affected page's date where applicable.
+            </p>
+          </>
+        ) : (
+          <>
+            <p class="lede">
+              The correction workflow is defined, but its accountable public
+              reporting channel and owner are not yet published.
+            </p>
+            <TrustRouteStatus
+              routeLabel="Corrections route"
+              blockers={publication.blockers}
+            />
+          </>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

@@ -80,10 +80,17 @@ const referencedAssetPaths = new Set();
 const renderedMediaIds = new Set();
 const eagerImageCandidates = new Map();
 const routesWithoutLcpMedia = new Set([
+  'about/index.html',
   'affiliate-disclosure/index.html',
+  'accessibility/index.html',
+  'contact/index.html',
+  'corrections/index.html',
+  'editorial-policy/index.html',
   'sponsored-content-policy/index.html',
-  'privacy/index.html',
+  'privacy-policy/index.html',
+  'recipe-testing-policy/index.html',
   'sitemap/index.html',
+  'terms/index.html',
 ]);
 for (const file of contentHtmlFiles) {
   const html = readFileSync(file, 'utf8');
@@ -385,11 +392,15 @@ const requiredArtifacts = [
   'feed.xml',
   'site.webmanifest',
   'favicon.svg',
+  '_redirects',
 ];
 for (const artifact of requiredArtifacts) {
   if (!existsSync(join(dist, artifact)))
     throw new Error(`Missing discovery artifact: ${artifact}`);
 }
+const redirects = readFileSync(join(dist, '_redirects'), 'utf8');
+if (!/^\/privacy\/\s+\/privacy-policy\/\s+301$/m.test(redirects))
+  throw new Error('Missing permanent /privacy/ to /privacy-policy/ redirect.');
 const robots = readFileSync(join(dist, 'robots.txt'), 'utf8');
 if (!robots.includes('Allow: /'))
   throw new Error(

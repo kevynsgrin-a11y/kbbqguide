@@ -28,6 +28,7 @@ const humanReviewGateLabels: Record<HumanReviewGateKey, string> = {
 
 const placeholderPattern =
   /\{\{[^}]+\}\}|^\s*(?:tbd|todo|unknown|n\/a|none|legal[ _-]?name)\s*$/i;
+const isoDatePattern = /^(\d{4})-(\d{2})-(\d{2})$/;
 
 /** Reject placeholders and empty values before they can be surfaced publicly. */
 export function isActualPublicationText(
@@ -57,6 +58,25 @@ export function isActualProfileUrl(
   }
 }
 
+/** Accept only a real calendar day expressed as an ISO-8601 date. */
+export function isActualPublicationDate(
+  value: string | null | undefined,
+): value is string {
+  if (typeof value !== 'string') return false;
+  const match = isoDatePattern.exec(value);
+  if (!match) return false;
+
+  const year = Number.parseInt(match[1] ?? '', 10);
+  const month = Number.parseInt(match[2] ?? '', 10);
+  const day = Number.parseInt(match[3] ?? '', 10);
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  return (
+    parsed.getUTCFullYear() === year &&
+    parsed.getUTCMonth() === month - 1 &&
+    parsed.getUTCDate() === day
+  );
+}
+
 export function hasCompleteHumanGateEvidence(
   gate: HumanReviewGate,
   requiresCredential = false,
@@ -67,7 +87,7 @@ export function hasCompleteHumanGateEvidence(
     isActualProfileUrl(gate.reviewerProfileUrl) &&
     isActualPublicationText(gate.reviewerRole) &&
     (!requiresCredential || isActualPublicationText(gate.reviewerCredential)) &&
-    gate.reviewedAt !== null &&
+    isActualPublicationDate(gate.reviewedAt) &&
     isActualPublicationText(gate.evidence)
   );
 }
@@ -115,9 +135,10 @@ export function recipePublishability(
     blockers.push('named author is missing or unresolved');
   if (!isActualProfileUrl(recipe.authorProfileUrl))
     blockers.push('author profile URL is missing or unresolved');
-  if (recipe.materiallyUpdatedAt === null)
+  if (!isActualPublicationDate(recipe.materiallyUpdatedAt))
     blockers.push('materially updated date is missing');
-  if (recipe.publishedAt === null) blockers.push('publication date is missing');
+  if (!isActualPublicationDate(recipe.publishedAt))
+    blockers.push('publication date is missing');
 
   for (const key of humanReviewGateKeys) {
     if (
@@ -134,6 +155,27 @@ export function recipePublishability(
 
 export function isRecipePublishable(recipe: CompleteRecipe): boolean {
   return recipePublishability(recipe).isPublishable;
+}
+
+/**
+ * Returns the only meaningful sitemap date for a recipe: the later of the
+ * genuine publication date and the most recent material update. It deliberately
+ * returns null for every draft, incomplete record, malformed date, or
+ * non-public recipe so callers cannot emit synthetic `<lastmod>` values.
+ */
+export function recipeSitemapLastModified(
+  recipe: CompleteRecipe,
+): string | null {
+  if (!isRecipePublishable(recipe)) return null;
+  if (
+    !isActualPublicationDate(recipe.publishedAt) ||
+    !isActualPublicationDate(recipe.materiallyUpdatedAt)
+  )
+    return null;
+
+  return recipe.materiallyUpdatedAt > recipe.publishedAt
+    ? recipe.materiallyUpdatedAt
+    : recipe.publishedAt;
 }
 
 function requirePublicationText(
@@ -155,7 +197,8 @@ function requireProfileUrl(
 }
 
 function requirePublicationDate(value: string | null, field: string): string {
-  if (value === null) throw new Error(`Publishable recipe has no ${field}.`);
+  if (!isActualPublicationDate(value))
+    throw new Error(`Publishable recipe has no valid ${field}.`);
   return value;
 }
 
