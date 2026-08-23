@@ -117,13 +117,12 @@ describe('Phase 5 SEO, guides, menus, and tools handoff gate', () => {
     ).toBe('ItemList');
   });
 
-  it('emits every preview discovery artifact while blocking indexing and publication claims', () => {
+  it('emits preview discovery artifacts while blocking indexing, publication claims, and premature PWA installation', () => {
     for (const file of [
       'src/pages/robots.txt.ts',
       'src/pages/sitemap.xml.ts',
       'src/pages/sitemap-index.xml.ts',
       'src/pages/feed.xml.ts',
-      'src/pages/site.webmanifest.ts',
       'src/pages/404.astro',
       'src/pages/sitemap/index.astro',
       'public/favicon.svg',
@@ -136,6 +135,12 @@ describe('Phase 5 SEO, guides, menus, and tools handoff gate', () => {
       false,
     );
     expect(source('src/pages/feed.xml.ts')).toContain('no entries');
+    expect(existsSync(resolve(root, 'src/pages/site.webmanifest.ts'))).toBe(
+      false,
+    );
+    expect(source('src/layouts/BaseLayout.astro')).not.toContain(
+      'rel="manifest"',
+    );
     expect(source('src/layouts/BaseLayout.astro')).toContain(
       'noindex,nofollow,noarchive',
     );

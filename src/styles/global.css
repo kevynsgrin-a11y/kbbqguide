@@ -13,6 +13,27 @@
   --color-pepper-600: #b83c2b;
   --color-warning-700: #8a381f;
   --color-gold-500: #d39a43;
+  /* Semantic aliases keep the visual system stable across system themes while
+     preserving the brand palette for deliberate dark hero/header surfaces. */
+  --surface-canvas: var(--color-cream-50);
+  --surface-subtle: var(--color-cream-100);
+  --surface-raised: #fff;
+  --surface-control: #fff;
+  --surface-positive: #eef5ed;
+  --surface-warning-soft: #fff0ec;
+  --surface-warning: #fff2ed;
+  --surface-notice: #fff6df;
+  --control-overlay: rgb(255 250 240 / 94%);
+  --text-primary: var(--color-charcoal-950);
+  --text-secondary: var(--color-metal-700);
+  --text-accent: var(--color-pepper-600);
+  --text-positive: var(--color-leaf-800);
+  --text-success: var(--color-leaf-700);
+  --text-caution: var(--color-warning-700);
+  --text-warning: #5d201b;
+  --text-notice: #563f18;
+  --border-subtle: var(--color-cream-200);
+  --border-strong: var(--color-metal-500);
   --radius-sm: 0.5rem;
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
@@ -50,10 +71,10 @@ html {
 body {
   margin: 0;
   min-width: 20rem;
-  color: var(--color-charcoal-950);
+  color: var(--text-primary);
   background:
     radial-gradient(circle at 84% 4%, rgb(200 74 53 / 11%), transparent 24rem),
-    var(--color-cream-50);
+    var(--surface-canvas);
   font-size: 1rem;
   line-height: 1.65;
   text-rendering: optimizeLegibility;
@@ -133,7 +154,7 @@ h3 {
 
 .eyebrow {
   margin-block-end: var(--space-3);
-  color: var(--color-pepper-600);
+  color: var(--text-accent);
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -142,7 +163,7 @@ h3 {
 
 .lede {
   max-width: 46rem;
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   font-size: clamp(1.05rem, 2vw, 1.25rem);
 }
 
@@ -169,14 +190,14 @@ button.button {
 }
 
 .button.secondary {
-  border-color: var(--color-metal-500);
-  color: var(--color-charcoal-950);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
   background: transparent;
 }
 
 .button.secondary:hover {
-  border-color: var(--color-charcoal-950);
-  background: var(--color-cream-100);
+  border-color: var(--text-primary);
+  background: var(--surface-subtle);
 }
 
 .skip-link {
@@ -419,7 +440,7 @@ button.button {
   gap: var(--space-2);
   margin: 0;
   padding: 0;
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   font-size: 0.84rem;
   list-style: none;
 }
@@ -672,7 +693,7 @@ button.button {
 }
 
 .section.tinted {
-  background: var(--color-cream-100);
+  background: var(--surface-subtle);
 }
 
 .section-heading {
@@ -692,9 +713,9 @@ button.button {
 .category-card,
 .recipe-card {
   overflow: hidden;
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  background: white;
+  background: var(--surface-raised);
   box-shadow: 0 0.75rem 2rem rgb(21 23 19 / 7%);
   transform-style: preserve-3d;
   transition:
@@ -721,7 +742,7 @@ button.button {
 
 .category-card p,
 .recipe-card p {
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
 }
 
 .card-meta {
@@ -729,7 +750,7 @@ button.button {
   flex-wrap: wrap;
   gap: var(--space-2) var(--space-4);
   margin: 0;
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   font-size: 0.78rem;
   font-weight: 750;
   text-transform: uppercase;
@@ -895,8 +916,8 @@ button.button {
 
 .draft-notice {
   border: 1px solid #c77e73;
-  color: #5d201b;
-  background: #fff0ec;
+  color: var(--text-warning);
+  background: var(--surface-warning-soft);
 }
 
 .draft-notice strong,
@@ -910,8 +931,8 @@ button.button {
   z-index: 10;
   top: 0;
   padding-block: var(--space-3);
-  border-bottom: 1px solid var(--color-cream-200);
-  background: rgb(255 250 240 / 94%);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--control-overlay);
   backdrop-filter: blur(0.75rem);
 }
 
@@ -948,13 +969,13 @@ button.button {
 
 .time-grid div {
   padding: var(--space-3);
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  background: white;
+  background: var(--surface-raised);
 }
 
 .time-grid dt {
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   font-size: 0.7rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -971,7 +992,7 @@ button.button {
 
 .ingredient-group h3 {
   padding-block-end: var(--space-2);
-  border-bottom: 1px solid var(--color-cream-200);
+  border-bottom: 1px solid var(--border-subtle);
   font-size: 1.2rem;
 }
 
@@ -1004,9 +1025,9 @@ button.button {
 .instruction-card {
   position: relative;
   padding: var(--space-6);
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  background: white;
+  background: var(--surface-raised);
   box-shadow: 0 0.75rem 2rem rgb(23 25 22 / 6%);
   counter-increment: instruction;
 }
@@ -1029,31 +1050,31 @@ button.button {
   flex-wrap: wrap;
   gap: var(--space-2) var(--space-4);
   margin-block: var(--space-4);
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   font-size: 0.82rem;
 }
 
 .step-cue {
   padding: var(--space-3);
   border-inline-start: 0.25rem solid var(--color-leaf-700);
-  background: #eef5ed;
+  background: var(--surface-positive);
 }
 
 .step-safety {
   margin-block-end: 0;
-  color: var(--color-warning-700);
+  color: var(--text-caution);
   font-weight: 700;
 }
 
 .safety-callout {
   border: 2px solid #c77e73;
-  color: #5d201b;
-  background: #fff2ed;
+  color: var(--text-warning);
+  background: var(--surface-warning);
 }
 
 .safety-callout h2,
 .safety-callout h3 {
-  color: #5d201b;
+  color: var(--text-warning);
 }
 
 .support-grid {
@@ -1064,9 +1085,9 @@ button.button {
 
 .support-card {
   padding: var(--space-5);
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  background: white;
+  background: var(--surface-raised);
 }
 
 .support-card h3 {
@@ -1092,7 +1113,7 @@ button.button {
 
 .faq-list details {
   padding-block: var(--space-4);
-  border-bottom: 1px solid var(--color-cream-200);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .faq-list summary {
@@ -1103,9 +1124,9 @@ button.button {
 
 .video-placeholder {
   padding: var(--space-6);
-  border: 1px dashed var(--color-metal-500);
+  border: 1px dashed var(--border-strong);
   border-radius: var(--radius-lg);
-  background: var(--color-cream-100);
+  background: var(--surface-subtle);
 }
 
 .video-placeholder h2 {
@@ -1114,7 +1135,7 @@ button.button {
 
 .empty-state {
   padding: var(--space-7);
-  border: 1px dashed var(--color-metal-500);
+  border: 1px dashed var(--border-strong);
   border-radius: var(--radius-lg);
   text-align: center;
 }
@@ -1136,11 +1157,11 @@ a.support-card:hover {
 .category-hero {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid var(--color-cream-200);
+  border-bottom: 1px solid var(--border-subtle);
   background:
     radial-gradient(circle at 85% 30%, rgb(200 74 53 / 14%), transparent 22rem),
     radial-gradient(circle at 8% 85%, rgb(56 98 66 / 9%), transparent 20rem),
-    var(--color-cream-50);
+    var(--surface-canvas);
 }
 
 .category-hero::after {
@@ -1176,12 +1197,12 @@ a.support-card:hover {
 
 .guide-sections > section {
   padding-block-end: var(--space-7);
-  border-bottom: 1px solid var(--color-cream-200);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .checklist-list li::marker {
   content: '✓  ';
-  color: var(--color-leaf-700);
+  color: var(--text-success);
   font-weight: 900;
 }
 
@@ -1216,15 +1237,15 @@ a.support-card:hover {
   justify-content: space-between;
   gap: var(--space-4);
   padding: var(--space-3) var(--space-4);
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  background: white;
+  background: var(--surface-raised);
 }
 
 .shopping-line small {
   min-width: 0;
   flex: 0 1 auto;
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   font-weight: 750;
   overflow-wrap: anywhere;
   text-align: end;
@@ -1241,9 +1262,9 @@ a.support-card:hover {
 
 .tool-panel {
   padding: clamp(1.25rem, 4vw, 3rem);
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  background: white;
+  background: var(--surface-raised);
   box-shadow: 0 1rem 2.5rem rgb(23 25 22 / 6%);
 }
 
@@ -1261,9 +1282,9 @@ a.support-card:hover {
   align-content: start;
   gap: var(--space-4);
   padding: var(--space-5);
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  background: var(--color-cream-50);
+  background: var(--surface-canvas);
 }
 
 .calculator-card label,
@@ -1271,7 +1292,7 @@ a.support-card:hover {
   display: grid;
   max-width: 28rem;
   gap: var(--space-2);
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.03em;
@@ -1283,10 +1304,10 @@ a.support-card:hover {
   width: 100%;
   min-height: 2.75rem;
   padding: 0.6rem 0.75rem;
-  border: 1px solid var(--color-metal-500);
+  border: 1px solid var(--border-strong);
   border-radius: var(--radius-sm);
-  color: var(--color-charcoal-950);
-  background: white;
+  color: var(--text-primary);
+  background: var(--surface-control);
   font-weight: 650;
   text-transform: none;
 }
@@ -1295,8 +1316,8 @@ a.support-card:hover {
   margin: 0;
   padding: var(--space-4);
   border-radius: var(--radius-sm);
-  color: var(--color-leaf-800);
-  background: #eef5ed;
+  color: var(--text-positive);
+  background: var(--surface-positive);
 }
 
 .shopping-list {
@@ -1306,7 +1327,7 @@ a.support-card:hover {
 }
 
 .fine-tool-print {
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   font-size: 0.82rem;
 }
 
@@ -1320,7 +1341,7 @@ a.support-card:hover {
 .timeline-list li {
   padding: var(--space-4);
   border-inline-start: 0.25rem solid var(--color-leaf-700);
-  background: var(--color-cream-100);
+  background: var(--surface-subtle);
 }
 
 .checklist-fieldset,
@@ -1330,7 +1351,7 @@ a.support-card:hover {
   gap: var(--space-3);
   margin: 0;
   padding: var(--space-5);
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
 }
 
@@ -1347,7 +1368,7 @@ a.support-card:hover {
   gap: var(--space-3);
   padding: var(--space-3);
   border-radius: var(--radius-sm);
-  background: var(--color-cream-100);
+  background: var(--surface-subtle);
   cursor: pointer;
 }
 
@@ -1361,8 +1382,8 @@ a.support-card:hover {
 .disclosure-box {
   margin-block-end: var(--space-5);
   border: 1px solid var(--color-gold-500);
-  color: #563f18;
-  background: #fff6df;
+  color: var(--text-notice);
+  background: var(--surface-notice);
 }
 
 .allergen-results {
@@ -1386,8 +1407,8 @@ a.support-card:hover {
   padding: var(--space-5);
   border: 2px solid var(--color-gold-500);
   border-radius: var(--radius-md);
-  color: #563f18;
-  background: #fff6df;
+  color: var(--text-notice);
+  background: var(--surface-notice);
 }
 
 .affiliate-disclosure strong {
@@ -1406,13 +1427,13 @@ a.support-card:hover {
   min-height: 5rem;
   place-items: center;
   padding: var(--space-4);
-  border: 1px dashed var(--color-metal-500);
+  border: 1px dashed var(--border-strong);
   border-radius: var(--radius-md);
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   background: repeating-linear-gradient(
     135deg,
-    var(--color-cream-100) 0 0.75rem,
-    var(--color-cream-50) 0.75rem 1.5rem
+    var(--surface-subtle) 0 0.75rem,
+    var(--surface-canvas) 0.75rem 1.5rem
   );
   font-size: 0.78rem;
   text-align: center;
@@ -1432,10 +1453,10 @@ a.support-card:hover {
   width: max-content;
   margin-block-end: var(--space-3);
   padding: 0.3rem 0.6rem;
-  border: 1px solid var(--color-metal-500);
+  border: 1px solid var(--border-strong);
   border-radius: 999px;
-  color: var(--color-metal-700);
-  background: var(--color-cream-100);
+  color: var(--text-secondary);
+  background: var(--surface-subtle);
   font-size: 0.7rem;
   font-weight: 850;
   letter-spacing: 0.08em;
@@ -1444,9 +1465,9 @@ a.support-card:hover {
 
 .disabled-form-panel {
   padding: clamp(1.25rem, 4vw, 3rem);
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  background: white;
+  background: var(--surface-raised);
   box-shadow: var(--shadow-soft);
 }
 
@@ -1458,7 +1479,7 @@ a.support-card:hover {
 .disabled-form label {
   display: grid;
   gap: var(--space-2);
-  color: var(--color-metal-700);
+  color: var(--text-secondary);
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -1469,10 +1490,10 @@ a.support-card:hover {
 .disabled-form textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid var(--color-cream-200);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  color: var(--color-metal-700);
-  background: var(--color-cream-100);
+  color: var(--text-secondary);
+  background: var(--surface-subtle);
   text-transform: none;
 }
 
@@ -1489,7 +1510,7 @@ a.support-card:hover {
 
 .policy-stack > section {
   padding-block-end: var(--space-6);
-  border-bottom: 1px solid var(--color-cream-200);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -1809,7 +1830,7 @@ a.support-card:hover {
 
 .recipe-card .responsive-media,
 .category-card .responsive-media {
-  border-bottom: 1px solid var(--color-cream-200);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .recipe-card .responsive-media img,
@@ -1853,7 +1874,7 @@ a.support-card:hover {
       rgb(155 111 46 / 10%),
       transparent 28rem
     ),
-    var(--color-cream-50);
+    var(--surface-canvas);
 }
 
 .editorial-hero-dark {
@@ -2158,5 +2179,56 @@ a.support-card:hover {
   .responsive-media,
   .editorial-banner {
     display: none !important;
+  }
+}
+
+/* P2-17: Follow the visitor's system setting only. There is deliberately no
+   theme toggle, storage, or client-side preference script: the lightweight
+   preview remains privacy-first and fully functional without JavaScript. */
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --surface-canvas: #171a15;
+    --surface-subtle: #20241e;
+    --surface-raised: #282c25;
+    --surface-control: #1d211b;
+    --surface-positive: #193e27;
+    --surface-warning-soft: #43231e;
+    --surface-warning: #49251d;
+    --surface-notice: #403416;
+    --control-overlay: rgb(23 26 21 / 94%);
+    --text-primary: #f6f0e7;
+    --text-secondary: #d1d5cb;
+    --text-accent: #ff9c8d;
+    --text-positive: #dcf7e2;
+    --text-success: #a6e0ae;
+    --text-caution: #ffb9a8;
+    --text-warning: #ffd0c9;
+    --text-notice: #ffe2a1;
+    --border-subtle: #4d534a;
+    --border-strong: #a4aaa0;
+    --shadow-soft: 0 1.25rem 3.5rem rgb(0 0 0 / 32%);
+  }
+
+  html {
+    background: #10120e;
+  }
+
+  body {
+    background:
+      radial-gradient(
+        circle at 84% 4%,
+        rgb(200 74 53 / 16%),
+        transparent 24rem
+      ),
+      var(--surface-canvas);
+  }
+
+  a.support-card:hover {
+    border-color: var(--text-success);
+  }
+
+  .guide-card h3 a {
+    text-decoration-color: rgb(166 224 174 / 68%);
   }
 }

@@ -496,7 +496,7 @@ manifest.responsiveImageContract = {
   ...manifest.responsiveImageContract,
   formats: ['webp', 'jpeg'],
   requiredAspectRatios: ['3:2', '16:9', '4:3', '1:1'],
-  widths: [360, 640, 960, 1280, 1600],
+  widths: [360, 600, 960, 1200],
   intrinsicDimensionsRequiredBeforeActivation: true,
   belowFoldLoading: 'lazy',
   heroLoading: 'eager-with-high-fetch-priority',

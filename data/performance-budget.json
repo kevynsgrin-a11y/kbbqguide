@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "status": "enforced",
+  "maxRegressionPercent": 10,
+  "metrics": {
+    "compressedHtmlBytes": {
+      "limitBytes": 15360,
+      "baselineBytes": 10767
+    },
+    "sharedCssUncompressedBytes": {
+      "limitBytes": 40960,
+      "baselineBytes": 34423
+    },
+    "firstPartyJavaScriptCompressedBytes": {
+      "limitBytes": 25600,
+      "baselineBytes": 5296
+    },
+    "thirdPartyJavaScriptCompressedBytes": {
+      "limitBytes": 51200,
+      "baselineBytes": 0
+    },
+    "mobileHeroImageBytes": {
+      "limitBytes": 35840,
+      "baselineBytes": 33533
+    },
+    "desktopHeroImageBytes": {
+      "limitBytes": 122880,
+      "baselineBytes": 104381
+    }
+  },
+  "signedExceptions": []
+}

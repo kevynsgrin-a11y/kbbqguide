@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro dev",
-    "build": "npm run validate:phase9 && npm run validate:publication-evidence && npm run validate:commercial-activation && cross-env ASTRO_TELEMETRY_DISABLED=1 astro build && vitest run tests/phase10.test.ts tests/publication-governance.test.ts tests/p1-seo-sitemap.test.ts tests/recipe-jsonld-images.test.ts tests/p1-governance.test.ts tests/nonrecipe-publication-governance.test.ts tests/privacy-notice.test.ts tests/release-state.test.ts tests/recipe-social-publisher.test.ts && npm run test:edge-tombstone && npm run validate:preview && npm run validate:headers && npm run lint:content -- --no-build",
+    "build": "npm run validate:phase9 && npm run validate:publication-evidence && npm run validate:commercial-activation && cross-env ASTRO_TELEMETRY_DISABLED=1 astro build && vitest run tests/phase10.test.ts tests/publication-governance.test.ts tests/p1-seo-sitemap.test.ts tests/recipe-jsonld-images.test.ts tests/p1-governance.test.ts tests/nonrecipe-publication-governance.test.ts tests/privacy-notice.test.ts tests/release-state.test.ts tests/recipe-social-publisher.test.ts tests/p2-theme-pwa-icons.test.ts tests/p2-performance-budget.test.ts && npm run test:edge-tombstone && npm run validate:preview && npm run validate:headers && npm run lint:content -- --no-build",
     "preview": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro preview",
     "typecheck": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro check",
     "lint": "eslint .",
@@ -41,6 +41,7 @@
     "validate:headers": "node scripts/validate-security-headers.mjs",
     "lint:content": "node scripts/lint-content.mjs",
     "media:ingest": "node scripts/media-ingest.mjs",
+    "favicon:generate": "node scripts/generate-favicon-icons.mjs",
     "review:data": "node scripts/build-review-data.mjs",
     "review:apply": "node scripts/review-apply.mjs",
     "release:check": "node scripts/release-check.mjs",

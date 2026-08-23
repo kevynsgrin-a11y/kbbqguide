@@ -57,3 +57,8 @@ Use Direct Upload only if the release owner explicitly chooses a local or extern
 ## Static header note
 
 Cloudflare Pages reads a plain-text `_headers` file from the static asset directory. This project emits `public/_headers` into `dist/_headers`; verify actual responses on the final hostname. See [Cloudflare Pages headers](https://developers.cloudflare.com/pages/configuration/headers/).
+
+Before enabling the P2 HTML edge-cache rule, follow
+[`docs/EDGE-CACHE-ROLLOUT.md`](./EDGE-CACHE-ROLLOUT.md). The source header
+contract is not evidence that the required Cache Rule, response-code guard, or
+post-deploy purge has been configured.

@@ -3,6 +3,7 @@ import { Buffer } from 'node:buffer';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { extname, join, relative, resolve } from 'node:path';
 import { stdout } from 'node:process';
+import { evaluatePerformanceBudget } from './performance-budget.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const dist = resolve(root, 'dist');
@@ -11,6 +12,9 @@ const manifest = JSON.parse(
 );
 const urlRegistry = JSON.parse(
   readFileSync(resolve(root, 'data/url-registry.json'), 'utf8'),
+);
+const performanceBudget = JSON.parse(
+  readFileSync(resolve(root, 'data/performance-budget.json'), 'utf8'),
 );
 const allowedActiveStatuses = new Set([
   'original-approved',
@@ -45,6 +49,16 @@ function walk(directory) {
 
 function routeFor(file) {
   return relative(dist, file).replaceAll('\\', '/');
+}
+
+function pngDimensions(file) {
+  const bytes = readFileSync(file);
+  const signature = '89504e470d0a1a0a';
+  if (bytes.subarray(0, 8).toString('hex') !== signature)
+    throw new Error(`Icon is not a PNG: ${routeFor(file)}.`);
+  if (bytes.subarray(12, 16).toString('ascii') !== 'IHDR')
+    throw new Error(`Icon is missing an IHDR chunk: ${routeFor(file)}.`);
+  return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
 }
 
 const files = walk(dist);
@@ -112,6 +126,27 @@ for (const file of contentHtmlFiles) {
     throw new Error(`Open Graph URL mismatch: ${routeFor(file)}`);
   if (!/<meta name="robots" content="noindex,nofollow,noarchive">/.test(html))
     throw new Error(`Missing preview robots directive: ${routeFor(file)}`);
+  if (!/<meta name="color-scheme" content="light dark">/.test(html))
+    throw new Error(`Missing light/dark color-scheme declaration: ${route}.`);
+  if (
+    !/<meta name="theme-color" content="#fffaf1" media="\(prefers-color-scheme: light\)">/.test(
+      html,
+    ) ||
+    !/<meta name="theme-color" content="#151713" media="\(prefers-color-scheme: dark\)">/.test(
+      html,
+    )
+  )
+    throw new Error(`Missing system-theme browser color metadata: ${route}.`);
+  if (/<link\b[^>]*\brel="manifest"/i.test(html))
+    throw new Error(`PWA manifest link is prohibited in preview: ${route}.`);
+  for (const icon of [
+    /<link rel="icon" href="\/favicon\.svg" type="image\/svg\+xml">/,
+    /<link rel="icon" href="\/favicon-32\.png" sizes="32x32" type="image\/png">/,
+    /<link rel="apple-touch-icon" href="\/apple-touch-icon\.png" sizes="180x180">/,
+  ]) {
+    if (!icon.test(html))
+      throw new Error(`Missing browser icon reference in ${route}.`);
+  }
   if (!/<main id="main-content"/.test(html))
     throw new Error(`Missing main landmark: ${routeFor(file)}`);
   outboundAnchorCount += [...html.matchAll(/<a[^>]+href="https?:\/\//gi)]
@@ -185,10 +220,64 @@ for (const file of contentHtmlFiles) {
   for (const picture of html.matchAll(/<picture\b[\s\S]*?<\/picture>/gi)) {
     const markup = picture[0];
     if (!/\bloading="eager"/i.test(markup)) continue;
-    for (const match of markup.matchAll(/(?:src|srcset)="([^"]+)"/gi)) {
-      for (const candidate of (match[1] ?? '').split(',')) {
-        const [path, descriptor = ''] = candidate.trim().split(/\s+/, 2);
-        if (path?.startsWith('/')) eagerImageCandidates.set(path, descriptor);
+    const pictureTags = [...markup.matchAll(/<(source|img)\b[^>]*>/gi)].map(
+      (match) => ({ tagName: match[1]?.toLowerCase(), markup: match[0] }),
+    );
+    const isMobileSource = (tag) =>
+      /\bmedia="\(max-width:\s*600px\)"/i.test(tag.markup);
+    const isTypedSource = (tag, type) =>
+      tag.tagName === 'source' &&
+      isMobileSource(tag) &&
+      new RegExp(`\\btype="${type}"`, 'i').test(tag.markup);
+    const isDesktopTypedSource = (tag, type) =>
+      tag.tagName === 'source' &&
+      !isMobileSource(tag) &&
+      tag.markup.toLowerCase().includes('type="' + type + '"');
+    if (!pictureTags.some((tag) => isTypedSource(tag, 'image/webp')))
+      throw new Error(
+        `Eager image has no bounded mobile WebP source in ${route}.`,
+      );
+    if (!pictureTags.some((tag) => isTypedSource(tag, 'image/jpeg')))
+      throw new Error(
+        `Eager image has no bounded mobile JPEG source in ${route}.`,
+      );
+
+    if (!pictureTags.some((tag) => isDesktopTypedSource(tag, 'image/webp')))
+      throw new Error(
+        'Eager image has no desktop WebP source in ' + route + '.',
+      );
+    if (!pictureTags.some((tag) => isDesktopTypedSource(tag, 'image/jpeg')))
+      throw new Error(
+        'Eager image has no desktop JPEG source in ' + route + '.',
+      );
+
+    const fallbackTag = pictureTags.find((tag) => tag.tagName === 'img');
+    if (!fallbackTag || !/\bsrcset="[^"]+"/i.test(fallbackTag.markup))
+      throw new Error(
+        `Eager image has no measurable JPEG fallback in ${route}.`,
+      );
+
+    for (const tag of pictureTags) {
+      const mobileSource = isMobileSource(tag);
+      const scope = mobileSource
+        ? 'mobile'
+        : tag.tagName === 'img'
+          ? 'mobile-fallback'
+          : 'desktop';
+      for (const match of tag.markup.matchAll(/\b(src|srcset)="([^"]+)"/gi)) {
+        for (const candidate of (match[2] ?? '').split(',')) {
+          const [path, descriptor = ''] = candidate.trim().split(/\s+/, 2);
+          if (!path?.startsWith('/')) continue;
+          const key = `${scope}:${path}`;
+          const record = eagerImageCandidates.get(key) ?? {
+            assetPath: path,
+            descriptors: new Set(),
+            scopes: new Set(),
+          };
+          record.descriptors.add(descriptor);
+          record.scopes.add(scope);
+          eagerImageCandidates.set(key, record);
+        }
       }
     }
   }
@@ -221,7 +310,7 @@ for (const file of contentHtmlFiles) {
     gzipSync(inlineJavaScript).byteLength,
   );
   thirdPartyScripts += [
-    ...html.matchAll(/<script[^>]*\bsrc="(https?:\/\/[^"]+)"/gi),
+    ...html.matchAll(/<script[^>]*\bsrc="(?:(?:https?:)?\/\/[^"]+)"/gi),
   ].length;
 
   for (const match of html.matchAll(/(?:src|srcset)="([^"]+)"/gi)) {
@@ -390,8 +479,9 @@ const requiredArtifacts = [
   'sitemap.xml',
   'sitemap-index.xml',
   'feed.xml',
-  'site.webmanifest',
   'favicon.svg',
+  'favicon-32.png',
+  'apple-touch-icon.png',
   '_redirects',
 ];
 for (const artifact of requiredArtifacts) {
@@ -431,7 +521,18 @@ if (/<loc>[^<]+<\/loc>/.test(sitemapIndex))
 const feed = readFileSync(join(dist, 'feed.xml'), 'utf8');
 if (/<entry[\s>]/.test(feed))
   throw new Error('Preview feed must not claim unapproved published entries.');
-JSON.parse(readFileSync(join(dist, 'site.webmanifest'), 'utf8'));
+if (existsSync(join(dist, 'site.webmanifest')))
+  throw new Error('PWA manifest must not be emitted without offline support.');
+if (
+  JSON.stringify(pngDimensions(join(dist, 'favicon-32.png'))) !==
+  JSON.stringify({ width: 32, height: 32 })
+)
+  throw new Error('favicon-32.png must be exactly 32×32 pixels.');
+if (
+  JSON.stringify(pngDimensions(join(dist, 'apple-touch-icon.png'))) !==
+  JSON.stringify({ width: 180, height: 180 })
+)
+  throw new Error('apple-touch-icon.png must be exactly 180×180 pixels.');
 
 const cssFiles = files.filter((file) => extname(file) === '.css');
 const jsFiles = files.filter((file) => extname(file) === '.js');
@@ -441,23 +542,36 @@ const imageFiles = files.filter((file) =>
 const deliveredImageFiles = imageFiles.filter((file) =>
   referencedAssetPaths.has('/' + routeFor(file)),
 );
-const eagerCandidateRecords = [...eagerImageCandidates].map(
-  ([assetPath, descriptor]) => {
+const eagerCandidateRecords = [...eagerImageCandidates.values()].map(
+  ({ assetPath, descriptors, scopes }) => {
     const file = join(dist, assetPath.replace(/^\//, ''));
     if (!existsSync(file))
       throw new Error(`Broken eager image candidate: ${assetPath}.`);
+    const widths = [...descriptors]
+      .map((descriptor) => Number.parseInt(descriptor.replace(/w$/, ''), 10))
+      .filter((width) => Number.isFinite(width));
+    if (widths.length === 0)
+      throw new Error(
+        `Eager image candidate has no measurable srcset width: ${assetPath}.`,
+      );
     return {
       assetPath,
-      width: Number.parseInt(descriptor.replace(/w$/, ''), 10) || null,
+      width: Math.max(...widths),
       bytes: readFileSync(file).byteLength,
+      scopes,
     };
   },
 );
 const mobileEagerCandidates = eagerCandidateRecords.filter(
-  (candidate) => candidate.width !== null && candidate.width <= 640,
+  (candidate) =>
+    candidate.scopes.has('mobile') || candidate.scopes.has('mobile-fallback'),
 );
 if (mobileEagerCandidates.length === 0)
   throw new Error('No mobile eager image candidate was emitted.');
+if (mobileEagerCandidates.some((candidate) => candidate.width > 600))
+  throw new Error(
+    'A mobile eager image can select a source wider than 600px; this can bypass the 35 KB mobile budget on high-DPR devices.',
+  );
 const maxMobileHeroImageBytes = mobileEagerCandidates.reduce(
   (max, candidate) => Math.max(max, candidate.bytes),
   0,
@@ -466,14 +580,6 @@ const maxDesktopHeroImageBytes = eagerCandidateRecords.reduce(
   (max, candidate) => Math.max(max, candidate.bytes),
   0,
 );
-if (maxMobileHeroImageBytes > 350 * 1024)
-  throw new Error(
-    `A mobile hero candidate exceeds 350 KB: ${maxMobileHeroImageBytes} bytes.`,
-  );
-if (maxDesktopHeroImageBytes > 600 * 1024)
-  throw new Error(
-    `A desktop hero candidate exceeds 600 KB: ${maxDesktopHeroImageBytes} bytes.`,
-  );
 const avifFiles = deliveredImageFiles.filter(
   (file) => extname(file) === '.avif',
 );
@@ -482,6 +588,10 @@ const webpFiles = deliveredImageFiles.filter(
 );
 if (webpFiles.length === 0)
   throw new Error('Responsive build emitted no WebP assets.');
+if (avifFiles.length !== 0)
+  throw new Error(
+    `Responsive image contract allows WebP plus JPEG only; found ${avifFiles.length} AVIF assets.`,
+  );
 const maxOptimizedImageBytes = deliveredImageFiles.reduce(
   (max, file) => Math.max(max, readFileSync(file).byteLength),
   0,
@@ -494,31 +604,40 @@ const compressedCss = cssFiles.reduce(
   (total, file) => total + gzipSync(readFileSync(file)).byteLength,
   0,
 );
+const sharedCssUncompressed = cssFiles.reduce(
+  (total, file) => total + readFileSync(file).byteLength,
+  0,
+);
 const compressedJs = jsFiles.reduce(
   (total, file) => total + gzipSync(readFileSync(file)).byteLength,
   0,
 );
+const firstPartyJavaScriptCompressed =
+  compressedJs + maxCompressedInlineJavaScript;
 const maxEstimatedInitialCompressedTransfer =
-  maxCompressedHtml + compressedCss + compressedJs;
+  maxCompressedHtml + compressedCss + firstPartyJavaScriptCompressed;
 const maxEstimatedMobileInitialTransfer =
   maxEstimatedInitialCompressedTransfer + maxMobileHeroImageBytes;
-if (compressedCss > 45 * 1024)
-  throw new Error(`Compressed CSS exceeds 45 KB: ${compressedCss} bytes.`);
-if (compressedJs > 35 * 1024)
-  throw new Error(
-    `Compressed recipe-route JavaScript exceeds 35 KB: ${compressedJs} bytes.`,
-  );
-if (maxCompressedInlineJavaScript > 35 * 1024)
-  throw new Error(
-    `Compressed inline JavaScript exceeds 35 KB: ${maxCompressedInlineJavaScript} bytes.`,
-  );
-if (maxEstimatedMobileInitialTransfer > 900 * 1024)
-  throw new Error(
-    `Estimated mobile initial transfer exceeds 900 KB: ${maxEstimatedMobileInitialTransfer} bytes.`,
-  );
 if (thirdPartyScripts !== 0)
   throw new Error(
-    `Expected zero third-party scripts; found ${thirdPartyScripts}.`,
+    `Third-party JavaScript is prohibited by the current zero-script contract; found ${thirdPartyScripts}.`,
+  );
+const performanceBudgetResult = evaluatePerformanceBudget({
+  policy: performanceBudget,
+  metrics: {
+    compressedHtmlBytes: maxCompressedHtml,
+    sharedCssUncompressedBytes: sharedCssUncompressed,
+    firstPartyJavaScriptCompressedBytes: firstPartyJavaScriptCompressed,
+    thirdPartyJavaScriptCompressedBytes: 0,
+    mobileHeroImageBytes: maxMobileHeroImageBytes,
+    desktopHeroImageBytes: maxDesktopHeroImageBytes,
+  },
+});
+if (performanceBudgetResult.failures.length !== 0)
+  throw new Error(
+    `Performance budget failed: ${performanceBudgetResult.failures
+      .map(({ metric, reasons }) => `${metric} (${reasons.join('; ')})`)
+      .join(', ')}`,
   );
 if (files.some((file) => /node_modules|\.map$/.test(file)))
   throw new Error('Build contains a source map or node_modules path.');
@@ -537,8 +656,11 @@ stdout.write(
     outboundAnchors: outboundAnchorCount,
     structuredDataBlocks: structuredDataBlockCount,
     compressedCssBytes: compressedCss,
+    sharedCssUncompressedBytes: sharedCssUncompressed,
     compressedExternalJavaScriptBytes: compressedJs,
     maxCompressedInlineJavaScriptBytes: maxCompressedInlineJavaScript,
+    firstPartyJavaScriptCompressedBytes: firstPartyJavaScriptCompressed,
+    thirdPartyJavaScriptCompressedBytes: 0,
     maxCompressedHtmlBytes: maxCompressedHtml,
     maxUncompressedHtmlBytes: maxUncompressedHtml,
     maxEstimatedInitialCompressedTransferBytes:
@@ -554,5 +676,6 @@ stdout.write(
     avifImages: avifFiles.length,
     webpImages: webpFiles.length,
     maxOptimizedImageBytes,
+    performanceBudgetExceptionsUsed: performanceBudgetResult.exceptionsUsed,
   })}\n`,
 );

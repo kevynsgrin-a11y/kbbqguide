@@ -74,7 +74,9 @@ implementationCulturalAndIngredientScreen, responsiveCropReview, humanEditorialR
 reviewer}`. `humanEditorialReview` is currently a **string** `"required"`; Phase 10.6 extends
   it to the lane object defined in §10 of the directive.
 - **Contracts in the manifest:** `responsiveImageContract` (formats webp/jpeg; widths
-  360/640/960/1280/1600), `stillShotContract`, `videoContract`.
+  360/600/960/1200), `stillShotContract`, `videoContract`. The 600px mobile
+  ceiling is intentional: it keeps high-DPR mobile hero delivery inside the
+  current performance budget.
 
 ## Where alt text lives
 

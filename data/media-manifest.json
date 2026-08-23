@@ -14,7 +14,7 @@
     "intrinsicDimensionsRequiredBeforeActivation": true,
     "belowFoldLoading": "lazy",
     "heroLoading": "eager-with-high-fetch-priority",
-    "widths": [360, 640, 960, 1280, 1600]
+    "widths": [360, 600, 960, 1200]
   },
   "stillShotContract": {
     "requiredRoles": [

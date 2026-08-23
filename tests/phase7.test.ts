@@ -47,6 +47,30 @@ describe('Phase 7 full QA and hardening gate', () => {
     );
   });
 
+  it('removes default static CORS and scopes the HTML edge-cache contract away from assets', () => {
+    const headers = source('public/_headers');
+    const htmlCacheControl =
+      'public, max-age=0, must-revalidate, s-maxage=3600, stale-while-revalidate=86400';
+    const validator = source('scripts/validate-security-headers.mjs');
+    const rollout = source('docs/EDGE-CACHE-ROLLOUT.md');
+
+    expect(headers).toMatch(/^\/\*\n\s*! Access-Control-Allow-Origin$/m);
+    expect(headers).not.toMatch(/^\s+Access-Control-Allow-Origin:/m);
+    expect(headers).toContain(`/\n  Cache-Control: ${htmlCacheControl}`);
+    expect(headers).toContain(`/*/\n  Cache-Control: ${htmlCacheControl}`);
+    expect(headers).toContain(
+      '/_astro/*\n  Cache-Control: public, max-age=31536000, immutable',
+    );
+    expect(validator).toContain('corsReadditions');
+    expect(validator).toContain(
+      'Expected exactly one scoped HTML Cache-Control',
+    );
+    expect(validator).toContain('Any additional Cache-Control _headers rule');
+    expect(rollout).toContain('Cache Response Rule');
+    expect(rollout).toContain('purge_cache');
+    expect(rollout).toContain('http.response.code ge 400');
+  });
+
   it('finds no production secret pattern in source-of-truth, configuration, data, or public files', () => {
     const files = [
       '.env.example',
