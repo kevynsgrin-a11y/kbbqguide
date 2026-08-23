@@ -1,6 +1,6 @@
 # Affiliate Compliance and Activation Gate
 
-Checkpoint date: 2026-07-14
+Checkpoint date: 2026-08-23
 
 ## Current state
 
@@ -23,10 +23,21 @@ A compliance owner must complete and approve each field for one merchant before 
 
 No merchant may move to `approved` while a required field is null, empty, unknown, or unsupported by evidence.
 
+## Disclosure publication gate
+
+Before any affiliate link or affiliate recommendation can be rendered, the
+site-wide disclosure record must have an approved effective date, operator
+legal entity, public questions contact, accountable approver, approval date,
+approved adjacent disclosure copy, and the exact paid-link relationship
+`rel="sponsored nofollow"`. The disclosure page must show the effective date,
+operator, and questions contact at the top. Until these facts are approved,
+the public page is a non-collecting blocked-status page and no link helper can
+return a paid destination.
+
 ## Placement and disclosure
 
 - State the material connection before or adjacent to the first recommendation; do not rely on a footer alone.
-- Mark paid links `rel="sponsored"` when they eventually exist.
+- Mark paid links `rel="sponsored nofollow"` when they eventually exist.
 - Identify sponsored content clearly at the top and near paid recommendations.
 - Keep editorial criteria and sponsorship separate; payment cannot determine an undisclosed ranking.
 - Never claim firsthand testing without a dated test log for the exact item.

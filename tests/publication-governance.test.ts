@@ -7,6 +7,7 @@ import {
   incompleteHumanReviewGateLabels,
   isRecipePublishable,
   recipeAccountability,
+  recipeReviewGateDisplayStatuses,
   recipePublishability,
 } from '../src/lib/publication-governance';
 import { completeRecipeSchema } from '../src/schemas/recipe';
@@ -120,6 +121,57 @@ describe('publication governance (P0 #4 and #10)', () => {
         'materially updated date is missing',
       ]),
     );
+  });
+
+  it('fails closed instead of throwing for a legacy raw recipe resolved by a menu', () => {
+    const legacyMenuRecipe = {
+      ...draftSource,
+      editorialStatus: 'published',
+      author: 'Legacy Recipe Author',
+      authorProfileUrl: 'https://profiles.test/legacy-recipe-author',
+      materiallyUpdatedAt: '2026-08-21',
+      publishedAt: '2026-08-22',
+    };
+
+    expect(legacyMenuRecipe).not.toHaveProperty('reviewGates');
+    expect(() => recipePublishability(legacyMenuRecipe)).not.toThrow();
+    expect(isRecipePublishable(legacyMenuRecipe)).toBe(false);
+    expect(recipePublishability(legacyMenuRecipe).blockers).toEqual(
+      expect.arrayContaining([
+        'human-review gate record is missing or malformed',
+        'testCook human-review evidence is incomplete',
+        'foodSafety human-review evidence is incomplete',
+        'koreanLanguage human-review evidence is incomplete',
+        'editorial human-review evidence is incomplete',
+      ]),
+    );
+  });
+
+  it('renders the raw B01 route shape with required review badges instead of dereferencing missing gates', () => {
+    const legacyRawB01 = JSON.parse(JSON.stringify(draftSource));
+    legacyRawB01.testCookStatus = 'approved';
+
+    expect(legacyRawB01).not.toHaveProperty('reviewGates');
+    expect(() => recipeReviewGateDisplayStatuses(legacyRawB01)).not.toThrow();
+    expect(recipeReviewGateDisplayStatuses(legacyRawB01)).toEqual({
+      testCook: 'required',
+      foodSafety: 'required',
+      koreanLanguage: 'required',
+      editorial: 'required',
+    });
+    expect(recipeReviewGateDisplayStatuses(publishableRecipe())).toEqual({
+      testCook: 'approved',
+      foodSafety: 'approved',
+      koreanLanguage: 'approved',
+      editorial: 'approved',
+    });
+
+    const recipePage = readFileSync(
+      resolve(root, 'src/components/RecipePage.astro'),
+      'utf8',
+    );
+    expect(recipePage).toContain('recipeReviewGateDisplayStatuses(recipe)');
+    expect(recipePage).not.toContain('recipe.reviewGates.');
   });
 
   it('describes only the human gates whose evidence remains incomplete', () => {

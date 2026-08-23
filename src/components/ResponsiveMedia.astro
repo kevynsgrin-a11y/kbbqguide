@@ -1,5 +1,5 @@
 ---
-import { Picture } from 'astro:assets';
+import { getImage } from 'astro:assets';
 import type { ResolvedMedia } from '../lib/media';
 import MediaCredit from './MediaCredit.astro';
 
@@ -25,6 +25,51 @@ const sizes =
   (priority
     ? '(max-width: 60rem) 100vw, 58vw'
     : '(max-width: 42rem) 100vw, (max-width: 60rem) 50vw, 33vw');
+
+/**
+ * These are delivery ceilings, not merely display hints. Native JPEG sources
+ * retain the desktop fallback, while the <img> fallback is capped at the
+ * largest mobile transform so legacy clients cannot bypass the mobile budget.
+ * AVIF remains intentionally excluded: WebP plus JPEG preserves a reliable
+ * two-format contract without reintroducing the Pages build-time regression.
+ */
+const responsiveWidths = [360, 600, 960, 1200] as const;
+const responsiveQuality = 34;
+const variants = await Promise.all(
+  responsiveWidths.map(async (width) => ({
+    width,
+    webp: await getImage({
+      src: media.image,
+      width,
+      format: 'webp',
+      quality: responsiveQuality,
+    }),
+    jpeg: await getImage({
+      src: media.image,
+      width,
+      format: 'jpeg',
+      quality: responsiveQuality,
+    }),
+  })),
+);
+const mobileVariants = variants.filter(({ width }) => width <= 600);
+const desktopVariants = variants.filter(({ width }) => width > 600);
+const mobileWebpSrcset = mobileVariants
+  .map(({ width, webp }) => `${webp.src} ${width}w`)
+  .join(', ');
+const desktopWebpSrcset = desktopVariants
+  .map(({ width, webp }) => `${webp.src} ${width}w`)
+  .join(', ');
+const mobileJpegSrcset = mobileVariants
+  .map(({ width, jpeg }) => `${jpeg.src} ${width}w`)
+  .join(', ');
+const desktopJpegSrcset = desktopVariants
+  .map(({ width, jpeg }) => `${jpeg.src} ${width}w`)
+  .join(', ');
+const fallback = mobileVariants.at(-1)?.jpeg;
+
+if (!fallback)
+  throw new Error(`No responsive fallback generated for ${media.assetId}.`);
 ---
 
 <figure
@@ -42,16 +87,32 @@ const sizes =
   data-mobile-crop={media.mobileCrop}
   data-loading={priority ? 'eager-high' : 'lazy'}
 >
-  <Picture
-    src={media.image}
-    formats={['webp']}
-    widths={[360, 640, 960, 1280, 1600]}
-    quality={75}
-    {sizes}
-    alt={media.altDecision === 'decorative' ? '' : media.altText}
-    loading={priority ? 'eager' : 'lazy'}
-    decoding="async"
-    fetchpriority={priority ? 'high' : undefined}
-  />
+  <picture>
+    <source
+      media="(max-width: 600px)"
+      srcset={mobileWebpSrcset}
+      type="image/webp"
+      sizes="100vw"
+    />
+    <source srcset={desktopWebpSrcset} type="image/webp" {sizes} />
+    <source
+      media="(max-width: 600px)"
+      srcset={mobileJpegSrcset}
+      type="image/jpeg"
+      sizes="100vw"
+    />
+    <source srcset={desktopJpegSrcset} type="image/jpeg" {sizes} />
+    <img
+      src={fallback.src}
+      srcset={mobileJpegSrcset}
+      sizes="100vw"
+      alt={media.altDecision === 'decorative' ? '' : media.altText}
+      loading={priority ? 'eager' : 'lazy'}
+      decoding="async"
+      fetchpriority={priority ? 'high' : undefined}
+      width={media.image.width}
+      height={media.image.height}
+    />
+  </picture>
   {showCredit && <MediaCredit caption={media.caption} credit={media.credit} />}
 </figure>

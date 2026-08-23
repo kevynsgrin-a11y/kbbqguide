@@ -8,6 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { categories } from '../lib/categories';
 import { resolveMedia } from '../lib/media';
 import { isRecipePublishable } from '../lib/publication-governance';
+import { publisherWebSiteJsonLd } from '../lib/publisher-schema';
 import { releaseState } from '../lib/release-state';
 import { itemListJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
@@ -35,6 +36,13 @@ const categoryList = itemListJsonLd(
     path: registryPathById(registry, category.id),
   })),
 );
+const publisherWebsiteGraph = publisherWebSiteJsonLd();
+const structuredData = releaseState.isIndexable
+  ? [
+      categoryList,
+      ...(publisherWebsiteGraph === null ? [] : [publisherWebsiteGraph]),
+    ]
+  : [];
 ---
 
 <BaseLayout
@@ -43,7 +51,7 @@ const categoryList = itemListJsonLd(
     ? 'Build a complete Korean BBQ table at home with structured recipe drafts, practical menus, planning tools, and visible food-safety cues.'
     : 'Published Korean BBQ recipes, practical menus, and planning tools are released after named human review.'}
   canonicalPath={canonicalPath}
-  jsonLd={releaseState.isIndexable ? [categoryList] : []}
+  jsonLd={structuredData}
   pageClass="home-page"
   socialImage="/social/kbbqguide-home.jpg"
   socialImageAlt="Four friends sharing a Korean barbecue table around an indoor grill"

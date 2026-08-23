@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "contact": {
+    "publicationStatus": "blocked",
+    "publicContactEmail": null,
+    "inquiryDataRetention": null,
+    "approvedBy": null,
+    "approvedAt": null
+  },
+  "terms": {
+    "publicationStatus": "blocked",
+    "legalOperatorName": null,
+    "publicContactEmail": null,
+    "effectiveDate": null,
+    "governingLaw": null,
+    "termsBody": null,
+    "approvedBy": null,
+    "approvedAt": null
+  },
+  "accessibility": {
+    "publicationStatus": "blocked",
+    "feedbackEmail": null,
+    "lastReviewedAt": null,
+    "approvedBy": null,
+    "approvedAt": null
+  },
+  "corrections": {
+    "publicationStatus": "blocked",
+    "correctionsEmail": null,
+    "processOwner": null,
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}

@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+import registryData from '../../data/url-registry.json';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'SYS_ABOUT');
+---
+
+<BaseLayout
+  title="About KBBQGuide"
+  description="How KBBQGuide approaches Korean barbecue planning, recipe review, safety boundaries, and transparent recommendations."
+  canonicalPath={path}
+>
+  <section class="section">
+    <div class="shell reading-width policy-stack">
+      <p class="eyebrow">About KBBQGuide</p>
+      <h1>A clearer way to plan a Korean barbecue table at home.</h1>
+      <p class="lede">
+        KBBQGuide is building practical Korean barbecue recipes, menus, guides,
+        and planning tools around the decisions a home cook makes before,
+        during, and after the meal.
+      </p>
+      <section>
+        <h2>What the site is designed to do</h2>
+        <p>
+          The site favors clear ingredient, timing, equipment, raw/cooked
+          handling, and serving guidance over generic lists or unverified
+          product recommendations. Interactive planning remains lightweight and
+          local wherever practical.
+        </p>
+      </section>
+      <section>
+        <h2>What must be reviewed before publication</h2>
+        <p>
+          A recipe becomes eligible for public promotion only after named
+          test-cook, food-safety, Korean-language, and editorial review evidence
+          is recorded. Content that has not passed those gates remains a draft
+          and is excluded from public discovery surfaces.
+        </p>
+      </section>
+      <section>
+        <h2>How commercial independence is protected</h2>
+        <p>
+          No merchant relationship, price, stock, ranking, affiliate link, ad,
+          checkout, or email collection is active unless the corresponding
+          evidence, disclosure, privacy, accessibility, and security gates have
+          been completed.
+        </p>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

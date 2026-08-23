@@ -47,6 +47,14 @@ const renderedIds = new Set([
   'SYS_NEWSLETTER',
   'POL_AFFILIATE',
   'POL_SPONSORED',
+  'SYS_ABOUT',
+  'SYS_CONTACT',
+  'POL_PRIVACY',
+  'POL_TERMS',
+  'POL_ACCESSIBILITY',
+  'POL_EDITORIAL',
+  'POL_TESTING',
+  'POL_CORRECTIONS',
   'SYS_CLASS',
   'SYS_MEDIA_KIT',
   'SYS_LICENSING',
@@ -98,6 +106,19 @@ const groups = [
     types: ['POL_AFFILIATE', 'POL_SPONSORED'],
   },
   {
+    title: 'Trust, policies, and corrections',
+    types: [
+      'SYS_ABOUT',
+      'SYS_CONTACT',
+      'POL_PRIVACY',
+      'POL_TERMS',
+      'POL_ACCESSIBILITY',
+      'POL_EDITORIAL',
+      'POL_TESTING',
+      'POL_CORRECTIONS',
+    ],
+  },
+  {
     title:
       releaseState.mode === 'restricted-preview'
         ? 'Recipe drafts'
@@ -140,8 +161,10 @@ const path = registryPathById(registry, 'SYS_SITEMAP');
       </p>
       <h1>Everything available in this release.</h1>
       <p class="lede">
-        This map intentionally omits policy, video, about, contact, and account
-        routes that remain reserved without an implementation.
+        This map includes the trust routes available in this release. A
+        legal-dependent route remains a transparent, non-collecting status page
+        until its accountable facts are approved; it never uses a placeholder
+        identity, mailbox, retention period, or terms text.
       </p>
       <MediaPlaceholder
         mediaId="POLICY-tabletop-texture"

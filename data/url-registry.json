@@ -272,7 +272,7 @@
       "path": "/contact/",
       "canonicalUrl": "https://kbbqguide.com/contact/",
       "status": "locked",
-      "indexable": true
+      "indexable": false
     },
     {
       "id": "SYS_NEWSLETTER",
@@ -327,12 +327,12 @@
     {
       "id": "POL_PRIVACY",
       "type": "policy",
-      "title": "Privacy",
-      "slug": "privacy",
-      "path": "/privacy/",
-      "canonicalUrl": "https://kbbqguide.com/privacy/",
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "path": "/privacy-policy/",
+      "canonicalUrl": "https://kbbqguide.com/privacy-policy/",
       "status": "locked",
-      "indexable": true
+      "indexable": false
     },
     {
       "id": "POL_TERMS",
@@ -342,7 +342,7 @@
       "path": "/terms/",
       "canonicalUrl": "https://kbbqguide.com/terms/",
       "status": "locked",
-      "indexable": true
+      "indexable": false
     },
     {
       "id": "POL_ACCESSIBILITY",
@@ -352,7 +352,17 @@
       "path": "/accessibility/",
       "canonicalUrl": "https://kbbqguide.com/accessibility/",
       "status": "locked",
-      "indexable": true
+      "indexable": false
+    },
+    {
+      "id": "POL_CORRECTIONS",
+      "type": "policy",
+      "title": "Corrections",
+      "slug": "corrections",
+      "path": "/corrections/",
+      "canonicalUrl": "https://kbbqguide.com/corrections/",
+      "status": "locked",
+      "indexable": false
     },
     {
       "id": "POL_COOKIE",
@@ -1255,5 +1265,10 @@
       "indexable": false
     }
   ],
-  "redirects": []
+  "redirects": [
+    {
+      "from": "/privacy/",
+      "toId": "POL_PRIVACY"
+    }
+  ]
 }

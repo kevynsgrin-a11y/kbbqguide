@@ -1,0 +1,46 @@
+{
+  "assets": [
+    {
+      "assetId": "P01-hero",
+      "role": "finished-dish-hero",
+      "assetStatus": "original-approved",
+      "path": "src/assets/fixtures/shared-social.jpg",
+      "altDecision": "informative",
+      "altText": "A reviewed fixture plate of grilled beef with a glossy soy glaze.",
+      "provenance": { "sourceRecord": "P01" },
+      "rights": {
+        "scope": "website and social preview",
+        "externalLicense": null
+      },
+      "humanEditorialReview": { "status": "approved" }
+    },
+    {
+      "assetId": "P02-hero",
+      "role": "finished-dish-hero",
+      "assetStatus": "original-approved",
+      "path": "src/assets/fixtures/shared-social.jpg",
+      "altDecision": "informative",
+      "altText": "A reviewed fixture plate intended to expose a duplicate social image.",
+      "provenance": { "sourceRecord": "P02" },
+      "rights": {
+        "scope": "website and social preview",
+        "externalLicense": null
+      },
+      "humanEditorialReview": { "status": "approved" }
+    },
+    {
+      "assetId": "P01-secondary",
+      "role": "finished-dish-hero",
+      "assetStatus": "licensed-approved",
+      "path": "src/assets/fixtures/p01-secondary.jpg",
+      "altDecision": "informative",
+      "altText": "A licensed secondary fixture image with an intentionally missing license record.",
+      "provenance": { "sourceRecord": "P01" },
+      "rights": {
+        "scope": "website and social preview",
+        "externalLicense": null
+      },
+      "humanEditorialReview": { "status": "approved" }
+    }
+  ]
+}

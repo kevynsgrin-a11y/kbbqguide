@@ -1,38 +1,88 @@
-# Performance Budget
+# Production Performance Budget
 
-Budgets apply to representative home, category, recipe, guide, and shop pages on production-like builds. They are regression thresholds, not promised Core Web Vitals.
+This is an enforced production-build policy, not a promise of field Core Web
+Vitals. `npm run build` runs both the policy unit test and
+`scripts/validate-built-preview.mjs` against the emitted `dist/` artifacts.
+The validator measures the actual request candidates in every eager hero; it
+does not ignore the `<img>` fallback or candidates that are only selected on a
+high-DPR device.
 
-| Metric/resource                        | Initial budget                                 |
-| -------------------------------------- | ---------------------------------------------- |
-| Initial route JavaScript, compressed   | ≤ 60 KB; recipe target ≤ 35 KB                 |
-| Initial CSS, compressed                | ≤ 45 KB                                        |
-| Critical font transfer                 | 0 KB until an approved local font is justified |
-| Initial above-fold media               | ≤ 350 KB mobile, ≤ 600 KB desktop              |
-| Total page transfer before interaction | ≤ 900 KB mobile                                |
-| Third-party scripts before consent     | 0                                              |
-| CLS in lab smoke test                  | ≤ 0.10                                         |
-| LCP in lab smoke test                  | ≤ 2.5 s target, measured and reported          |
-| INP proxy/interaction delay            | ≤ 200 ms target, measured and reported         |
+| Metric                 |           Hard ceiling | Build measurement                                                                                              |
+| ---------------------- | ---------------------: | -------------------------------------------------------------------------------------------------------------- |
+| HTML                   | 15 KiB gzip (15,360 B) | Largest emitted HTML document after gzip                                                                       |
+| Shared CSS             |  40 KiB raw (40,960 B) | Sum of emitted CSS bytes before compression                                                                    |
+| First-party JavaScript | 25 KiB gzip (25,600 B) | All emitted external first-party JS plus the largest route's inline JS                                         |
+| Third-party JavaScript | 50 KiB gzip (51,200 B) | Current contract is stricter: zero third-party script tags are permitted                                       |
+| Mobile hero            |      35 KiB (35,840 B) | Largest eager candidate available at `max-width: 600px`, including WebP, JPEG, and `<img>` fallback candidates |
+| Desktop hero           |    120 KiB (122,880 B) | Largest eager hero candidate across every delivered candidate and fallback                                     |
 
-Static generation is the default. Media reserves dimensions and serves responsive WebP with JPEG fallback. Below-fold media and widgets lazy load. Analytics, ads, email, and affiliate scripts are deferred and consent-aware where required. A >10% material regression in transfer, JavaScript, or lab timing fails without a documented exception.
+The initial verified baselines in `data/performance-budget.json` are 10,767 B
+gzip HTML, 34,423 B raw CSS, 5,296 B first-party JavaScript gzip, 0 B
+third-party JavaScript, 33,533 B mobile hero, and 104,381 B desktop hero. They
+were captured from the emitted build, not estimated from source files.
 
-## Phase 7 production-build smoke
+Responsive media uses only WebP and JPEG derivatives at 360, 600, 960, and
+1,200 pixels. The mobile `<picture>` sources and the non-`picture` `<img>`
+fallback are capped at 600 pixels; that prevents a 2x/3x mobile device from
+silently selecting a desktop-size source. AVIF is intentionally excluded from
+this build because it previously pushed the Cloudflare Pages image build toward
+the platform timeout. Every emitted `<img>` must retain intrinsic `width` and
+`height`.
 
-The repeated local Chromium pass measured maximum LCP at 108 ms, CLS at 0, load at 37.9 ms, and the interaction-delay proxy at 13.2 ms. These local values prove the preview is not blocked or shifting; they are not field Core Web Vitals or a production-network forecast.
+## Regression control and signed exceptions
 
-The final build contains 4,987 compressed CSS bytes, zero external JavaScript bytes, at most 5,639 compressed inline JavaScript bytes, zero approved media/font/provider/ad payload, and zero third-party script. `scripts/validate-built-preview.mjs` now fails the build if maximum estimated initial compressed transfer exceeds 900 KB or if the existing CSS/JavaScript budgets regress.
+`data/performance-budget.json` records a baseline for every metric. A result
+more than 10% above its baseline fails even if it remains below the hard
+ceiling. Hard ceilings cannot be waived. A baseline-regression exception is
+accepted only when its record in `signedExceptions` contains all of the
+following and has not expired:
 
-## Phase 9 image-led production-build smoke
+```json
+{
+  "id": "PERF-YYYY-NNN",
+  "metrics": ["compressedHtmlBytes"],
+  "maxBytes": { "compressedHtmlBytes": 12000 },
+  "rationale": "Specific, time-bounded reason for the regression.",
+  "signedBy": "Portfolio Web Performance Owner",
+  "signedAt": "2026-08-23T00:00:00.000Z",
+  "approvalReference": "PR-123",
+  "expiresAt": "2026-09-01T00:00:00.000Z"
+}
+```
 
-The expanded Phase 9 production build emits 1,840 optimized image outputs (575 AVIF, 575 WebP, and 690 JPEG fallbacks/masters). Across every eager route, the largest mobile hero candidate through 640 pixels is 78,550 bytes and the largest desktop hero candidate is 562,978 bytes. Both remain below the initial above-fold media budgets.
+The exception is metric-scoped, cannot approve more bytes than `maxBytes`, and
+is an accountable approval record rather than a blanket switch. Its signature
+time cannot be in the future or after its expiry. After a successful approved
+release, update a baseline only from the retained CI artifact measurements and
+in the same reviewed change that explains why the new normal is justified.
 
-The static validator reports 7,431 compressed CSS bytes, zero external JavaScript, at most 5,631 compressed inline JavaScript bytes, maximum compressed HTML of 26,659 bytes, maximum estimated compressed initial non-media transfer of 34,090 bytes, maximum estimated mobile initial transfer including hero media of 112,640 bytes, and zero third-party scripts. Browser timing remains a public-preview release gate rather than a production field claim.
+Run the gates locally with:
 
-## Phase 10 deployment-build hardening
+```sh
+npm run build
+npx vitest run tests/p2-performance-budget.test.ts
+node scripts/validate-built-preview.mjs
+```
 
-The exact-SHA Phase 10 build initially produced the same 1,840-file AVIF/WebP/JPEG set but took
-14 minutes 12 seconds for Astro image processing on GitHub Actions and exceeded Cloudflare Pages'
-20-minute build limit. The active contract now emits five WebP widths with JPEG fallback: 1,265
-optimized outputs, zero AVIF, and unchanged crop/loading semantics. The cold local validation
-reported a 69,507-byte largest mobile hero candidate, a 562,978-byte largest desktop candidate,
-and a 99,938-byte maximum estimated mobile initial transfer.
+## Field Core Web Vitals ownership and runbook
+
+The **Portfolio Web Performance Owner** owns the field-CWV review; the release
+owner must provide that role with the production URL and deployment timestamp.
+No analytics or third-party monitoring script is added merely to collect this
+data.
+
+Within two business days after a production deployment, and monthly while the
+site is public, the owner should:
+
+1. Review the mobile and desktop 28-day p75 Core Web Vitals in Google Search
+   Console and, where available, CrUX origin/page data.
+2. Record the source date range, sample sufficiency, LCP, INP, and CLS in the
+   release evidence. If the property has insufficient field traffic, record
+   that fact; do not describe lab results as field CWV.
+3. Open a remediation issue for a sustained p75 regression or for LCP above
+   2.5 s, INP above 200 ms, or CLS above 0.10. Tie any related build-budget
+   regression to the metric-scoped signed exception above.
+4. Re-check the next 28-day window and close the issue only after the field
+   signal recovers or the evidence shows that the sample remains insufficient.
+
+The static budget gate remains required even when no field sample is available.

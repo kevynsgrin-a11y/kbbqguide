@@ -1,0 +1,29 @@
+---
+interface Props {
+  routeLabel: string;
+  blockers: readonly string[];
+}
+
+const { routeLabel, blockers } = Astro.props;
+---
+
+<aside
+  class="disclosure-box"
+  data-trust-route-status="blocked"
+  aria-label={`${routeLabel} publication status`}
+>
+  <strong>{routeLabel} is not yet published as a complete public policy.</strong
+  >
+  <p>
+    KBBQGuide keeps this route fail-closed until its accountable legal or
+    contact facts are approved. It does not substitute placeholder information
+    or collect a message through this page.
+  </p>
+  {
+    blockers.length > 0 && (
+      <p>
+        <strong>Required before publication:</strong> {blockers.join(', ')}.
+      </p>
+    )
+  }
+</aside>

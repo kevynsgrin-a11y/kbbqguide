@@ -1,0 +1,48 @@
+---
+import registryData from '../../data/url-registry.json';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'POL_TESTING');
+---
+
+<BaseLayout
+  title="Recipe Testing Policy"
+  description="KBBQGuide recipe test-cook, safety, language, and editorial review requirements."
+  canonicalPath={path}
+>
+  <section class="section">
+    <div class="shell reading-width policy-stack">
+      <p class="eyebrow">Recipe methodology</p>
+      <h1>Recipe testing policy</h1>
+      <section>
+        <h2>Four independent review gates</h2>
+        <p>
+          Each recipe record holds separate test-cook, food-safety,
+          Korean-language, and editorial review gates. A status label alone is
+          not enough: the published record must include named reviewers, roles,
+          dates, evidence references, and a food-safety credential where that
+          review requires one.
+        </p>
+      </section>
+      <section>
+        <h2>What testing can support</h2>
+        <p>
+          Review evidence can support only the specific preparation, timing,
+          yield, handling, and sensory statements it documents. It does not
+          create medical, nutrition, product-ranking, availability, or universal
+          safety claims.
+        </p>
+      </section>
+      <section>
+        <h2>Publication boundary</h2>
+        <p>
+          Draft recipes remain outside public sitemaps, indexable category
+          lists, homepage features, and Recipe structured data. A complete draft
+          is still a draft until all gates are published with real evidence.
+        </p>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

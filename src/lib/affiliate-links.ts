@@ -1,3 +1,6 @@
+import { approvedAffiliateDisclosure } from './affiliate-policy';
+import { assertCommercialModuleActive } from './commercial-activation';
+
 export interface MerchantRecord {
   readonly id: string;
   readonly status: 'not-applied' | 'pending' | 'approved' | 'suspended';
@@ -68,4 +71,32 @@ export function buildAffiliateUrl(
   url.searchParams.set(merchant.affiliateIdParameterName, merchant.affiliateId);
 
   return url.toString();
+}
+
+export interface ActivatedAffiliateLink {
+  readonly href: string;
+  readonly rel: 'sponsored nofollow';
+  /** Must render before or adjacent to the affiliate recommendation. */
+  readonly adjacentDisclosureCopy: string;
+}
+
+/**
+ * The only helper intended for a rendered paid recommendation. URL generation
+ * alone is not authorization: the commercial module and policy ownership must
+ * both pass before a destination and its mandatory `rel` value are returned.
+ */
+export function buildActivatedAffiliateLink(
+  moduleId: string,
+  merchant: MerchantRecord,
+  cleanDestination: string,
+  parameters: Readonly<Record<string, string>>,
+): ActivatedAffiliateLink {
+  assertCommercialModuleActive(moduleId);
+  const disclosure = approvedAffiliateDisclosure();
+
+  return {
+    href: buildAffiliateUrl(merchant, cleanDestination, parameters),
+    rel: disclosure.paidLinkRel,
+    adjacentDisclosureCopy: disclosure.adjacentDisclosureCopy,
+  };
 }

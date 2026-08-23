@@ -1,7 +1,10 @@
 import { getCollection } from 'astro:content';
 import type { APIRoute } from 'astro';
 import registryData from '../../data/url-registry.json';
-import { isRecipePublishable } from '../lib/publication-governance';
+import {
+  isRecipePublishable,
+  recipeSitemapLastModified,
+} from '../lib/publication-governance';
 import { releaseState } from '../lib/release-state';
 import { canonicalUrl } from '../lib/seo';
 import type { UrlRegistry } from '../lib/url-registry';
@@ -24,20 +27,30 @@ export const GET: APIRoute = async () => {
     );
   }
 
-  const publishedRecipeIds = new Set(
+  const publishedRecipeLastModified = new Map(
     (await getCollection('recipes'))
       .map((entry) => entry.data)
       .filter(
         (recipe): recipe is CompleteRecipe =>
           recipe.contentStatus === 'complete' && isRecipePublishable(recipe),
       )
-      .map((recipe) => recipe.id),
+      .flatMap((recipe) => {
+        const lastModified = recipeSitemapLastModified(recipe);
+        return lastModified === null
+          ? []
+          : [[recipe.id, lastModified] as const];
+      }),
   );
   const urls = registry.entries
     .filter(
-      (entry) => entry.type === 'recipe' && publishedRecipeIds.has(entry.id),
+      (entry) =>
+        entry.type === 'recipe' && publishedRecipeLastModified.has(entry.id),
     )
-    .map((entry) => `<url><loc>${canonicalUrl(entry.path)}</loc></url>`)
+    .map((entry) => {
+      const lastModified = publishedRecipeLastModified.get(entry.id);
+      if (lastModified === undefined) return '';
+      return `<url><loc>${canonicalUrl(entry.path)}</loc><lastmod>${lastModified}</lastmod></url>`;
+    })
     .join('');
 
   return new globalThis.Response(

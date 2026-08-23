@@ -17,7 +17,6 @@ export const humanReviewGateKeys = [
 ] as const;
 
 export type HumanReviewGateKey = (typeof humanReviewGateKeys)[number];
-type HumanReviewGate = CompleteRecipe['reviewGates'][HumanReviewGateKey];
 
 const humanReviewGateLabels: Record<HumanReviewGateKey, string> = {
   testCook: 'test-cook review',
@@ -28,19 +27,16 @@ const humanReviewGateLabels: Record<HumanReviewGateKey, string> = {
 
 const placeholderPattern =
   /\{\{[^}]+\}\}|^\s*(?:tbd|todo|unknown|n\/a|none|legal[ _-]?name)\s*$/i;
+const isoDatePattern = /^(\d{4})-(\d{2})-(\d{2})$/;
 
 /** Reject placeholders and empty values before they can be surfaced publicly. */
-export function isActualPublicationText(
-  value: string | null | undefined,
-): value is string {
-  const normalized = value?.trim() ?? '';
+export function isActualPublicationText(value: unknown): value is string {
+  const normalized = typeof value === 'string' ? value.trim() : '';
   return normalized.length >= 2 && !placeholderPattern.test(normalized);
 }
 
 /** A public accountability link must be a real HTTPS URL, never a placeholder. */
-export function isActualProfileUrl(
-  value: string | null | undefined,
-): value is string {
+export function isActualProfileUrl(value: unknown): value is string {
   if (!isActualPublicationText(value)) return false;
 
   try {
@@ -57,19 +53,47 @@ export function isActualProfileUrl(
   }
 }
 
+/** Accept only a real calendar day expressed as an ISO-8601 date. */
+export function isActualPublicationDate(value: unknown): value is string {
+  if (typeof value !== 'string') return false;
+  const match = isoDatePattern.exec(value);
+  if (!match) return false;
+
+  const year = Number.parseInt(match[1] ?? '', 10);
+  const month = Number.parseInt(match[2] ?? '', 10);
+  const day = Number.parseInt(match[3] ?? '', 10);
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  return (
+    parsed.getUTCFullYear() === year &&
+    parsed.getUTCMonth() === month - 1 &&
+    parsed.getUTCDate() === day
+  );
+}
+
 export function hasCompleteHumanGateEvidence(
-  gate: HumanReviewGate,
+  gate: unknown,
   requiresCredential = false,
 ): boolean {
+  if (!isRecord(gate)) return false;
+
   return (
     gate.status === 'approved' &&
     isActualPublicationText(gate.reviewerName) &&
     isActualProfileUrl(gate.reviewerProfileUrl) &&
     isActualPublicationText(gate.reviewerRole) &&
     (!requiresCredential || isActualPublicationText(gate.reviewerCredential)) &&
-    gate.reviewedAt !== null &&
+    isActualPublicationDate(gate.reviewedAt) &&
     isActualPublicationText(gate.evidence)
   );
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+
+function reviewGatesFrom(value: unknown): Record<string, unknown> | null {
+  if (!isRecord(value) || !isRecord(value.reviewGates)) return null;
+  return value.reviewGates;
 }
 
 /**
@@ -77,17 +101,39 @@ export function hasCompleteHumanGateEvidence(
  * incomplete. This lets a draft notice describe partial review truthfully.
  */
 export function incompleteHumanReviewGateLabels(
-  recipe: CompleteRecipe,
+  recipe: unknown,
 ): readonly string[] {
+  const reviewGates = reviewGatesFrom(recipe);
   return humanReviewGateKeys
     .filter(
       (key) =>
-        !hasCompleteHumanGateEvidence(
-          recipe.reviewGates[key],
-          key === 'foodSafety',
-        ),
+        !hasCompleteHumanGateEvidence(reviewGates?.[key], key === 'foodSafety'),
     )
     .map((key) => humanReviewGateLabels[key]);
+}
+
+export type ReviewGateDisplayStatus = 'required' | 'approved';
+
+/**
+ * Rendering-safe review labels for current and legacy recipe shapes. A badge
+ * can say `approved` only when the full accountable evidence is present; a
+ * missing or malformed gate deliberately displays as `required`.
+ */
+export function recipeReviewGateDisplayStatuses(
+  recipe: unknown,
+): Readonly<Record<HumanReviewGateKey, ReviewGateDisplayStatus>> {
+  const reviewGates = reviewGatesFrom(recipe);
+  const statusFor = (key: HumanReviewGateKey): ReviewGateDisplayStatus =>
+    hasCompleteHumanGateEvidence(reviewGates?.[key], key === 'foodSafety')
+      ? 'approved'
+      : 'required';
+
+  return {
+    testCook: statusFor('testCook'),
+    foodSafety: statusFor('foodSafety'),
+    koreanLanguage: statusFor('koreanLanguage'),
+    editorial: statusFor('editorial'),
+  };
 }
 
 export function publicationStatusLabel(status: PublicationStatus): string {
@@ -104,36 +150,62 @@ export interface RecipePublishability {
  * than `contentStatus === 'complete'`: a complete draft is still not a public
  * food-safety or editorial claim.
  */
-export function recipePublishability(
-  recipe: CompleteRecipe,
-): RecipePublishability {
+export function recipePublishability(recipe: unknown): RecipePublishability {
   const blockers: string[] = [];
 
+  if (!isRecord(recipe))
+    return {
+      isPublishable: false,
+      blockers: ['recipe record is missing or malformed'],
+    };
+
+  if (recipe.contentStatus !== 'complete')
+    blockers.push('recipe content is not complete');
   if (recipe.editorialStatus !== 'published')
     blockers.push('publication status is not published');
   if (!isActualPublicationText(recipe.author))
     blockers.push('named author is missing or unresolved');
   if (!isActualProfileUrl(recipe.authorProfileUrl))
     blockers.push('author profile URL is missing or unresolved');
-  if (recipe.materiallyUpdatedAt === null)
+  if (!isActualPublicationDate(recipe.materiallyUpdatedAt))
     blockers.push('materially updated date is missing');
-  if (recipe.publishedAt === null) blockers.push('publication date is missing');
+  if (!isActualPublicationDate(recipe.publishedAt))
+    blockers.push('publication date is missing');
 
+  const reviewGates = reviewGatesFrom(recipe);
+  if (reviewGates === null)
+    blockers.push('human-review gate record is missing or malformed');
   for (const key of humanReviewGateKeys) {
-    if (
-      !hasCompleteHumanGateEvidence(
-        recipe.reviewGates[key],
-        key === 'foodSafety',
-      )
-    )
+    if (!hasCompleteHumanGateEvidence(reviewGates?.[key], key === 'foodSafety'))
       blockers.push(`${key} human-review evidence is incomplete`);
   }
 
   return { isPublishable: blockers.length === 0, blockers };
 }
 
-export function isRecipePublishable(recipe: CompleteRecipe): boolean {
+export function isRecipePublishable(recipe: unknown): boolean {
   return recipePublishability(recipe).isPublishable;
+}
+
+/**
+ * Returns the only meaningful sitemap date for a recipe: the later of the
+ * genuine publication date and the most recent material update. It deliberately
+ * returns null for every draft, incomplete record, malformed date, or
+ * non-public recipe so callers cannot emit synthetic `<lastmod>` values.
+ */
+export function recipeSitemapLastModified(
+  recipe: CompleteRecipe,
+): string | null {
+  if (!isRecipePublishable(recipe)) return null;
+  if (
+    !isActualPublicationDate(recipe.publishedAt) ||
+    !isActualPublicationDate(recipe.materiallyUpdatedAt)
+  )
+    return null;
+
+  return recipe.materiallyUpdatedAt > recipe.publishedAt
+    ? recipe.materiallyUpdatedAt
+    : recipe.publishedAt;
 }
 
 function requirePublicationText(
@@ -155,7 +227,8 @@ function requireProfileUrl(
 }
 
 function requirePublicationDate(value: string | null, field: string): string {
-  if (value === null) throw new Error(`Publishable recipe has no ${field}.`);
+  if (!isActualPublicationDate(value))
+    throw new Error(`Publishable recipe has no valid ${field}.`);
   return value;
 }
 

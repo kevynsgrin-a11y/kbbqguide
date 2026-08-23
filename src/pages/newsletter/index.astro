@@ -5,11 +5,13 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import DisabledForm from '../../components/DisabledForm.astro';
 import EditorialHero from '../../components/EditorialHero.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { newsletterActivationEligibility } from '../../lib/newsletter-activation';
 import { breadcrumbJsonLd } from '../../lib/seo';
 import { registryPathById, type UrlRegistry } from '../../lib/url-registry';
 
 const registry = registryData as UrlRegistry;
 const path = registryPathById(registry, 'SYS_NEWSLETTER');
+const activation = newsletterActivationEligibility();
 ---
 
 <BaseLayout
@@ -76,6 +78,24 @@ const path = registryPathById(registry, 'SYS_NEWSLETTER');
 
   <section class="section">
     <div class="shell reading-width">
+      <aside
+        class="disclosure-box"
+        data-newsletter-activation-status={activation.isActive
+          ? 'active'
+          : 'disabled'}
+      >
+        <strong>Subscriber collection is disabled.</strong>
+        <p>
+          This page will not collect, send, segment, or infer subscriber data
+          until the provider, purpose, consent, retention, suppression,
+          accessibility, privacy, and approval requirements are documented and
+          independently configured.
+        </p>
+        <p>
+          Future consent must be unchecked and specific to the list purpose;
+          message or browsing behavior cannot create an email-consent tag.
+        </p>
+      </aside>
       <DisabledForm
         formId="newsletter-preview"
         title="Newsletter signup preview"

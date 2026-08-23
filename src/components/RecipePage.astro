@@ -12,7 +12,10 @@ import {
   isRecipePublishable,
   publicationStatusLabel,
   recipeAccountability,
+  recipeReviewGateDisplayStatuses,
 } from '../lib/publication-governance';
+import { resolveRecipeSocialCard } from '../lib/recipe-social';
+import { approvedRecipeStructuredDataImageSet } from '../lib/recipe-structured-data-images';
 import { releaseState } from '../lib/release-state';
 import { breadcrumbJsonLd, recipeJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
@@ -40,28 +43,55 @@ const registry = registryData as UrlRegistry;
 const category = categoryBySlug(recipe.category);
 const canonicalPath = registryPathById(registry, recipe.id);
 const publishable = isRecipePublishable(recipe);
+const canEmitPublicRecipeMetadata = releaseState.isIndexable && publishable;
 const incompleteHumanReviewGates = incompleteHumanReviewGateLabels(recipe);
 const accountability = recipeAccountability(recipe);
+const reviewGateStatuses = recipeReviewGateDisplayStatuses(recipe);
 const visibleRelated = releaseState.isIndexable
   ? related.filter(({ recipe: relatedRecipe }) =>
       isRecipePublishable(relatedRecipe),
     )
   : related;
-const structuredData =
-  releaseState.isIndexable && publishable
-    ? [
-        breadcrumbJsonLd([
-          { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
-          { name: 'Recipes', path: registryPathById(registry, 'SYS_RECIPES') },
-          {
-            name: category.label,
-            path: registryPathById(registry, category.id),
-          },
-          { name: recipe.title, path: canonicalPath },
-        ]),
-        recipeJsonLd(recipe, canonicalPath),
-      ]
-    : [];
+const recipeStructuredDataImages = canEmitPublicRecipeMetadata
+  ? await approvedRecipeStructuredDataImageSet(
+      recipe.id,
+      recipe.imageManifestIds,
+    )
+  : null;
+const recipeStructuredData = recipeJsonLd(
+  recipe,
+  canonicalPath,
+  recipeStructuredDataImages,
+);
+const socialCard = await resolveRecipeSocialCard(
+  recipe.id,
+  recipe.imageManifestIds,
+  canEmitPublicRecipeMetadata,
+);
+const socialCardProps =
+  socialCard === null
+    ? {}
+    : {
+        socialImage: socialCard.image,
+        socialImageAlt: socialCard.alt,
+        socialImageWidth: socialCard.width,
+        socialImageHeight: socialCard.height,
+        openGraphType: 'article' as const,
+      };
+const structuredData = canEmitPublicRecipeMetadata
+  ? [
+      breadcrumbJsonLd([
+        { name: 'Home', path: registryPathById(registry, 'SYS_HOME') },
+        { name: 'Recipes', path: registryPathById(registry, 'SYS_RECIPES') },
+        {
+          name: category.label,
+          path: registryPathById(registry, category.id),
+        },
+        { name: recipe.title, path: canonicalPath },
+      ]),
+      ...(recipeStructuredData === null ? [] : [recipeStructuredData]),
+    ]
+  : [];
 const truthyAllergens = Object.entries(recipe.allergens)
   .filter(([key, value]) => key !== 'crossContactWarning' && value === true)
   .map(
@@ -88,6 +118,7 @@ const truthyAllergens = Object.entries(recipe.allergens)
   canonicalPath={canonicalPath}
   jsonLd={structuredData}
   pageClass={`recipe-page category-${category.accent}`}
+  {...socialCardProps}
   robotsContent={publishable
     ? releaseState.metaRobots
     : 'noindex,nofollow,noarchive'}
@@ -177,13 +208,13 @@ const truthyAllergens = Object.entries(recipe.allergens)
         )
       }
       <span class="badge">
-        Test cook {recipe.reviewGates.testCook.status}
+        Test cook {reviewGateStatuses.testCook}
       </span>
       <span class="badge">
-        Safety review {recipe.reviewGates.foodSafety.status}
+        Safety review {reviewGateStatuses.foodSafety}
       </span>
       <span class="badge">
-        Language review {recipe.reviewGates.koreanLanguage.status}
+        Language review {reviewGateStatuses.koreanLanguage}
       </span>
     </div>
   </EditorialHero>

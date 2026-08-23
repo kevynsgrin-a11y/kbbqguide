@@ -1,0 +1,64 @@
+---
+import registryData from '../../data/url-registry.json';
+import TrustRouteStatus from '../components/TrustRouteStatus.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  trustRouteConfig,
+  trustRoutePublication,
+  trustRouteRobotsContent,
+} from '../lib/trust-routes';
+import { registryPathById, type UrlRegistry } from '../lib/url-registry';
+
+const registry = registryData as UrlRegistry;
+const path = registryPathById(registry, 'POL_ACCESSIBILITY');
+const publication = trustRoutePublication('accessibility');
+const robotsContent = trustRouteRobotsContent('accessibility');
+const accessibility = trustRouteConfig.accessibility;
+---
+
+<BaseLayout
+  title="Accessibility"
+  description="KBBQGuide accessibility statement and feedback-channel publication status."
+  canonicalPath={path}
+  {robotsContent}
+>
+  <section class="section">
+    <div class="shell reading-width policy-stack">
+      <p class="eyebrow">Accessibility</p>
+      <h1>Accessibility statement</h1>
+      {
+        publication.status === 'approved' ? (
+          <>
+            <p class="lede">
+              KBBQGuide is committed to providing content and planning tools
+              that are usable by people with disabilities. We target WCAG 2.2
+              Level AA and test keyboard and screen-reader flows.
+            </p>
+            <p>
+              If you encounter a barrier, contact{' '}
+              <a href={`mailto:${accessibility.feedbackEmail}`}>
+                {accessibility.feedbackEmail}
+              </a>{' '}
+              with the page URL, task, and browser or assistive technology when
+              comfortable.
+            </p>
+            <p>
+              <strong>Last reviewed:</strong> {accessibility.lastReviewedAt}
+            </p>
+          </>
+        ) : (
+          <>
+            <p class="lede">
+              KBBQGuide targets accessible, keyboard-operable content and tools,
+              but an accountable feedback channel has not yet been published.
+            </p>
+            <TrustRouteStatus
+              routeLabel="Accessibility statement"
+              blockers={publication.blockers}
+            />
+          </>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>

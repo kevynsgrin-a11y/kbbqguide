@@ -38,7 +38,7 @@ describe('Phase 0 and Phase 1 gate', () => {
     expect(validateUrlRegistry(registry)).toEqual([]);
     expect(
       registry.entries.filter((entry) => entry.type !== 'recipe'),
-    ).toHaveLength(45);
+    ).toHaveLength(46);
   });
 
   it('keeps the CSV registry view in row parity with JSON', () => {

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "status": "blocked",
+  "blockedReason": "The site is not in an approved public-launch state and no indexable reviewed recipe has been recorded.",
+  "google": {
+    "apexVerified": false,
+    "apexVerifiedAt": null,
+    "wwwVerified": false,
+    "wwwVerifiedAt": null,
+    "sitemapSubmittedAt": null
+  },
+  "bing": {
+    "apexVerified": false,
+    "apexVerifiedAt": null,
+    "wwwVerified": false,
+    "wwwVerifiedAt": null,
+    "sitemapSubmittedAt": null
+  },
+  "representativeRoutes": [
+    {
+      "id": "SYS_HOME",
+      "inspectionRecordedAt": null,
+      "indexingRequestedAt": null
+    },
+    {
+      "id": "SYS_RECIPES",
+      "inspectionRecordedAt": null,
+      "indexingRequestedAt": null
+    },
+    {
+      "id": "CAT_MEAT",
+      "inspectionRecordedAt": null,
+      "indexingRequestedAt": null
+    },
+    { "id": "M01", "inspectionRecordedAt": null, "indexingRequestedAt": null },
+    { "id": "G01", "inspectionRecordedAt": null, "indexingRequestedAt": null },
+    {
+      "id": "MENU_2",
+      "inspectionRecordedAt": null,
+      "indexingRequestedAt": null
+    },
+    {
+      "id": "SYS_TOOLS",
+      "inspectionRecordedAt": null,
+      "indexingRequestedAt": null
+    }
+  ],
+  "monitoring": {
+    "owner": null,
+    "weeks": [
+      { "week": 1, "checkedAt": null, "notes": null },
+      { "week": 2, "checkedAt": null, "notes": null },
+      { "week": 3, "checkedAt": null, "notes": null },
+      { "week": 4, "checkedAt": null, "notes": null }
+    ]
+  },
+  "firstIndexedAt": null,
+  "issues": []
+}

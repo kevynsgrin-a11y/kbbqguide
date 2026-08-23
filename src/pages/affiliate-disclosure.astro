@@ -4,11 +4,22 @@ import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import MediaPlaceholder from '../components/MediaPlaceholder.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  affiliateDisclosureReadiness,
+  affiliateRelationshipStatus,
+  approvedAffiliateDisclosure,
+} from '../lib/affiliate-policy';
 import { breadcrumbJsonLd } from '../lib/seo';
 import { registryPathById, type UrlRegistry } from '../lib/url-registry';
 
 const registry = registryData as UrlRegistry;
 const path = registryPathById(registry, 'POL_AFFILIATE');
+const disclosureBlockers = affiliateDisclosureReadiness();
+const policyDisclosure =
+  disclosureBlockers.length === 0 ? approvedAffiliateDisclosure() : null;
+const relationshipStatus = affiliateRelationshipStatus(
+  Boolean(policyDisclosure),
+);
 ---
 
 <BaseLayout
@@ -33,8 +44,11 @@ const path = registryPathById(registry, 'POL_AFFILIATE');
       <p class="eyebrow">Material connections must be unmistakable</p>
       <h1>Affiliate disclosure</h1>
       <p class="lede">
-        This preview currently earns no affiliate commission and contains no
-        active merchant link.
+        {
+          relationshipStatus === 'active'
+            ? 'Affiliate-link disclosures are approved, but every commercial module still requires its own activation evidence.'
+            : 'This preview currently earns no affiliate commission and contains no active merchant link.'
+        }
       </p>
       <MediaPlaceholder
         mediaId="POLICY-tabletop-texture"
@@ -49,12 +63,40 @@ const path = registryPathById(registry, 'POL_AFFILIATE');
   <section class="section">
     <div class="shell reading-width policy-stack">
       <AffiliateDisclosure />
+      {
+        policyDisclosure ? (
+          <section>
+            <h2>Policy activation information</h2>
+            <p>
+              <strong>Effective:</strong> {policyDisclosure.effectiveDate}
+              <br />
+              <strong>Operator:</strong> {policyDisclosure.legalOperatorName}
+              <br />
+              <strong>Questions:</strong>{' '}
+              <a href={`mailto:${policyDisclosure.contactEmail}`}>
+                {policyDisclosure.contactEmail}
+              </a>
+            </p>
+          </section>
+        ) : (
+          <section data-affiliate-disclosure-status="blocked">
+            <h2>Disclosure activation is blocked</h2>
+            <p>
+              The required effective date, legal operator, questions contact,
+              adjacent disclosure copy, paid-link relation, and accountable
+              approval record have not all been supplied. No paid link can
+              activate while this policy remains blocked.
+            </p>
+          </section>
+        )
+      }
       <section>
-        <h2>If monetization is approved later</h2>
+        <h2>Page-level disclosure rule</h2>
         <p>
-          We will disclose a material connection before or adjacent to a
-          recommendation, mark paid links as sponsored, and distinguish
-          editorial criteria from compensation.
+          Every active affiliate recommendation must disclose the material
+          connection before the first recommendation and adjacent to the paid
+          link. Paid links must use{' '}
+          <code>rel=&quot;sponsored nofollow&quot;</code>.
         </p>
       </section>
       <section>
