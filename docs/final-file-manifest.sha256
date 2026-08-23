@@ -42,7 +42,7 @@ d24b90d9884464ffd0b54753c926639121ca400abc26aeb74188f90c1a5ffa3e  ./docs/CULTURA
 f553919b39f44b7f8d89c3507aa6a1cd27dfa6b5f87d45625e31a0b80188cb39  ./docs/EDGE-CACHE-ROLLOUT.md
 b09c98e38408ec219b401d836f1ccfa60ab0e97030bac14477b5340e70adb7f4  ./docs/email-automation-map.md
 9c4371e3cd2d085b6e5d182a93b3ea77f8308d571779275f9108031ffcbced01  ./docs/FINAL-BUILD-REPORT.md
-5d150aaa3fc1754fb6095fce9fa03039062e783168b6db02ae4f1f353c5e4a06  ./docs/FINAL-FILE-MANIFEST.md
+c96642fc1d17d8bf19c8f64c5b22b2a866e5ad2006b04a8bf94ab823bf8a3d3d  ./docs/FINAL-FILE-MANIFEST.md
 d93de5f3cc23882d178834a417da9f0f4ca3fee3156000981f20a09c4b020823  ./docs/FOOD-SAFETY-STANDARD.md
 a913696380351e5b6685827c99395bce3e1ec8ea505cf291d4aade13cd2da09d  ./docs/GOVERNANCE.md
 756af36ec36301b9c7aae17a8efb95936b10e2b9ebb865f7315d0f8514e56243  ./docs/HSTS-ROLLOUT.md
@@ -114,9 +114,10 @@ c26efdf8211cff9465f647755dc08f3d2eef4dac0c788e6dbea0ea37c9d993b4  ./docs/STRUCTU
 d6eb107c2f6dfef330a301e8416b7d3fc26a32e3e9dc238737c4594315409140  ./docs/TRUST-ROUTE-PUBLICATION.md
 fc93c5dda8bf5eb7d66e3481baf1c6bba9c253adb770ef8b2837d0f330d50008  ./docs/URL-POLICY.md
 56560d70cd357f34f24957211d669e827bff86635ab6cf1d96553b4a7074d9d2  ./docs/url-registry.csv
-b055a00b644a3ac8ed2a6f1ec377a425c433d56c90f0820fe1aa4458793d1ace  ./edge/stale-sitemap-tombstone/src/index.js
-6b84915157f9e4cd0e5a177d1417b91a583676be546357b6c032ad0ad1cbf3ba  ./edge/stale-sitemap-tombstone/test.mjs
-f3fc67914026baab3c1b0e65bdf313074719dad6408230f39da3b523c3457c13  ./edge/stale-sitemap-tombstone/wrangler.jsonc
+5fdf12e943fb6ec6064a45952422941b88bed90cc3e2a593b9b25a27d0894de7  ./edge/stale-sitemap-tombstone/README.md
+3c65b94ffc4961d60c3b418061b1a550d5718c1d3b64dbcc598c72611316b642  ./edge/stale-sitemap-tombstone/src/index.js
+a5a16ce640590c129c069d31a956eff06826eac3035a231c296cad2d4936a488  ./edge/stale-sitemap-tombstone/test.mjs
+b7ba1a16dcd9f7c33062cfc0e26bbe80b7e2b7a690e315ac7dde6ebf52ae973b  ./edge/stale-sitemap-tombstone/wrangler.jsonc
 20d08c627dafb37dbec009b3a9d5a2916488c8be90b4df14580ae830706c80e6  ./eslint.config.js
 911e87ee371c215b7f4b1c8b218b83955e56730a81890c072428e8547b4c5ca6  ./package-lock.json
 ba6187e65da404b4dcd51af03ecd72fd47c9d1a67e329730d172b6ed727e2087  ./package.json
