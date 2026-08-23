@@ -112,6 +112,30 @@ export function incompleteHumanReviewGateLabels(
     .map((key) => humanReviewGateLabels[key]);
 }
 
+export type ReviewGateDisplayStatus = 'required' | 'approved';
+
+/**
+ * Rendering-safe review labels for current and legacy recipe shapes. A badge
+ * can say `approved` only when the full accountable evidence is present; a
+ * missing or malformed gate deliberately displays as `required`.
+ */
+export function recipeReviewGateDisplayStatuses(
+  recipe: unknown,
+): Readonly<Record<HumanReviewGateKey, ReviewGateDisplayStatus>> {
+  const reviewGates = reviewGatesFrom(recipe);
+  const statusFor = (key: HumanReviewGateKey): ReviewGateDisplayStatus =>
+    hasCompleteHumanGateEvidence(reviewGates?.[key], key === 'foodSafety')
+      ? 'approved'
+      : 'required';
+
+  return {
+    testCook: statusFor('testCook'),
+    foodSafety: statusFor('foodSafety'),
+    koreanLanguage: statusFor('koreanLanguage'),
+    editorial: statusFor('editorial'),
+  };
+}
+
 export function publicationStatusLabel(status: PublicationStatus): string {
   return status.charAt(0).toUpperCase() + status.slice(1);
 }

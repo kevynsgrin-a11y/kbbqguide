@@ -12,6 +12,7 @@ import {
   isRecipePublishable,
   publicationStatusLabel,
   recipeAccountability,
+  recipeReviewGateDisplayStatuses,
 } from '../lib/publication-governance';
 import { resolveRecipeSocialCard } from '../lib/recipe-social';
 import { approvedRecipeStructuredDataImageSet } from '../lib/recipe-structured-data-images';
@@ -45,6 +46,7 @@ const publishable = isRecipePublishable(recipe);
 const canEmitPublicRecipeMetadata = releaseState.isIndexable && publishable;
 const incompleteHumanReviewGates = incompleteHumanReviewGateLabels(recipe);
 const accountability = recipeAccountability(recipe);
+const reviewGateStatuses = recipeReviewGateDisplayStatuses(recipe);
 const visibleRelated = releaseState.isIndexable
   ? related.filter(({ recipe: relatedRecipe }) =>
       isRecipePublishable(relatedRecipe),
@@ -206,13 +208,13 @@ const truthyAllergens = Object.entries(recipe.allergens)
         )
       }
       <span class="badge">
-        Test cook {recipe.reviewGates.testCook.status}
+        Test cook {reviewGateStatuses.testCook}
       </span>
       <span class="badge">
-        Safety review {recipe.reviewGates.foodSafety.status}
+        Safety review {reviewGateStatuses.foodSafety}
       </span>
       <span class="badge">
-        Language review {recipe.reviewGates.koreanLanguage.status}
+        Language review {reviewGateStatuses.koreanLanguage}
       </span>
     </div>
   </EditorialHero>
