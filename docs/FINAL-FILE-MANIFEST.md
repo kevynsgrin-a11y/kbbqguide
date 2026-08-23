@@ -10,7 +10,7 @@ checksum file itself, which cannot safely hash itself. Generated `dist/`,
 `.astro/`, `node_modules/`, local caches, operating-system metadata, and the
 external ZIP archive are not source-handoff files and are excluded.
 
-Final source inventory: **471 tracked files; 470 SHA-256 entries; one
+Final source inventory: **472 tracked files; 471 SHA-256 entries; one
 self-excluded checksum file**.
 
 ## Verify
@@ -21,7 +21,7 @@ From the project root, run:
 sha256sum --check docs/final-file-manifest.sha256
 ```
 
-Expected result: 470 `OK` records and zero failed checks. Then run:
+Expected result: 471 `OK` records and zero failed checks. Then run:
 
 ```bash
 npm ci
