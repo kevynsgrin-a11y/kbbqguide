@@ -36,6 +36,7 @@ import {
   type SearchLaunchLog,
 } from '../src/lib/search-launch';
 import {
+  trustRouteConfig,
   trustRoutePublication,
   trustRouteRobotsContent,
 } from '../src/lib/trust-routes';
@@ -48,6 +49,9 @@ const registry = registryData as UrlRegistry;
 describe('P1 governance, privacy, commercial, and search operating gates', () => {
   it('keeps legal-dependent trust routes explicitly noindex even if a later release defaults to indexable', () => {
     expect(registryPathById(registry, 'POL_PRIVACY')).toBe('/privacy-policy/');
+    expect(trustRouteConfig.terms.legalOperatorName).toBe(
+      'Oak and Main Developers LLC',
+    );
     expect(registryPathById(registry, 'POL_CORRECTIONS')).toBe('/corrections/');
     expect(registry.redirects).toContainEqual({
       from: '/privacy/',
@@ -82,6 +86,10 @@ describe('P1 governance, privacy, commercial, and search operating gates', () =>
       expect(source(page)).toContain('trustRouteRobotsContent');
       expect(source(page)).toContain('{robotsContent}');
     }
+    expect(source('src/pages/privacy-policy.astro')).toContain(
+      'notice.postalAddress',
+    );
+    expect(source('src/pages/privacy-policy.astro')).toContain('<address>');
   });
 
   it('records the observed Cloudflare analytics disclosure without inventing legal or retention facts', () => {
@@ -98,10 +106,11 @@ describe('P1 governance, privacy, commercial, and search operating gates', () =>
     expect(privacyData.crossSiteAdvertisingStatement).toBe(
       'We do not use this information for cross-site advertising profiles.',
     );
+    expect(privacyData.legalOperatorName).toBe('Oak and Main Developers LLC');
+    expect(privacyData.postalAddress).toBe('2108 N St., Sacramento, CA 95816');
     expect(privacyNoticeReadiness()).toEqual(
       expect.arrayContaining([
         'publicationStatus',
-        'legalOperatorName',
         'privacyContactEmail',
         'hostingAndEdgeLogRetention',
         'analyticsRetention',

@@ -15,13 +15,13 @@ e4f853b59f5ddefcbc56d3707f10437d12f66f332047e72407b8efcdbc8861bc  ./data/ingredi
 9c7876dbd0a09f559ef66192e6d992c74eafd4ea5287910fe6998182b951b9a5  ./data/newsletter-activation.json
 7e27974ec8f8432e83d5e38a8b5d6cf9c65324edee3872b0a8621b476f5d5d50  ./data/outbound-domain-allowlist.json
 d493f2b996b3236f370b6a07591df4d65432e7a308ee2a5579c212c933913b29  ./data/performance-budget.json
-c30045aacd0c789797ea17c2f786e27ce9d892cb2bcfbdc52562eac9be301861  ./data/privacy-notice.json
+e2161c0c16cf0de33e5d6391895035138d5dc59e462893c94926b8d9b8bc96dc  ./data/privacy-notice.json
 e024111f47ac60c58e345ec654646d7e80c89d7eed5a36e95cc7b708d02b28b5  ./data/recipe-inventory.json
 caefc4bad87ce9a0ede47a2532f3459524bfa480856bdf7662d7fbcd8bca3c7d  ./data/recipe-relationship-graph.json
 d01a29829bfd6e2111251ada5ffd84abdeadb1c36df8e9aedd553b0aea6b2a62  ./data/release-matrix.json
 e4385fe2ab585def7534df6e71be1c92da348898c7ed72408329e01be0be320b  ./data/revenue-modules.json
 9e8589b38d58ad708d405816d4212df812a87e643e0da1f2406d2903138cf73b  ./data/search-launch-log.json
-f629b5c39e742a2ace450f2640205ec7004acd6be69914a3e3a77da8de87e173  ./data/trust-route-config.json
+aacfe489bab236e7109fe121480b3ec1e0ecf4073a8e17a02ffe7c080497fe4b  ./data/trust-route-config.json
 883513df9e7fbcc9bf2ab5df865e4f0961d0c11ec392023cec604d4d301aac20  ./data/url-registry.json
 cbb49e6b36ddc7ecc399f6d9d49ee908114995699adff5acbd0d35a3b19eb2e3  ./docs/30-60-90-OPERATING-CHECKLIST.md
 3c4b264e3ba55b5aa172390d07ce01325b26798385f6fea2b5cb2913fed97c80  ./docs/90-DAY-GROWTH-PLAN.md
@@ -31,7 +31,7 @@ bf2af5579764099c509406f8c9be1ded3f87fbe6ba425676b0f7fb4d8fcb2666  ./docs/AFFILIA
 c130c85b861b1906be3b76a0be48329e89961fc82466018eaddbae88db96cb53  ./docs/affiliate-registry.csv
 e10d75e76150cbc3da8cc12b33f8aefb2de150aca9cd7cc377a3b41aeb6ecbf2  ./docs/AFFILIATE-VERIFICATION-QUEUE.md
 06320514db932c56c47eeee4cd414e9d258fcc1b478bf9569a7638e5b540e17c  ./docs/analytics-event-plan.md
-8dc7644fa02ad00468fb761609608917d05b1370b8de44016471a883e197af07  ./docs/AUDIT-REMEDIATION-2026-08-23.md
+0a56eff3a0874de7fe2953826fb163c1a28889faf3ffb720d33d2df63784cb1b  ./docs/AUDIT-REMEDIATION-2026-08-23.md
 6e05da360af5ce798e0c01718e7484fa14478759031b5be09eb15b077bb213ac  ./docs/COMMERCIAL-ACTIVATION-GATE.md
 78fbae5492649dbe18280ff413f82eaec39dfa6cb47473900dad846b9c2ba5b9  ./docs/content-atomization-template.md
 d24b90d9884464ffd0b54753c926639121ca400abc26aeb74188f90c1a5ffa3e  ./docs/CULTURAL-REVIEW-CHECKLIST.md
@@ -388,7 +388,7 @@ e0bb436203254ce8e32723f6b81b2e9168cfd1be63d3dde0e9c16f2bcc73c986  ./src/lib/menu
 5c0d18135e603357d2ba3ef00b6960004c07033056f29ce426c52fa3480ddbda  ./src/lib/newsletter-activation.ts
 2f9dc00e3fe16b529549c30815f9e44c96eb1b3f40082010d16db69a1885709d  ./src/lib/nonrecipe-publication-governance.ts
 29065dca1440b18b6a779eea41be5853b4acd659e0478356cf1291c84d5c2cfa  ./src/lib/planner.ts
-8620d81de56074a90844b4b97953734cf375cc83b9a624a527e79b7f7314058c  ./src/lib/privacy-notice.ts
+7877656294ff6e583c37938a8a3bb9931acfaeea5e5796b26f0318a3dcd5a1df  ./src/lib/privacy-notice.ts
 c9b71b3f47cc9b0db77132c49a6103a396f37ca0f48b557c6a695e5790b85c88  ./src/lib/publication-governance.ts
 c13deb5f22c3d38586c9cd7a8af1fc2f02652ce8dc90cfad51385292da4b2920  ./src/lib/publisher-schema.ts
 21435eaaf2ee7ed7cea3cb197a4ef576f809ef1537f623bd75004020a40bd2af  ./src/lib/recipe-social-gate.ts
@@ -418,7 +418,7 @@ d2acba3e57dc3c5200b051529bb0d39c5a4c511a833e6a038b2fcbee230b46d3  ./src/pages/me
 dd43bb4af344d8243ac32c56003035e58920699abf7363fc70ac4781589fece7  ./src/pages/menus/[guests].astro
 1d444090dda67dfd9d84e78ffe287df8e63e9011434fbfb422fcc5e97821e5b1  ./src/pages/menus/index.astro
 4d96da63c1673ac5a2c46cce78619e344f3ef037c847d3e801b850871dc11870  ./src/pages/newsletter/index.astro
-489b1f9871fe5f3686b18643a0a3d9ca6054ba17c7396af23054f5bfe67793bf  ./src/pages/privacy-policy.astro
+eaa3fdfebb175fc082bb65345eff0dbadb561e11d6da7357057cf62f0d673ab4  ./src/pages/privacy-policy.astro
 0c2394783771fe861d882fe82832e307ae53cecbbe34ac2db0d311986dc8a42c  ./src/pages/recipe-testing-policy.astro
 815491152d3b3033a025828b6af6ff12bc73a9409c877f2c3647c75fde0f368b  ./src/pages/recipes/[category]/[slug].astro
 8de5501c1e1674c3fe4967a1f992aa144f68f8484b6d1169c370716b70972c54  ./src/pages/recipes/[category]/index.astro
@@ -439,7 +439,7 @@ d7b51c3fe6dcc43f269cbc7fa8ee84c0ac4595ee441e3c2c4eb041919b513458  ./tests/affili
 32ce419dac22eb74db8cb34abec468055435e0727d515cd288b28a646af64112  ./tests/fixtures/publication-evidence/recipes/p01.json
 ddcebdeba7640aec88e744f13a5864fa585ad75b078ce4c42e6e66fe09258f8c  ./tests/fixtures/publication-evidence/recipes/p02.json
 2944b3ba6876de4fd876cf0429b2ad1af91205c2f5326da68aca2e56d7e9cfa7  ./tests/nonrecipe-publication-governance.test.ts
-c54f5d7edcbe56c545e6fc96035185539343a2d8b78973285c0835eb13c3814b  ./tests/p1-governance.test.ts
+62322e5db11f3762c9df1f51e3b3203dd7d8529ba24363f9f8df83666faa550c  ./tests/p1-governance.test.ts
 c44b4432fc7181d4f894c7e152b61623770951d61b2c3c5edbe93fc2beaf9e59  ./tests/p1-seo-sitemap.test.ts
 17287e09218086c67c189a5a4f06df089eb83d1ad1309ad58950b4192a4cc01e  ./tests/p2-performance-budget.test.ts
 cf73719fdda95813012d69313271cbff49976812965032b7b880444dacab4652  ./tests/p2-theme-pwa-icons.test.ts
@@ -460,7 +460,7 @@ f5d3331949ab858f7d65a89f4b6f9b1b8bb612f19800c6fe71c020f84ca7f585  ./tests/phase4
 7ff7775bc520e24e04a4a8030d26ea350524486b644fa749d6583aef3186dd60  ./tests/phase7.test.ts
 37a286932b41ab93611ed2a40e539538d97559ed4dcb7abaaaf2d37f73c33294  ./tests/phase8.test.ts
 5eface442636dc1678987c0e195e11d09970ee7d3c3f66d973a9d1f14abf5436  ./tests/phase9.test.ts
-fb21e7f971784a345c2637597724bcf2cf36abe42bf51daa0fd4eb641ab0d5d4  ./tests/privacy-notice.test.ts
+c0d331bf9fa95dd8815bdbcb89331c4e1e089c1806a899313adad722eebd99d1  ./tests/privacy-notice.test.ts
 64eb08c1f48ac150589c50a05c7e93d07f224ae6af35f3355d0bc4e180b71480  ./tests/publication-governance.test.ts
 13b618cad7e2591c4f500e506844b5d0d4d15ed56197320d125b9b92e0fdb977  ./tests/recipe-jsonld-images.test.ts
 e927d2d69b085e3a0157ebe0e49941f8d5c8c0cc57793f4e27e1c5e37f2d3ca8  ./tests/recipe-schema.test.ts
