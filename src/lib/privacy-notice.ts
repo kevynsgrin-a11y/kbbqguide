@@ -64,21 +64,57 @@ const requiredFields: ReadonlyArray<keyof ApprovedPrivacyNotice> = [
 
 function isVerifiedValue(value: string | null): value is string {
   if (typeof value !== 'string' || !value.trim()) return false;
-  return !/\{\{[^}]+\}\}/.test(value);
+  return !/\{\{[^}]+\}\}|\b(?:tbd|todo|unknown)\b/i.test(value);
+}
+
+function isPublicEmail(value: string | null): value is string {
+  return (
+    isVerifiedValue(value) &&
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) &&
+    !value.toLowerCase().endsWith('@example.com')
+  );
+}
+
+function isIsoDate(value: string | null): value is string {
+  if (!isVerifiedValue(value) || !/^\d{4}-\d{2}-\d{2}$/.test(value))
+    return false;
+  const parsed = new globalThis.Date(`${value}T00:00:00.000Z`);
+  return (
+    Number.isFinite(parsed.valueOf()) &&
+    parsed.toISOString().startsWith(`${value}T00:00:00.000Z`)
+  );
+}
+
+function isRequiredFieldVerified(
+  field: keyof ApprovedPrivacyNotice,
+  value: string | null,
+): boolean {
+  if (field === 'privacyContactEmail') return isPublicEmail(value);
+  if (field === 'effectiveDate' || field === 'approvedAt')
+    return isIsoDate(value);
+  return isVerifiedValue(value);
+}
+
+export function privacyNoticeReadinessFor(
+  record: PrivacyNoticeDraft,
+): readonly string[] {
+  const missing: string[] = requiredFields.filter(
+    (field) => !isRequiredFieldVerified(field, record[field]),
+  );
+  if (record.publicationStatus !== 'approved')
+    missing.unshift('publicationStatus');
+  if (
+    !isVerifiedValue(record.blockedReason) &&
+    record.publicationStatus === 'blocked'
+  )
+    missing.push('blockedReason');
+  if (record.publicationStatus === 'approved' && record.blockedReason !== null)
+    missing.push('blockedReason');
+  return missing;
 }
 
 export function privacyNoticeReadiness(): readonly string[] {
-  const missing: string[] = requiredFields.filter(
-    (field) => !isVerifiedValue(draft[field]),
-  );
-  if (draft.publicationStatus !== 'approved')
-    missing.unshift('publicationStatus');
-  if (
-    !isVerifiedValue(draft.blockedReason) &&
-    draft.publicationStatus === 'blocked'
-  )
-    missing.push('blockedReason');
-  return missing;
+  return privacyNoticeReadinessFor(draft);
 }
 
 function materializeApprovedPrivacyNotice(): ApprovedPrivacyNotice {

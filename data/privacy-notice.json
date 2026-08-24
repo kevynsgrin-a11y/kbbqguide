@@ -1,10 +1,10 @@
 {
   "version": 1,
   "publicationStatus": "blocked",
-  "blockedReason": "A public privacy notice cannot be published until the owner supplies and approves the legal operator, privacy-contact, processor, retention, and rights-request facts.",
-  "legalOperatorName": null,
+  "blockedReason": "The legal operator and mailing address are recorded, but a public privacy notice cannot be published until the owner supplies and approves the privacy-contact, processor, retention, rights-request, effective-date, and approval facts.",
+  "legalOperatorName": "Oak and Main Developers LLC",
   "privacyContactEmail": null,
-  "postalAddress": null,
+  "postalAddress": "2108 N St., Sacramento, CA 95816",
   "effectiveDate": null,
   "hostingAndEdgeProvider": null,
   "hostingAndEdgeLogRetention": null,
