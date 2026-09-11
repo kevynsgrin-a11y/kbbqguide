@@ -2232,3 +2232,42 @@ a.support-card:hover {
     text-decoration-color: rgb(166 224 174 / 68%);
   }
 }
+
+.nutrition-note {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.nutrition-reference-list {
+  margin: var(--space-4) 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+}
+
+.nutrition-reference-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-4);
+  padding: var(--space-2) var(--space-4);
+}
+
+.nutrition-reference-list li + li {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.nutrition-ingredient {
+  font-weight: 750;
+}
+
+.nutrition-values {
+  font-variant-numeric: tabular-nums;
+}
+
+.nutrition-source {
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+}

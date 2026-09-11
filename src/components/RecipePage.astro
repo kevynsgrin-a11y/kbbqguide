@@ -8,6 +8,12 @@ import {
   isDisplayableTaxonomy,
 } from '../lib/ingredients';
 import {
+  FDC_ATTRIBUTION,
+  formatPer100gLine,
+  ingredientNutritionData,
+  recipeNutritionCoverage,
+} from '../lib/ingredient-nutrition';
+import {
   incompleteHumanReviewGateLabels,
   isRecipePublishable,
   publicationStatusLabel,
@@ -110,6 +116,11 @@ const truthyAllergens = Object.entries(recipe.allergens)
       })[key],
   )
   .filter(Boolean);
+const nutritionCoverage = recipeNutritionCoverage(recipe);
+const nutritionRows = nutritionCoverage.rows
+  .map((row) => ({ row, line: formatPer100gLine(row.per100g) }))
+  .filter(({ line }) => line !== '');
+const nutritionFetchedAt = ingredientNutritionData.dictionaryFetchedAt;
 ---
 
 <BaseLayout
@@ -400,6 +411,51 @@ const truthyAllergens = Object.entries(recipe.allergens)
       </section>
     )
   }
+
+  <section class="section" aria-labelledby="ingredient-nutrition-title">
+    <div class="shell reading-width">
+      <p class="eyebrow">Reference data</p>
+      <h2 id="ingredient-nutrition-title">Ingredient nutrition reference</h2>
+      {
+        nutritionRows.length > 0 ? (
+          <>
+            <p class="nutrition-note">
+              Per-100 g reference values for this recipe's ingredients, matched
+              to USDA FoodData Central foods. These describe the raw ingredient,
+              not a per-serving analysis of this recipe; this recipe's nutrition
+              remains not-calculated pending test-kitchen review.
+            </p>
+            <ul class="nutrition-reference-list">
+              {nutritionRows.map(({ row, line }) => (
+                <li>
+                  <span class="nutrition-ingredient">{row.displayName}</span>
+                  <span class="nutrition-values">{line}</span>
+                  {row.dataType && (
+                    <span class="nutrition-source">
+                      FDC {row.fdcId} ({row.dataType})
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <p class="nutrition-note">
+              <a href={FDC_ATTRIBUTION.url} rel="noopener noreferrer">
+                {FDC_ATTRIBUTION.text}
+              </a>
+              , dictionary snapshot {nutritionFetchedAt}. Ingredients not listed
+              here are not yet verified against FoodData Central and show no
+              numbers rather than estimates.
+            </p>
+          </>
+        ) : (
+          <p class="nutrition-note">
+            Ingredient nutrition reference for this recipe is not yet verified
+            against FoodData Central; no values are shown rather than estimated.
+          </p>
+        )
+      }
+    </div>
+  </section>
 
   <section class="section tinted" aria-labelledby="recipe-support-title">
     <div class="shell">
