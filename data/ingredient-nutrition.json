@@ -2,7 +2,7 @@
   "version": 1,
   "generatedBy": "scripts/build-ingredient-nutrition.mjs",
   "dictionarySource": "USDA FoodData Central (foods/search)",
-  "dictionaryFetchedAt": "2026-09-11T17:23:19.789Z",
+  "dictionaryFetchedAt": "2026-09-11T20:06:54.469Z",
   "fdcAttribution": {
     "text": "Nutrition data: USDA FoodData Central",
     "url": "https://fdc.nal.usda.gov"
