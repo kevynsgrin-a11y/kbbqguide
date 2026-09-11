@@ -45,6 +45,17 @@ export interface MediaManifestAsset {
   supersedes?: string;
   ingestedBy?: string;
   ingestedDate?: string;
+  imageFit?: 'contain';
+  sourceImport?: {
+    batch: string;
+    label: string;
+    sha256: string;
+    masterSha256: string;
+    width: number;
+    height: number;
+    transform: string;
+    evidence: string;
+  };
 }
 
 export interface ResolvedMedia extends MediaManifestAsset {
@@ -105,11 +116,16 @@ export function resolveMedia(mediaId: string): ResolvedMedia | null {
   // Follow the supersede chain (media:ingest marks the old entry replaced) so a
   // stable slot id keeps resolving to the current active asset.
   const seen = new Set<string>();
-  while (asset && asset.status === 'replaced' && asset.replacedBy) {
-    if (seen.has(asset.assetId)) break;
+  while (asset && asset.status === 'replaced') {
+    if (seen.has(asset.assetId))
+      throw new Error(`Media replacement cycle at ${mediaId}`);
     seen.add(asset.assetId);
-    const next = assetsById.get(asset.replacedBy);
-    if (!next) break;
+    const next = asset.replacedBy
+      ? assetsById.get(asset.replacedBy)
+      : undefined;
+    if (!next) throw new Error(`Broken media replacement chain at ${mediaId}`);
+    if (next.provenance.sourceRecord !== asset.provenance.sourceRecord)
+      throw new Error(`Cross-record media replacement at ${mediaId}`);
     asset = next;
   }
   if (!asset || asset.assetStatus === 'placeholder') return null;

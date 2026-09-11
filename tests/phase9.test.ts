@@ -76,7 +76,19 @@ describe('Phase 9 visual editorial overhaul', () => {
       expect(asset.kind).toBe('image');
       expect(asset.path).toMatch(/^src\/assets\/media\/.+\.jpg$/);
       expect(asset.path).not.toMatch(/^https?:|^\/\//);
-      expect(asset.width).toBeGreaterThanOrEqual(2400);
+      const imported = 'sourceImport' in asset ? asset.sourceImport : undefined;
+      if (imported) {
+        expect(asset.width).toBe(imported.width);
+        expect(asset.height).toBe(imported.height);
+        expect(asset.width).toBeGreaterThanOrEqual(600);
+        expect(imported.sha256).toMatch(/^[a-f0-9]{64}$/);
+        expect(imported.masterSha256).toMatch(/^[a-f0-9]{64}$/);
+        expect(imported.transform).toBe(
+          'native-dimensions-jpeg-no-crop-no-upscale',
+        );
+      } else {
+        expect(asset.width).toBeGreaterThanOrEqual(2400);
+      }
       expect(asset.height).toBeGreaterThan(0);
       expect(asset.aspectRatio).toMatch(/^\d+:\d+$/);
       expect(asset.focalPoint).toMatch(/^\d+% \d+%$/);
@@ -86,21 +98,40 @@ describe('Phase 9 visual editorial overhaul', () => {
       else expect(asset.altText.length).toBeGreaterThan(20);
       expect(asset.caption.length).toBeGreaterThan(20);
       expect(asset.credit).toMatch(/Synthetic image/);
-      expect(asset.provenance.creator).toContain('OpenAI');
-      expect(asset.provenance.generatedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      if (imported) {
+        expect(asset.provenance.creator).toMatch(
+          /^(Google Gemini|OpenAI) \(source filename attribution/,
+        );
+        expect(asset.provenance.generatedAt).toBe('unknown');
+      } else {
+        expect(asset.provenance.creator).toContain('OpenAI');
+        expect(asset.provenance.generatedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      }
       expect(asset.provenance.sourceRecord.length).toBeGreaterThan(1);
       expect(asset.provenance.promptBasis.length).toBeGreaterThan(20);
       expect(asset.provenance.disclosure).toMatch(/AI-generated/i);
       expect(asset.rights.source.length).toBeGreaterThan(20);
       expect(asset.rights.scope.length).toBeGreaterThan(20);
       expect(asset.rights.externalLicense).toBeNull();
-      expect(asset.qa).toMatchObject({
-        implementationVisualReview: 'pass',
-        implementationFoodSafetyScreen: 'pass',
-        implementationCulturalAndIngredientScreen: 'pass',
-        responsiveCropReview: 'pass',
-        humanEditorialReview: 'required',
-      });
+      expect(asset.qa).toMatchObject(
+        imported
+          ? {
+              implementationVisualReview: 'matched-to-recipe-by-agent',
+              implementationFoodSafetyScreen:
+                'image-is-not-evidence-of-doneness',
+              implementationCulturalAndIngredientScreen:
+                'visual-match-only-human-review-required',
+              responsiveCropReview: 'full-frame-no-crop',
+              humanEditorialReview: 'required',
+            }
+          : {
+              implementationVisualReview: 'pass',
+              implementationFoodSafetyScreen: 'pass',
+              implementationCulturalAndIngredientScreen: 'pass',
+              responsiveCropReview: 'pass',
+              humanEditorialReview: 'required',
+            },
+      );
       expect(asset.qa.reviewer).toMatch(/human sign-off not inferred/i);
     }
   });
@@ -138,7 +169,7 @@ describe('Phase 9 visual editorial overhaul', () => {
       expect(plan.hero.assetId).toBe(heroId);
       expect(plan.hero.assetStatus).toBe('synthetic-labeled');
       expect(resolveActiveAsset(heroId)?.role).toBe('finished-dish-hero');
-      expect(assetsById.get(heroId)?.path).toBe(plan.hero.path);
+      expect(resolveActiveAsset(heroId)?.path).toBe(plan.hero.path);
       expect(plan.stillShots.finishedDishOverhead.assetStatus).toBe(
         'placeholder',
       );
