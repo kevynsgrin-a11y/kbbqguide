@@ -2,7 +2,7 @@
   "version": 1,
   "generatedBy": "scripts/build-ingredient-nutrition.mjs",
   "dictionarySource": "USDA FoodData Central (foods/search)",
-  "dictionaryFetchedAt": "2026-09-11T11:50:28.949Z",
+  "dictionaryFetchedAt": "2026-09-11T17:23:19.789Z",
   "fdcAttribution": {
     "text": "Nutrition data: USDA FoodData Central",
     "url": "https://fdc.nal.usda.gov"
@@ -11,8 +11,8 @@
   "counts": {
     "canonicalIds": 153,
     "dictionaryEntriesMatched": 173,
-    "resolved": 56,
-    "unresolved": 97
+    "resolved": 76,
+    "unresolved": 77
   },
   "ingredients": {
     "80-lean-ground-beef": {
@@ -541,7 +541,18 @@
       "sourceItems": [
         "Diamond Crystal kosher salt"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 1503820,
+      "fdcName": "DIAMOND CRYSTAL, SALT SENSE, SALT",
+      "dataType": "Branded",
+      "confidence": 0.5,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 0,
+        "kcal": 0,
+        "sodium_mg": 39000
+      }
     },
     "doenjang": {
       "displayName": "Doenjang",
@@ -775,7 +786,22 @@
       "sourceItems": [
         "fresh lotus root"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 1879262,
+      "fdcName": "LOTUS ROOT CHIPS, LOTUS ROOT",
+      "dataType": "Branded",
+      "confidence": 0.81,
+      "per100g": {
+        "protein_g": 7.14,
+        "fat_g": 28.6,
+        "carbs_g": 60.7,
+        "kcal": 536,
+        "sugar_g": 3.57,
+        "fiber_g": 10.7,
+        "calcium_mg": 71,
+        "iron_mg": 1.29,
+        "sodium_mg": 357
+      }
     },
     "fresh-minari-korean-water-parsley": {
       "displayName": "fresh minari (Korean water parsley)",
@@ -857,20 +883,21 @@
         "gochujang"
       ],
       "resolved": true,
-      "fdcId": 2119202,
-      "fdcName": "KOREAN GOCHUJANG SAUCE, KOREAN GOCHUJANG",
+      "fdcId": 2654943,
+      "fdcName": "GOCHUJANG KOREAN CHILI SAUCE, GOCHUJANG KOREAN CHILI",
       "dataType": "Branded",
-      "confidence": 1.21,
+      "confidence": 1.22,
       "per100g": {
         "protein_g": 0,
-        "fat_g": 6.67,
-        "carbs_g": 53.3,
-        "kcal": 300,
-        "sugar_g": 40,
+        "fat_g": 0,
+        "carbs_g": 33.3,
+        "kcal": 167,
+        "sugar_g": 33.3,
         "fiber_g": 0,
-        "calcium_mg": 7,
+        "calcium_mg": 0,
         "iron_mg": 0,
-        "sodium_mg": 933
+        "potassium_mg": 333,
+        "sodium_mg": 2500
       }
     },
     "granulated-sugar": {
@@ -924,7 +951,22 @@
       "sourceItems": [
         "green leaf lettuce"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 1545798,
+      "fdcName": "GREEN LEAF LETTUCE",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 0,
+        "kcal": 25,
+        "sugar_g": 0,
+        "fiber_g": 0,
+        "calcium_mg": 0,
+        "iron_mg": 0,
+        "sodium_mg": 25
+      }
     },
     "ground-black-pepper": {
       "displayName": "ground black pepper",
@@ -999,7 +1041,22 @@
       "sourceItems": [
         "ground toasted sesame seeds"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 170151,
+      "fdcName": "Seeds, sesame seeds, whole, roasted and toasted",
+      "dataType": "SR Legacy",
+      "confidence": 0.5,
+      "per100g": {
+        "fat_g": 48,
+        "carbs_g": 25.7,
+        "kcal": 565,
+        "calcium_mg": 989,
+        "potassium_mg": 475,
+        "protein_g": 17,
+        "fiber_g": 14,
+        "iron_mg": 14.8,
+        "sodium_mg": 11
+      }
     },
     "honey": {
       "displayName": "honey",
@@ -1059,7 +1116,23 @@
       "sourceItems": [
         "Korean fish sauce"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2706457,
+      "fdcName": "Fish sauce",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 0.6,
+      "per100g": {
+        "protein_g": 5.06,
+        "fat_g": 0.01,
+        "carbs_g": 3.64,
+        "kcal": 35,
+        "sugar_g": 3.64,
+        "fiber_g": 0,
+        "calcium_mg": 43,
+        "iron_mg": 0.78,
+        "potassium_mg": 288,
+        "sodium_mg": 7851
+      }
     },
     "korean-persian-cucumber": {
       "displayName": "Korean or Persian cucumbers",
@@ -1129,14 +1202,45 @@
         "Korean rice syrup",
         "rice syrup"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2167323,
+      "fdcName": "KOREAN RICE CAKE, KOREAN RICE",
+      "dataType": "Branded",
+      "confidence": 0.82,
+      "per100g": {
+        "protein_g": 5,
+        "fat_g": 1,
+        "carbs_g": 52,
+        "kcal": 237,
+        "sugar_g": 0,
+        "fiber_g": 1,
+        "calcium_mg": 0,
+        "iron_mg": 1.98,
+        "sodium_mg": 20
+      }
     },
     "korean-rice-syrup-or-honey": {
       "displayName": "Korean rice syrup or honey",
       "sourceItems": [
         "Korean rice syrup or honey"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2708035,
+      "fdcName": "Sopaipilla with syrup or honey",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 0.56,
+      "per100g": {
+        "protein_g": 4.38,
+        "fat_g": 16.25,
+        "carbs_g": 51.7,
+        "kcal": 361,
+        "sugar_g": 20.88,
+        "fiber_g": 1.1,
+        "calcium_mg": 75,
+        "iron_mg": 2.46,
+        "potassium_mg": 67,
+        "sodium_mg": 670
+      }
     },
     "korean-zucchini-aehobak": {
       "displayName": "Korean zucchini (aehobak)",
@@ -1198,7 +1302,21 @@
       "sourceItems": [
         "lean beef eye of round or brisket"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 746760,
+      "fdcName": "Beef, round, eye of round roast, boneless, separable lean only, trimmed to 0\" fat, select, raw",
+      "dataType": "Foundation",
+      "confidence": 0.52,
+      "per100g": {
+        "protein_g": 23.4,
+        "iron_mg": 1.37,
+        "sodium_mg": 50,
+        "fat_g": 2.48,
+        "carbs_g": 0,
+        "kcal": 122,
+        "calcium_mg": 13,
+        "potassium_mg": 312
+      }
     },
     "live-farmed-abalone-in-shells": {
       "displayName": "live farmed abalone in shells",
@@ -1240,21 +1358,66 @@
       "sourceItems": [
         "mild green chile"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2446245,
+      "fdcName": "MILD GREEN CHILE, MILD",
+      "dataType": "Branded",
+      "confidence": 0.9,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 6.62,
+        "kcal": 29,
+        "sugar_g": 2.94,
+        "fiber_g": 2.2,
+        "calcium_mg": 0,
+        "iron_mg": 0.53,
+        "sodium_mg": 390
+      }
     },
     "mild-green-chiles": {
       "displayName": "mild green chiles",
       "sourceItems": [
         "mild green chiles"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2424546,
+      "fdcName": "DICED TOMATOES WITH MILD GREEN CHILES, MILD GREEN CHILES",
+      "dataType": "Branded",
+      "confidence": 1.04,
+      "per100g": {
+        "protein_g": 0.83,
+        "fat_g": 0,
+        "carbs_g": 3.31,
+        "kcal": 17,
+        "sugar_g": 2.48,
+        "fiber_g": 0.8,
+        "calcium_mg": 0,
+        "iron_mg": 0,
+        "sodium_mg": 248
+      }
     },
     "mild-korean-green-chiles": {
       "displayName": "mild Korean green chiles",
       "sourceItems": [
         "mild Korean green chiles"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2424546,
+      "fdcName": "DICED TOMATOES WITH MILD GREEN CHILES, MILD GREEN CHILES",
+      "dataType": "Branded",
+      "confidence": 0.79,
+      "per100g": {
+        "protein_g": 0.83,
+        "fat_g": 0,
+        "carbs_g": 3.31,
+        "kcal": 17,
+        "sugar_g": 2.48,
+        "fiber_g": 0.8,
+        "calcium_mg": 0,
+        "iron_mg": 0,
+        "sodium_mg": 248
+      }
     },
     "napa-cabbage": {
       "displayName": "napa cabbage",
@@ -1348,7 +1511,19 @@
       "sourceItems": [
         "packed light brown sugar"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2299568,
+      "fdcName": "LIGHT BROWN SUGAR, LIGHT BROWN",
+      "dataType": "Branded",
+      "confidence": 0.71,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 100,
+        "kcal": 375,
+        "sugar_g": 100,
+        "sodium_mg": 0
+      }
     },
     "paper-thin-sliced-beef-brisket-for-korean-bbq": {
       "displayName": "paper-thin sliced beef brisket for Korean BBQ",
@@ -1362,7 +1537,22 @@
       "sourceItems": [
         "pasteurized sweetened condensed milk"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2282993,
+      "fdcName": "SWEETENED CONDENSED MILK, SWEETENED CONDENSED",
+      "dataType": "Branded",
+      "confidence": 0.71,
+      "per100g": {
+        "protein_g": 7.69,
+        "fat_g": 7.69,
+        "carbs_g": 56.4,
+        "kcal": 333,
+        "sugar_g": 53.8,
+        "fiber_g": 0,
+        "calcium_mg": 256,
+        "iron_mg": 0,
+        "sodium_mg": 90
+      }
     },
     "perilla-leaves": {
       "displayName": "Perilla leaves",
@@ -1457,7 +1647,22 @@
       "sourceItems": [
         "red leaf lettuce"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 1915205,
+      "fdcName": "RED LEAF LETTUCE",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 1.18,
+        "fat_g": 0,
+        "carbs_g": 2.35,
+        "kcal": 18,
+        "sugar_g": 0,
+        "fiber_g": 1.2,
+        "calcium_mg": 47,
+        "iron_mg": 1.27,
+        "sodium_mg": 24
+      }
     },
     "red-or-green-leaf-lettuce": {
       "displayName": "red or green leaf lettuce",
@@ -1478,7 +1683,23 @@
       "sourceItems": [
         "rice syrup or honey"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2708035,
+      "fdcName": "Sopaipilla with syrup or honey",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 0.65,
+      "per100g": {
+        "protein_g": 4.38,
+        "fat_g": 16.25,
+        "carbs_g": 51.7,
+        "kcal": 361,
+        "sugar_g": 20.88,
+        "fiber_g": 1.1,
+        "calcium_mg": 75,
+        "iron_mg": 2.46,
+        "potassium_mg": 67,
+        "sodium_mg": 670
+      }
     },
     "rice-vinegar": {
       "displayName": "rice vinegar",
@@ -1532,14 +1753,45 @@
       "sourceItems": [
         "roasted unsalted pumpkin seeds"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2430975,
+      "fdcName": "ROASTED UNSALTED PUMPKIN SEEDS",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 18.9,
+        "fat_g": 18.9,
+        "carbs_g": 54,
+        "kcal": 459,
+        "sugar_g": 0,
+        "fiber_g": 18.9,
+        "calcium_mg": 54,
+        "iron_mg": 2.92,
+        "potassium_mg": 757,
+        "sodium_mg": 0
+      }
     },
     "roasted-unsalted-sunflower-seeds": {
       "displayName": "roasted unsalted sunflower seeds",
       "sourceItems": [
         "roasted unsalted sunflower seeds"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 1868005,
+      "fdcName": "ROASTED UNSALTED SUNFLOWER SEEDS",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 20,
+        "fat_g": 54,
+        "carbs_g": 20,
+        "kcal": 660,
+        "sugar_g": 4,
+        "fiber_g": 10,
+        "calcium_mg": 80,
+        "iron_mg": 5.4,
+        "sodium_mg": 0
+      }
     },
     "saeujeot": {
       "displayName": "Saeujeot (salted fermented shrimp)",
@@ -1548,7 +1800,21 @@
         "saeujeot fermented salted shrimp with brine",
         "salted fermented shrimp (saeujeot)"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 174280,
+      "fdcName": "Tofu, salted and fermented (fuyu)",
+      "dataType": "SR Legacy",
+      "confidence": 0.5,
+      "per100g": {
+        "carbs_g": 4.38,
+        "protein_g": 8.92,
+        "fat_g": 8,
+        "kcal": 116,
+        "calcium_mg": 46,
+        "potassium_mg": 75,
+        "iron_mg": 1.98,
+        "sodium_mg": 2870
+      }
     },
     "scallions": {
       "displayName": "Scallions",
@@ -1735,7 +2001,23 @@
       "sourceItems": [
         "thick-cut sandwich bread"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2707307,
+      "fdcName": "Egg sandwich on white bread",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 0.58,
+      "per100g": {
+        "protein_g": 10.46,
+        "fat_g": 9.05,
+        "carbs_g": 26.1,
+        "kcal": 228,
+        "sugar_g": 2.88,
+        "fiber_g": 1.2,
+        "calcium_mg": 132,
+        "iron_mg": 2.5,
+        "potassium_mg": 120,
+        "sodium_mg": 353
+      }
     },
     "toasted-perilla-oil": {
       "displayName": "toasted perilla oil",
@@ -1855,7 +2137,23 @@
       "sourceItems": [
         "watercress"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2709640,
+      "fdcName": "Watercress, cooked",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 2.4,
+        "fat_g": 2.84,
+        "carbs_g": 1.35,
+        "kcal": 36,
+        "sugar_g": 0.21,
+        "fiber_g": 0.5,
+        "calcium_mg": 125,
+        "iron_mg": 0.21,
+        "potassium_mg": 344,
+        "sodium_mg": 173
+      }
     },
     "well-marbled-beef-ribeye-or-sirloin": {
       "displayName": "well-marbled beef ribeye or sirloin",
