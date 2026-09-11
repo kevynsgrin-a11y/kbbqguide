@@ -1,0 +1,1567 @@
+{
+  "version": 1,
+  "generatedBy": "scripts/build-ingredient-nutrition.mjs",
+  "dictionarySource": "USDA FoodData Central (foods/search)",
+  "dictionaryFetchedAt": "2026-09-11T09:55:34.372Z",
+  "fdcAttribution": {
+    "text": "Nutrition data: USDA FoodData Central",
+    "url": "https://fdc.nal.usda.gov"
+  },
+  "note": "Per-100 g reference values for raw ingredients from USDA FoodData Central via the TrueAPI portfolio ingredient dictionary. These are reference values, not a per-serving analysis of any recipe. Entries with resolved:false have no verified FDC match yet and carry no nutrition data by design.",
+  "counts": {
+    "canonicalIds": 153,
+    "dictionaryEntriesMatched": 173,
+    "resolved": 31,
+    "unresolved": 122
+  },
+  "ingredients": {
+    "80-lean-ground-beef": {
+      "displayName": "80% lean ground beef",
+      "sourceItems": [
+        "80% lean ground beef"
+      ],
+      "resolved": false
+    },
+    "all-purpose-flour": {
+      "displayName": "all-purpose flour",
+      "sourceItems": [
+        "all-purpose flour"
+      ],
+      "resolved": true,
+      "fdcId": 2098756,
+      "fdcName": "ALL-PURPOSE FLOUR",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 10,
+        "fat_g": 0,
+        "carbs_g": 76.7,
+        "kcal": 333,
+        "sugar_g": 3.33,
+        "fiber_g": 3.3,
+        "calcium_mg": 333,
+        "iron_mg": 6,
+        "sodium_mg": 0
+      }
+    },
+    "asian-chives": {
+      "displayName": "Asian chives",
+      "sourceItems": [
+        "Asian chives"
+      ],
+      "resolved": false
+    },
+    "asian-pear": {
+      "displayName": "Asian or Korean pear",
+      "sourceItems": [
+        "Asian pear",
+        "Korean or Asian pear",
+        "Korean pear"
+      ],
+      "resolved": true,
+      "fdcId": 2423578,
+      "fdcName": "ASIAN PEAR FRUIT CRISPS, ASIAN PEAR",
+      "dataType": "Branded",
+      "confidence": 0.87,
+      "per100g": {
+        "protein_g": 3.57,
+        "fat_g": 0,
+        "carbs_g": 96.4,
+        "kcal": 357,
+        "sugar_g": 67.9,
+        "fiber_g": 10.7,
+        "calcium_mg": 0,
+        "iron_mg": 0,
+        "potassium_mg": 964,
+        "sodium_mg": 54
+      }
+    },
+    "beef-sirloin-or-ribeye": {
+      "displayName": "beef sirloin or ribeye",
+      "sourceItems": [
+        "beef sirloin or ribeye"
+      ],
+      "resolved": false
+    },
+    "black-pepper": {
+      "displayName": "black pepper",
+      "sourceItems": [
+        "black pepper"
+      ],
+      "resolved": true,
+      "fdcId": 2157235,
+      "fdcName": "BLACK PEPPER",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 167,
+        "kcal": 0,
+        "sugar_g": 0,
+        "fiber_g": 41.7,
+        "calcium_mg": 0,
+        "iron_mg": 0,
+        "sodium_mg": 0
+      }
+    },
+    "boneless-beef-rib-meat-or-well-marbled-boneless-short-rib-meat": {
+      "displayName": "boneless beef rib meat or well-marbled boneless short-rib meat",
+      "sourceItems": [
+        "boneless beef rib meat or well-marbled boneless short-rib meat"
+      ],
+      "resolved": false
+    },
+    "boneless-beef-short-rib-ribeye-or-sirloin": {
+      "displayName": "boneless beef short rib, ribeye, or sirloin",
+      "sourceItems": [
+        "boneless beef short rib, ribeye, or sirloin"
+      ],
+      "resolved": false
+    },
+    "boneless-duck-breasts": {
+      "displayName": "boneless duck breasts",
+      "sourceItems": [
+        "boneless duck breasts"
+      ],
+      "resolved": false
+    },
+    "boneless-lamb-shoulder-steaks": {
+      "displayName": "boneless lamb-shoulder steaks",
+      "sourceItems": [
+        "boneless lamb-shoulder steaks"
+      ],
+      "resolved": false
+    },
+    "boneless-pork-collar-or-neck": {
+      "displayName": "boneless pork collar or neck",
+      "sourceItems": [
+        "boneless pork collar or neck"
+      ],
+      "resolved": false
+    },
+    "boneless-pork-shoulder": {
+      "displayName": "boneless pork shoulder",
+      "sourceItems": [
+        "boneless pork shoulder"
+      ],
+      "resolved": false
+    },
+    "boneless-skinless-chicken-thighs": {
+      "displayName": "boneless skinless chicken thighs",
+      "sourceItems": [
+        "boneless skinless chicken thighs"
+      ],
+      "resolved": false
+    },
+    "broccoli-florets": {
+      "displayName": "broccoli florets",
+      "sourceItems": [
+        "broccoli florets"
+      ],
+      "resolved": false
+    },
+    "brown-sugar": {
+      "displayName": "brown sugar",
+      "sourceItems": [
+        "brown sugar"
+      ],
+      "resolved": false
+    },
+    "canned-corn-kernels": {
+      "displayName": "canned corn kernels",
+      "sourceItems": [
+        "canned corn kernels"
+      ],
+      "resolved": false
+    },
+    "carrot": {
+      "displayName": "carrot",
+      "sourceItems": [
+        "carrot"
+      ],
+      "resolved": true,
+      "fdcId": 170500,
+      "fdcName": "Carrot, dehydrated",
+      "dataType": "SR Legacy",
+      "confidence": 0.89,
+      "per100g": {
+        "sugar_g": 38.8,
+        "protein_g": 8.1,
+        "fiber_g": 23.6,
+        "iron_mg": 3.93,
+        "sodium_mg": 275,
+        "fat_g": 1.49,
+        "carbs_g": 79.6,
+        "kcal": 341,
+        "calcium_mg": 212,
+        "potassium_mg": 2540
+      }
+    },
+    "cleaned-baby-octopus-jjukkumi": {
+      "displayName": "cleaned baby octopus (jjukkumi)",
+      "sourceItems": [
+        "cleaned baby octopus (jjukkumi)"
+      ],
+      "resolved": false
+    },
+    "cleaned-hairtail-sections": {
+      "displayName": "cleaned hairtail sections",
+      "sourceItems": [
+        "cleaned hairtail sections"
+      ],
+      "resolved": false
+    },
+    "cleaned-small-octopus-nakji": {
+      "displayName": "cleaned small octopus (nakji)",
+      "sourceItems": [
+        "cleaned small octopus (nakji)"
+      ],
+      "resolved": false
+    },
+    "coarse-salt": {
+      "displayName": "coarse salt",
+      "sourceItems": [
+        "coarse salt"
+      ],
+      "resolved": false
+    },
+    "coarse-salt-for-rubbing": {
+      "displayName": "coarse salt for rubbing",
+      "sourceItems": [
+        "coarse salt for rubbing"
+      ],
+      "resolved": false
+    },
+    "coarsely-ground-black-pepper": {
+      "displayName": "coarsely ground black pepper",
+      "sourceItems": [
+        "coarsely ground black pepper"
+      ],
+      "resolved": false
+    },
+    "cold-water": {
+      "displayName": "cold water",
+      "sourceItems": [
+        "cold water"
+      ],
+      "resolved": false
+    },
+    "commercial-distilled-vinegar-labeled-5-acidity": {
+      "displayName": "commercial distilled vinegar labeled 5% acidity",
+      "sourceItems": [
+        "commercial distilled vinegar labeled 5% acidity"
+      ],
+      "resolved": false
+    },
+    "commercial-pasteurized-mayonnaise": {
+      "displayName": "commercial pasteurized mayonnaise",
+      "sourceItems": [
+        "commercial pasteurized mayonnaise"
+      ],
+      "resolved": false
+    },
+    "commercial-pasteurized-vanilla-ice-cream": {
+      "displayName": "commercial pasteurized vanilla ice cream",
+      "sourceItems": [
+        "commercial pasteurized vanilla ice cream"
+      ],
+      "resolved": false
+    },
+    "commercial-prepared-injeolmi-rice-cake": {
+      "displayName": "commercial prepared injeolmi rice cake",
+      "sourceItems": [
+        "commercial prepared injeolmi rice cake"
+      ],
+      "resolved": false
+    },
+    "commercial-refrigerated-radish-sprouts": {
+      "displayName": "commercial refrigerated radish sprouts",
+      "sourceItems": [
+        "commercial refrigerated radish sprouts"
+      ],
+      "resolved": false
+    },
+    "commercial-rice-vinegar-labeled-5-acidity": {
+      "displayName": "commercial rice vinegar labeled 5% acidity",
+      "sourceItems": [
+        "commercial rice vinegar labeled 5% acidity"
+      ],
+      "resolved": false
+    },
+    "commercial-yeotgireum-garu-barley-malt-powder": {
+      "displayName": "commercial yeotgireum-garu barley malt powder",
+      "sourceItems": [
+        "commercial yeotgireum-garu barley malt powder"
+      ],
+      "resolved": false
+    },
+    "commercial-yuja-cheong": {
+      "displayName": "commercial yuja-cheong",
+      "sourceItems": [
+        "commercial yuja-cheong"
+      ],
+      "resolved": false
+    },
+    "commercially-prepared-sweetened-korean-red-beans": {
+      "displayName": "commercially prepared sweetened Korean red beans",
+      "sourceItems": [
+        "commercially prepared sweetened Korean red beans"
+      ],
+      "resolved": false
+    },
+    "commercially-processed-fully-softened-gosari": {
+      "displayName": "commercially processed, fully softened gosari",
+      "sourceItems": [
+        "commercially processed, fully softened gosari"
+      ],
+      "resolved": false
+    },
+    "cooked-short-grain-rice": {
+      "displayName": "cooked short-grain rice",
+      "sourceItems": [
+        "cooked short-grain rice"
+      ],
+      "resolved": false
+    },
+    "cool-potable-water": {
+      "displayName": "cool potable water",
+      "sourceItems": [
+        "cool potable water"
+      ],
+      "resolved": false
+    },
+    "cremini-mushrooms": {
+      "displayName": "cremini mushrooms",
+      "sourceItems": [
+        "cremini mushrooms"
+      ],
+      "resolved": true,
+      "fdcId": 2367683,
+      "fdcName": "GARLIC PEPPER ASPARAGUS & CREMINI MUSHROOMS SEASONED VEGETABLES, GARLIC PEPPER ASPARAGUS & CREMINI MUSHROOMS",
+      "dataType": "Branded",
+      "confidence": 1.23,
+      "per100g": {
+        "protein_g": 2.35,
+        "fat_g": 0,
+        "carbs_g": 7.06,
+        "kcal": 18,
+        "sugar_g": 1.18,
+        "fiber_g": 1.2,
+        "calcium_mg": 24,
+        "iron_mg": 1.27,
+        "potassium_mg": 247,
+        "sodium_mg": 294
+      }
+    },
+    "crisp-apple": {
+      "displayName": "crisp apple",
+      "sourceItems": [
+        "crisp apple"
+      ],
+      "resolved": false
+    },
+    "crown-daisy-leaves": {
+      "displayName": "crown daisy leaves",
+      "sourceItems": [
+        "crown daisy leaves"
+      ],
+      "resolved": false
+    },
+    "diamond-crystal-kosher-salt": {
+      "displayName": "Diamond Crystal kosher salt",
+      "sourceItems": [
+        "Diamond Crystal kosher salt"
+      ],
+      "resolved": false
+    },
+    "doenjang": {
+      "displayName": "Doenjang",
+      "sourceItems": [
+        "Korean doenjang",
+        "Korean fermented soybean paste",
+        "Korean fermented soybean paste (doenjang)",
+        "doenjang"
+      ],
+      "resolved": true,
+      "fdcId": 2067532,
+      "fdcName": "SUNCHANG DOENJANG SOYBEAN PASTE",
+      "dataType": "Branded",
+      "confidence": 0.75,
+      "per100g": {
+        "protein_g": 13.3,
+        "fat_g": 3.33,
+        "carbs_g": 20,
+        "kcal": 167,
+        "sugar_g": 8,
+        "fiber_g": 0.7,
+        "calcium_mg": 67,
+        "iron_mg": 1.2,
+        "sodium_mg": 3830
+      }
+    },
+    "dried-bellflower-root-doraji": {
+      "displayName": "dried bellflower root (doraji)",
+      "sourceItems": [
+        "dried bellflower root (doraji)"
+      ],
+      "resolved": false
+    },
+    "dried-kelp": {
+      "displayName": "dried kelp",
+      "sourceItems": [
+        "dried kelp"
+      ],
+      "resolved": false
+    },
+    "dry-elbow-macaroni": {
+      "displayName": "dry elbow macaroni",
+      "sourceItems": [
+        "dry elbow macaroni"
+      ],
+      "resolved": true,
+      "fdcId": 2447464,
+      "fdcName": "ELBOW MACARONI SALAD, ELBOW MACARONI",
+      "dataType": "Branded",
+      "confidence": 0.82,
+      "per100g": {
+        "protein_g": 3.57,
+        "fat_g": 14.3,
+        "carbs_g": 24.3,
+        "kcal": 243,
+        "sugar_g": 5,
+        "fiber_g": 0,
+        "calcium_mg": 7,
+        "iron_mg": 0.71,
+        "potassium_mg": 43,
+        "sodium_mg": 329
+      }
+    },
+    "dry-packed-large-sea-scallops": {
+      "displayName": "dry-packed large sea scallops",
+      "sourceItems": [
+        "dry-packed large sea scallops"
+      ],
+      "resolved": false
+    },
+    "fine-salt": {
+      "displayName": "fine salt",
+      "sourceItems": [
+        "fine salt"
+      ],
+      "resolved": false
+    },
+    "fine-salt-for-blanching-water": {
+      "displayName": "fine salt for blanching water",
+      "sourceItems": [
+        "fine salt for blanching water"
+      ],
+      "resolved": false
+    },
+    "fine-sea-salt": {
+      "displayName": "fine sea salt",
+      "sourceItems": [
+        "fine sea salt"
+      ],
+      "resolved": true,
+      "fdcId": 2130543,
+      "fdcName": "FINE SEA SALT",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 0,
+        "kcal": 0,
+        "sodium_mg": 39300
+      }
+    },
+    "firm-tofu": {
+      "displayName": "firm tofu",
+      "sourceItems": [
+        "firm tofu"
+      ],
+      "resolved": false
+    },
+    "fish-sauce": {
+      "displayName": "fish sauce",
+      "sourceItems": [
+        "fish sauce"
+      ],
+      "resolved": true,
+      "fdcId": 2706457,
+      "fdcName": "Fish sauce",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 5.06,
+        "fat_g": 0.01,
+        "carbs_g": 3.64,
+        "kcal": 35,
+        "sugar_g": 3.64,
+        "fiber_g": 0,
+        "calcium_mg": 43,
+        "iron_mg": 0.78,
+        "potassium_mg": 288,
+        "sodium_mg": 7851
+      }
+    },
+    "flanken-cut-beef-short-ribs-about-6-mm-1-4-inch-thick": {
+      "displayName": "flanken-cut beef short ribs, about 6 mm / 1/4 inch thick",
+      "sourceItems": [
+        "flanken-cut beef short ribs, about 6 mm / 1/4 inch thick"
+      ],
+      "resolved": false
+    },
+    "flat-metal-skewers": {
+      "displayName": "flat metal skewers",
+      "sourceItems": [
+        "flat metal skewers"
+      ],
+      "resolved": false
+    },
+    "fresh-garlic-cloves": {
+      "displayName": "fresh garlic cloves",
+      "sourceItems": [
+        "fresh garlic cloves"
+      ],
+      "resolved": false
+    },
+    "fresh-ginger": {
+      "displayName": "fresh ginger",
+      "sourceItems": [
+        "fresh ginger"
+      ],
+      "resolved": false
+    },
+    "fresh-lemon-juice": {
+      "displayName": "fresh lemon juice",
+      "sourceItems": [
+        "fresh lemon juice"
+      ],
+      "resolved": true,
+      "fdcId": 167802,
+      "fdcName": "Lemon juice from concentrate, bottled, REAL LEMON",
+      "dataType": "SR Legacy",
+      "confidence": 0.74,
+      "per100g": {
+        "fat_g": 0.07,
+        "carbs_g": 5.66,
+        "kcal": 17,
+        "sugar_g": 1.59,
+        "calcium_mg": 9,
+        "potassium_mg": 109,
+        "protein_g": 0.47,
+        "fiber_g": 0.7,
+        "iron_mg": 0.06,
+        "sodium_mg": 26
+      }
+    },
+    "fresh-lotus-root": {
+      "displayName": "fresh lotus root",
+      "sourceItems": [
+        "fresh lotus root"
+      ],
+      "resolved": false
+    },
+    "fresh-minari-korean-water-parsley": {
+      "displayName": "fresh minari (Korean water parsley)",
+      "sourceItems": [
+        "fresh minari (Korean water parsley)"
+      ],
+      "resolved": false
+    },
+    "fresh-shiitake-mushrooms": {
+      "displayName": "fresh shiitake mushrooms",
+      "sourceItems": [
+        "fresh shiitake mushrooms"
+      ],
+      "resolved": false
+    },
+    "fresh-soybean-sprouts": {
+      "displayName": "fresh soybean sprouts",
+      "sourceItems": [
+        "fresh soybean sprouts"
+      ],
+      "resolved": false
+    },
+    "freshly-ground-black-pepper": {
+      "displayName": "freshly ground black pepper",
+      "sourceItems": [
+        "freshly ground black pepper"
+      ],
+      "resolved": false
+    },
+    "garlic": {
+      "displayName": "garlic",
+      "sourceItems": [
+        "garlic"
+      ],
+      "resolved": true,
+      "fdcId": 1662203,
+      "fdcName": "GARLIC",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 33.3,
+        "kcal": 167,
+        "calcium_mg": 667,
+        "sodium_mg": 0
+      }
+    },
+    "gochugaru": {
+      "displayName": "Gochugaru (Korean red pepper flakes)",
+      "sourceItems": [
+        "Korean gochugaru",
+        "Korean red pepper flakes",
+        "Korean red pepper flakes (gochugaru)",
+        "gochugaru"
+      ],
+      "resolved": true,
+      "fdcId": 2084510,
+      "fdcName": "MOTHER IN LAW'S, GOCHUGARU KOREAN CHILE FLAKES",
+      "dataType": "Branded",
+      "confidence": 0.75,
+      "per100g": {
+        "protein_g": 6.88,
+        "fat_g": 6.25,
+        "carbs_g": 25,
+        "kcal": 138,
+        "sugar_g": 3.75,
+        "fiber_g": 17.5,
+        "calcium_mg": 125,
+        "iron_mg": 7.88,
+        "potassium_mg": 975,
+        "sodium_mg": 688
+      }
+    },
+    "gochujang": {
+      "displayName": "Gochujang",
+      "sourceItems": [
+        "Korean gochujang",
+        "gochujang"
+      ],
+      "resolved": true,
+      "fdcId": 2119202,
+      "fdcName": "KOREAN GOCHUJANG SAUCE, KOREAN GOCHUJANG",
+      "dataType": "Branded",
+      "confidence": 1.21,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 6.67,
+        "carbs_g": 53.3,
+        "kcal": 300,
+        "sugar_g": 40,
+        "fiber_g": 0,
+        "calcium_mg": 7,
+        "iron_mg": 0,
+        "sodium_mg": 933
+      }
+    },
+    "granulated-sugar": {
+      "displayName": "granulated sugar",
+      "sourceItems": [
+        "granulated sugar"
+      ],
+      "resolved": true,
+      "fdcId": 2126806,
+      "fdcName": "GRANULATED SUGAR",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 100,
+        "kcal": 375,
+        "sugar_g": 100,
+        "fiber_g": 0,
+        "calcium_mg": 0,
+        "iron_mg": 0,
+        "potassium_mg": 0,
+        "sodium_mg": 0
+      }
+    },
+    "green-cabbage": {
+      "displayName": "green cabbage",
+      "sourceItems": [
+        "green cabbage"
+      ],
+      "resolved": true,
+      "fdcId": 2384822,
+      "fdcName": "GREEN CABBAGE",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 1.18,
+        "fat_g": 0,
+        "carbs_g": 5.88,
+        "kcal": 24,
+        "sugar_g": 3.53,
+        "fiber_g": 2.4,
+        "calcium_mg": 40,
+        "iron_mg": 0.47,
+        "potassium_mg": 171,
+        "sodium_mg": 18
+      }
+    },
+    "green-leaf-lettuce": {
+      "displayName": "green leaf lettuce",
+      "sourceItems": [
+        "green leaf lettuce"
+      ],
+      "resolved": false
+    },
+    "ground-black-pepper": {
+      "displayName": "ground black pepper",
+      "sourceItems": [
+        "ground black pepper"
+      ],
+      "resolved": true,
+      "fdcId": 2072044,
+      "fdcName": "GROUND BLACK PEPPER",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 0,
+        "kcal": 0,
+        "sugar_g": 0,
+        "fiber_g": 0,
+        "calcium_mg": 0,
+        "iron_mg": 0,
+        "sodium_mg": 0
+      }
+    },
+    "ground-cinnamon": {
+      "displayName": "ground cinnamon",
+      "sourceItems": [
+        "ground cinnamon"
+      ],
+      "resolved": true,
+      "fdcId": 2386195,
+      "fdcName": "GROUND CINNAMON",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 125,
+        "kcal": 0,
+        "sugar_g": 0,
+        "fiber_g": 0,
+        "calcium_mg": 1250,
+        "iron_mg": 12.5,
+        "potassium_mg": 0,
+        "sodium_mg": 0
+      }
+    },
+    "ground-pork": {
+      "displayName": "ground pork",
+      "sourceItems": [
+        "ground pork"
+      ],
+      "resolved": false
+    },
+    "ground-toasted-sesame-seeds": {
+      "displayName": "ground toasted sesame seeds",
+      "sourceItems": [
+        "ground toasted sesame seeds"
+      ],
+      "resolved": false
+    },
+    "honey": {
+      "displayName": "honey",
+      "sourceItems": [
+        "honey"
+      ],
+      "resolved": true,
+      "fdcId": 169640,
+      "fdcName": "Honey",
+      "dataType": "SR Legacy",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0.3,
+        "fiber_g": 0.2,
+        "iron_mg": 0.42,
+        "sodium_mg": 4,
+        "fat_g": 0,
+        "carbs_g": 82.4,
+        "kcal": 304,
+        "calcium_mg": 6,
+        "potassium_mg": 52,
+        "sugar_g": 82.1
+      }
+    },
+    "ice-made-from-potable-water": {
+      "displayName": "ice made from potable water",
+      "sourceItems": [
+        "ice made from potable water"
+      ],
+      "resolved": false
+    },
+    "instant-yeast": {
+      "displayName": "instant yeast",
+      "sourceItems": [
+        "instant yeast"
+      ],
+      "resolved": false
+    },
+    "korean-fish-sauce": {
+      "displayName": "Korean fish sauce",
+      "sourceItems": [
+        "Korean fish sauce"
+      ],
+      "resolved": false
+    },
+    "korean-persian-cucumber": {
+      "displayName": "Korean or Persian cucumbers",
+      "sourceItems": [
+        "Korean or Persian cucumber",
+        "Korean or Persian cucumbers",
+        "Persian cucumbers"
+      ],
+      "resolved": false
+    },
+    "korean-persian-or-small-pickling-cucumbers": {
+      "displayName": "Korean, Persian, or small pickling cucumbers",
+      "sourceItems": [
+        "Korean, Persian, or small pickling cucumbers"
+      ],
+      "resolved": false
+    },
+    "korean-plum-syrup-or-rice-syrup": {
+      "displayName": "Korean plum syrup or rice syrup",
+      "sourceItems": [
+        "Korean plum syrup or rice syrup"
+      ],
+      "resolved": false
+    },
+    "korean-radish": {
+      "displayName": "Korean radish",
+      "sourceItems": [
+        "Korean radish"
+      ],
+      "resolved": false
+    },
+    "korean-rice-syrup": {
+      "displayName": "Korean rice syrup",
+      "sourceItems": [
+        "Korean rice syrup",
+        "rice syrup"
+      ],
+      "resolved": false
+    },
+    "korean-rice-syrup-or-honey": {
+      "displayName": "Korean rice syrup or honey",
+      "sourceItems": [
+        "Korean rice syrup or honey"
+      ],
+      "resolved": false
+    },
+    "korean-zucchini-aehobak": {
+      "displayName": "Korean zucchini (aehobak)",
+      "sourceItems": [
+        "Korean zucchini (aehobak)"
+      ],
+      "resolved": false
+    },
+    "kosher-salt": {
+      "displayName": "kosher salt",
+      "sourceItems": [
+        "kosher salt"
+      ],
+      "resolved": false
+    },
+    "large-eggs": {
+      "displayName": "large eggs",
+      "sourceItems": [
+        "large eggs"
+      ],
+      "resolved": false
+    },
+    "large-whole-squid": {
+      "displayName": "large whole squid",
+      "sourceItems": [
+        "large whole squid"
+      ],
+      "resolved": false
+    },
+    "lean-beef-eye-of-round-or-brisket": {
+      "displayName": "lean beef eye of round or brisket",
+      "sourceItems": [
+        "lean beef eye of round or brisket"
+      ],
+      "resolved": false
+    },
+    "live-farmed-abalone-in-shells": {
+      "displayName": "live farmed abalone in shells",
+      "sourceItems": [
+        "live farmed abalone in shells"
+      ],
+      "resolved": false
+    },
+    "live-hard-shell-clams-from-an-approved-source": {
+      "displayName": "live hard-shell clams from an approved source",
+      "sourceItems": [
+        "live hard-shell clams from an approved source"
+      ],
+      "resolved": false
+    },
+    "live-mussels-in-the-shell": {
+      "displayName": "live mussels in the shell",
+      "sourceItems": [
+        "live mussels in the shell"
+      ],
+      "resolved": false
+    },
+    "live-oysters-in-the-shell": {
+      "displayName": "live oysters in the shell",
+      "sourceItems": [
+        "live oysters in the shell"
+      ],
+      "resolved": false
+    },
+    "mature-spinach-with-stems": {
+      "displayName": "mature spinach with stems",
+      "sourceItems": [
+        "mature spinach with stems"
+      ],
+      "resolved": false
+    },
+    "mild-green-chile": {
+      "displayName": "mild green chile",
+      "sourceItems": [
+        "mild green chile"
+      ],
+      "resolved": false
+    },
+    "mild-green-chiles": {
+      "displayName": "mild green chiles",
+      "sourceItems": [
+        "mild green chiles"
+      ],
+      "resolved": false
+    },
+    "mild-korean-green-chiles": {
+      "displayName": "mild Korean green chiles",
+      "sourceItems": [
+        "mild Korean green chiles"
+      ],
+      "resolved": false
+    },
+    "napa-cabbage": {
+      "displayName": "napa cabbage",
+      "sourceItems": [
+        "napa cabbage"
+      ],
+      "resolved": true,
+      "fdcId": 2653440,
+      "fdcName": "SPICY NAPA CABBAGE KIMCHI, SPICY NAPA CABBAGE",
+      "dataType": "Branded",
+      "confidence": 1.22,
+      "per100g": {
+        "protein_g": 3.57,
+        "fat_g": 0,
+        "carbs_g": 3.57,
+        "kcal": 18,
+        "sugar_g": 0,
+        "fiber_g": 3.6,
+        "calcium_mg": 0,
+        "iron_mg": 0,
+        "potassium_mg": 446,
+        "sodium_mg": 1040
+      }
+    },
+    "neutral-high-heat-oil": {
+      "displayName": "neutral high-heat oil",
+      "sourceItems": [
+        "neutral high-heat oil"
+      ],
+      "resolved": false
+    },
+    "neutral-oil": {
+      "displayName": "Neutral cooking oil",
+      "sourceItems": [
+        "neutral cooking oil",
+        "neutral oil",
+        "neutral oil for pan-frying"
+      ],
+      "resolved": true,
+      "fdcId": 1948234,
+      "fdcName": "NEUTRAL COCONUT OIL",
+      "dataType": "Branded",
+      "confidence": 0.75,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 93.3,
+        "carbs_g": 0,
+        "kcal": 867,
+        "sodium_mg": 0
+      }
+    },
+    "packaged-korean-fish-cake-sheets": {
+      "displayName": "packaged Korean fish-cake sheets",
+      "sourceItems": [
+        "packaged Korean fish-cake sheets"
+      ],
+      "resolved": false
+    },
+    "packed-brown-sugar": {
+      "displayName": "packed brown sugar",
+      "sourceItems": [
+        "packed brown sugar"
+      ],
+      "resolved": false
+    },
+    "packed-dark-brown-sugar": {
+      "displayName": "packed dark brown sugar",
+      "sourceItems": [
+        "packed dark brown sugar"
+      ],
+      "resolved": false
+    },
+    "packed-light-brown-sugar": {
+      "displayName": "packed light brown sugar",
+      "sourceItems": [
+        "packed light brown sugar"
+      ],
+      "resolved": false
+    },
+    "paper-thin-sliced-beef-brisket-for-korean-bbq": {
+      "displayName": "paper-thin sliced beef brisket for Korean BBQ",
+      "sourceItems": [
+        "paper-thin sliced beef brisket for Korean BBQ"
+      ],
+      "resolved": false
+    },
+    "pasteurized-sweetened-condensed-milk": {
+      "displayName": "pasteurized sweetened condensed milk",
+      "sourceItems": [
+        "pasteurized sweetened condensed milk"
+      ],
+      "resolved": false
+    },
+    "perilla-leaves": {
+      "displayName": "Perilla leaves",
+      "sourceItems": [
+        "Korean perilla leaves",
+        "fresh perilla leaves"
+      ],
+      "resolved": false
+    },
+    "pine-nuts": {
+      "displayName": "pine nuts",
+      "sourceItems": [
+        "pine nuts"
+      ],
+      "resolved": false
+    },
+    "plain-unseasoned-roasted-gim-sheets": {
+      "displayName": "plain unseasoned roasted gim sheets",
+      "sourceItems": [
+        "plain unseasoned roasted gim sheets"
+      ],
+      "resolved": false
+    },
+    "pork-spare-ribs": {
+      "displayName": "pork spare ribs",
+      "sourceItems": [
+        "pork spare ribs"
+      ],
+      "resolved": true,
+      "fdcId": 2693486,
+      "fdcName": "Pork Spare Ribs, Vac Pkg",
+      "dataType": "Branded",
+      "confidence": 0.88,
+      "per100g": {
+        "protein_g": 16.1,
+        "carbs_g": 0,
+        "kcal": 295,
+        "sugar_g": 0,
+        "fiber_g": 0,
+        "fat_g": 25,
+        "calcium_mg": 26,
+        "iron_mg": 1.08,
+        "sodium_mg": 85
+      }
+    },
+    "potable-water-for-soaking-and-rinsing": {
+      "displayName": "potable water for soaking and rinsing",
+      "sourceItems": [
+        "potable water for soaking and rinsing"
+      ],
+      "resolved": false
+    },
+    "prepared-korean-or-yellow-mustard": {
+      "displayName": "prepared Korean or yellow mustard",
+      "sourceItems": [
+        "prepared Korean or yellow mustard"
+      ],
+      "resolved": false
+    },
+    "raw-large-shrimp-about-16-20-count-per-pound": {
+      "displayName": "raw large shrimp, about 16–20 count per pound",
+      "sourceItems": [
+        "raw large shrimp, about 16–20 count per pound"
+      ],
+      "resolved": false
+    },
+    "red-bell-pepper": {
+      "displayName": "red bell pepper",
+      "sourceItems": [
+        "red bell pepper"
+      ],
+      "resolved": false
+    },
+    "red-leaf-lettuce": {
+      "displayName": "red leaf lettuce",
+      "sourceItems": [
+        "red leaf lettuce"
+      ],
+      "resolved": false
+    },
+    "red-or-green-leaf-lettuce": {
+      "displayName": "red or green leaf lettuce",
+      "sourceItems": [
+        "red or green leaf lettuce"
+      ],
+      "resolved": false
+    },
+    "refrigerated-quail-eggs": {
+      "displayName": "refrigerated quail eggs",
+      "sourceItems": [
+        "refrigerated quail eggs"
+      ],
+      "resolved": false
+    },
+    "rice-syrup-or-honey": {
+      "displayName": "rice syrup or honey",
+      "sourceItems": [
+        "rice syrup or honey"
+      ],
+      "resolved": false
+    },
+    "rice-vinegar": {
+      "displayName": "rice vinegar",
+      "sourceItems": [
+        "rice vinegar"
+      ],
+      "resolved": true,
+      "fdcId": 2083928,
+      "fdcName": "RICE VINEGAR",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 0,
+        "kcal": 0,
+        "sugar_g": 0,
+        "sodium_mg": 0
+      }
+    },
+    "rice-vinegar-for-blanching-water": {
+      "displayName": "rice vinegar for blanching water",
+      "sourceItems": [
+        "rice vinegar for blanching water"
+      ],
+      "resolved": false
+    },
+    "ripe-firm-tomatoes": {
+      "displayName": "ripe firm tomatoes",
+      "sourceItems": [
+        "ripe firm tomatoes"
+      ],
+      "resolved": false
+    },
+    "ripe-mango-flesh": {
+      "displayName": "ripe mango flesh",
+      "sourceItems": [
+        "ripe mango flesh"
+      ],
+      "resolved": false
+    },
+    "roasted-soybean-powder": {
+      "displayName": "roasted soybean powder",
+      "sourceItems": [
+        "roasted soybean powder"
+      ],
+      "resolved": false
+    },
+    "roasted-unsalted-pumpkin-seeds": {
+      "displayName": "roasted unsalted pumpkin seeds",
+      "sourceItems": [
+        "roasted unsalted pumpkin seeds"
+      ],
+      "resolved": false
+    },
+    "roasted-unsalted-sunflower-seeds": {
+      "displayName": "roasted unsalted sunflower seeds",
+      "sourceItems": [
+        "roasted unsalted sunflower seeds"
+      ],
+      "resolved": false
+    },
+    "saeujeot": {
+      "displayName": "Saeujeot (salted fermented shrimp)",
+      "sourceItems": [
+        "saeujeot fermented salted shrimp",
+        "saeujeot fermented salted shrimp with brine",
+        "salted fermented shrimp (saeujeot)"
+      ],
+      "resolved": false
+    },
+    "scallions": {
+      "displayName": "Scallions",
+      "sourceItems": [
+        "large scallions",
+        "scallion",
+        "scallions"
+      ],
+      "resolved": true,
+      "fdcId": 2667003,
+      "fdcName": "CHEDDAR & SCALLION CHEESESTICKS, CHEDDAR & SCALLION",
+      "dataType": "Branded",
+      "confidence": 1.21,
+      "per100g": {
+        "protein_g": 21,
+        "fat_g": 18.4,
+        "carbs_g": 52.6,
+        "kcal": 474,
+        "sugar_g": 0,
+        "fiber_g": 5.3,
+        "calcium_mg": 353,
+        "iron_mg": 0,
+        "potassium_mg": 0,
+        "sodium_mg": 632
+      }
+    },
+    "skin-on-black-cod-sablefish-fillet": {
+      "displayName": "skin-on black cod (sablefish) fillet",
+      "sourceItems": [
+        "skin-on black cod (sablefish) fillet"
+      ],
+      "resolved": false
+    },
+    "skin-on-salmon-fillet": {
+      "displayName": "skin-on salmon fillet",
+      "sourceItems": [
+        "skin-on salmon fillet"
+      ],
+      "resolved": false
+    },
+    "skinless-pork-belly-slab": {
+      "displayName": "skinless pork belly slab",
+      "sourceItems": [
+        "skinless pork belly slab"
+      ],
+      "resolved": false
+    },
+    "small-dried-anchovies-for-bokkeum": {
+      "displayName": "small dried anchovies for bokkeum",
+      "sourceItems": [
+        "small dried anchovies for bokkeum"
+      ],
+      "resolved": false
+    },
+    "small-waxy-baby-potatoes": {
+      "displayName": "small waxy baby potatoes",
+      "sourceItems": [
+        "small waxy baby potatoes"
+      ],
+      "resolved": false
+    },
+    "soft-korean-injeolmi-or-plain-rice-cake-pieces": {
+      "displayName": "soft Korean injeolmi or plain rice-cake pieces",
+      "sourceItems": [
+        "soft Korean injeolmi or plain rice-cake pieces"
+      ],
+      "resolved": false
+    },
+    "soy-sauce": {
+      "displayName": "Soy sauce",
+      "sourceItems": [
+        "regular soy sauce",
+        "soy sauce"
+      ],
+      "resolved": true,
+      "fdcId": 174278,
+      "fdcName": "Soy sauce made from soy (tamari)",
+      "dataType": "SR Legacy",
+      "confidence": 0.74,
+      "per100g": {
+        "carbs_g": 5.57,
+        "kcal": 60,
+        "sugar_g": 1.7,
+        "protein_g": 10.5,
+        "fiber_g": 0.8,
+        "iron_mg": 2.38,
+        "sodium_mg": 5590,
+        "fat_g": 0.1,
+        "calcium_mg": 20,
+        "potassium_mg": 212
+      }
+    },
+    "strawberries": {
+      "displayName": "strawberries",
+      "sourceItems": [
+        "strawberries"
+      ],
+      "resolved": true,
+      "fdcId": 2377355,
+      "fdcName": "STRAWBERRIES",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0.71,
+        "fat_g": 0,
+        "carbs_g": 9.29,
+        "kcal": 36,
+        "sugar_g": 4.29,
+        "calcium_mg": 14,
+        "iron_mg": 0.79,
+        "potassium_mg": 150,
+        "sodium_mg": 0
+      }
+    },
+    "sugar": {
+      "displayName": "sugar",
+      "sourceItems": [
+        "sugar"
+      ],
+      "resolved": true,
+      "fdcId": 2707988,
+      "fdcName": "Cookie, sugar or plain, sugar free",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 1.23,
+      "per100g": {
+        "protein_g": 10.34,
+        "fat_g": 31.03,
+        "carbs_g": 50.52,
+        "kcal": 523,
+        "sugar_g": 0,
+        "fiber_g": 3.4,
+        "calcium_mg": 0,
+        "iron_mg": 2.48,
+        "potassium_mg": 202,
+        "sodium_mg": 448
+      }
+    },
+    "sweet-onion": {
+      "displayName": "sweet onion",
+      "sourceItems": [
+        "sweet onion"
+      ],
+      "resolved": true,
+      "fdcId": 170705,
+      "fdcName": "SUBWAY, sweet onion chicken teriyaki sub on white bread with lettuce, tomato and sweet onion sauce",
+      "dataType": "SR Legacy",
+      "confidence": 1.24,
+      "per100g": {
+        "fat_g": 2.37,
+        "carbs_g": 22.5,
+        "kcal": 155,
+        "sugar_g": 6.06,
+        "calcium_mg": 142,
+        "potassium_mg": 285,
+        "protein_g": 10.9,
+        "fiber_g": 1.2,
+        "iron_mg": 1.52,
+        "sodium_mg": 305
+      }
+    },
+    "sweet-rice-flour": {
+      "displayName": "sweet rice flour",
+      "sourceItems": [
+        "sweet rice flour"
+      ],
+      "resolved": false
+    },
+    "thick-cut-sandwich-bread": {
+      "displayName": "thick-cut sandwich bread",
+      "sourceItems": [
+        "thick-cut sandwich bread"
+      ],
+      "resolved": false
+    },
+    "toasted-perilla-oil": {
+      "displayName": "toasted perilla oil",
+      "sourceItems": [
+        "toasted perilla oil"
+      ],
+      "resolved": false
+    },
+    "toasted-sesame-oil": {
+      "displayName": "toasted sesame oil",
+      "sourceItems": [
+        "toasted sesame oil"
+      ],
+      "resolved": true,
+      "fdcId": 1861919,
+      "fdcName": "TOASTED SESAME OIL",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 93.3,
+        "carbs_g": 0,
+        "kcal": 800,
+        "sodium_mg": 0
+      }
+    },
+    "toasted-sesame-seeds": {
+      "displayName": "toasted sesame seeds",
+      "sourceItems": [
+        "toasted sesame seeds"
+      ],
+      "resolved": true,
+      "fdcId": 2616782,
+      "fdcName": "TOASTED SESAME SEEDS",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 14.3,
+        "fat_g": 50,
+        "carbs_g": 28.6,
+        "kcal": 571,
+        "sugar_g": 0,
+        "fiber_g": 14.3,
+        "calcium_mg": 129,
+        "iron_mg": 14.3,
+        "potassium_mg": 400,
+        "sodium_mg": 0
+      }
+    },
+    "unsalted-anchovy-kelp-broth": {
+      "displayName": "unsalted anchovy-kelp broth",
+      "sourceItems": [
+        "unsalted anchovy-kelp broth"
+      ],
+      "resolved": false
+    },
+    "unsalted-butter": {
+      "displayName": "unsalted butter",
+      "sourceItems": [
+        "unsalted butter"
+      ],
+      "resolved": true,
+      "fdcId": 2056610,
+      "fdcName": "UNSALTED BUTTER",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 78.6,
+        "carbs_g": 0,
+        "kcal": 714,
+        "sodium_mg": 0
+      }
+    },
+    "unseasoned-rice-vinegar": {
+      "displayName": "unseasoned rice vinegar",
+      "sourceItems": [
+        "unseasoned rice vinegar"
+      ],
+      "resolved": false
+    },
+    "warm-water": {
+      "displayName": "warm water",
+      "sourceItems": [
+        "warm water"
+      ],
+      "resolved": false
+    },
+    "water": {
+      "displayName": "water",
+      "sourceItems": [
+        "water"
+      ],
+      "resolved": true,
+      "fdcId": 2047057,
+      "fdcName": "WATER",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 10.8,
+        "kcal": 42,
+        "sugar_g": 10.8,
+        "sodium_mg": 8
+      }
+    },
+    "water-for-blanching": {
+      "displayName": "water for blanching",
+      "sourceItems": [
+        "water for blanching"
+      ],
+      "resolved": false
+    },
+    "watercress": {
+      "displayName": "watercress",
+      "sourceItems": [
+        "watercress"
+      ],
+      "resolved": false
+    },
+    "well-marbled-beef-ribeye-or-sirloin": {
+      "displayName": "well-marbled beef ribeye or sirloin",
+      "sourceItems": [
+        "well-marbled beef ribeye or sirloin"
+      ],
+      "resolved": false
+    },
+    "well-marbled-sirloin-strip-steak-or-ribeye": {
+      "displayName": "well-marbled sirloin, strip steak, or ribeye",
+      "sourceItems": [
+        "well-marbled sirloin, strip steak, or ribeye"
+      ],
+      "resolved": false
+    },
+    "whole-mackerel": {
+      "displayName": "whole mackerel",
+      "sourceItems": [
+        "whole mackerel"
+      ],
+      "resolved": false
+    },
+    "whole-yellow-croaker": {
+      "displayName": "whole yellow croaker",
+      "sourceItems": [
+        "whole yellow croaker"
+      ],
+      "resolved": false
+    },
+    "yellow-bell-pepper": {
+      "displayName": "yellow bell pepper",
+      "sourceItems": [
+        "yellow bell pepper"
+      ],
+      "resolved": false
+    },
+    "yellow-onion": {
+      "displayName": "yellow onion",
+      "sourceItems": [
+        "yellow onion"
+      ],
+      "resolved": false
+    },
+    "yuja-marmalade-or-yuja-cheong": {
+      "displayName": "yuja marmalade or yuja-cheong",
+      "sourceItems": [
+        "yuja marmalade or yuja-cheong"
+      ],
+      "resolved": false
+    },
+    "yukon-gold-potatoes": {
+      "displayName": "Yukon Gold potatoes",
+      "sourceItems": [
+        "Yukon Gold potatoes"
+      ],
+      "resolved": false
+    }
+  }
+}
