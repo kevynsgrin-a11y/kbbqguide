@@ -107,6 +107,8 @@ const actualRatio = ratioString(size.width, size.height);
 const problems = [];
 let photoMetadata;
 if (originalPath && metadataPath) {
+  if (explicitRole && explicitRole !== 'finished-dish-hero')
+    fail('native finished-dish photo cannot be assigned an instructional role');
   const original = readFileSync(originalPath);
   photoMetadata = JSON.parse(readFileSync(metadataPath, 'utf8'));
   const originalSize = original
