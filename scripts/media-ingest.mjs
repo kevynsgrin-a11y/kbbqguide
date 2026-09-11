@@ -15,6 +15,7 @@
 
 import { copyFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { argv, exit, stderr, stdout } from 'node:process';
 
 function arg(name) {
@@ -30,6 +31,12 @@ const explicitRole = arg('role');
 const dryRun = flag('dry-run');
 const manifestPath = arg('manifest') || 'data/media-manifest.json';
 const ingestDate = arg('date') || new Date().toISOString().slice(0, 10);
+// An explicit original + metadata pair is required for native-size photo imports.
+// The historical same-size replacement contract remains the default.
+const originalPath = arg('original');
+const metadataPath = arg('metadata');
+if (Boolean(originalPath) !== Boolean(metadataPath))
+  fail('--original and --metadata must be supplied together');
 
 function fail(msg) {
   stderr.write(`media:ingest — ERROR: ${msg}\n`);
@@ -98,16 +105,71 @@ const expected = {
 };
 const actualRatio = ratioString(size.width, size.height);
 const problems = [];
-if (size.width !== expected.width || size.height !== expected.height)
+let photoMetadata;
+if (originalPath && metadataPath) {
+  if (explicitRole && explicitRole !== 'finished-dish-hero')
+    fail('native finished-dish photo cannot be assigned an instructional role');
+  const original = readFileSync(originalPath);
+  photoMetadata = JSON.parse(readFileSync(metadataPath, 'utf8'));
+  const originalSize = original
+    .subarray(0, 8)
+    .equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))
+    ? { width: original.readUInt32BE(16), height: original.readUInt32BE(20) }
+    : readJpegSize(original);
+  if (!originalSize || originalSize.width < 600 || originalSize.height < 600)
+    fail('original must be a decodable PNG/JPEG at least 600 pixels per side');
+  if (size.width !== originalSize.width || size.height !== originalSize.height)
+    fail(
+      'native photo master must preserve original dimensions without upscaling or cropping',
+    );
+  if (
+    photoMetadata.sourceImport?.sha256 !==
+    createHash('sha256').update(original).digest('hex')
+  )
+    fail('original checksum does not match import evidence');
+  if (
+    photoMetadata.provenance?.sourceRecord !== oldAsset.provenance.sourceRecord
+  )
+    fail('photo sourceRecord must match the exact replaced recipe');
+  if (oldAsset.role !== 'finished-dish-hero')
+    fail('native photo import requires a recipe hero slot');
+  for (const field of ['altText', 'caption', 'credit'])
+    if (
+      typeof photoMetadata[field] !== 'string' ||
+      photoMetadata[field].length < 20
+    )
+      fail(`missing descriptive ${field}`);
+  if (!/AI-generated/i.test(photoMetadata.provenance?.disclosure ?? ''))
+    fail('synthetic photo import requires an AI-generated disclosure');
+  if (
+    !photoMetadata.provenance?.creator ||
+    !photoMetadata.provenance?.promptBasis
+  )
+    fail('photo provenance is incomplete');
+  if (!photoMetadata.rights?.source || !photoMetadata.rights?.scope)
+    fail('photo rights evidence is incomplete');
+  photoMetadata.sourceImport = {
+    ...photoMetadata.sourceImport,
+    width: originalSize.width,
+    height: originalSize.height,
+    masterSha256: createHash('sha256').update(readFileSync(file)).digest('hex'),
+    transform: 'native-dimensions-jpeg-no-crop-no-upscale',
+  };
+}
+if (
+  !photoMetadata &&
+  (size.width !== expected.width || size.height !== expected.height)
+)
   problems.push(
     `dimensions ${size.width}x${size.height} != required ${expected.width}x${expected.height}`,
   );
-if (actualRatio !== expected.ratio)
+if (!photoMetadata && actualRatio !== expected.ratio)
   problems.push(`aspect ratio ${actualRatio} != required ${expected.ratio}`);
 if (problems.length) fail(`validation failed:\n  - ${problems.join('\n  - ')}`);
 
 // --- Compute new id + path ----------------------------------------------------
 function nextRevisionId(base) {
+  base = base.replace(/(?:-r\d+)+$/, '');
   const ids = new Set(manifest.assets.map((a) => a.assetId));
   let n = 1;
   let candidate = `${base}-r${n}`;
@@ -115,6 +177,9 @@ function nextRevisionId(base) {
   return candidate;
 }
 const newId = explicitId || nextRevisionId(oldId);
+if (!/^[A-Za-z0-9_-]+$/.test(newId)) fail('invalid asset id');
+if (manifest.assets.some((asset) => asset.assetId === newId))
+  fail(`duplicate asset id: ${newId}`);
 const dir = path.dirname(oldAsset.path);
 const oldBase = path.basename(oldAsset.path, path.extname(oldAsset.path));
 const newPath = path.join(dir, `${oldBase}-${newId}.jpg`).replaceAll('\\', '/');
@@ -158,6 +223,33 @@ const newAsset = {
 delete newAsset.phase10Proposal;
 delete newAsset.status;
 delete newAsset.replacedBy;
+if (photoMetadata) {
+  // Copy only image-specific fields. Never inherit the old creator, rights,
+  // crop decisions, review proposals, or implementation screening claims.
+  Object.assign(newAsset, {
+    assetStatus: 'synthetic-labeled',
+    altDecision: 'informative',
+    altText: photoMetadata.altText,
+    caption: photoMetadata.caption,
+    credit: photoMetadata.credit,
+    provenance: photoMetadata.provenance,
+    rights: photoMetadata.rights,
+    sourceImport: photoMetadata.sourceImport,
+    focalPoint: '50% 50%',
+    mobileCrop: 'center-safe',
+    imageFit: 'contain',
+    ingestedBy: 'codex-photo-integration-agent',
+    qa: {
+      implementationVisualReview: 'matched-to-recipe-by-agent',
+      implementationFoodSafetyScreen: 'image-is-not-evidence-of-doneness',
+      implementationCulturalAndIngredientScreen:
+        'visual-match-only-human-review-required',
+      responsiveCropReview: 'full-frame-no-crop',
+      humanEditorialReview: 'required',
+      reviewer: 'Codex photo integration agent; human sign-off not inferred',
+    },
+  });
+}
 
 const summary = {
   supersedes: oldId,
@@ -180,5 +272,29 @@ copyFileSync(file, newPath);
 oldAsset.status = 'replaced';
 oldAsset.replacedBy = newId;
 manifest.assets.push(newAsset);
+const recipePlan = manifest.recipePlans?.find(
+  (plan) => plan.recipeId === newAsset.provenance.sourceRecord,
+);
+if (recipePlan && newAsset.role === 'finished-dish-hero') {
+  const stableId = recipePlan.hero.assetId;
+  for (const key of [
+    'path',
+    'width',
+    'height',
+    'aspectRatio',
+    'assetStatus',
+    'focalPoint',
+    'mobileCrop',
+    'altDecision',
+    'altText',
+    'caption',
+    'credit',
+    'provenance',
+    'rights',
+    'qa',
+  ])
+    recipePlan.hero[key] = structuredClone(newAsset[key]);
+  recipePlan.hero.assetId = stableId;
+}
 writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 stdout.write(`media:ingest — OK\n${JSON.stringify(summary, null, 2)}\n`);

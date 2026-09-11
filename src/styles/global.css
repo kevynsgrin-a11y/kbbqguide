@@ -2125,7 +2125,8 @@ a.support-card:hover {
   /* On narrow screens a credit overlay can cover the safety evidence the image
      exists to show (clearance, cord routing, or doneness). Give hero credits a
      dedicated band beneath the 4:3 image instead. */
-  .editorial-hero-media {
+  .editorial-hero-media,
+  .recipe-hero.editorial-hero .editorial-hero-media {
     aspect-ratio: auto !important;
   }
 

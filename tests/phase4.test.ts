@@ -109,11 +109,25 @@ describe('Phase 4 UI, media, motion, and preview handoff gate', () => {
       expect(plan.hero).toMatchObject({
         assetId: `${plan.recipeId}-hero`,
         assetStatus: 'synthetic-labeled',
-        width: 2400,
-        height: 1600,
         loading: 'priority-on-detail-lazy-elsewhere',
       });
-      expect(plan.hero.altText).toContain(plan.title);
+      let active = mediaData.assets.find(
+        (asset) => asset.assetId === plan.hero.assetId,
+      );
+      const visited = new Set<string>();
+      while (active?.status === 'replaced') {
+        expect(visited.has(active.assetId)).toBe(false);
+        visited.add(active.assetId);
+        active = mediaData.assets.find(
+          (asset) => asset.assetId === active?.replacedBy,
+        );
+      }
+      expect(active).toBeDefined();
+      expect(active?.provenance.sourceRecord).toBe(plan.recipeId);
+      expect(plan.hero.width).toBe(active?.width);
+      expect(plan.hero.height).toBe(active?.height);
+      expect(plan.hero.altText).toBe(active?.altText);
+      expect(plan.hero.altText.length).toBeGreaterThan(20);
       expect(plan.hero.caption).toContain(plan.title);
       expect(plan.stillShots.finishedDishOverhead.assetStatus).toBe(
         'placeholder',

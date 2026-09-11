@@ -34,9 +34,15 @@ const sizes =
  * two-format contract without reintroducing the Pages build-time regression.
  */
 const responsiveWidths = [360, 600, 960, 1200] as const;
+// Retain the delivery ceilings; smaller originals end at their true width.
+const sourceWidths = [
+  ...new Set(
+    responsiveWidths.map((width) => Math.min(width, media.image.width)),
+  ),
+];
 const responsiveQuality = 34;
 const variants = await Promise.all(
-  responsiveWidths.map(async (width) => ({
+  sourceWidths.map(async (width) => ({
     width,
     webp: await getImage({
       src: media.image,
@@ -85,6 +91,8 @@ if (!fallback)
   data-disclosure={media.provenance.disclosure}
   data-focal-point={media.focalPoint}
   data-mobile-crop={media.mobileCrop}
+  data-image-fit={media.imageFit}
+  data-source-record={media.provenance.sourceRecord}
   data-loading={priority ? 'eager-high' : 'lazy'}
 >
   <picture>
@@ -116,3 +124,13 @@ if (!fallback)
   </picture>
   {showCredit && <MediaCredit caption={media.caption} credit={media.credit} />}
 </figure>
+
+<style>
+  .responsive-media[data-image-fit='contain'] {
+    background: #eee5d9;
+  }
+  .responsive-media[data-image-fit='contain'] img {
+    object-fit: contain;
+    transform: none;
+  }
+</style>

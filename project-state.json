@@ -10,10 +10,11 @@
     "workingBranch": "claude/document-instructions-25h9z9"
   },
   "production": {
-    "originStatus": "failing-502",
-    "lastChecked": "2026-07-18",
-    "detail": "Public apex kbbqguide.com returns 502/connection refused; *.pages.dev preview healthy. Read-only diagnosis in docs/ops/ORIGIN-DIAGNOSIS-2026-07.md. Operator remediation required; agents made no production change.",
-    "originDiagnosisDoc": "docs/ops/ORIGIN-DIAGNOSIS-2026-07.md"
+    "originStatus": "resolved",
+    "lastChecked": "2026-09-11",
+    "detail": "Read-only HTTPS checks passed for the apex and 38 other relevant routes on 2026-09-11. Existing Pages custom-domain binding is active. Photo candidate is not deployed; see docs/PHOTO-INTEGRATION-VALIDATION.md.",
+    "originDiagnosisDoc": "docs/ops/ORIGIN-DIAGNOSIS-2026-07.md",
+    "currentVerificationDoc": "docs/PHOTO-INTEGRATION-VALIDATION.md"
   },
   "governanceIncident": {
     "id": "P0-1",

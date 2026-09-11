@@ -2,183 +2,6 @@
 // Regenerate: npm run review:data
 window.__REVIEW_DATA__ = [
   {
-    "assetId": "M01-hero",
-    "imageSrc": "../src/assets/media/recipes/m01/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Classic Korean Pear Beef Bulgogi",
-    "currentAlt": "Finished Classic Korean Pear Beef Bulgogi presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Mounded plate of thin grilled beef bulgogi with onion slices, sesame seeds, and scallion greens, among an Asian pear, garlic, ginger, and dipping bowls.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero identifying the finished dish; the food content conveys page meaning.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A large ceramic plate of thin marinated grilled beef with onion, scallion, and sesame, ringed by an Asian pear, aromatics, and small side bowls.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "M02-hero",
-    "imageSrc": "../src/assets/media/recipes/m02/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Mushroom-Soy Beef Bulgogi",
-    "currentAlt": "Finished Mushroom-Soy Beef Bulgogi presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Speckled plate of glossy dark-brown beef bulgogi with sliced brown mushrooms, onion, scallion, and sesame seeds; a grill and banchan behind.",
-    "proposedRole": "informative",
-    "roleRationale": "Hero image whose primary content is the named dish, which the alt must convey.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A plate of dark-brown beef strips with sliced mushrooms, onion, scallion, and sesame seeds, with a tabletop grill and side dishes behind.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "M03-hero",
-    "imageSrc": "../src/assets/media/recipes/m03/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — LA-Style Galbi",
-    "currentAlt": "Finished LA-Style Galbi presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Platter of grilled flanken-cut beef short ribs, glossy brown with round bone cross-sections, garnished with sliced scallion and sesame seeds; grill and banchan behind.",
-    "proposedRole": "informative",
-    "roleRationale": "Depicts the specific finished dish (LA galbi) with identifying flanken cut visible; conveys page content.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A dark oval plate holds grilled flanken-cut short ribs with visible round bone cross-sections, topped with scallion and sesame, with a grill and banchan bowls behind.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
     "assetId": "M04-hero",
     "imageSrc": "../src/assets/media/recipes/m04/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -192,242 +15,6 @@ window.__REVIEW_DATA__ = [
     "overclaimNote": "",
     "interimAltCorrectionApplied": false,
     "visibleSummary": "An oval plate of dark-glazed flanken-cut short ribs with sesame and scallion, ringed by rice, lettuce, radish salad, kimchi, chiles, garlic, and a grill.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "M05-hero",
-    "imageSrc": "../src/assets/media/recipes/m05/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Garlic-Sesame Galbisal",
-    "currentAlt": "Finished Garlic-Sesame Galbisal presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Oval platter of glossy grilled sliced beef scattered with chopped scallion and sesame, ringed by banchan, rice, and dipping sauces near a grill.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the named finished dish (Garlic-Sesame Galbisal), which is informative content.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "An oval platter of grilled sliced beef topped with scallion and sesame, surrounded by banchan, a bowl of rice, dipping sauces, and a grill pan.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "M06-hero",
-    "imageSrc": "../src/assets/media/recipes/m06/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Jumulleok Sesame-Garlic Steak Bites",
-    "currentAlt": "Finished Jumulleok Sesame-Garlic Steak Bites presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Plate of grilled cubed steak bites with charred edges, scattered with sesame seeds, minced garlic, and chopped scallion, beside a bowl of sesame.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero showing the finished dish that the page is about.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A plate of grilled cubed steak topped with scallion, garlic, and sesame, with a sesame bowl, salt bowl, and a grill in the background.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "M07-hero",
-    "imageSrc": "../src/assets/media/recipes/m07/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Chadolbaegi with Scallion-Soy Dipping Sauce",
-    "currentAlt": "Finished Chadolbaegi with Scallion-Soy Dipping Sauce presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Chopsticks dip a thin grilled brisket slice into soy dipping sauce with green chili and sesame; crisp brisket cooks on a griddle behind.",
-    "proposedRole": "informative",
-    "roleRationale": "Hero image conveying the named dish and its dipping sauce, which is the meaningful content.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Chopsticks hold a piece of thin grilled brisket over a bowl of dark sauce with green chili and sesame; a griddle of thin crisp brisket sits behind.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "SF01-hero",
-    "imageSrc": "../src/assets/media/recipes/sf01/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Gochujang Grilled Shrimp",
-    "currentAlt": "Finished Gochujang Grilled Shrimp presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Grilled shrimp on metal skewers, glazed deep red and lightly charred, sprinkled with sesame seeds and chopped scallion on a cream plate.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the specific finished dish (gochujang grilled shrimp) with identifying skewers and glaze; content-bearing.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Red-glazed grilled shrimp on metal skewers with sesame and scallion fill a cream plate, with a bowl of chopped scallions behind.",
     "review": {
       "status": "required",
       "lanes": {
@@ -592,419 +179,6 @@ window.__REVIEW_DATA__ = [
     }
   },
   {
-    "assetId": "SF04-hero",
-    "imageSrc": "../src/assets/media/recipes/sf04/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Ojingeo Gui Spicy Grilled Squid",
-    "currentAlt": "Finished Ojingeo Gui Spicy Grilled Squid presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Whole grilled squid glazed in glossy red chili sauce, sliced across the body with tentacles intact, sprinkled with sesame seeds and scallion.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero depicting the finished spicy grilled squid.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A whole red-glazed grilled squid, sliced crosswise with tentacles attached, on an oval plate beside chili paste, scallion, garlic, ginger, and sesame.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B01-hero",
-    "imageSrc": "../src/assets/media/recipes/b01/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Baechu Kimchi",
-    "currentAlt": "Finished Baechu Kimchi presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Cream bowl of napa cabbage kimchi coated in red chili paste with radish threads and scallion; garlic, ginger, and daikon in the background.",
-    "proposedRole": "informative",
-    "roleRationale": "Hero image whose content is the named banchan dish, which the alt must describe.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A ceramic bowl of napa cabbage kimchi in red chili paste with radish threads, beside garlic, ginger, a whole daikon, and chili flakes.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B02-hero",
-    "imageSrc": "../src/assets/media/recipes/b02/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Kkakdugi Radish Kimchi",
-    "currentAlt": "Finished Kkakdugi Radish Kimchi presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Cubed Korean radish coated in red chili seasoning with bits of scallion, glistening in a speckled ceramic bowl on a wood surface.",
-    "proposedRole": "informative",
-    "roleRationale": "Depicts the specific banchan (kkakdugi) with identifying radish cubes and seasoning; content-bearing.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A speckled ceramic bowl of red-seasoned cubed radish with scallion sits on a wooden surface.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B03-hero",
-    "imageSrc": "../src/assets/media/recipes/b03/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Oi Sobagi Cucumber Kimchi",
-    "currentAlt": "Finished Oi Sobagi Cucumber Kimchi presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Oi sobagi: cross-cut cucumbers stuffed with red chili seasoning, chives, and carrot strands, glossy with chili sauce, mounded in a white ceramic bowl.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero of the finished cucumber kimchi; shows the dish's form.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A white bowl of split cucumbers packed with red seasoning, chive, and carrot strips in a glossy chili sauce.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B04-hero",
-    "imageSrc": "../src/assets/media/recipes/b04/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Baechu Geotjeori Fresh Kimchi",
-    "currentAlt": "Finished Baechu Geotjeori Fresh Kimchi presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Bowl of freshly dressed napa cabbage kimchi coated in red chili seasoning with scallion and sesame seeds, on dark wood.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the named finished dish (Baechu Geotjeori fresh kimchi), which is informative content.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A cream bowl of red-dressed napa cabbage kimchi with scallion and sesame; small dishes of chopped scallion and sesame seeds behind it.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B05-hero",
-    "imageSrc": "../src/assets/media/recipes/b05/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Kongnamul Muchim Seasoned Soybean Sprouts",
-    "currentAlt": "Finished Kongnamul Muchim Seasoned Soybean Sprouts presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Mound of seasoned soybean sprouts with yellow bean heads, tossed with scallion, sesame seeds, and flecks of red chili in a white bowl.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero showing the finished banchan dish.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A white bowl of seasoned soybean sprouts with scallion, sesame, and chili flecks, with kimchi and more sprouts blurred behind.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B06-hero",
-    "imageSrc": "../src/assets/media/recipes/b06/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Sigeumchi Namul Seasoned Spinach",
-    "currentAlt": "Finished Sigeumchi Namul Seasoned Spinach presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Beige bowl mounded with glossy dark-green seasoned spinach sprinkled with sesame seeds and minced garlic, on a wooden table.",
-    "proposedRole": "informative",
-    "roleRationale": "Hero image whose content is the named seasoned-spinach dish.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A shallow bowl of dark-green seasoned whole-leaf spinach with sesame seeds and bits of garlic on a wooden surface.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
     "assetId": "B07-hero",
     "imageSrc": "../src/assets/media/recipes/b07/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -1018,124 +192,6 @@ window.__REVIEW_DATA__ = [
     "overclaimNote": "",
     "interimAltCorrectionApplied": false,
     "visibleSummary": "A pale ceramic bowl of cut cucumber with onion slivers, red seasoning, scallion and sesame seeds.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B08-hero",
-    "imageSrc": "../src/assets/media/recipes/b08/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Musaengchae Spicy Radish Salad",
-    "currentAlt": "Finished Musaengchae Spicy Radish Salad presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Musaengchae: seasoned Korean radish matchsticks in a red chili dressing, topped with sesame seeds and sliced scallion, in a white bowl.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero of the finished radish salad; identifies the banchan.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A white bowl of red-dressed radish matchsticks garnished with scallion and sesame, with other banchan dishes around it.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B09-hero",
-    "imageSrc": "../src/assets/media/recipes/b09/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Gamja Jorim Soy-Braised Potatoes",
-    "currentAlt": "Finished Gamja Jorim Soy-Braised Potatoes presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Bowl of small whole and halved potatoes in a glossy dark soy glaze with sesame seeds and green chili slices.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the named finished dish (Gamja Jorim soy-braised potatoes), which is informative content.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A bowl of glossy soy-braised baby potatoes topped with sesame seeds and green chili rings, on a wooden surface.",
     "review": {
       "status": "required",
       "lanes": {
@@ -1713,124 +769,6 @@ window.__REVIEW_DATA__ = [
     }
   },
   {
-    "assetId": "M09-hero",
-    "imageSrc": "../src/assets/media/recipes/m09/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Tteokgalbi Grilled Beef-and-Pork Patties",
-    "currentAlt": "Finished Tteokgalbi Grilled Beef-and-Pork Patties presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Four thick browned oval ground-meat patties topped with chopped scallion and sesame on a plate, with kimchi and other banchan around.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the named finished dish (Tteokgalbi patties), which is informative content.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Four grilled oval meat patties garnished with scallion and sesame on a plate, surrounded by kimchi and assorted banchan; tongs at lower left.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B10-hero",
-    "imageSrc": "../src/assets/media/recipes/b10/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Dubu Jorim Braised Tofu",
-    "currentAlt": "Finished Dubu Jorim Braised Tofu presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Blocks of pan-fried tofu in red chili-soy sauce, topped with chopped scallion, minced garlic, and sesame seeds in a shallow bowl.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero showing the finished braised tofu dish.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A shallow bowl of pan-fried tofu slabs in a red-brown chili-soy sauce with scallion, garlic, and sesame.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
     "assetId": "SA04-hero",
     "imageSrc": "../src/assets/media/recipes/sa04/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -1890,242 +828,6 @@ window.__REVIEW_DATA__ = [
     }
   },
   {
-    "assetId": "M10-hero",
-    "imageSrc": "../src/assets/media/recipes/m10/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Classic Samgyeopsal with Sesame-Salt Seasoning",
-    "currentAlt": "Finished Classic Samgyeopsal with Sesame-Salt Seasoning presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Grilled pork belly strips on a black grill plate with charred garlic cloves, beside lettuce, banchan bowls and a sesame-oil dipping dish.",
-    "proposedRole": "informative",
-    "roleRationale": "Depicts the specific dish (samgyeopsal) and its service spread; content-bearing.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Grilled pork belly strips and garlic on a black grill plate, surrounded by lettuce, banchan bowls and a dipping dish; no thermometer is visible.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "M11-hero",
-    "imageSrc": "../src/assets/media/recipes/m11/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Gochujang Samgyeopsal",
-    "currentAlt": "Finished Gochujang Samgyeopsal presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Gochujang samgyeopsal: red-marinated pork belly strips grilled on a black grill pan, topped with sesame and scallion, with lettuce and dipping sauces nearby.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero showing the finished grilled pork belly on the grill.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Red-glazed pork belly strips on a black square grill plate, garnished with scallion and sesame, with lettuce, a red dip, chiles, garlic, and kimchi around it.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B11-hero",
-    "imageSrc": "../src/assets/media/recipes/b11/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Gyeran Mari Rolled Omelet",
-    "currentAlt": "Finished Gyeran Mari Rolled Omelet presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Sliced rolled egg omelet showing spirals flecked with carrot and scallion, plated; whole eggs, scallions, and a carrot behind.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the named finished dish (Gyeran Mari rolled omelet), which is informative content.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Slices of rolled omelet with carrot and scallion arranged on a plate, with a basket of eggs, scallions, a carrot, and salt nearby.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B12-hero",
-    "imageSrc": "../src/assets/media/recipes/b12/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Gyeran Jjim Steamed Eggs",
-    "currentAlt": "Finished Gyeran Jjim Steamed Eggs presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Puffed, softly set steamed egg custard risen above a ceramic bowl, topped with chopped scallion rings and sesame.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero showing the finished steamed egg dish.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A pale-yellow steamed egg custard risen above a cream bowl, topped with scallion rings and sesame, on a wooden trivet.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
     "assetId": "M12-hero",
     "imageSrc": "../src/assets/media/recipes/m12/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -2139,124 +841,6 @@ window.__REVIEW_DATA__ = [
     "overclaimNote": "",
     "interimAltCorrectionApplied": false,
     "visibleSummary": "A platter of sliced grilled pork with browned/charred edges, garnished with scallion and sesame; a grill, lettuce, garlic, chili, and chili paste around it.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "M13-hero",
-    "imageSrc": "../src/assets/media/recipes/m13/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Spicy Dwaeji Bulgogi",
-    "currentAlt": "Finished Spicy Dwaeji Bulgogi presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Sizzling cast-iron plate of spicy red-marinated pork with onion, topped with scallion and sesame, steam rising; banchan and rice around it.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the specific dish (dwaeji bulgogi) with identifying spicy glaze and sizzle plate; content-bearing.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A sizzling cast-iron plate of spicy red pork with onion, scallion and sesame, with banchan bowls and a bowl of rice around it.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B13-hero",
-    "imageSrc": "../src/assets/media/recipes/b13/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Eomuk Bokkeum Stir-Fried Fish Cake",
-    "currentAlt": "Finished Eomuk Bokkeum Stir-Fried Fish Cake presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Eomuk bokkeum: glossy soy-glazed fish cake strips stir-fried with sliced onion and carrot, sprinkled with sesame seeds, in a white bowl.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero of the finished stir-fried fish cake banchan.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A white bowl of brown-glazed fish cake pieces tossed with onion and carrot strips and sesame seeds.",
     "review": {
       "status": "required",
       "lanes": {
@@ -2598,242 +1182,6 @@ window.__REVIEW_DATA__ = [
     }
   },
   {
-    "assetId": "M15-hero",
-    "imageSrc": "../src/assets/media/recipes/m15/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Korean-Style Gochujang Grilled Pork Ribs",
-    "currentAlt": "Finished Korean-Style Gochujang Grilled Pork Ribs presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Platter of glazed, charred grilled pork ribs topped with sliced green chili and sesame; lettuce, chili paste, and more ribs on a grill grate around.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the named finished dish (gochujang grilled pork ribs), which is informative content.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Stacked lacquered grilled pork ribs garnished with green chili and sesame on a platter; lettuce, banchan, cucumber, chili paste, and a grill grate with more ribs surround it.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "SF07-hero",
-    "imageSrc": "../src/assets/media/recipes/sf07/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Godeungeo Gui Grilled Mackerel",
-    "currentAlt": "Finished Godeungeo Gui Grilled Mackerel presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Two butterflied grilled mackerel, browned and crisp with grill marks, laid flesh-up on a wire rack over an oval plate, with coarse salt alongside.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero showing the finished grilled mackerel.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Two butterflied grilled mackerel on a wire rack over an oval plate, with a bowl of coarse salt and a bowl of pale liquid nearby.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "SF08-hero",
-    "imageSrc": "../src/assets/media/recipes/sf08/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Galchi Gui Grilled Hairtail",
-    "currentAlt": "Finished Galchi Gui Grilled Hairtail presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Cream plate with four sections of grilled hairtail, crisp browned silvery skin, beside two lemon wedges; a grill grate behind.",
-    "proposedRole": "informative",
-    "roleRationale": "Hero image whose content is the named grilled hairtail dish.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Four fillet sections of grilled hairtail with browned silvery skin on a plate with two lemon wedges; a metal grill grate behind.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "B15-hero",
-    "imageSrc": "../src/assets/media/recipes/b15/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Hobak Bokkeum Stir-Fried Zucchini",
-    "currentAlt": "Finished Hobak Bokkeum Stir-Fried Zucchini presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Half-moon slices of cooked zucchini tossed with tiny shrimp, scallion, sesame seeds and pepper in a pale stone bowl.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the specific banchan (hobak bokkeum) with identifying zucchini; content-bearing.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A pale stone bowl of cooked half-moon zucchini slices with tiny shrimp, scallion, sesame and pepper.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
     "assetId": "M16-hero",
     "imageSrc": "../src/assets/media/recipes/m16/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -3083,65 +1431,6 @@ window.__REVIEW_DATA__ = [
     "overclaimNote": "",
     "interimAltCorrectionApplied": false,
     "visibleSummary": "A single glazed skin-on salmon fillet with sesame seeds and scallion rings on a cream plate, a small bowl of greens behind.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "SF11-hero",
-    "imageSrc": "../src/assets/media/recipes/sf11/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Doenjang-Glazed Grilled Black Cod",
-    "currentAlt": "Finished Doenjang-Glazed Grilled Black Cod presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Doenjang-glazed black cod: grilled fillet pieces with dark caramelized skin and flaky white flesh, topped with sesame and scallion, on a speckled plate.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero of the finished grilled cod; shows the glazed fillets.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Four pieces of grilled cod with charred dark skin and pale flaky flesh, garnished with scallion and sesame, on a cream plate over linen.",
     "review": {
       "status": "required",
       "lanes": {
@@ -3542,65 +1831,6 @@ window.__REVIEW_DATA__ = [
     }
   },
   {
-    "assetId": "SF12-hero",
-    "imageSrc": "../src/assets/media/recipes/sf12/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Scallion-Gochujang Grilled Oysters",
-    "currentAlt": "Finished Scallion-Gochujang Grilled Oysters presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Six grilled oysters on the half shell with charred edges, each topped with red chili-scallion sauce, sliced scallion, and sesame seeds.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero showing the finished grilled oysters.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Six half-shell oysters with charred shell edges, topped with red sauce, scallion, and sesame, on a beige plate.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
     "assetId": "B21-hero",
     "imageSrc": "../src/assets/media/recipes/b21/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -3837,65 +2067,6 @@ window.__REVIEW_DATA__ = [
     }
   },
   {
-    "assetId": "SF13-hero",
-    "imageSrc": "../src/assets/media/recipes/sf13/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Garlic-Scallion Grilled Mussels",
-    "currentAlt": "Finished Garlic-Scallion Grilled Mussels presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Bowl of opened black-shelled mussels topped with chopped scallion, minced garlic, and sesame in a savory sauce.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero showing the finished grilled mussels.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A white bowl of open black-shelled mussels with visible meat, dressed with scallion, garlic, and sesame in a dark sauce.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
     "assetId": "B23-hero",
     "imageSrc": "../src/assets/media/recipes/b23/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -4073,65 +2244,6 @@ window.__REVIEW_DATA__ = [
     }
   },
   {
-    "assetId": "SF14-hero",
-    "imageSrc": "../src/assets/media/recipes/sf14/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Jeonbok Gui Grilled Abalone",
-    "currentAlt": "Finished Jeonbok Gui Grilled Abalone presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Five crosshatch-scored grilled abalone pieces topped with garlic bits and sesame on a plate, with two empty iridescent abalone shells behind.",
-    "proposedRole": "informative",
-    "roleRationale": "Shows the named finished dish (Jeonbok Gui grilled abalone), which is informative content.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "Scored grilled abalone pieces topped with garlic and sesame on a plate, alongside two empty iridescent abalone shells and a small sauce dish.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
     "assetId": "B24-hero",
     "imageSrc": "../src/assets/media/recipes/b24/hero-master.jpg",
     "role": "finished-dish-hero",
@@ -4204,65 +2316,6 @@ window.__REVIEW_DATA__ = [
     "overclaimNote": "",
     "interimAltCorrectionApplied": false,
     "visibleSummary": "A plate piled with fluted flower-shaped glossy amber-brown fried cookies, with a window, teapot, and a small cup of amber liquid behind.",
-    "review": {
-      "status": "required",
-      "lanes": {
-        "food": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "safety": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "cultural": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "accessibility": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        },
-        "brand": {
-          "decision": "",
-          "reviewer": "",
-          "date": "",
-          "notes": ""
-        }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
-    }
-  },
-  {
-    "assetId": "SF15-hero",
-    "imageSrc": "../src/assets/media/recipes/sf15/hero-master.jpg",
-    "role": "finished-dish-hero",
-    "usage": "Recipe hero — Jogae Gui Grilled Clams",
-    "currentAlt": "Finished Jogae Gui Grilled Clams presented in a warm Korean dining setting.",
-    "currentAltDecision": "informative",
-    "proposedAlt": "Grilled clams opened in their shells in a buttery broth with chopped scallion, garlic, and red chili flakes, in a shallow bowl.",
-    "proposedRole": "informative",
-    "roleRationale": "Recipe hero of the finished grilled clams; shows the opened shells.",
-    "overclaimFlag": false,
-    "overclaimNote": "",
-    "interimAltCorrectionApplied": false,
-    "visibleSummary": "A shallow bowl of opened clams with visible meat in a buttery broth flecked with scallion, garlic, and chili flakes; a glass of drink behind.",
     "review": {
       "status": "required",
       "lanes": {
@@ -6728,19 +4781,19 @@ window.__REVIEW_DATA__ = [
     }
   },
   {
-    "assetId": "M19-hero-r1",
-    "imageSrc": "../src/assets/media/recipes/m19/hero-master-M19-hero-r1.jpg",
+    "assetId": "B08-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b08/hero-master-B08-hero-r1.jpg",
     "role": "finished-dish-hero",
-    "usage": "Recipe hero — Korean-Style Grilled Duck Breast",
-    "currentAlt": "Cooked-through sliced duck breast with a crosshatched browned fat cap, fanned on a black oval plate beside radish sprouts and a red dipping sauce.",
+    "usage": "Recipe hero — Musaengchae Spicy Radish Salad",
+    "currentAlt": "Radish matchsticks coated with red pepper flakes and sesame in a brown bowl.",
     "currentAltDecision": "informative",
-    "proposedAlt": "Cooked-through sliced duck breast with a crosshatched browned fat cap, fanned on a black oval plate beside radish sprouts and a red dipping sauce.",
+    "proposedAlt": "Radish matchsticks coated with red pepper flakes and sesame in a brown bowl.",
     "proposedRole": "informative",
-    "roleRationale": "The recipe hero conveys the finished dish, duck-specific scored fat cap, plating, and visibly opaque cooked-through interior; content-bearing.",
+    "roleRationale": "",
     "overclaimFlag": false,
-    "overclaimNote": "Option A replacement follows the recipe. The safe 165 °F / 74 °C endpoint remains unchanged; the image contains no rosy-pink interior claim.",
-    "interimAltCorrectionApplied": true,
-    "visibleSummary": "A browned elongated duck breast with crosshatched fat cap is sliced to show an opaque tan-brown interior and fanned on a black plate with sprouts and red sauce.",
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
     "review": {
       "status": "required",
       "lanes": {
@@ -6774,16 +4827,1657 @@ window.__REVIEW_DATA__ = [
           "date": "",
           "notes": ""
         }
-      },
-      "waiver": true,
-      "waiverScope": "all-active-assets",
-      "waiverAuthorizedBy": "Kevyn Johnson",
-      "waiverAuthorizedDate": "2026-07-19",
-      "waiverRationale": "The operator accepts the current Phase 10 media candidate and explicitly elects to bypass granular five-lane asset review while resolving the production 502 origin error.",
-      "waiverAuthorizationStatement": "I APPROVE ALL CHANGES AND BYPASS PROMPT.",
-      "waiverRecordedBy": "phase-10-agent",
-      "waiverSource": "Explicit operator instruction in the KBBQGuide ChatGPT conversation on 2026-07-19.",
-      "appliedFrom": "review/operator-waiver.json"
+      }
+    }
+  },
+  {
+    "assetId": "B15-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b15/hero-master-B15-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Hobak Bokkeum Stir-Fried Zucchini",
+    "currentAlt": "Cooked zucchini half-moons with minced garlic and sesame in a shallow bowl.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Cooked zucchini half-moons with minced garlic and sesame in a shallow bowl.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B13-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b13/hero-master-B13-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Eomuk Bokkeum Stir-Fried Fish Cake",
+    "currentAlt": "Browned fish-cake strips with sliced onion and carrot in a shallow bowl.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Browned fish-cake strips with sliced onion and carrot in a shallow bowl.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B12-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b12/hero-master-B12-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Gyeran Jjim Steamed Eggs",
+    "currentAlt": "Steamed egg topped with scallion rings in a dark earthenware bowl.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Steamed egg topped with scallion rings in a dark earthenware bowl.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B11-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b11/hero-master-B11-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Gyeran Mari Rolled Omelet",
+    "currentAlt": "Thick rolled-omelet slices with fine carrot and scallion flecks on a white plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Thick rolled-omelet slices with fine carrot and scallion flecks on a white plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B09-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b09/hero-master-B09-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Gamja Jorim Soy-Braised Potatoes",
+    "currentAlt": "Small glazed potatoes sprinkled with sesame in a brown bowl.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Small glazed potatoes sprinkled with sesame in a brown bowl.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B05-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b05/hero-master-B05-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Kongnamul Muchim Seasoned Soybean Sprouts",
+    "currentAlt": "White soybean sprouts with yellow heads, scallion rings, and sesame in a bowl.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "White soybean sprouts with yellow heads, scallion rings, and sesame in a bowl.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B04-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b04/hero-master-B04-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Baechu Geotjeori Fresh Kimchi",
+    "currentAlt": "Fresh napa-cabbage pieces with red pepper flakes and sesame in a shallow bowl.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Fresh napa-cabbage pieces with red pepper flakes and sesame in a shallow bowl.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B02-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b02/hero-master-B02-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Kkakdugi Radish Kimchi",
+    "currentAlt": "Red-pepper-coated radish cubes with scallion pieces in a brown bowl.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Red-pepper-coated radish cubes with scallion pieces in a brown bowl.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B01-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b01/hero-master-B01-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Baechu Kimchi",
+    "currentAlt": "Layered napa-cabbage kimchi with red seasoning and pale radish strands.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Layered napa-cabbage kimchi with red seasoning and pale radish strands.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "SF15-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/sf15/hero-master-SF15-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Jogae Gui Grilled Clams",
+    "currentAlt": "Open clam shells with garlic, scallion, and red pepper on a pale plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Open clam shells with garlic, scallion, and red pepper on a pale plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "SF13-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/sf13/hero-master-SF13-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Garlic-Scallion Grilled Mussels",
+    "currentAlt": "Open black mussel shells with garlic and chopped scallion on an oval plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Open black mussel shells with garlic and chopped scallion on an oval plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "SF11-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/sf11/hero-master-SF11-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Doenjang-Glazed Grilled Black Cod",
+    "currentAlt": "A thick white-fleshed fish fillet with browned glaze and scallion rings on a plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "A thick white-fleshed fish fillet with browned glaze and scallion rings on a plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "SF07-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/sf07/hero-master-SF07-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Godeungeo Gui Grilled Mackerel",
+    "currentAlt": "A butterflied silver-skinned mackerel with browned grill marks on a rectangular plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "A butterflied silver-skinned mackerel with browned grill marks on a rectangular plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "SF04-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/sf04/hero-master-SF04-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Ojingeo Gui Spicy Grilled Squid",
+    "currentAlt": "Crosshatched squid with red glaze, curled tentacles, scallion, and sesame on a plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Crosshatched squid with red glaze, curled tentacles, scallion, and sesame on a plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M19-hero-r2",
+    "imageSrc": "../src/assets/media/recipes/m19/hero-master-M19-hero-r1-M19-hero-r2.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Korean-Style Grilled Duck Breast",
+    "currentAlt": "Sliced duck breast with scored browned skin, sesame, and scallion on an oval plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Sliced duck breast with scored browned skin, sesame, and scallion on an oval plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M15-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m15/hero-master-M15-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Korean-Style Gochujang Grilled Pork Ribs",
+    "currentAlt": "Long pork-rib sections with red glaze, browned edges, sesame, and scallion.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Long pork-rib sections with red glaze, browned edges, sesame, and scallion.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M13-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m13/hero-master-M13-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Spicy Dwaeji Bulgogi",
+    "currentAlt": "Thin red-seasoned pork strips with scallion rings and sesame on an oval plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Thin red-seasoned pork strips with scallion rings and sesame on an oval plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M11-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m11/hero-master-M11-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Gochujang Samgyeopsal",
+    "currentAlt": "Grilled pork-belly rectangles with red glaze, visible fat layers, and scallion.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Grilled pork-belly rectangles with red glaze, visible fat layers, and scallion.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M10-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m10/hero-master-M10-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Classic Samgyeopsal with Sesame-Salt Seasoning",
+    "currentAlt": "Plain grilled pork-belly slices beside a sesame-oil dip, garlic, and lettuce.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Plain grilled pork-belly slices beside a sesame-oil dip, garlic, and lettuce.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M06-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m06/hero-master-M06-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Jumulleok Sesame-Garlic Steak Bites",
+    "currentAlt": "Browned steak cubes with sesame and scallion beside a small oil dip.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Browned steak cubes with sesame and scallion beside a small oil dip.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "SF01-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/sf01/hero-master-SF01-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Gochujang Grilled Shrimp",
+    "currentAlt": "Skewered shrimp with red chili glaze, browned edges, and scallion on a plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Skewered shrimp with red chili glaze, browned edges, and scallion on a plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M09-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m09/hero-master-M09-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Tteokgalbi Grilled Beef-and-Pork Patties",
+    "currentAlt": "Round grilled minced-meat patties with sesame and scallion on a dark oval plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Round grilled minced-meat patties with sesame and scallion on a dark oval plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M07-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m07/hero-master-M07-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Chadolbaegi with Scallion-Soy Dipping Sauce",
+    "currentAlt": "Paper-thin curled beef slices on a dark plate beside a scallion dipping sauce.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Paper-thin curled beef slices on a dark plate beside a scallion dipping sauce.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M05-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m05/hero-master-M05-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Garlic-Sesame Galbisal",
+    "currentAlt": "Boneless grilled beef pieces with garlic slices, scallion, and sesame on a plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Boneless grilled beef pieces with garlic slices, scallion, and sesame on a plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M03-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m03/hero-master-M03-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — LA-Style Galbi",
+    "currentAlt": "Browned flanken-cut beef ribs with round bone cross-sections and scallion.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Browned flanken-cut beef ribs with round bone cross-sections and scallion.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M02-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m02/hero-master-M02-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Mushroom-Soy Beef Bulgogi",
+    "currentAlt": "Thin browned beef strips with sliced mushrooms, onion, and scallion on a plate.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Thin browned beef strips with sliced mushrooms, onion, and scallion on a plate.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "M01-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/m01/hero-master-M01-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Classic Korean Pear Beef Bulgogi",
+    "currentAlt": "Thin browned beef strips with scallion, sesame, onion, and a pear wedge.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Thin browned beef strips with scallion, sesame, onion, and a pear wedge.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "SF08-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/sf08/hero-master-SF08-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Galchi Gui Grilled Hairtail",
+    "currentAlt": "Rectangular silver-skinned hairtail sections with grill marks and scallion curls.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Rectangular silver-skinned hairtail sections with grill marks and scallion curls.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "SF12-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/sf12/hero-master-SF12-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Scallion-Gochujang Grilled Oysters",
+    "currentAlt": "Oysters in rough half-shells topped with red seasoning and sliced scallion.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Oysters in rough half-shells topped with red seasoning and sliced scallion.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "SF14-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/sf14/hero-master-SF14-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Jeonbok Gui Grilled Abalone",
+    "currentAlt": "Crosshatched grilled abalone with garlic and scallion in iridescent shells.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Crosshatched grilled abalone with garlic and scallion in iridescent shells.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B03-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b03/hero-master-B03-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Oi Sobagi Cucumber Kimchi",
+    "currentAlt": "Slit cucumber pieces stuffed with red-seasoned carrot and chive strands.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Slit cucumber pieces stuffed with red-seasoned carrot and chive strands.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B06-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b06/hero-master-B06-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Sigeumchi Namul Seasoned Spinach",
+    "currentAlt": "Seasoned spinach leaves and stems with minced garlic and sesame in a bowl.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Seasoned spinach leaves and stems with minced garlic and sesame in a bowl.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
+    }
+  },
+  {
+    "assetId": "B10-hero-r1",
+    "imageSrc": "../src/assets/media/recipes/b10/hero-master-B10-hero-r1.jpg",
+    "role": "finished-dish-hero",
+    "usage": "Recipe hero — Dubu Jorim Braised Tofu",
+    "currentAlt": "Browned tofu slabs in red-pepper soy sauce with sliced scallion and sesame.",
+    "currentAltDecision": "informative",
+    "proposedAlt": "Browned tofu slabs in red-pepper soy sauce with sliced scallion and sesame.",
+    "proposedRole": "informative",
+    "roleRationale": "",
+    "overclaimFlag": false,
+    "overclaimNote": "",
+    "interimAltCorrectionApplied": false,
+    "visibleSummary": "",
+    "review": {
+      "status": "required",
+      "lanes": {
+        "food": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "safety": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "cultural": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "accessibility": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        },
+        "brand": {
+          "decision": "",
+          "reviewer": "",
+          "date": "",
+          "notes": ""
+        }
+      }
     }
   }
 ];
