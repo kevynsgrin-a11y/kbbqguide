@@ -2,7 +2,7 @@
   "version": 1,
   "generatedBy": "scripts/build-ingredient-nutrition.mjs",
   "dictionarySource": "USDA FoodData Central (foods/search)",
-  "dictionaryFetchedAt": "2026-09-11T09:55:34.372Z",
+  "dictionaryFetchedAt": "2026-09-11T11:50:28.949Z",
   "fdcAttribution": {
     "text": "Nutrition data: USDA FoodData Central",
     "url": "https://fdc.nal.usda.gov"
@@ -11,8 +11,8 @@
   "counts": {
     "canonicalIds": 153,
     "dictionaryEntriesMatched": 173,
-    "resolved": 31,
-    "unresolved": 122
+    "resolved": 56,
+    "unresolved": 97
   },
   "ingredients": {
     "80-lean-ground-beef": {
@@ -20,7 +20,23 @@
       "sourceItems": [
         "80% lean ground beef"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 174036,
+      "fdcName": "Beef, ground, 80% lean meat / 20% fat, raw",
+      "dataType": "SR Legacy",
+      "confidence": 0.5,
+      "per100g": {
+        "fiber_g": 0,
+        "iron_mg": 1.94,
+        "protein_g": 17.2,
+        "fat_g": 20,
+        "carbs_g": 0,
+        "sugar_g": 0,
+        "potassium_mg": 270,
+        "kcal": 254,
+        "sodium_mg": 66,
+        "calcium_mg": 18
+      }
     },
     "all-purpose-flour": {
       "displayName": "all-purpose flour",
@@ -145,28 +161,86 @@
       "sourceItems": [
         "boneless pork shoulder"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2629838,
+      "fdcName": "COOK-IN-BAG BONELESS PORK SHOULDER PULLED, BONELESS PORK SHOULDER",
+      "dataType": "Branded",
+      "confidence": 1.21,
+      "per100g": {
+        "protein_g": 16.1,
+        "fat_g": 14.3,
+        "carbs_g": 1.79,
+        "kcal": 205,
+        "sugar_g": 0,
+        "fiber_g": 0,
+        "calcium_mg": 0,
+        "iron_mg": 0.96,
+        "sodium_mg": 661
+      }
     },
     "boneless-skinless-chicken-thighs": {
       "displayName": "boneless skinless chicken thighs",
       "sourceItems": [
         "boneless skinless chicken thighs"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2660644,
+      "fdcName": "BONELESS SKINLESS CHICKEN THIGHS",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 17,
+        "fat_g": 8.93,
+        "carbs_g": 0,
+        "kcal": 143,
+        "sugar_g": 0,
+        "fiber_g": 0,
+        "calcium_mg": 0,
+        "iron_mg": 0.96,
+        "sodium_mg": 76
+      }
     },
     "broccoli-florets": {
       "displayName": "broccoli florets",
       "sourceItems": [
         "broccoli florets"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2592748,
+      "fdcName": "BROCCOLI FLORETS",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 2.35,
+        "fat_g": 0,
+        "carbs_g": 5.88,
+        "kcal": 35,
+        "sugar_g": 1.18,
+        "fiber_g": 2.4,
+        "calcium_mg": 35,
+        "iron_mg": 0.59,
+        "potassium_mg": 271,
+        "sodium_mg": 29
+      }
     },
     "brown-sugar": {
       "displayName": "brown sugar",
       "sourceItems": [
         "brown sugar"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 1630185,
+      "fdcName": "BROWN SUGAR",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 100,
+        "kcal": 375,
+        "sugar_g": 100,
+        "sodium_mg": 0
+      }
     },
     "canned-corn-kernels": {
       "displayName": "canned corn kernels",
@@ -224,7 +298,22 @@
       "sourceItems": [
         "coarse salt"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2381860,
+      "fdcName": "SALTED BUTTER WITH COARSE SALT, COARSE SALT",
+      "dataType": "Branded",
+      "confidence": 0.94,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 57.1,
+        "carbs_g": 0,
+        "kcal": 500,
+        "fiber_g": 0,
+        "calcium_mg": 0,
+        "iron_mg": 0,
+        "potassium_mg": 0,
+        "sodium_mg": 571
+      }
     },
     "coarse-salt-for-rubbing": {
       "displayName": "coarse salt for rubbing",
@@ -238,14 +327,45 @@
       "sourceItems": [
         "coarsely ground black pepper"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2388919,
+      "fdcName": "BLACK PEPPER OAK SMOKED COARSE GROUND SEASONING, BLACK PEPPER",
+      "dataType": "Branded",
+      "confidence": 0.78,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 50,
+        "kcal": 250,
+        "sugar_g": 0,
+        "fiber_g": 50,
+        "calcium_mg": 500,
+        "iron_mg": 27,
+        "sodium_mg": 50
+      }
     },
     "cold-water": {
       "displayName": "cold water",
       "sourceItems": [
         "cold water"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 167702,
+      "fdcName": "Oil, flaxseed, cold pressed",
+      "dataType": "SR Legacy",
+      "confidence": 0.5,
+      "per100g": {
+        "sugar_g": 0,
+        "protein_g": 0.11,
+        "iron_mg": 0,
+        "sodium_mg": 0,
+        "fat_g": 100,
+        "carbs_g": 0,
+        "kcal": 884,
+        "calcium_mg": 1,
+        "potassium_mg": 0,
+        "fiber_g": 0
+      }
     },
     "commercial-distilled-vinegar-labeled-5-acidity": {
       "displayName": "commercial distilled vinegar labeled 5% acidity",
@@ -266,7 +386,23 @@
       "sourceItems": [
         "commercial pasteurized vanilla ice cream"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2705638,
+      "fdcName": "Ice cream bar, vanilla",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 0.52,
+      "per100g": {
+        "protein_g": 2.11,
+        "fat_g": 25.26,
+        "carbs_g": 37.12,
+        "kcal": 358,
+        "sugar_g": 21.05,
+        "fiber_g": 1.1,
+        "calcium_mg": 63,
+        "iron_mg": 0,
+        "potassium_mg": 71,
+        "sodium_mg": 84
+      }
     },
     "commercial-prepared-injeolmi-rice-cake": {
       "displayName": "commercial prepared injeolmi rice cake",
@@ -301,7 +437,23 @@
       "sourceItems": [
         "commercial yuja-cheong"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 174289,
+      "fdcName": "Hummus, commercial",
+      "dataType": "SR Legacy",
+      "confidence": 0.5,
+      "per100g": {
+        "protein_g": 7.78,
+        "fiber_g": 5.5,
+        "iron_mg": 2.54,
+        "sodium_mg": 426,
+        "fat_g": 17.8,
+        "carbs_g": 15,
+        "kcal": 237,
+        "sugar_g": 0.62,
+        "calcium_mg": 47,
+        "potassium_mg": 312
+      }
     },
     "commercially-prepared-sweetened-korean-red-beans": {
       "displayName": "commercially prepared sweetened Korean red beans",
@@ -359,7 +511,23 @@
       "sourceItems": [
         "crisp apple"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2708023,
+      "fdcName": "Crisp, apple",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 0.5,
+      "per100g": {
+        "protein_g": 2.81,
+        "fat_g": 9.59,
+        "carbs_g": 30.18,
+        "kcal": 215,
+        "sugar_g": 15.82,
+        "fiber_g": 2.7,
+        "calcium_mg": 15,
+        "iron_mg": 1,
+        "potassium_mg": 119,
+        "sodium_mg": 119
+      }
     },
     "crown-daisy-leaves": {
       "displayName": "crown daisy leaves",
@@ -449,7 +617,21 @@
       "sourceItems": [
         "fine salt"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2003589,
+      "fdcName": "Flour, semolina, fine",
+      "dataType": "Foundation",
+      "confidence": 0.5,
+      "per100g": {
+        "iron_mg": 2.43,
+        "potassium_mg": 208,
+        "sodium_mg": 0.426,
+        "fat_g": 1.84,
+        "fiber_g": 3.68,
+        "calcium_mg": 19.8,
+        "protein_g": 13.3,
+        "carbs_g": 72
+      }
     },
     "fine-salt-for-blanching-water": {
       "displayName": "fine salt for blanching water",
@@ -481,7 +663,22 @@
       "sourceItems": [
         "firm tofu"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2440185,
+      "fdcName": "FIRM TOFU",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 8.86,
+        "fat_g": 3.8,
+        "carbs_g": 2.53,
+        "kcal": 89,
+        "sugar_g": 0,
+        "fiber_g": 1.3,
+        "calcium_mg": 127,
+        "iron_mg": 1.37,
+        "sodium_mg": 0
+      }
     },
     "fish-sauce": {
       "displayName": "fish sauce",
@@ -532,7 +729,23 @@
       "sourceItems": [
         "fresh ginger"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2710507,
+      "fdcName": "Tea, ginger",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 0.5,
+      "per100g": {
+        "protein_g": 0.02,
+        "fat_g": 0.01,
+        "carbs_g": 0.18,
+        "kcal": 1,
+        "sugar_g": 0.02,
+        "fiber_g": 0,
+        "calcium_mg": 3,
+        "iron_mg": 0.01,
+        "potassium_mg": 4,
+        "sodium_mg": 4
+      }
     },
     "fresh-lemon-juice": {
       "displayName": "fresh lemon juice",
@@ -763,7 +976,23 @@
       "sourceItems": [
         "ground pork"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2030503,
+      "fdcName": "GROUND PORK",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 14.3,
+        "fat_g": 27.7,
+        "carbs_g": 0.89,
+        "kcal": 312,
+        "sugar_g": 0,
+        "fiber_g": 0,
+        "calcium_mg": 18,
+        "iron_mg": 0.96,
+        "potassium_mg": 179,
+        "sodium_mg": 652
+      }
     },
     "ground-toasted-sesame-seeds": {
       "displayName": "ground toasted sesame seeds",
@@ -807,7 +1036,23 @@
       "sourceItems": [
         "instant yeast"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2710005,
+      "fdcName": "Yeast",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 0.5,
+      "per100g": {
+        "protein_g": 40.44,
+        "fat_g": 7.61,
+        "carbs_g": 41.22,
+        "kcal": 325,
+        "sugar_g": 0,
+        "fiber_g": 26.9,
+        "calcium_mg": 30,
+        "iron_mg": 2.17,
+        "potassium_mg": 955,
+        "sodium_mg": 51
+      }
     },
     "korean-fish-sauce": {
       "displayName": "Korean fish sauce",
@@ -823,7 +1068,23 @@
         "Korean or Persian cucumbers",
         "Persian cucumbers"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2611809,
+      "fdcName": "MINI PERSIAN CUCUMBERS",
+      "dataType": "Branded",
+      "confidence": 0.74,
+      "per100g": {
+        "protein_g": 1.18,
+        "fat_g": 0,
+        "carbs_g": 2.35,
+        "kcal": 12,
+        "sugar_g": 1.18,
+        "fiber_g": 1.2,
+        "calcium_mg": 21,
+        "iron_mg": 0.71,
+        "potassium_mg": 0,
+        "sodium_mg": 35
+      }
     },
     "korean-persian-or-small-pickling-cucumbers": {
       "displayName": "Korean, Persian, or small pickling cucumbers",
@@ -844,7 +1105,23 @@
       "sourceItems": [
         "Korean radish"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2709803,
+      "fdcName": "Radish",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 0.5,
+      "per100g": {
+        "protein_g": 0.68,
+        "fat_g": 0.1,
+        "carbs_g": 3.4,
+        "kcal": 16,
+        "sugar_g": 1.86,
+        "fiber_g": 1.6,
+        "calcium_mg": 25,
+        "iron_mg": 0.34,
+        "potassium_mg": 233,
+        "sodium_mg": 39
+      }
     },
     "korean-rice-syrup": {
       "displayName": "Korean rice syrup",
@@ -873,14 +1150,41 @@
       "sourceItems": [
         "kosher salt"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2167125,
+      "fdcName": "KOSHER SALT",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0,
+        "fat_g": 0,
+        "carbs_g": 0,
+        "kcal": 0,
+        "sodium_mg": 39100
+      }
     },
     "large-eggs": {
       "displayName": "large eggs",
       "sourceItems": [
         "large eggs"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 1724381,
+      "fdcName": "LARGE EGGS",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 12,
+        "fat_g": 10,
+        "carbs_g": 0,
+        "kcal": 140,
+        "sugar_g": 0,
+        "fiber_g": 0,
+        "calcium_mg": 60,
+        "iron_mg": 1.8,
+        "potassium_mg": 140,
+        "sodium_mg": 140
+      }
     },
     "large-whole-squid": {
       "displayName": "large whole squid",
@@ -1014,7 +1318,23 @@
       "sourceItems": [
         "packed brown sugar"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 170675,
+      "fdcName": "Sweeteners, sugar substitute, granulated, brown",
+      "dataType": "SR Legacy",
+      "confidence": 0.58,
+      "per100g": {
+        "protein_g": 2.06,
+        "fiber_g": 0.6,
+        "iron_mg": 0.16,
+        "sodium_mg": 572,
+        "fat_g": 0,
+        "carbs_g": 84.8,
+        "kcal": 347,
+        "sugar_g": 4.03,
+        "calcium_mg": 879,
+        "potassium_mg": 39
+      }
     },
     "packed-dark-brown-sugar": {
       "displayName": "packed dark brown sugar",
@@ -1057,7 +1377,23 @@
       "sourceItems": [
         "pine nuts"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2707526,
+      "fdcName": "Pine nuts",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 1.2,
+      "per100g": {
+        "protein_g": 13.69,
+        "fat_g": 68.37,
+        "carbs_g": 13.08,
+        "kcal": 673,
+        "sugar_g": 3.59,
+        "fiber_g": 3.7,
+        "calcium_mg": 16,
+        "iron_mg": 5.53,
+        "potassium_mg": 597,
+        "sodium_mg": 2
+      }
     },
     "plain-unseasoned-roasted-gim-sheets": {
       "displayName": "plain unseasoned roasted gim sheets",
@@ -1288,21 +1624,21 @@
         "soy sauce"
       ],
       "resolved": true,
-      "fdcId": 174278,
-      "fdcName": "Soy sauce made from soy (tamari)",
-      "dataType": "SR Legacy",
-      "confidence": 0.74,
+      "fdcId": 2707442,
+      "fdcName": "Soy sauce",
+      "dataType": "Survey (FNDDS)",
+      "confidence": 1.2,
       "per100g": {
-        "carbs_g": 5.57,
-        "kcal": 60,
-        "sugar_g": 1.7,
-        "protein_g": 10.5,
+        "protein_g": 8.14,
+        "fat_g": 0.57,
+        "carbs_g": 4.93,
+        "kcal": 53,
+        "sugar_g": 0.4,
         "fiber_g": 0.8,
-        "iron_mg": 2.38,
-        "sodium_mg": 5590,
-        "fat_g": 0.1,
-        "calcium_mg": 20,
-        "potassium_mg": 212
+        "calcium_mg": 33,
+        "iron_mg": 1.45,
+        "potassium_mg": 435,
+        "sodium_mg": 5493
       }
     },
     "strawberries": {
@@ -1378,7 +1714,21 @@
       "sourceItems": [
         "sweet rice flour"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2273376,
+      "fdcName": "SWEET RICE FLOUR",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 5.88,
+        "fat_g": 0,
+        "carbs_g": 79.4,
+        "kcal": 353,
+        "sugar_g": 0,
+        "fiber_g": 2.9,
+        "calcium_mg": 0,
+        "sodium_mg": 44
+      }
     },
     "thick-cut-sandwich-bread": {
       "displayName": "thick-cut sandwich bread",
@@ -1547,7 +1897,22 @@
       "sourceItems": [
         "yellow onion"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 1605785,
+      "fdcName": "YELLOW ONION",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 0.68,
+        "fat_g": 0,
+        "carbs_g": 7.43,
+        "kcal": 30,
+        "sugar_g": 6.08,
+        "fiber_g": 2,
+        "calcium_mg": 27,
+        "iron_mg": 0.49,
+        "sodium_mg": 3
+      }
     },
     "yuja-marmalade-or-yuja-cheong": {
       "displayName": "yuja marmalade or yuja-cheong",
@@ -1561,7 +1926,23 @@
       "sourceItems": [
         "Yukon Gold potatoes"
       ],
-      "resolved": false
+      "resolved": true,
+      "fdcId": 2251779,
+      "fdcName": "YUKON GOLD POTATOES",
+      "dataType": "Branded",
+      "confidence": 1.05,
+      "per100g": {
+        "protein_g": 2.03,
+        "fat_g": 0,
+        "carbs_g": 17.6,
+        "kcal": 74,
+        "sugar_g": 0.68,
+        "fiber_g": 1.4,
+        "calcium_mg": 14,
+        "iron_mg": 0.73,
+        "potassium_mg": 419,
+        "sodium_mg": 0
+      }
     }
   }
 }
