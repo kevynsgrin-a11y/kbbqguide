@@ -1,6 +1,6 @@
 # Disclosure Audit — Phase 10.3 (P1-8)
 
-_Computed sizes and worst-case contrast measured headlessly (Chromium, 1440×900) against the built site. HEAD `88919d21d6313a4354b5855519b71ac6084d7b86`. Pass = synthetic-content disclosure ≥ 13px and ≥ 4.5:1 worst-case contrast (panel composited over both white and black, so it holds over any image behind it)._
+_Computed sizes and worst-case contrast measured headlessly (Chromium, 1440×900) against the built site. HEAD `98f5aef3d101594260906e6663cc17d54cab2112`. Pass = synthetic-content disclosure ≥ 13px and ≥ 4.5:1 worst-case contrast (panel composited over both white and black, so it holds over any image behind it)._
 
 - Synthetic disclosure elements measured: **23**
 - Failing (< 13px or < 4.5:1): **0**
@@ -12,13 +12,13 @@ _Computed sizes and worst-case contrast measured headlessly (Chromium, 1440×900
 | Home hero                  | `.home-hero-disclosure` | 13px        | 12.61:1             | ✅   | AI-generated editorial visualization; people shown are synthetic. Synthetic imag |
 | Home hero                  | `.media-credit`         | 14px        | 14.14:1             | ✅   | The table comes together through passing, wrapping, and sharing.Synthetic image  |
 | Home hero                  | `.media-credit small`   | 13px        | 11.96:1             | ✅   | Synthetic image · KBBQGuide editorial direction / OpenAI                         |
-| Recipe detail              | `.media-credit`         | 14px        | 14.14:1             | ✅   | Classic Korean Pear Beef Bulgogi, visualized for the KBBQGuide editorial preview |
-| Recipe detail              | `.media-credit small`   | 13px        | 11.96:1             | ✅   | Synthetic image · KBBQGuide editorial direction / OpenAI                         |
+| Recipe detail              | `.media-credit`         | 14px        | 14.14:1             | ✅   | Classic Korean Pear Beef Bulgogi. AI-generated dish illustration.Synthetic image |
+| Recipe detail              | `.media-credit small`   | 13px        | 11.96:1             | ✅   | Synthetic image · OpenAI; supplied for KBBQGuide                                 |
 | Category index             | `.media-credit`         | 14px        | 14.14:1             | ✅   | Grilled meat, paced in small batches for the shared table.Synthetic image · KBBQ |
 | Category index             | `.media-credit small`   | 13px        | 11.96:1             | ✅   | Synthetic image · KBBQGuide editorial direction / OpenAI                         |
 | Recipe library index       | `.media-credit`         | 14px        | 14.14:1             | ✅   | Six sections, composed as one deliberate table.Synthetic image · KBBQGuide edito |
 | Recipe library index       | `.media-credit small`   | 13px        | 11.96:1             | ✅   | Synthetic image · KBBQGuide editorial direction / OpenAI                         |
-| Guide detail               | `.media-credit`         | 14px        | 14.14:1             | ✅   | A workable grill setup keeps heat, air, and traffic in view.Synthetic image · KB |
+| Guide detail               | `.media-credit`         | 14px        | 14.14:1             | ✅   | A visible cord path, stable surface, and directly aligned hood make the setup le |
 | Guide detail               | `.media-credit small`   | 13px        | 11.96:1             | ✅   | Synthetic image · KBBQGuide editorial direction / OpenAI                         |
 | Guide index                | `.media-credit`         | 14px        | 14.14:1             | ✅   | Plan the room, table, work, and cleanup before service.Synthetic image · KBBQGui |
 | Guide index                | `.media-credit small`   | 13px        | 11.96:1             | ✅   | Synthetic image · KBBQGuide editorial direction / OpenAI                         |
