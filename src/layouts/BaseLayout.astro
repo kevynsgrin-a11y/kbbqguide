@@ -108,7 +108,8 @@ const socialOpenGraphType =
       )
     }
     {canEmitStructuredData && jsonLd.map((data) => <StructuredData {data} />)}
-  </head>
+  <!-- ga4:start --><script async src="https://www.googletagmanager.com/gtag/js?id=G-PRZE7YRL0F"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PRZE7YRL0F');</script><!-- ga4:end -->
+</head>
   <body class={pageClass}>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     {
