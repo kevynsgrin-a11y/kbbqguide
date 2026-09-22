@@ -68,6 +68,16 @@ function pngDimensions(file) {
   return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
 }
 
+// A public-launch build fails every preview assertion below by design, and
+// the first confusing error ('Missing preview robots directive') hides the
+// real cause. Fail fast with the actual story until the launch emission
+// layer (Recipe JSON-LD, populated sitemap, feed) exists.
+if (process.env.KBBQGUIDE_RELEASE_MODE === 'public-launch') {
+  throw new Error(
+    'Build ran with KBBQGUIDE_RELEASE_MODE=public-launch, but the launch emission layer is unfinished: built pages carry no Recipe JSON-LD and the sitemap is empty. This validator only knows the preview posture. Complete the phase-10 launch emission work (or revert the hosting env to the fail-closed preview state) before building in launch mode.',
+  );
+}
+
 const files = walk(dist);
 const htmlFiles = files.filter((file) => extname(file) === '.html');
 const errorDocument = join(dist, '404.html');
