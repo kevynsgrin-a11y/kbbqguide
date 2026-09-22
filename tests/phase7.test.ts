@@ -108,7 +108,10 @@ describe('Phase 7 full QA and hardening gate', () => {
   });
 
   it('preserves every commercial, collection, and tracking kill switch', () => {
-    expect(allowlistData.allowedDomains).toEqual([]);
+    // v2 (2026-09-22): fdc.nal.usda.gov admitted as the USDA FoodData Central
+    // primary-source citation host for the ingredient nutrition reference.
+    // The pinned list keeps the policy fail-closed: any other addition fails here.
+    expect(allowlistData.allowedDomains).toEqual(['fdc.nal.usda.gov']);
     expect(
       affiliateData.merchants.every((merchant) => merchant.status !== 'active'),
     ).toBe(true);

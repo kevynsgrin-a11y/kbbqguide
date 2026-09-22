@@ -42,10 +42,13 @@ function walk(dir) {
 }
 
 // Strip scripts/styles/json-ld so we only scan user-visible rendered markup.
+// The FDC nutrition reference spans are exempted from measure-artifact rules:
+// they carry verified two-decimal per-100g reference data, not prose measures.
 function visibleMarkup(html) {
   return html
     .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-    .replace(/<style[\s\S]*?<\/style>/gi, ' ');
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<span class="nutrition-values">[\s\S]*?<\/span>/gi, ' ');
 }
 
 // Each rule: { id, description, re }. `re` runs against the visible markup.

@@ -16,6 +16,13 @@ const urlRegistry = JSON.parse(
 const performanceBudget = JSON.parse(
   readFileSync(resolve(root, 'data/performance-budget.json'), 'utf8'),
 );
+const outboundAllowlist = JSON.parse(
+  readFileSync(resolve(root, 'data/outbound-domain-allowlist.json'), 'utf8'),
+);
+if (outboundAllowlist.policy !== 'deny-by-default')
+  throw new Error('Outbound allowlist must stay deny-by-default.');
+const allowedOutboundHosts = new Set(outboundAllowlist.allowedDomains);
+const disallowedOutboundAnchors = [];
 const allowedActiveStatuses = new Set([
   'original-approved',
   'licensed-approved',
@@ -149,8 +156,13 @@ for (const file of contentHtmlFiles) {
   }
   if (!/<main id="main-content"/.test(html))
     throw new Error(`Missing main landmark: ${routeFor(file)}`);
-  outboundAnchorCount += [...html.matchAll(/<a[^>]+href="https?:\/\//gi)]
-    .length;
+  for (const anchor of html.matchAll(/<a[^>]+href="(https?:\/\/[^"]+)"/gi)) {
+    outboundAnchorCount += 1;
+    const host = new URL(anchor[1]).hostname;
+    if (host === 'kbbqguide.com' || host === 'www.kbbqguide.com') continue;
+    if (!allowedOutboundHosts.has(host))
+      disallowedOutboundAnchors.push(`${host} on ${routeFor(file)}`);
+  }
   if (/<iframe\b/i.test(html))
     throw new Error(`Unexpected iframe: ${routeFor(file)}`);
   if (/\sstyle\s*=/i.test(html))
@@ -469,9 +481,13 @@ const sponsoredPolicyHtml = readFileSync(
 );
 if (!sponsoredPolicyHtml.includes('Editorial independence'))
   throw new Error('Sponsored content policy lacks editorial independence.');
-if (outboundAnchorCount !== 0)
+if (disallowedOutboundAnchors.length !== 0)
   throw new Error(
-    `Expected zero outbound anchors; found ${outboundAnchorCount}.`,
+    `Outbound anchors outside the allowlist: ${[...new Set(disallowedOutboundAnchors)].slice(0, 5).join('; ')} (+${Math.max(0, disallowedOutboundAnchors.length - 5)} more)`,
+  );
+if (allowedOutboundHosts.size === 0 && outboundAnchorCount !== 0)
+  throw new Error(
+    `Expected zero outbound anchors while the allowlist is empty; found ${outboundAnchorCount}.`,
   );
 
 const requiredArtifacts = [
