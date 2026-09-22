@@ -1,6 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "policy": "deny-by-default",
-  "allowedDomains": [],
-  "notes": "Phase 6 keeps every merchant, sponsor, social, email, analytics, and media destination inactive. Add exact HTTPS hostnames only after human terms, channel, privacy, and security review."
+  "allowedDomains": [
+    "fdc.nal.usda.gov"
+  ],
+  "notes": "Phase 6 keeps every merchant, sponsor, social, email, analytics, and media destination inactive. Add exact HTTPS hostnames only after human terms, channel, privacy, and security review. v2 (2026-09-22): fdc.nal.usda.gov admitted as the primary-source citation target for the ingredient nutrition reference (PR #8) - a US government public-data source, informational citation only, no commercial channel."
 }

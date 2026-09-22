@@ -229,6 +229,8 @@ describe('Phase 9 visual editorial overhaul', () => {
       'const responsiveWidths = [360, 600, 960, 1200]',
     );
     expect(responsive).toContain('const responsiveQuality = 34');
+    expect(responsive).toContain('const heroMobileCeiling = 480');
+    expect(responsive).toContain('const heroQuality = 28');
     expect(responsive).toContain('width={media.image.width}');
     expect(responsive).toContain('height={media.image.height}');
     expect(responsive).toContain("loading={priority ? 'eager' : 'lazy'}");

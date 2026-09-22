@@ -36,7 +36,10 @@ describe('Phase 6 revenue, social, email, messaging, and analytics handoff gate'
         apiPermission: 'unknown',
       });
     }
-    expect(allowlistData.allowedDomains).toEqual([]);
+    // v2 (2026-09-22): fdc.nal.usda.gov admitted as the USDA FoodData Central
+    // primary-source citation host for the ingredient nutrition reference.
+    // The pinned list keeps the policy fail-closed: any other addition fails here.
+    expect(allowlistData.allowedDomains).toEqual(['fdc.nal.usda.gov']);
     expect(JSON.stringify(affiliateData)).not.toMatch(/https?:\/\//);
   });
 

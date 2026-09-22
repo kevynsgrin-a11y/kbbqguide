@@ -34,13 +34,20 @@ const sizes =
  * two-format contract without reintroducing the Pages build-time regression.
  */
 const responsiveWidths = [360, 600, 960, 1200] as const;
+const responsiveQuality = 34;
+// Eager heroes carry the LCP byte budget, and the denser synthetic hero
+// masters (2026-09) overshoot it at the lazy settings: priority figures
+// cap the mobile ceiling one step lower and encode tighter.
+const heroMobileCeiling = 480;
+const heroQuality = 28;
 // Retain the delivery ceilings; smaller originals end at their true width.
 const sourceWidths = [
   ...new Set(
-    responsiveWidths.map((width) => Math.min(width, media.image.width)),
+    responsiveWidths.map((width) =>
+      Math.min(priority ? Math.min(width, heroMobileCeiling) : width, media.image.width),
+    ),
   ),
 ];
-const responsiveQuality = 34;
 const variants = await Promise.all(
   sourceWidths.map(async (width) => ({
     width,
@@ -48,13 +55,13 @@ const variants = await Promise.all(
       src: media.image,
       width,
       format: 'webp',
-      quality: responsiveQuality,
+      quality: priority ? heroQuality : responsiveQuality,
     }),
     jpeg: await getImage({
       src: media.image,
       width,
       format: 'jpeg',
-      quality: responsiveQuality,
+      quality: priority ? heroQuality : responsiveQuality,
     }),
   })),
 );
@@ -125,12 +132,3 @@ if (!fallback)
   {showCredit && <MediaCredit caption={media.caption} credit={media.credit} />}
 </figure>
 
-<style>
-  .responsive-media[data-image-fit='contain'] {
-    background: #eee5d9;
-  }
-  .responsive-media[data-image-fit='contain'] img {
-    object-fit: contain;
-    transform: none;
-  }
-</style>
