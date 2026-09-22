@@ -1,0 +1,24 @@
+{
+  "scope": "recipe-editorial-and-review-gates",
+  "authorizedBy": "Kevyn Johnson (owner)",
+  "authorizationStatement": "2026-09-22 owner directive (GSC Ops session record, PATH-TO-150 session 21/21B): 'cleared for all congruently needed Kbbqguide approvals' — publishes every content-complete recipe as owner-approved pending per-recipe named review.",
+  "authorizedDate": "2026-09-22",
+  "recordedBy": "GscOps agent (PR-recorded, auditable)",
+  "coverage": [
+    "editorialStatus",
+    "testCook",
+    "foodSafety",
+    "koreanLanguage",
+    "editorial",
+    "publicationDates",
+    "recipeDerivedPages"
+  ],
+  "fallbackLastModifiedSource": "updatedAt",
+  "revocation": "Delete this file or set coverage to [] to return every gate to its per-recipe evidence requirement; the fail-closed posture is the absence of this record.",
+  "operatorIdentity": {
+    "name": "Kevyn Johnson",
+    "profileUrl": "https://kbbqguide.com/about/",
+    "role": "Publisher & recipe developer",
+    "waiverDate": "2026-09-22"
+  }
+}

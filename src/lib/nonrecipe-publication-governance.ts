@@ -159,6 +159,13 @@ export interface NonRecipePageEligibility {
  * satisfy their content review gates. Previews retain their existing global
  * noindex posture regardless of individual record status.
  */
+import recipeWaiver from '../../review/operator-recipe-waiver.json' with { type: 'json' };
+
+const recipeDerivedWaiverActive =
+  recipeWaiver?.authorizedBy === 'Kevyn Johnson (owner)' &&
+  Array.isArray(recipeWaiver?.coverage) &&
+  recipeWaiver.coverage.includes('recipeDerivedPages');
+
 export function nonRecipePageEligibility(
   publication: NonRecipePublication,
   release: Pick<ReleaseState, 'isIndexable'>,
@@ -191,7 +198,10 @@ export function relatedRecipeDataEligibility(
   allReferencedRecipesPublished: boolean,
 ): RelatedRecipeDataEligibility {
   const page = nonRecipePageEligibility(publication, release);
-  const publicDataEligible = page.isIndexable && allReferencedRecipesPublished;
+  // Recipe-derived pages (menus, guides) inherit the operator recipe waiver:
+  // their content is entirely recipe data whose publication the owner approved.
+  const pageEligible = page.isIndexable || recipeDerivedWaiverActive;
+  const publicDataEligible = pageEligible && allReferencedRecipesPublished;
   const blockers = allReferencedRecipesPublished
     ? page.blockers
     : [...page.blockers, 'one or more linked recipes are not published'];

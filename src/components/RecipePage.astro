@@ -157,7 +157,10 @@ const nutritionFetchedAt = ingredientNutritionData.dictionaryFetchedAt;
       ]}
     />
     <p class="eyebrow">
-      {category.label} · {publicationStatusLabel(recipe.editorialStatus)}{' '}
+      {category.label} ·{' '}
+      {accountability?.basis === 'operator-waiver'
+        ? 'Published (operator approval)'
+        : publicationStatusLabel(recipe.editorialStatus)}{' '}
       {recipe.id}
     </p>
     <h1>{recipe.title}</h1>
@@ -173,26 +176,37 @@ const nutritionFetchedAt = ingredientNutritionData.dictionaryFetchedAt;
               {accountability.author.name}
             </a>
           </span>
-          <span>
-            Test cook:{' '}
-            <a href={accountability.testCook.profileUrl}>
-              {accountability.testCook.name}
-            </a>
-          </span>
-          <span>
-            Reviewers: food safety{' '}
-            <a href={accountability.foodSafetyReviewer.profileUrl}>
-              {accountability.foodSafetyReviewer.name}
-            </a>{' '}
-            ({accountability.foodSafetyReviewer.credential}) ; Korean language{' '}
-            <a href={accountability.koreanLanguageReviewer.profileUrl}>
-              {accountability.koreanLanguageReviewer.name}
-            </a>
-            ; editorial{' '}
-            <a href={accountability.editorialReviewer.profileUrl}>
-              {accountability.editorialReviewer.name}
-            </a>
-          </span>
+          {accountability.testCook ? (
+            <span>
+              Test cook:{' '}
+              <a href={accountability.testCook.profileUrl}>
+                {accountability.testCook.name}
+              </a>
+            </span>
+          ) : null}
+          {accountability.basis === 'operator-waiver' ? (
+            <span>
+              Published under the operator review approval of 2026-09-22;
+              named per-gate review (test cook, food safety, Korean language,
+              editorial) is recorded as pending rather than claimed.
+            </span>
+          ) : (
+            <span>
+              Reviewers: food safety{' '}
+              <a href={accountability.foodSafetyReviewer.profileUrl}>
+                {accountability.foodSafetyReviewer.name}
+              </a>{' '}
+              ({accountability.foodSafetyReviewer.credential}) ; Korean
+              language{' '}
+              <a href={accountability.koreanLanguageReviewer.profileUrl}>
+                {accountability.koreanLanguageReviewer.name}
+              </a>
+              ; editorial{' '}
+              <a href={accountability.editorialReviewer.profileUrl}>
+                {accountability.editorialReviewer.name}
+              </a>
+            </span>
+          )}
           <span>
             Materially updated{' '}
             <time datetime={accountability.materiallyUpdatedAt}>

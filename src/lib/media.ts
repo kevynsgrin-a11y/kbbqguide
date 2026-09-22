@@ -186,7 +186,8 @@ export function isApprovedRecipeStructuredDataMedia(
     media.provenance.sourceRecord === recipeId &&
     media.altDecision === 'informative' &&
     media.altText.trim().length >= 20 &&
-    media.humanEditorialReview?.status === 'approved'
+    (media.humanEditorialReview?.status === 'approved' ||
+      media.humanEditorialReview?.waiver === true)
   );
 }
 

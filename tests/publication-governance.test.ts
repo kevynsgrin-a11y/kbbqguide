@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-import { describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 
 import {
   incompleteHumanReviewGateLabels,
@@ -9,6 +9,7 @@ import {
   recipeAccountability,
   recipeReviewGateDisplayStatuses,
   recipePublishability,
+  _setRecipeWaiverForTesting,
 } from '../src/lib/publication-governance';
 import { completeRecipeSchema } from '../src/schemas/recipe';
 
@@ -56,6 +57,31 @@ function publishableRecipe() {
 }
 
 describe('publication governance (P0 #4 and #10)', () => {
+  // The operator recipe waiver (review/operator-recipe-waiver.json) is the
+  // shipped repo state; per-evidence tests below must run under the
+  // fail-closed posture they were written for.
+  beforeEach(() => {
+    _setRecipeWaiverForTesting(false);
+  });
+  afterEach(() => {
+    _setRecipeWaiverForTesting(true);
+  });
+
+  it('publishes content-complete drafts under the operator waiver with an auditable basis', () => {
+    _setRecipeWaiverForTesting(true);
+    const recipe = draftRecipe();
+    const result = recipePublishability(recipe);
+    expect(result.isPublishable).toBe(true);
+    expect(result.publicationBasis).toBe('operator-waiver');
+  });
+
+  it('treats absence of the waiver as fail-closed (waiver off)', () => {
+    _setRecipeWaiverForTesting(false);
+    const recipe = draftRecipe();
+    expect(recipePublishability(recipe).isPublishable).toBe(false);
+    expect(recipePublishability(recipe).publicationBasis).toBe('reviewed');
+  });
+
   it('parses existing content as explicitly non-public drafts with pending human gates', () => {
     const recipe = draftRecipe();
 

@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import process from 'node:process';
 
-import { describe, expect, it, vi } from 'vitest';
+import { describe, expect, it, vi, beforeEach, afterEach } from 'vitest';
 
 import {
   approvedRecipeStructuredDataMedia,
@@ -13,6 +13,7 @@ import {
 import {
   isActualPublicationDate,
   recipeSitemapLastModified,
+  _setRecipeWaiverForTesting,
 } from '../src/lib/publication-governance';
 import { recipeJsonLd } from '../src/lib/seo';
 import { completeRecipeSchema } from '../src/schemas/recipe';
@@ -67,6 +68,13 @@ function publishableRecipe() {
 }
 
 describe('P1 sitemap, schema, and publication-evidence gates', () => {
+  beforeEach(() => {
+    _setRecipeWaiverForTesting(false);
+  });
+  afterEach(() => {
+    _setRecipeWaiverForTesting(true);
+  });
+
   it('emits no Recipe JSON-LD for drafts or recipe records without approved public images', () => {
     const draft = draftRecipe();
     expect(recipeJsonLd(draft, '/recipes/banchan/baechu-kimchi/')).toBeNull();

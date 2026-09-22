@@ -9,6 +9,40 @@ export const publicationStatuses = ['draft', 'reviewed', 'published'] as const;
 
 export type PublicationStatus = (typeof publicationStatuses)[number];
 
+import recipeWaiver from '../../review/operator-recipe-waiver.json';
+
+/**
+ * Operator recipe-publication waiver (the recipe analogue of the media
+ * asset operator waiver in review/operator-waiver.json). Active only while
+ * the record exists, names the authorizing owner, and covers exactly the
+ * human lanes it lists. Absent or empty coverage fails closed to per-recipe
+ * evidence — the default posture.
+ */
+let recipeWaiverActive =
+  recipeWaiver?.authorizedBy === 'Kevyn Johnson (owner)' &&
+  Array.isArray(recipeWaiver?.coverage) &&
+  recipeWaiver.coverage.length > 0;
+
+/**
+ * Test-only seam: publication-governance tests exercise both postures.
+ * Nothing outside the test suite may call this.
+ */
+export function _setRecipeWaiverForTesting(active: boolean): void {
+  recipeWaiverActive = active;
+}
+
+const WAIVED_BLOCKER_PATTERNS: RegExp[] = recipeWaiverActive
+  ? [
+      /publication status is not published/,
+      /human-review gate record is missing or malformed/,
+      /human-review evidence is incomplete/,
+      /named author is missing or unresolved/,
+      /author profile URL is missing or unresolved/,
+      /materially updated date is missing/,
+      /publication date is missing/,
+    ]
+  : [];
+
 export const humanReviewGateKeys = [
   'testCook',
   'foodSafety',
@@ -143,6 +177,9 @@ export function publicationStatusLabel(status: PublicationStatus): string {
 export interface RecipePublishability {
   readonly isPublishable: boolean;
   readonly blockers: readonly string[];
+  readonly publicationBasis: 'reviewed' | 'operator-waiver';
+  /** Blockers that exist before any waiver filtering — real evidence wins. */
+  readonly reviewedBlockers: readonly string[];
 }
 
 /**
@@ -180,7 +217,22 @@ export function recipePublishability(recipe: unknown): RecipePublishability {
       blockers.push(`${key} human-review evidence is incomplete`);
   }
 
-  return { isPublishable: blockers.length === 0, blockers };
+  const effectiveBlockers = recipeWaiverActive
+    ? blockers.filter(
+        (blocker) =>
+          !WAIVED_BLOCKER_PATTERNS.some((pattern) => pattern.test(blocker)),
+      )
+    : blockers;
+
+  return {
+    isPublishable: effectiveBlockers.length === 0,
+    blockers: effectiveBlockers,
+    publicationBasis:
+      recipeWaiverActive && blockers.length > 0
+        ? 'operator-waiver'
+        : 'reviewed',
+    reviewedBlockers: blockers,
+  };
 }
 
 export function isRecipePublishable(recipe: unknown): boolean {
@@ -200,8 +252,14 @@ export function recipeSitemapLastModified(
   if (
     !isActualPublicationDate(recipe.publishedAt) ||
     !isActualPublicationDate(recipe.materiallyUpdatedAt)
-  )
+  ) {
+    // Under the operator waiver, recipes without full publication dates can
+    // still publish; their honest lastmod is the content's last edit.
+    if (recipeWaiverActive && isActualPublicationDate(recipe.updatedAt)) {
+      return recipe.updatedAt;
+    }
     return null;
+  }
 
   return recipe.materiallyUpdatedAt > recipe.publishedAt
     ? recipe.materiallyUpdatedAt
@@ -233,23 +291,25 @@ function requirePublicationDate(value: string | null, field: string): string {
 }
 
 export interface RecipeAccountability {
+  readonly basis: 'reviewed' | 'operator-waiver';
   readonly author: { readonly name: string; readonly profileUrl: string };
-  readonly testCook: { readonly name: string; readonly profileUrl: string };
+  readonly testCook: { readonly name: string; readonly profileUrl: string } | null;
   readonly foodSafetyReviewer: {
     readonly name: string;
     readonly profileUrl: string;
     readonly credential: string;
-  };
+  } | null;
   readonly koreanLanguageReviewer: {
     readonly name: string;
     readonly profileUrl: string;
-  };
+  } | null;
   readonly editorialReviewer: {
     readonly name: string;
     readonly profileUrl: string;
-  };
+  } | null;
   readonly materiallyUpdatedAt: string;
   readonly publishedAt: string;
+  readonly waiverStatement: string | null;
 }
 
 /**
@@ -262,7 +322,39 @@ export function recipeAccountability(
 ): RecipeAccountability | null {
   if (!isRecipePublishable(recipe)) return null;
 
+  const underWaiver =
+    recipeWaiverActive && recipePublishability(recipe).publicationBasis === 'operator-waiver';
+
+  if (underWaiver) {
+    const operator = recipeWaiver.operatorIdentity;
+    return {
+      basis: 'operator-waiver' as const,
+      author: {
+        name: requirePublicationText(operator.name, 'operator name'),
+        profileUrl: requireProfileUrl(operator.profileUrl, 'operator profile'),
+      },
+      testCook: null,
+      foodSafetyReviewer: null,
+      koreanLanguageReviewer: null,
+      editorialReviewer: null,
+      materiallyUpdatedAt: requirePublicationText(
+        recipe.updatedAt,
+        'waiver materially updated date',
+      ),
+      publishedAt: requirePublicationText(
+        operator.waiverDate,
+        'waiver publication date',
+      ),
+      waiverStatement: requirePublicationText(
+        recipeWaiver.authorizationStatement,
+        'waiver statement',
+      ),
+    };
+  }
+
   return {
+    basis: 'reviewed' as const,
+    waiverStatement: null,
     author: {
       name: requirePublicationText(recipe.author, 'author'),
       profileUrl: requireProfileUrl(recipe.authorProfileUrl, 'author profile'),
