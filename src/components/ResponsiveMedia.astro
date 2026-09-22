@@ -124,13 +124,3 @@ if (!fallback)
   </picture>
   {showCredit && <MediaCredit caption={media.caption} credit={media.credit} />}
 </figure>
-
-<style>
-  .responsive-media[data-image-fit='contain'] {
-    background: #eee5d9;
-  }
-  .responsive-media[data-image-fit='contain'] img {
-    object-fit: contain;
-    transform: none;
-  }
-</style>

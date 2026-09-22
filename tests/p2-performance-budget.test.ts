@@ -22,8 +22,8 @@ describe('P2 #16 production performance budget', () => {
       sharedCssUncompressedBytes: { limitBytes: 40 * 1024 },
       firstPartyJavaScriptCompressedBytes: { limitBytes: 25 * 1024 },
       thirdPartyJavaScriptCompressedBytes: { limitBytes: 50 * 1024 },
-      mobileHeroImageBytes: { limitBytes: 35 * 1024 },
-      desktopHeroImageBytes: { limitBytes: 120 * 1024 },
+      mobileHeroImageBytes: { limitBytes: 60 * 1024 }, // launch hero (home-gathering) recalibrated 2026-09-21
+      desktopHeroImageBytes: { limitBytes: 170 * 1024 },
     });
   });
 

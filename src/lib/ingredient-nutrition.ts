@@ -95,7 +95,10 @@ const CORE_NUTRIENTS = [
   ['carbs_g', 'carbs'],
 ] as const;
 
-/** "364 kcal, 10 g protein, 1 g fat, 76 g carbs (per 100 g)" — only nutrients present. */
+/** "364 kcal, 10 g protein, 1 g fat, 76 g carbs (per 100 g)" — only nutrients present.
+ * Consumer display rounds grams to one decimal and kcal to whole numbers: the
+ * USDA dictionary's two-decimal precision is measurement noise for readers and
+ * trips the decimal-mass-volume content lint on published pages. */
 export function formatPer100gLine(
   per100g: Record<string, number> | undefined,
 ): string {
@@ -104,7 +107,11 @@ export function formatPer100gLine(
   for (const [key, label] of CORE_NUTRIENTS) {
     const value = per100g[key];
     if (value == null) continue;
-    parts.push(key === 'kcal' ? `${value} kcal` : `${value} g ${label}`);
+    parts.push(
+      key === 'kcal'
+        ? `${Math.round(value)} kcal`
+        : `${Math.round(value * 10) / 10} g ${label}`,
+    );
   }
   return parts.length > 0 ? `${parts.join(', ')} (per 100 g)` : '';
 }

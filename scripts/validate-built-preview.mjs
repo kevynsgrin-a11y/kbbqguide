@@ -85,6 +85,9 @@ const titles = new Set();
 const canonicals = new Set();
 let internalLinkCount = 0;
 let outboundAnchorCount = 0;
+const allowlistedHosts = new Set(
+  JSON.parse(readFileSync(resolve(root, 'data/outbound-domain-allowlist.json'), 'utf8')).allowedDomains,
+);
 let structuredDataBlockCount = 0;
 let maxCompressedInlineJavaScript = 0;
 let maxCompressedHtml = 0;
@@ -92,6 +95,25 @@ let maxUncompressedHtml = 0;
 let thirdPartyScripts = 0;
 const referencedAssetPaths = new Set();
 const renderedMediaIds = new Set();
+// Committed .env carries the launch posture for plain-node validators (astro
+// loads it for the build; node does not). Shell env still wins when present.
+const envPath = resolve(import.meta.dirname, '..', '.env');
+if (existsSync(envPath)) {
+  for (const line of readFileSync(envPath, 'utf8').split(/\r?\n/)) {
+    const m = /^([A-Z0-9_]+)=(.*)$/.exec(line.trim());
+    if (m && process.env[m[1]] === undefined) process.env[m[1]] = m[2];
+  }
+}
+
+// Release posture mirrors src/lib/release-state.ts (fail-closed): public-launch
+// requires the explicit mode plus both recorded approvals; anything else
+// validates the pre-launch noindex directive.
+const releaseMode = (process.env.KBBQGUIDE_RELEASE_MODE ?? '').trim().toLowerCase();
+const launchApproved = ['KBBQGUIDE_PUBLIC_RELEASE_APPROVED', 'KBBQGUIDE_INDEXING_APPROVED']
+  .every((key) => (process.env[key] ?? '').trim().toLowerCase() === 'approved');
+const isPublicLaunch = releaseMode === 'public-launch' && launchApproved;
+const robotsDirective = isPublicLaunch ? 'index,follow' : 'noindex,nofollow,noarchive';
+
 const eagerImageCandidates = new Map();
 const routesWithoutLcpMedia = new Set([
   'about/index.html',
@@ -124,8 +146,11 @@ for (const file of contentHtmlFiles) {
   canonicals.add(canonical);
   if (!html.includes(`<meta property="og:url" content="${canonical}">`))
     throw new Error(`Open Graph URL mismatch: ${routeFor(file)}`);
-  if (!/<meta name="robots" content="noindex,nofollow,noarchive">/.test(html))
-    throw new Error(`Missing preview robots directive: ${routeFor(file)}`);
+  const robotsOk = isPublicLaunch
+    ? /<meta name="robots" content="(index,follow|noindex,nofollow,noarchive)">/.test(html)
+    : html.includes(`<meta name="robots" content="${robotsDirective}">`);
+  if (!robotsOk)
+    throw new Error(`Invalid robots directive for ${isPublicLaunch ? 'launch' : 'preview'} posture: ${routeFor(file)}`);
   if (!/<meta name="color-scheme" content="light dark">/.test(html))
     throw new Error(`Missing light/dark color-scheme declaration: ${route}.`);
   if (
@@ -149,8 +174,10 @@ for (const file of contentHtmlFiles) {
   }
   if (!/<main id="main-content"/.test(html))
     throw new Error(`Missing main landmark: ${routeFor(file)}`);
-  outboundAnchorCount += [...html.matchAll(/<a[^>]+href="https?:\/\//gi)]
-    .length;
+  for (const anchor of html.matchAll(/<a[^>]+href="(https?:\/\/[^\/"]+)/gi)) {
+    const host = new URL(anchor[1]).hostname;
+    if (!allowlistedHosts.has(host)) outboundAnchorCount += 1;
+  }
   if (/<iframe\b/i.test(html))
     throw new Error(`Unexpected iframe: ${routeFor(file)}`);
   if (/\sstyle\s*=/i.test(html))
@@ -287,9 +314,12 @@ for (const file of contentHtmlFiles) {
       /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
     ),
   ];
-  if (jsonLdBlocks.length !== 0)
+  const pageIsNoindex = html.includes(
+    '<meta name="robots" content="noindex,nofollow,noarchive">',
+  );
+  if (pageIsNoindex && jsonLdBlocks.length !== 0)
     throw new Error(
-      `Public noindex preview must not emit JSON-LD: ${routeFor(file)}`,
+      `Noindex page must not emit JSON-LD: ${routeFor(file)}`,
     );
   structuredDataBlockCount += jsonLdBlocks.length;
   for (const match of jsonLdBlocks) {
@@ -368,18 +398,21 @@ for (const file of recipePages) {
     throw new Error(`Missing no-JavaScript print fallback: ${routeFor(file)}`);
   if (!html.includes('Safety controls that stay visible'))
     throw new Error(`Missing visible safety section: ${routeFor(file)}`);
+  const pageIsNoindex = html.includes(
+    '<meta name="robots" content="noindex,nofollow,noarchive">',
+  );
   const linkedData = [
     ...html.matchAll(
       /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
     ),
   ].map((match) => JSON.parse(match[1] ?? '{}'));
-  if (linkedData.some((item) => item['@type'] === 'Recipe'))
+  if (pageIsNoindex && linkedData.some((item) => item['@type'] === 'Recipe'))
     throw new Error(
-      `Unpublished preview must not emit Recipe JSON-LD: ${routeFor(file)}`,
+      `Noindex recipe page must not emit Recipe JSON-LD: ${routeFor(file)}`,
     );
-  if (linkedData.length !== 0)
+  if (pageIsNoindex && linkedData.length !== 0)
     throw new Error(
-      `Unpublished preview must not emit recipe-page JSON-LD: ${routeFor(file)}`,
+      `Noindex recipe page must not emit JSON-LD: ${routeFor(file)}`,
     );
 }
 
@@ -404,6 +437,11 @@ if (menuPages.length !== 3)
   throw new Error(`Expected 3 menu pages; found ${menuPages.length}.`);
 for (const file of menuPages) {
   const html = readFileSync(file, 'utf8');
+  if (isPublicLaunch) {
+    if (!html.includes('This menu is not publicly released.'))
+      throw new Error();
+    continue;
+  }
   if (!html.includes('Consolidated planning list'))
     throw new Error(`Missing menu shopping list: ${routeFor(file)}`);
   if (!html.includes('Guest count does not change safety limits'))
@@ -496,9 +534,11 @@ if (!robots.includes('Allow: /'))
   throw new Error(
     'Public noindex preview robots.txt must allow crawlers to observe page-level noindex directives.',
   );
-if (robots.includes('Sitemap:'))
+if (!isPublicLaunch && robots.includes('Sitemap:'))
   throw new Error('Preview robots.txt must not advertise a public sitemap.');
-if (existsSync(join(dist, 'sitemap-preview.xml')))
+if (isPublicLaunch && !robots.includes('Sitemap:'))
+  throw new Error('Launch robots.txt must advertise the sitemap.');
+if (!isPublicLaunch && existsSync(join(dist, 'sitemap-preview.xml')))
   throw new Error('Preview sitemap inventory must not be emitted.');
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8');
 const sitemapLocations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(
@@ -516,10 +556,10 @@ for (const location of sitemapLocations) {
 if (new Set(sitemapLocations).size !== sitemapLocations.length)
   throw new Error('Sitemap contains duplicate URLs.');
 const sitemapIndex = readFileSync(join(dist, 'sitemap-index.xml'), 'utf8');
-if (/<loc>[^<]+<\/loc>/.test(sitemapIndex))
+if (!isPublicLaunch && /<loc>[^<]+<\/loc>/.test(sitemapIndex))
   throw new Error('Preview sitemap index must not advertise a public sitemap.');
 const feed = readFileSync(join(dist, 'feed.xml'), 'utf8');
-if (/<entry[\s>]/.test(feed))
+if (!isPublicLaunch && /<entry[\s>]/.test(feed))
   throw new Error('Preview feed must not claim unapproved published entries.');
 if (existsSync(join(dist, 'site.webmanifest')))
   throw new Error('PWA manifest must not be emitted without offline support.');

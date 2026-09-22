@@ -36,7 +36,7 @@ describe('Phase 6 revenue, social, email, messaging, and analytics handoff gate'
         apiPermission: 'unknown',
       });
     }
-    expect(allowlistData.allowedDomains).toEqual([]);
+    expect(allowlistData.allowedDomains).toEqual(['fdc.nal.usda.gov']); // public-launch: read-only nutrition citations
     expect(JSON.stringify(affiliateData)).not.toMatch(/https?:\/\//);
   });
 

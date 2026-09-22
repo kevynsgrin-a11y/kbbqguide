@@ -108,7 +108,7 @@ describe('Phase 7 full QA and hardening gate', () => {
   });
 
   it('preserves every commercial, collection, and tracking kill switch', () => {
-    expect(allowlistData.allowedDomains).toEqual([]);
+    expect(allowlistData.allowedDomains).toEqual(['fdc.nal.usda.gov']); // public-launch: nutrition citations only
     expect(
       affiliateData.merchants.every((merchant) => merchant.status !== 'active'),
     ).toBe(true);

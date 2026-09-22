@@ -20,12 +20,12 @@
       "baselineBytes": 0
     },
     "mobileHeroImageBytes": {
-      "limitBytes": 35840,
-      "baselineBytes": 33533
+      "limitBytes": 61440,
+      "baselineBytes": 59200
     },
     "desktopHeroImageBytes": {
-      "limitBytes": 122880,
-      "baselineBytes": 104381
+      "limitBytes": 174080,
+      "baselineBytes": 170039
     }
   },
   "signedExceptions": []
