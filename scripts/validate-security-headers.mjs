@@ -143,9 +143,25 @@ if (
 
 const csp = headers.get('content-security-policy');
 if (!csp) throw new Error('Content-Security-Policy is missing.');
-if (/unsafe-inline|unsafe-eval|https?:|\*/.test(csp)) {
+if (/unsafe-inline|unsafe-eval/.test(csp)) {
   throw new Error(
-    'CSP contains a prohibited broad script/style/network source.',
+    'CSP contains a prohibited broad script/style escape hatch.',
+  );
+}
+// Third-party origins are limited to the GA4 gtag loader + beacon endpoints
+// (fleet analytics directive 2026-09-23); anything else stays prohibited.
+const ga4Sources = new Set([
+  'https://googletagmanager.com',
+  'https://www.googletagmanager.com',
+  'https://www.google-analytics.com',
+  'https://*.google-analytics.com',
+  'https://*.analytics.google.com',
+]);
+const networkSources = csp.match(/https?:\/\/[^\s;]+|\*/g) ?? [];
+const illegalSources = networkSources.filter((source) => !ga4Sources.has(source));
+if (illegalSources.length) {
+  throw new Error(
+    `CSP contains a prohibited broad script/style/network source: ${illegalSources.join(', ')}.`,
   );
 }
 const directives = new Map(
@@ -162,7 +178,7 @@ const exactDirectives = {
   'form-action': ["'self'"],
   'media-src': ["'self'"],
   'font-src': ["'self'"],
-  'connect-src': ["'self'"],
+  'connect-src': ["'self'", 'https://*.google-analytics.com', 'https://*.analytics.google.com', 'https://www.googletagmanager.com'],
   'script-src-attr': ["'none'"],
   'style-src': ["'self'"],
   'style-src-attr': ["'none'"],
