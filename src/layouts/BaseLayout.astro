@@ -56,6 +56,19 @@ const socialOpenGraphType =
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {
+      /*
+        GA4 (G-PD2CXJ4Z0C): exactly one gtag.js loader plus the same-origin
+        /ga4.js bootstrap, so no inline script or new CSP hash is needed. Kept
+        early in <head>: the fleet's edge ga4-inject Worker only scans the
+        first 5,000 characters for a G- ID before injecting its own copy.
+      */
+    }
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PD2CXJ4Z0C"></script>
+    <script is:inline defer src="/ga4.js"></script>
     <meta name="robots" content={metaRobots} />
     <meta name="color-scheme" content="light dark" />
     <meta
