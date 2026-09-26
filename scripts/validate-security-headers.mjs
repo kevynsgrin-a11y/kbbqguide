@@ -149,13 +149,17 @@ if (/unsafe-inline|unsafe-eval/.test(csp)) {
   );
 }
 // Third-party origins are limited to the GA4 gtag loader + beacon endpoints
-// (fleet analytics directive 2026-09-23); anything else stays prohibited.
+// (fleet analytics directive 2026-09-23) and the Cloudflare Web Analytics
+// beacon (owner-approved 2026-09-26); anything else stays prohibited.
 const ga4Sources = new Set([
   'https://googletagmanager.com',
   'https://www.googletagmanager.com',
+  'https://*.googletagmanager.com',
   'https://www.google-analytics.com',
   'https://*.google-analytics.com',
   'https://*.analytics.google.com',
+  'https://static.cloudflareinsights.com',
+  'https://cloudflareinsights.com',
 ]);
 const networkSources = csp.match(/https?:\/\/[^\s;]+|\*/g) ?? [];
 const illegalSources = networkSources.filter((source) => !ga4Sources.has(source));
@@ -178,7 +182,7 @@ const exactDirectives = {
   'form-action': ["'self'"],
   'media-src': ["'self'"],
   'font-src': ["'self'"],
-  'connect-src': ["'self'", 'https://*.google-analytics.com', 'https://*.analytics.google.com', 'https://www.googletagmanager.com'],
+  'connect-src': ["'self'", 'https://*.google-analytics.com', 'https://*.analytics.google.com', 'https://www.googletagmanager.com', 'https://*.googletagmanager.com', 'https://cloudflareinsights.com'],
   'script-src-attr': ["'none'"],
   'style-src': ["'self'"],
   'style-src-attr': ["'none'"],
