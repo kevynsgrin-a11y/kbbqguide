@@ -129,6 +129,8 @@ let maxCompressedInlineJavaScript = 0;
 let maxCompressedHtml = 0;
 let maxUncompressedHtml = 0;
 let thirdPartyScripts = 0;
+const GA4_ID = 'G-PD2CXJ4Z0C';
+const GA4_LOADER = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`;
 const referencedAssetPaths = new Set();
 const renderedMediaIds = new Set();
 const eagerImageCandidates = new Map();
@@ -368,9 +370,22 @@ for (const file of contentHtmlFiles) {
     maxCompressedInlineJavaScript,
     gzipSync(inlineJavaScript).byteLength,
   );
-  thirdPartyScripts += [
-    ...html.matchAll(/<script[^>]*\bsrc="(?:(?:https?:)?\/\/[^"]+)"/gi),
-  ].length;
+  // The GA4 gtag.js loader is the one approved third-party script (fleet
+  // analytics directive). Every page carries exactly one, for this site's own
+  // measurement ID, within the first 5,000 characters (all the edge ga4-inject
+  // Worker scans), plus the same-origin /ga4.js bootstrap. Any other remote
+  // script still fails the zero-third-party-script contract below.
+  const remoteScripts = [
+    ...html.matchAll(/<script[^>]*\bsrc="((?:https?:)?\/\/[^"]+)"/gi),
+  ].map((match) => match[1]);
+  const ga4Loaders = remoteScripts.filter((src) => src === GA4_LOADER);
+  if (ga4Loaders.length !== 1 || html.indexOf(GA4_LOADER) > 5000)
+    throw new Error(
+      `Expected exactly one early GA4 loader for ${GA4_ID}: ${routeFor(file)}`,
+    );
+  if (!html.includes('<script defer src="/ga4.js"></script>'))
+    throw new Error(`Missing same-origin GA4 bootstrap: ${routeFor(file)}`);
+  thirdPartyScripts += remoteScripts.filter((src) => src !== GA4_LOADER).length;
 
   for (const match of html.matchAll(/(?:src|srcset)="([^"]+)"/gi)) {
     for (const candidate of (match[1] ?? '').split(',')) {

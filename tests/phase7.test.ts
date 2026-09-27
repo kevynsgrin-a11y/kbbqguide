@@ -104,7 +104,25 @@ describe('Phase 7 full QA and hardening gate', () => {
     expect(clientSource).not.toMatch(
       /\bfetch\s*\(|XMLHttpRequest|sendBeacon|WebSocket|localStorage|sessionStorage|document\.cookie/,
     );
-    expect(clientSource).not.toMatch(/<script[^>]+src=["']https?:/);
+    // The GA4 gtag.js loader in BaseLayout is the one approved remote script
+    // (fleet analytics directive); no other remote script source is allowed.
+    const ga4Loader =
+      /<script\s+is:inline\s+async\s+src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-PD2CXJ4Z0C"><\/script>/g;
+    expect(
+      source('src/layouts/BaseLayout.astro').match(ga4Loader),
+    ).toHaveLength(1);
+    expect(clientSource.replace(ga4Loader, '')).not.toMatch(
+      /<script[^>]+src=["']https?:/,
+    );
+  });
+
+  it('bootstraps GA4 from a same-origin file with only the per-site ID', () => {
+    const bootstrap = source('public/ga4.js');
+    expect(bootstrap).toContain("gtag('config', 'G-PD2CXJ4Z0C');");
+    expect(bootstrap.match(/gtag\('config'/g)).toHaveLength(1);
+    expect(source('src/layouts/BaseLayout.astro')).toContain(
+      '<script is:inline defer src="/ga4.js"></script>',
+    );
   });
 
   it('preserves every commercial, collection, and tracking kill switch', () => {

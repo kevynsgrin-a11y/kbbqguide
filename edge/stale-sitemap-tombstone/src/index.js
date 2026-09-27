@@ -2,7 +2,7 @@
 
 const SECURITY_HEADERS = {
   'content-security-policy':
-    "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data: https://www.google-analytics.com https://*.google-analytics.com; media-src 'self'; font-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; script-src 'self' https://googletagmanager.com https://www.googletagmanager.com 'sha256-Nvg0Yeurzlo5I0GAvC0MtcVUujEBm5WPkNN0FMTQwL4=' 'sha256-mY1aeq7OX8BAFqPOwBdFmXI0vo3hdi/MAIagNUC6lJ8=' 'sha256-qmObFAuCQN3yjtsjGehXuNYJrJAqk0g+X3sgrOTQqMk='; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests",
+    "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; img-src 'self' data: https://www.google-analytics.com https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self'; font-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.googletagmanager.com https://cloudflareinsights.com; script-src 'self' https://googletagmanager.com https://www.googletagmanager.com https://static.cloudflareinsights.com 'sha256-Nvg0Yeurzlo5I0GAvC0MtcVUujEBm5WPkNN0FMTQwL4=' 'sha256-mY1aeq7OX8BAFqPOwBdFmXI0vo3hdi/MAIagNUC6lJ8=' 'sha256-qmObFAuCQN3yjtsjGehXuNYJrJAqk0g+X3sgrOTQqMk='; script-src-attr 'none'; style-src 'self'; style-src-attr 'none'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests",
   'cross-origin-opener-policy': 'same-origin',
   'cross-origin-resource-policy': 'same-origin',
   'permissions-policy':
