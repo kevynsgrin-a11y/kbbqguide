@@ -169,7 +169,7 @@ for (const file of contentHtmlFiles) {
   // may legitimately keep their own noindex until individually approved.
   if (launchMode) {
     if (
-      !/<meta name="robots" content="(?:index,follow|noindex,nofollow,noarchive)"\s*\/?>/.test(
+      !/<meta name="robots" content="(?:index,follow(?:,max-image-preview:large)?|noindex,nofollow,noarchive)"\s*\/?>/.test(
         html,
       )
     )
