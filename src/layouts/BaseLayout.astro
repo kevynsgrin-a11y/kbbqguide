@@ -40,7 +40,7 @@ const siteName = 'KBBQGuide';
 const canonical = canonicalUrl(canonicalPath);
 const metaRobots = robotsContent ?? releaseState.metaRobots;
 const canEmitStructuredData =
-  releaseState.isIndexable && metaRobots === 'index,follow';
+  releaseState.isIndexable && metaRobots.startsWith('index,follow');
 const isPreview = releaseState.mode !== 'public-launch';
 const socialImageUrl = socialImage
   ? new globalThis.URL(socialImage, canonical).href
