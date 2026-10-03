@@ -105,7 +105,7 @@ describe('non-recipe publication governance', () => {
       isContentPublishable: true,
       isIndexable: true,
       emitsJsonLd: true,
-      robotsContent: 'index,follow',
+      robotsContent: 'index,follow,max-image-preview:large',
     });
   });
 
@@ -127,7 +127,7 @@ describe('non-recipe publication governance', () => {
       isIndexable: true,
       emitsJsonLd: true,
       canExposeRecipeData: true,
-      robotsContent: 'index,follow',
+      robotsContent: 'index,follow,max-image-preview:large',
     });
     expect(
       relatedRecipeDataEligibility(
