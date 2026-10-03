@@ -150,7 +150,10 @@ export interface NonRecipePageEligibility {
   readonly isContentPublishable: boolean;
   readonly isIndexable: boolean;
   readonly emitsJsonLd: boolean;
-  readonly robotsContent: 'noindex,nofollow,noarchive' | 'index,follow';
+  readonly robotsContent:
+    | 'noindex,nofollow,noarchive'
+    | 'index,follow'
+    | 'index,follow,max-image-preview:large';
   readonly blockers: readonly string[];
 }
 
@@ -177,7 +180,7 @@ export function nonRecipePageEligibility(
     isContentPublishable: content.isPublishable,
     isIndexable,
     emitsJsonLd: isIndexable,
-    robotsContent: isIndexable ? 'index,follow' : 'noindex,nofollow,noarchive',
+    robotsContent: isIndexable ? 'index,follow,max-image-preview:large' : 'noindex,nofollow,noarchive',
     blockers: content.blockers,
   };
 }
@@ -211,7 +214,7 @@ export function relatedRecipeDataEligibility(
     ...page,
     isIndexable,
     emitsJsonLd: isIndexable,
-    robotsContent: isIndexable ? 'index,follow' : 'noindex,nofollow,noarchive',
+    robotsContent: isIndexable ? 'index,follow,max-image-preview:large' : 'noindex,nofollow,noarchive',
     blockers,
     canExposeRecipeData: release.isIndexable ? publicDataEligible : true,
   };
