@@ -73,7 +73,7 @@ describe('release-state safety boundary', () => {
       requiresEdgeAuthentication: false,
       isIndexable: true,
       exposesXmlSitemap: true,
-      metaRobots: 'index,follow',
+      metaRobots: 'index,follow,max-image-preview:large',
       robotsPolicy: 'allow-all',
       blockers: [],
     });

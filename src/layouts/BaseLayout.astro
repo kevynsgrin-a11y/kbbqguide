@@ -20,7 +20,11 @@ interface Props {
   // `undefined` is intentionally accepted so a policy route can omit its
   // override after its factual publication gate is approved. The release-state
   // default remains authoritative in that case.
-  robotsContent?: 'noindex,nofollow,noarchive' | 'index,follow' | undefined;
+  robotsContent?:
+    | 'noindex,nofollow,noarchive'
+    | 'index,follow'
+    | 'index,follow,max-image-preview:large'
+    | undefined;
 }
 
 const {
