@@ -43,7 +43,10 @@ export interface ReleaseState {
   readonly requiresEdgeAuthentication: boolean;
   readonly isIndexable: boolean;
   readonly exposesXmlSitemap: boolean;
-  readonly metaRobots: 'noindex,nofollow,noarchive' | 'index,follow';
+  readonly metaRobots:
+    | 'noindex,nofollow,noarchive'
+    | 'index,follow'
+    | 'index,follow,max-image-preview:large';
   readonly robotsPolicy: 'disallow-all' | 'allow-all';
   readonly blockers: readonly string[];
 }
@@ -150,7 +153,7 @@ export function resolveReleaseState(
     requiresEdgeAuthentication: false,
     isIndexable: true,
     exposesXmlSitemap: true,
-    metaRobots: 'index,follow',
+    metaRobots: 'index,follow,max-image-preview:large',
     robotsPolicy: 'allow-all',
     blockers: [],
   };
