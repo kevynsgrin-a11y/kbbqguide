@@ -10,8 +10,8 @@
   "publicReleaseOrder": 47,
   "canonicalSlug": "galchi-gui-grilled-hairtail",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/galchi-gui-grilled-hairtail/",
-  "shortDescription": "Hairtail sections are lightly salted, dried, oiled, and grilled carefully until the silvery skin browns and the flesh reaches a safe temperature.",
-  "culturalContext": "Galchi, or hairtail, is eaten in Korean grilled and braised dishes. Product size, sectioning, silver-skin handling, coating, and cooking method vary; this grill draft requires species and market review.",
+  "shortDescription": "Hairtail — galchi, the silver ribbon fish — is the fish Jeju islanders grill more than any other: a meter of solid meat and no bones but the spine, salted and grilled until the silver skin blisters go",
+  "culturalContext": "Hairtail — galchi, the silver ribbon fish — is the fish Jeju islanders grill more than any other: a meter of solid meat and no bones but the spine, salted and grilled until the silver skin blisters gold. It is the mackerel record's (#SF07) leaner sibling: where mackerel runs fat and needs the fermented cut beside it, hairtail runs clean and sweet, and its record runs the same cure-and-grill law at a shorter clock. The skin, gone crisp, is the delicacy — protect it with the grate discipline you learned on the mackerel.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 4,
+  "yield": 3,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes, plus 30 minutes salting"
   },
   "marinateTime": {
     "minutes": 15,
     "display": "15 minutes refrigerated"
   },
   "cookTime": {
-    "minutes": 12,
-    "display": "12 minutes"
+    "minutes": 10,
+    "display": "10 minutes"
   },
   "restTime": {
     "minutes": 2,
     "display": "2 minutes"
   },
   "totalTime": {
-    "minutes": 49,
-    "display": "About 49 minutes"
+    "minutes": 55,
+    "display": "About 55 minutes"
   },
   "equipment": [
     "Separate seafood cutting board",
@@ -67,7 +67,9 @@
           "customaryUnit": "pounds",
           "preparation": "cut into 10 cm / 4-inch sections by fishmonger",
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         },
         {
           "id": "coarse-salt",
@@ -194,9 +196,19 @@
   "storage": "Refrigerate cooked seafood in a shallow covered container within 2 hours and use within 3 days pending food-safety approval.",
   "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
   "leftovers": "Use properly refrigerated leftovers within the approved window; discard table-exposed portions after unsafe holding.",
-  "servingSuggestions": ["Serve hot with rice, soup, and banchan."],
-  "menuPairings": ["B07", "F10", "SA05", "D04"],
-  "relatedRecipeIds": ["SF07", "SF09"],
+  "servingSuggestions": [
+    "Serve hot with rice, soup, and banchan."
+  ],
+  "menuPairings": [
+    "B07",
+    "F10",
+    "SA05",
+    "D04"
+  ],
+  "relatedRecipeIds": [
+    "SF07",
+    "SF09"
+  ],
   "faq": [
     {
       "question": "Can visual flaking replace a thermometer?",
@@ -210,7 +222,10 @@
   "seoTitle": "Galchi Gui Korean Grilled Hairtail",
   "metaDescription": "Make Korean galchi-gui with cleaned hairtail sections, cold-chain and fishmonger checks, careful grilling, thermometer verification, and bone warnings.",
   "primaryKeyword": "galchi gui",
-  "secondaryTopics": ["Korean grilled hairtail", "whole fish sections"],
+  "secondaryTopics": [
+    "Korean grilled hairtail",
+    "whole fish sections"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -223,6 +238,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF08, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "The locked galchi-gui identity and standard salted-grilled framing require Korean food-editor and seafood-market verification before publication.",
     "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

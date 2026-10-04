@@ -10,8 +10,8 @@
   "publicReleaseOrder": 4,
   "canonicalSlug": "spicy-gochujang-galbi",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/spicy-gochujang-galbi/",
-  "shortDescription": "A contemporary spicy galbi with flanken-cut beef ribs coated in gochujang, Korean pear, gochugaru, garlic, and sesame.",
-  "culturalContext": "Soy-forward sweet-savory marinades are a familiar baseline for beef galbi. This gochujang-heavy version is explicitly a contemporary spicy adaptation developed for the locked inventory title, not a claim about a single traditional standard.",
+  "shortDescription": "Plain language first, per this site's standing rule: gochujang-marinated beef is not \"bulgogi with gochujang.\" It is the yangnyeom — \"seasoned\" — lane, a third architecture with its own logic: the pas",
+  "culturalContext": "Plain language first, per this site's standing rule: gochujang-marinated beef is not \"bulgogi with gochujang.\" It is the yangnyeom — \"seasoned\" — lane, a third architecture with its own logic: the paste both marinates and glazes, the heat sits over sweetness instead of beside it, and the finished rib wears a red lacquer that regular soy marinade never gives. This record takes the LA-cut flanken strip (#M03) into that lane. Same cut, same grill choreography, different country of flavor.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 6,
+  "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 30,
-    "display": "30 minutes"
+    "minutes": 20,
+    "display": "20 minutes, plus 6–24 hours marinating"
   },
   "marinateTime": {
     "minutes": 120,
@@ -34,15 +34,15 @@
   },
   "cookTime": {
     "minutes": 12,
-    "display": "10 to 12 minutes"
+    "display": "12 minutes"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 165,
-    "display": "2 hours 45 minutes, including minimum marination and rest"
+    "minutes": 35,
+    "display": "About 35 minutes at the table (marinate ahead)"
   },
   "equipment": [
     "Chef’s knife",
@@ -85,7 +85,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten may be present; check label"
+          ]
         },
         {
           "id": "pear",
@@ -107,7 +110,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -173,7 +179,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -190,7 +198,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten may be present; check label"
+        ]
       },
       {
         "id": "pear",
@@ -212,7 +223,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "rice-syrup",
@@ -278,7 +292,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       }
     ],
     "batchYield": "About 500 ml / 2 cups",
@@ -405,8 +421,16 @@
     "Serve with rice and cooling fresh greens or cucumber dishes.",
     "Offer additional clean sauce separately rather than pouring over the platter."
   ],
-  "menuPairings": ["B04", "F04", "SA04", "D04"],
-  "relatedRecipeIds": ["M03", "M05"],
+  "menuPairings": [
+    "B04",
+    "F04",
+    "SA04",
+    "D04"
+  ],
+  "relatedRecipeIds": [
+    "M03",
+    "M05"
+  ],
   "faq": [
     {
       "question": "Is spicy gochujang galbi a classic galbi formula?",
@@ -439,6 +463,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M04, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Baseline galbi reference: https://www.maangchi.com/recipe/la-galbi",
     "Gochujang context reference: https://en.wikipedia.org/wiki/Gochujang (used only for general condiment context; human cultural review required).",
     "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",

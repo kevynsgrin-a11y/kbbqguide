@@ -10,8 +10,8 @@
   "publicReleaseOrder": 73,
   "canonicalSlug": "korean-style-grilled-duck-breast",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/korean-style-grilled-duck-breast/",
-  "shortDescription": "Duck breasts are scored, marinated cold with pear, soy, garlic, and ginger, then grilled until the poultry-safe endpoint of 165°F / 74°C.",
-  "culturalContext": "Duck is enjoyed in varied Korean preparations, including gui and bulgogi-style dishes. This is a contemporary Korean-style marinade applied to duck breast, not a claim of one canonical regional recipe.",
+  "shortDescription": "Duck is the guest at this table, not a native — you will not find it on the old grill lists — but the Korean pantry fits it like it was invited: duck's rich fat wants sesame, soy, garlic, and ginger, ",
+  "culturalContext": "Duck is the guest at this table, not a native — you will not find it on the old grill lists — but the Korean pantry fits it like it was invited: duck's rich fat wants sesame, soy, garlic, and ginger, and the sharp fresh banchan cut it exactly where it needs cutting. This record runs a skin-on breast the French way, cross-hatched and rendered slow, then finished in the Korean register with a soy-ginger brush and a scallion-sesame finish. Written honestly: a modern bridge, and a good one.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 4,
+  "yield": 3,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes, plus 30 minutes salting"
   },
   "marinateTime": {
     "minutes": 120,
     "display": "2 hours refrigerated"
   },
   "cookTime": {
-    "minutes": 22,
-    "display": "18 to 22 minutes"
+    "minutes": 15,
+    "display": "15 minutes"
   },
   "restTime": {
     "minutes": 5,
     "display": "5 minutes"
   },
   "totalTime": {
-    "minutes": 167,
-    "display": "About 2 hours 45 minutes"
+    "minutes": 60,
+    "display": "About 1 hour including rest"
   },
   "equipment": [
     "Separate raw-poultry cutting board",
@@ -83,7 +83,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "pear",
@@ -127,7 +130,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "black-pepper",
@@ -155,7 +160,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "pear",
@@ -199,7 +207,9 @@
         "customaryUnit": "teaspoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "black-pepper",
@@ -228,7 +238,11 @@
     "substitutions": [
       "Use certified gluten-free tamari only after label verification."
     ],
-    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten",
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -334,8 +348,16 @@
     "Slice across the grain and serve with perilla leaves.",
     "Offer reserved, uncontaminated sauce separately."
   ],
-  "menuPairings": ["B19", "F09", "SA04", "D04"],
-  "relatedRecipeIds": ["M18", "M20"],
+  "menuPairings": [
+    "B19",
+    "F09",
+    "SA04",
+    "D04"
+  ],
+  "relatedRecipeIds": [
+    "M18",
+    "M20"
+  ],
   "faq": [
     {
       "question": "Can duck breast be served medium?",
@@ -349,7 +371,11 @@
   "seoTitle": "Korean-Style Grilled Duck Breast",
   "metaDescription": "Grill pear-soy marinated duck breast with two heat zones, flare-up control, strict raw-poultry separation, and a 165°F safety endpoint.",
   "primaryKeyword": "Korean grilled duck breast",
-  "secondaryTopics": ["duck gui", "pear soy marinade", "Korean-style grilling"],
+  "secondaryTopics": [
+    "duck gui",
+    "pear soy marinade",
+    "Korean-style grilling"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -362,6 +388,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M19, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Temperature basis: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "Editorial framing: contemporary Korean-style adaptation; naming requires Korean-language review.",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."

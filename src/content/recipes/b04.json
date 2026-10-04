@@ -10,8 +10,8 @@
   "publicReleaseOrder": 15,
   "canonicalSlug": "baechu-geotjeori-fresh-kimchi",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/baechu-geotjeori-fresh-kimchi/",
-  "shortDescription": "Bite-size napa cabbage is briefly salted and tossed with a fresh gochugaru, fish-sauce, garlic, scallion, and sesame dressing for same-day serving.",
-  "culturalContext": "Geotjeori describes freshly seasoned vegetables intended to be eaten before long fermentation. Baechu geotjeori brings crisp cabbage and an immediate, lively seasoning to the table; household formulas and sweetness vary.",
+  "shortDescription": "Geotjeori is kimchi's answer to right now: napa cabbage salted just enough to soften, dressed in the full kimchi paste, and on the table within the hour — no ferment, no jar, no waiting.",
+  "culturalContext": "Geotjeori is kimchi's answer to right now: napa cabbage salted just enough to soften, dressed in the full kimchi paste, and on the table within the hour — no ferment, no jar, no waiting. It is sweeter and greener than the fermented bowl (#B01), built for the day the jar runs empty or the grill was decided this morning. This is also the record for the first-time kimchi maker: every flavor of the tradition, none of the calendar.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,15 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 8,
+  "yield": 6,
   "servingUnit": "side-dish servings",
-  "prepTime": { "minutes": 25, "display": "25 minutes" },
-  "marinateTime": { "minutes": 40, "display": "40 minutes salting" },
-  "cookTime": { "minutes": 0, "display": "No cooking" },
-  "restTime": { "minutes": 10, "display": "10 minutes draining" },
-  "totalTime": { "minutes": 75, "display": "1 hour 15 minutes" },
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
+  "marinateTime": {
+    "minutes": 40,
+    "display": "40 minutes salting"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 10,
+    "display": "10 minutes draining"
+  },
+  "totalTime": {
+    "minutes": 200,
+    "display": "20 minutes, best within 3 hours"
+  },
   "equipment": [
     "Chef’s knife and cutting board",
     "Large nonreactive bowl",
@@ -83,7 +98,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         },
         {
           "id": "plum-syrup",
@@ -127,7 +144,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -138,7 +157,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -249,8 +270,16 @@
     "Serve immediately with rice",
     "Pair with grilled meats or a warm soup"
   ],
-  "menuPairings": ["M19", "SF09", "F09", "SA04"],
-  "relatedRecipeIds": ["B03", "B05"],
+  "menuPairings": [
+    "M19",
+    "SF09",
+    "F09",
+    "SA04"
+  ],
+  "relatedRecipeIds": [
+    "B03",
+    "B05"
+  ],
   "faq": [
     {
       "question": "Is geotjeori fermented kimchi?",
@@ -273,9 +302,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["recipe card", "food-safety notes", "allergen notes"],
+  "adExclusionZones": [
+    "recipe card",
+    "food-safety notes",
+    "allergen notes"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B04, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary convention and technique reference: https://www.maangchi.com/recipe/baechu-geotjeori",
     "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Draft synthesized for this project; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."

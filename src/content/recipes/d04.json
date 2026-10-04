@@ -10,8 +10,8 @@
   "publicReleaseOrder": 76,
   "canonicalSlug": "injeolmi-toast-with-ice-cream",
   "canonicalUrl": "https://kbbqguide.com/recipes/desserts/injeolmi-toast-with-ice-cream/",
-  "shortDescription": "Buttered toast is layered with warmed bite-size injeolmi, roasted soybean powder, honey, and commercial pasteurized ice cream.",
-  "culturalContext": "Injeolmi toast is a modern Korean café dessert that combines toasted bread with chewy rice cake and soybean powder. Toppings and construction vary; this draft adds commercial pasteurized ice cream and foregrounds choking and melt control.",
+  "shortDescription": "Injeolmi toast is the modern Korean café's signature sweet: mochi rice cakes pressed crisp in a buttered pan, stacked on toast, dusted with roasted soybean powder and honey, and — the full build — cro",
+  "culturalContext": "Injeolmi toast is the modern Korean café's signature sweet: mochi rice cakes pressed crisp in a buttered pan, stacked on toast, dusted with roasted soybean powder and honey, and — the full build — crowned with a scoop of ice cream that melts down through the warm layers. It is the sweet that tastes like Seoul's dessert cafés, born decades after every other record on this dessert list, and it is here because the grill meal's table deserves one hot-cold showpiece that takes twenty minutes.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 15,
-    "display": "15 minutes"
+    "minutes": 10,
+    "display": "10 minutes"
   },
   "marinateTime": {
     "minutes": 0,
@@ -41,8 +41,8 @@
     "display": "2 minutes"
   },
   "totalTime": {
-    "minutes": 25,
-    "display": "25 minutes"
+    "minutes": 20,
+    "display": "About 20 minutes"
   },
   "equipment": [
     "Clean cutting board and knife",
@@ -65,7 +65,10 @@
           "customaryUnit": "slices",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["wheat/gluten", "verify egg, dairy, and soy label"]
+          "allergenNotes": [
+            "wheat/gluten",
+            "verify egg, dairy, and soy label"
+          ]
         },
         {
           "id": "butter",
@@ -76,7 +79,9 @@
           "customaryUnit": "tablespoons",
           "preparation": "softened",
           "optional": false,
-          "allergenNotes": ["dairy"]
+          "allergenNotes": [
+            "dairy"
+          ]
         },
         {
           "id": "injeolmi",
@@ -87,7 +92,9 @@
           "customaryUnit": "ounces",
           "preparation": "label checked; cut into small bite-size pieces",
           "optional": false,
-          "allergenNotes": ["soy; verify facility cross-contact"]
+          "allergenNotes": [
+            "soy; verify facility cross-contact"
+          ]
         },
         {
           "id": "ice-cream",
@@ -98,7 +105,10 @@
           "customaryUnit": "cup",
           "preparation": "kept frozen until service",
           "optional": false,
-          "allergenNotes": ["dairy", "verify egg and soy label"]
+          "allergenNotes": [
+            "dairy",
+            "verify egg and soy label"
+          ]
         },
         {
           "id": "soybean-powder",
@@ -109,7 +119,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy"]
+          "allergenNotes": [
+            "soy"
+          ]
         },
         {
           "id": "honey",
@@ -230,8 +242,16 @@
     "Serve immediately with a knife and fork.",
     "Explain the chewy texture before diners take a bite."
   ],
-  "menuPairings": ["M13", "SF10", "B16", "F07"],
-  "relatedRecipeIds": ["D03", "D05"],
+  "menuPairings": [
+    "M13",
+    "SF10",
+    "B16",
+    "F07"
+  ],
+  "relatedRecipeIds": [
+    "D03",
+    "D05"
+  ],
   "faq": [
     {
       "question": "Why cut the injeolmi small?",
@@ -262,6 +282,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#D04, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Cold-food handling basis: https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely",
     "Editorial framing: contemporary Korean café dessert; language and choking guidance require human review.",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."

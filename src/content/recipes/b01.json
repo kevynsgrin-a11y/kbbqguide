@@ -10,8 +10,8 @@
   "publicReleaseOrder": 12,
   "canonicalSlug": "baechu-kimchi",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/baechu-kimchi/",
-  "shortDescription": "Napa cabbage quarters are salted until flexible, coated leaf by leaf with a gochugaru, radish, scallion, garlic, ginger, fish-sauce, and salted-shrimp paste, then refrigerated as they ferment.",
-  "culturalContext": "Baechu kimchi is one of many Korean kimchi traditions and is often simply called kimchi in everyday contexts. Recipes vary by household, region, season, dietary practice, and fermentation preference; this draft does not claim one universal formula.",
+  "shortDescription": "Every grill table on this site leans on the same bowl: napa cabbage kimchi, the fermented national dish, sour and crunchy and alive, cutting every rich thing the fire produces.",
+  "culturalContext": "Every grill table on this site leans on the same bowl: napa cabbage kimchi, the fermented national dish, sour and crunchy and alive, cutting every rich thing the fire produces. This record is the whole-cabbage, cut-at-the-jar method — a proper batch, two hours of honest work and a few days of patience — because the kimchi that answers samgyeopsal (#M10) and dwaeji bulgogi (#M13) should be the real one, not the shriveled retail jar's sad cousin. The process has three crafts in it: the salt that softens the cabbage, the paste that becomes the flavor, and the ferment that turns both into kimchi.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,17 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 16,
+  "yield": 1,
   "servingUnit": "side-dish servings",
-  "prepTime": { "minutes": 60, "display": "1 hour active" },
-  "marinateTime": { "minutes": 120, "display": "2 hours salting" },
-  "cookTime": { "minutes": 12, "display": "12 minutes for porridge" },
-  "restTime": { "minutes": 60, "display": "1 hour draining and cooling" },
+  "prepTime": {
+    "minutes": 120,
+    "display": "2 hours, hands-on"
+  },
+  "marinateTime": {
+    "minutes": 120,
+    "display": "2 hours salting"
+  },
+  "cookTime": {
+    "minutes": 12,
+    "display": "12 minutes for porridge"
+  },
+  "restTime": {
+    "minutes": 60,
+    "display": "1 hour draining and cooling"
+  },
   "totalTime": {
-    "minutes": 252,
-    "display": "About 4 hours 15 minutes, before optional fermentation"
+    "minutes": 120,
+    "display": "2 hours, then 1–3 days fermenting at 15–20 °C, then the frid"
   },
   "equipment": [
     "Large food-safe basin",
@@ -176,7 +188,9 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         },
         {
           "id": "saeujeot",
@@ -187,7 +201,9 @@
           "customaryUnit": "cup",
           "preparation": "finely chopped",
           "optional": false,
-          "allergenNotes": ["shellfish"]
+          "allergenNotes": [
+            "shellfish"
+          ]
         },
         {
           "id": "gochugaru",
@@ -319,8 +335,16 @@
     "Cut a cabbage quarter crosswise just before serving",
     "Serve in small portions with rice and grilled dishes"
   ],
-  "menuPairings": ["M16", "SF06", "F06", "SA01"],
-  "relatedRecipeIds": ["B25", "B02"],
+  "menuPairings": [
+    "M16",
+    "SF06",
+    "F06",
+    "SA01"
+  ],
+  "relatedRecipeIds": [
+    "B25",
+    "B02"
+  ],
   "faq": [
     {
       "question": "Can I eat baechu kimchi before it ferments?",
@@ -343,9 +367,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["recipe card", "fermentation safety", "allergen notes"],
+  "adExclusionZones": [
+    "recipe card",
+    "fermentation safety",
+    "allergen notes"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B01, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary convention and method reference: https://www.maangchi.com/recipe/tongbaechu-kimchi",
     "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "The shortened room-temperature option is deliberately conservative but still requires qualified fermentation-safety review.",

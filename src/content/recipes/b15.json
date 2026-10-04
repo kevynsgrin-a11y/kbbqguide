@@ -10,8 +10,8 @@
   "publicReleaseOrder": 48,
   "canonicalSlug": "hobak-bokkeum-stir-fried-zucchini",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/hobak-bokkeum-stir-fried-zucchini/",
-  "shortDescription": "Korean zucchini is salted briefly, then stir-fried with garlic, scallion, salted shrimp, and sesame until just tender.",
-  "culturalContext": "Hobak bokkeum is a Korean stir-fried summer-squash banchan often made with aehobak. Seasoning may use salt, salted shrimp, or other savory elements; cut and texture vary.",
+  "shortDescription": "Hobak bokkeum is the banchan that proves the category's quiet point: not every bowl ferments or braises — some are just a vegetable, a hot pan, garlic, and sesame, done in fifteen minutes.",
+  "culturalContext": "Hobak bokkeum is the banchan that proves the category's quiet point: not every bowl ferments or braises — some are just a vegetable, a hot pan, garlic, and sesame, done in fifteen minutes. Korean zucchini (a tender, pale-green variety) or the standard kind, cut into half-moons, seared until the edges gold and the centers stay crisp-shouldered, dressed while hot. It is the vegetable that keeps the grill table honest, the bowl that makes the table feel complete without announcing itself.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "side-dish servings",
   "prepTime": {
-    "minutes": 15,
-    "display": "15 minutes"
+    "minutes": 8,
+    "display": "8 minutes"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 8,
-    "display": "8 minutes"
+    "minutes": 7,
+    "display": "7 minutes"
   },
   "restTime": {
     "minutes": 5,
     "display": "5 minutes"
   },
   "totalTime": {
-    "minutes": 28,
-    "display": "About 28 minutes"
+    "minutes": 15,
+    "display": "About 15 minutes"
   },
   "equipment": [
     "Colander",
@@ -104,7 +104,9 @@
           "customaryUnit": "teaspoons",
           "preparation": "finely chopped; label checked",
           "optional": false,
-          "allergenNotes": ["shellfish; verify label"]
+          "allergenNotes": [
+            "shellfish; verify label"
+          ]
         },
         {
           "id": "garlic",
@@ -137,7 +139,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -148,7 +152,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -254,9 +260,19 @@
   "storage": "Refrigerate in a covered shallow container within 2 hours and use within 4 days pending food-safety approval.",
   "reheating": "Reheat gently until steaming or serve properly refrigerated portions cool.",
   "leftovers": "Use properly refrigerated leftovers within the approved window.",
-  "servingSuggestions": ["Serve with rice and grilled meats or fish."],
-  "menuPairings": ["M10", "SF05", "F10", "SA05"],
-  "relatedRecipeIds": ["B14", "B16"],
+  "servingSuggestions": [
+    "Serve with rice and grilled meats or fish."
+  ],
+  "menuPairings": [
+    "M10",
+    "SF05",
+    "F10",
+    "SA05"
+  ],
+  "relatedRecipeIds": [
+    "B14",
+    "B16"
+  ],
   "faq": [
     {
       "question": "What is aehobak?",
@@ -270,7 +286,10 @@
   "seoTitle": "Hobak Bokkeum Stir-Fried Zucchini",
   "metaDescription": "Make Korean hobak bokkeum with tender-crisp zucchini, garlic, scallion, saeujeot, sesame, produce washing, and shellfish label guidance.",
   "primaryKeyword": "hobak bokkeum",
-  "secondaryTopics": ["Korean zucchini banchan", "aehobak recipe"],
+  "secondaryTopics": [
+    "Korean zucchini banchan",
+    "aehobak recipe"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -283,6 +302,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B15, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "The locked hobak-bokkeum framing is an editorial synthesis of common aehobak and saeujeot practice requiring Korean food-editor review.",
     "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

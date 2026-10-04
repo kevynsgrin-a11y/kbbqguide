@@ -10,8 +10,8 @@
   "publicReleaseOrder": 61,
   "canonicalSlug": "scallion-gochujang-grilled-oysters",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/scallion-gochujang-grilled-oysters/",
-  "shortDescription": "Live oysters are grilled in their shells until they open, then topped with a separately prepared scallion-gochujang sauce and cooked until bubbling.",
-  "culturalContext": "This scallion-gochujang grilled oyster is a contemporary Korean-inspired preparation. Oyster species, harvest controls, sauce balance, and grill practice vary and require seafood and cultural review.",
+  "shortDescription": "Grilled oysters on the half shell, a gochujang-scallion butter melting in each cup, is the seaside grill bar's version of the raw-bar classic — the shell becomes the vessel, the fire does the opening,",
+  "culturalContext": "Grilled oysters on the half shell, a gochujang-scallion butter melting in each cup, is the seaside grill bar's version of the raw-bar classic — the shell becomes the vessel, the fire does the opening, and the sauce is the Korean pantry's answer to garlic butter. This is the easiest showpiece on the seafood list: shuck or no-shuck, ten minutes from grill to platter, and the table eats them like soup.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 10,
-    "display": "8 to 10 minutes"
+    "minutes": 8,
+    "display": "8 minutes"
   },
   "restTime": {
     "minutes": 0,
     "display": "No rest"
   },
   "totalTime": {
-    "minutes": 30,
-    "display": "About 30 minutes"
+    "minutes": 25,
+    "display": "About 25 minutes"
   },
   "equipment": [
     "Colander",
@@ -66,7 +66,9 @@
           "customaryUnit": "large oysters",
           "preparation": "required harvest tag retained",
           "optional": false,
-          "allergenNotes": ["shellfish"]
+          "allergenNotes": [
+            "shellfish"
+          ]
         }
       ]
     },
@@ -83,7 +85,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten; verify label"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -138,7 +143,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -242,9 +249,19 @@
   "storage": "Refrigerate cooked shellfish in a shallow covered container within 2 hours and use within 2 days pending qualified review.",
   "reheating": "Reheat only the needed portion until steaming; discard any shellfish held unsafely.",
   "leftovers": "Use only properly refrigerated leftovers within the approved window.",
-  "servingSuggestions": ["Serve hot with rice and fresh banchan."],
-  "menuPairings": ["B11", "F04", "SA04", "D03"],
-  "relatedRecipeIds": ["SF11", "SF13"],
+  "servingSuggestions": [
+    "Serve hot with rice and fresh banchan."
+  ],
+  "menuPairings": [
+    "B11",
+    "F04",
+    "SA04",
+    "D03"
+  ],
+  "relatedRecipeIds": [
+    "SF11",
+    "SF13"
+  ],
   "faq": [
     {
       "question": "Can I eat an oyster that stays closed?",
@@ -258,7 +275,10 @@
   "seoTitle": "Scallion-Gochujang Grilled Oysters",
   "metaDescription": "Grill live oysters safely with harvest-tag checks, shell-opening discard rules, scallion-gochujang topping, clean tools, and thorough cooking.",
   "primaryKeyword": "gochujang grilled oysters",
-  "secondaryTopics": ["Korean-inspired oysters", "grilled shellfish"],
+  "secondaryTopics": [
+    "Korean-inspired oysters",
+    "grilled shellfish"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -271,6 +291,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF12, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Contemporary locked-title formulation; live-oyster controls follow FDA guidance and require qualified seafood review.",
     "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

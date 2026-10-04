@@ -10,8 +10,8 @@
   "publicReleaseOrder": 6,
   "canonicalSlug": "jumulleok-sesame-garlic-steak-bites",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/jumulleok-sesame-garlic-steak-bites/",
-  "shortDescription": "Tender steak pieces hand-mixed with toasted sesame oil, garlic, salt, pepper, scallions, and sesame seeds, then grilled quickly.",
-  "culturalContext": "Jumulleok is used for Korean grilled meat preparations that are hand-mixed with seasoning; beef versions may be minimally seasoned with sesame oil, salt, and pepper. This draft adds garlic and scallion as stated in the locked title and avoids a fixed historical claim.",
+  "shortDescription": "Jumulleok means \"hand-mixed\" — cubed steak tossed in seasoning minutes before it hits the fire, not hours.",
+  "culturalContext": "Jumulleok means \"hand-mixed\" — cubed steak tossed in seasoning minutes before it hits the fire, not hours. It is the Gwangyang school of timing (#M08's dry-grate cousin logic, applied to cubes): the juice stays inside the meat because the marinade never had time to pull it out. Of everything on this site, this is the fastest route from the butcher to the table — ten minutes of prep, a hot grate, and the seasoning bowl right at the grill so the next batch can be tossed while the first one cooks. Who cooks what: the seasoning bowl lives at the grill boss's station. Toss, grill, repeat.",
   "adaptationLabel": "none",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 4,
+  "yield": 3,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 15,
-    "display": "15 minutes"
+    "minutes": 10,
+    "display": "10 minutes"
   },
   "marinateTime": {
     "minutes": 15,
     "display": "15 to 30 minutes"
   },
   "cookTime": {
-    "minutes": 10,
-    "display": "8 to 10 minutes"
+    "minutes": 8,
+    "display": "8 minutes"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 43,
-    "display": "43 minutes, including minimum seasoning and rest"
+    "minutes": 20,
+    "display": "About 20 minutes"
   },
   "equipment": [
     "Chef’s knife",
@@ -85,7 +85,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "garlic",
@@ -140,7 +142,9 @@
           "customaryUnit": "tablespoon",
           "preparation": "lightly crushed",
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -157,7 +161,9 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "garlic",
@@ -212,7 +218,9 @@
         "customaryUnit": "tablespoon",
         "preparation": "lightly crushed",
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       }
     ],
     "batchYield": "About 120 ml / 1/2 cup",
@@ -339,8 +347,16 @@
     "Serve with rice, ssam greens, and a separately prepared dipping sauce.",
     "Pair with crisp vegetables to balance the rich sesame-seasoned beef."
   ],
-  "menuPairings": ["B06", "F06", "SA01", "D01"],
-  "relatedRecipeIds": ["M05", "M07"],
+  "menuPairings": [
+    "B06",
+    "F06",
+    "SA01",
+    "D01"
+  ],
+  "relatedRecipeIds": [
+    "M05",
+    "M07"
+  ],
   "faq": [
     {
       "question": "Is jumulleok the same as bulgogi?",
@@ -373,6 +389,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M06, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Terminology/preparation context: https://en.wikipedia.org/wiki/Korean_barbecue (secondary overview only; Korean-language and cultural review required).",
     "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "Grilling hygiene reference verified 2026-07-14: https://www.foodsafety.gov/blog/how-grill-safely-summer",

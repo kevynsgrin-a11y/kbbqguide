@@ -10,8 +10,8 @@
   "publicReleaseOrder": 45,
   "canonicalSlug": "korean-style-gochujang-grilled-pork-ribs",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/korean-style-gochujang-grilled-pork-ribs/",
-  "shortDescription": "Pork spare ribs are coated with a gochujang, soy, garlic, and ginger marinade, then cooked over indirect heat and finished over direct heat.",
-  "culturalContext": "This Korean-style gochujang rib draft is a contemporary adaptation rather than a claim of one canonical Korean rib preparation. Cut, pre-cooking, marinade, smoke, and tenderness preferences vary.",
+  "shortDescription": "This is the grill-country bridge record: country-style pork ribs — those thick, meaty shoulder chops sold as ribs — wearing a gochujang marinade built for low-and-slow-ish grilling rather than the tab",
+  "culturalContext": "This is the grill-country bridge record: country-style pork ribs — those thick, meaty shoulder chops sold as ribs — wearing a gochujang marinade built for low-and-slow-ish grilling rather than the tabletop's speed rounds. It is not a traditional recipe with a lineage to defend; it is the yangnyeom lane's flavor set applied to a cut that loves it, written honestly as a modern build. The technique worth keeping is the two-stage fire: gentle roasting first to render and cook through, then a hot finish to set the glaze.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
     "minutes": 20,
-    "display": "20 minutes"
+    "display": "20 minutes, plus 8–24 hours marinating"
   },
   "marinateTime": {
     "minutes": 240,
     "display": "240 minutes refrigerated"
   },
   "cookTime": {
-    "minutes": 100,
-    "display": "100 minutes"
+    "minutes": 40,
+    "display": "40 minutes"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 363,
-    "display": "About 363 minutes"
+    "minutes": 70,
+    "display": "About 1 hour 10 minutes (marinate ahead)"
   },
   "equipment": [
     "Separate raw-meat cutting board",
@@ -83,7 +83,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten; verify label"
+          ]
         },
         {
           "id": "soy-sauce",
@@ -94,7 +97,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -149,7 +155,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -166,7 +174,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten; verify label"
+        ]
       },
       {
         "id": "soy-sauce",
@@ -177,7 +188,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "rice-syrup",
@@ -232,7 +246,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       }
     ],
     "batchYield": "About 300 ml / 1 1/4 cups marinade",
@@ -250,7 +266,11 @@
     "substitutions": [
       "Use only verified gluten-free gochujang and tamari for a gluten-free adaptation."
     ],
-    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten",
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -353,8 +373,16 @@
   "servingSuggestions": [
     "Serve cut between bones with rice and fresh vegetables."
   ],
-  "menuPairings": ["B15", "F05", "SA05", "D05"],
-  "relatedRecipeIds": ["M14", "M16"],
+  "menuPairings": [
+    "B15",
+    "F05",
+    "SA05",
+    "D05"
+  ],
+  "relatedRecipeIds": [
+    "M14",
+    "M16"
+  ],
   "faq": [
     {
       "question": "Why is the tenderness endpoint unresolved?",
@@ -368,7 +396,10 @@
   "seoTitle": "Korean Gochujang Grilled Pork Ribs",
   "metaDescription": "Grill Korean-style gochujang pork ribs with indirect heat, reserved glaze, thermometer verification, and an explicit test-cook tenderness gate.",
   "primaryKeyword": "gochujang grilled pork ribs",
-  "secondaryTopics": ["Korean-style pork ribs", "gochujang rib marinade"],
+  "secondaryTopics": [
+    "Korean-style pork ribs",
+    "gochujang rib marinade"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -381,6 +412,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M15, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "The locked Korean-style gochujang rib concept is a contemporary editorial formulation requiring test-kitchen and Korean food-editor review.",
     "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

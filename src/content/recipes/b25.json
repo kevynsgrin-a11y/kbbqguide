@@ -10,8 +10,8 @@
   "publicReleaseOrder": 78,
   "canonicalSlug": "gim-muchim-seasoned-seaweed",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gim-muchim-seasoned-seaweed/",
-  "shortDescription": "Plain roasted seaweed is torn into bite-size pieces and lightly dressed with soy, sesame, scallion, and rice syrup just before service.",
-  "culturalContext": "Gim muchim is seasoned seaweed banchan with household differences in seaweed type, toasting, sweetness, aromatics, and moisture. This small-batch draft starts with commercial plain roasted gim and requires label and cultural review.",
+  "shortDescription": "Gim muchim takes the same roasted seaweed sheets that wrap gimbap and turns them into a banchan in fifteen minutes: the sheets toasted, scissored into ribbons, and tossed in the sesame-soy dressing un",
+  "culturalContext": "Gim muchim takes the same roasted seaweed sheets that wrap gimbap and turns them into a banchan in fifteen minutes: the sheets toasted, scissored into ribbons, and tossed in the sesame-soy dressing until they turn glossy and supple — the ocean's mineral depth carried in a soft, slippery-firm tangle. It is the fastest bowl on this list and the one that most needs to be eaten the day it is made, which the tradition handles by never making much of it.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 6,
+  "yield": 4,
   "servingUnit": "banchan servings",
   "prepTime": {
-    "minutes": 12,
-    "display": "12 minutes"
+    "minutes": 10,
+    "display": "10 minutes"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 0,
-    "display": "No cooking"
+    "minutes": 3,
+    "display": "3 minutes"
   },
   "restTime": {
     "minutes": 0,
     "display": "Serve promptly"
   },
   "totalTime": {
-    "minutes": 12,
-    "display": "12 minutes"
+    "minutes": 15,
+    "display": "About 15 minutes"
   },
   "equipment": [
     "Clean dry bowl",
@@ -64,7 +64,9 @@
           "customaryUnit": "sheets",
           "preparation": "label checked",
           "optional": false,
-          "allergenNotes": ["verify fish and shellfish cross-contact"]
+          "allergenNotes": [
+            "verify fish and shellfish cross-contact"
+          ]
         },
         {
           "id": "soy-sauce",
@@ -75,7 +77,10 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "sesame-oil",
@@ -86,7 +91,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -119,7 +126,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "gochugaru",
@@ -240,8 +249,16 @@
     "Serve immediately in small portions.",
     "Use as a crisp accent with rice."
   ],
-  "menuPairings": ["M20", "SF15", "F10", "SA05"],
-  "relatedRecipeIds": ["B24", "B01"],
+  "menuPairings": [
+    "M20",
+    "SF15",
+    "F10",
+    "SA05"
+  ],
+  "relatedRecipeIds": [
+    "B24",
+    "B01"
+  ],
   "faq": [
     {
       "question": "Can I use seasoned snack seaweed?",
@@ -272,6 +289,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B25, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Ready-to-eat handling basis: project Food Safety Standard and packaged-label verification.",
     "Cultural orientation: https://www.maangchi.com/recipe/gim-muchim",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."

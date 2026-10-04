@@ -10,8 +10,8 @@
   "publicReleaseOrder": 10,
   "canonicalSlug": "doenjang-butter-grilled-scallops",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/doenjang-butter-grilled-scallops/",
-  "shortDescription": "Dry-packed sea scallops grilled for a browned crust and finished with a savory doenjang-butter glaze balanced with honey, vinegar, garlic, and sesame.",
-  "culturalContext": "Doenjang is a foundational Korean fermented soybean paste, while butter-based seafood glazes are a modern pairing. This recipe is explicitly contemporary and does not claim that doenjang-butter scallops are a codified traditional dish.",
+  "shortDescription": "Doenjang and butter is the modern Korean bistro's signature move, and scallops are its best argument: the paste's fermented depth against sweet shellfish richness, with butter carrying both.",
+  "culturalContext": "Doenjang and butter is the modern Korean bistro's signature move, and scallops are its best argument: the paste's fermented depth against sweet shellfish richness, with butter carrying both. Nothing about this record claims a lineage — it is exactly what its label says, a contemporary build using the pantry's oldest paste — and it is on the site because it is delicious and because it teaches the doenjang-and-fat principle better than any stew does.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 4,
+  "yield": 3,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 10,
+    "display": "10 minutes"
   },
   "marinateTime": {
     "minutes": 0,
@@ -34,15 +34,15 @@
   },
   "cookTime": {
     "minutes": 8,
-    "display": "6 to 8 minutes"
+    "display": "8 minutes"
   },
   "restTime": {
     "minutes": 0,
     "display": "No required rest"
   },
   "totalTime": {
-    "minutes": 28,
-    "display": "28 minutes"
+    "minutes": 20,
+    "display": "About 20 minutes"
   },
   "equipment": [
     "Small mixing bowl",
@@ -68,7 +68,9 @@
           "customaryUnit": "pounds",
           "preparation": "refrigerator-thawed if frozen; side muscles removed; patted very dry",
           "optional": false,
-          "allergenNotes": ["shellfish"]
+          "allergenNotes": [
+            "shellfish"
+          ]
         },
         {
           "id": "neutral-oil",
@@ -107,7 +109,9 @@
           "customaryUnit": "tablespoons",
           "preparation": "softened",
           "optional": false,
-          "allergenNotes": ["dairy"]
+          "allergenNotes": [
+            "dairy"
+          ]
         },
         {
           "id": "doenjang",
@@ -118,7 +122,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten may be present; check label"
+          ]
         },
         {
           "id": "honey",
@@ -162,7 +169,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "scallion",
@@ -190,7 +199,9 @@
         "customaryUnit": "tablespoons",
         "preparation": "softened",
         "optional": false,
-        "allergenNotes": ["dairy"]
+        "allergenNotes": [
+          "dairy"
+        ]
       },
       {
         "id": "doenjang",
@@ -201,7 +212,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten may be present; check label"
+        ]
       },
       {
         "id": "honey",
@@ -245,7 +259,9 @@
         "customaryUnit": "teaspoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "scallion",
@@ -386,8 +402,16 @@
     "Serve with rice and crisp fresh vegetables that offset the rich butter glaze.",
     "Use a small amount of glaze so doenjang supports rather than masks the scallops."
   ],
-  "menuPairings": ["B02", "F05", "SA05", "D04"],
-  "relatedRecipeIds": ["SF02", "SF04"],
+  "menuPairings": [
+    "B02",
+    "F05",
+    "SA05",
+    "D04"
+  ],
+  "relatedRecipeIds": [
+    "SF02",
+    "SF04"
+  ],
   "faq": [
     {
       "question": "Why use dry-packed scallops?",
@@ -420,6 +444,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF03, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Doenjang context reference: https://en.wikipedia.org/wiki/Doenjang (secondary overview only; Korean cultural review required).",
     "Contemporary doenjang-butter flavor comparison: https://www.bonappetit.com/recipe/shrimp-scampi-udon-with-doenjang-butter-sauce (used only as combination precedent, not copied formulation).",
     "Seafood doneness reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",

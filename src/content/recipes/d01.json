@@ -10,8 +10,8 @@
   "publicReleaseOrder": 27,
   "canonicalSlug": "hotteok-brown-sugar-seed-pancakes",
   "canonicalUrl": "https://kbbqguide.com/recipes/desserts/hotteok-brown-sugar-seed-pancakes/",
-  "shortDescription": "Soft yeasted wheat dough encloses brown sugar, cinnamon, sunflower seed, pumpkin seed, and sesame filling, then pan-fries into crisp-edged pancakes with molten centers.",
-  "culturalContext": "Hotteok is a Korean filled pancake strongly associated with street snacks and cool-weather eating. Fillings and dough styles have changed over time and may include nuts, seeds, or savory ingredients; this draft uses a clearly labeled seed filling.",
+  "shortDescription": "Hotteok is the winter street cart's calling card: a soft yeasted dough, flattened in the palm, filled with a pocket of brown sugar, cinnamon, and seeds, then pan-fried until the crust crisps and the f",
+  "culturalContext": "Hotteok is the winter street cart's calling card: a soft yeasted dough, flattened in the palm, filled with a pocket of brown sugar, cinnamon, and seeds, then pan-fried until the crust crisps and the filling melts into molten syrup that stays dangerously hot inside. It is the grill meal's traditional walk-away dessert — the cart at the market's mouth after the table clears — and the one that ends this site's record list because it ends the meal in real life. The craft is a working dough, a sealed pocket, and the low-slow fry that melts the sugar without burning the crust.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,18 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 8,
   "servingUnit": "pancakes",
-  "prepTime": { "minutes": 30, "display": "30 minutes active" },
-  "marinateTime": { "minutes": 0, "display": "No marination" },
-  "cookTime": { "minutes": 24, "display": "20 to 24 minutes" },
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes, plus 1 hour rising"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 20,
+    "display": "20 minutes"
+  },
   "restTime": {
     "minutes": 75,
     "display": "1 hour rise plus 15 minutes cooling"
   },
-  "totalTime": { "minutes": 129, "display": "About 2 hours 10 minutes" },
+  "totalTime": {
+    "minutes": 100,
+    "display": "About 1 hour 40 minutes"
+  },
   "equipment": [
     "Large mixing bowl",
     "Digital scale and measuring spoons",
@@ -56,7 +68,9 @@
           "customaryUnit": "cups",
           "preparation": "spooned and leveled if measured by volume",
           "optional": false,
-          "allergenNotes": ["wheat/gluten"]
+          "allergenNotes": [
+            "wheat/gluten"
+          ]
         },
         {
           "id": "warm-water",
@@ -139,7 +153,9 @@
           "customaryUnit": "cup",
           "preparation": "finely chopped",
           "optional": false,
-          "allergenNotes": ["check facility cross-contact"]
+          "allergenNotes": [
+            "check facility cross-contact"
+          ]
         },
         {
           "id": "pumpkin-seeds",
@@ -150,7 +166,9 @@
           "customaryUnit": "cup",
           "preparation": "finely chopped",
           "optional": false,
-          "allergenNotes": ["check facility cross-contact"]
+          "allergenNotes": [
+            "check facility cross-contact"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -161,7 +179,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "cinnamon",
@@ -295,8 +315,16 @@
     "Serve warm only after the molten center has cooled safely",
     "Offer one pancake per person after a savory meal"
   ],
-  "menuPairings": ["M01", "SF01", "B01", "F01"],
-  "relatedRecipeIds": ["D05", "D02"],
+  "menuPairings": [
+    "M01",
+    "SF01",
+    "B01",
+    "F01"
+  ],
+  "relatedRecipeIds": [
+    "D05",
+    "D02"
+  ],
   "faq": [
     {
       "question": "Why cook hotteok over medium-low heat?",
@@ -319,9 +347,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["raw-flour safety", "hot-syrup warning", "recipe card"],
+  "adExclusionZones": [
+    "raw-flour safety",
+    "hot-syrup warning",
+    "recipe card"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#D01, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary dough, filling, shaping, and pan-frying convention reference: https://www.maangchi.com/recipe/hotteok",
     "Current raw-flour food-safety framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
     "Seed-forward filling is a contemporary formulation for the locked title; not test-cooked. Korean-language, cultural, allergen, food-safety, and editorial approval remain required."

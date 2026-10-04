@@ -10,8 +10,8 @@
   "publicReleaseOrder": 66,
   "canonicalSlug": "garlic-scallion-grilled-mussels",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/garlic-scallion-grilled-mussels/",
-  "shortDescription": "Live mussels are grilled until their shells open, then tossed with a separately prepared hot garlic-scallion sesame dressing.",
-  "culturalContext": "Mussels appear in Korean soups, stews, and contemporary grilled preparations. This garlic-scallion grill draft is an adaptation requiring shellfish and cultural review.",
+  "shortDescription": "The mussel record runs the grill's simplest shellfish law: heat opens the shell, the sauce rides in on the liquor, and the pot's famous question — open or discard — is the only safety grammar to learn",
+  "culturalContext": "The mussel record runs the grill's simplest shellfish law: heat opens the shell, the sauce rides in on the liquor, and the pot's famous question — open or discard — is the only safety grammar to learn. Garlic, scallion, butter, and a gochujang thread turn the mussel's own brine into its sauce; the pan is the platter; the bread or rice does the rest.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 10,
+    "display": "10 minutes"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 10,
-    "display": "8 to 10 minutes"
+    "minutes": 8,
+    "display": "8 minutes"
   },
   "restTime": {
     "minutes": 0,
     "display": "No rest"
   },
   "totalTime": {
-    "minutes": 30,
-    "display": "About 30 minutes"
+    "minutes": 20,
+    "display": "About 20 minutes"
   },
   "equipment": [
     "Colander",
@@ -66,7 +66,9 @@
           "customaryUnit": "pounds",
           "preparation": "required source tag or label retained",
           "optional": false,
-          "allergenNotes": ["shellfish"]
+          "allergenNotes": [
+            "shellfish"
+          ]
         }
       ]
     },
@@ -116,7 +118,10 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "sesame-oil",
@@ -127,7 +132,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -231,9 +238,19 @@
   "storage": "Refrigerate cooked shellfish in a shallow covered container within 2 hours and use within 2 days pending qualified review.",
   "reheating": "Reheat only the needed portion until steaming; discard any shellfish held unsafely.",
   "leftovers": "Use only properly refrigerated leftovers within the approved window.",
-  "servingSuggestions": ["Serve hot with rice or noodles."],
-  "menuPairings": ["B12", "F05", "SA05", "D04"],
-  "relatedRecipeIds": ["SF12", "SF14"],
+  "servingSuggestions": [
+    "Serve hot with rice or noodles."
+  ],
+  "menuPairings": [
+    "B12",
+    "F05",
+    "SA05",
+    "D04"
+  ],
+  "relatedRecipeIds": [
+    "SF12",
+    "SF14"
+  ],
   "faq": [
     {
       "question": "Why discard closed mussels?",
@@ -247,7 +264,10 @@
   "seoTitle": "Garlic-Scallion Grilled Mussels",
   "metaDescription": "Grill live mussels with source-label checks, shell-opening discard rules, clean garlic-scallion dressing, cross-contact controls, and prompt service.",
   "primaryKeyword": "grilled mussels garlic scallion",
-  "secondaryTopics": ["Korean-inspired mussels", "live shellfish grilling"],
+  "secondaryTopics": [
+    "Korean-inspired mussels",
+    "live shellfish grilling"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -260,6 +280,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF13, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Contemporary locked-title formulation; live-mussel controls follow FDA guidance and require qualified seafood review.",
     "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

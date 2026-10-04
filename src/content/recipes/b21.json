@@ -10,8 +10,8 @@
   "publicReleaseOrder": 62,
   "canonicalSlug": "korean-potato-salad",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/korean-potato-salad/",
-  "shortDescription": "Tender potatoes are mashed coarsely with firm-cooked egg, salted cucumber, carrot, apple, and commercial mayonnaise for a creamy Korean restaurant-style side.",
-  "culturalContext": "Korean potato salad is a creamy modern banchan influenced by Western-style salads and often includes vegetables, fruit, egg, or ham. Additions and sweetness vary.",
+  "shortDescription": "Korean potato salad is what happened when Western salad met the Korean banchan table: mashed potato bound lightly with mayo and fruit — apple, sometimes raisins or cucumber — sweet, soft, and complete",
+  "culturalContext": "Korean potato salad is what happened when Western salad met the Korean banchan table: mashed potato bound lightly with mayo and fruit — apple, sometimes raisins or cucumber — sweet, soft, and completely unbothered by anyone's definition of salad. It arrived in the twentieth century, stayed for the children, and every Korean grill restaurant now serves it (#B22's macaroni sibling beside it). Labeled honestly as the modern bowl it is; loved without reservation, because it works.",
   "adaptationLabel": "restaurant-style",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 6,
   "servingUnit": "side-dish servings",
   "prepTime": {
-    "minutes": 25,
-    "display": "25 minutes"
+    "minutes": 20,
+    "display": "20 minutes"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 25,
-    "display": "25 minutes"
+    "minutes": 20,
+    "display": "20 minutes"
   },
   "restTime": {
     "minutes": 30,
     "display": "30 minutes"
   },
   "totalTime": {
-    "minutes": 80,
-    "display": "About 1 hour 20 minutes including cooling"
+    "minutes": 40,
+    "display": "About 40 minutes"
   },
   "equipment": [
     "Two saucepans",
@@ -77,7 +77,9 @@
           "customaryUnit": "large eggs",
           "preparation": "refrigerated, clean, and uncracked",
           "optional": false,
-          "allergenNotes": ["egg"]
+          "allergenNotes": [
+            "egg"
+          ]
         },
         {
           "id": "cucumber",
@@ -121,7 +123,9 @@
           "customaryUnit": "cup",
           "preparation": "kept refrigerated",
           "optional": false,
-          "allergenNotes": ["egg"]
+          "allergenNotes": [
+            "egg"
+          ]
         },
         {
           "id": "sugar",
@@ -258,9 +262,19 @@
   "storage": "Refrigerate promptly at or below 40°F / 4°C and use within 3 days pending review.",
   "reheating": "Do not reheat; serve cold.",
   "leftovers": "Discard table-exposed portions and keep only clean continuously refrigerated salad.",
-  "servingSuggestions": ["Serve cold in small portions with grilled foods."],
-  "menuPairings": ["M16", "SF11", "F06", "SA01"],
-  "relatedRecipeIds": ["B20", "B22"],
+  "servingSuggestions": [
+    "Serve cold in small portions with grilled foods."
+  ],
+  "menuPairings": [
+    "M16",
+    "SF11",
+    "F06",
+    "SA01"
+  ],
+  "relatedRecipeIds": [
+    "B20",
+    "B22"
+  ],
   "faq": [
     {
       "question": "Why cool potatoes before mayonnaise?",
@@ -274,7 +288,10 @@
   "seoTitle": "Korean Potato Salad Recipe",
   "metaDescription": "Make creamy Korean potato salad with tender potatoes, firm-cooked egg, pasteurized mayonnaise, shallow cooling, refrigeration, and clean service.",
   "primaryKeyword": "Korean potato salad",
-  "secondaryTopics": ["restaurant-style banchan", "creamy potato salad"],
+  "secondaryTopics": [
+    "restaurant-style banchan",
+    "creamy potato salad"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -287,6 +304,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B21, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Restaurant-style Korean potato salad formulation requiring test-kitchen and cultural review.",
     "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

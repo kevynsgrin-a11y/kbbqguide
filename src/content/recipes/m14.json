@@ -10,8 +10,8 @@
   "publicReleaseOrder": 41,
   "canonicalSlug": "ganjang-pork-bulgogi",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/ganjang-pork-bulgogi/",
-  "shortDescription": "Thin pork shoulder is marinated with soy sauce, pear, onion, garlic, and sesame, then grilled in uncrowded batches.",
-  "culturalContext": "Dwaeji bulgogi describes seasoned pork in a range of Korean preparations. This soy-based, nonspicy version is distinguished editorially as ganjang pork bulgogi; cuts, sweetness, vegetables, and cooking methods vary.",
+  "shortDescription": "The soy fork of pork bulgogi: same thin slices, same fast tabletop grill, no gochujang in sight.",
+  "culturalContext": "The soy fork of pork bulgogi: same thin slices, same fast tabletop grill, no gochujang in sight. Ganjang bulgogi is the version for the table that wants the sweet-savory register without the heat — kids' approval guaranteed, adults' silence guaranteed, because it disappears first at every mixed grill. It is also the best introduction to the genre: everything you learn here (the thin slice, the single layer, the flip at the weep) transfers directly to the spicy cousin (#M13).",
   "adaptationLabel": "restaurant-style",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes, plus 2–4 hours marinating"
   },
   "marinateTime": {
     "minutes": 60,
     "display": "60 minutes refrigerated"
   },
   "cookTime": {
-    "minutes": 12,
-    "display": "12 minutes"
+    "minutes": 10,
+    "display": "10 minutes at the table"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 95,
-    "display": "About 95 minutes"
+    "minutes": 25,
+    "display": "About 25 minutes at the table (marinate ahead)"
   },
   "equipment": [
     "Separate raw-meat cutting board",
@@ -83,7 +83,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "pear",
@@ -149,7 +152,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "black-pepper",
@@ -177,7 +182,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "pear",
@@ -243,7 +251,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "black-pepper",
@@ -273,7 +283,11 @@
       "Use certified gluten-free tamari only after verifying every label.",
       "Firm ripe pear or unsweetened pear purée may be compared during test cooking."
     ],
-    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten",
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -374,9 +388,19 @@
   "storage": "Refrigerate cooked meat in a shallow covered container within 2 hours and use within 4 days pending food-safety approval.",
   "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
   "leftovers": "Use properly refrigerated leftovers in rice bowls or lettuce wraps within the approved window.",
-  "servingSuggestions": ["Serve with rice, lettuce wraps, and crisp banchan."],
-  "menuPairings": ["B14", "F04", "SA04", "D04"],
-  "relatedRecipeIds": ["M13", "M15"],
+  "servingSuggestions": [
+    "Serve with rice, lettuce wraps, and crisp banchan."
+  ],
+  "menuPairings": [
+    "B14",
+    "F04",
+    "SA04",
+    "D04"
+  ],
+  "relatedRecipeIds": [
+    "M13",
+    "M15"
+  ],
   "faq": [
     {
       "question": "Is this spicy?",
@@ -390,7 +414,10 @@
   "seoTitle": "Ganjang Pork Bulgogi Recipe",
   "metaDescription": "Make soy-based ganjang pork bulgogi with pear, garlic, sesame, refrigerated marination, thermometer checks, and a three-minute rest.",
   "primaryKeyword": "ganjang pork bulgogi",
-  "secondaryTopics": ["soy pork bulgogi", "Korean grilled pork"],
+  "secondaryTopics": [
+    "soy pork bulgogi",
+    "Korean grilled pork"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -403,6 +430,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M14, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Soy-based pork bulgogi is an editorial synthesis compared with the project’s cited bulgogi conventions; exact locked-title framing requires Korean food-editor review.",
     "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

@@ -10,8 +10,8 @@
   "publicReleaseOrder": 13,
   "canonicalSlug": "kkakdugi-radish-kimchi",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/kkakdugi-radish-kimchi/",
-  "shortDescription": "Crunchy cubes of Korean radish are lightly salted, then coated with gochugaru, garlic, ginger, scallion, fish sauce, and salted shrimp for a bright, gradually souring kimchi.",
-  "culturalContext": "Kkakdugi is a cubed-radish kimchi served across Korean home and restaurant tables, especially alongside soups. Radish size, sweetness, seasoning, and fermentation preference vary; this draft presents one common seafood-seasoned style.",
+  "shortDescription": "Kkakdugi is baechu kimchi's (#B01) radish sibling: the same paste, cubed Korean radish instead of cabbage, a faster ferment, and a crunch that survives weeks longer.",
+  "culturalContext": "Kkakdugi is baechu kimchi's (#B01) radish sibling: the same paste, cubed Korean radish instead of cabbage, a faster ferment, and a crunch that survives weeks longer. At the grill table it is the bowl that loves the braised and stewed records — the jangjorim (#B20), the oily fish (#SF07) — because radish's clean, peppery snap cuts richness the way cabbage's leaves cannot. If you have made B01, you have already made this paste; this record is the cube law and the radish clock.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,17 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 12,
+  "yield": 1,
   "servingUnit": "side-dish servings",
-  "prepTime": { "minutes": 30, "display": "30 minutes" },
-  "marinateTime": { "minutes": 30, "display": "30 minutes salting" },
-  "cookTime": { "minutes": 0, "display": "No cooking" },
-  "restTime": { "minutes": 0, "display": "Optional fermentation not included" },
+  "prepTime": {
+    "minutes": 45,
+    "display": "45 minutes, hands-on"
+  },
+  "marinateTime": {
+    "minutes": 30,
+    "display": "30 minutes salting"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "Optional fermentation not included"
+  },
   "totalTime": {
-    "minutes": 60,
-    "display": "1 hour, before optional fermentation"
+    "minutes": 45,
+    "display": "45 minutes, then 1–2 days fermenting, then the fridge"
   },
   "equipment": [
     "Chef’s knife and cutting board",
@@ -97,7 +109,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         },
         {
           "id": "saeujeot",
@@ -108,7 +122,9 @@
           "customaryUnit": "tablespoons",
           "preparation": "chopped",
           "optional": false,
-          "allergenNotes": ["shellfish"]
+          "allergenNotes": [
+            "shellfish"
+          ]
         },
         {
           "id": "garlic",
@@ -252,8 +268,16 @@
     "Serve with soups and rice",
     "Spoon a small amount of radish and seasoning liquid into each dish"
   ],
-  "menuPairings": ["M17", "SF07", "F07", "SA02"],
-  "relatedRecipeIds": ["B01", "B03"],
+  "menuPairings": [
+    "M17",
+    "SF07",
+    "F07",
+    "SA02"
+  ],
+  "relatedRecipeIds": [
+    "B01",
+    "B03"
+  ],
   "faq": [
     {
       "question": "Should kkakdugi stay crunchy?",
@@ -276,9 +300,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["recipe card", "fermentation safety", "allergen notes"],
+  "adExclusionZones": [
+    "recipe card",
+    "fermentation safety",
+    "allergen notes"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B02, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary convention and technique reference: https://www.maangchi.com/recipe/kkakdugi",
     "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Draft synthesized for this project; not test-cooked. Fermentation safety, Korean-language, cultural, and editorial approval remain required."

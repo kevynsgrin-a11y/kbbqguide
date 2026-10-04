@@ -10,8 +10,8 @@
   "publicReleaseOrder": 24,
   "canonicalSlug": "classic-ssamjang",
   "canonicalUrl": "https://kbbqguide.com/recipes/sauces/classic-ssamjang/",
-  "shortDescription": "Doenjang and gochujang are mixed with finely chopped onion, scallion, garlic, rice syrup, toasted sesame oil, and sesame seeds for a savory wrap sauce.",
-  "culturalContext": "Ssamjang is a Korean sauce served with ssam wraps and grilled foods, commonly built from fermented soybean paste and chile paste. Ratios, sweetness, aromatics, and texture vary widely; this draft's `classic` label describes its familiar ingredient family, not one universal formula.",
+  "shortDescription": "Ssamjang — literally \"wrap sauce\" — is the bowl that makes a grill table a ssam table: doenjang and gochujang in one paste, sweetened, studded with aromatics, sitting between the meat and the lettuce ",
+  "culturalContext": "Ssamjang — literally \"wrap sauce\" — is the bowl that makes a grill table a ssam table: doenjang and gochujang in one paste, sweetened, studded with aromatics, sitting between the meat and the lettuce with an authority no bottled sauce matches. It is less a recipe than a ratio with every household's thumbprint on it; this record is the classic center from which the variations swing. Every meat record on this site points here, and the bowl takes ten minutes.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,15 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 16,
+  "yield": 250,
   "servingUnit": "tablespoons",
-  "prepTime": { "minutes": 15, "display": "15 minutes" },
-  "marinateTime": { "minutes": 0, "display": "No marination" },
-  "cookTime": { "minutes": 0, "display": "No cooking" },
-  "restTime": { "minutes": 15, "display": "15 minutes chilled rest" },
-  "totalTime": { "minutes": 30, "display": "30 minutes" },
+  "prepTime": {
+    "minutes": 10,
+    "display": "10 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 15,
+    "display": "15 minutes chilled rest"
+  },
+  "totalTime": {
+    "minutes": 10,
+    "display": "10 minutes"
+  },
   "equipment": [
     "Small digital scale or measuring spoons",
     "Chef’s knife and produce cutting board",
@@ -50,7 +65,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "may contain wheat/gluten; check label"]
+          "allergenNotes": [
+            "soy",
+            "may contain wheat/gluten; check label"
+          ]
         },
         {
           "id": "gochujang",
@@ -61,7 +79,10 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "may contain wheat/gluten; check label"]
+          "allergenNotes": [
+            "soy",
+            "may contain wheat/gluten; check label"
+          ]
         },
         {
           "id": "onion",
@@ -116,7 +137,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -127,7 +150,9 @@
           "customaryUnit": "teaspoons",
           "preparation": "lightly crushed",
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "water",
@@ -249,8 +274,16 @@
     "Add a small dab to a lettuce-and-rice wrap",
     "Serve in individual dishes beside grilled meat"
   ],
-  "menuPairings": ["M11", "SF06", "B06", "F01"],
-  "relatedRecipeIds": ["SA05", "SA02"],
+  "menuPairings": [
+    "M11",
+    "SF06",
+    "B06",
+    "F01"
+  ],
+  "relatedRecipeIds": [
+    "SA05",
+    "SA02"
+  ],
   "faq": [
     {
       "question": "Is all ssamjang gluten-free?",
@@ -280,6 +313,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SA01, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary convention, ratio-family, serving, and refrigerator reference: https://www.maangchi.com/recipe/ssamjang",
     "Current cross-contamination and refrigeration framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
     "Draft synthesized for this project; not test-cooked. Brand-specific allergens, Korean-language, cultural, food-safety, and editorial approval remain required."

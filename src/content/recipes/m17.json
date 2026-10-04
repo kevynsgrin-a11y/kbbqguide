@@ -10,8 +10,8 @@
   "publicReleaseOrder": 65,
   "canonicalSlug": "spicy-gochujang-grilled-chicken-thighs",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/spicy-gochujang-grilled-chicken-thighs/",
-  "shortDescription": "Boneless chicken thighs are marinated with gochujang, gochugaru, garlic, and ginger, then grilled over controlled heat to 165°F / 74°C.",
-  "culturalContext": "Spicy seasoned grilled chicken appears in many contemporary Korean home and restaurant forms. This locked gochujang-thigh formulation is restaurant-style and not presented as one universal recipe.",
+  "shortDescription": "The spicy fork of dak bulgogi: boneless thighs in a gochujang marinade, grilled to a red-brown gloss.",
+  "culturalContext": "The spicy fork of dak bulgogi: boneless thighs in a gochujang marinade, grilled to a red-brown gloss. Chicken and gochujang are one of the great pairings of the table — the paste's ferment needs a fat to ride, and chicken fat rides it cleanly. This record runs whole butterflied thighs rather than slices (the paste deserves a thick piece to glaze), and the grill boss's job is the classic two-faces problem: color the outside, cook the center, no black on either.",
   "adaptationLabel": "restaurant-style",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 25,
-    "display": "25 minutes"
+    "minutes": 15,
+    "display": "15 minutes, plus 4–12 hours marinating"
   },
   "marinateTime": {
     "minutes": 60,
@@ -34,15 +34,15 @@
   },
   "cookTime": {
     "minutes": 14,
-    "display": "12 to 14 minutes"
+    "display": "14 minutes at the table"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 102,
-    "display": "About 1 hour 40 minutes"
+    "minutes": 30,
+    "display": "About 30 minutes at the table (marinate ahead)"
   },
   "equipment": [
     "Separate raw-poultry cutting board",
@@ -83,7 +83,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten; verify label"
+          ]
         },
         {
           "id": "gochugaru",
@@ -105,7 +108,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -149,7 +155,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -166,7 +174,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten; verify label"
+        ]
       },
       {
         "id": "gochugaru",
@@ -188,7 +199,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "rice-syrup",
@@ -232,7 +246,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       }
     ],
     "batchYield": "About 240 ml / 1 cup marinade",
@@ -250,7 +266,11 @@
     "substitutions": [
       "Use only verified gluten-free gochujang and tamari for a gluten-free adaptation."
     ],
-    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten",
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -353,8 +373,16 @@
   "servingSuggestions": [
     "Serve with rice, lettuce wraps, and cooling banchan."
   ],
-  "menuPairings": ["B17", "F07", "SA02", "D02"],
-  "relatedRecipeIds": ["M16", "M18"],
+  "menuPairings": [
+    "B17",
+    "F07",
+    "SA02",
+    "D02"
+  ],
+  "relatedRecipeIds": [
+    "M16",
+    "M18"
+  ],
   "faq": [
     {
       "question": "Why use medium heat?",
@@ -368,7 +396,10 @@
   "seoTitle": "Spicy Gochujang Grilled Chicken Thighs",
   "metaDescription": "Grill spicy gochujang chicken thighs with refrigerated marination, no-wash poultry handling, controlled heat, clean tools, and a 165°F / 74°C endpoint.",
   "primaryKeyword": "gochujang grilled chicken thighs",
-  "secondaryTopics": ["spicy Korean chicken", "gochujang marinade"],
+  "secondaryTopics": [
+    "spicy Korean chicken",
+    "gochujang marinade"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -381,6 +412,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M17, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Restaurant-style locked-title formulation requiring test-kitchen and Korean food-editor review.",
     "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

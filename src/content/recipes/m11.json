@@ -10,8 +10,8 @@
   "publicReleaseOrder": 34,
   "canonicalSlug": "gochujang-samgyeopsal",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/gochujang-samgyeopsal/",
-  "shortDescription": "Pork belly is coated in a spicy-sweet gochujang marinade, then grilled over controlled heat until browned and safely cooked.",
-  "culturalContext": "This is a contemporary spicy variation on grilled samgyeopsal using gochujang. Korean pork-belly preparations and marinades vary, so this draft does not present one universal formula.",
+  "shortDescription": "Take the classic salt-and-sesame samgyeopsal (#M10), paint the belly with a gochujang paste before the fire, and the dish changes personality: the render still does the cooking, but now there is a lac",
+  "culturalContext": "Take the classic salt-and-sesame samgyeopsal (#M10), paint the belly with a gochujang paste before the fire, and the dish changes personality: the render still does the cooking, but now there is a lacquer on the crisp edge and a slow ferment-heat under the fat. The dressed belly is a fixture of every tabletop restaurant that discovered its regulars wanted the classic's texture with more on top. It asks one thing the classic does not — paste discipline. Too much and you are grilling sauce, not pork.",
   "adaptationLabel": "restaurant-style",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes, plus 30 minutes resting"
   },
   "marinateTime": {
     "minutes": 60,
     "display": "60 minutes refrigerated"
   },
   "cookTime": {
-    "minutes": 12,
-    "display": "12 minutes"
+    "minutes": 20,
+    "display": "20 minutes at the table"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 95,
-    "display": "About 95 minutes"
+    "minutes": 35,
+    "display": "About 35 minutes at the table"
   },
   "equipment": [
     "Separate raw-meat cutting board",
@@ -83,7 +83,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten; verify label"
+          ]
         },
         {
           "id": "soy-sauce",
@@ -94,7 +97,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -138,7 +144,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -155,7 +163,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten; verify label"
+        ]
       },
       {
         "id": "soy-sauce",
@@ -166,7 +177,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "rice-syrup",
@@ -210,7 +224,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       }
     ],
     "batchYield": "About 150 ml / 2/3 cup marinade",
@@ -228,7 +244,11 @@
     "substitutions": [
       "Use only verified gluten-free gochujang and tamari for a gluten-free adaptation."
     ],
-    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten",
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -332,8 +352,16 @@
   "servingSuggestions": [
     "Serve in lettuce wraps with fresh vegetables and rice."
   ],
-  "menuPairings": ["B11", "F01", "SA01", "D01"],
-  "relatedRecipeIds": ["M10", "M12"],
+  "menuPairings": [
+    "B11",
+    "F01",
+    "SA01",
+    "D01"
+  ],
+  "relatedRecipeIds": [
+    "M10",
+    "M12"
+  ],
   "faq": [
     {
       "question": "Why use medium heat?",
@@ -347,7 +375,10 @@
   "seoTitle": "Gochujang Samgyeopsal Pork Belly",
   "metaDescription": "Make gochujang samgyeopsal with a spicy-sweet refrigerated marinade, controlled grill heat, thermometer verification, and safe handling.",
   "primaryKeyword": "gochujang samgyeopsal",
-  "secondaryTopics": ["spicy pork belly", "Korean barbecue marinade"],
+  "secondaryTopics": [
+    "spicy pork belly",
+    "Korean barbecue marinade"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -360,6 +391,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M11, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Samgyeopsal grilling technique informed by Maangchi, accessed 2026-07-14: https://www.maangchi.com/recipe/samgyeopsal-gui; gochujang version is a locked editorial adaptation.",
     "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

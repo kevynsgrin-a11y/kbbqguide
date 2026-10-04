@@ -10,8 +10,8 @@
   "publicReleaseOrder": 30,
   "canonicalSlug": "tteokgalbi-grilled-beef-and-pork-patties",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/tteokgalbi-grilled-beef-and-pork-patties/",
-  "shortDescription": "Ground beef and pork are mixed with a pear-soy, garlic, scallion, onion, and sesame seasoning, shaped into thick oval patties, and grilled to a verified ground-meat temperature.",
-  "culturalContext": "Tteokgalbi refers to seasoned minced or finely chopped meat shaped into patties, historically connected to rib meat and several Korean regional and formal dining traditions. Recipes and origin narratives vary; this accessible beef-and-pork draft requires cultural review and does not imply that rice cake is an ingredient.",
+  "shortDescription": "Tteokgalbi is what happened when Korean cooks took the galbi flavor set and put it through the grinder: beef and pork minced fine, kneaded with the pear-soy marinade into a paste, and shaped around a ",
+  "culturalContext": "Tteokgalbi is what happened when Korean cooks took the galbi flavor set and put it through the grinder: beef and pork minced fine, kneaded with the pear-soy marinade into a paste, and shaped around a stripped rib bone or into a thick oval patty — the name means \"rice-cake galbi,\" for the patty's soft, chewy, almost tteok-like bite. Its own marketing often calls it court food; the honest version is that the court claim is contested, and what the documents actually show is the *Siuijeonseo* era's ground-meat skewer road leading toward it, with the dish's named regional identity arriving in the twentieth century. None of which matters at the grill: shaped on the bone or off it, lacquered and pressed, tteokgalbi is the juiciest thing this side of the bulgogi (#M01) lane and the most forgiving record on the meat list. Who cooks what: the patties are shaped ahead; the grill boss presses and fl",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,15 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 8,
+  "yield": 4,
   "servingUnit": "patties",
-  "prepTime": { "minutes": 35, "display": "35 minutes" },
-  "marinateTime": { "minutes": 30, "display": "30 minutes chilling" },
-  "cookTime": { "minutes": 18, "display": "16 to 18 minutes" },
-  "restTime": { "minutes": 3, "display": "3 minutes" },
-  "totalTime": { "minutes": 86, "display": "About 1 hour 30 minutes" },
+  "prepTime": {
+    "minutes": 30,
+    "display": "30 minutes, plus 2 hours resting"
+  },
+  "marinateTime": {
+    "minutes": 30,
+    "display": "30 minutes chilling"
+  },
+  "cookTime": {
+    "minutes": 16,
+    "display": "16 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
+  "totalTime": {
+    "minutes": 60,
+    "display": "About 1 hour at the table (rest the mix ahead)"
+  },
   "equipment": [
     "Large chilled mixing bowl",
     "Chef’s knife and separate raw-meat cutting board",
@@ -82,7 +97,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "korean-pear",
@@ -159,7 +177,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -170,7 +190,9 @@
           "customaryUnit": "tablespoon",
           "preparation": "lightly crushed",
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "black-pepper",
@@ -198,7 +220,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "korean-pear",
@@ -275,7 +300,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "sesame-seeds",
@@ -286,7 +313,9 @@
         "customaryUnit": "tablespoon",
         "preparation": "lightly crushed",
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "black-pepper",
@@ -437,8 +466,16 @@
     "Serve one or two patties per person with rice and banchan",
     "Brush lightly with boiled clean reserve only after temperature verification"
   ],
-  "menuPairings": ["B09", "F09", "SA04", "D04"],
-  "relatedRecipeIds": ["M08", "M10"],
+  "menuPairings": [
+    "B09",
+    "F09",
+    "SA04",
+    "D04"
+  ],
+  "relatedRecipeIds": [
+    "M08",
+    "M10"
+  ],
   "faq": [
     {
       "question": "Does tteokgalbi contain rice cake?",
@@ -468,6 +505,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M09, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Preparation and cultural comparison: https://www.koreanbapsang.com/tteokgalbi-korean-short-rib-patties/",
     "Ground-meat safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "Accessible beef-and-pork formulation created for the locked title; not test-cooked. Regional history, Korean-language, food-safety, and editorial approval remain required."

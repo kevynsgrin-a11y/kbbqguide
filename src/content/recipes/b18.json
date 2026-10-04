@@ -10,8 +10,8 @@
   "publicReleaseOrder": 57,
   "canonicalSlug": "yeongeun-jorim-soy-braised-lotus-root",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/yeongeun-jorim-soy-braised-lotus-root/",
-  "shortDescription": "Lotus root slices are rinsed, briefly blanched, and braised until crisp-tender in a glossy soy, garlic, and rice-syrup glaze.",
-  "culturalContext": "Yeongeun jorim belongs to the Korean family of soy-braised side dishes. Slice thickness, sweetness, color, chile, and final texture vary by household.",
+  "shortDescription": "Lotus root, cut into coins, braised in soy and sweetness until the holes fill with glaze and the flesh turns amber-tender: yeongeun jorim is the banchan that looks like architecture and eats like comf",
+  "culturalContext": "Lotus root, cut into coins, braised in soy and sweetness until the holes fill with glaze and the flesh turns amber-tender: yeongeun jorim is the banchan that looks like architecture and eats like comfort. The coin's lace of holes catches the braise in every bite — the visual is the recipe's promise — and the long braise turns a crunchy raw root into something tender-firm and deeply savory. It is the jorim family's most elegant member, and the patient one: the braise runs half an hour and cannot be rushed.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,7 +20,7 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "side-dish servings",
@@ -33,16 +33,16 @@
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 35,
-    "display": "35 minutes"
+    "minutes": 30,
+    "display": "30 minutes"
   },
   "restTime": {
     "minutes": 5,
     "display": "5 minutes"
   },
   "totalTime": {
-    "minutes": 60,
-    "display": "About 60 minutes"
+    "minutes": 50,
+    "display": "About 50 minutes"
   },
   "equipment": [
     "Vegetable brush",
@@ -116,7 +116,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -160,7 +163,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -171,7 +176,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -275,9 +282,19 @@
   "storage": "Refrigerate within 2 hours and use within 4 days pending food-safety approval.",
   "reheating": "Warm gently with a splash of water until steaming or serve properly refrigerated portions cool.",
   "leftovers": "Use properly refrigerated leftovers within the approved window.",
-  "servingSuggestions": ["Serve with rice and other banchan."],
-  "menuPairings": ["M13", "SF08", "F03", "SA03"],
-  "relatedRecipeIds": ["B17", "B19"],
+  "servingSuggestions": [
+    "Serve with rice and other banchan."
+  ],
+  "menuPairings": [
+    "M13",
+    "SF08",
+    "F03",
+    "SA03"
+  ],
+  "relatedRecipeIds": [
+    "B17",
+    "B19"
+  ],
   "faq": [
     {
       "question": "Why blanch first?",
@@ -291,7 +308,10 @@
   "seoTitle": "Yeongeun Jorim Soy-Braised Lotus Root",
   "metaDescription": "Make yeongeun jorim with cleaned, blanched lotus root and a glossy soy-rice-syrup glaze, with crisp-tender cues and safe hot-syrup handling.",
   "primaryKeyword": "yeongeun jorim",
-  "secondaryTopics": ["Korean lotus root", "soy-braised banchan"],
+  "secondaryTopics": [
+    "Korean lotus root",
+    "soy-braised banchan"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -304,6 +324,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B18, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Maangchi yeongeun-jorim editorial URL checked 2026-07-14: https://www.maangchi.com/recipe/yeongeun-jorim",
     "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

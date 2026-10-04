@@ -10,8 +10,8 @@
   "publicReleaseOrder": 80,
   "canonicalSlug": "sikhye-sweet-rice-punch",
   "canonicalUrl": "https://kbbqguide.com/recipes/desserts/sikhye-sweet-rice-punch/",
-  "shortDescription": "Cooked rice and commercial barley malt liquid are held in a verified hot range until sweet, then boiled fully, rapidly cooled, and served cold.",
-  "culturalContext": "Sikhye is a traditional Korean sweet rice drink made by using barley malt enzymes to sweeten cooked rice, then boiling and chilling the drink. Household sweetness, rice handling, ginger, and garnish vary; it is not an alcoholic fermentation.",
+  "shortDescription": "Sikhye — fermented rice punch, the faintly sparkling, gently sweet, malty-cold drink with rice grains drifting at the bottom of the cup — is how the traditional Korean table closed a heavy meal: not d",
+  "culturalContext": "Sikhye — fermented rice punch, the faintly sparkling, gently sweet, malty-cold drink with rice grains drifting at the bottom of the cup — is how the traditional Korean table closed a heavy meal: not dessert's weight but a cold, alive, barely-sweet digestif that the holiday table poured after the meat and the fried everything. It closes this site's ledger the same way. The craft is a patient enzyme conversion: malt powder turns cooked rice's starch to sugar over a warm afternoon, and the cook's job is temperature patience.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 12,
+  "yield": 1,
   "servingUnit": "240 ml / 1-cup servings",
   "prepTime": {
-    "minutes": 35,
-    "display": "35 minutes"
+    "minutes": 15,
+    "display": "15 minutes, plus 4–6 hours incubating"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 310,
-    "display": "About 5 hours 10 minutes"
+    "minutes": 60,
+    "display": "1 hour"
   },
   "restTime": {
     "minutes": 120,
     "display": "2 hours rapid cooling and chilling"
   },
   "totalTime": {
-    "minutes": 465,
-    "display": "About 7 hours 45 minutes"
+    "minutes": 360,
+    "display": "About 6 hours, mostly untended"
   },
   "equipment": [
     "Large clean bowl",
@@ -67,7 +67,9 @@
           "customaryUnit": "ounces",
           "preparation": "label checked",
           "optional": false,
-          "allergenNotes": ["barley/wheat gluten"]
+          "allergenNotes": [
+            "barley/wheat gluten"
+          ]
         },
         {
           "id": "water",
@@ -122,7 +124,9 @@
           "customaryUnit": "tablespoons",
           "preparation": "for garnish",
           "optional": true,
-          "allergenNotes": ["tree nuts"]
+          "allergenNotes": [
+            "tree nuts"
+          ]
         }
       ]
     }
@@ -233,8 +237,16 @@
     "Serve very cold in small bowls or cups.",
     "Offer pine nuts only after an allergen check."
   ],
-  "menuPairings": ["M17", "SF13", "B21", "F09"],
-  "relatedRecipeIds": ["D04", "D01"],
+  "menuPairings": [
+    "M17",
+    "SF13",
+    "B21",
+    "F09"
+  ],
+  "relatedRecipeIds": [
+    "D04",
+    "D01"
+  ],
   "faq": [
     {
       "question": "Is sikhye fermented or alcoholic?",
@@ -265,6 +277,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#D05, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Cultural and method orientation: https://www.maangchi.com/recipe/sikhye",
     "Cooling basis: https://www.fda.gov/food/fda-food-code/food-code-2022",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."

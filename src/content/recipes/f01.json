@@ -10,8 +10,8 @@
   "publicReleaseOrder": 21,
   "canonicalSlug": "ssam-lettuce-and-herb-platter",
   "canonicalUrl": "https://kbbqguide.com/recipes/fresh/ssam-lettuce-and-herb-platter/",
-  "shortDescription": "A crisp, carefully washed assortment of leaf lettuce, perilla, cucumber, mild chile, garlic, and optional crown daisy for wrapping grilled food with rice and ssamjang.",
-  "culturalContext": "Ssam refers to wrapping a bite of food in edible leaves, and Korean tables may offer many cultivated and seasonal greens. This practical platter is a flexible selection rather than a fixed canonical list; ingredient names and availability require Korean editorial review.",
+  "shortDescription": "The ssam platter is not a side.",
+  "culturalContext": "The ssam platter is not a side. On this site's grammar it is half the architecture of the meal: a basket of leaves and herbs, washed, dried, and built for wrapping, sitting beside the meat with the ssamjang (#SA01) and the dips. Every grilled-meat record from the bulgogi (#M01) to the lamb (#M20) points at this platter, and the meal's best bites happen inside it. This record is the assembly: what leaves, what each one does, and how the table builds the wrap.",
   "adaptationLabel": "none",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,15 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 6,
+  "yield": 4,
   "servingUnit": "platter servings",
-  "prepTime": { "minutes": 25, "display": "25 minutes" },
-  "marinateTime": { "minutes": 0, "display": "No marination" },
-  "cookTime": { "minutes": 0, "display": "No cooking" },
-  "restTime": { "minutes": 15, "display": "15 minutes draining and chilling" },
-  "totalTime": { "minutes": 40, "display": "40 minutes" },
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 15,
+    "display": "15 minutes draining and chilling"
+  },
+  "totalTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
   "equipment": [
     "Large clean basin",
     "Salad spinner or clean towels",
@@ -227,8 +242,16 @@
     "Layer rice, a small piece of grilled food, and ssamjang in one leaf",
     "Use perilla inside lettuce for a two-leaf wrap"
   ],
-  "menuPairings": ["M04", "SF02", "B16", "SA01"],
-  "relatedRecipeIds": ["F10", "F02"],
+  "menuPairings": [
+    "M04",
+    "SF02",
+    "B16",
+    "SA01"
+  ],
+  "relatedRecipeIds": [
+    "F10",
+    "F02"
+  ],
   "faq": [
     {
       "question": "What makes a good ssam leaf?",
@@ -251,9 +274,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["produce-safety steps", "recipe card", "allergen notes"],
+  "adExclusionZones": [
+    "produce-safety steps",
+    "recipe card",
+    "allergen notes"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#F01, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "General ssam service context cross-checked with https://www.maangchi.com/recipe/ssamjang (lettuce, rice, grilled-food pairing).",
     "Current produce and cross-contamination framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
     "Draft synthesized for the locked platter title; not test-cooked. Plant identification, Korean-language, cultural, and food-safety approval remain required."

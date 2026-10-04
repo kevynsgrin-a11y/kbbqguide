@@ -10,8 +10,8 @@
   "publicReleaseOrder": 9,
   "canonicalSlug": "soy-garlic-grilled-shrimp",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/soy-garlic-grilled-shrimp/",
-  "shortDescription": "Large shrimp in a quick soy-garlic, honey, rice-vinegar, ginger, scallion, and sesame marinade, grilled until pearly and opaque.",
-  "culturalContext": "Soy, garlic, scallion, ginger, and sesame form a familiar Korean seasoning family. Applying that profile to skewered grilled shrimp is presented here as a contemporary home-grilling adaptation rather than a singular traditional formula.",
+  "shortDescription": "The other grilled shrimp: no glaze, no heat, soy and garlic and sesame doing exactly what they do to good beef in the galbisal record (#M05).",
+  "culturalContext": "The other grilled shrimp: no glaze, no heat, soy and garlic and sesame doing exactly what they do to good beef in the galbisal record (#M05). This is the shrimp for the table that wants to taste the shrimp — and for the cook who wants the forgiving version, because without sugar in the marinade there is nothing to burn and the timing window doubles.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 4,
+  "yield": 3,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes, plus 20 minutes marinating"
   },
   "marinateTime": {
     "minutes": 15,
     "display": "10 to 15 minutes"
   },
   "cookTime": {
-    "minutes": 8,
-    "display": "6 to 8 minutes"
+    "minutes": 6,
+    "display": "6 minutes"
   },
   "restTime": {
     "minutes": 0,
     "display": "No required rest"
   },
   "totalTime": {
-    "minutes": 43,
-    "display": "43 minutes"
+    "minutes": 25,
+    "display": "About 25 minutes"
   },
   "equipment": [
     "Nonreactive mixing bowl",
@@ -68,7 +68,9 @@
           "customaryUnit": "pounds",
           "preparation": "refrigerator-thawed if frozen, peeled and deveined; tails optional",
           "optional": false,
-          "allergenNotes": ["shellfish"]
+          "allergenNotes": [
+            "shellfish"
+          ]
         }
       ]
     },
@@ -85,7 +87,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "honey",
@@ -118,7 +123,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "garlic",
@@ -179,7 +186,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "honey",
@@ -212,7 +222,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "garlic",
@@ -385,8 +397,16 @@
     "Serve with rice and a crisp fresh or lightly pickled vegetable.",
     "Use individual sauce dishes and keep raw seafood away from communal banchan."
   ],
-  "menuPairings": ["B01", "F04", "SA04", "D03"],
-  "relatedRecipeIds": ["SF01", "SF03"],
+  "menuPairings": [
+    "B01",
+    "F04",
+    "SA04",
+    "D03"
+  ],
+  "relatedRecipeIds": [
+    "SF01",
+    "SF03"
+  ],
   "faq": [
     {
       "question": "Can shrimp marinate overnight?",
@@ -419,6 +439,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF02, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Seasoning-family comparison: https://www.maangchi.com/recipe/bulgogi (soy, garlic, ginger, scallion, and sesame proportions used only as comparative context).",
     "Seafood doneness reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "No-rinsing and cross-contact reference verified 2026-07-14: https://www.foodsafety.gov/blog/how-grill-safely-summer",

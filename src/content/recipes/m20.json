@@ -10,8 +10,8 @@
   "publicReleaseOrder": 77,
   "canonicalSlug": "contemporary-doenjang-gochujang-lamb-shoulder",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/contemporary-doenjang-gochujang-lamb-shoulder/",
-  "shortDescription": "Boneless lamb-shoulder steaks are marinated with doenjang, gochujang, pear, and sesame, grilled to 145°F / 63°C, and rested three minutes.",
-  "culturalContext": "This contemporary recipe applies Korean fermented-paste seasoning to lamb shoulder, a combination without a single traditional standard. The descriptive Korean name and flavor balance require cultural and language review.",
+  "shortDescription": "Lamb is the newest voice at this grill — absent from the old lists, fully at home in the modern pantry — and it asks for the two pastes at once: doenjang for the savory floor, gochujang for the red he",
+  "culturalContext": "Lamb is the newest voice at this grill — absent from the old lists, fully at home in the modern pantry — and it asks for the two pastes at once: doenjang for the savory floor, gochujang for the red heat, honey to hold them together against lamb's big flavor. This is a butterflied shoulder steak record: marinated long, grilled hot in thick slices, served ssam-style with the sharp fresh salads that lamb and the Korean table both love. No lineage claimed — this one is written for the cook who wants the Korean grill's flavors on the meat their butcher is proudest of this week.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 6,
+  "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
     "minutes": 20,
-    "display": "20 minutes"
+    "display": "20 minutes, plus 8–24 hours marinating"
   },
   "marinateTime": {
     "minutes": 240,
     "display": "4 hours refrigerated"
   },
   "cookTime": {
-    "minutes": 16,
-    "display": "12 to 16 minutes"
+    "minutes": 30,
+    "display": "30 minutes"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 279,
-    "display": "About 4 hours 40 minutes"
+    "minutes": 60,
+    "display": "About 1 hour (marinate ahead)"
   },
   "equipment": [
     "Separate raw-meat cutting board",
@@ -83,7 +83,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless verified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless verified gluten-free"
+          ]
         },
         {
           "id": "gochujang",
@@ -94,7 +97,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless verified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless verified gluten-free"
+          ]
         },
         {
           "id": "pear",
@@ -138,7 +144,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "water",
@@ -166,7 +174,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless verified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless verified gluten-free"
+        ]
       },
       {
         "id": "gochujang",
@@ -177,7 +188,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless verified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless verified gluten-free"
+        ]
       },
       {
         "id": "pear",
@@ -221,7 +235,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "water",
@@ -250,7 +266,11 @@
     "substitutions": [
       "Use verified gluten-free doenjang, gochujang, and tamari only after label review."
     ],
-    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten",
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -356,8 +376,16 @@
     "Slice across the grain after the rest.",
     "Serve with crisp vegetables and individual dipping sauce portions."
   ],
-  "menuPairings": ["B20", "F10", "SA05", "D05"],
-  "relatedRecipeIds": ["M19", "M01"],
+  "menuPairings": [
+    "B20",
+    "F10",
+    "SA05",
+    "D05"
+  ],
+  "relatedRecipeIds": [
+    "M19",
+    "M01"
+  ],
   "faq": [
     {
       "question": "Can I use ground lamb?",
@@ -388,6 +416,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M20, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Temperature basis: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "Editorial framing: contemporary adaptation; no canonical-tradition claim.",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."

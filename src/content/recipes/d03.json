@@ -10,8 +10,8 @@
   "publicReleaseOrder": 72,
   "canonicalSlug": "yakgwa-honey-ginger-cookies",
   "canonicalUrl": "https://kbbqguide.com/recipes/desserts/yakgwa-honey-ginger-cookies/",
-  "shortDescription": "Fluted honey-ginger cookies are fried slowly, drained, and soaked in a warm aromatic honey syrup.",
-  "culturalContext": "Yakgwa is a traditional Korean confection associated with celebrations and tea tables. Shapes, frying sequences, grain syrups, honey, spices, and garnish vary; this draft omits alcohol and requires cultural and test-kitchen review.",
+  "shortDescription": "Yakgwa — \"medicine cookie,\" named for the era when honey was the pharmacy — is a fried pastry of wheat, sesame oil, honey, ginger, and a splash of rice wine, soaked in a hot ginger-honey syrup after i",
+  "culturalContext": "Yakgwa — \"medicine cookie,\" named for the era when honey was the pharmacy — is a fried pastry of wheat, sesame oil, honey, ginger, and a splash of rice wine, soaked in a hot ginger-honey syrup after its fry. It is the Korean table's oldest continuous confection, the royal and the temple and the holiday table's sweet, and its craft is a paradox worth learning: a dough so tender it must rest to be handled, fried gently in oil that never runs hot, then drowned in syrup until it turns translucent-gold. The cookie that results keeps for weeks and tastes deeper on day three.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 18,
+  "yield": 24,
   "servingUnit": "cookies",
   "prepTime": {
     "minutes": 30,
-    "display": "30 minutes"
+    "display": "30 minutes, plus 1 hour resting"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 35,
-    "display": "35 minutes"
+    "minutes": 40,
+    "display": "40 minutes (two-stage fry)"
   },
   "restTime": {
     "minutes": 120,
     "display": "2 hours soaking"
   },
   "totalTime": {
-    "minutes": 185,
-    "display": "About 3 hours 5 minutes"
+    "minutes": 140,
+    "display": "About 2 hours 20 minutes"
   },
   "equipment": [
     "Digital scale",
@@ -68,7 +68,9 @@
           "customaryUnit": "cups",
           "preparation": "spooned and leveled",
           "optional": false,
-          "allergenNotes": ["wheat/gluten"]
+          "allergenNotes": [
+            "wheat/gluten"
+          ]
         },
         {
           "id": "sesame-oil",
@@ -79,7 +81,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "honey",
@@ -283,8 +287,16 @@
     "Serve one small cookie with unsweetened tea.",
     "Cut for diners who need smaller portions."
   ],
-  "menuPairings": ["M09", "SF07", "B11", "F05"],
-  "relatedRecipeIds": ["D02", "D04"],
+  "menuPairings": [
+    "M09",
+    "SF07",
+    "B11",
+    "F05"
+  ],
+  "relatedRecipeIds": [
+    "D02",
+    "D04"
+  ],
   "faq": [
     {
       "question": "Can I taste the dough?",
@@ -315,6 +327,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#D03, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Raw-flour safety: https://www.fda.gov/consumers/consumer-updates/flour-raw-food-and-other-safety-facts",
     "Cultural orientation: https://www.maangchi.com/recipe/yakgwa",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."

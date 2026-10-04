@@ -10,8 +10,8 @@
   "publicReleaseOrder": 36,
   "canonicalSlug": "gyeran-jjim-steamed-eggs",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/gyeran-jjim-steamed-eggs/",
-  "shortDescription": "Eggs are gently cooked with anchovy-kelp broth until softly set and steaming, then finished with scallion and sesame oil.",
-  "culturalContext": "Gyeran jjim is a Korean steamed or gently simmered egg dish. Vessel, broth, toppings, and texture vary from silky home versions to puffed earthenware presentations.",
+  "shortDescription": "Gyeran jjim is the banchan that arrives still boiling: eggs whipped with water and a whisper of salt, steamed in a small pot or earthenware vessel until they rise into a golden, soufflé-soft cloud, fi",
+  "culturalContext": "Gyeran jjim is the banchan that arrives still boiling: eggs whipped with water and a whisper of salt, steamed in a small pot or earthenware vessel until they rise into a golden, soufflé-soft cloud, finished with scallion and sesame oil and served sizzling. It is the grill table's hot custard — the dish the table shares spoon-first straight from the vessel, and the one that vanishes in ninety seconds flat. The craft is one ratio (egg to water) and one heat law (gentle, lidded, undisturbed).",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 4,
+  "yield": 2,
   "servingUnit": "side-dish servings",
   "prepTime": {
-    "minutes": 10,
-    "display": "10 minutes"
+    "minutes": 5,
+    "display": "5 minutes"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 15,
-    "display": "15 minutes"
+    "minutes": 12,
+    "display": "12 minutes"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 28,
-    "display": "About 28 minutes"
+    "minutes": 17,
+    "display": "About 17 minutes"
   },
   "equipment": [
     "Small heavy saucepan with lid or heat-safe earthenware pot",
@@ -64,7 +64,9 @@
           "customaryUnit": "large eggs",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["egg"]
+          "allergenNotes": [
+            "egg"
+          ]
         },
         {
           "id": "anchovy-kelp-broth",
@@ -75,7 +77,9 @@
           "customaryUnit": "cups",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         },
         {
           "id": "fine-salt",
@@ -108,7 +112,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -213,9 +219,19 @@
   "storage": "Refrigerate within 2 hours in a covered shallow container and use within 4 days pending food-safety approval.",
   "reheating": "Reheat gently until the center reaches 165°F / 74°C and is steaming.",
   "leftovers": "Use properly refrigerated leftovers promptly; the texture will be firmer.",
-  "servingSuggestions": ["Serve immediately with rice and grilled foods."],
-  "menuPairings": ["M07", "SF02", "F07", "SA02"],
-  "relatedRecipeIds": ["B11", "B13"],
+  "servingSuggestions": [
+    "Serve immediately with rice and grilled foods."
+  ],
+  "menuPairings": [
+    "M07",
+    "SF02",
+    "F07",
+    "SA02"
+  ],
+  "relatedRecipeIds": [
+    "B11",
+    "B13"
+  ],
   "faq": [
     {
       "question": "Why did the eggs turn rubbery?",
@@ -229,7 +245,10 @@
   "seoTitle": "Gyeran Jjim Korean Steamed Eggs",
   "metaDescription": "Make tender Korean gyeran jjim with anchovy-kelp broth, gentle heat, steam-burn precautions, and a verified 160°F / 71°C center.",
   "primaryKeyword": "gyeran jjim recipe",
-  "secondaryTopics": ["Korean steamed eggs", "egg banchan"],
+  "secondaryTopics": [
+    "Korean steamed eggs",
+    "egg banchan"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -242,6 +261,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B12, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Maangchi gyeranjjim technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/gyeranjjim",
     "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

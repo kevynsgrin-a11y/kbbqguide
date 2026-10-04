@@ -10,8 +10,8 @@
   "publicReleaseOrder": 70,
   "canonicalSlug": "jeonbok-gui-grilled-abalone",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jeonbok-gui-grilled-abalone/",
-  "shortDescription": "Cleaned abalone is removed from the shell, trimmed, scored, and grilled briefly with garlic-sesame seasoning until firm and safely cooked.",
-  "culturalContext": "Jeonbok gui refers to grilled abalone in Korean cooking. Cleaning, whether viscera are used, seasoning, shell presentation, and tenderness vary; this conservative draft discards viscera and requires market and cultural review.",
+  "shortDescription": "Abalone is the coastal grill's ceremony dish — the shell itself the vessel, the meat cooked in minutes with nothing but butter, garlic, and the abalone's own juices.",
+  "culturalContext": "Abalone is the coastal grill's ceremony dish — the shell itself the vessel, the meat cooked in minutes with nothing but butter, garlic, and the abalone's own juices. Jeonbok gui runs on the same doneness law as squid (#SF04) in reverse miniature: abalone is tender for a very short window and rubber on either side of it. The whole record is that window, plus the ceremony of serving eight shells, still sizzling, to a table that goes quiet.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 25,
-    "display": "25 minutes"
+    "minutes": 20,
+    "display": "20 minutes"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 8,
-    "display": "6 to 8 minutes"
+    "minutes": 6,
+    "display": "6 minutes"
   },
   "restTime": {
     "minutes": 2,
     "display": "2 minutes"
   },
   "totalTime": {
-    "minutes": 35,
-    "display": "About 35 minutes"
+    "minutes": 30,
+    "display": "About 30 minutes"
   },
   "equipment": [
     "Stiff clean brush",
@@ -68,7 +68,9 @@
           "customaryUnit": "medium abalone",
           "preparation": "source label retained",
           "optional": false,
-          "allergenNotes": ["shellfish"]
+          "allergenNotes": [
+            "shellfish"
+          ]
         }
       ]
     },
@@ -107,7 +109,10 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "sesame-oil",
@@ -118,7 +123,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -222,9 +229,19 @@
   "storage": "Refrigerate cooked abalone within 2 hours and use within 2 days pending review.",
   "reheating": "Reheat gently to 165°F / 74°C until steaming; overcooking may toughen it.",
   "leftovers": "Use properly refrigerated leftovers within the approved window.",
-  "servingSuggestions": ["Serve sliced with rice and fresh sides."],
-  "menuPairings": ["B13", "F06", "SA01", "D05"],
-  "relatedRecipeIds": ["SF13", "SF15"],
+  "servingSuggestions": [
+    "Serve sliced with rice and fresh sides."
+  ],
+  "menuPairings": [
+    "B13",
+    "F06",
+    "SA01",
+    "D05"
+  ],
+  "relatedRecipeIds": [
+    "SF13",
+    "SF15"
+  ],
   "faq": [
     {
       "question": "Can I use the viscera?",
@@ -238,7 +255,10 @@
   "seoTitle": "Jeonbok Gui Korean Grilled Abalone",
   "metaDescription": "Make jeonbok gui with labeled live abalone, cut-safe cleaning, discarded viscera, cross-contact controls, a 145°F / 63°C check, and manageable slicing.",
   "primaryKeyword": "jeonbok gui",
-  "secondaryTopics": ["Korean grilled abalone", "abalone cleaning"],
+  "secondaryTopics": [
+    "Korean grilled abalone",
+    "abalone cleaning"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -251,6 +271,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF14, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Locked jeonbok-gui formulation requires Korean food-editor, seafood-market, and qualified shellfish safety review.",
     "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

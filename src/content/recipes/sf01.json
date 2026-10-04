@@ -10,8 +10,8 @@
   "publicReleaseOrder": 8,
   "canonicalSlug": "gochujang-grilled-shrimp",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/gochujang-grilled-shrimp/",
-  "shortDescription": "Large shrimp briefly marinated in gochujang, soy, honey, garlic, ginger, rice vinegar, and sesame, then skewered and grilled until opaque.",
-  "culturalContext": "Gochujang is widely used in Korean cooking, including marinades and glazes. This grilled-shrimp formula is a contemporary adaptation for this guide and is not presented as a regionally fixed or ancient dish.",
+  "shortDescription": "Shrimp are the fastest protein at any grill, and the gochujang glaze is the loudest flavor on this site's seafood list; together they make the record that converts skeptics at a mixed grill.",
+  "culturalContext": "Shrimp are the fastest protein at any grill, and the gochujang glaze is the loudest flavor on this site's seafood list; together they make the record that converts skeptics at a mixed grill. The law is one sentence: glaze at the end, never at the start. Shrimp cook in three minutes and the paste burns in two — the glaze goes on when the shrimp are already almost done.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 4,
+  "yield": 3,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes, plus 30 minutes marinating"
   },
   "marinateTime": {
     "minutes": 15,
     "display": "10 to 15 minutes"
   },
   "cookTime": {
-    "minutes": 8,
-    "display": "6 to 8 minutes"
+    "minutes": 6,
+    "display": "6 minutes"
   },
   "restTime": {
     "minutes": 0,
     "display": "No required rest"
   },
   "totalTime": {
-    "minutes": 43,
-    "display": "43 minutes"
+    "minutes": 25,
+    "display": "About 25 minutes"
   },
   "equipment": [
     "Nonreactive mixing bowl",
@@ -69,7 +69,9 @@
           "customaryUnit": "pounds",
           "preparation": "refrigerator-thawed if frozen, peeled and deveined; tails optional",
           "optional": false,
-          "allergenNotes": ["shellfish"]
+          "allergenNotes": [
+            "shellfish"
+          ]
         }
       ]
     },
@@ -86,7 +88,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten may be present; check label"
+          ]
         },
         {
           "id": "soy-sauce",
@@ -97,7 +102,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "honey",
@@ -130,7 +138,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "garlic",
@@ -191,7 +201,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten may be present; check label"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten may be present; check label"
+        ]
       },
       {
         "id": "soy-sauce",
@@ -202,7 +215,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "honey",
@@ -235,7 +251,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "garlic",
@@ -409,8 +427,16 @@
     "Serve with rice and crisp cucumber or fresh greens to balance the spicy glaze.",
     "Keep raw-seafood tools and platters away from finished banchan and sauces."
   ],
-  "menuPairings": ["B25", "F03", "SA03", "D02"],
-  "relatedRecipeIds": ["SF15", "SF02"],
+  "menuPairings": [
+    "B25",
+    "F03",
+    "SA03",
+    "D02"
+  ],
+  "relatedRecipeIds": [
+    "SF15",
+    "SF02"
+  ],
   "faq": [
     {
       "question": "How long should shrimp sit in gochujang marinade?",
@@ -443,6 +469,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF01, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Gochujang culinary context: https://en.wikipedia.org/wiki/Gochujang (secondary overview only; Korean cultural review required).",
     "Seafood doneness and beef/seafood temperature reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "Grilling, no-rinsing, and cross-contact reference verified 2026-07-14: https://www.foodsafety.gov/blog/how-grill-safely-summer",

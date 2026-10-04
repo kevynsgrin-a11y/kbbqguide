@@ -10,8 +10,8 @@
   "publicReleaseOrder": 74,
   "canonicalSlug": "jogae-gui-grilled-clams",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jogae-gui-grilled-clams/",
-  "shortDescription": "Live hard-shell clams are scrubbed, grilled covered until they open, and finished with garlic-scallion butter; every non-opening clam is discarded.",
-  "culturalContext": "Jogae gui broadly means grilled shellfish and may include varied species, table-grill service, sauces, and coastal restaurant presentations. This draft narrows the method to sourced live hard-shell clams and requires species-specific review.",
+  "shortDescription": "Jogae gui is the plainest shellfish record and the one every grill bar runs all summer: a mesh of clams on the grate, a bowl of dipping sauce, and the shells opening on their own schedule — each one p",
+  "culturalContext": "Jogae gui is the plainest shellfish record and the one every grill bar runs all summer: a mesh of clams on the grate, a bowl of dipping sauce, and the shells opening on their own schedule — each one pulled the moment it gapes and eaten hot with the dip. No butter, no build: the clam's own liquor and the salt-soy dip are the entire dish. The technique is the purge before and the eye at the fire after.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 25,
-    "display": "25 minutes"
+    "minutes": 15,
+    "display": "15 minutes (plus 30 minutes purging)"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 10,
-    "display": "6 to 10 minutes"
+    "minutes": 8,
+    "display": "8 minutes"
   },
   "restTime": {
     "minutes": 2,
     "display": "2 minutes"
   },
   "totalTime": {
-    "minutes": 37,
-    "display": "About 35 to 40 minutes"
+    "minutes": 55,
+    "display": "About 55 minutes, mostly purging"
   },
   "equipment": [
     "Colander",
@@ -66,7 +66,9 @@
           "customaryUnit": "clams",
           "preparation": "shells intact and closed or closing when tapped",
           "optional": false,
-          "allergenNotes": ["shellfish"]
+          "allergenNotes": [
+            "shellfish"
+          ]
         },
         {
           "id": "oil",
@@ -110,7 +112,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["dairy"]
+          "allergenNotes": [
+            "dairy"
+          ]
         },
         {
           "id": "gochugaru",
@@ -232,8 +236,16 @@
     "Serve immediately with a bowl for empty shells.",
     "Warn diners about hot shells and possible fragments."
   ],
-  "menuPairings": ["B14", "F07", "SA02", "D01"],
-  "relatedRecipeIds": ["SF14", "SF01"],
+  "menuPairings": [
+    "B14",
+    "F07",
+    "SA02",
+    "D01"
+  ],
+  "relatedRecipeIds": [
+    "SF14",
+    "SF01"
+  ],
   "faq": [
     {
       "question": "What if a clam stays closed?",
@@ -264,6 +276,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF15, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Seafood handling basis: https://www.fda.gov/consumers/consumer-updates/fresh-and-frozen-seafood-selecting-and-serving-it-safely",
     "Temperature and shell-opening basis: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
@@ -281,7 +294,10 @@
     "grillSurfacePreparation": "Preheat an outdoor covered grill and use a clean, stable grill-safe tray.",
     "stickingPrevention": "A stable tray keeps shells upright; no oil is needed on shells.",
     "approximateTime": "6 to 10 minutes, removing clams individually as they open.",
-    "donenessCues": ["Shell opens during cooking", "Meat is opaque and firm"],
+    "donenessCues": [
+      "Shell opens during cooking",
+      "Meat is opaque and firm"
+    ],
     "applicableTemperature": null,
     "shellOpeningAndDiscardGuidance": "Remove clams as they open and discard every clam that does not open during cooking; never pry a non-opening clam open to eat.",
     "crossContactNotes": [

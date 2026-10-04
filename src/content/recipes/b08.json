@@ -10,8 +10,8 @@
   "publicReleaseOrder": 19,
   "canonicalSlug": "musaengchae-spicy-radish-salad",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/musaengchae-spicy-radish-salad/",
-  "shortDescription": "Crisp Korean radish matchsticks are quickly seasoned with gochugaru, vinegar, fish sauce, garlic, scallions, sugar, and sesame for a bright sweet-tart banchan.",
-  "culturalContext": "Musaengchae is a fresh seasoned radish dish whose name refers to raw radish prepared as a salad-like banchan. Some versions are fish-free or less tart; this draft uses fish sauce and vinegar and is not presented as the only style.",
+  "shortDescription": "Musaengchae is the fresh, unfermented sibling of kkakdugi (#B02): the same radish and the same red seasonings, but matchsticks instead of cubes and a twenty-minute clock instead of a two-day ferment.",
+  "culturalContext": "Musaengchae is the fresh, unfermented sibling of kkakdugi (#B02): the same radish and the same red seasonings, but matchsticks instead of cubes and a twenty-minute clock instead of a two-day ferment. It is the traditional partner of the oily fish records — the mackerel (#SF07) and croaker (#SF09) tables almost always carry it — because radish's clean pepper-sweet snap and the dressing's light acid cut fish fat better than anything fermented.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,15 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 6,
+  "yield": 4,
   "servingUnit": "side-dish servings",
-  "prepTime": { "minutes": 25, "display": "25 minutes" },
-  "marinateTime": { "minutes": 10, "display": "10 minutes seasoning rest" },
-  "cookTime": { "minutes": 0, "display": "No cooking" },
-  "restTime": { "minutes": 0, "display": "No additional rest" },
-  "totalTime": { "minutes": 35, "display": "35 minutes" },
+  "prepTime": {
+    "minutes": 15,
+    "display": "15 minutes"
+  },
+  "marinateTime": {
+    "minutes": 10,
+    "display": "10 minutes seasoning rest"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No additional rest"
+  },
+  "totalTime": {
+    "minutes": 15,
+    "display": "15 minutes, best within a few hours"
+  },
   "equipment": [
     "Vegetable peeler",
     "Chef’s knife and cutting board or mandoline with hand guard",
@@ -83,7 +98,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         },
         {
           "id": "sugar",
@@ -138,7 +155,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": true,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -249,8 +268,16 @@
     "Serve with rice and grilled meat",
     "Use as a crisp component in bibimbap"
   ],
-  "menuPairings": ["M03", "SF13", "F03", "SA03"],
-  "relatedRecipeIds": ["B07", "B09"],
+  "menuPairings": [
+    "M03",
+    "SF13",
+    "F03",
+    "SA03"
+  ],
+  "relatedRecipeIds": [
+    "B07",
+    "B09"
+  ],
   "faq": [
     {
       "question": "Why add gochugaru before the liquid seasonings?",
@@ -273,9 +300,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["recipe card", "knife-safety notes", "allergen notes"],
+  "adExclusionZones": [
+    "recipe card",
+    "knife-safety notes",
+    "allergen notes"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B08, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary convention and sequencing reference: https://www.maangchi.com/recipe/musaeng-chae",
     "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Draft synthesized for this project; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."
