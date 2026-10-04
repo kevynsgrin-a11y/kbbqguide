@@ -1,0 +1,215 @@
+{
+  "id": "M02",
+  "corpus": {
+    "recordId": "kbbqguide#M02",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/mushroom-soy-beef-bulgogi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-beef",
+      "heading": "The beef",
+      "ingredients": [
+        {
+          "id": "sirloin-or-chuck-eye",
+          "item": "sirloin or chuck eye, sliced 1–2 mm against the grain",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "bulgogi-slice",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "dried-shiitake-mushrooms",
+          "item": "dried shiitake mushrooms",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "hot-water",
+          "item": "hot water, for soaking",
+          "metricAmount": 120,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 80,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-brown-sugar",
+          "item": "honey or brown sugar",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-wine-or-mirin",
+          "item": "rice wine or mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-onion",
+          "item": "/2 onion , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper",
+          "item": "/2 tsp black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , sliced king oyster or fresh shiitake for the moat, kimchi , sesame seeds and sliced scallion",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Whisk the marinade: strained soaking water (about 60 ml), soy, honey, rice wine, garlic, ginger, grated onion, sesame oil, pepper, and the mushroom paste. Add the beef and toss by hand until every shaving is coated. Press flat, cover, refrigerate 2 hours.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "taste the marinade on a fingertip before the beef goes in: salty first, savory-mushroom second, sweetness clearly behind both. If it tastes as sweet as #M01's slurry, the balance drifted — this lane keeps the sugar in the back seat.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Grill hot and in batches — charcoal or a smoking cast-iron pan. Single loose layer; the shavings take 60–90 seconds a side. Flip when the edges weep and color, pull when the raw red is just gone. Toss the sliced fresh and rehydrated mushrooms at the pan's edge in the rendering juice; they drink the marinade the meat leaves behind.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test off the grill: the edge should be savory-brown, the middle juicy, and the aftertaste should be mushroom and soy, not sugar. The mushrooms should be glossy and nearly meaty.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Serve over rice with the pan juice, scallion and sesame over everything.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the bowl test: juice over rice first, meat and mushrooms over, and the whole bowl should read as a deeper, more savory version of the classic — unmistakably the same family, unmistakably not the same dish.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "taste the marinade on a fingertip before the beef goes in: salty first, savory-mushroom second, sweetness clearly behind both. If it tastes as sweet as #M01's slurry, the balance drifted — this lane keeps the sugar in the back seat.",
+    "eating test off the grill: the edge should be savory-brown, the middle juicy, and the aftertaste should be mushroom and soy, not sugar. The mushrooms should be glossy and nearly meaty.",
+    "the bowl test: juice over rice first, meat and mushrooms over, and the whole bowl should read as a deeper, more savory version of the classic — unmistakably the same family, unmistakably not the same dish."
+  ],
+  "storageNotes": [
+    "Marinated beef keeps 24 hours refrigerated. Cooked, it keeps 3 days and makes an excellent bibimbap topping or mushroom-fried-rice base — the savoriness survives reheating better than the pear version.",
+    "Variations: add a teaspoon of gochujang for a faint spice line toward #M13; swap beef for chicken thighs (#M16 architecture); fold the leftover soaking water into doenjang jjigae instead of water."
+  ]
+}

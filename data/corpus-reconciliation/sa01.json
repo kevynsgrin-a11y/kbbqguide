@@ -1,0 +1,176 @@
+{
+  "id": "SA01",
+  "corpus": {
+    "recordId": "kbbqguide#SA01",
+    "tier": "C",
+    "path": "recipes/kbbqguide/sauces/classic-ssamjang.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-base",
+      "heading": "The base",
+      "ingredients": [
+        {
+          "id": "doenjang",
+          "item": "doenjang",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-corn-syrup",
+          "item": "honey or corn syrup",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "sesame seeds , lightly crushed",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-aromatics-the-part-that-separates-table-made",
+      "heading": "The aromatics (the part that separates table-made from jarred)",
+      "ingredients": [
+        {
+          "id": "garlic",
+          "item": "garlic , grated or minced to a near-paste",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , finely sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-asian-pear-or-apple",
+          "item": "/2 Asian pear or apple , grated — the traditional sweetener and the bowl's secret freshness",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-splash-of-mirin-or-water",
+          "item": "A splash of mirin or water , to loosen",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 15 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Blend the base: doenjang, gochujang, honey, sesame oil, worked to one uniform rust color.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "no light-brown streaks; one paste.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The pear in with its juice, the splash of mirin, then garlic, scallions, sesame. Fold to a spreadable paste — looser than jam, thicker than a dressing; it must cling to a lettuce leaf without pooling.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the raw-build taste test on the leaf: salty-fermented depth, pear's lift, garlic's bite, the scallion still crisp. This is the bowl.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "The cooked build (optional, for a mellower bowl)",
+      "action": "The cooked build (optional, for a mellower bowl): the blended paste simmered in a lightly oiled pan 3–4 minutes with a splash of water — the garlic rounds, the gochujang's raw edge cooks off, and the sauce keeps a day longer. The raw bowl is brighter; the cooked bowl is deeper; both are classic, and the choice is the table's.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the cooked build darkens a shade and smells toasted rather than sharp — pull it before the sugars catch (medium-low, stirring, no crisping).",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "no light-brown streaks; one paste.",
+    "the raw-build taste test on the leaf: salty-fermented depth, pear's lift, garlic's bite, the scallion still crisp. This is the bowl.",
+    "the cooked build darkens a shade and smells toasted rather than sharp — pull it before the sugars catch (medium-low, stirring, no crisping)."
+  ],
+  "storageNotes": [
+    "Raw build keeps 3–4 days refrigerated; the cooked build a week. The bowl actually improves overnight as the pear and garlic marry — make it the morning of the grill.",
+    "Variations: a spoon of crushed walnuts (the picnic build); chopped kimchi brine-folded for the funk table; a teaspoon of miso in place of a third of the doenjang for a sweeter, rounder bowl — labeled as the fusion fork."
+  ]
+}

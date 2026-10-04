@@ -1,0 +1,165 @@
+{
+  "id": "F07",
+  "corpus": {
+    "recordId": "kbbqguide#F07",
+    "tier": "C",
+    "path": "recipes/kbbqguide/fresh/tomato-onion-sesame-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-vegetables",
+      "heading": "The vegetables",
+      "ingredients": [
+        {
+          "id": "ripe-but-firm-tomatoes",
+          "item": "ripe but firm tomatoes , cut into thick wedges",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": null,
+          "preparation": "about 450 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-sweet-onion",
+          "item": "/2 sweet onion , sliced paper-thin, soaked 10 minutes in cold water",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper-1-tsp-toasted-sesame-seeds",
+          "item": "Black pepper; 1 tsp toasted sesame seeds",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-gochugaru",
+          "item": "A pinch of gochugaru , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion-or-a-few-chives",
+          "item": "scallion or a few chives , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The dressing whisked — soy, honey, vinegar, sesame oil — and tasted: it should run lighter than the cabbage family's dressings (#F05), soy present but polite.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the spoon test: bright, mild-savory, the sesame forward. The tomato brings its own acid and sugar; the dressing frames it.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Wedges and onion folded in with spoons — one gentle turn, the tomatoes bruise at the second — pepper, sesame, scallion over.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: the wedge's cold burst, the onion's sweet crunch, the dressing's savory line through it. Beside jumulleok (#M06) — plain seared beef — this bowl is the plate's entire garnish department, and it is enough.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the spoon test: bright, mild-savory, the sesame forward. The tomato brings its own acid and sugar; the dressing frames it.",
+    "the eating test: the wedge's cold burst, the onion's sweet crunch, the dressing's savory line through it. Beside jumulleok (#M06) — plain seared beef — this bowl is the plate's entire garnish department, and it is enough."
+  ],
+  "storageNotes": [
+    "Eats within 2 hours; the dressed tomato keeps nothing. Dressing keeps a week.",
+    "Variations: cucumber wedges alongside the tomato; a few drops of yuja (#F05's jar) for the citrus fork; the same dressing over cold blanched green beans carries the method into autumn."
+  ]
+}

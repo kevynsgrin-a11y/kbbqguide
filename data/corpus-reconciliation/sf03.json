@@ -1,0 +1,160 @@
+{
+  "id": "SF03",
+  "corpus": {
+    "recordId": "kbbqguide#SF03",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/doenjang-butter-grilled-scallops.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-scallops",
+      "heading": "The scallops",
+      "ingredients": [
+        {
+          "id": "sea-scallops",
+          "item": "sea scallops , dry-packed , patted bone-dry",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 12,
+          "customaryUnit": "large",
+          "preparation": "about 500 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-baste",
+      "heading": "The baste",
+      "ingredients": [
+        {
+          "id": "unsalted-butter",
+          "item": "unsalted butter , melted",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "doenjang",
+          "item": "doenjang",
+          "metricAmount": 1.5,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 9 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "clove-garlic",
+          "item": "clove garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-finish-and-table",
+      "heading": "The finish and table",
+      "ingredients": [
+        {
+          "id": "flaky-salt",
+          "item": "Flaky salt , sliced scallion , toasted sesame seeds",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Sear dry scallops, undisturbed, 90 seconds — no baste yet, because butter burns where the paste would scorch. The sear happens in plain fat and the flavor comes after.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "lift one: a deep golden-brown crust on the bottom face. No crust, back down — and if the pan was smoking hard, it ran a notch hot for butter's tolerance.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip, and baste the seared faces now — brush or spoon the doenjang-butter over each scallop, 60–90 seconds more, off the fire while the centers still carry the faintest translucence at the very core (carryover finishes them on the platter).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the basted tops should sit glossy and foamy-gold. A test scallop cut in half: opaque to within a few millimeters of the center, buttery, just springy. Fully opaque-through at the pan means slightly over — edible, but the next batch pulls 15 seconds sooner.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Flaky salt, scallion, sesame; serve immediately, off the shared platter, one or two per diner with rice beside.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: crust, then the sweet scallop burst, then doenjang's savory depth arriving on the butter — the three arriving in that order is the build working. Salty-only means the baste ran heavy on paste; a teaspoon, not a tablespoon, is the ratio.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "lift one: a deep golden-brown crust on the bottom face. No crust, back down — and if the pan was smoking hard, it ran a notch hot for butter's tolerance.",
+    "the basted tops should sit glossy and foamy-gold. A test scallop cut in half: opaque to within a few millimeters of the center, buttery, just springy. Fully opaque-through at the pan means slightly over — edible, but the next batch pulls 15 seconds sooner.",
+    "eating test: crust, then the sweet scallop burst, then doenjang's savory depth arriving on the butter — the three arriving in that order is the build working. Salty-only means the baste ran heavy on paste; a teaspoon, not a tablespoon, is the ratio."
+  ],
+  "storageNotes": [
+    "Scallops are cook-and-eat; raw ones keep 24 hours on ice in the fridge, no marinade. The baste keeps a week refrigerated and improves.",
+    "Variations: a drop of gochujang into the baste for heat; the same baste on king oyster mushroom slices for the table's vegetarians; stirred into rice at the end — the leftover baste's best job."
+  ]
+}

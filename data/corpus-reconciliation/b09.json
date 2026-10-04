@@ -1,0 +1,176 @@
+{
+  "id": "B09",
+  "corpus": {
+    "recordId": "kbbqguide#B09",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/gamja-jorim-soy-braised-potatoes.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-potatoes",
+      "heading": "The potatoes",
+      "ingredients": [
+        {
+          "id": "small-yellow-or-red-potatoes",
+          "item": "small yellow or red potatoes, cut into 3 cm chunks",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "skin on — the skin holds the chunk together through the braise",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-braise",
+      "heading": "The braise",
+      "ingredients": [
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 80,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "corn-syrup-or-honey",
+          "item": "corn syrup or honey",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil , off heat",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds-1-scallion",
+          "item": "toasted sesame seeds ; 1 scallion , sliced; a pinch of gochugaru or sliced chili , optional",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Oil and garlic in a wide pan over medium until the garlic just turns blond (30 seconds — blond, not brown; browned garlic runs bitter through a sweet braise), potatoes in, stirred to coat, 2 minutes of sizzling together.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the potato edges turn translucent-gold and the pan smells of toasted garlic — the braise's flavor floor just got laid.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Water, soy, corn syrup, and sugar in; stir, lid on, medium-low. Ten minutes at a gentle bubble, stirring once at the halfway mark.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a paring knife into the largest chunk slides in with no resistance — the potato is cooked, and everything from here is reduction, not cooking. If the knife catches, three more minutes, lid on.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Lid off, and the reduction — the technique",
+      "action": "Lid off, and the reduction — the technique. High-medium now, stirring and turning every 60–90 seconds as the liquid boils down. The braise goes from soupy to syrupy to glaze: the pan's liquids thicken, the sugars caramelize on the turned potato faces, and the potatoes bounce in a slow thick sizzle instead of a boil. Five to six minutes, off the heat the moment the glaze coats and the pan is nearly dry.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a test chunk: glazed dark at two or three faces, glossy, and it holds its shape but yields to the tooth — the braise has painted it, not dissolved it. Burnt-sugar smell is the one-second warning: off the heat now, not next stir. Sesame oil, seeds, scallion over, off the heat.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the potato edges turn translucent-gold and the pan smells of toasted garlic — the braise's flavor floor just got laid.",
+    "a paring knife into the largest chunk slides in with no resistance — the potato is cooked, and everything from here is reduction, not cooking. If the knife catches, three more minutes, lid on.",
+    "a test chunk: glazed dark at two or three faces, glossy, and it holds its shape but yields to the tooth — the braise has painted it, not dissolved it. Burnt-sugar smell is the one-second warning: off the heat now, not next stir. Sesame oil, seeds, scallion over, off the heat."
+  ],
+  "storageNotes": [
+    "Keeps 3 days refrigerated and reheats beautifully (pan, medium, 3 minutes, a splash of water to loosen the glaze) — the make-ahead banchan par excellence, arguably better on day two.",
+    "Variations: the same braise on lotus root (#B18) and on quail eggs (#B19); a chili half in the braise for the drinking table; day-after glazed potatoes beside a fried egg is the lunchbox classic."
+  ]
+}

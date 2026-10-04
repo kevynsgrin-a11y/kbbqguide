@@ -1,0 +1,165 @@
+{
+  "id": "B04",
+  "corpus": {
+    "recordId": "kbbqguide#B04",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/baechu-geotjeori-fresh-kimchi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-cabbage-and-salt",
+      "heading": "The cabbage and salt",
+      "ingredients": [
+        {
+          "id": "2-large-head-napa-cabbage",
+          "item": "/2 large head napa cabbage , cut into 4 cm lengths",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 1 kg",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt , plus more to taste",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 18 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce-or-1-tbsp-soy-sauce-for-the-v",
+          "item": "fish sauce — or 1 tbsp soy sauce for the vegan table",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar-or-honey",
+          "item": "sugar or honey",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , sliced; 1/2 Asian pear , in fine matchsticks; 1 tsp sesame seeds",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Gochugaru, fish sauce, garlic, ginger, and sugar worked to a paste, loosened with a tablespoon of the cabbage's rinse water; pear matchsticks and scallion folded through.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the paste tastes complete and slightly over-strong (sweet-savory-hot with a raw gochugaru edge) — the cabbage's water rounds it within the hour.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The squeezed cabbage and the dressing tossed together by hand, massaged for a full minute so every leaf's surface takes the paste, sesame oil and seeds last.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the bowl test, ten minutes after mixing: crisp, wet-crunchy leaves, the dressing clinging rather than pooling, the flavor fully arrived — bright, sweet-hot, green. No sourness, and none expected: geotjeori's identity is the absence of the ferment.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the paste tastes complete and slightly over-strong (sweet-savory-hot with a raw gochugaru edge) — the cabbage's water rounds it within the hour.",
+    "the bowl test, ten minutes after mixing: crisp, wet-crunchy leaves, the dressing clinging rather than pooling, the flavor fully arrived — bright, sweet-hot, green. No sourness, and none expected: geotjeori's identity is the absence of the ferment."
+  ],
+  "storageNotes": [
+    "Best within 3 hours, acceptable at a day refrigerated, wrong at two — this is a make-and-eat bowl.",
+    "Variations: cucumber-geotjeori (#B03's instant cousin); a spoon of the leftover dressing makes instant radish geotjeori; the fermented commitment is B01."
+  ]
+}

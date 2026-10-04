@@ -1,0 +1,244 @@
+{
+  "id": "SF06",
+  "corpus": {
+    "recordId": "kbbqguide#SF06",
+    "tier": "B",
+    "path": "recipes/kbbqguide/seafood/jjukkumi-gui-grilled-baby-octopus.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-octopus",
+      "heading": "The octopus",
+      "ingredients": [
+        {
+          "id": "baby-octopus",
+          "item": "baby octopus , cleaned — beaks and innards removed, bodies left whole; thawed fully and patted dry if frozen",
+          "metricAmount": 800,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "jjukkumi",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-corn-syrup",
+          "item": "honey or corn syrup",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru-the-heat-dial-for-the-drinking",
+          "item": "gochugaru — the heat dial for the drinking table",
+          "metricAmount": 2,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 6 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-pan-mates",
+      "heading": "The pan-mates",
+      "ingredients": [
+        {
+          "id": "onion",
+          "item": "onion , thick-sliced into arcs",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , cut into 5 cm lengths",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "cabbage-or-perilla-leaves",
+          "item": "cabbage or perilla leaves, rough-torn",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "optional but traditional",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , mu sangchae or cucumber banchan , soju's ceremony",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 500 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Onion down first, octopus over",
+      "action": "Onion down first, octopus over. Lay the onion arcs across the hot oiled pan as a bed, and spread the marinated jjukkumi over and around them in a single layer — the bodies will curl and the tentacles tighten into little crowns as they hit.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a hard sizzle and steam rising off the marinade's water, sweet chile in the air within a minute. If the pan is quiet and pooling liquid, it was not hot enough — pull the batch, reheat, restart; jjukkumi boiled in marinade is rubber in glaze.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Turn with the tongs, two minutes at a time, glaze as it reduces",
+      "action": "Turn with the tongs, two minutes at a time, glaze as it reduces. The marinade's water cooks off and what remains on the pan thickens to a glaze that lacquers each octopus as you turn them through it — four to six minutes total. Scallions in for the last two. The bodies are done when they are firm-plump, glossy red-brown, and a body cut at the pan reads opaque to its center.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the pan should be nearly dry, everything coated brick-glossy, onion edges char-sweet and translucent. One test octopus whole: snap-tender (they are small — this is the tender side of octopus's law), sweet-heat lacquer, the ocean's sweetness under it. If any bite is rubbery, that piece needed one more minute in the reducing glaze — small octopus tenderizes briefly under heat before it tightens, unl",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Pan to the table on its trivet, sesame over, straight off the pan",
+      "action": "Pan to the table on its trivet, sesame over, straight off the pan. Jjukkumi's window is while the glaze still sizzles; rice in one hand, tongs in the other, the cabbage or perilla to wrap the sweetest, hottest ones.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the table test: a whole octopus over rice in one bite-set — glaze edge, snap, chew, heat blooming late — with the cold radish between rounds. The platter should be empty before the pan stops sizzling; that is not a metaphor, it is the recipe's honest clock.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The octopus: beaked and cleaned, dried, marinated 30 minutes, whole.",
+    "The pan: hot enough to sizzle hard on landing; onion bed down first; glaze reduces to lacquer in 4–6 minutes.",
+    "The pull: firm-plump glossy bodies, opaque at a test cut, snap-tender at the tooth.",
+    "The table: off the sizzling pan, rice and cold crunch in reach, platter empty before the pan cools."
+  ],
+  "storageNotes": [
+    "Marinated jjukkumi hold 24 hours refrigerated. Cooked, 2 days — chopped into fried rice or bibim-guksu (cold spicy noodles), where the leftover glaze seasons the whole bowl.",
+    "Variations: the big-octopus fork with the pre-simmer (#SF05); squid takes this same marinade and the #SF04 clock; a handful of rice cakes tossed onto the pan in the last three minutes is the tent's carb course and entirely correct."
+  ]
+}

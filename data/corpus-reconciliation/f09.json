@@ -1,0 +1,154 @@
+{
+  "id": "F09",
+  "corpus": {
+    "recordId": "kbbqguide#F09",
+    "tier": "C",
+    "path": "recipes/kbbqguide/fresh/watercress-apple-yuja-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-greens-and-fruit",
+      "heading": "The greens and fruit",
+      "ingredients": [
+        {
+          "id": "watercress",
+          "item": "watercress, thick stems trimmed, washed and spun dry",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "crisp-sweet-apple",
+          "item": "crisp sweet apple , cut into matchsticks",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 200 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "yuja-cheong-or-honey-plus-half-a-lemon-s",
+          "item": "yuja-cheong — or honey plus half a lemon's zest and juice",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "citron marmalade, about 25 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper-a-pinch-of-gochugaru",
+          "item": "Black pepper; a pinch of gochugaru",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The dressing whisked — yuja, vinegar, soy, sesame oil, gochugaru — into a light amber emulsion.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "tastes bright-citrus first, then sesame; distinctly lighter than the slaw's dressing (the watercress brings its own pepper, so the dressing steps back).",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Watercress and apple folded through with a lifting turn, sesame and pepper over.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: the pepper of the cress, the apple's cold sweet snap, the yuja's citrus-aromatics over both, and the sesame oil's warmth binding — the bowl should taste like winter's argument for eating greens anyway. Beside jangjorim's (#B20) salt-depth, it is exactly the bright counter the jar wants.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "tastes bright-citrus first, then sesame; distinctly lighter than the slaw's dressing (the watercress brings its own pepper, so the dressing steps back).",
+    "the eating test: the pepper of the cress, the apple's cold sweet snap, the yuja's citrus-aromatics over both, and the sesame oil's warmth binding — the bowl should taste like winter's argument for eating greens anyway. Beside jangjorim's (#B20) salt-depth, it is exactly the bright counter the jar wants."
+  ],
+  "storageNotes": [
+    "Eats within the hour; the dressing keeps a week in a jar and improves.",
+    "Variations: Asian pear for apple (#F06's bridge); blanched minari for watercress; the dressing over winter citrus segments alone as a dessert-adjacent bowl."
+  ]
+}

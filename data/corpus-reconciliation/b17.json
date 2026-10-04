@@ -1,0 +1,187 @@
+{
+  "id": "B17",
+  "corpus": {
+    "recordId": "kbbqguide#B17",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/doraji-muchim-spicy-bellflower-root.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-bellflower-root",
+      "heading": "The bellflower root",
+      "ingredients": [
+        {
+          "id": "fresh-doraji",
+          "item": "fresh doraji , or 150 g dried, soaked 3 hours",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "bellflower root",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt , for the 30-minute cure",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-seasoning",
+      "heading": "The seasoning",
+      "ingredients": [
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 9 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce-or-soy-sauce",
+          "item": "fish sauce or soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-sugar-or-honey",
+          "item": "/2 tsp sugar or honey",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-few-drops-of-rice-vinegar",
+          "item": "A few drops of rice vinegar , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 2 ml",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Blanch the cured, squeezed ribbons 3–4 minutes in unsalted boiling water — they should turn from opaque white to translucent-edged, still crunchy.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a test ribbon bends into a U without breaking and keeps an audible crunch at the tooth. Overcooked doraji loses the crunch that is its whole identity; pull it while it still seems slightly too firm.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Cold rinse, drain, squeeze once more (gently this time — it has given enough), and cut into shorter lengths if it came in ribbons longer than 8 cm.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the ribbons are dry to the touch and springy.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "The seasoning bowl: gochugaru, fish sauce, garlic, sugar, sesame oil worked to a paste; the warm-not-hot ribbons tossed through with the full-minute hand massage the namul family demands (#B16's law), scallions and sesame last.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: crunch first, the mild-bitter vegetal note under it, the dressing's savory-heat arriving second, and the slight bitterness lingering as the finish — that finish is doraji's signature, the reason it has kept its seat at the table beside sweeter vegetables that try harder to please.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "a test ribbon bends into a U without breaking and keeps an audible crunch at the tooth. Overcooked doraji loses the crunch that is its whole identity; pull it while it still seems slightly too firm.",
+    "the ribbons are dry to the touch and springy.",
+    "the eating test: crunch first, the mild-bitter vegetal note under it, the dressing's savory-heat arriving second, and the slight bitterness lingering as the finish — that finish is doraji's signature, the reason it has kept its seat at the table beside sweeter vegetables that try harder to please."
+  ],
+  "storageNotes": [
+    "Keeps 2–3 days refrigerated; the dressed ribbons hold crunch better than the blanched ones alone. Dried doraji, unsoaked, keeps a year in the pantry.",
+    "Variations: milder (half the gochugaru) as bibimbap's white vegetable; mixed with cucumber matchsticks for a summer crunch bowl; the blanched ribbons simply dressed with sesame oil and salt — the subtle fork the connoisseurs order."
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "B21",
+  "corpus": {
+    "recordId": "kbbqguide#B21",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/korean-potato-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-potatoes",
+      "heading": "The potatoes",
+      "ingredients": [
+        {
+          "id": "russet-or-yukon-gold-potatoes",
+          "item": "russet or yukon gold potatoes, peeled, cut into 4 cm chunks",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-bind-and-the-mix-ins",
+      "heading": "The bind and the mix-ins",
+      "ingredients": [
+        {
+          "id": "kewpie-style-japanese-mayonnaise-the-one",
+          "item": "Kewpie-style Japanese mayonnaise — the one non-negotiable brand-loyalty in this record",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 45 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-fine-salt",
+          "item": "/2 tsp fine salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-small-apple",
+          "item": "/2 small apple , small-diced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-cucumber",
+          "item": "/2 cucumber , small-diced and salted 10 minutes",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "hard-boiled-eggs",
+          "item": "hard-boiled eggs , chopped",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 100 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion-or-2-tbsp-minced-onion",
+          "item": "scallion or 2 tbsp minced onion , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Rice the potatoes or mash them coarse — deliberately coarse, with visible small chunks left in. Korean potato salad is not a smooth puree; the texture target is \"mostly mashed, part smashed,\" with bits that keep the bowl interesting.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the mash holds a spoon's trail briefly and no water pools at the bowl's edge (if it does, the dry-steam was skipped — work quickly now, the mayo comes later).",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Fold while just-warm — this is the timing law: the sugar, salt, and about two-thirds of the mayo folded into warm potato (it melts in and seasons evenly), then the apple, squeezed cucumber, eggs, and scallion folded in as it cools.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the fold test at the end: the mix-ins distribute without mashing further, and every spoonful carries apple and egg — it should look generous, not potato-with-flecks.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Chill 30 minutes minimum — the bowl is served cold, and the flavors need the chill to marry. The remaining mayo over the top, a grind of pepper.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test, cold: soft-sweet, the apple's crisp-sweet snap and the cucumber's cool, the egg's richness, mayo's tang behind everything — a children's champion with a grown-up following, and the perfect cooling counter at a heavy grill table.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the mash holds a spoon's trail briefly and no water pools at the bowl's edge (if it does, the dry-steam was skipped — work quickly now, the mayo comes later).",
+    "the fold test at the end: the mix-ins distribute without mashing further, and every spoonful carries apple and egg — it should look generous, not potato-with-flecks.",
+    "the eating test, cold: soft-sweet, the apple's crisp-sweet snap and the cucumber's cool, the egg's richness, mayo's tang behind everything — a children's champion with a grown-up following, and the perfect cooling counter at a heavy grill table."
+  ],
+  "storageNotes": [
+    "Keeps 2 days refrigerated (the cucumber's clock) — a picnic and lunchbox staple by tradition.",
+    "Variations: raisins or canned fruit cocktail folded in (the old-school café build, sweeter than modern taste but the grandmothers' original); the macaroni sibling (#B22); a layer of the salad inside a gimbap roll — its most beloved deployment."
+  ]
+}

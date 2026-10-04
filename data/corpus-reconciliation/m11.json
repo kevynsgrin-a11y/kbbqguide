@@ -1,0 +1,182 @@
+{
+  "id": "M11",
+  "corpus": {
+    "recordId": "kbbqguide#M11",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/gochujang-samgyeopsal.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-pork",
+      "heading": "The pork",
+      "ingredients": [
+        {
+          "id": "pork-belly",
+          "item": "pork belly, skin off, cut into slabs 1 cm thick",
+          "metricAmount": 1.2,
+          "metricUnit": "kg",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "slightly thinner than the classic — the paste wants faster cooking",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-paste",
+      "heading": "The paste",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru , for the heat-forward table",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "lettuce-and-perilla-ssam",
+          "item": "Lettuce and perilla ssam, ssamjang thinned with a splash of water for dipping, kimchi , steamed rice , garlic coins and green chili slices",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "#SA01",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Slabs on the pan in a single layer, medium-low. The first minutes are quiet rendering again — the paste darkens one shade at the edges and the fat begins to gloss the pan. Turn every 90 seconds.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the paste should deepen toward brick and smell toasted-chile-sweet, not burnt. Any black edges on the first turn mean the flame is a notch high — lower it and the batch is fine.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "At 12–14 minutes, scissors into bite pieces directly on the pan, toss in the hot fat 60 seconds for the crisp lacquered faces, and pull to the platter.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "test piece: crisp lacquered edge, the three-layer belly interior, then the paste's ferment-heat arriving after the fat. If the heat lands before the pork, the film was thick — thinner next batch.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Ssam sequence as the classic: leaf, thin ssamjang swipe, hot pork piece, garlic or chili, fold, one bite. Rice and kimchi between.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the ssam test should read as the classic's rich cousin — same crisp, same fat, a red edge on the flavor — not as a sweet-spicy pork candy. When in doubt, thin the paste further; the pork is the headline.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the paste should deepen toward brick and smell toasted-chile-sweet, not burnt. Any black edges on the first turn mean the flame is a notch high — lower it and the batch is fine.",
+    "test piece: crisp lacquered edge, the three-layer belly interior, then the paste's ferment-heat arriving after the fat. If the heat lands before the pork, the film was thick — thinner next batch.",
+    "the ssam test should read as the classic's rich cousin — same crisp, same fat, a red edge on the flavor — not as a sweet-spicy pork candy. When in doubt, thin the paste further; the pork is the headline."
+  ],
+  "storageNotes": [
+    "Painted slabs hold 24 hours refrigerated (the curing clock is running). Cooked, 3 days; dice into fried rice or fold into a lunchbox gimbap-style roll.",
+    "Variations: the undressed classic (#M10) is the parent; a spoon of the paste into the ssamjang dip instead of onto the meat splits the difference; kimchi beside the slabs on the pan, same as ever."
+  ]
+}

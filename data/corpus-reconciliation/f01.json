@@ -1,0 +1,182 @@
+{
+  "id": "F01",
+  "corpus": {
+    "recordId": "kbbqguide#F01",
+    "tier": "C",
+    "path": "recipes/kbbqguide/fresh/ssam-lettuce-and-herb-platter.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-leaves-the-wrap-chassis-a-generous-double-ha",
+      "heading": "The leaves (the wrap chassis — a generous double-handful of leaves per person)",
+      "ingredients": [
+        {
+          "id": "green-leaf-lettuce-the-everyday-wrap",
+          "item": "green leaf lettuce — the everyday wrap, mild cup",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "head",
+          "preparation": "about 300 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "red-leaf-or-butter-lettuce-the-tender-al",
+          "item": "red leaf or butter lettuce — the tender alternative",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "head",
+          "preparation": "about 250 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "perilla-leaves-the-flavor-wrap",
+          "item": "perilla leaves — the flavor wrap, anise-mint",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 20,
+          "customaryUnit": null,
+          "preparation": "kkaennip, about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "bunch-napa-cabbage-leaves",
+          "item": "bunch napa cabbage leaves, the tender inner ones , optional — the crisp snap wrap",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 200 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-herbs-and-crunch-threaded-into-the-wraps",
+      "heading": "The herbs and crunch (threaded into the wraps)",
+      "ingredients": [
+        {
+          "id": "bunch-watercress-or-minari",
+          "item": "bunch watercress or minari",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "small",
+          "preparation": "about 50 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic-cloves",
+          "item": "Garlic cloves, sliced into thick coins , raw",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "green-chili-or-jalape-o",
+          "item": "Green chili or jalapeño, sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thinly-sliced-onion",
+          "item": "Thinly sliced onion, soaked 10 minutes in cold water",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 100 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table-s-other-half-beside-the-platter-from-t",
+      "heading": "The table's other half (beside the platter, from this site)",
+      "ingredients": [
+        {
+          "id": "ssamjang",
+          "item": "Ssamjang , gireumjang , the scallion-soy dip , a bowl of rice, and the banchan board",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "#SA01",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "The platter's arrangement — bigger leaves under, herbs through",
+      "action": "The platter's arrangement — bigger leaves under, herbs through. The lettuce cups fanned around the platter's rim as the chassis layer, perilla and cabbage tucked inside the ring, garlic coins, chili, and drained onion in small piles at the center where every hand reaches.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the geometry test: every diner, from any seat, can reach a cup, a perilla leaf, and a center pile without asking anyone to pass. The platter turns; build it round.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "The wrap build, the table's own method",
+      "action": "The wrap build, the table's own method. The sequence this site's M-records keep citing: one leaf (or a lettuce cup lined with one perilla leaf — the double-bottom, the connoisseur's build), a thin swipe of ssamjang or a finger-dip of gireumjang, the meat while it is still hot, a garlic coin or chili slice or onion thread, a pinch of rice if the wrap runs meat-only, fold stem-side over, tuck the sides, one bite.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the fold closes without tearing and delivers everything in a single bite: that is the doneness of a ssam. Two bites means the leaf was overfilled; a torn wrap means the sauce ran to the fold — swipe thinner, higher.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "The pacing — the platter sets the meal's rhythm",
+      "action": "The pacing — the platter sets the meal's rhythm. Meat, wrap, rice, banchan, repeat. The leaves are the meal's brakes and its carriers; a table that runs out of leaves starts eating meat with chopsticks alone, and the meal quietly becomes a different, heavier thing.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the end-of-meal test: empty leaf platter, empty ssamjang bowl, and the grill's last pieces going into the last wraps — the platter planned to the end is the record's real success metric.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the geometry test: every diner, from any seat, can reach a cup, a perilla leaf, and a center pile without asking anyone to pass. The platter turns; build it round.",
+    "the fold closes without tearing and delivers everything in a single bite: that is the doneness of a ssam. Two bites means the leaf was overfilled; a torn wrap means the sauce ran to the fold — swipe thinner, higher.",
+    "the end-of-meal test: empty leaf platter, empty ssamjang bowl, and the grill's last pieces going into the last wraps — the platter planned to the end is the record's real success metric."
+  ],
+  "storageNotes": [
+    "Washed leaves keep 2–3 days in paper towel in a bag in the fridge — the make-ahead that makes a weeknight grill possible. Herbs, 2 days in water.",
+    "Variations: steamed cabbage leaves and blanched kale for winter's sturdy wraps; thin rice-paper wrappers at the table's edge for the fusion lane; the pickled perilla (#B24) as a wrap-within-a-wrap, the double-perilla build."
+  ]
+}

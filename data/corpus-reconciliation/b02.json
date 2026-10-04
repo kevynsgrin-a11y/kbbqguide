@@ -1,0 +1,198 @@
+{
+  "id": "B02",
+  "corpus": {
+    "recordId": "kbbqguide#B02",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/kkakdugi-radish-kimchi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-radish-and-the-salt",
+      "heading": "The radish and the salt",
+      "ingredients": [
+        {
+          "id": "korean-radish-or-daikon",
+          "item": "Korean radish or daikon, peeled, cut into 2.5 cm cubes",
+          "metricAmount": 1.5,
+          "metricUnit": "kg",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 45 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-paste-the-b01-family-recipe",
+      "heading": "The paste (the B01 family recipe)",
+      "ingredients": [
+        {
+          "id": "3-cup-gochugaru",
+          "item": "/3 cup gochugaru",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 35 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce",
+          "item": "fish sauce",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 45 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "salted-shrimp",
+          "item": "salted shrimp , optional",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "about 24 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-asian-pear",
+          "item": "/2 Asian pear , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 100 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , cut into batons",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water , or the drained brine",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The drained cubes and the paste folded together with your hands until every cube wears a coat and the bowl runs deep red-orange.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "taste a pasted cube raw: salty, savory-hot, the radish's sweet pepper under it. This is day zero — the flavor that ferments into the bowl.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Pack into a clean jar with 3 cm of headspace, pressed to squeeze out air, weight on top, loose lid — B01's entire packing law, unchanged.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "brine rises over the cubes within a day (top up with the saved brine or salted water if it lags — under-liquid is the safety architecture, same as the cabbage).",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Ferment at cool room temperature 1–2 days (radish runs faster than cabbage — its sugars are more available) until the brine fizzes faintly and the sourness arrives, then refrigerate.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "day-two taste: the cube snaps audibly, the paste's heat has rounded, a clean sour line on the finish. Kkakdugi's window from young-crunchy to complex-sour is weeks in the fridge, and its snap outlives cabbage's by a wide margin.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "taste a pasted cube raw: salty, savory-hot, the radish's sweet pepper under it. This is day zero — the flavor that ferments into the bowl.",
+    "brine rises over the cubes within a day (top up with the saved brine or salted water if it lags — under-liquid is the safety architecture, same as the cabbage).",
+    "day-two taste: the cube snaps audibly, the paste's heat has rounded, a clean sour line on the finish. Kkakdugi's window from young-crunchy to complex-sour is weeks in the fridge, and its snap outlives cabbage's by a wide margin."
+  ],
+  "storageNotes": [
+    "Refrigerated, honestly good a month — radish's crunch holds longer than cabbage's. The brine keeps serving (see Note) until the jar is empty.",
+    "Variations: the cabbage parent (#B01); cubed Asian pear folded in at packing (the palace style, sweet bursts); the same paste on cucumber runs #B03 at its faster clock."
+  ]
+}

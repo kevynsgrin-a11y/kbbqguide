@@ -1,0 +1,204 @@
+{
+  "id": "M14",
+  "corpus": {
+    "recordId": "kbbqguide#M14",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/ganjang-pork-bulgogi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-pork",
+      "heading": "The pork",
+      "ingredients": [
+        {
+          "id": "pork-shoulder-or-collar",
+          "item": "pork shoulder or collar, sliced 4 mm against the grain",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 80,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-brown-sugar",
+          "item": "honey or brown sugar",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 5,
+          "customaryUnit": "cloves",
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-onion",
+          "item": "/2 onion , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-asian-pear",
+          "item": "/2 Asian pear , grated, juice included here — this lane wants the juice",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper-1-tbsp-toasted-sesame",
+          "item": "/2 tsp black pepper ; 1 tbsp toasted sesame seeds",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , lettuce ssam, ssamjang , kimchi , gyeran mari rolled omelet for the kids' plate",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Medium-high fire, single loose layer, sixty to ninety seconds undisturbed. The wet marinade wants a hiss, not a roar — if it boils gray in its own liquid, the pan is crowded; lift half the batch off and do two rounds.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the slices take color at the edges while the marinade caramelizes on the pan behind them — the smell is sweet soy and pork fat, and the pan should be building a glossy brown film, not a watery boil.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip at the beading edge, 60–90 seconds more, pull while the centers still shine. Scrape the pan's caramelized juice into a small bowl as you go — over rice is where it lands.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "test piece: sweet-savory edge, juicy interior, no heat anywhere — the register should be round and gentle, with the pear as a perfume rather than a flavor.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Platter, sesame over; the bowl route (rice, juice, slices) and the ssam route both open.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the rice bowl test: the juice should be glossy brown and spoonable, milder than the marinade tasted raw — if it is syrupy-sweet, pull the honey back a tablespoon next batch.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the slices take color at the edges while the marinade caramelizes on the pan behind them — the smell is sweet soy and pork fat, and the pan should be building a glossy brown film, not a watery boil.",
+    "test piece: sweet-savory edge, juicy interior, no heat anywhere — the register should be round and gentle, with the pear as a perfume rather than a flavor.",
+    "the rice bowl test: the juice should be glossy brown and spoonable, milder than the marinade tasted raw — if it is syrupy-sweet, pull the honey back a tablespoon next batch."
+  ],
+  "storageNotes": [
+    "Marinated pork keeps 24 hours. Cooked, 3 days — leftover ganjang bulgogi over cold rice with a fried egg and a spoon of the reserved juice is the lunchbox move.",
+    "Variations: the spicy fork (#M13); add gochugaru by the half-teaspoon to walk this lane toward the heat gently; chicken thigh takes the same marinade (#M16)."
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "id": "B13",
+  "corpus": {
+    "recordId": "kbbqguide#B13",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/eomuk-bokkeum-stir-fried-fish-cake.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-fish-cake",
+      "heading": "The fish cake",
+      "ingredients": [
+        {
+          "id": "korean-fish-cake",
+          "item": "Korean fish cake , any mix of sheets and tubes, sliced into bite pieces",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "eomuk",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-stir-fry",
+      "heading": "The stir-fry",
+      "ingredients": [
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-onion",
+          "item": "/2 onion , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot , thin half-moons",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "corn-syrup-or-honey",
+          "item": "corn syrup or honey",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-splash-of-water",
+          "item": "A splash of water",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil , 1 tsp sesame seeds , 2 scallions cut into batons, a pinch of ground pepper",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Oil and garlic at medium-high until the garlic barely blonds, onion and carrot in, 90 seconds of high-heat softening — the vegetables should stay crisp-shouldered, not slack.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the pan smells of toasted garlic and sweet onion; the edges of the onion go translucent while its core stays white.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Fish cake in, stirred 2 minutes — it will soften a touch, flex, and its cut edges will sear lightly where they touch the pan.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the fish cake's surface changes from glossy-oily to matte and it bends without breaking — it is ready to take the sauce.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Soy, corn syrup, gochugaru, and the splash of water in, tossed every 30 seconds for 2–3 minutes as the liquid reduces and glosses everything.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the pan is nearly dry with a glossy film on every piece, the fish cake's edges caramelized in spots, the gochugaru's color even across the bowl. Off the heat: sesame oil, scallions, sesame. The eating test — a piece straight from the pan — should be sweet-savory with the fish cake's distinctive bounce and the scallion still raw-bright.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the pan smells of toasted garlic and sweet onion; the edges of the onion go translucent while its core stays white.",
+    "the fish cake's surface changes from glossy-oily to matte and it bends without breaking — it is ready to take the sauce.",
+    "the pan is nearly dry with a glossy film on every piece, the fish cake's edges caramelized in spots, the gochugaru's color even across the bowl. Off the heat: sesame oil, scallions, sesame. The eating test — a piece straight from the pan — should be sweet-savory with the fish cake's distinctive bounce and the scallion still raw-bright."
+  ],
+  "storageNotes": [
+    "Keeps 3 days refrigerated, honestly excellent cold in a lunchbox with rice; refresh in a pan for 90 seconds.",
+    "Variations: gochujang (a teaspoon) for the red-glaze fork; onion and jalapeño rounds for the drinking table; the same fish cake, unseasoned, into the soup pot with kelp stock is its other career."
+  ]
+}

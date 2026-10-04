@@ -1,0 +1,171 @@
+{
+  "id": "M06",
+  "corpus": {
+    "recordId": "kbbqguide#M06",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/jumulleok-sesame-garlic-steak-bites.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-beef",
+      "heading": "The beef",
+      "ingredients": [
+        {
+          "id": "sirloin-or-tenderloin",
+          "item": "sirloin or tenderloin, cut into 3 cm cubes",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "refrigerated until the toss — food safety is the one place this record is strict",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-toss",
+      "heading": "The toss",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 22 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 22 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-coarse-salt",
+          "item": "/2 tsp coarse salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper",
+          "item": "/2 tsp black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , gireumjang for extra dipping, kimchi , lettuce ssam",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 500 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Toss the first batch: meat into the bowl, hands or tongs, thirty seconds of turning until every cube wears the mix. Onto the hot grate with a finger's width between cubes — crowded cubes steam gray.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the cubes should hit with an aggressive sizzle and the sesame-garlic smell should rise immediately. No sizzle, no sear — pull the batch back and let the grate recover.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Grill 90 seconds undisturbed, turn each cube to a new face, another 90 seconds, then roll to the last faces for 30–60 seconds. Total cook: about 4 minutes for medium at 3 cm. Pull when the faces are browned and the cube feels softly springy at a finger press.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "cut one open at the grill station: a thin browned crust and a rosy interior. Gray to the center means the grate was too cool or the cubes too big — 3 cm is the ceiling.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Sesame seeds over, warm platter, straight to the table. Toss the next batch while the table eats this one — the rhythm of the record is toss, grill, eat, repeat, and the meat is at its best in the first minute off the fire.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: crust, juice, sesame. The center should taste of beef and black pepper more than soy — if it reads salty, the soy ran a teaspoon heavy; the toss is measured in grams for a reason.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the cubes should hit with an aggressive sizzle and the sesame-garlic smell should rise immediately. No sizzle, no sear — pull the batch back and let the grate recover.",
+    "cut one open at the grill station: a thin browned crust and a rosy interior. Gray to the center means the grate was too cool or the cubes too big — 3 cm is the ceiling.",
+    "eating test: crust, juice, sesame. The center should taste of beef and black pepper more than soy — if it reads salty, the soy ran a teaspoon heavy; the toss is measured in grams for a reason."
+  ],
+  "storageNotes": [
+    "This is a cook-and-eat record; the toss doesn't hold. Leftover cooked cubes keep 2 days and make the best fried rice in this whole category — the sesame-garlic crust re-toasts beautifully in a hot pan.",
+    "Variations: a teaspoon of gochugaru in the toss for slow heat; butter and a splash of soy in the last minute for a glaze finish; the same toss on a whole sliced skirt steak, grilled as sheets, is the fastest cousin of #M01 without the slurry."
+  ]
+}

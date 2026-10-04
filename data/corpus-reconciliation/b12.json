@@ -1,0 +1,115 @@
+{
+  "id": "B12",
+  "corpus": {
+    "recordId": "kbbqguide#B12",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/gyeran-jjim-steamed-eggs.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-eggs",
+      "heading": "The eggs",
+      "ingredients": [
+        {
+          "id": "eggs",
+          "item": "eggs , room temperature",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "large",
+          "preparation": "about 200 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "warm-water",
+          "item": "warm water",
+          "metricAmount": 160,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "or light anchovy-kelp stock, the deeper traditional build",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-fine-salt",
+          "item": "/2 tsp fine salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-drop-of-toasted-sesame-oil",
+          "item": "A drop of toasted sesame oil , 1 scallion sliced, 1 tsp sesame seeds , optional red chili thread",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 2 ml",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The egg mixture poured into the vessel, any additions (a single anchovy, a piece of fish cake) hidden at the bottom — the treasure custom. Lid on, vessel set over the lowest heat your stove holds (or into a steamer over gentle steam).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "nothing should happen visibly for 4–5 minutes — slow heat is the cloud's whole architecture. A rapid boil makes gray-rubbery eggs in eight minutes; resist checking.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Steam gently 10–12 minutes lidded, until the center has set to a soft tremble and the edges have pulled into a puffed, risen dome.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test at the pot: a spoon's edge should sink in with the faintest resistance and come away carrying a clean, moist, golden curd — softer than any omelet, just short of pourable. If the spoon comes away with weeping liquid, 90 more seconds; if the curd feels bouncy, it crossed into rubber — lower heat, next time.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Sesame oil, scallion, sesame, chili thread over, and the pot — still bubbling at the edges from its own heat — goes to the table on its trivet.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the shared-pot ritual: spoons in from every side while the surface still shivers, and the bowl empties before it stops steaming. That timing is the dish's true doneness.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "nothing should happen visibly for 4–5 minutes — slow heat is the cloud's whole architecture. A rapid boil makes gray-rubbery eggs in eight minutes; resist checking.",
+    "the eating test at the pot: a spoon's edge should sink in with the faintest resistance and come away carrying a clean, moist, golden curd — softer than any omelet, just short of pourable. If the spoon comes away with weeping liquid, 90 more seconds; if the curd feels bouncy, it crossed into rubber — lower heat, next time.",
+    "the shared-pot ritual: spoons in from every side while the surface still shivers, and the bowl empties before it stops steaming. That timing is the dish's true doneness."
+  ],
+  "storageNotes": [
+    "There is no storage — gyeran jjim exists for ninety seconds and then it is a memory. Raw whipped base holds 1 day refrigerated, covered.",
+    "Variations: cheese folded in mid-steam (the school-café fork); saeujeot or a hidden anchovy at the pot's floor; the individual ramekin service, one per diner, is the restaurant's (and the children's) preferred format."
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "F02",
+  "corpus": {
+    "recordId": "kbbqguide#F02",
+    "tier": "C",
+    "path": "recipes/kbbqguide/fresh/pajeori-korean-scallion-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-scallions",
+      "heading": "The scallions",
+      "ingredients": [
+        {
+          "id": "bundles-scallions",
+          "item": "bundles scallions , cut into 5 cm lengths, the whites halved lengthwise into thick ribbons",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "large",
+          "preparation": "about 300 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 6 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-sugar",
+          "item": "honey or sugar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar , optional but the table's brightness",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "clove-garlic",
+          "item": "clove garlic , grated, optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The cut scallions in the bowl; the dressing poured over — gochugaru, soy, honey, vinegar, sesame oil — and tossed with your hands for a full minute, squeezing the dressing gently through the ribbons as you turn them.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the scallions have just begun to glisten and bend — the salt starting its fast half-pickle — and every ribbon wears red-flecked gloss. It should taste sharp, savory, faintly sweet, with a slow gochugaru hum.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Sesame seeds over, one more toss, and the bowl goes to the table beside the meat.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: a pinch of pajeori and a piece of galbi (#M03) in the same bite — the scallion's snap and its clean heat cutting the marinated beef's sweetness. The bowl should empty at the pace of the meat; pajeori leftover at meal's end means the table missed its purpose.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the scallions have just begun to glisten and bend — the salt starting its fast half-pickle — and every ribbon wears red-flecked gloss. It should taste sharp, savory, faintly sweet, with a slow gochugaru hum.",
+    "the eating test: a pinch of pajeori and a piece of galbi (#M03) in the same bite — the scallion's snap and its clean heat cutting the marinated beef's sweetness. The bowl should empty at the pace of the meat; pajeori leftover at meal's end means the table missed its purpose."
+  ],
+  "storageNotes": [
+    "Eats best inside 30 minutes; a leftover bowl is tomorrow's noodle or fried-rice topping, still honest.",
+    "Variations: thin-sliced onion ribbons folded through; a pinch of black pepper for the beef records; the same dressing on shaved radish runs toward #B08's lane."
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": "B01",
+  "corpus": {
+    "recordId": "kbbqguide#B01",
+    "tier": "B",
+    "path": "recipes/kbbqguide/banchan/baechu-kimchi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-cabbage-and-the-salt-brining",
+      "heading": "The cabbage and the salt (brining)",
+      "ingredients": [
+        {
+          "id": "heads-napa-cabbage",
+          "item": "heads napa cabbage",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "large",
+          "preparation": "about 3 kg total",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "coarse-sea-salt-for-the-brine",
+          "item": "coarse sea salt for the brine",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": "about 200 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-paste",
+      "heading": "The paste",
+      "ingredients": [
+        {
+          "id": "korean-radish-or-daikon",
+          "item": "Korean radish or daikon, cut into fine matchsticks",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , cut into 4 cm lengths",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-asian-pear-or-1-small-apple",
+          "item": "/2 Asian pear or 1 small apple , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 100 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated or blitzed",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 8,
+          "customaryUnit": "cloves",
+          "preparation": "about 32 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 25 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce",
+          "item": "fish sauce",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 45 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "salted-shrimp",
+          "item": "salted shrimp , minced — the traditional depth, optional if unfindable",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "saeujeot, about 30 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru-mild-for-the-default-batch",
+          "item": "gochugaru — mild for the default batch",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "cup",
+          "preparation": "about 100 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-cup-water",
+          "item": "/2 cup water , or the saved brine",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "120 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "for-the-jar",
+      "heading": "For the jar",
+      "ingredients": [
+        {
+          "id": "glass-jar-or-onggi",
+          "item": "glass jar or onggi , clean and dry",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "large",
+          "preparation": "ceramic crock",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Dress the quarters, leaf by leaf, by hand",
+      "action": "Dress the quarters, leaf by leaf, by hand. Hold a drained cabbage quarter over the paste bowl and work the paste up under each leaf with your gloved or very red bare hands — stem bases get the most, green tops a smear. Do not shred the cabbage: the quarters stay whole, stuffed from the outside in. This hand work is the recipe's heart; a machine has never made this dish.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "every leaf's stem carries a visible coat of paste and flecks of radish; the quarter, pressed gently, holds together as one piece.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Pack the jar tight, in layers",
+      "action": "Pack the jar tight, in layers. Fold each dressed quarter over itself (fold the tip toward the core), press it into the jar, and push down hard to squeeze out air pockets — oxygen is the spoilage path, brine is the preservation path. Leave 5 cm of headspace at the top: the ferment expands. Press a clean weight (a small jar, a boiled stone) on top and lid it loosely — never sealed, the ferment needs to breathe or it will bubble over.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "after a day, brine rises over the cabbage on its own. If it has not, top up with a little salted water (1 tsp salt per cup) — the vegetables must ferment under liquid, that is the entire safety architecture.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Ferment warm, then hold cold",
+      "action": "Ferment warm, then hold cold. 1–3 days at cool room temperature (15–20 °C — the Korean autumn kitchen's window; warmer runs faster and sharper) until the jar smells sour-sweet and lively and the brine fizzes faintly at a stir, then into the refrigerator, where the ferment slows to a crawl and the flavor deepens for weeks.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the taste at jar-opening day: cabbage still crunchy, paste savory-hot, a clean sourness arriving on the finish — young kimchi, mild and bright. A week in the fridge it rounds; two weeks it sharpens; a month it is the sour, complex elder that stews (#M13's fried-rice day-after) are built for. You are not choosing one kimchi; you are choosing this week's chapter of it.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The brine: cabbage bends without snapping, rinsed and drained 30 minutes.",
+    "The dressing: paste on every stem base, quarters whole, hand-worked.",
+    "The pack: air pressed out, 5 cm headspace, weight on top, lid loose.",
+    "The ferment: sour-sweet smell and faint fizz at 1–3 days at 15–20 °C, then refrigerated."
+  ],
+  "storageNotes": [
+    "The jar IS the storage: refrigerated, honestly good for a month and usable to two, riding the arc in the first Note. A second small jar of the same batch, deliberately held at a warmer spot for two extra days, gives the table a sour and a mild bowl simultaneously — the restaurant's own trick.",
+    "Variations: the radish batch (#B02) runs the same paste on cubed mu; the fresh, unfermented same-day fork is geotjeori (#B04); cucumber (#B03) takes a faster, brighter version of everything here."
+  ]
+}

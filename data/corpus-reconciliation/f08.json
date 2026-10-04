@@ -1,0 +1,165 @@
+{
+  "id": "F08",
+  "corpus": {
+    "recordId": "kbbqguide#F08",
+    "tier": "C",
+    "path": "recipes/kbbqguide/fresh/radish-sprout-and-perilla-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-greens",
+      "heading": "The greens",
+      "ingredients": [
+        {
+          "id": "radish-sprouts",
+          "item": "radish sprouts , root ends trimmed, washed and spun dry",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "dorumuk",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "perilla-leaves",
+          "item": "perilla leaves , rolled and shredded into ribbons",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 10,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper-a-pinch-of-gochugaru",
+          "item": "Black pepper; a pinch of gochugaru , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The dressing whisked light, the tomato bowl's (#F07) register: soy present, sesame forward, nothing loud.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "tastes gentle and nutty; both greens run assertive on their own, and the dressing referees.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Sprouts and perilla ribbons folded through with spoons — the sprouts' fine stems want a lifting turn, not a pressing toss — sesame and scallion over.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: crunch of sprout, then the perilla's herbal wave arriving behind it, the sesame binding the two — a bowl that tastes green in three registers at once. Beside the yellow croaker (#SF09), it is the traditional sharp counter to the cured fish's depth.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "tastes gentle and nutty; both greens run assertive on their own, and the dressing referees.",
+    "the eating test: crunch of sprout, then the perilla's herbal wave arriving behind it, the sesame binding the two — a bowl that tastes green in three registers at once. Beside the yellow croaker (#SF09), it is the traditional sharp counter to the cured fish's depth."
+  ],
+  "storageNotes": [
+    "Eats within the hour. Sprouts keep 2 days in paper towel in the fridge; perilla, 3 days.",
+    "Variations: matchstick pear folded in (#F06's lane); the sprouts blanched ten seconds for the soft fork; a gochugaru-heavier dressing for the drinking table."
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "F03",
+  "corpus": {
+    "recordId": "kbbqguide#F03",
+    "tier": "C",
+    "path": "recipes/kbbqguide/fresh/sangchu-geotjeori-fresh-lettuce-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-lettuce",
+      "heading": "The lettuce",
+      "ingredients": [
+        {
+          "id": "2-head-green-or-red-leaf-lettuce",
+          "item": "/2 head green or red leaf lettuce , torn into bite pieces, washed and spun bone-dry",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 300 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 9 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "clove-garlic",
+          "item": "clove garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-splash-of-rice-vinegar",
+          "item": "A splash of rice vinegar , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 ml",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The dressing stirred together in the serving bowl — gochugaru, soy, honey, garlic — into a loose paste.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "tastes a shade too strong on a fingertip; the lettuce's water will round it, same law as every fresh bowl in this family.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Lettuce in, tossed with two spoons or hands — #B04's massage minute — until every leaf wears the red-flecked gloss. Sesame oil, seeds, scallion over.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the leaf test: crisp, cold, dressed-through — spicy-savory on the first bite, the leaf's clean sweetness after, no dressing pooling at the bowl's floor. Serve beside any of the M-list's records; it is the freshest possible counter to the gochujang lanes (#M04, #M13).",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "tastes a shade too strong on a fingertip; the lettuce's water will round it, same law as every fresh bowl in this family.",
+    "the leaf test: crisp, cold, dressed-through — spicy-savory on the first bite, the leaf's clean sweetness after, no dressing pooling at the bowl's floor. Serve beside any of the M-list's records; it is the freshest possible counter to the gochujang lanes (#M04, #M13)."
+  ],
+  "storageNotes": [
+    "Undressed lettuce keeps 2 days in paper towel; the dressed bowl does not keep — by design.",
+    "Variations: cucumber pieces folded in; the cabbage version (#B04) for a sturdier bowl; a drop of cho-gochujang (#SA03) thinned as the dressing for the sweet-heat fork."
+  ]
+}

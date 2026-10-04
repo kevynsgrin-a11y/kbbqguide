@@ -1,0 +1,182 @@
+{
+  "id": "B22",
+  "corpus": {
+    "recordId": "kbbqguide#B22",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/korean-bbq-restaurant-style-macaroni-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-pasta",
+      "heading": "The pasta",
+      "ingredients": [
+        {
+          "id": "small-macaroni-or-small-shells",
+          "item": "small macaroni or small shells",
+          "metricAmount": 250,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 2.5 cups dry",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "kewpie-style-mayonnaise",
+          "item": "Kewpie-style mayonnaise",
+          "metricAmount": 4,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "condensed-milk-or-sugar-the-grill-hall-s",
+          "item": "condensed milk or sugar — the grill-hall sweetness signature",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-fine-salt",
+          "item": "/2 tsp fine salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-mix-ins",
+      "heading": "The mix-ins",
+      "ingredients": [
+        {
+          "id": "2-cucumber",
+          "item": "/2 cucumber , small-diced, salted 10 minutes and squeezed",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 100 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot , fine-diced or grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "small",
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "hard-boiled-egg",
+          "item": "hard-boiled egg , chopped",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 50 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , sliced, optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The dressing whisked smooth first — mayo, condensed milk, vinegar, salt — tasting distinctly sweeter than seems right at room temperature. It is: cold suppresses sweetness, and the chill will bring it to target.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the dressing tastes sweet-tangy, pourable, just shy of a sauce — it will be swallowed by the pasta, so run it loose.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The drained, cooled, still-damp pasta and the dressing tossed while the pasta is cool but not fridge-cold (the dressing coats evenly at this temperature; fridge-cold pasta repels mayo), then the cucumber, carrot, egg, and scallion folded through.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "every noodle glossed, the mix-ins distributed, the bowl holding together without a puddle at the bottom. If it pools, the cucumber's squeeze was skipped.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Chill 30 minutes minimum, taste, and adjust — cold macaroni salad always needs one more grain of salt and a few drops of vinegar at the finish.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test between bites of bulgogi (#M01): cold, sweet, soft-with-crunch, mild — the palate's reset button, which is the entire reason the grill halls serve it and the reason this bowl rides alongside the richest plates.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the dressing tastes sweet-tangy, pourable, just shy of a sauce — it will be swallowed by the pasta, so run it loose.",
+    "every noodle glossed, the mix-ins distributed, the bowl holding together without a puddle at the bottom. If it pools, the cucumber's squeeze was skipped.",
+    "the eating test between bites of bulgogi (#M01): cold, sweet, soft-with-crunch, mild — the palate's reset button, which is the entire reason the grill halls serve it and the reason this bowl rides alongside the richest plates."
+  ],
+  "storageNotes": [
+    "Keeps 2 days refrigerated; refresh at serving with a spoon of mayo and a drop of vinegar — the bowl revives well.",
+    "Variations: the potato sibling (#B21); finely diced ham for the lunchbox build; a pinch of gochugaru over the top for the table that wants even this bowl to carry a little heat."
+  ]
+}

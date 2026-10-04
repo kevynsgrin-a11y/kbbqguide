@@ -1,0 +1,176 @@
+{
+  "id": "B14",
+  "corpus": {
+    "recordId": "kbbqguide#B14",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/myeolchi-bokkeum-stir-fried-anchovies.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-anchovies-and-nuts",
+      "heading": "The anchovies and nuts",
+      "ingredients": [
+        {
+          "id": "dried-baby-anchovies",
+          "item": "dried baby anchovies",
+          "metricAmount": 150,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "myeolchi, the tiny 2–3 cm grade — not the large ones, which want a different dish",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "crushed-roasted-peanuts-or-walnuts",
+          "item": "crushed roasted peanuts or walnuts , optional but the classic drinking build",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-glaze",
+      "heading": "The glaze",
+      "ingredients": [
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "corn-syrup-or-honey",
+          "item": "corn syrup or honey",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru , optional",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "The dry toast first — the technique",
+      "action": "The dry toast first — the technique. Dry pan, medium heat, anchovies tossed for 4–5 minutes until they smell toasted-nutty and turn matte and snap-crisp (break one: it should crack, not bend).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the smell shift is unmistakable: from the fish-market jar smell to warm, toasty, almost nut-like. This pre-toast is the difference between crisp-chewy perfection and the tough, faintly damp disappointing version.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Push the anchovies to the pan's side, oil into the empty half, garlic in until it sizzles blond (30 seconds), then the soy, syrup, and gochugaru stirred into the oil — a bubbling glaze — anchovies and nuts tossed through, 1–2 minutes of constant motion as the glaze tightens and coats.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "every anchovy wears gloss, the pan is nearly dry, and a test piece has the target texture: crisp shell, faint chew at the core, sweet-salty-heat. The 60-second window between glazed and tough is the only clock in the recipe — off the heat when they still seem slightly soft, because they crisp further as they cool.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Off the heat: sesame oil and seeds, a final toss, spread on a plate to cool in a single layer (piled hot, they steam each other soft).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "fully cooled, an anchovy snaps cleanly. The bowl is ready — and it keeps, in a sealed jar, for two to three weeks, which makes it the banchan board's only long-shelf member.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the smell shift is unmistakable: from the fish-market jar smell to warm, toasty, almost nut-like. This pre-toast is the difference between crisp-chewy perfection and the tough, faintly damp disappointing version.",
+    "every anchovy wears gloss, the pan is nearly dry, and a test piece has the target texture: crisp shell, faint chew at the core, sweet-salty-heat. The 60-second window between glazed and tough is the only clock in the recipe — off the heat when they still seem slightly soft, because they crisp further as they cool.",
+    "fully cooled, an anchovy snaps cleanly. The bowl is ready — and it keeps, in a sealed jar, for two to three weeks, which makes it the banchan board's only long-shelf member."
+  ],
+  "storageNotes": [
+    "The keeper: 2–3 weeks in a sealed jar at room temperature — the make-ahead banchan for a whole month of grill nights.",
+    "Variations: peanuts are the classic partner; a heavier gochugaru hand for the soju table; the same technique on dried shrimp (the smaller cousin, saeu-bokkeum) runs sweeter and faster."
+  ]
+}

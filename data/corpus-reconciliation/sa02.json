@@ -1,0 +1,121 @@
+{
+  "id": "SA02",
+  "corpus": {
+    "recordId": "kbbqguide#SA02",
+    "tier": "C",
+    "path": "recipes/kbbqguide/sauces/gireumjang-sesame-oil-salt-dip.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-dip",
+      "heading": "The dip",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 4,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "60 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "coarse-salt-flaky-or-kosher",
+          "item": "coarse salt — flaky or kosher, not fine table salt",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-coarsely-ground-black-pepper",
+          "item": "/2 tsp coarsely ground black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-optional-build-outs-tradition-allows-either-",
+      "heading": "The optional build-outs (tradition allows either, never both loudly)",
+      "ingredients": [
+        {
+          "id": "scallion",
+          "item": "scallion , finely sliced, folded in",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "sesame seeds , lightly crushed",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Oil in the bowl, salt and pepper over, a stir — the salt suspends, swirls, settles. That is the dish.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the visual: visible salt grains suspended in amber oil, pepper flecking it. Taste on a piece of the plainest grilled pork: a spark of salt, the oil's roast-nut roundness, pepper's warmth — and the meat louder for it, not quieter. That inversion is the bowl's whole argument.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Serve in a shallow bowl (deep oil is a dunk hazard — a shallow pool is a touch-dip) beside the unmarinated meats, and say nothing; the table finds it.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "by the second round of samgyeopsal, the ssamjang bowl (#SA01) and this bowl are both half-empty and the table has chosen its camps — or splits by mood, which is the usual result and the reason both bowls are set.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the visual: visible salt grains suspended in amber oil, pepper flecking it. Taste on a piece of the plainest grilled pork: a spark of salt, the oil's roast-nut roundness, pepper's warmth — and the meat louder for it, not quieter. That inversion is the bowl's whole argument.",
+    "by the second round of samgyeopsal, the ssamjang bowl (#SA01) and this bowl are both half-empty and the table has chosen its camps — or splits by mood, which is the usual result and the reason both bowls are set."
+  ],
+  "storageNotes": [
+    "Keeps 3 days refrigerated (the salt stays suspended with a stir; the oil solidifies faintly cold and re-liquefies at room temperature in minutes). Make-the-day-of is the tradition.",
+    "Variations: the scallion build-out for the pork records; a pinch of gochugaru for the table that cannot have an unspiced bowl; the same ratio on butter for the seafood records' (#SF12's) lane — a fusion fork, labeled as one."
+  ]
+}

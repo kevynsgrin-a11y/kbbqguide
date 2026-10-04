@@ -1,0 +1,236 @@
+{
+  "id": "M01",
+  "corpus": {
+    "recordId": "kbbqguide#M01",
+    "tier": "B",
+    "path": "recipes/kbbqguide/grilled-meat/classic-korean-pear-beef-bulgogi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-beef",
+      "heading": "The beef",
+      "ingredients": [
+        {
+          "id": "beef-sirloin-or-chuck-eye",
+          "item": "beef sirloin or chuck eye, sliced 1–2 mm against the grain",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "ask the butcher for bulgogi-slice, or freeze 40 minutes and slice yourself",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "onion , half grated, half sliced into rings",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "small",
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "2-asian-pear",
+          "item": "/2 Asian pear , grated with its juice — do not substitute apple juice",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 80,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-wine-or-mirin",
+          "item": "rice wine or mirin",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-brown-sugar",
+          "item": "honey or brown sugar",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper",
+          "item": "/2 tsp black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , sliced; 1 tsp toasted sesame seeds",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , baechu kimchi , pajeori scallion salad , lettuce leaves for ssam, ssamjang",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "optional-moat-vegetables-100-g-king-oyst",
+          "item": "Optional moat vegetables: 100 g king oyster mushroom slices, 1/2 carrot , ribboned",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Build the slurry",
+      "action": "Build the slurry. Combine grated pear, the grated half-onion, garlic, ginger, soy, rice wine, honey, sesame oil, and pepper in a bowl large enough for the beef. Stir until the honey dissolves — taste it: it should be sweet-salty-forward with pear perfume behind, assertive enough that you'd worry it's too strong. It isn't; the meat and the grill will mute it.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the marinade coats the back of a spoon and smells of pear and soy, with no raw garlic harshness on the nose (the ginger covers it).",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Marry",
+      "action": "Marry. Add the beef and the sliced onion rings; toss with your hands (the Korean word for this hand-mix, jumulleok, is its own record #M06) until every shaving is coated. Press flat, cover, refrigerate 2–8 hours.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "at grilling time the beef has turned deeper red-brown at the edges and the onion has gone slack. No pooling liquid at the bottom beyond the marinade itself — pooling means the pear was over-squeezed or the slice too thick.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Grill hot and fast, in batches",
+      "action": "Grill hot and fast, in batches. Charcoal or a ripping cast-iron pan (a domed Korean bulgogi pan if you have one, 200 °C-plus at the surface — water should dance and vanish). Spread a single loose layer — piled meat steams in its own juice, and this dish's whole identity is browning plus juice, not steam. The shavings cook in 60–90 seconds a side. Flip when the edges weep and color, not on a clock: beads of pink juice at the rim and the first mahogany edge mean the grill boss turns the batch, then pulls it 20 seconds later when the raw red is just gone. Rest each batch on a warm plate; the moat juice goes to a small pot or the pan's rim to simmer with the mushrooms and carrot.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: a shaving straight off the grill should be caramel-sweet at the edge, juicy and soft in the middle, with no chewy gray band. Into a lettuce ssam with ssamjang (#SA01) it should taste like the genre's ceiling — but note honestly that the ssam is borrowed ceremony here; this dish's native table is rice, juice over rice, kimchi beside.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Serve the rice-thief properly",
+      "action": "Serve the rice-thief properly. The accumulated moat juice, simmered 2 minutes with any vegetables and poured over rice, is half the point of the lane. Don't discard it into the grill.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the bowl: rice, a ladle of juice, meat over, sesame and scallion. The juice should be sweet-savory and just glossy, not syrup; if it ran syrup, your pan was too cool and the batch steamed.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The slice: 1–2 mm, against the grain, marinated 2–8 hours — never mushy.",
+    "The grill: single loose layer, flip at the weeping edge, pull when the raw red is just gone.",
+    "The moat: juice simmered and served over rice, glossy, not syrup."
+  ],
+  "storageNotes": [
+    "Marinated raw beef keeps 24 hours refrigerated (the clock is already running). Cooked bulgogi keeps 3 days and makes a superb kimchi fried rice or onigirazu filling; reheat hard and fast, never a slow simmer.",
+    "Variations: mushroom-soy umami build (#M02); the dry heritage fork (#M08); the gochujang lane is a different dish — spicy dwaeji bulgogi (#M13) — and pork, not this record."
+  ]
+}

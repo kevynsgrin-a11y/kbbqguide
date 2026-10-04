@@ -1,0 +1,187 @@
+{
+  "id": "B24",
+  "corpus": {
+    "recordId": "kbbqguide#B24",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/kkaennip-jangajji-pickled-perilla-leaves.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-perilla-and-salt",
+      "heading": "The perilla and salt",
+      "ingredients": [
+        {
+          "id": "fresh-perilla-leaves",
+          "item": "fresh perilla leaves , stemmed, washed, spun thoroughly dry",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 40,
+          "customaryUnit": null,
+          "preparation": "kkaennip, about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-seasoning-paste-painted-between-layers",
+      "heading": "The seasoning paste (painted between layers)",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "45 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-corn-syrup",
+          "item": "honey or corn syrup",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-toasted-sesame-oil",
+          "item": "/2 tsp toasted sesame oil",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , minced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "The paint-and-stack, leaf by leaf",
+      "action": "The paint-and-stack, leaf by leaf. One leaf on the board, paste painted across its face with a brush or the back of a spoon, the next leaf laid over, painted, the next — the stack becomes the pickle's structure, every layer's seasoning facing the next leaf's face. Ten leaves to a stack, a stack pressed gently, and the stacks stood or laid into the clean jar, pressed down.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the stack holds together when lifted, and cut at the edge, shows its cross-section: leaf, dark line of seasoning, leaf — the jar's architecture, built.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Any remaining paste and a splash of water over the stack in the jar, pressed once more, and the brine that weeps out over the first hours becomes the jar's own liquid. Lid on, refrigerate.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "by the next morning, the leaves have darkened to deep olive-bronze and the jar holds a shallow soy-amber liquid — the pickle has set. Taste one leaf at 24 hours.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "The 48-hour readiness",
+      "action": "The 48-hour readiness. Day one is good; day two is the jar's true voice — the leaf's anise-mint tamed to an herb depth, the brine's soy-sweet in every fold, the texture silky-supple.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test, one leaf over hot rice: fold, bite — a complex savory-herbal chew that no other pickle on any table resembles. And the ssam use — one leaf wrapping a hot piece of samgyeopsal with a grain of rice — is this site's best single bite between the meat rounds.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the stack holds together when lifted, and cut at the edge, shows its cross-section: leaf, dark line of seasoning, leaf — the jar's architecture, built.",
+    "by the next morning, the leaves have darkened to deep olive-bronze and the jar holds a shallow soy-amber liquid — the pickle has set. Taste one leaf at 24 hours.",
+    "the eating test, one leaf over hot rice: fold, bite — a complex savory-herbal chew that no other pickle on any table resembles. And the ssam use — one leaf wrapping a hot piece of samgyeopsal with a grain of rice — is this site's best single bite between the meat rounds."
+  ],
+  "storageNotes": [
+    "Keeps 3–4 weeks refrigerated (a month with dry-leaf discipline), the flavor deepening for two. The wept brine seasons fried rice when the leaves run out.",
+    "Variations: chopped into the paste for a spoonable version (the quick bowl); the garlic jar (#B23) shares its shelf; a minced leaf into the ssamjang (#SA01) transplants the perilla voice into every wrap at the table."
+  ]
+}

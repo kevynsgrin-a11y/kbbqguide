@@ -1,0 +1,227 @@
+{
+  "id": "M13",
+  "corpus": {
+    "recordId": "kbbqguide#M13",
+    "tier": "B",
+    "path": "recipes/kbbqguide/grilled-meat/spicy-dwaeji-bulgogi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-pork",
+      "heading": "The pork",
+      "ingredients": [
+        {
+          "id": "pork-shoulder-or-collar",
+          "item": "pork shoulder or collar , sliced 4 mm against the grain",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "moksal",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru-the-ceiling-dial-1-tbsp-for-a-",
+          "item": "gochugaru — the ceiling dial; 1 tbsp for a mild table",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "45 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-brown-sugar",
+          "item": "honey or brown sugar",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "about 24 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-onion",
+          "item": "/2 onion , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-asian-pear",
+          "item": "/2 Asian pear , grated and squeezed nearly dry",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , sliced; 1 tbsp toasted sesame seeds",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , lettuce ssam, ssamjang , kimchi , thick garlic coins, and cold oi muchim — heat on the plate wants cold crunch beside it",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Fire hot, batches small",
+      "action": "Fire hot, batches small. Charcoal or cast-iron at a solid medium-high — a pan surface around 200 °C, oil just at the shimmer. The slices go on in one loose layer — piled pork steams in the paste's moisture, and steamed paste is bitter. Single layer, sixty to ninety seconds undisturbed.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the paste should sizzle and darken one shade, and the air should carry toasted chile and sesame. Black edges in the first minute mean the fire is a notch past the paste's tolerance — raise the grate or bank the coals and continue.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Flip at the weep, pull fast",
+      "action": "Flip at the weep, pull fast. Turn the slices when the edges bead juice and the underside is brick-brown, 60–90 seconds more on the second side, off the fire while the centers still carry a blush of juice. Pork shoulder at 4 mm is done in under three minutes a batch; every extra ten seconds trades juice for toughness.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "test piece at the grill station: glazed edge, juicy-fatty interior, heat arriving after the sweet on the finish. If the center is dry, the batch was thin-spread and overcooked — next batch spends less time on the second side.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "The two ways to eat it, both correct",
+      "action": "The two ways to eat it, both correct. The ssam way: leaf, thin ssamjang swipe, a hot slice, garlic coin, fold, one bite — the record's full ceremony. The weeknight way: rice in a bowl, a stack of slices over, sesame and scallion, the pan's juice spooned last. Same meat, two speeds.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the bowl test: the juice over rice should be red-gold and savory-sweet, milder than the slices taste plain — if it runs bitter, the pan's sugared drippings caught fire at some point and the heat was a notch high throughout; note it for next time, eat around it now.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The slice: 4 mm against the grain, shoulder or collar, marinated 2–8 hours in a smooth paste.",
+    "The grill: single loose layer, flip at the beading edge, brick-brown not black, under three minutes a batch.",
+    "The pull: juicy centers with a blush of juice, never gray-through.",
+    "The table: ssam or rice-bowl, cold banchan in reach, heat dialed for the end of the meal."
+  ],
+  "storageNotes": [
+    "Marinated pork keeps 24 hours (freeze flat up to a month). Cooked, 3 days — and the leftovers are arguably the record's second life: kimchi fried rice with diced dwaeji bulgogi, or a melt-grade cheese-and-dwaeji quesadilla that the fusion lane would claim if it could.",
+    "Variations: the same paste on pork belly slabs (#M11's slower cousin); on chicken thighs (#M17); thinned with mirin into a glaze for the shrimp record (#SF01). The soy-pork fork without heat is ganjang pork bulgogi (#M14)."
+  ]
+}

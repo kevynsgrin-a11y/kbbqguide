@@ -1,0 +1,210 @@
+{
+  "id": "M10",
+  "corpus": {
+    "recordId": "kbbqguide#M10",
+    "tier": "B",
+    "path": "recipes/kbbqguide/grilled-meat/classic-samgyeopsal-with-sesame-salt-seasoning.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-pork",
+      "heading": "The pork",
+      "ingredients": [
+        {
+          "id": "fresh-pork-belly",
+          "item": "fresh pork belly, skin off, cut into slabs 1.5 cm thick and 5 cm wide",
+          "metricAmount": 1.2,
+          "metricUnit": "kg",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "order \"samgyeopsal cut\" at a Korean market; the even ribbon shape is part of the dish",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-only-seasoning-for-the-grill",
+      "heading": "The only seasoning for the grill",
+      "ingredients": [
+        {
+          "id": "coarse-sea-salt",
+          "item": "Coarse sea salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 6 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , lightly crushed",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dips-both-belong-on-the-table",
+      "heading": "The dips (both belong on the table)",
+      "ingredients": [
+        {
+          "id": "gireumjang-3-tbsp-toasted-sesame-oil",
+          "item": "Gireumjang : 3 tbsp toasted sesame oil , 1 tsp coarse salt , a grind of pepper — the classic samgyeopsal dip",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "#SA02",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ssamjang-about-120-g-from-its-record",
+          "item": "Ssamjang : about 120 g from its record",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "#SA01",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-ssam-and-cuts",
+      "heading": "The ssam and cuts",
+      "ingredients": [
+        {
+          "id": "lettuce-and-20-perilla-leaves",
+          "item": "lettuce and 20 perilla leaves, washed and bone-dry",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "head",
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , sliced thick coins",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 8,
+          "customaryUnit": "cloves",
+          "preparation": "about 32 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "green-chilies",
+          "item": "green chilies , sliced diagonally",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "bundle-scallions-or-100-g-onion",
+          "item": "bundle scallions or 100 g onion, thick-cut rings",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "the traditional grate-mates, grilled beside the pork in its fat",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , kimchi , and a bottle of soju's worth of ceremony",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Lay the slabs flat, one layer, at the pan's center",
+      "action": "Lay the slabs flat, one layer, at the pan's center. They will not brown in the first minutes — they will render. Turn them every 2 minutes as the fat liquefies and the pan develops a shallow gloss of it. Salt faces lightly on the second turn; sesame seeds and pepper on the third.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the sound changes from a hiss to a steady sputter and the edges go translucent-gold: rendering is doing the cooking. If the pan smokes hard, lower the flame — burnt pork fat is bitter and it flavors the whole batch.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Grill the grate-mates in the fat",
+      "action": "Grill the grate-mates in the fat. Push the scallion or onion rings into the pooling fat at the pan's edge and let them soften and brown. Garlic coins 30 seconds a side in the same fat until blond at the edges — the sweetest version of raw garlic, and half the table will eat these like chips.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the vegetables should be fat-glossed and softened, not crisped; they are condiments in progress, pulled to a side plate as each batch finishes.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "The scissors are the clock",
+      "action": "The scissors are the clock. At 12–15 minutes the slabs are deeply golden. Cut each slab crosswise with kitchen scissors directly on the pan into bite pieces (2–3 cm), toss the pieces once in the hot fat for a final 60–90 seconds to crisp the cut faces, and pull to the platter. The cut-and-toss is not a shortcut — the fresh faces take the crisping that makes classic samgyeopsal.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a test piece straight from the pan, dunked in gireumjang: shatter-crisp edge, yielding fat layer, tender meat layer, then the dip's sesame-salt. The three-layer bite is the doneness signal — if the fat layer is still bouncy and translucent, the slab needed more rendering; there is no such thing as \"too long\" here short of burning.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "The ssam sequence, the whole point",
+      "action": "The ssam sequence, the whole point. Leaf in the palm, a thin swipe of ssamjang (#SA01), a piece of hot pork, a grilled garlic coin, a chili slice or a strand of grilled scallion, fold, one bite. Between ssam: rice, kimchi, the gireumjang for the plain pieces. The table's rhythm belongs to the pan — as one batch leaves, the next slabs go on, and the tongs rotate.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the assembly test: the fold closes without tearing and delivers everything in one bite. A ssam that needs two bites was overloaded, and the guilty party does the next batch's tongs duty.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The slabs: 1.5 cm, unmarinated, salted only at the second turn.",
+    "The render: translucent-gold edges, steady sputter, no hard smoke.",
+    "The scissors: cut at deep golden, tossed 60–90 seconds for crisp faces.",
+    "The bite: three layers — crisp, yielding fat, tender meat — in one closed ssam."
+  ],
+  "storageNotes": [
+    "Samgyeopsal is a buy-and-grill record; the belly keeps 2 days refrigerated. Leftover cooked pieces keep 3 days and are the canonical kimchi fried rice meat — dice, fry hard in a spoon of their own reserved fat, kimchi and day-old rice in, sesame over.",
+    "Variations: the gochujang-dressed fork (#M11); dwaeji bulgogi (#M13) is the thinly-sliced dressed cousin; kimchi grilled in the pork fat beside the slabs is the one addition the classic table allows without ceremony — and the one every regular orders."
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "id": "M16",
+  "corpus": {
+    "recordId": "kbbqguide#M16",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/soy-pear-dak-bulgogi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-chicken",
+      "heading": "The chicken",
+      "ingredients": [
+        {
+          "id": "boneless",
+          "item": "boneless, skinless chicken thighs, sliced 7 mm thick or left whole and butterflied",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "2-asian-pear",
+          "item": "/2 Asian pear , grated with juice",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-onion",
+          "item": "/2 onion , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-brown-sugar",
+          "item": "honey or brown sugar",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated — ginger works harder here than in the beef lanes",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper-1-tbsp-toasted-sesame",
+          "item": "/2 tsp black pepper ; 1 tbsp toasted sesame seeds",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , lettuce ssam, ssamjang , kimchi , scallion threads",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Medium-high fire, single layer, slices not touching. Chicken's surface water steams before it browns if the pan is crowded — space is crust.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the first side is undisturbed until the edges turn opaque and the underside is browned, about 2 minutes for slices, 4 for butterflied whole thighs.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip once; the second side runs 1–2 minutes more for slices. Pull when the meat's juices run clear at a thick piece's cut edge and the surface is glossy brown — no pinkness anywhere, chicken's absolute rule.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "test piece: glossy, tender, sweet-savory with ginger brightening the finish — chicken's mildness is the marinade's showcase, and every ingredient reads clearly here.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Scissors into bite pieces, sesame and scallion over, warm platter. Ssam or rice bowl, both lanes open.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the rice bowl test: juice over rice first — the pan will have a glossy glaze of rendered fat and marinade that spoons like a sauce, milder and rounder than the beef version. That spoon is the record's quiet prize.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the first side is undisturbed until the edges turn opaque and the underside is browned, about 2 minutes for slices, 4 for butterflied whole thighs.",
+    "test piece: glossy, tender, sweet-savory with ginger brightening the finish — chicken's mildness is the marinade's showcase, and every ingredient reads clearly here.",
+    "the rice bowl test: juice over rice first — the pan will have a glossy glaze of rendered fat and marinade that spoons like a sauce, milder and rounder than the beef version. That spoon is the record's quiet prize."
+  ],
+  "storageNotes": [
+    "Marinated chicken keeps 24 hours. Cooked, 3 days — cold slices over rice, or the weeknight bossam-style wrap with ssamjang.",
+    "Variations: the gochujang fork (#M17); the same marinade on wing segments glazed in the last minutes; pineapple swapped for pear in a pinch (shorter window — its enzyme is far stronger)."
+  ]
+}

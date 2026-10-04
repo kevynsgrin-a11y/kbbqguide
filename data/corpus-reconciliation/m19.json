@@ -1,0 +1,182 @@
+{
+  "id": "M19",
+  "corpus": {
+    "recordId": "kbbqguide#M19",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/korean-style-grilled-duck-breast.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-duck",
+      "heading": "The duck",
+      "ingredients": [
+        {
+          "id": "duck-breasts",
+          "item": "duck breasts, skin on, about 350 g each, room temperature",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-salt-and-the-brush",
+      "heading": "The salt and the brush",
+      "ingredients": [
+        {
+          "id": "coarse-salt-and-black-pepper",
+          "item": "coarse salt and black pepper, for the skin",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 6 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated; 1 thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-finish-and-table",
+      "heading": "The finish and table",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , 2 scallions finely sliced",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , sangchu geotjeori or minari muchim — the sharp fresh salad is not optional here, kimchi beside",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 400 g cooked",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Cold pan, skin down",
+      "action": "Cold pan, skin down. The one instruction that sounds wrong and is right: the breast goes into a cold pan or onto a grill grate set at its lowest, skin down, and the heat comes up under it. Render 8–10 minutes at gentle heat, pouring off the fat as it pools (keep it — duck fat is this record's second product).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the skin should go from pale to deep gold slowly, the crosshatch opening as the fat renders out of it. No spitting violence: if the pan roars, the heat is too high and the skin browns before the fat has left — lower it and pour off the fat.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Flip to the flesh side, 2–3 minutes only",
+      "action": "Flip to the flesh side, 2–3 minutes only, brushing the cooked flesh face with the sauce as it comes off the heat. Duck breast's doneness is medium — the center rosy at 54–56 °C on a thermometer, or the feel of the base of your thumb when your thumb touches your ring finger.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the flesh face should be just colored and glazed, not crusted. Overcooked duck is the record's only real failure; a rosy center is correct here in a way it never is for chicken (#M16, #M17) — duck is served medium at every table that knows it.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Rest 8 minutes — the full eight",
+      "action": "Rest 8 minutes — the full eight. Duck carries hard, and a breast cut at the pan bleeds its juice onto the board; a breast cut at eight keeps it. Then slice across the breast, on the bias, into thick coins, skin up. Sesame and scallion over, the rest of the brush sauce spooned around.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test, with the sharp salad in the same bite: crisp, fully rendered skin; rosy, silky-fatty flesh; soy-ginger glaze; then the geotjeori's vinegar cutting clean. Rich, then reset — that rhythm is the whole plate.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the skin should go from pale to deep gold slowly, the crosshatch opening as the fat renders out of it. No spitting violence: if the pan roars, the heat is too high and the skin browns before the fat has left — lower it and pour off the fat.",
+    "the flesh face should be just colored and glazed, not crusted. Overcooked duck is the record's only real failure; a rosy center is correct here in a way it never is for chicken (#M16, #M17) — duck is served medium at every table that knows it.",
+    "eating test, with the sharp salad in the same bite: crisp, fully rendered skin; rosy, silky-fatty flesh; soy-ginger glaze; then the geotjeori's vinegar cutting clean. Rich, then reset — that rhythm is the whole plate."
+  ],
+  "storageNotes": [
+    "Raw breasts salted keep 24 hours. Cooked, 3 days sliced — cold duck coins over rice with the sauce, or a ssam with perilla and a swipe of ssamjang (#SA01) where the fusion lane lives.",
+    "Variations: a gochujang-honey brush for the spicy fork; the same treatment on duck legs runs twice the render time; the reserved fat in place of sesame oil in the scallion dip (#SA04)."
+  ]
+}

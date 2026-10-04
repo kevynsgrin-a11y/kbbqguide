@@ -1,0 +1,193 @@
+{
+  "id": "M12",
+  "corpus": {
+    "recordId": "kbbqguide#M12",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/doenjang-garlic-moksal-gui.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-pork",
+      "heading": "The pork",
+      "ingredients": [
+        {
+          "id": "pork-collar-or-shoulder",
+          "item": "pork collar or shoulder, sliced 7 mm thick",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "moksal",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "doenjang",
+          "item": "doenjang",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin-or-honey",
+          "item": "mirin or honey",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml / about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "about 24 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-onion",
+          "item": "/2 onion , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper",
+          "item": "/2 tsp black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , lettuce ssam, ssamjang , kimchi , musaengchae spicy radish — the cold, crisp counter this rich cut wants",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Charcoal or cast-iron at medium-high. The slices go on in a single layer; with almost no sugar in the marinade, the grill boss is building crust, not managing lacquer. First side undisturbed 2–3 minutes.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the smell is roasted soybean and garlic over browning pork — deeper and darker than any other record at this grill. The underside should be crusty brown and release cleanly.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip once, 2 minutes more, pull when the meat's juices bead at the surface and the slice is just firm to a fingertip press. Rest the batch 1 minute; moksal carries a little and finishes gently.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "test piece: crusty edge, juicy interior with a firm-but-tender chew that loin never gives, and the doenjang's savory depth arriving right behind the pork. No sweetness ahead of the meat — if there is, the honey ran heavy.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Scissors into bite pieces, warm platter, straight into ssam with ssamjang or wrapped plain with rice and a strand of musaengchae in the bite.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the ssam test: the crust and the chew are the record's signature — this should taste like the grown-up table at the restaurant, the one that skipped the sweet marinades on purpose.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the smell is roasted soybean and garlic over browning pork — deeper and darker than any other record at this grill. The underside should be crusty brown and release cleanly.",
+    "test piece: crusty edge, juicy interior with a firm-but-tender chew that loin never gives, and the doenjang's savory depth arriving right behind the pork. No sweetness ahead of the meat — if there is, the honey ran heavy.",
+    "the ssam test: the crust and the chew are the record's signature — this should taste like the grown-up table at the restaurant, the one that skipped the sweet marinades on purpose."
+  ],
+  "storageNotes": [
+    "Marinated slices keep 24 hours. Cooked, 3 days — cold moksal over rice with a fried egg is the intended leftover, the crust softening into the yolk.",
+    "Variations: a teaspoon of gochujang stirred into the marinade warms it toward #M11's lane; the same marinade on chicken thighs (#M17's register); leftover marinade simmered 3 minutes into a spoon-sauce for the platter."
+  ]
+}

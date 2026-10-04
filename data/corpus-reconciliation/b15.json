@@ -1,0 +1,176 @@
+{
+  "id": "B15",
+  "corpus": {
+    "recordId": "kbbqguide#B15",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/hobak-bokkeum-stir-fried-zucchini.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-zucchini",
+      "heading": "The zucchini",
+      "ingredients": [
+        {
+          "id": "zucchini",
+          "item": "zucchini , cut into 1 cm half-moons",
+          "metricAmount": 500,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "2 medium",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-seasoning",
+      "heading": "The seasoning",
+      "ingredients": [
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt , for the 10-minute draw",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 18 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-salt-and-ground-pepper",
+          "item": "A pinch of salt and ground pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced; a pinch of gochugaru , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Oil at medium-high, garlic in for 30 seconds of blonding, then the pressed zucchini in one layer as much as the pan allows — 2 minutes undisturbed for the first side.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the cut faces gold against the green skin, and the pan sizzles steadily rather than hissing out steam — the draw did its work. If the pan floods with liquid, the press was skipped; pour it off, accept a softer bowl, salt earlier next time.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Toss or turn, 2–3 minutes more — the zucchini should stay crisp-shouldered with gilded edges, not collapse.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the bend test: a half-moon bends with a spine of resistance. Fully limp zucchini is over; this bowl's identity is the last of the crunch.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Off the heat: soy, pepper, sesame oil, seeds, scallion, gochugaru if using — the residual heat blooms them without cooking them away.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test with rice: sesame-garlic first, the zucchini's sweet green core, a clean finish. It should taste like the vegetable decided to dress up, not like dressing looking for a vegetable.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the cut faces gold against the green skin, and the pan sizzles steadily rather than hissing out steam — the draw did its work. If the pan floods with liquid, the press was skipped; pour it off, accept a softer bowl, salt earlier next time.",
+    "the bend test: a half-moon bends with a spine of resistance. Fully limp zucchini is over; this bowl's identity is the last of the crunch.",
+    "the eating test with rice: sesame-garlic first, the zucchini's sweet green core, a clean finish. It should taste like the vegetable decided to dress up, not like dressing looking for a vegetable."
+  ],
+  "storageNotes": [
+    "Best the day it's made; acceptable at a day refrigerated, re-panned for 60 seconds. The raw salted half-moons hold half a day in the fridge, ready to finish.",
+    "Variations: matchstick carrot added at the sear for color; a spoon of ssamjang (#SA01) thinned into the pan for the deep-flavored fork; the same build on mushrooms or snap peas carries the method anywhere."
+  ]
+}

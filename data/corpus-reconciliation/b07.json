@@ -1,0 +1,165 @@
+{
+  "id": "B07",
+  "corpus": {
+    "recordId": "kbbqguide#B07",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/oi-muchim-spicy-cucumber-banchan.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-cucumbers-and-salt",
+      "heading": "The cucumbers and salt",
+      "ingredients": [
+        {
+          "id": "persian-or-kirby-cucumbers",
+          "item": "Persian or Kirby cucumbers , sliced into half-moons 5 mm thick",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "small",
+          "preparation": "about 500 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 9 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce-or-soy-sauce",
+          "item": "fish sauce or soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-sugar",
+          "item": "honey or sugar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The wept cucumbers, squeezed gently by the handful over the sink (one squeeze, not a wring — cucumber should stay crisp, not crushed), into the dressing bowl.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the slices are flexible but still snappy, and the bowl they leave behind holds a clear puddle — that puddle is the dilution you just prevented.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Everything tossed together, taste immediately, and adjust — cucumber wants the dressing slightly stronger than the target bite, because it keeps watering for the next hour.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test two minutes later: cold snap, sweet-heat, garlic hum, sesame finish — the fresh register of #B03's fermented cousin, and the perfect reset bite after gochujang pork (#M13) or lacquered galbi (#M04).",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the slices are flexible but still snappy, and the bowl they leave behind holds a clear puddle — that puddle is the dilution you just prevented.",
+    "the eating test two minutes later: cold snap, sweet-heat, garlic hum, sesame finish — the fresh register of #B03's fermented cousin, and the perfect reset bite after gochujang pork (#M13) or lacquered galbi (#M04)."
+  ],
+  "storageNotes": [
+    "Best within 2 hours, edible at a day refrigerated; this is the make-and-eat bowl.",
+    "Variations: thin-sliced onion folded in for sweetness; a splash of vinegar to walk it toward the cho-gochujang lane (#SA03); matchstick apple in the dressing for the picnic build."
+  ]
+}

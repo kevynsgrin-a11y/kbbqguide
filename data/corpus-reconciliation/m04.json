@@ -1,0 +1,215 @@
+{
+  "id": "M04",
+  "corpus": {
+    "recordId": "kbbqguide#M04",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/spicy-gochujang-galbi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-ribs",
+      "heading": "The ribs",
+      "ingredients": [
+        {
+          "id": "beef-short-ribs",
+          "item": "beef short ribs, flanken-cut across the bone, 8–10 mm thick, lightly crosshatch scored",
+          "metricAmount": 1.6,
+          "metricUnit": "kg",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade-glaze",
+      "heading": "The marinade-glaze",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 4,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 80 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "45 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-brown-sugar",
+          "item": "honey or brown sugar",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "about 24 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-asian-pear",
+          "item": "/2 Asian pear , grated and squeezed nearly dry",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru , for the ceiling-chasers",
+          "metricAmount": 2,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 6 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , to finish",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , lettuce ssam, cold oi muchim and kimchi — the fresh, cold banchan matters more here, the ribs run hot",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Charcoal or cast-iron at medium-hot — you can hold your hand over it 3–4 seconds. The gochujang sugars scorch faster than soy marinade, so build a cool zone or keep the grate a hand higher than for #M03. Bone side down first, single layer.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the paste should sizzle quietly and smell toasted-chile-sweet, not burnt. Any black smoke in the first minute means the fire is too close — raise the grate before the first flip, not after the first casualty.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Grill 3–4 minutes a side. The visual law changes in this lane: you are not waiting for mahogany, you are waiting for the red paste to darken one shade toward brick and go glossy at the edges. Flip once at the weep; pull the strip when the cut edge at the bone shows no raw red.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the pull test: brick-red lacquer, glossy, light char in the score marks, meat firm at the bone with a pink sliver allowed. Eat one piece at the grill station — the heat should land after the sweet, never before it.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Scissors to single-bone pieces, warm platter, sesame over, straight into ssam with rice and a piece of cold cucumber banchan in the same bite's orbit.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: sweet, then warm heat, then beef — and the cold oi muchim resets the palate between ssam. If the heat erases the beef, the gochujang ran over 80 g; weigh it next time.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the paste should sizzle quietly and smell toasted-chile-sweet, not burnt. Any black smoke in the first minute means the fire is too close — raise the grate before the first flip, not after the first casualty.",
+    "the pull test: brick-red lacquer, glossy, light char in the score marks, meat firm at the bone with a pink sliver allowed. Eat one piece at the grill station — the heat should land after the sweet, never before it.",
+    "eating test: sweet, then warm heat, then beef — and the cold oi muchim resets the palate between ssam. If the heat erases the beef, the gochujang ran over 80 g; weigh it next time."
+  ],
+  "storageNotes": [
+    "Marinated ribs keep 24 hours. Cooked, 3 days — chop off the bone into fried rice or a quesadilla, where the residual lacquer does the seasoning. Bones to the stock pot.",
+    "Variations: the soy-pear parent (#M03); pork shoulder in this same paste is the spicy dwaeji bulgogi record (#M13); thinned with a splash of water and a spoon of vinegar, the leftover paste becomes a brushable glaze for grilled shrimp (#SF01)."
+  ]
+}

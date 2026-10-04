@@ -1,0 +1,115 @@
+{
+  "id": "D05",
+  "corpus": {
+    "recordId": "kbbqguide#D05",
+    "tier": "C",
+    "path": "recipes/kbbqguide/desserts/sikhye-sweet-rice-punch.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-ferment",
+      "heading": "The ferment",
+      "ingredients": [
+        {
+          "id": "short-grain-rice",
+          "item": "short-grain rice , cooked soft with a little extra water",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "or sweet rice, the deeper traditional build",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "malt-powder",
+          "item": "malt powder , mixed with 1.5 liters warm water and rested 30 minutes, then strained through cloth or fine sieve, pressing the liquid out",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "yeotkireum, Korean barley malt — the enzyme source, from any Korean market",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar, or to taste",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-ginger",
+          "item": "A pinch of ginger , a few pine nuts and 2 dried jujubes for serving cups, optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The strained malt liquid poured over the cooked rice in a heavy pot, at a temperature your wrist reads as warm-not-hot (about 55 °C — the enzymes' working range; much above 65 °C they die), and held there: pot lid on, pot wrapped in a towel, in the warmest room or a 60 °C oven's residual heat, 4–6 hours.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "at the hours' end, the evidence of conversion is unmistakable: the grains float to the top, hollowed and translucent, and a taste of the liquid is sweet — the starch became maltose while you were elsewhere. No floating, no sweetness: the hold ran too cool — reheat gently to warm and give it two more hours.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Boil briefly to stop the ferment",
+      "action": "Boil briefly to stop the ferment: lift the floated grains out (rinse them, keep them — they are the drink's drifting rice), bring the liquid to a bare boil with the sugar, 5 minutes, skim, and chill thoroughly.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the cooled taste: lightly sweet, malty, faintly sparkling-fresh on the tongue, none of the raw-malt's edge. Sweetness dials up or down with sugar at this stage — sikhye runs gently sweet, a closing drink, not a soda.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Serve ice-cold in small cups, a spoon of the reserved rice grains in each, a pine nut and a jujube floating.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the drinking test: cold, malty-sweet, the grains eaten from the cup's bottom with the spoon after the liquid — the drink and its bite, the meal's last act. It should feel like the table exhaling.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "at the hours' end, the evidence of conversion is unmistakable: the grains float to the top, hollowed and translucent, and a taste of the liquid is sweet — the starch became maltose while you were elsewhere. No floating, no sweetness: the hold ran too cool — reheat gently to warm and give it two more hours.",
+    "the cooled taste: lightly sweet, malty, faintly sparkling-fresh on the tongue, none of the raw-malt's edge. Sweetness dials up or down with sugar at this stage — sikhye runs gently sweet, a closing drink, not a soda.",
+    "the drinking test: cold, malty-sweet, the grains eaten from the cup's bottom with the spoon after the liquid — the drink and its bite, the meal's last act. It should feel like the table exhaling."
+  ],
+  "storageNotes": [
+    "Keeps 4–5 days refrigerated (the boil and the cold hold it; the ferment's clock slows, never stops — drink it young). The grains keep separately in a little of the liquid. Cans of sikhye are the market's honest shortcut for the week the afternoon won't cooperate.",
+    "Variations: the yeot-sweetened winter build; a drop of yuja (#F09's jar) per cup for the citrus fork; the floating grains over shaved ice, sikhye-bingsu, the summer café's brilliant closing move."
+  ]
+}

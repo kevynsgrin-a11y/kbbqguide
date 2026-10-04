@@ -1,0 +1,187 @@
+{
+  "id": "SA03",
+  "corpus": {
+    "recordId": "kbbqguide#SA03",
+    "tier": "C",
+    "path": "recipes/kbbqguide/sauces/cho-gochujang-sweet-tangy-chili-sauce.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-sauce",
+      "heading": "The sauce",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-corn-syrup",
+          "item": "honey or corn syrup",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water , plus more to loosen",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "clove-garlic",
+          "item": "clove garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-gochugaru",
+          "item": "/2 tsp gochugaru , optional heat edge",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 1.5 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-classic-build-ins-choose-to-the-table",
+      "heading": "The classic build-ins (choose to the table)",
+      "ingredients": [
+        {
+          "id": "scallion",
+          "item": "scallion , finely sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-cucumber",
+          "item": "/2 cucumber, deseeded and small-diced — the cold-noodle classic's version",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 75 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thin-slivers-of-asian-pear-for-the-raw-s",
+          "item": "Thin slivers of Asian pear for the raw-seafood lane",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Vinegar, honey, and water whisked clear; gochujang in, worked to one even red-orange with no dark streaks.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a spoon dragged through leaves a slowly-closing trail — the thickness of thick honey for the noodle build.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Garlic, sesame oil, sesame seeds; the build-ins to the bowl's job; a final taste — the vinegar should be present on the finish of a dipped finger, a clean snap after the sweet.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test on a piece of plain cucumber: snap, sweet, heat hum, acid line. If the cucumber tastes pickled in ten seconds of sitting, the vinegar ran a splash heavy; if it reads as plain gochujang, the vinegar is shy.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "a spoon dragged through leaves a slowly-closing trail — the thickness of thick honey for the noodle build.",
+    "the eating test on a piece of plain cucumber: snap, sweet, heat hum, acid line. If the cucumber tastes pickled in ten seconds of sitting, the vinegar ran a splash heavy; if it reads as plain gochujang, the vinegar is shy."
+  ],
+  "storageNotes": [
+    "Keeps 1 week refrigerated and genuinely improves on days two and three as the vinegar mellows into the paste. Cucumber build-ins go in at serving, not storage.",
+    "Variations: the raw-seafood build with pear slivers; a spoon over the jjukkumi record (#SF06) instead of the marinade for a lighter tent; thinned further with water and a drop of soy, it dresses the cold noodle bowls and the squid's leftovers."
+  ]
+}

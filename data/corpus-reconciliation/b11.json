@@ -1,0 +1,159 @@
+{
+  "id": "B11",
+  "corpus": {
+    "recordId": "kbbqguide#B11",
+    "tier": "B",
+    "path": "recipes/kbbqguide/banchan/gyeran-mari-rolled-omelet.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-eggs",
+      "heading": "The eggs",
+      "ingredients": [
+        {
+          "id": "eggs",
+          "item": "eggs , at room temperature",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "large",
+          "preparation": "about 300 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , to finish",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-fine-salt",
+          "item": "/2 tsp fine salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , finely sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "carrot",
+          "item": "carrot , cut into fine matchsticks",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "small",
+          "preparation": "about 40 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "strip-of-fish-cake-or-a-few-leaves-of-ba",
+          "item": "strip of fish cake or a few leaves of baby spinach or perilla, shredded",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "optional fillings — pick one, not all",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil-for-wiping",
+          "item": "neutral oil for wiping , plus a paper towel",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "The first layer and the first roll",
+      "action": "The first layer and the first roll. Wipe the pan with the oiled towel, pour a thin layer of egg (about a quarter of the bowl) to coat the pan's floor, and let it set from the bottom — the surface should stay barely wet. Scatter a pinch of scallion (and carrot, if using) across. When the bottom is set and the top just barely not, roll the layer away from you: spatula lifts the far edge, and three folds bring a tight log to the pan's far side.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the first roll is the hardest and the least pretty, and that is fine — it becomes the log's core. The egg sheet should be tender-gold, not browned; browning means the pan crossed out of the medium-low zone, and the next layer tears at the roll.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "The pour-roll rhythm, layer by layer",
+      "action": "The pour-roll rhythm, layer by layer. Pull the pan off the heat (this is the secret beat — the pour onto a slightly cooled pan keeps the next layer from instantly scrambling), re-oil with the towel, pour the next quarter of egg to coat the floor in front of the log, and let it flow slightly under the log's base. Back on the heat until the new sheet's top is barely wet, then roll the log forward over it — one fold, then another, the new layer wrapping the log.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "each new layer should bond to the log (the wet-under pour does the welding) and the log grows visibly with each wrap. If a layer detaches, the sheet set too dry before the roll — wetter topside, earlier roll.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Finish and shape",
+      "action": "Finish and shape. After the last layer (about four pours), roll the finished log to its seam-side down and press gently on all four faces with the spatula in the warm pan — 30 seconds of shaping that turns a rough cylinder into a squared log that slices cleanly.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the finished log is evenly golden, firm but springy at a press, and the spiral is already visible at the ends. Cut test at the pan: a clean cross-section of tight layers with the scallion (and carrot) threading the spiral — no gaps, no torn sheets.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Rest 3 minutes, then slice thick",
+      "action": "Rest 3 minutes, then slice thick — 2 cm coins, a serrated or very sharp knife, one draw-stroke per coin (pressing saw-hand through a hot roll crushes the layers it took ten minutes to build).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: the coin holds its spiral to the last bite, each layer tender and just-bound, scallion's hum through it — and at the grill table it is the banchan that kids and elders reach for simultaneously, which is the dish's honest social job.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The eggs: gently beaten to uniform, additions fine and dry.",
+    "The pan: medium-low and cycled — off-heat at every pour, tender-gold never browned.",
+    "The roll: each layer welded under the log, four or five pours to the finish, seam pressed.",
+    "The slice: 2 cm coins, one draw-stroke, the spiral intact."
+  ],
+  "storageNotes": [
+    "The whole log keeps 2 days refrigerated and slices cold into lunchboxes — gyeran mari is the packed-lunch banchan by long tradition. Reheat slices 20 seconds in a pan, never a long microwave (it weeps and toughens).",
+    "Variations: cheese layered in (the school-lunch fork); perilla leaf and gochugaru for the grown-up log; the same craft at tamagoyaki's sweeter register with mirin and sugar is the Japanese cousin — same pan, different pantry."
+  ]
+}

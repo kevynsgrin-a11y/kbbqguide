@@ -1,0 +1,210 @@
+{
+  "id": "M08",
+  "corpus": {
+    "recordId": "kbbqguide#M08",
+    "tier": "B",
+    "path": "recipes/kbbqguide/grilled-meat/neobiani-royal-style-grilled-beef.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-beef",
+      "heading": "The beef",
+      "ingredients": [
+        {
+          "id": "beef-tenderloin-or-sirloin",
+          "item": "beef tenderloin or sirloin, cut against the grain into wide sheets, 4–5 mm thick",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 sheets, palm-sized",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-seasoning-set-the-soy-sesame-paste",
+      "heading": "The seasoning set (the soy-sesame paste)",
+      "ingredients": [
+        {
+          "id": "good-soy-sauce-or-soup-soy-the-closest-m",
+          "item": "good soy sauce or soup soy — the closest modern shelf equivalent to the old jinjang",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "45 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 22 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds, half ground to a coarse salt",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 16 g total — this is kkaesogeum, sesame salt",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , very finely minced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , finely sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper",
+          "item": "/2 tsp black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "optional",
+          "item": "Optional, and dated if used: 1 tsp sugar — sugar enters the written court line in the 1957 write-down, not earlier; include it as the mid-century layer and say so at the table",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-fire-and-finish",
+      "heading": "The fire and finish",
+      "ingredients": [
+        {
+          "id": "oak-or-lump-charcoal",
+          "item": "Oak or lump charcoal , or a ripping cast-iron pan as the honest indoor bridge",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 kg",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , lettuce and perilla ssam, gireumjang — the sesame-oil salt dip is the period-honest companion; pajeori and kimchi beside",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Grill the sheets one at a time, or two if the grate is wide",
+      "action": "Grill the sheets one at a time, or two if the grate is wide. Lay the sheet flat, single layer, and let it sit undisturbed 60–90 seconds — the soy film sets and takes color, and the smell should be sesame and browning beef, not burning sugar. The grill boss's clock here is the edge: when the rim of the sheet pales and beads a little juice, it is time.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the underside, peeked at with tongs, is browned in a dry grid from the grate with no black — a sheet past mahogany into black has crossed from the sesame-soy register into bitterness, and the coals are too eager. Raise the grate a hand-width.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Flip once, finish fast",
+      "action": "Flip once, finish fast. The second side takes 45–60 seconds. Pull the sheet when the raw red is just gone; the scoring has already guaranteed tenderness, so the only variable left is juice, and juice leaves with every extra second. Straight to the board.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "press the sheet's center with a fingertip: it should give and spring, not resist. A test piece eaten standing at the grill should taste sesame, soy, smoke, beef — in that order of arrival, with sweetness absent unless the 1957 sugar layer is in, in which case it arrives last and faint.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Cut after the fire, in squares",
+      "action": "Cut after the fire, in squares. The 1917 witness is specific and it is good practice: the whole sheet comes off the grate, rests half a minute, then is cut into neat squares — two or three cuts each way — for the platter. The square is the old table's portion logic, and it gives every diner an edge piece and a center piece. Sesame salt and a few whole seeds over the cut faces.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the squares on the platter should show the crosshatch scoring crisped at the intersections, browned faces, and an interior still faintly rosy at 4–5 mm. Squares that bleed red went too short; squares gray through went too long — and gray-through is the more common failure, because cooks trained on thin bulgogi shavings underestimate how fast a scored sheet's center arrives.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Serve hot, in the moment, with the pan-truth stated",
+      "action": "Serve hot, in the moment, with the pan-truth stated. This dish dies holding: the 1957 line is \"grill at the meal,\" and every minute on a warm platter trades sesame perfume for steam. The ssam build for this record is the quiet one: leaf, a bare finger-swipe of gireumjang (#SA02), one or two squares while they are still hot, fold, one bite. Heavy ssamjang buries the sheet's register; save it for the pork records (#M10).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test at the table's first ssam: the wide, scored-but-intact bite — tender to the tooth with a structure thin bulgogi never has, smoke in the crosshatch, sesame on the finish. If the first taste is sweetness, the wrong cousin is on the plate.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The sheet: 4–5 mm, against the grain, crosshatch-scored both faces, paste-coated 30–60 minutes — never ground, never soaked.",
+    "The fire: gray-edged charcoal, dry grid marks, mahogany not black, flipped once at the weeping edge.",
+    "The pull: raw red just gone, faintly rosy center, fingertip spring.",
+    "The finish: squares cut after the fire, sesame salt over, served hot with the pan-truth named."
+  ],
+  "storageNotes": [
+    "Neobiani does not store as itself: the sheet's perfume is minutes old at service. Extra sheets hold pasted, refrigerated, one day; extra cooked squares become the finest kimchi fried rice in this category by a distance.",
+    "Variations: the 1957 layer (sugar in, serve-hot doctrine stated); the Gwangyang clock (thinner sheet, toss at the table, grill instantly); the yaksanjeok skewer road and the tteokgalbi grind (#M09) are different recipes, linked by history, separated by the knife."
+  ]
+}

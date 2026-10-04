@@ -1,0 +1,156 @@
+{
+  "id": "SF07",
+  "corpus": {
+    "recordId": "kbbqguide#SF07",
+    "tier": "B",
+    "path": "recipes/kbbqguide/seafood/godeungeo-gui-grilled-mackerel.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-fish",
+      "heading": "The fish",
+      "ingredients": [
+        {
+          "id": "whole-mackerel",
+          "item": "whole mackerel , gutted and cleaned, heads on or off , or 4 thick cross-cut steaks",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 350 g each",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-cure",
+      "heading": "The cure",
+      "ingredients": [
+        {
+          "id": "coarse-salt-more-than-seems-right-see-me",
+          "item": "coarse salt — more than seems right; see Method",
+          "metricAmount": 2,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-grill-and-the-finish",
+      "heading": "The grill and the finish",
+      "ingredients": [
+        {
+          "id": "neutral-oil-for-the-grate",
+          "item": "Neutral oil for the grate",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 10 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "lemon-or-a-splash-of-rice-vinegar",
+          "item": "lemon or a splash of rice vinegar , optional but traditional beside",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 ml",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds-and-sliced-scallion",
+          "item": "toasted sesame seeds and sliced scallion , for the platter",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , kimchi — the fatty-fish law is a fermented cut beside it — mu sangchae , and a bowl of the soy-vinegar onion dip",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Oiled grate, skin down, over the moderate zone — and leave it alone",
+      "action": "Oiled grate, skin down, over the moderate zone — and leave it alone. Whole fish need 5–6 minutes on the first side; steaks 3–4. The skin will stick and then release itself as it crisps — the earliest tongs attempt tears the skin off and the skin is half the dish.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the skin is done when it lifts cleanly and shows crisp gold-brown with darker grill stripes; at the thickest score, the flesh below is opaque halfway to the bone. Fat will drip and flare — move the fish to the cool zone for 20 seconds when it does, back to finish. This dance is the whole technique.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "The one flip, gently",
+      "action": "The one flip, gently. Two spatulas or one wide fish spatula and a confident turn: flesh side (or second steak face) down for 4–5 minutes on the moderate zone. The second side takes less time than the first — the fish is half-cooked already.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the doneness read at the backbone, the record's core test: at the thickest score on the second side, the flesh at the bone has just turned opaque and pulls away from the bone with a fork's gentle sideways nudge. Opaque-at-the-bone is done; translucent-at-the-bone is 2 more minutes; falling-apart is past. Mackerel is fatty enough to stay moist a full minute past done — use that grace, do not fear i",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "The plate is the filet lesson",
+      "action": "The plate is the filet lesson. Whole fish to a warm platter; the top fillet lifts off the bones in one piece with a spatula run along the backbone (peel from head-end to tail). The skeleton lifts clear in one motion, the second fillet lies beneath — the oldest two-fillets-one-fish service in the world. Sesame and scallion over, lemon or vinegar beside.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: a flake of the thick loin with a strand of kimchi — crisp skin in the same bite, rich sweet fat, the fermented cut answering it. If the flesh tastes under-seasoned, the cure ran shy (fix next fish: the full 2 teaspoons); the vinegar splash at the table is the patch, not the cure.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The fish: cured with the full salt measure, dried uncovered, skin patted bone-dry, thickest part scored to the bone.",
+    "The fire: moderate with a cool zone; the skin releases itself — never forced.",
+    "The pull: flesh opaque at the backbone at the thickest score, pulling from the bone with a nudge.",
+    "The plate: two fillets off one skeleton, skin crisp, fermented cut beside every plate."
+  ],
+  "storageNotes": [
+    "The salted fish holds 24 hours refrigerated (the cure is the keeping). Cooked, 2 days — the leftover fillet flaked over rice with sesame oil and a fried egg is the home table's day-after classic, arguably better than the first night.",
+    "Variations: hairtail runs the same cure sliced into fingers (#SF08); yellow croaker runs it whole and drier-salted (#SF09); a gochujang swipe in the last 2 minutes takes it toward the yangnyeom lane for the spicy table."
+  ]
+}

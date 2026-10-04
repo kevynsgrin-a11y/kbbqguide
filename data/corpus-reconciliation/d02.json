@@ -1,0 +1,149 @@
+{
+  "id": "D02",
+  "corpus": {
+    "recordId": "kbbqguide#D02",
+    "tier": "C",
+    "path": "recipes/kbbqguide/desserts/patbingsu-red-bean-shaved-ice.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-red-bean-pat-or-the-honest-shortcut",
+      "heading": "The red bean (pat — or the honest shortcut)",
+      "ingredients": [
+        {
+          "id": "dried-red-beans",
+          "item": "dried red beans , 100 g sugar, a pinch of salt, water to cover — simmered 60–90 minutes to soft, then drained and half-mashed",
+          "metricAmount": 200,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "pat",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "or-400-g-canned-sweet-red-beans",
+          "item": "Or 400 g canned sweet red beans , lightly crushed with a spoon",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "pat in a can, the Korean market's",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-ice",
+      "heading": "The ice",
+      "ingredients": [
+        {
+          "id": "shaved-ice-a-shaved-ice-machine",
+          "item": "shaved ice : a shaved-ice machine, a food processor in pulses, or two trays of ice crushed in a towel with a rolling pin then pulsed — the target is snow, not cubes",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cups",
+          "preparation": "about 600 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-toppings",
+      "heading": "The toppings",
+      "ingredients": [
+        {
+          "id": "sweetened-condensed-milk",
+          "item": "sweetened condensed milk",
+          "metricAmount": 4,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 80 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "banana",
+          "item": "banana, sliced ; 100 g strawberries or kiwi; a handful of crispy rice cereal or crushed walnuts ; 8 small mochi balls , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 100 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "injeolmi-powder-or-roasted-soybean-powde",
+          "item": "Injeolmi powder or roasted soybean powder , optional, the café's signature dust",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Shave the ice into a chilled wide bowl — a snow mound, higher at the center, worked quickly (shaved ice melts while you look at it).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the ice is snow-flaked, not granular — it should compress lightly under a spoon and hold the mound's shape. Coarse granita-textured ice is the difference between patbingsu and a snow cone, and the difference is the whole dessert.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The toppings arranged in wedges on the snow — the bean in a fat stripe down the mountain, fruit wedges around, mochi and crunch scattered, the condensed milk zigzagged over everything, the injeolmi powder dusted last.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the visual is the recipe's second half: a striped, crowning mountain, every topping visible, assembled in under three minutes from the first shave (the clock is real — the mountain loses a millimeter a minute at room temperature).",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "To the table immediately, four long spoons, everyone digging from their own side.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: the first spoonful should carry ice, bean, condensed milk, and fruit together — cold, sweet, creamy, the bean's earthy depth under the milk's sweetness. The mountain collapses as you eat, the toppings avalanche into the melting snow, and the bowl's last puddle — bean, milk, meltwater — is drunk or fought over. That collapse is the dish's design, not its failure.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the ice is snow-flaked, not granular — it should compress lightly under a spoon and hold the mound's shape. Coarse granita-textured ice is the difference between patbingsu and a snow cone, and the difference is the whole dessert.",
+    "the visual is the recipe's second half: a striped, crowning mountain, every topping visible, assembled in under three minutes from the first shave (the clock is real — the mountain loses a millimeter a minute at room temperature).",
+    "the eating test: the first spoonful should carry ice, bean, condensed milk, and fruit together — cold, sweet, creamy, the bean's earthy depth under the milk's sweetness. The mountain collapses as you eat, the toppings avalanche into the melting snow, and the bowl's last puddle — bean, milk, meltwater — is drunk or fought over. That collapse is the dish's design, not its failure."
+  ],
+  "storageNotes": [
+    "The pat keeps a week refrigerated and improves; everything else is assembled at the moment. There is no leftover patbingsu — there is only the empty bowl.",
+    "Variations: the injeolmi powder's café classic; green tea powder dusted with red bean; the fruit-swap of the season; a scoop of ice cream buried in the mountain center, the summer festival's extravagance."
+  ]
+}

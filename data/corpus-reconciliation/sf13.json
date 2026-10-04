@@ -1,0 +1,171 @@
+{
+  "id": "SF13",
+  "corpus": {
+    "recordId": "kbbqguide#SF13",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/garlic-scallion-grilled-mussels.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-mussels",
+      "heading": "The mussels",
+      "ingredients": [
+        {
+          "id": "fresh-mussels",
+          "item": "fresh mussels, scrubbed, beards removed, closed",
+          "metricAmount": 1,
+          "metricUnit": "kg",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "tap-test any gapers: a live one closes; an open non-closer is discarded",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-sauce",
+      "heading": "The sauce",
+      "ingredients": [
+        {
+          "id": "unsalted-butter",
+          "item": "unsalted butter",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , sliced thin, not grated — slices toast sweet",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , sliced, whites and greens separated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochujang",
+          "item": "gochujang , optional but this record's signature",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin-or-water",
+          "item": "mirin or water",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "crusty-bread-or-steamed-rice",
+          "item": "Crusty bread or steamed rice , lemon wedges, an empty bowl for shells at the table's center",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 300 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Mussels into the warm pan with the toasted base and a splash of mirin, lid on, high heat under now — they steam in their own liquor, 3–5 minutes, one hard shake at the halfway mark.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the shells spring open and the kitchen smells of garlic steam and ocean. Off the heat the moment the majority gape; a mussel that refused its colleagues gets one more minute in the residual steam and then, still shut, goes to the discard bowl — the unopened mussel is the one absolute no in shellfish.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Gochujang and sesame oil in, swirled through the liquor off the heat until the pot runs glossy orange-gold; scallion greens over.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the broth test with the eating spoon: briny, buttery, garlic-sweet, a warm gochujang hum behind — it should taste like the sea made a sauce. Flat? A squeeze of lemon and a pinch of salt; this pot is forgiving.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Pan to the table on its trivet, shells bowl beside, bread or rice armed. The eating: pull the mussels from the shells by hand or with an empty shell as tongs (the tradition's own tool), a mussel and a spoon of broth per bite, bread for the pot's floor.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the empty-pot test: no broth left, the bread has been torn to ragged edges, someone has asked what was in the sauce. That is the record finished properly.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the shells spring open and the kitchen smells of garlic steam and ocean. Off the heat the moment the majority gape; a mussel that refused its colleagues gets one more minute in the residual steam and then, still shut, goes to the discard bowl — the unopened mussel is the one absolute no in shellfish.",
+    "the broth test with the eating spoon: briny, buttery, garlic-sweet, a warm gochujang hum behind — it should taste like the sea made a sauce. Flat? A squeeze of lemon and a pinch of salt; this pot is forgiving.",
+    "the empty-pot test: no broth left, the bread has been torn to ragged edges, someone has asked what was in the sauce. That is the record finished properly."
+  ],
+  "storageNotes": [
+    "Live mussels keep 1–2 days on ice in the fridge in an open bowl (never sealed — they breathe). Cooked, 1 day, meat picked for pasta or rice; the strained broth is the next day's soup base.",
+    "Variations: the oyster sauce (#SF12's butter-gochujang build) transplants whole; clams run the same pot at a shorter clock (#SF15); a splash of soju in the steam for the tent's version."
+  ]
+}

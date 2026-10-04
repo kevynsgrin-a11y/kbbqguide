@@ -1,0 +1,176 @@
+{
+  "id": "F06",
+  "corpus": {
+    "recordId": "kbbqguide#F06",
+    "tier": "C",
+    "path": "recipes/kbbqguide/fresh/asian-pear-and-cucumber-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-fruit-and-vegetable",
+      "heading": "The fruit and vegetable",
+      "ingredients": [
+        {
+          "id": "asian-pear",
+          "item": "Asian pear , cored, cut into matchsticks",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "large",
+          "preparation": "about 400 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "cucumber",
+          "item": "cucumber , cut into matchsticks",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 200 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-coarse-salt",
+          "item": "A pinch of coarse salt , over the cucumber only, 5 minutes",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1.5,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-gochugaru",
+          "item": "/2 tsp gochugaru , optional thread",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-pepper-1-scallion",
+          "item": "Black pepper; 1 scallion , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The dressing whisked light — soy, honey, vinegar, sesame oil, gochugaru — thinner than the family's other dressings: this salad's dressing is a coat, not a sauce.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "tastes delicate: sweet first, a light soy savor, citrus-edge acid, a faint warm thread. A strong dressing here overwhelms the pear; restraint is the recipe.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Pear, squeezed cucumber, and scallion folded through with spoons — thirty seconds, no more — sesame and pepper over.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test between the grill's richest bites: cold, wet, crisp, faintly sweet, cleaned. The bowl's whole job is the word \"cleaned,\" and beside the black cod (#SF11) or the galbi (#M03) it performs that job completely.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "tastes delicate: sweet first, a light soy savor, citrus-edge acid, a faint warm thread. A strong dressing here overwhelms the pear; restraint is the recipe.",
+    "the eating test between the grill's richest bites: cold, wet, crisp, faintly sweet, cleaned. The bowl's whole job is the word \"cleaned,\" and beside the black cod (#SF11) or the galbi (#M03) it performs that job completely."
+  ],
+  "storageNotes": [
+    "Eats within the hour; there is no keeping. Dressing keeps a week in a jar.",
+    "Variations: matchstick jujube or a few pine nuts over; the yuja dressing (#F05's) swapped for the citrus fork; the same build over shaved ice becomes dessert's first step toward #D02."
+  ]
+}

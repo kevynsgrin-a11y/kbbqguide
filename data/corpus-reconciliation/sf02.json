@@ -1,0 +1,171 @@
+{
+  "id": "SF02",
+  "corpus": {
+    "recordId": "kbbqguide#SF02",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/soy-garlic-grilled-shrimp.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-shrimp",
+      "heading": "The shrimp",
+      "ingredients": [
+        {
+          "id": "large-shrimp",
+          "item": "large shrimp , shell on, deveined",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "16–20 count",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 22 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-structure",
+          "item": "honey — structure, not sweetness",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper",
+          "item": "/2 tsp black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dip-and-table",
+      "heading": "The dip and table",
+      "ingredients": [
+        {
+          "id": "yangnyeom-ganjang",
+          "item": "Yangnyeom ganjang , the scallion-soy dip, in a bowl the table shares",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "#SA04",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , kimchi , lettuce ssam",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 400 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Hot grate or pan, single layer, two minutes undisturbed. The shells take light char at the tips; the smell is garlic and sesame over toasting shell.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the shells blush and the bottom edges char thinly; lift one — the meat below should be opaque more than halfway up.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip once, 60–90 seconds, off the fire the moment the last translucence at the center of a test shrimp is gone.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "pull one and cut: opaque white through, still plump and springy. Shrimp's overcook line is 30 seconds past this point — the grill boss eats the test piece standing up, as is right.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Platter, and the dip is half the dish: yangnyeom ganjang (#SA04), scallions heavy, each shrimp dunked at the table.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: snap, sweetness, soy-garlic roundness, the dip's scallion bite — shrimp first, seasoning behind, always. This lane exists to let the shrimp talk.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the shells blush and the bottom edges char thinly; lift one — the meat below should be opaque more than halfway up.",
+    "pull one and cut: opaque white through, still plump and springy. Shrimp's overcook line is 30 seconds past this point — the grill boss eats the test piece standing up, as is right.",
+    "eating test: snap, sweetness, soy-garlic roundness, the dip's scallion bite — shrimp first, seasoning behind, always. This lane exists to let the shrimp talk."
+  ],
+  "storageNotes": [
+    "Raw marinated shrimp hold 30 minutes. Cooked, 2 days — cold peeled shrimp over rice or into a light noodle bowl; shells to stock.",
+    "Variations: a pinch of gochugaru in the marinade to walk toward the spicy fork (#SF01); butter in the final minute for the fusion table; the same marinade on the squid record's clean cousin lanes."
+  ]
+}

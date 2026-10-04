@@ -1,0 +1,227 @@
+{
+  "id": "D01",
+  "corpus": {
+    "recordId": "kbbqguide#D01",
+    "tier": "B",
+    "path": "recipes/kbbqguide/desserts/hotteok-brown-sugar-seed-pancakes.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-dough",
+      "heading": "The dough",
+      "ingredients": [
+        {
+          "id": "all-purpose-flour",
+          "item": "all-purpose flour",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sweet-rice-flour",
+          "item": "sweet rice flour",
+          "metricAmount": 50,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "chapssalgaru — the chew; substitute fine glutinous rice flour",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 30,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-fine-salt",
+          "item": "/2 tsp fine salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "instant-yeast",
+          "item": "instant yeast",
+          "metricAmount": 2,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 7 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "warm-milk-or-water",
+          "item": "warm milk or water",
+          "metricAmount": 250,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 °C — warm to the wrist, not hot",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil , worked into the dough",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-filling",
+      "heading": "The filling",
+      "ingredients": [
+        {
+          "id": "dark-brown-sugar",
+          "item": "dark brown sugar, packed",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sunflower-or-pine-nuts",
+          "item": "sunflower or pine nuts, coarsely chopped",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ground-cinnamon",
+          "item": "ground cinnamon",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-salt",
+          "item": "A pinch of salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-fry",
+      "heading": "The fry",
+      "ingredients": [
+        {
+          "id": "neutral-oil-for-the-pan",
+          "item": "Neutral oil for the pan",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 tbsp / 40 g total across the batch",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Shape the pockets with oiled hands, not floured ones",
+      "action": "Shape the pockets with oiled hands, not floured ones. With wet or oiled palms, tear off a ball of dough (about 80 g), and flatten it in your hand into a 10 cm disc — the dough is too soft to roll; the palm is the rolling pin. A spoonful of filling (about 20 g) into the center, then the disc's edges gathered up and pinched closed like a drawstring purse, seam down on the plate. Eight of them.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "each purse is fully sealed with no sugar showing (an open seam leaks molten sugar straight into the oil — the batch's one real hazard, both for the fry and for the sugar lost from the pancake) and the dough around the filling is even, without a thin blowout side.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Fry low and slow, flatten once",
+      "action": "Fry low and slow, flatten once. A generously oiled pan at medium-low — the oil at a lazy shimmer, not a sizzle (around 160 °C if the pan could speak). Two or three purses in seam-side-down, 60–90 seconds to set the bottom, then flip and press each one flat with the spatula — one confident press into a 1.5 cm disc — and another 2–3 minutes on that side, flipping once more briefly to re-crisp the first face.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the crust goes deep golden and lacy-crisp at the pressed edges while the interior stays thick and pale-soft; press one at the center — it should give like a cushion. A dark crust at 90 seconds means the heat is running high and the filling inside is still grainy — the low-slow fry exists precisely so the sugar melts in the time the crust browns.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Rest one minute — the safety minute — and serve",
+      "action": "Rest one minute — the safety minute — and serve. Off the pan to a rack or plate, and a full minute before the first bite: the filling is molten syrup at 120 °C-plus straight from the pan, the street cart's small legend of burned mouths and burned fingers.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: the first bite tears the crisp crust and the syrup runs — dark brown sugar, cinnamon, the seeds' crunch, the chewy-soft interior catching it all. It should be slightly too hot, slightly messy, and completely worth both. That is the street cart's exact register, reproduced.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The dough: wet, risen an hour to doubled, shaped with oiled hands, sealed purses.",
+    "The fry: medium-low (160 °C's lazy shimmer), pressed once to 1.5 cm, deep-gold crust, cushion-soft interior.",
+    "The melt: the filling fully liquid at the first tear, seeds suspended in the syrup.",
+    "The serve: the one-minute rest, then straight from the rack — hotteok has no second act."
+  ],
+  "storageNotes": [
+    "Eats from the rack, full stop — see the Note. The dough keeps 24 hours refrigerated after the first rise (punch down, chill, warm 30 minutes before shaping); shaped purses 30 minutes under a damp towel.",
+    "Variations: the seed mix swaps freely; a spoon of cream cheese with the brown sugar for the modern carts' melted-cheese fork; the savory hotteok (scallion and soy) is a different cart's lunch — same dough, opposite filling, worth its own afternoon."
+  ]
+}

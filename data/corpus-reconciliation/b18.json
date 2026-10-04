@@ -1,0 +1,187 @@
+{
+  "id": "B18",
+  "corpus": {
+    "recordId": "kbbqguide#B18",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/yeongeun-jorim-soy-braised-lotus-root.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-lotus-root",
+      "heading": "The lotus root",
+      "ingredients": [
+        {
+          "id": "fresh-lotus-root",
+          "item": "fresh lotus root, peeled, cut into 1 cm coins",
+          "metricAmount": 600,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar , in the soaking water",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-braise",
+      "heading": "The braise",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "corn-syrup-or-honey",
+          "item": "corn syrup or honey",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , crushed",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil , off heat",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds-1-dried-red-chili-o",
+          "item": "toasted sesame seeds ; 1 dried red chili or a pinch of gochugaru , optional",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced, optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The coins and everything but the sesame finish into a wide pan — soy, water, syrup, mirin, garlic, chili — brought to a simmer, lid on, medium-low.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a gentle bubble, not a boil: the braise should barely tremble. A hard boil breaks the coins' shape before they tender.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Braise 25–30 minutes, turning the coins once at the halfway mark",
+      "action": "Braise 25–30 minutes, turning the coins once at the halfway mark, lid on until the last five minutes. The braise reduces slowly while the root drinks.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the doneness read: a paring knife or chopstick slides into a coin's flesh with gentle resistance — tender-firm, never soft, and the thinnest coins' edges have gone translucent amber. The braise by now has reduced to a syrup that pools in the pan's low spots.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Lid off, the final reduction — 5 minutes",
+      "action": "Lid off, the final reduction — 5 minutes, turning the coins through the thickening syrup every 60 seconds until every face wears glaze and the pan is nearly dry. Off the heat: sesame oil, seeds.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the coin test: bite through and the holes should visibly hold glaze; the flesh gives with a fine, almost crisp-firm grain (lotus keeps a faint snap even fully braised — its signature), savory-sweet through and through.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "a gentle bubble, not a boil: the braise should barely tremble. A hard boil breaks the coins' shape before they tender.",
+    "the doneness read: a paring knife or chopstick slides into a coin's flesh with gentle resistance — tender-firm, never soft, and the thinnest coins' edges have gone translucent amber. The braise by now has reduced to a syrup that pools in the pan's low spots.",
+    "the coin test: bite through and the holes should visibly hold glaze; the flesh gives with a fine, almost crisp-firm grain (lotus keeps a faint snap even fully braised — its signature), savory-sweet through and through."
+  ],
+  "storageNotes": [
+    "Keeps 4–5 days refrigerated and improves for two days as the coins keep drinking — the elegant make-ahead. Serve at room temperature or lightly warmed; the glaze is best not reheated hard.",
+    "Variations: the same braise on potato (#B09) and quail eggs (#B19); honey swapped in runs a deeper gold; a garnish of julienned red chili over the coins for the holiday table's full architecture."
+  ]
+}

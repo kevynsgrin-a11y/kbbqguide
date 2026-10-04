@@ -1,0 +1,165 @@
+{
+  "id": "B19",
+  "corpus": {
+    "recordId": "kbbqguide#B19",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/mechurial-jangjorim-soy-braised-quail-eggs.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-eggs",
+      "heading": "The eggs",
+      "ingredients": [
+        {
+          "id": "quail-eggs",
+          "item": "quail eggs",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 24,
+          "customaryUnit": null,
+          "preparation": "about 480 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water-to-cover-1-tsp-salt-a-splash-of-vi",
+          "item": "Water to cover; 1 tsp salt ; a splash of vinegar in the boil",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-braise-a-half-batch-of-b20-s",
+      "heading": "The braise (a half-batch of #B20's)",
+      "ingredients": [
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 200,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "45 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "corn-syrup-or-honey",
+          "item": "corn syrup or honey",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , crushed",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin , optional",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-toasted-sesame-oil",
+          "item": "/2 tsp toasted sesame oil , off heat; sesame seeds to finish",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The peeled eggs into the simmering braise, 10 minutes at the barest bubble — this first simmer drives the soy in through the warm shell-less whites.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the whites have gone from white to café-au-lait at the surface; the braise smells of soy and sweet garlic.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Off the heat, and the marinating is the recipe: the eggs sit in the braise 1 hour at room temperature, then refrigerate in their liquid overnight. The color deepens to walnut, the soy reaches the yolk's border, the flavor rounds.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the next day's taste test: cut one — a marbled tan white, a bright yolk with a savory halo at its edge. The egg should taste seasoned-through, not dipped.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Serve drained, lightly wet with the braise, sesame over — and the braise itself goes back to work: it is now an egg-fragrant half-batch of jangjorim soy, ready to braise the beef (#B20) or a second round of eggs (top the liquid up with a splash of water and soy).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test at the drinking table or in the lunchbox: one bite, the savory-sweet white snapping against the rich yolk — the bowl empties two eggs at a time per person, and that ratio is the recipe's only scaling law.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the whites have gone from white to café-au-lait at the surface; the braise smells of soy and sweet garlic.",
+    "the next day's taste test: cut one — a marbled tan white, a bright yolk with a savory halo at its edge. The egg should taste seasoned-through, not dipped.",
+    "the eating test at the drinking table or in the lunchbox: one bite, the savory-sweet white snapping against the rich yolk — the bowl empties two eggs at a time per person, and that ratio is the recipe's only scaling law."
+  ],
+  "storageNotes": [
+    "Keeps 4–5 days refrigerated in their liquid (the make-ahead banchan, improving daily). The spent braise gets one more career (#B20, or round two of eggs).",
+    "Variations: the jalapeño-spiced fork; chicken eggs run the same braise at a longer soak (2 days) for the marbled deviled-egg lane; the eggs halved over hot rice with a spoon of the liquid is the lunchbox's crown."
+  ]
+}

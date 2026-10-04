@@ -1,0 +1,138 @@
+{
+  "id": "SF08",
+  "corpus": {
+    "recordId": "kbbqguide#SF08",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/galchi-gui-grilled-hairtail.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-fish",
+      "heading": "The fish",
+      "ingredients": [
+        {
+          "id": "hairtail",
+          "item": "hairtail , cut into 10 cm fingers, or whole if your grill is long enough",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 2 fish",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-cure",
+      "heading": "The cure",
+      "ingredients": [
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt",
+          "metricAmount": 1.5,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 7 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-finish-and-table",
+      "heading": "The finish and table",
+      "ingredients": [
+        {
+          "id": "neutral-oil-for-the-grate",
+          "item": "Neutral oil for the grate",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 10 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , sliced scallion , lemon wedge or splash of vinegar",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , kimchi , and a light soy-vinegar dip",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 500 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Fingers skin-down on the oiled moderate grate, 3–4 minutes undisturbed. The skin will tighten, silver going pewter, then blister gold at the edges.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the skin lifts clean where it crisped and stays put where it has not — work from the done end with the spatula, not all at once. The flesh at the cut ends turns opaque upward from the skin.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "One gentle flip, 2–3 minutes more, off the fire when the flesh at the thickest finger's center is opaque and flakes at a fork's nudge.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a test finger pulled apart: opaque through, sweet and firm-juicy, the spine releasing from the meat with no resistance. Hairtail's flesh is dense but delicate — it will not forgive much past this point, but it does not need to; the clock is short.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Platter, sesame and scallion over, lemon beside, and the eating is handwork: lift the spine free of each finger, the meat in one or two pieces.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: crisp skin and sweet white meat in the same bite, the soy-vinegar dip for the pieces that want brightening. If the skin is leathery instead of crisp, the finger went on wet — the drying law is the record.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the skin lifts clean where it crisped and stays put where it has not — work from the done end with the spatula, not all at once. The flesh at the cut ends turns opaque upward from the skin.",
+    "a test finger pulled apart: opaque through, sweet and firm-juicy, the spine releasing from the meat with no resistance. Hairtail's flesh is dense but delicate — it will not forgive much past this point, but it does not need to; the clock is short.",
+    "eating test: crisp skin and sweet white meat in the same bite, the soy-vinegar dip for the pieces that want brightening. If the skin is leathery instead of crisp, the finger went on wet — the drying law is the record."
+  ],
+  "storageNotes": [
+    "Salted fingers hold 24 hours refrigerated. Cooked, 2 days — the meat lifts off the spine in clean strips for rice bowls or gimbap filling.",
+    "Variations: a light dusting of flour before the grill (the Busan street style) for a crisper coat at the cost of some skin's shine; the same cure on mackerel (#SF07) at a longer clock; the gochujang swipe at the end for the spicy table."
+  ]
+}

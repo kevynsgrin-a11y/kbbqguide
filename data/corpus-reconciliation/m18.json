@@ -1,0 +1,232 @@
+{
+  "id": "M18",
+  "corpus": {
+    "recordId": "kbbqguide#M18",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/garlic-scallion-chicken-skewers.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-skewers",
+      "heading": "The skewers",
+      "ingredients": [
+        {
+          "id": "boneless",
+          "item": "boneless, skinless chicken thighs, cut into 3 cm cubes",
+          "metricAmount": 800,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "bundles-scallions",
+          "item": "bundles scallions , whites and pale greens cut into 3 cm segments",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 120 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "bamboo-skewers",
+          "item": "bamboo skewers, soaked 30 minutes",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 12,
+          "customaryUnit": null,
+          "preparation": "or metal",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated — the garlic leads here",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "about 24 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper",
+          "item": "/2 tsp black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-brush-sauce",
+      "heading": "The brush sauce",
+      "ingredients": [
+        {
+          "id": "of-the-reserved-marinade-1-tbsp-melted-b",
+          "item": "of the reserved marinade + 1 tbsp melted butter or extra sesame oil",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , cho-gochujang on the side as the dip, kimchi",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 500 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Medium-hot fire, skewers laid across with a finger's width between them. First side undisturbed 3 minutes — the cubes need to release, and the scallion wants one face charred softly.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "turn a test skewer: the chicken's underside should be browned with grill lines and release cleanly; the scallion's face should be charred at the tips and glossy in the middle. If the scallion is incinerated, the fire is a notch hot for its tolerance — slide the scallion ends toward the fire's cooler edge on the next round.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Turn every 2 minutes through three more faces, brushing with the sauce on the second turn — 8–10 minutes total. The corners of the cubes will take little char-kisses; the centers stay juicy.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "pull when a test cube's cut face is opaque to the center with clear juices — no pink, chicken's absolute rule — and the scallion has gone sweet-soft with char at the edges.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Off the skewer at the table or straight off the stick; sesame over; cho-gochujang (#SA03) as the dip.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: chicken and scallion from the same bite, garlic-soy glaze behind them, then the dip's sweet-heat on the finish. The stick is the portion — two skewers and rice is the honest serving.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "turn a test skewer: the chicken's underside should be browned with grill lines and release cleanly; the scallion's face should be charred at the tips and glossy in the middle. If the scallion is incinerated, the fire is a notch hot for its tolerance — slide the scallion ends toward the fire's cooler edge on the next round.",
+    "pull when a test cube's cut face is opaque to the center with clear juices — no pink, chicken's absolute rule — and the scallion has gone sweet-soft with char at the edges.",
+    "eating test: chicken and scallion from the same bite, garlic-soy glaze behind them, then the dip's sweet-heat on the finish. The stick is the portion — two skewers and rice is the honest serving."
+  ],
+  "storageNotes": [
+    "Skewers marinate 24 hours maximum, threads and all. Cooked, 3 days — pull the meat off for a rice bowl or a wrap; the stick has done its work.",
+    "Variations: thread mushrooms between the cubes for the half-vegetarian table; the gochujang marinade fork (#M17's paste on cubes); beef sirloin cubes take the same build and grill a minute faster."
+  ]
+}

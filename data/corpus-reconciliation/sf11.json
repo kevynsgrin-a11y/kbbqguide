@@ -1,0 +1,200 @@
+{
+  "id": "SF11",
+  "corpus": {
+    "recordId": "kbbqguide#SF11",
+    "tier": "B",
+    "path": "recipes/kbbqguide/seafood/doenjang-glazed-grilled-black-cod.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-fish",
+      "heading": "The fish",
+      "ingredients": [
+        {
+          "id": "black-cod-fillets",
+          "item": "black cod fillets , skin on or off , pin bones pulled",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "sablefish",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-cure-24-48-hours-ahead",
+      "heading": "The cure (24–48 hours ahead)",
+      "ingredients": [
+        {
+          "id": "doenjang",
+          "item": "doenjang",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "ginger",
+          "item": "ginger , grated",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-finishing-glaze",
+      "heading": "The finishing glaze",
+      "ingredients": [
+        {
+          "id": "honey",
+          "item": "honey , 1 tbsp mirin , 1 tsp soy sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-finish-and-table",
+      "heading": "The finish and table",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , thin-sliced scallion",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , pickled perilla or quick-pickled cucumber, and a plain lettuce salad — the rich lacquer wants sharp, simple things",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 500 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Slow face first",
+      "action": "Slow face first: skin-on goes skin-down, skin-off goes presentation-face-down, on the moderate zone. Six to eight minutes — the surface caramelizes slowly from paste-pale to tea-brown, and the fillet's underside sets.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the surface color reads deep tea with darker edges; the flesh at the sides has turned opaque a third of the way up. No black — black means the zone is running hot; offset further from the coals.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Flip with a full spatula's support — black cod is soft as custard when",
+      "action": "Flip with a full spatula's support — black cod is soft as custard when raw and nearly as soft when cooked. Brush the caramelized first face with the finishing glaze, two minutes on the second side, glaze the second face, and pull at the flake stage: the flesh at the thickest point parts along the grain with a fork's weight and no force, still translucent-glossy at the very center (black cod's fat keeps it silky well past where other fish dry — around 55 °C internal at the center if you measure).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the test flake: sweet-savory lacquer outside, butter-fat silk inside, the doenjang's depth all the way through rather than sitting on the surface — that all-the-way-through is the 48-hour cure's signature, and no glaze trick can fake it.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Sesame and scallion over, and serve in wide spoons or on rice — the fi",
+      "action": "Sesame and scallion over, and serve in wide spoons or on rice — the fillet barely holds a shape. The sharp pickle beside every plate; the lacquer's sweetness and the pickle's acid are the plate's argument.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: the first bite should be lacquer, silk, then the pickle's cut — the three-beat finish. If the pickle is an afterthought on the plate it will be an afterthought on the palate; this fish makes its own case for why Korean tables always set a sharp thing beside the rich one.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The cure: 24–48 hours, turned once, excess scraped not rinsed.",
+    "The fire: moderate and offset; tea-brown caramel, never black.",
+    "The pull: parts at a fork's weight, translucent-glossy center — custard-soft, fully safe at the flake stage.",
+    "The plate: sharp pickle beside every serving; the richness is the foil, not the point."
+  ],
+  "storageNotes": [
+    "The cure is the keeping: curing fillets hold 48 hours (the clock above), cooked fish 2 days — cold flakes over rice with the thinned glaze is the day-after luxury.",
+    "Variations: the gochujang-glaze fork on the same cure clock (#SF10); the cure's logic on thick salmon at 12 hours; the scraped-off excess cure, simmered with a splash of water and strained, is a spoon-sauce for the platter — the zero-waste finish."
+  ]
+}

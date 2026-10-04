@@ -1,0 +1,176 @@
+{
+  "id": "B25",
+  "corpus": {
+    "recordId": "kbbqguide#B25",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/gim-muchim-seasoned-seaweed.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-seaweed",
+      "heading": "The seaweed",
+      "ingredients": [
+        {
+          "id": "of-dried-roasted-seaweed",
+          "item": "of dried roasted seaweed , the plain unseasoned kind",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 8,
+          "customaryUnit": "sheets",
+          "preparation": "gim, about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-corn-syrup",
+          "item": "honey or corn syrup",
+          "metricAmount": 1.5,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-gochugaru",
+          "item": "A pinch of gochugaru , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The dressing whisked smooth — soy, water, honey, garlic — in the bowl that will hold the finished banchan.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the dressing tastes like a strong dip: salty, sweet, sharp — the seaweed's mineral dryness will demand exactly this strength.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The ribbons in, tossed gently with your hands (tongs shred; hands coat) until every ribbon goes from dry-crisp to glossy-supple, then sesame oil and seeds worked through.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the transformation is the checkpoint: the ribbons soften and darken into glistening strands that hold together on a spoon, no crispness left. Work fast and stop at uniformly glossy — over-tossed seaweed breaks down to flakes.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Scallion and gochugaru over, and the bowl is served within the hour.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test with rice: a soft, savory, mineral-deep tangle — the sea's version of the spinach bowl (#B06), and the same reset-the-palate job. If it tastes only of the dressing, the seaweed was weak or old (seaweed that has lost its sea-smell has lost its reason).",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the dressing tastes like a strong dip: salty, sweet, sharp — the seaweed's mineral dryness will demand exactly this strength.",
+    "the transformation is the checkpoint: the ribbons soften and darken into glistening strands that hold together on a spoon, no crispness left. Work fast and stop at uniformly glossy — over-tossed seaweed breaks down to flakes.",
+    "the eating test with rice: a soft, savory, mineral-deep tangle — the sea's version of the spinach bowl (#B06), and the same reset-the-palate job. If it tastes only of the dressing, the seaweed was weak or old (seaweed that has lost its sea-smell has lost its reason)."
+  ],
+  "storageNotes": [
+    "Same-day only (see Note — the tradition's own rule). The dry sheets keep a year sealed; the bowl never keeps.",
+    "Variations: the gochugaru-forward fork for color and warmth; julienned cucumber folded through for crunch; the same dressing over torn fresh wakame runs at the soft end of the family."
+  ]
+}

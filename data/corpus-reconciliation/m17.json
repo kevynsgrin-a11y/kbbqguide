@@ -1,0 +1,204 @@
+{
+  "id": "M17",
+  "corpus": {
+    "recordId": "kbbqguide#M17",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/spicy-gochujang-grilled-chicken-thighs.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-chicken",
+      "heading": "The chicken",
+      "ingredients": [
+        {
+          "id": "boneless",
+          "item": "boneless, skin-on chicken thighs, butterflied to an even 1.5 cm",
+          "metricAmount": 900,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "skin on renders and crisps; skinless works, glaze harder",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru-the-heat-dial",
+          "item": "gochugaru — the heat dial",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 6 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 5,
+          "customaryUnit": "cloves",
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , lettuce ssam, cold oi muchim , kimchi , pickled radish cubes",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Skin side down first on a medium fire — the skin renders slowly into its own fat bath and crisps while the paste on the meat side stays safe above it. Six to eight minutes, undisturbed, while the fat builds.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the skin releases on its own when it is deep golden and crisp; if it is still welded, it is not done. Never force the flip early.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip to the paste side, 4–5 minutes. The glaze sets in the rendered fat's heat; watch the edges, where it blackens first. Any flare-up: move the piece to the cool corner for 30 seconds, back to finish.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "pull when the center of a test piece is opaque and its juices run clear — no pink, chicken's absolute rule — and the glaze is brick-glossy, charred only at the very fat edge.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Rest 3 minutes, scissors into strips across the thigh, sesame over, platter.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: crisp skin snap, then the juicy paste-glazed meat, heat blooming after the sweet — and the cold cucumber between bites resetting the palate. That triangle is the record.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the skin releases on its own when it is deep golden and crisp; if it is still welded, it is not done. Never force the flip early.",
+    "pull when the center of a test piece is opaque and its juices run clear — no pink, chicken's absolute rule — and the glaze is brick-glossy, charred only at the very fat edge.",
+    "eating test: crisp skin snap, then the juicy paste-glazed meat, heat blooming after the sweet — and the cold cucumber between bites resetting the palate. That triangle is the record."
+  ],
+  "storageNotes": [
+    "Marinated thighs keep 24 hours. Cooked, 3 days — cold strips over hot rice, or chopped into a spicy chicken fried rice with the leftover glaze.",
+    "Variations: the soy-pear fork (#M16); the same marinade on wings, double-glazed in the last minutes, is the tabletop's snack lane; thinned and brushed on the shrimp record (#SF01) for the spicy table."
+  ]
+}

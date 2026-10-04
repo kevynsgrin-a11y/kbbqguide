@@ -1,0 +1,182 @@
+{
+  "id": "M07",
+  "corpus": {
+    "recordId": "kbbqguide#M07",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/chadolbaegi-with-scallion-soy-dipping-sauce.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-beef",
+      "heading": "The beef",
+      "ingredients": [
+        {
+          "id": "beef-brisket",
+          "item": "beef brisket, frozen hard and machine-sliced paper-thin",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "order \"chadolbaegi\" at a Korean market; freeze your own block 3–4 hours and have it sliced or shave it yourself on a mandoline",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dip-yangnyeom-ganjang-sa04-s-quick-build",
+      "heading": "The dip (yangnyeom ganjang, #SA04's quick build)",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 4,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "60 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , finely sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 6 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-sugar",
+          "item": "/2 tsp sugar",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , kimchi , sangchu geotjeori , soju's presence is traditional and optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Lay the frozen shavings flat, one layer, as many as fit without touching. They cook in 8–12 seconds a side — the grill boss stands over them with tongs the entire time. The edge will crisp and frill while the center barely sets; that is the dish.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the color change runs pink-frost to gray-brown at the edges with the fat turning translucent. Pull the slice the moment it no longer looks raw; a fully cooked-through chadolbaegi slice is a ruined one.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Dip while hot, straight from tongs to bowl to mouth. Rice between rounds; the fat is rich in a way that wants starch and acid beside it.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: crisp edge, melting center, the dip's vinegar and scallion cutting the fattiness. If it tastes purely of fat, the dip is too gentle — more vinegar and gochugaru.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Repeat in small batches. The shavings come off the freezer pack a handful at a time; any that thaw on the platter go on the grill immediately at a slightly cooler spot, or into the next round of fried rice instead.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "by the last batch the dip bowl should be reduced and cloudy from repeated dunking — the traditional end state, and the sign of a full table.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the color change runs pink-frost to gray-brown at the edges with the fat turning translucent. Pull the slice the moment it no longer looks raw; a fully cooked-through chadolbaegi slice is a ruined one.",
+    "eating test: crisp edge, melting center, the dip's vinegar and scallion cutting the fattiness. If it tastes purely of fat, the dip is too gentle — more vinegar and gochugaru.",
+    "by the last batch the dip bowl should be reduced and cloudy from repeated dunking — the traditional end state, and the sign of a full table."
+  ],
+  "storageNotes": [
+    "The frozen block keeps 2 months sealed; thawed slices should be cooked the same day. The dip keeps 3 days refrigerated and improves overnight.",
+    "Variations: the dip builds toward cho-gochujang (#SA03) for a hotter table; leftover shavings into kimchi fried rice; the same dip on grilled mushrooms (#SF02's lane) carries the vegan table."
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "B16",
+  "corpus": {
+    "recordId": "kbbqguide#B16",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/gosari-namul-seasoned-fernbrake.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-fernbrake",
+      "heading": "The fernbrake",
+      "ingredients": [
+        {
+          "id": "dried-gosari-a-korean-market-staple",
+          "item": "dried gosari — a Korean market staple",
+          "metricAmount": 50,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "fernbrake fiddleheads",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water-for-soaking-and-simmering-1-tsp-sa",
+          "item": "Water for soaking and simmering; 1 tsp salt in the simmer",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-seasoning",
+      "heading": "The seasoning",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-fine-salt",
+          "item": "/2 tsp fine salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-gochugaru",
+          "item": "A pinch of gochugaru , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The drained, cut gosari and all the seasonings into a bowl, tossed by hand for a full minute — the fernbrake's fibrous surface needs the massage to take the oil and garlic, more than any leafy namul does.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "every strand glossed and fragrant; taste one — it should be tender-chewy with a deep green bitterness the sesame rounds.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The optional finish that deepens it: 2 minutes in a warm pan with a drop of oil, just to warm through and wake the garlic — the braised register — or served as-is, the tossed register. Both are traditional; the tossed is brighter, the pan is deeper.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test with rice and any of this site's grilled meats: a wild, earthy chew against the rich plate — gosari is the banchan that tastes like it came from somewhere further than a farm.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "every strand glossed and fragrant; taste one — it should be tender-chewy with a deep green bitterness the sesame rounds.",
+    "the eating test with rice and any of this site's grilled meats: a wild, earthy chew against the rich plate — gosari is the banchan that tastes like it came from somewhere further than a farm."
+  ],
+  "storageNotes": [
+    "The rehydrated gosari keeps 3 days refrigerated before dressing; the dressed banchan, 2 days. The extra handful is bibimbap's traditional vegetable, and the fried-rice day-after welcomes it.",
+    "Variations: gochugaru-forward for the red bowl; a light braise with soy and a splash of stock instead of the toss; mixed with spinach (#B06) for the two-green table."
+  ]
+}

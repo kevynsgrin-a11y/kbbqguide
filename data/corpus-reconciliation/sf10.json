@@ -1,0 +1,193 @@
+{
+  "id": "SF10",
+  "corpus": {
+    "recordId": "kbbqguide#SF10",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/gochujang-glazed-grilled-salmon.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-salmon",
+      "heading": "The salmon",
+      "ingredients": [
+        {
+          "id": "salmon-fillets",
+          "item": "salmon fillets , skin on, pin bones pulled, room temperature",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 700 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-glaze",
+      "heading": "The glaze",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru , optional",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-finish-and-table",
+      "heading": "The finish and table",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , sliced scallion",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , sesame-soy cucumber , perilla leaves",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Skin-down on the moderate zone, oiled grate, 5–6 minutes undisturbed — the skin crisps in its own rendered fat exactly the way the duck skin does in #M19, and the skin is the platform: pull the fillet early elsewhere but never on the skin.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the skin releases clean and crisp-gold at the edges; the flesh at the sides has turned opaque a third of the way up the fillet.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip once, 2 minutes on the flesh side, then the glaze: brush, 45 seconds, second thin brush-stroke, and pull at the table's preferred center — salmon's window is wide, from just-translucent at 50 °C to opaque-flaky at 58 °C, and this glaze suits the juicier end.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a test flake at the thick end: it parts along the grain with no force, still glossy inside, glaze set brick-tacky on the outside. If the glaze blackens, the hot zone ran past its sugar — the fish is fine underneath; notch the fire down for the second set.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Sesame and scallion over, platter with the cucumber banchan and perilla beside.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: glaze edge, salmon's sweet fat, the cucumber's cold snap between bites — rich, spiced, reset. A piece of the crisp skin with the glaze is the record's best single bite, and the cook's by right.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the skin releases clean and crisp-gold at the edges; the flesh at the sides has turned opaque a third of the way up the fillet.",
+    "a test flake at the thick end: it parts along the grain with no force, still glossy inside, glaze set brick-tacky on the outside. If the glaze blackens, the hot zone ran past its sugar — the fish is fine underneath; notch the fire down for the second set.",
+    "eating test: glaze edge, salmon's sweet fat, the cucumber's cold snap between bites — rich, spiced, reset. A piece of the crisp skin with the glaze is the record's best single bite, and the cook's by right."
+  ],
+  "storageNotes": [
+    "Raw fillets keep 1 day; the glaze keeps a week refrigerated and improves. Cooked, 2 days — cold flaked salmon over rice with the last of the glaze thinned as a sauce.",
+    "Variations: the doenjang-glaze fork for the mellower table (#SF11); the same glaze on the black cod at its slower clock; broiler path — skin-down on a sheet pan, top rack, glaze in the last 3 minutes — for the no-grill weeknight."
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "id": "M15",
+  "corpus": {
+    "recordId": "kbbqguide#M15",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/korean-style-gochujang-grilled-pork-ribs.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-ribs",
+      "heading": "The ribs",
+      "ingredients": [
+        {
+          "id": "country-style-pork-ribs",
+          "item": "country-style pork ribs , or bone-in pork ribs cut into individual ribs",
+          "metricAmount": 1.5,
+          "metricUnit": "kg",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "boneless shoulder-cut, about 6 pieces",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade-glaze",
+      "heading": "The marinade-glaze",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 4,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 80 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "45 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "about 24 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-asian-pear",
+          "item": "/2 Asian pear , grated and squeezed nearly dry",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru , optional",
+          "metricAmount": 2,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 6 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , kimchi , musaengchae , lettuce ssam",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Stage one — roast gentle",
+      "action": "Stage one — roast gentle. Thick-side down on the cool zone, lid down, turning every 8–10 minutes, 25–30 minutes total. The fat renders slowly and the interior cooks through without the sugars involved yet. No glaze in this stage — glaze on raw heat is the burned-sugar trap.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "at stage one's end the meat is firm-poached looking, opaque to the center at a test cut edge (pork's rule: no pink for the cautious table, a faint blush acceptable at exactly 70 °C internal if you measure), and the surface is dry-ish and ready to take glaze.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Stage two — glaze hot",
+      "action": "Stage two — glaze hot. Move the ribs to the hot zone. Brush the reserved marinade on both faces, turning every 90 seconds, building two or three thin coats — 6–8 minutes total. Each thin coat sets glossy; one thick coat burns.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the surface should go brick-red and tacky-glossy, charred only at the fat edges. If any face blackens, it has had enough fire — back to the cool zone to rest.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Rest 5 minutes, cut between the bones (or into thick slices for boneless), sesame over, platter.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: the glaze's sweet-heat edge, then rendered-soft shoulder meat that pulls tender under the tooth — this should eat like the best version of backyard ribs that a Korean pantry makes, and the honest note at the table is that it is a modern hybrid, not an old recipe wearing a new one.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "at stage one's end the meat is firm-poached looking, opaque to the center at a test cut edge (pork's rule: no pink for the cautious table, a faint blush acceptable at exactly 70 °C internal if you measure), and the surface is dry-ish and ready to take glaze.",
+    "the surface should go brick-red and tacky-glossy, charred only at the fat edges. If any face blackens, it has had enough fire — back to the cool zone to rest.",
+    "eating test: the glaze's sweet-heat edge, then rendered-soft shoulder meat that pulls tender under the tooth — this should eat like the best version of backyard ribs that a Korean pantry makes, and the honest note at the table is that it is a modern hybrid, not an old recipe wearing a new one."
+  ],
+  "storageNotes": [
+    "Marinated ribs keep 24 hours, freeze 1 month. Cooked, 4 days — chop into fried rice or warm into a rice bowl with the last of the reserved glaze.",
+    "Variations: the marinade doubles on chicken thighs (#M17); a spoon of honey in the final coat for a stickier finish; ssam service with perilla leaf is the Korean table's claim on the platter."
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "SF14",
+  "corpus": {
+    "recordId": "kbbqguide#SF14",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/jeonbok-gui-grilled-abalone.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-abalone",
+      "heading": "The abalone",
+      "ingredients": [
+        {
+          "id": "live-abalone-in-the-shell",
+          "item": "live abalone in the shell , or 8 cleaned abalone meats with shells reserved",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 8,
+          "customaryUnit": null,
+          "preparation": "about 80–100 g each",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-baste",
+      "heading": "The baste",
+      "ingredients": [
+        {
+          "id": "unsalted-butter",
+          "item": "unsalted butter , melted",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-salt",
+          "item": "A pinch of salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-finish-and-table",
+      "heading": "The finish and table",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , finely sliced scallion",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , a light lettuce salad, and the table's best drinks — this is a celebration record",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 300 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "A spoon of butter into each shell's hollow, the scored abalone over it, shells to the moderate fire in their cradle. Four minutes, no touching.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the butter bubbles around the meat's edge, the scores open pale, and the surface turns from glassy to matte. The smell is butter and sweet ocean.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Baste each meat with the garlicky butter from its own shell, one more minute, off the fire while the foot still has spring at a fingertip press.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the pull test is the record: pressed, the meat springs back slowly (tender-window) — a fast hard snap-back means it tightened past the window; if it never firmed at all, thirty seconds more. The test piece cut thick: resistant-tender, buttery, ocean-sweet — abalone's texture is the dish, and \"just right\" is a real, findable 60 seconds.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Sesame and scallion over each, the shells straight to the table in the cradle, drinks already poured.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: the whole meat in two or three thick bites off a small fork or the tip of a chopstick's handle, rice after — and the shell's butter-juice pooled beneath is the cook's sip, the oldest gratuity at the coast.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the butter bubbles around the meat's edge, the scores open pale, and the surface turns from glassy to matte. The smell is butter and sweet ocean.",
+    "the pull test is the record: pressed, the meat springs back slowly (tender-window) — a fast hard snap-back means it tightened past the window; if it never firmed at all, thirty seconds more. The test piece cut thick: resistant-tender, buttery, ocean-sweet — abalone's texture is the dish, and \"just right\" is a real, findable 60 seconds.",
+    "eating test: the whole meat in two or three thick bites off a small fork or the tip of a chopstick's handle, rice after — and the shell's butter-juice pooled beneath is the cook's sip, the oldest gratuity at the coast."
+  ],
+  "storageNotes": [
+    "Live abalone keeps 1–2 days in the fridge in a damp cloth over ice — never submerged in fresh water. Cooked, 1 day; this is an eat-in-the-minute record.",
+    "Variations: a drop of gochujang butter (#SF12's sauce) in each shell for the spicy fork; the same butter on the oyster record's cups; the cleaned trim and liver into the next morning's jeonbok porridge — the full-use tradition."
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "id": "B08",
+  "corpus": {
+    "recordId": "kbbqguide#B08",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/musaengchae-spicy-radish-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-radish-and-salt",
+      "heading": "The radish and salt",
+      "ingredients": [
+        {
+          "id": "korean-radish-or-daikon",
+          "item": "Korean radish or daikon, peeled, cut into matchsticks 5 cm long and 5 mm thick",
+          "metricAmount": 500,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "a mandoline earns its drawer here",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-dressing",
+      "heading": "The dressing",
+      "ingredients": [
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce-or-soy-sauce",
+          "item": "fish sauce or soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-sugar",
+          "item": "honey or sugar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "clove-garlic",
+          "item": "clove garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-ginger",
+          "item": "/2 tsp ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , fine-sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The dressing whisked in the big bowl while the radish weeps — gochugaru, fish sauce, honey, garlic, ginger, vinegar worked to a loose paste.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "taste on a radish off-cut: savory-sweet with a warm edge and a clean acid finish, a shade stronger than target.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The squeezed radish and scallions tossed through the dressing, sesame last, and a 10-minute rest before serving — the rest is when the gochugaru's color blooms into the sticks.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: snap, the radish's pepper-sweet, the dressing's warm-sweet-acid in one bite — and beside a piece of grilled mackerel (#SF07) the fish tastes lighter for it. That is musaengchae's entire job, performed.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "taste on a radish off-cut: savory-sweet with a warm edge and a clean acid finish, a shade stronger than target.",
+    "the eating test: snap, the radish's pepper-sweet, the dressing's warm-sweet-acid in one bite — and beside a piece of grilled mackerel (#SF07) the fish tastes lighter for it. That is musaengchae's entire job, performed."
+  ],
+  "storageNotes": [
+    "Best the day it's made; acceptable into day two refrigerated, crisper than most fresh banchan.",
+    "Variations: matchstick Asian pear folded in (the fish-table classic); the same dressing on cabbage runs geotjeori (#B04) logic; the fermented road is #B02."
+  ]
+}

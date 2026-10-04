@@ -1,0 +1,148 @@
+{
+  "id": "D04",
+  "corpus": {
+    "recordId": "kbbqguide#D04",
+    "tier": "C",
+    "path": "recipes/kbbqguide/desserts/injeolmi-toast-with-ice-cream.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-components",
+      "heading": "The components",
+      "ingredients": [
+        {
+          "id": "rectangle-injeolmi-rice-cakes",
+          "item": "rectangle injeolmi rice cakes , or fresh mochi cut to size — the refrigerated Korean-market kind, not frozen",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 8,
+          "customaryUnit": "small",
+          "preparation": "about 240 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thick-slices-milk-bread-or-brioche",
+          "item": "thick slices milk bread or brioche",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 200 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "butter",
+          "item": "butter",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "roasted-soybean-powder",
+          "item": "roasted soybean powder",
+          "metricAmount": 4,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "injeolmi powder / konggaru, about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-condensed-milk",
+          "item": "honey or condensed milk",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scoops-vanilla-or-milk-flavored-ice-crea",
+          "item": "scoops vanilla or milk-flavored ice cream",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "small",
+          "preparation": "about 200 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-fine-salt",
+          "item": "A pinch of fine salt , over the toast",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Toast the bread golden in half the butter — pan or grill grate, the grill's last heat is the tradition's own trick — and hold it warm.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "deep golden and butter-crisp at the face, still soft at the center — thick bread's job is to be a warm, crisp platform.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The rice cakes into the remaining butter at medium heat, pressed flat with the spatula (each pressed to half its height), 90 seconds a side to a blistered, crisped, lightly golden skin with the interior gone stretchy-soft.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the pressed cake's surface is blistered and toasted, and a test pull stretches — crisp outside, mochi inside, the dessert's central texture in one piece.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "The build, per plate: toast, a drizzle of honey, two pressed rice cakes over, a heavy dust of the soybean powder (the flavor that names the dessert — nutty, roasted, faintly sweet), another honey drizzle, the ice cream scoop crowning, a final dust over the whole plate.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test, immediately, while the temperatures still oppose: the ice cream melting into the powder's dust, the rice cake's stretch, the toast's butter-crisp, and the soybean-honey flavor running through all three layers. Ninety seconds of contrast is the dessert's whole window — serve at the pan, not from the kitchen.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "deep golden and butter-crisp at the face, still soft at the center — thick bread's job is to be a warm, crisp platform.",
+    "the pressed cake's surface is blistered and toasted, and a test pull stretches — crisp outside, mochi inside, the dessert's central texture in one piece.",
+    "the eating test, immediately, while the temperatures still oppose: the ice cream melting into the powder's dust, the rice cake's stretch, the toast's butter-crisp, and the soybean-honey flavor running through all three layers. Ninety seconds of contrast is the dessert's whole window — serve at the pan, not from the kitchen."
+  ],
+  "storageNotes": [
+    "Assembles and eats immediately; the components keep separately (rice cakes refrigerated, powder months airtight). The fully-built toast keeps nothing, by design.",
+    "Variations: condensed milk in place of honey; a thread of matcha in the powder dust for the café's green build; grilled fruit — the summer market's peaches — laid under the rice cakes for the seasonal fork."
+  ]
+}

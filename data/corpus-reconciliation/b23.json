@@ -1,0 +1,165 @@
+{
+  "id": "B23",
+  "corpus": {
+    "recordId": "kbbqguide#B23",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/maneul-jangajji-soy-pickled-garlic.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-garlic",
+      "heading": "The garlic",
+      "ingredients": [
+        {
+          "id": "fresh-garlic",
+          "item": "fresh garlic , peeled to whole cloves — the fresh-juicy season's garlic, not the sprouting-end-of-winter kind",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 heads",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-brine",
+      "heading": "The brine",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 150,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 150,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar-or-honey",
+          "item": "sugar or honey",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "black-peppercorns",
+          "item": "black peppercorns , optional",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "dried-red-chili",
+          "item": "dried red chili , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-splash-of-toasted-sesame-oil-and-a-pin",
+          "item": "A splash of toasted sesame oil and a pinch of sesame seeds , at serving",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 ml / 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The brine's ingredients to a boil and 2 minutes' simmer — this dissolves the sugar fully and pasteurizes the liquid (the pickling's one safety formality), then off the heat to cool 5 minutes, still hot-warm.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the brine tastes aggressively salty-sweet-sour at a fingertip — correct. It is a concentrate; the garlic's water will round it.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The cloves packed into the jar, peppercorns and chili tucked between, the warm brine poured over to cover fully, lid on loose while it cools, then sealed and refrigerated once room temperature.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "every clove submerged (a small folded parchment or a weight helps the floaters under), the brine already darkening the clove skins' edges. The jar's clock starts now.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "The week",
+      "action": "The week. Day 1 to day 7, the garlic transforms — green-white to amber to deep mahogany-tan, the raw heat leaving, the sweetness arriving. Taste a clove at day 5 (it will be sharp-edged still) and again at day 7.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the day-7 test, the readiness definition: a clove bitten whole tastes mellow-sweet-savory with a soft, faintly spicy finish — completely changed, and exactly the banchan. Earlier is sharper; two weeks is deeper. The jar rides for a month.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the brine tastes aggressively salty-sweet-sour at a fingertip — correct. It is a concentrate; the garlic's water will round it.",
+    "every clove submerged (a small folded parchment or a weight helps the floaters under), the brine already darkening the clove skins' edges. The jar's clock starts now.",
+    "the day-7 test, the readiness definition: a clove bitten whole tastes mellow-sweet-savory with a soft, faintly spicy finish — completely changed, and exactly the banchan. Earlier is sharper; two weeks is deeper. The jar rides for a month."
+  ],
+  "storageNotes": [
+    "The jar IS the recipe's storage: a month refrigerated, improving for two. The brine's second career (seasoning) closes the loop.",
+    "Variations: the honey-forward fork (swap the sugar for honey — the café style); soy-only, no vinegar, for the deep-savory jar; the perilla-leaf sibling (#B24) shares the shelf and the patience."
+  ]
+}

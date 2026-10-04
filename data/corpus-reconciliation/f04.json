@@ -1,0 +1,171 @@
+{
+  "id": "F04",
+  "corpus": {
+    "recordId": "kbbqguide#F04",
+    "tier": "C",
+    "path": "recipes/kbbqguide/fresh/minari-muchim-water-parsley-salad.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-minari",
+      "heading": "The minari",
+      "ingredients": [
+        {
+          "id": "fresh-minari-or-watercress",
+          "item": "fresh minari or watercress, roots trimmed, washed twice",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "Korean water parsley",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-seasoning",
+      "heading": "The seasoning",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-fine-salt",
+          "item": "/2 tsp fine salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-gochugaru",
+          "item": "A pinch of gochugaru , optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-optional-cold-salad-fork-no-blanch",
+      "heading": "The optional cold-salad fork (no blanch)",
+      "ingredients": [
+        {
+          "id": "rice-vinegar-and-1-tsp-gochugaru",
+          "item": "rice vinegar and 1 tsp gochugaru , swapped in for the warm seasoning",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "A pot of boiling water and the minari in for a count of ten — stems first, leaves under at the last three seconds — then straight to ice water.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the stems bright green and just-barely bent, the leaves vivid and untouched by cooking time. Ten seconds is not shorthand; minari's whole character is its snap, and thirty ruins it.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Squeeze by the fistful — the #B06 law, the water out so the seasoning in — and cut the squeezed bundles once across, into 7 cm lengths.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "dry, springy bundles that hold shape in the hand.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Warm the seasoning in the bowl, minari in while the greens are still faintly warm, the full-minute hand toss (the massage is the recipe's only labor), sesame over.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: the stem's clean, peppery snap with sesame and garlic riding it — a green that tastes like it grew in moving water, which is exactly what it did. Beside samgyeopsal (#M10) it does the work a whole pickle plate attempts.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the stems bright green and just-barely bent, the leaves vivid and untouched by cooking time. Ten seconds is not shorthand; minari's whole character is its snap, and thirty ruins it.",
+    "dry, springy bundles that hold shape in the hand.",
+    "the eating test: the stem's clean, peppery snap with sesame and garlic riding it — a green that tastes like it grew in moving water, which is exactly what it did. Beside samgyeopsal (#M10) it does the work a whole pickle plate attempts."
+  ],
+  "storageNotes": [
+    "Blanched-dressed keeps 1 day; the raw fork eats same-day. Blanched, undressed bundles hold 2 days refrigerated.",
+    "Variations: the raw vinegar fork (see Note); mixed with spinach (#B06) for the two-green bowl; stems laid whole across the ssam platter (#F01) as the herbal thread in a wrap."
+  ]
+}

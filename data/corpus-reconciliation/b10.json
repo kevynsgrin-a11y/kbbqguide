@@ -1,0 +1,193 @@
+{
+  "id": "B10",
+  "corpus": {
+    "recordId": "kbbqguide#B10",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/dubu-jorim-braised-tofu.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-tofu",
+      "heading": "The tofu",
+      "ingredients": [
+        {
+          "id": "firm-tofu",
+          "item": "firm tofu, cut into 1 cm slabs, patted dry, salted lightly and rested 10 minutes",
+          "metricAmount": 400,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-sear",
+      "heading": "The sear",
+      "ingredients": [
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 24 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-braise",
+      "heading": "The braise",
+      "ingredients": [
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 80,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-sugar",
+          "item": "honey or sugar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil , off heat",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds-a-pinch-of-gochugar",
+          "item": "toasted sesame seeds ; a pinch of gochugaru , optional",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-korean-radish",
+          "item": "/2 Korean radish, sliced into thin half-moons , the traditional bed — optional but excellent",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 100 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "The sear: oil at medium-high, slabs in without touching, 3–4 minutes to deep gold (they release when ready — nudged early, they tear), flip once, 2–3 minutes more, out to a plate.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "both faces evenly golden-brown with a firming surface — the crust is the sponge that will drink the braise; a pale slab stays bland no matter how good the sauce.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Pour off the oil, braise liquids into the pan (water, soy, honey, garlic), radish bed if using, seared slabs back over. Simmer 4–5 minutes at medium-low, spooning the liquid over the slabs twice.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the liquid has reduced to a glossy shallow pool and the slabs' faces have gone from dry-gold to lacquered amber; the tofu, pressed thin before, has visibly drunk.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Sesame oil off the heat, sesame and scallion over.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test: a slab on rice — savory-sweet glaze, the crust's chew, the soft interior, and the radish (if used) sweet enough to surprise. It should taste like the banchan board's quiet centerpiece, which at a table full of grilled meat is exactly what it is.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "both faces evenly golden-brown with a firming surface — the crust is the sponge that will drink the braise; a pale slab stays bland no matter how good the sauce.",
+    "the liquid has reduced to a glossy shallow pool and the slabs' faces have gone from dry-gold to lacquered amber; the tofu, pressed thin before, has visibly drunk.",
+    "the eating test: a slab on rice — savory-sweet glaze, the crust's chew, the soft interior, and the radish (if used) sweet enough to surprise. It should taste like the banchan board's quiet centerpiece, which at a table full of grilled meat is exactly what it is."
+  ],
+  "storageNotes": [
+    "Keeps 2 days refrigerated; reheat in the pan 2 minutes with a splash of water. Cold glazed slabs in a lunchbox with rice are a Korean cafeteria staple by right.",
+    "Variations: gochugaru-dusted braise for the red bowl; the same braise over mushrooms and tofu together; a slice of cheese melted on the hot slab is the school-lunch fork — fusion, labeled, beloved."
+  ]
+}

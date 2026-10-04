@@ -1,0 +1,159 @@
+{
+  "id": "SA05",
+  "corpus": {
+    "recordId": "kbbqguide#SA05",
+    "tier": "C",
+    "path": "recipes/kbbqguide/sauces/korean-bbq-onion-soy-vinegar-dipping-sauce.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-sauce",
+      "heading": "The sauce",
+      "ingredients": [
+        {
+          "id": "sweet-onion",
+          "item": "sweet onion , halved and sliced paper-thin",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "small",
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "75 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "45 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-sugar",
+          "item": "honey or sugar",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-gochugaru",
+          "item": "A pinch of gochugaru , optional color and warmth",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallion",
+          "item": "scallion , sliced, optional",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Soy, vinegar, honey, and water stirred until the honey dissolves completely — the base should taste like a bright, slightly sweet soy dressing, sharper than it will finish (the onion's sugar will round it).",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a fingertip taste: salt, then a clean sour snap, then sweetness landing third. When in doubt, sharp — the onion sweetens everything.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "The onion slices loosened into rings, into the liquid, pressed under with a stir; sesame oil, seeds, gochugaru over. Refrigerate 30 minutes to overnight.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "at serving, the onion rings should be translucent-soft with just a spine of crunch, the liquid turned faintly pink from the gochugaru, and the whole bowl cold enough to fog the ceramic. The taste: soy rounder than it started, vinegar brighter through the onion's sugar — a sauce that tastes like it cooked for hours and touched no heat.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "a fingertip taste: salt, then a clean sour snap, then sweetness landing third. When in doubt, sharp — the onion sweetens everything.",
+    "at serving, the onion rings should be translucent-soft with just a spine of crunch, the liquid turned faintly pink from the gochugaru, and the whole bowl cold enough to fog the ceramic. The taste: soy rounder than it started, vinegar brighter through the onion's sugar — a sauce that tastes like it cooked for hours and touched no heat."
+  ],
+  "storageNotes": [
+    "Keeps 2 days refrigerated and peaks on day one overnight. The onion is the perishable; the liquid alone keeps a week and restarts with a fresh onion.",
+    "Variations: a few drops of lemon for a sharper cold build; diced pear alongside the onion for the fruit bowl; the same liquid over thin-sliced cucumber for a five-minute banchan — the sauce is really a quick-pickle brine with a table career."
+  ]
+}

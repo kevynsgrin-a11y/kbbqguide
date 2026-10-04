@@ -1,0 +1,138 @@
+{
+  "id": "SF09",
+  "corpus": {
+    "recordId": "kbbqguide#SF09",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/jogi-gui-grilled-yellow-croaker.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-fish",
+      "heading": "The fish",
+      "ingredients": [
+        {
+          "id": "whole-yellow-croaker",
+          "item": "whole yellow croaker , gutted, cleaned, scored twice on each side",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 200 g each",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-cure",
+      "heading": "The cure",
+      "ingredients": [
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt , worked into the scores and the cavity",
+          "metricAmount": 2,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-finish-and-table",
+      "heading": "The finish and table",
+      "ingredients": [
+        {
+          "id": "neutral-oil-for-the-grate",
+          "item": "Neutral oil for the grate",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 10 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , sliced scallion",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , kimchi , mu sangchae — jogi runs salty-savory and wants the cold crunch",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Oiled moderate grate, scored side down, 5 minutes undisturbed. The skin is thinner than mackerel's — it goes golden faster and wants a notch less heat.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "golden skin at the scores, the flesh at the cuts turning opaque; the release is clean where the skin crisped.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "One flip, 4–5 minutes more, and jogi's doneness read is the same backbone test as the mackerel's (#SF07): at the deepest score, opaque at the bone and pulling away with a nudge.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a test flake from the thick shoulder: salty-savory, concentrated, firm but juicy — the flavor should sit somewhere between fresh fish and its dried cousin, which is exactly the record's register.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Platter with sesame and scallion; the filet service runs the same two-fillets-one-skeleton as the mackerel record.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: flake, rice, a strand of kimchi, and — the jogi-specific bite — a piece of mu sangchae's cold crunch with the salty fish. The table should reach for the rice bowl more often than the dip; this fish seasons itself.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "golden skin at the scores, the flesh at the cuts turning opaque; the release is clean where the skin crisped.",
+    "a test flake from the thick shoulder: salty-savory, concentrated, firm but juicy — the flavor should sit somewhere between fresh fish and its dried cousin, which is exactly the record's register.",
+    "eating test: flake, rice, a strand of kimchi, and — the jogi-specific bite — a piece of mu sangchae's cold crunch with the salty fish. The table should reach for the rice bowl more often than the dip; this fish seasons itself."
+  ],
+  "storageNotes": [
+    "The salted fish is literally the keeping method — 48 hours refrigerated, honestly better on day two. Cooked, 2 days; the flaked meat into rice porridge (juk) is the tradition's own leftover.",
+    "Variations: the mackerel flagship at the richer register (#SF07); hairtail for the skin crisp (#SF08); a light gochugaru dust in the cure for a warm undercurrent."
+  ]
+}

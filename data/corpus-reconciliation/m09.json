@@ -1,0 +1,248 @@
+{
+  "id": "M09",
+  "corpus": {
+    "recordId": "kbbqguide#M09",
+    "tier": "B",
+    "path": "recipes/kbbqguide/grilled-meat/tteokgalbi-grilled-beef-and-pork-patties.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-patties",
+      "heading": "The patties",
+      "ingredients": [
+        {
+          "id": "beef-chuck-or-short-rib-meat",
+          "item": "beef chuck or short rib meat, ground coarse",
+          "metricAmount": 500,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "pork-shoulder",
+          "item": "pork shoulder, ground coarse",
+          "metricAmount": 300,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "the beef-pork split is the classic juiciness build",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-asian-pear",
+          "item": "/2 Asian pear , grated and squeezed to a dry pulp",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 150 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "onion",
+          "item": "onion , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": "small",
+          "preparation": "about 100 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 5,
+          "customaryUnit": "cloves",
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 60,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-brown-sugar",
+          "item": "honey or brown sugar",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper",
+          "item": "/2 tsp black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "strips-of-bone-or-sturdy-metal-skewers",
+          "item": "strips of bone or sturdy metal skewers",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "optional; see Method step 3",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-glaze",
+      "heading": "The glaze",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce , 1 tbsp honey , 1 tbsp mirin , 1 tsp gochugaru",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , lettuce ssam, ssamjang , kimchi , pickled raw onion or kkakdugi",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Grill over medium, not rocket-hot",
+      "action": "Grill over medium, not rocket-hot. Charcoal at gray-edge with the grate a hand higher than for bulgogi shavings, or a pan at a solid medium (surface around 190 °C). The patty is thick and sweetened; a rocket fire blackens the glaze before the center cooks. Lay the patties with a finger's width between them, bone-end down if boned.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the first side is undisturbed for 5 minutes: the underside should be browned and release cleanly when lifted. A patty that sticks is a patty that isn't ready — the grate tells you when to flip, not the clock.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Flip once, then press",
+      "action": "Flip once, then press. Turn the patties, and press each one flat with a spatula — 30 percent thinner, a deliberate smash. The press is tteokgalbi's signature move: it widens the patty onto the grate for a second seared face, squeezes the rendered fat into the fire for the smoke that flavors the batch, and sets the dense-chewy texture the name promises. Press once; re-pressing squeezes out juice.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the pressed face browns 4 minutes; the patty is done at 8 minutes a side total when the center is just past pink at a test cut (ground meat cooks to no-pink, full stop — this is the doneness rule for every ground record on this site).",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Glaze in the final 2 minutes, both faces",
+      "action": "Glaze in the final 2 minutes, both faces. Brush the glaze on the top face, let it set 60 seconds, flip, brush the second face, 60 seconds more, off the fire. The glaze should arrive glossy and just tacky — lacquered, not candied. If it runs and burns, the fire is still too hot for the glaze stage; finish the batch higher above the coals.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the finished patty: glossy dark glaze, two seared faces, dense and springy to the press of a finger, and — cut one at the grill station — juicy inside with no pink, the pear's sweetness woven through the meat rather than sitting on it.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 4,
+      "heading": "Pull the bones at the table — the ceremony",
+      "action": "Pull the bones at the table — the ceremony. For bone-in patties, the bone slides free with a twist and a pull, leaving a clean trough; the bones stack on a side plate and the trough fills with a little ssamjang (#SA01) from the table's bowl. That is the old restaurant move, and children of every age take the bone duty seriously.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test, in a ssam: leaf, ssamjang swipe, a chunk of patty torn or scissors-cut from the oval, fold, one bite. The texture should be the record's signature — softer and chewier than any burger, juicier than bulgogi, the glaze's edge against the ssamjang's depth. If the center is dense and dry, the press was repeated or the mix overworked at shaping; if it falls apart, the knead was short.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The mix: kneaded to sticky, 5 minutes; rested 2 hours; coarse grind; 110 g ovals, 2 cm thick.",
+    "The grill: medium fire, first side releases clean at 5 minutes, one deliberate press, no re-pressing.",
+    "The doneness: no pink in the center of a test patty — ground meat's rule — with juice still running at the cut.",
+    "The glaze: final 2 minutes, both faces, glossy and tacky, never candied or black."
+  ],
+  "storageNotes": [
+    "The mix holds 24 hours refrigerated, shaped or loose; cooked patties keep 3 days and reheat hard and fast in a pan, glaze and all, or break into a lunchbox with rice and a fried egg. Freezer: 1 month, shaped and parchment-separated.",
+    "Variations: a strip of perilla leaf folded into each patty's center; the gochujang-glaze fork (a spoon of #M13's paste into the glaze); the unground fork is a different record entirely — neobiani (#M08) — and the two are not interchangeable, whatever the shared marketing says."
+  ]
+}

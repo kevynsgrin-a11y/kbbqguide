@@ -1,0 +1,182 @@
+{
+  "id": "SF01",
+  "corpus": {
+    "recordId": "kbbqguide#SF01",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/gochujang-grilled-shrimp.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-shrimp",
+      "heading": "The shrimp",
+      "ingredients": [
+        {
+          "id": "large-shrimp",
+          "item": "large shrimp , shell on, deveined, or shell-off if the table prefers peeling-free eating",
+          "metricAmount": 700,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "16–20 count",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-glaze",
+      "heading": "The glaze",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru , optional heat dial",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-finish-and-table",
+      "heading": "The finish and table",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , sliced scallion",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , oi muchim , lettuce ssam",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 400 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Dry shrimp onto a hot grate or pan in a single layer, two minutes undisturbed. If shell-on, they will char lightly at the edges; that char is the flavor and the table peels it off later.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the shells blush pink-white and the undersides show grill marks through the shell; shell-off shrimp turn opaque at the bottom edge and roll loosely on the grate.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip once, one minute more — the shrimp are nearly done now. Brush the glaze on the up faces, wait 30 seconds, flip, brush the second faces, 30 seconds, off the fire.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the glaze sets glossy and brick-toned in that final minute. If it blackens, the fire was past the glaze's tolerance — the shrimp are still good; note the notch down for the next batch.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Sesame and scallion over, platter, straight to the table — shrimp wait for nobody.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test: sweet-heat glaze on the first chew, then the shrimp's own snap and sweetness — the glaze should coat, not bury. One test shrimp that tastes only of gochujang means the coating ran thick; a thin brush-stroke is the whole technique.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the shells blush pink-white and the undersides show grill marks through the shell; shell-off shrimp turn opaque at the bottom edge and roll loosely on the grate.",
+    "the glaze sets glossy and brick-toned in that final minute. If it blackens, the fire was past the glaze's tolerance — the shrimp are still good; note the notch down for the next batch.",
+    "eating test: sweet-heat glaze on the first chew, then the shrimp's own snap and sweetness — the glaze should coat, not bury. One test shrimp that tastes only of gochujang means the coating ran thick; a thin brush-stroke is the whole technique."
+  ],
+  "storageNotes": [
+    "Raw shrimp in the glaze hold 30 minutes, no more — the salt starts curing. Cooked, 2 days; the shells make a quick stock for the next day's jjigae.",
+    "Variations: the soy-garlic fork (#SF02) for the clean lane; the same glaze on scallops (#SF03's cousin); cho-gochujang (#SA03) served beside as the dip instead of brushed."
+  ]
+}

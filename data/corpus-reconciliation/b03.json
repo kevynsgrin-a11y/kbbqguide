@@ -1,0 +1,187 @@
+{
+  "id": "B03",
+  "corpus": {
+    "recordId": "kbbqguide#B03",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/oi-sobagi-cucumber-kimchi.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-cucumbers-and-salt",
+      "heading": "The cucumbers and salt",
+      "ingredients": [
+        {
+          "id": "korean-cucumbers-or-kirby",
+          "item": "Korean cucumbers or kirby",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "small",
+          "preparation": "pickling",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "coarse-salt",
+          "item": "coarse salt",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-stuffing-paste",
+      "heading": "The stuffing paste",
+      "ingredients": [
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 18 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce",
+          "item": "fish sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": "cloves",
+          "preparation": "about 16 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "thumb-ginger",
+          "item": "thumb ginger , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 10 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions-and-a-handful-of-asian-chives",
+          "item": "scallions and a handful of Asian chives , cut small",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "korean-radish-or-carrot",
+          "item": "Korean radish or carrot, fine matchsticks",
+          "metricAmount": 100,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Build the stuffing: gochugaru, fish sauce, garlic, ginger, sugar worked to a paste, then the scallion, chives, radish matchsticks and sesame folded through so it holds together as a coarse stuffing rather than a slurry.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "taste a matchstick: full kimchi register, slightly stronger than you want to eat — the cucumber will dilute it over the hours.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Open each cucumber's fingers and press the stuffing into the pocket and between every finger, a generous teaspoon's worth; close, roll lightly in the bowl's remaining paste.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "each cucumber is visibly stuffed, red in the seams, green at the shoulders.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Pack snugly in a container, lid on, refrigerate. Ready at 6 hours, best at 24.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the day-of taste: cold snap, the stuffing's salt-heat in the seams, a barely-started sourness. By day two the sourness is present; by day three the cucumbers are softening — the bowl's honest end.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "taste a matchstick: full kimchi register, slightly stronger than you want to eat — the cucumber will dilute it over the hours.",
+    "each cucumber is visibly stuffed, red in the seams, green at the shoulders.",
+    "the day-of taste: cold snap, the stuffing's salt-heat in the seams, a barely-started sourness. By day two the sourness is present; by day three the cucumbers are softening — the bowl's honest end."
+  ],
+  "storageNotes": [
+    "Refrigerated, at its best days 1–2, over by day 4 — this is a small-batch, same-week bowl by design.",
+    "Variations: the month-scale jars (#B01, #B02) for the long arc; the instant unfermented cucumber lane is oi muchim (#B07); the stuffing doubles inside whole radish wedges for a same-day kkakdugi cousin."
+  ]
+}

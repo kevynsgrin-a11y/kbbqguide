@@ -1,0 +1,199 @@
+{
+  "id": "SF05",
+  "corpus": {
+    "recordId": "kbbqguide#SF05",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/spicy-grilled-nakji-octopus.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-octopus",
+      "heading": "The octopus",
+      "ingredients": [
+        {
+          "id": "whole-octopus",
+          "item": "whole octopus , cleaned — or 600 g octopus, tentacles and body separated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "small",
+          "preparation": "about 300 g each",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-pre-simmer",
+      "heading": "The pre-simmer",
+      "ingredients": [
+        {
+          "id": "water-to-cover",
+          "item": "Water to cover, 1 tbsp salt , 3 slices ginger , 2 scallion whites",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-glaze",
+      "heading": "The glaze",
+      "ingredients": [
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 3,
+          "customaryUnit": "cloves",
+          "preparation": "about 12 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru",
+          "item": "gochugaru",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , bean sprouts or mu sangchae for the cold crunch, sesame seeds",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 500 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Dry slices onto the hot grate in a single layer, 90 seconds undisturbed — you are searing color onto already-cooked octopus, so every second is flavor, not doneness.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "char marks on the faces and edges, the scored sheets curling open. The smell is toast over the ocean — clean and sweet.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip, brush the seared faces with glaze, 45–60 seconds, second brush-stroke, off the fire. Total grill time under 3 minutes — the simmer did the cooking and the glaze only needs to set.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "glossy brick-red slices, char at the edges. The eating test at the grill station: tender-chewy with a snap that yields (nakji's correct texture — firmer than squid, never rubber), sweet-heat over octopus depth.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Platter, sesame over, and the table eats it over rice with the cold crunchy banchan beside.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the bowl test: glaze-slicked nakji over rice with bean sprouts in the same bite — heat, chew, crunch. If every bite is all glaze, the slices were too small; wide pieces carry the balance.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "char marks on the faces and edges, the scored sheets curling open. The smell is toast over the ocean — clean and sweet.",
+    "glossy brick-red slices, char at the edges. The eating test at the grill station: tender-chewy with a snap that yields (nakji's correct texture — firmer than squid, never rubber), sweet-heat over octopus depth.",
+    "the bowl test: glaze-slicked nakji over rice with bean sprouts in the same bite — heat, chew, crunch. If every bite is all glaze, the slices were too small; wide pieces carry the balance."
+  ],
+  "storageNotes": [
+    "Simmered octopus keeps 2 days refrigerated before grilling — the record's make-ahead is built in. Cooked, 2 days, into fried rice or noodles.",
+    "Variations: the no-simmer pounding path (see Note); baby octopus skips the slicing and runs whole on the jjukkumi record (#SF06); the glaze doubles on the squid record (#SF04)."
+  ]
+}

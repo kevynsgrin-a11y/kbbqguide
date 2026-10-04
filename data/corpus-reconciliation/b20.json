@@ -1,0 +1,210 @@
+{
+  "id": "B20",
+  "corpus": {
+    "recordId": "kbbqguide#B20",
+    "tier": "B",
+    "path": "recipes/kbbqguide/banchan/jangjorim-soy-braised-beef.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-beef-and-the-first-stage",
+      "heading": "The beef and the first stage",
+      "ingredients": [
+        {
+          "id": "lean-beef",
+          "item": "lean beef , one piece, tied if it wants to fall apart",
+          "metricAmount": 600,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "eye of round, brisket point's lean half, or shank",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water-to-cover",
+          "item": "Water to cover",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1.5 liters",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , crushed, and a thumb of ginger , sliced — the poaching aromatics",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "about 24 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "salt",
+          "item": "salt , in the poach",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-braise",
+      "heading": "The braise",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 150,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "of-the-poaching-liquid",
+          "item": "of the poaching liquid",
+          "metricAmount": 150,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "corn-syrup-or-2-tbsp-honey",
+          "item": "corn syrup or 2 tbsp honey",
+          "metricAmount": 3,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 50 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , whole, peeled",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 10,
+          "customaryUnit": "cloves",
+          "preparation": "about 40 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "bird-s-eye-chilies",
+          "item": "bird's eye chilies , whole, stems on",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil , off heat",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "The poach (40 minutes)",
+      "action": "The poach (40 minutes). The beef in cold water with the aromatics, brought to the barest simmer — a bubble every few seconds, 90 °C-plus but never a rolling boil (a hard boil tightens the fibers this recipe is trying to shred) — skimmed once at the come-up, lid ajar, 40 minutes to just-tender.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a chopstick slides into the meat with firm resistance — cooked through, not yet falling. Lift the beef to a board (save the liquid — it is stage two's base), rest it 10 minutes, and slice across the grain into 5 mm strips, then tear the strips by hand into shreds along the fibers. The hand-tearing (not knife-cutting) is what gives jangjorim its signature fibrous pull.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "The braise (25–30 minutes)",
+      "action": "The braise (25–30 minutes). The shredded beef, soy, 150 ml of the poaching liquid, syrup, mirin, the ten garlic cloves, and the chilies into the wide pan — at a steady simmer now, lid off, stirring every 5 minutes as the liquid reduces.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "at 20 minutes the liquid has dropped below the beef's level and the pan's sounds deepen from bubbling to a slow sizzle; the shreds are turning glossy mahogany and the garlic has gone amber at its edges. The target is a wet-not-soupy mass — spoonable with liquid just filling the gaps, not a dry stir-fry and not a stew.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "The jar and the month",
+      "action": "The jar and the month. Off the heat, sesame oil and seeds through, and pack into a clean glass jar while hot — the residual heat and the salt content are the keeping. Cool uncovered, then lid and refrigerate.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test, warm from the pan and again cold from the fridge on day three: the shreds should pull into long savory-sweet strands, the garlic crushes into them like a paste, the chili sits whole for the brave — and over hot rice, one spoonful should make the bowl disappear faster than anything else on the table. That is the rice-thief standard, and this jar meets it.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The poach: barest simmer, 40 minutes, skimmed — never a rolling boil.",
+    "The shred: hand-torn along the fibers, 5 cm lengths, never knife-diced.",
+    "The braise: reduced to wet-not-soupy, shreds glossy mahogany, garlic amber and soft.",
+    "The jar: packed hot, cooled uncovered, clean dry spoon forever."
+  ],
+  "storageNotes": [
+    "The jar keeps 3–4 weeks refrigerated. The braise is the make-ahead, portioned by the week. The spent braising liquid's next career: eggs (#B19's entire recipe).",
+    "Variations: the quail-egg batch (#B19); braised shiitake alongside the beef for the two-texture jar; a spoon of jangjorim over a plain fried egg is the single best rice bowl this site's whole banchan section produces."
+  ]
+}

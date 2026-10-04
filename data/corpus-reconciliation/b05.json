@@ -1,0 +1,182 @@
+{
+  "id": "B05",
+  "corpus": {
+    "recordId": "kbbqguide#B05",
+    "tier": "C",
+    "path": "recipes/kbbqguide/banchan/kongnamul-muchim-seasoned-soybean-sprouts.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-sprouts",
+      "heading": "The sprouts",
+      "ingredients": [
+        {
+          "id": "soybean-sprouts",
+          "item": "soybean sprouts , rinsed, loose hulls and sad stragglers picked out",
+          "metricAmount": 500,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "kongnamul, the yellow-beaned ones — mung sprouts are a different, softer thing",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-cook",
+      "heading": "The cook",
+      "ingredients": [
+        {
+          "id": "water-to-barely-cover",
+          "item": "Water to barely cover , 1 tsp salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 liter",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-seasoning",
+      "heading": "The seasoning",
+      "ingredients": [
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-fine-salt",
+          "item": "/2 tsp fine salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-gochugaru",
+          "item": "A pinch of gochugaru , optional color",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": true,
+          "allergenNotes": []
+        },
+        {
+          "id": "fish-sauce-or-soy-sauce",
+          "item": "fish sauce or soy sauce , optional depth",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 ml",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Salted water at a full boil, sprouts in, uncovered — the law of this record. Six minutes at a steady boil, stirred once.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "a test sprout: the tail is fully tender (no string) and the bean is just soft with the faintest bite, and the raw-grassy smell from the pot's first minute has cooked off entirely — that smell leaving is exactly what the uncovered boil lets happen.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Drain well — really well, a full minute in the colander, shaking — and turn the hot sprouts into the seasoning bowl while they still steam.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the residual heat is doing the garlic's cooking: thirty seconds after tossing, the bowl smells nutty-savory, not sharp-raw.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Toss with everything, taste, adjust — the banchan should read sesame-first, salt behind, a clean crunch.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the eating test with rice and any grilled meat from this site's M-list: the sprouts reset the palate between rich bites. That is the banchan's job description, and this bowl does it as well as anything on the table.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "a test sprout: the tail is fully tender (no string) and the bean is just soft with the faintest bite, and the raw-grassy smell from the pot's first minute has cooked off entirely — that smell leaving is exactly what the uncovered boil lets happen.",
+    "the residual heat is doing the garlic's cooking: thirty seconds after tossing, the bowl smells nutty-savory, not sharp-raw.",
+    "the eating test with rice and any grilled meat from this site's M-list: the sprouts reset the palate between rich bites. That is the banchan's job description, and this bowl does it as well as anything on the table."
+  ],
+  "storageNotes": [
+    "Keeps 2–3 days refrigerated and holds crunch better than most banchan; refresh with a few drops of sesame oil at serving.",
+    "Variations: a spoon of gochugaru for the red build; the spinach (#B06) and bellflower (#B17) records run this same blanch-and-dress pattern; day-after sprouts folded into bibimbap or fried rice."
+  ]
+}

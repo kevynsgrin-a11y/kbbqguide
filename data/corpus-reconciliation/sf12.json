@@ -1,0 +1,165 @@
+{
+  "id": "SF12",
+  "corpus": {
+    "recordId": "kbbqguide#SF12",
+    "tier": "C",
+    "path": "recipes/kbbqguide/seafood/scallion-gochujang-grilled-oysters.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-oysters",
+      "heading": "The oysters",
+      "ingredients": [
+        {
+          "id": "fresh-oysters-in-the-shell",
+          "item": "fresh oysters in the shell, scrubbed",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 12,
+          "customaryUnit": null,
+          "preparation": "medium size — large cups hold more sauce",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-sauce",
+      "heading": "The sauce",
+      "ingredients": [
+        {
+          "id": "unsalted-butter",
+          "item": "unsalted butter , melted",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 30 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochujang",
+          "item": "gochujang",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "5 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , finely sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 2,
+          "customaryUnit": "cloves",
+          "preparation": "about 8 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Whole (no-shuck)",
+      "action": "Whole (no-shuck): cup-down on the moderate grate, lid or foil tent over, 5–8 minutes. They will hiss, gap, and sometimes snap audibly — each one that opens comes off immediately, knife-tip through the hinge, top shell off.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "an opened oyster shows the liquor steaming and the meat just firmed at the ruffle's edge — poached, not dried. An oyster that stays shut after 8 minutes gets one more minute and then, still shut, goes to the discard pile — the raw-bar safety rule transplanted to the grill: a cooker that will not open is telling you something.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Sauce each cup",
+      "action": "Sauce each cup: a spoon of the gochujang butter into the hot liquor — it foams and melds in the shell — scallion over, back on the grill (or under a broiler) for 60–90 seconds to set.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the sauce bubbles at the shell's edge and smells of butter, chile, and ocean. The meat should still be plump and just-set; over-sauced cups that boiled hard taste of butter alone.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Shucked-ahead path, for the confident",
+      "action": "Shucked-ahead path, for the confident: top shell off, a spoon of sauce in each cup, cup-down on the moderate grill 4–5 minutes until the edges frill and the sauce bubbles — same checkpoint, one step fewer at the fire.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test, the whole ceremony in one motion: tip the shell's contents into the mouth — liquor first, then the meat with the sauce's sweet-heat riding it, then the scallion's bite. The shells stack empty; the count is the scoreboard.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "an opened oyster shows the liquor steaming and the meat just firmed at the ruffle's edge — poached, not dried. An oyster that stays shut after 8 minutes gets one more minute and then, still shut, goes to the discard pile — the raw-bar safety rule transplanted to the grill: a cooker that will not open is telling you something.",
+    "the sauce bubbles at the shell's edge and smells of butter, chile, and ocean. The meat should still be plump and just-set; over-sauced cups that boiled hard taste of butter alone.",
+    "eating test, the whole ceremony in one motion: tip the shell's contents into the mouth — liquor first, then the meat with the sauce's sweet-heat riding it, then the scallion's bite. The shells stack empty; the count is the scoreboard."
+  ],
+  "storageNotes": [
+    "Live oysters keep 3–5 days refrigerated cup-down, covered with a damp cloth — never airtight, never on ice that melts into them. The sauce keeps a week. Grilled oysters are eat-now.",
+    "Variations: the mussels-and-clams extensions (#SF13, #SF15); a drop of the cho-gochujang (#SA03) in each cup instead of the butter build; shredded mozzarella over the sauce, the bus-stop kiosk style, for the record's one fully-fusion fork."
+  ]
+}

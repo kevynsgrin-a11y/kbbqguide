@@ -1,0 +1,244 @@
+{
+  "id": "D03",
+  "corpus": {
+    "recordId": "kbbqguide#D03",
+    "tier": "B",
+    "path": "recipes/kbbqguide/desserts/yakgwa-honey-ginger-cookies.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-dough",
+      "heading": "The dough",
+      "ingredients": [
+        {
+          "id": "all-purpose-flour",
+          "item": "all-purpose flour",
+          "metricAmount": 250,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-fine-salt",
+          "item": "/2 tsp fine salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 3 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "4-tsp-ground-ginger",
+          "item": "/4 tsp ground ginger , plus 1 tbsp fresh grated ginger",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 50,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 80,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-wine-or-soju-the-traditional-tender",
+          "item": "rice wine or soju — the traditional tenderizer",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds , optional, in the dough",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 16 g",
+          "optional": true,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "for-shaping",
+      "heading": "For shaping",
+      "ingredients": [
+        {
+          "id": "about-60-g-additional-flour",
+          "item": "About 60 g additional flour, for the board and stamp",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-syrup",
+      "heading": "The syrup",
+      "ingredients": [
+        {
+          "id": "honey",
+          "item": "honey",
+          "metricAmount": 120,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sugar",
+          "item": "sugar",
+          "metricAmount": 60,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "water",
+          "item": "water",
+          "metricAmount": 80,
+          "metricUnit": "ml",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "slices-ginger",
+          "item": "slices ginger",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": null,
+          "preparation": "about 15 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "a-pinch-of-salt",
+          "item": "A pinch of salt",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 1 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-fry",
+      "heading": "The fry",
+      "ingredients": [
+        {
+          "id": "about-800-ml-neutral-oil",
+          "item": "About 800 ml neutral oil, for the two-stage fry",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": null,
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Roll thick, cut, and stamp",
+      "action": "Roll thick, cut, and stamp. The dough rolled between floured parchment to 1 cm — thick, by cookie standards — and cut into shapes: the traditional flower stamp pressed into rounds, or simple diamonds for the honest home version. Dock each cookie twice with a fork (steam vents — the fry puffs them) and rest the cut cookies 15 minutes while the oil heats.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "each cut cookie holds its edge cleanly; a ragged edge means the dough warmed too much — back to the fridge for ten minutes.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "The two-stage fry — infuse, then color",
+      "action": "The two-stage fry — infuse, then color. Stage one: oil at 130 °C (gentle — a cookie dropped in takes 4–5 seconds to bubble to the surface), the cookies in small batches, 12–15 minutes, turned once — they barely color, and the low heat cooks the starch through while the sesame oil's flavor soaks the interior. Stage two: the oil raised to 170 °C, the same cookies returned for 90 seconds — they turn deep gold-brown and the surface crisps.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "stage one's cookie is pale-blond and cooked through (break one: no raw dough at the center), and stage two's is golden with a light crust and a delicate, almost pastry-flaky interior. The double fry exists because a single hot fry colors the outside long before the honey-laden interior cooks — the honey burns, the center stays raw — and there is no single-temperature workaround.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "The syrup bath — while hot",
+      "action": "The syrup bath — while hot. The simmered syrup taken off the heat, and the hot-from-the-oil cookies slid straight in, 30–60 seconds a side, then lifted to a rack over a tray. They drink the syrup as they cool, turning from golden to translucent amber, the surface going glassy.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the cooled cookie's test: glossy, translucent at the edges, tender-firm, the ginger-honey flavor soaked fully through — the first bite should explain the \"medicine\" in the name to anyone who thinks it a metaphor. A syrup-bathed yakgwa keeps three weeks and is best at days 2–5.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "The dough: minimally mixed, rested an hour, rolled thick, docked twice.",
+    "The fry: stage one 130 °C to cooked-through-and-pale, stage two 170 °C to golden in 90 seconds.",
+    "The syrup: simmered with ginger, the hot cookies bathed as they leave the oil.",
+    "The finish: cooled to translucent-amber, glossy, tender-firm; best at days 2–5 of three weeks."
+  ],
+  "storageNotes": [
+    "The keeper of the dessert list: three weeks airtight, improving through the first five days as the syrup soaks. Make a double batch when the honey jar is generous.",
+    "Variations: pressed with a pine-nut half before frying; a cinnamon thread in the syrup; the temple-style thick diamond, cut 2 cm and fried longer at the low stage — chewier, the meditation-hall register."
+  ]
+}

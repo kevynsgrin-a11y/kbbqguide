@@ -1,0 +1,165 @@
+{
+  "id": "SA04",
+  "corpus": {
+    "recordId": "kbbqguide#SA04",
+    "tier": "C",
+    "path": "recipes/kbbqguide/sauces/yangnyeom-ganjang-scallion-soy-dipping-sauce.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-base-both-builds",
+      "heading": "The base (both builds)",
+      "ingredients": [
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 4,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "60 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "rice-vinegar",
+          "item": "rice vinegar",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-sugar",
+          "item": "honey or sugar",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 5 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "scallions",
+          "item": "scallions , finely sliced, whites and greens separated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 4,
+          "customaryUnit": null,
+          "preparation": "about 60 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "gochugaru-or-1-sliced-fresh-chili",
+          "item": "gochugaru or 1 sliced fresh chili",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 6 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "sesame-seeds",
+          "item": "sesame seeds , lightly crushed",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-bloomed-build-only",
+      "heading": "The bloomed build only",
+      "ingredients": [
+        {
+          "id": "clove-garlic",
+          "item": "clove garlic , sliced",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "neutral-oil",
+          "item": "neutral oil",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 4 g",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Raw build",
+      "action": "Raw build: soy, vinegar, and honey stirred clear; scallions (all of them), gochugaru, sesame seeds, and the sesame oil folded in. Done, and better after ten minutes' rest while the scallion bleeds its green into the soy.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the taste: salt first, vinegar's snap right behind, scallion's onion-sweetness, sesame's finish, the gochugaru coloring the whole thing warm. On a piece of fatty brisket shaving (#M07), the fat should taste cleaner after the dip, not greasier — that is the bowl's whole function.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Bloomed build",
+      "action": "Bloomed build: neutral oil and the garlic slices at medium-low until the garlic is blond; the scallion whites and gochugaru in for 30 seconds just to wake; pour the sizzling oil over the soy-vinegar-honey base with the scallion greens and sesame already in it. It crackles, blooms, and goes quiet.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the bloomed bowl is rounder — the raw edge of vinegar and scallion cooked a half-step toward sweet — and it keeps a day longer. Both bowls should be assertive; a shy yangnyeom ganjang is soy sauce with regrets.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the taste: salt first, vinegar's snap right behind, scallion's onion-sweetness, sesame's finish, the gochugaru coloring the whole thing warm. On a piece of fatty brisket shaving (#M07), the fat should taste cleaner after the dip, not greasier — that is the bowl's whole function.",
+    "the bloomed bowl is rounder — the raw edge of vinegar and scallion cooked a half-step toward sweet — and it keeps a day longer. Both bowls should be assertive; a shy yangnyeom ganjang is soy sauce with regrets."
+  ],
+  "storageNotes": [
+    "Raw build keeps 3 days (add the greens at serving); bloomed keeps 5. Both hold the flavors that make grilled meat interesting.",
+    "Variations: the onion-fork (#SA05); a pinch of black pepper for the beef records; a teaspoon of the gochujang (#SA03) swirled in for a bowl that leans hot — labeled as the hybrid it is."
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "id": "M05",
+  "corpus": {
+    "recordId": "kbbqguide#M05",
+    "tier": "C",
+    "path": "recipes/kbbqguide/grilled-meat/garlic-sesame-galbisal.md",
+    "syncedAt": "2026-10-04"
+  },
+  "adoption": {
+    "requiredReviews": [
+      "testCookStatus",
+      "foodSafetyReview",
+      "koreanLanguageReview"
+    ],
+    "blockedGates": "phase tests lock step counts, per-step safetyNotes, ingredient-id canonical mapping, and storage safety patterns — merge these fields only inside the site review pipeline",
+    "mergeChecklist": [
+      "ingredientGroups: merge corpus lines into the existing groups, KEEPING existing ingredient ids that the canonical shopping consolidation maps (scallion variants et al.)",
+      "instructions: corpus actions/cues replace stub action/cue ONLY at the matching step index; step COUNT must match the batch gate; safetyNote must be authored and signed by the food-safety review",
+      "visualDonenessCues / storage: must retain the batch-gated safety patterns (145°F siblings, B07 /2 days/, sprouts /discard/)"
+    ]
+  },
+  "ingredientGroups": [
+    {
+      "id": "the-beef",
+      "heading": "The beef",
+      "ingredients": [
+        {
+          "id": "boneless-beef-short-rib-or-chuck-flap",
+          "item": "boneless beef short rib or chuck flap, sliced 5 mm against the grain",
+          "metricAmount": 800,
+          "metricUnit": "g",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "galbisal",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-marinade",
+      "heading": "The marinade",
+      "ingredients": [
+        {
+          "id": "garlic",
+          "item": "garlic , grated",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 6,
+          "customaryUnit": "cloves",
+          "preparation": "about 24 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "soy-sauce",
+          "item": "soy sauce",
+          "metricAmount": 2,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "30 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-oil",
+          "item": "toasted sesame oil",
+          "metricAmount": 1.5,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 22 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "honey-or-sugar",
+          "item": "honey or sugar",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 20 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "mirin",
+          "item": "mirin",
+          "metricAmount": 1,
+          "metricUnit": "tbsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "15 ml",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "2-tsp-black-pepper",
+          "item": "/2 tsp black pepper",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": 1,
+          "customaryUnit": null,
+          "preparation": "about 2 g",
+          "optional": false,
+          "allergenNotes": []
+        },
+        {
+          "id": "toasted-sesame-seeds",
+          "item": "toasted sesame seeds, plus more to finish",
+          "metricAmount": 1,
+          "metricUnit": "tsp",
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 8 g total",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    },
+    {
+      "id": "the-table",
+      "heading": "The table",
+      "ingredients": [
+        {
+          "id": "steamed-rice",
+          "item": "Steamed rice , lettuce ssam, ssamjang , gireumjang as the purist dip, kimchi",
+          "metricAmount": null,
+          "metricUnit": null,
+          "customaryAmount": null,
+          "customaryUnit": null,
+          "preparation": "about 600 g cooked",
+          "optional": false,
+          "allergenNotes": []
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "heading": "Step 1",
+      "action": "Charcoal or cast-iron at medium-high. The slices go on in a single layer, and because there is almost no sugar, the grill boss's job is color, not lacquer-management: leave them until the edges weep and the underside is browned, about 2 minutes.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the smell should be sesame and garlic over browning beef — a quieter grill smell than the sweet marinades, and the honest one for this cut.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 2,
+      "heading": "Step 2",
+      "action": "Flip once, 90 seconds more, pull when the raw red is just gone at the center of the slice. Rest the batch 1 minute on a warm plate — galbisal is thin enough that carryover is quick and real.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "eating test straight off the grill: beef first, garlic second, sesame after. If you taste marinade before meat, the soy ran heavy — pull back a teaspoon next batch.",
+      "safetyNote": null,
+      "mediaReference": null
+    },
+    {
+      "step": 3,
+      "heading": "Step 3",
+      "action": "Scissors into bite pieces, warm platter, sesame over, ssam station open. The purist dip here is gireumjang (#SA02) — sesame oil, salt, pepper — because it seasons without competing; ssamjang (#SA01) for the bolder table.",
+      "estimatedTime": null,
+      "temperature": null,
+      "visualOrTactileCue": "the ssam test: leaf, gireumjang, galbisal, fold — and it should taste like the steakhouse version of Korean grill, clean enough that the beef's quality is the headline. Buy the good beef for this one; there is nowhere to hide.",
+      "safetyNote": null,
+      "mediaReference": null
+    }
+  ],
+  "visualDonenessCues": [
+    "the smell should be sesame and garlic over browning beef — a quieter grill smell than the sweet marinades, and the honest one for this cut.",
+    "eating test straight off the grill: beef first, garlic second, sesame after. If you taste marinade before meat, the soy ran heavy — pull back a teaspoon next batch.",
+    "the ssam test: leaf, gireumjang, galbisal, fold — and it should taste like the steakhouse version of Korean grill, clean enough that the beef's quality is the headline. Buy the good beef for this one; there is nowhere to hide."
+  ],
+  "storageNotes": [
+    "Marinated slices keep 24 hours refrigerated. Cooked, 3 days — cold slices over rice with a fried egg and the leftover gireumjang is the intended day-after move.",
+    "Variations: a teaspoon of gochugaru in the marinade for a slow heat; the mushroom-soy build (#M02) swaps in cleanly; the bone-in flanken fork (#M03) when the table wants the full ceremony."
+  ]
+}
