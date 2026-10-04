@@ -10,8 +10,8 @@
   "publicReleaseOrder": 37,
   "canonicalSlug": "doenjang-garlic-moksal-gui",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/doenjang-garlic-moksal-gui/",
-  "shortDescription": "Pork collar steaks receive a thin doenjang-garlic marinade before controlled grilling, temperature verification, and a full rest.",
-  "culturalContext": "Moksal refers to pork neck or collar, though retail cutting and naming vary. This doenjang-garlic grilled version is a contemporary editorial formulation requiring Korean-language and cultural review.",
+  "shortDescription": "Moksal — pork collar, the shoulder's marble — is the connoisseur's cut of the tabletop: tender-firm with a fine fat weave that stands up to the grill better than loin ever will.",
+  "culturalContext": "Moksal — pork collar, the shoulder's marble — is the connoisseur's cut of the tabletop: tender-firm with a fine fat weave that stands up to the grill better than loin ever will. Its natural partner is doenjang, the fermented soybean paste most Western kitchens only meet in jjigae. As a marinade base, doenjang gives pork what gochujang cannot: deep savory funk with almost no sugar, nothing to burn, and a crust that browns like a steak's instead of lacquering. This is the quiet record of the pork list — the one the regulars order.",
   "adaptationLabel": "restaurant-style",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes, plus 2–4 hours marinating"
   },
   "marinateTime": {
     "minutes": 120,
@@ -34,15 +34,15 @@
   },
   "cookTime": {
     "minutes": 12,
-    "display": "12 minutes"
+    "display": "12 minutes at the table"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 155,
-    "display": "About 155 minutes"
+    "minutes": 30,
+    "display": "About 30 minutes at the table (marinate ahead)"
   },
   "equipment": [
     "Separate raw-meat cutting board",
@@ -83,7 +83,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten; verify label"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -127,7 +130,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "water",
@@ -155,7 +160,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten; verify label"
+        ]
       },
       {
         "id": "rice-syrup",
@@ -199,7 +207,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "water",
@@ -228,7 +238,11 @@
     "substitutions": [
       "Use a verified gluten-free doenjang only if its flavor and salt level are adjusted during test cooking."
     ],
-    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten",
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -332,8 +346,16 @@
   "servingSuggestions": [
     "Slice across the grain and serve with lettuce, rice, and crisp banchan."
   ],
-  "menuPairings": ["B12", "F02", "SA02", "D02"],
-  "relatedRecipeIds": ["M11", "M13"],
+  "menuPairings": [
+    "B12",
+    "F02",
+    "SA02",
+    "D02"
+  ],
+  "relatedRecipeIds": [
+    "M11",
+    "M13"
+  ],
   "faq": [
     {
       "question": "What is moksal?",
@@ -347,7 +369,10 @@
   "seoTitle": "Doenjang-Garlic Moksal Gui Recipe",
   "metaDescription": "Grill Korean pork collar with a doenjang-garlic marinade, controlled heat, thermometer verification, cross-contact controls, and rest.",
   "primaryKeyword": "moksal gui recipe",
-  "secondaryTopics": ["pork collar barbecue", "doenjang marinade"],
+  "secondaryTopics": [
+    "pork collar barbecue",
+    "doenjang marinade"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -360,6 +385,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M12, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "The locked moksal-doenjang concept is an editorial draft; general Korean pork-grilling workflow compared with https://www.maangchi.com/recipe/samgyeopsal-gui on 2026-07-14.",
     "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

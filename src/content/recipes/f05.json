@@ -10,8 +10,8 @@
   "publicReleaseOrder": 52,
   "canonicalSlug": "gochugaru-yuja-cabbage-slaw",
   "canonicalUrl": "https://kbbqguide.com/recipes/fresh/gochugaru-yuja-cabbage-slaw/",
-  "shortDescription": "Shredded cabbage and carrot are tossed just before serving with a bright yuja, rice-vinegar, gochugaru, and sesame dressing.",
-  "culturalContext": "This is a contemporary Korean-inspired slaw, not a traditional named dish. The descriptive Korean name, yuja product choice, and adaptation label require Korean-language and food-editor review.",
+  "shortDescription": "This slaw is the modern Korean table's answer to coleslaw: napa cabbage in a gochugaru dressing brightened with yuja (Korean citron — marmalade's source) instead of vinegar alone.",
+  "culturalContext": "This slaw is the modern Korean table's answer to coleslaw: napa cabbage in a gochugaru dressing brightened with yuja (Korean citron — marmalade's source) instead of vinegar alone. It carries the geotjeori family's (#B04, #F03) fresh-kimchi logic into a rounder, citrus-forward register, and it is the fresh bowl that best matches the grilled fish records (#SF07, #SF09), whose oiliness wants citrus the way the meat records want scallion (#F02).",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "fresh side servings",
   "prepTime": {
-    "minutes": 16,
-    "display": "16 minutes"
+    "minutes": 15,
+    "display": "15 minutes"
   },
   "marinateTime": {
     "minutes": 0,
@@ -41,8 +41,8 @@
     "display": "No rest"
   },
   "totalTime": {
-    "minutes": 16,
-    "display": "16 minutes"
+    "minutes": 135,
+    "display": "15 minutes, best within 2 hours"
   },
   "equipment": [
     "Colander",
@@ -148,7 +148,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "fine-salt",
@@ -263,9 +265,19 @@
   "storage": "Best served immediately. Refrigerate components separately at or below 40°F / 4°C and discard dressed salad after unsafe holding.",
   "reheating": "Do not reheat; this is a raw ready-to-eat dish.",
   "leftovers": "Avoid retaining table-exposed dressed leftovers; use only clean, promptly refrigerated portions.",
-  "servingSuggestions": ["Serve beside rich grilled meats or fish."],
-  "menuPairings": ["M08", "SF06", "B20", "SA05"],
-  "relatedRecipeIds": ["F04", "F06"],
+  "servingSuggestions": [
+    "Serve beside rich grilled meats or fish."
+  ],
+  "menuPairings": [
+    "M08",
+    "SF06",
+    "B20",
+    "SA05"
+  ],
+  "relatedRecipeIds": [
+    "F04",
+    "F06"
+  ],
   "faq": [
     {
       "question": "Is this a traditional Korean dish?",
@@ -279,7 +291,10 @@
   "seoTitle": "Gochugaru-Yuja Korean Cabbage Slaw",
   "metaDescription": "Make crisp gochugaru-yuja cabbage slaw with running-water produce washing, labeled yuja marmalade, sesame dressing, and last-minute tossing.",
   "primaryKeyword": "gochugaru yuja cabbage slaw",
-  "secondaryTopics": ["Korean-inspired slaw", "yuja dressing"],
+  "secondaryTopics": [
+    "Korean-inspired slaw",
+    "yuja dressing"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -292,6 +307,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#F05, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Contemporary locked-title formulation; Korean naming and adaptation framing require human review.",
     "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
@@ -310,6 +326,8 @@
   "sourcing": [
     "Choose a firm dense cabbage and a sealed labeled yuja product."
   ],
-  "serving": ["Serve beside rich grilled meats or fish."],
+  "serving": [
+    "Serve beside rich grilled meats or fish."
+  ],
   "source": "Contemporary locked-title formulation; Korean naming and adaptation framing require human review."
 }

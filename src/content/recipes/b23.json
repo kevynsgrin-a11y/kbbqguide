@@ -10,8 +10,8 @@
   "publicReleaseOrder": 67,
   "canonicalSlug": "maneul-jangajji-soy-pickled-garlic",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/maneul-jangajji-soy-pickled-garlic/",
-  "shortDescription": "Peeled garlic is submerged in a boiled, fully cooled soy-vinegar brine and held only under refrigeration for a short, unvalidated pickling window.",
-  "culturalContext": "Maneul jangajji is Korean pickled garlic, with whole-bulb and peeled-clove methods, staged brines, aging periods, and regional preferences. This conservative draft is refrigerator-only and not a canning or fermentation process.",
+  "shortDescription": "Whole garlic cloves, peeled and sunk into a soy-vinegar brine, wait a week and turn into something the raw clove never promised: dark, mellow, sweet-sour-savory, the fierce allium heat dissolved into ",
+  "culturalContext": "Whole garlic cloves, peeled and sunk into a soy-vinegar brine, wait a week and turn into something the raw clove never promised: dark, mellow, sweet-sour-savory, the fierce allium heat dissolved into a condiment-cloak that the grill table eats whole beside rich meat. Maneul jangajji is the garlic-lover's jar and the discipline lesson in one: twenty minutes of work, and the recipe is genuinely not ready until the week is up.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 12,
+  "yield": 1,
   "servingUnit": "side-dish servings",
   "prepTime": {
-    "minutes": 25,
-    "display": "25 minutes"
+    "minutes": 15,
+    "display": "15 minutes"
   },
   "marinateTime": {
     "minutes": 10080,
@@ -41,8 +41,8 @@
     "display": "30 minutes"
   },
   "totalTime": {
-    "minutes": 10140,
-    "display": "7 days plus about 1 hour preparation and cooling"
+    "minutes": 20,
+    "display": "20 minutes, ready in 1 week"
   },
   "equipment": [
     "Heat-safe nonreactive saucepan",
@@ -82,7 +82,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "vinegar",
@@ -222,8 +225,16 @@
   "servingSuggestions": [
     "Serve a small refrigerated portion beside grilled foods."
   ],
-  "menuPairings": ["M18", "SF13", "F08", "SA03"],
-  "relatedRecipeIds": ["B22", "B24"],
+  "menuPairings": [
+    "M18",
+    "SF13",
+    "F08",
+    "SA03"
+  ],
+  "relatedRecipeIds": [
+    "B22",
+    "B24"
+  ],
   "faq": [
     {
       "question": "Is this shelf-stable?",
@@ -237,7 +248,10 @@
   "seoTitle": "Maneul Jangajji Soy-Pickled Garlic",
   "metaDescription": "Make conservative refrigerator-only maneul jangajji with 5%-acidity vinegar, boiled and cooled brine, continuous refrigeration, and discard rules.",
   "primaryKeyword": "maneul jangajji",
-  "secondaryTopics": ["Korean pickled garlic", "refrigerator garlic pickle"],
+  "secondaryTopics": [
+    "Korean pickled garlic",
+    "refrigerator garlic pickle"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -250,6 +264,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B23, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Locked maneul-jangajji concept drafted conservatively for refrigerator-only use; qualified process authority review is mandatory before publication.",
     "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

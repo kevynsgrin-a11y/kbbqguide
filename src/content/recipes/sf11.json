@@ -10,8 +10,8 @@
   "publicReleaseOrder": 54,
   "canonicalSlug": "doenjang-glazed-grilled-black-cod",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/doenjang-glazed-grilled-black-cod/",
-  "shortDescription": "Rich black cod portions are grilled in a basket with a savory-sweet doenjang glaze divided before raw-fish contact.",
-  "culturalContext": "Black cod, also sold as sablefish, is not true cod. This doenjang-glazed grilled version is a contemporary Korean-inspired adaptation requiring market-name and language review.",
+  "shortDescription": "The famous miso-marinated black cod and this record share a fish and a technique family: a fermented bean paste cure, a long rest, and a slow sweet glaze under heat.",
+  "culturalContext": "The famous miso-marinated black cod and this record share a fish and a technique family: a fermented bean paste cure, a long rest, and a slow sweet glaze under heat. The Korean version runs doenjang where the Japanese-American restaurant version runs miso — deeper, funkier, a shade less sweet — and the result is the same miracle from the other direction: buttery fish under a caramelized lacquer. Labeled honestly: this is a contemporary build, the pantry's oldest paste on a premium fish, and it is the site's special-occasion seafood record.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 15,
-    "display": "15 minutes"
+    "minutes": 20,
+    "display": "20 minutes, plus 24–48 hours curing"
   },
   "marinateTime": {
     "minutes": 15,
@@ -34,15 +34,15 @@
   },
   "cookTime": {
     "minutes": 12,
-    "display": "10 to 12 minutes"
+    "display": "12 minutes"
   },
   "restTime": {
     "minutes": 2,
     "display": "2 minutes"
   },
   "totalTime": {
-    "minutes": 44,
-    "display": "About 45 minutes"
+    "minutes": 25,
+    "display": "About 25 minutes on the day (cure ahead)"
   },
   "equipment": [
     "Separate raw-seafood cutting board",
@@ -67,7 +67,9 @@
           "customaryUnit": "pounds",
           "preparation": "cut into four even portions; pin bones removed",
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         }
       ]
     },
@@ -84,7 +86,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten; verify label"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -139,7 +144,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -243,9 +250,19 @@
   "storage": "Refrigerate cooked fish in a shallow covered container within 2 hours and use within 3 days pending food-safety approval.",
   "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming.",
   "leftovers": "Use properly refrigerated leftovers within the approved window; discard table-exposed portions after unsafe holding.",
-  "servingSuggestions": ["Serve with rice and sharp or fresh banchan."],
-  "menuPairings": ["B10", "F03", "SA03", "D02"],
-  "relatedRecipeIds": ["SF10", "SF12"],
+  "servingSuggestions": [
+    "Serve with rice and sharp or fresh banchan."
+  ],
+  "menuPairings": [
+    "B10",
+    "F03",
+    "SA03",
+    "D02"
+  ],
+  "relatedRecipeIds": [
+    "SF10",
+    "SF12"
+  ],
   "faq": [
     {
       "question": "Is black cod a true cod?",
@@ -259,7 +276,10 @@
   "seoTitle": "Doenjang-Glazed Grilled Black Cod",
   "metaDescription": "Grill doenjang-glazed black cod with market-name checks, divided glaze, cold-chain controls, a fish basket, and a verified 145°F / 63°C endpoint.",
   "primaryKeyword": "doenjang grilled black cod",
-  "secondaryTopics": ["Korean-inspired sablefish", "fermented soybean glaze"],
+  "secondaryTopics": [
+    "Korean-inspired sablefish",
+    "fermented soybean glaze"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -272,6 +292,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF11, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Contemporary locked-title formulation; black-cod market naming and Korean descriptive naming require human review.",
     "FoodSafety.gov minimum-temperature chart plus FDA seafood and produce-handling guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures, https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely, and https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."
@@ -316,7 +337,10 @@
       "customaryUnit": "cup",
       "preparation": null,
       "optional": false,
-      "allergenNotes": ["soy", "wheat/gluten; verify label"]
+      "allergenNotes": [
+        "soy",
+        "wheat/gluten; verify label"
+      ]
     },
     {
       "id": "rice-syrup",
@@ -371,7 +395,9 @@
       "customaryUnit": "teaspoon",
       "preparation": null,
       "optional": false,
-      "allergenNotes": ["sesame"]
+      "allergenNotes": [
+        "sesame"
+      ]
     }
   ],
   "mix": "Whisk doenjang, rice syrup, water, vinegar, garlic, and sesame oil smooth, then divide before handling fish.",
@@ -379,6 +405,8 @@
   "sourcing": [
     "Confirm the product is black cod/sablefish, kept cold, with firm flesh and mild odor."
   ],
-  "serving": ["Serve with rice and sharp or fresh banchan."],
+  "serving": [
+    "Serve with rice and sharp or fresh banchan."
+  ],
   "source": "Contemporary locked-title formulation; black-cod market naming and Korean descriptive naming require human review."
 }

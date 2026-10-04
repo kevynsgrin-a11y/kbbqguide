@@ -10,8 +10,8 @@
   "publicReleaseOrder": 3,
   "canonicalSlug": "la-style-galbi",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/la-style-galbi/",
-  "shortDescription": "Flanken-cut beef short ribs marinated with Korean pear, soy, onion, garlic, and sesame, then grilled quickly across their thin cut.",
-  "culturalContext": "LA galbi uses short ribs sliced thinly across several bones. It is strongly associated with Korean-American cooking, but explanations for the name and precise origin vary; this draft avoids presenting any one origin theory as settled fact.",
+  "shortDescription": "LA galbi is the Korean-American chapter of the galbi story: beef short ribs cut flanken-style, across the bone, into thin strips about a centimeter thick — a cut immigrant butchers in 1970s and 80s So",
+  "culturalContext": "LA galbi is the Korean-American chapter of the galbi story: beef short ribs cut flanken-style, across the bone, into thin strips about a centimeter thick — a cut immigrant butchers in 1970s and 80s Southern California turned into the backyard and restaurant grill's finest hour. The name honors where the cut became standard, not where the dish was invented; the soy-pear-sugar marinade it wears is the sweet register of the postwar era, dialled further for American palates. Cooked right it is one of the best things that ever happened to a charcoal grill: lacquered edges, juicy meat, and a strip of bone the table fights over. This record is the honest diaspora master — sweeter than the Seoul classic, unmistakably galbi. Who cooks what: one grill boss with tongs and scissors, a designated bone-counter keeping the pieces fair, everyone else on ssam duty.",
   "adaptationLabel": "regional",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 6,
+  "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 30,
-    "display": "30 minutes"
+    "minutes": 25,
+    "display": "25 minutes, plus 6–24 hours marinating"
   },
   "marinateTime": {
     "minutes": 240,
@@ -34,15 +34,15 @@
   },
   "cookTime": {
     "minutes": 12,
-    "display": "10 to 12 minutes"
+    "display": "12 minutes"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 285,
-    "display": "4 hours 45 minutes, including minimum marination and rest"
+    "minutes": 40,
+    "display": "About 40 minutes at the table (marinate ahead)"
   },
   "equipment": [
     "Chef’s knife",
@@ -107,7 +107,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "water",
@@ -151,7 +154,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "ginger",
@@ -212,7 +217,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "water",
@@ -256,7 +264,9 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "ginger",
@@ -406,8 +416,16 @@
     "Serve with rice, ssam greens, scallion salad, and a reviewed ssamjang.",
     "Provide a small bone plate and make bones visible to children and guests."
   ],
-  "menuPairings": ["B03", "F03", "SA03", "D03"],
-  "relatedRecipeIds": ["M02", "M04"],
+  "menuPairings": [
+    "B03",
+    "F03",
+    "SA03",
+    "D03"
+  ],
+  "relatedRecipeIds": [
+    "M02",
+    "M04"
+  ],
   "faq": [
     {
       "question": "What makes the cut “LA-style”?",
@@ -440,6 +458,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M03, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Core preparation reference: https://www.maangchi.com/recipe/la-galbi",
     "Cultural-context comparison: https://www.bonappetit.com/recipe/la-kalbi (Korean-American flanken-cut framing; origin language treated as non-definitive).",
     "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",

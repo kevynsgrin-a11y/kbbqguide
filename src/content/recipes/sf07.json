@@ -10,8 +10,8 @@
   "publicReleaseOrder": 46,
   "canonicalSlug": "godeungeo-gui-grilled-mackerel",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/godeungeo-gui-grilled-mackerel/",
-  "shortDescription": "Mackerel is lightly salted, dried, brushed with oil, and grilled in a fish basket until browned, flaky, and safely cooked.",
-  "culturalContext": "Godeungeo-gui is a straightforward Korean grilled mackerel preparation. Salting, splitting, flour coating, pan versus grill cooking, and accompaniments vary; this draft uses a whole cleaned fish on a grill.",
+  "shortDescription": "Godeungeo gui — salted mackerel, grilled whole or in cross-cut steaks until the skin crisps and the fat renders — is the fish record of the Korean home table: cheap, abundant, rich enough to feed a fa",
+  "culturalContext": "Godeungeo gui — salted mackerel, grilled whole or in cross-cut steaks until the skin crisps and the fat renders — is the fish record of the Korean home table: cheap, abundant, rich enough to feed a family on one fish, and forgiving enough to cook in a toaster oven, a broiler, a grill basket, or over charcoal. It is also the site's master class in whole-fish grilling: the salt cure, the drying skin, the single flip, and the doneness read at the backbone. Master this fish and every record around it (#SF08, #SF09) is a variation.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
     "minutes": 20,
-    "display": "20 minutes"
+    "display": "20 minutes, plus 30 minutes salting"
   },
   "marinateTime": {
     "minutes": 15,
     "display": "15 minutes refrigerated"
   },
   "cookTime": {
-    "minutes": 16,
-    "display": "16 minutes"
+    "minutes": 12,
+    "display": "12 minutes"
   },
   "restTime": {
     "minutes": 2,
     "display": "2 minutes"
   },
   "totalTime": {
-    "minutes": 53,
-    "display": "About 53 minutes"
+    "minutes": 65,
+    "display": "About 1 hour 5 minutes"
   },
   "equipment": [
     "Separate seafood cutting board",
@@ -67,7 +67,9 @@
           "customaryUnit": "large fish",
           "preparation": "scaled, gutted, gills removed, and butterflied or left whole by fishmonger",
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         },
         {
           "id": "coarse-salt",
@@ -195,9 +197,19 @@
   "storage": "Refrigerate cooked seafood in a shallow covered container within 2 hours and use within 3 days pending food-safety approval.",
   "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
   "leftovers": "Use properly refrigerated leftovers within the approved window; discard table-exposed portions after unsafe holding.",
-  "servingSuggestions": ["Serve hot with rice, soup, and banchan."],
-  "menuPairings": ["B06", "F09", "SA04", "D03"],
-  "relatedRecipeIds": ["SF06", "SF08"],
+  "servingSuggestions": [
+    "Serve hot with rice, soup, and banchan."
+  ],
+  "menuPairings": [
+    "B06",
+    "F09",
+    "SA04",
+    "D03"
+  ],
+  "relatedRecipeIds": [
+    "SF06",
+    "SF08"
+  ],
   "faq": [
     {
       "question": "Can visual flaking replace a thermometer?",
@@ -211,7 +223,10 @@
   "seoTitle": "Godeungeo Gui Grilled Mackerel",
   "metaDescription": "Grill Korean godeungeo-gui with cold-chain checks, light salting, a fish basket, thermometer verification, and clear pin-bone guidance.",
   "primaryKeyword": "godeungeo gui",
-  "secondaryTopics": ["Korean grilled mackerel", "whole fish grilling"],
+  "secondaryTopics": [
+    "Korean grilled mackerel",
+    "whole fish grilling"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -224,6 +239,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF07, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Maangchi godeungeo-gui technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/godeungeo-gui",
     "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

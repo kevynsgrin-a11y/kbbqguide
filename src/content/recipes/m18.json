@@ -10,8 +10,8 @@
   "publicReleaseOrder": 69,
   "canonicalSlug": "garlic-scallion-chicken-skewers",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/garlic-scallion-chicken-skewers/",
-  "shortDescription": "Chicken-thigh pieces are marinated with soy, garlic, scallion, and sesame, threaded evenly, and grilled until every piece reaches 165°F / 74°C.",
-  "culturalContext": "Dak-kkochi refers broadly to Korean chicken skewers, which vary in cut, sauce, street-food presentation, and heat. This garlic-scallion version is a contemporary grilled adaptation.",
+  "shortDescription": "Skewers are the grill's oldest form on the peninsula — the jeok that sat at the center of the ceremonial table — and this record is the tabletop's weeknight version of that idea: chicken thigh cubes a",
+  "culturalContext": "Skewers are the grill's oldest form on the peninsula — the jeok that sat at the center of the ceremonial table — and this record is the tabletop's weeknight version of that idea: chicken thigh cubes and scallion segments on a stick, in a garlic-soy-sesame marinade light enough that the scallion survives the fire. The skewer is not decoration here; alternating meat and scallion means every bite carries the allium's sweetness against the chicken fat.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 8,
+  "yield": 4,
   "servingUnit": "skewers",
   "prepTime": {
     "minutes": 25,
-    "display": "25 minutes"
+    "display": "25 minutes, plus 1–3 hours marinating"
   },
   "marinateTime": {
     "minutes": 60,
     "display": "1 hour refrigerated"
   },
   "cookTime": {
-    "minutes": 14,
-    "display": "12 to 14 minutes"
+    "minutes": 10,
+    "display": "10 minutes"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 102,
-    "display": "About 1 hour 40 minutes"
+    "minutes": 40,
+    "display": "About 40 minutes (marinate ahead)"
   },
   "equipment": [
     "Separate raw-poultry cutting board",
@@ -83,7 +83,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -127,7 +130,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "black-pepper",
@@ -172,7 +177,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "rice-syrup",
@@ -216,7 +224,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "black-pepper",
@@ -246,7 +256,11 @@
       "If wooden skewers are used, follow manufacturer soaking and heat limits; metal is preferred for this draft.",
       "Use certified gluten-free tamari only after verifying the label."
     ],
-    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten",
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -350,8 +364,16 @@
   "servingSuggestions": [
     "Serve with rice and fresh vegetables; remove from skewers for safer child service."
   ],
-  "menuPairings": ["B18", "F08", "SA03", "D03"],
-  "relatedRecipeIds": ["M17", "M19"],
+  "menuPairings": [
+    "B18",
+    "F08",
+    "SA03",
+    "D03"
+  ],
+  "relatedRecipeIds": [
+    "M17",
+    "M19"
+  ],
   "faq": [
     {
       "question": "Why check multiple pieces on each skewer?",
@@ -365,7 +387,10 @@
   "seoTitle": "Garlic-Scallion Chicken Skewers",
   "metaDescription": "Grill garlic-scallion chicken skewers with no-wash poultry handling, even threading, multiple thermometer checks, clean tools, and hot-skewer warnings.",
   "primaryKeyword": "garlic scallion chicken skewers",
-  "secondaryTopics": ["Korean chicken skewers", "dak kkochi"],
+  "secondaryTopics": [
+    "Korean chicken skewers",
+    "dak kkochi"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -378,6 +403,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M18, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Contemporary locked-title dak-kkochi formulation requiring Korean food-editor and test-kitchen review.",
     "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

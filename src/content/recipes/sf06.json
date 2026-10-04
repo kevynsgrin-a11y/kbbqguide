@@ -10,8 +10,8 @@
   "publicReleaseOrder": 43,
   "canonicalSlug": "jjukkumi-gui-grilled-baby-octopus",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jjukkumi-gui-grilled-baby-octopus/",
-  "shortDescription": "Baby octopus is lightly coated with gochujang, gochugaru, garlic, and sesame, then grilled quickly in a fine-mesh basket.",
-  "culturalContext": "Jjukkumi refers to a small octopus used in Korean seasonal and spicy dishes. The exact species, spelling, cleaning practice, and grilled framing require Korean-language and seafood-market review.",
+  "shortDescription": "Jjukkumi are baby octopus the length of a hand, and their grill record is the drinking table's favorite version of the octopus idea: whole little octopus tossed in a sweet-spicy gochujang marinade, se",
+  "culturalContext": "Jjukkumi are baby octopus the length of a hand, and their grill record is the drinking table's favorite version of the octopus idea: whole little octopus tossed in a sweet-spicy gochujang marinade, seared fast on a hot pan or tabletop dome until the sauce caramelizes into glaze, and eaten entire — head, tentacles, everything — with rice or straight off the pan with soju. Where the nakji record (#SF05) pre-simmers a bigger octopus, jjukkumi are small enough to grill from raw, which is the entire reason they own the lane: no simmer, no pounding, just the marinade clock and a hot pan. Who cooks what: the pan belongs to whoever loses the first round of drinks-buying. Tongs rotate with the batches.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 4,
+  "yield": 3,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 25,
-    "display": "25 minutes"
+    "minutes": 20,
+    "display": "20 minutes, plus 30 minutes marinating"
   },
   "marinateTime": {
     "minutes": 20,
     "display": "20 minutes refrigerated"
   },
   "cookTime": {
-    "minutes": 8,
-    "display": "8 minutes"
+    "minutes": 10,
+    "display": "10 minutes at the table"
   },
   "restTime": {
     "minutes": 2,
     "display": "2 minutes"
   },
   "totalTime": {
-    "minutes": 55,
-    "display": "About 55 minutes"
+    "minutes": 70,
+    "display": "About 1 hour 10 minutes, mostly resting"
   },
   "equipment": [
     "Separate seafood cutting board",
@@ -86,7 +86,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten; verify label"
+          ]
         },
         {
           "id": "gochugaru",
@@ -108,7 +111,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -141,7 +147,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "neutral-oil",
@@ -256,9 +264,19 @@
   "storage": "Refrigerate cooked seafood in a shallow covered container within 2 hours and use within 3 days pending food-safety approval.",
   "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
   "leftovers": "Use properly refrigerated leftovers within the approved window; discard table-exposed portions after unsafe holding.",
-  "servingSuggestions": ["Serve promptly with rice and fresh banchan."],
-  "menuPairings": ["B05", "F08", "SA03", "D02"],
-  "relatedRecipeIds": ["SF05", "SF07"],
+  "servingSuggestions": [
+    "Serve promptly with rice and fresh banchan."
+  ],
+  "menuPairings": [
+    "B05",
+    "F08",
+    "SA03",
+    "D02"
+  ],
+  "relatedRecipeIds": [
+    "SF05",
+    "SF07"
+  ],
   "faq": [
     {
       "question": "Why use a grill basket?",
@@ -272,7 +290,10 @@
   "seoTitle": "Jjukkumi Gui Grilled Baby Octopus",
   "metaDescription": "Make jjukkumi gui with spicy Korean seasoning, label and cleaning checks, safe thawing, a fine-mesh grill basket, and thermometer verification.",
   "primaryKeyword": "jjukkumi gui",
-  "secondaryTopics": ["grilled baby octopus", "Korean seafood barbecue"],
+  "secondaryTopics": [
+    "grilled baby octopus",
+    "Korean seafood barbecue"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -285,6 +306,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF06, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "The locked jjukkumi-gui concept is an editorial adaptation compared with Maangchi’s nakji preparation reference: https://www.maangchi.com/recipe/nakji-bokkeum",
     "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

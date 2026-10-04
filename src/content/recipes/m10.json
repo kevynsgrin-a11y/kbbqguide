@@ -10,8 +10,8 @@
   "publicReleaseOrder": 33,
   "canonicalSlug": "classic-samgyeopsal-with-sesame-salt-seasoning",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/classic-samgyeopsal-with-sesame-salt-seasoning/",
-  "shortDescription": "Unmarinated pork belly is grilled until browned, verified with a thermometer, and served with individual portions of sesame-salt seasoning.",
-  "culturalContext": "Samgyeopsal-gui is a widely enjoyed Korean pork-belly grilling format often cooked at the table and eaten in wraps with condiments and banchan. Cuts, accompaniments, and seasoning practices vary.",
+  "shortDescription": "Samgyeopsal is the people's steak: thick slabs of pork belly, unmarinated, seasoned with nothing at the start but salt and sesame, grilled in the middle of the table until the fat renders and the edge",
+  "culturalContext": "Samgyeopsal is the people's steak: thick slabs of pork belly, unmarinated, seasoned with nothing at the start but salt and sesame, grilled in the middle of the table until the fat renders and the edges crisp, then folded into lettuce with ssamjang, raw garlic, and green chili. The dish as a national institution is young — dedicated shops cluster in the late 1970s, and portable butane burners in the 1980s took the grill into every walk-up apartment — but the logic is old: a shared pan in the middle of the table, cooked by whoever's turn it is, so labor and talk share the fire. This record is the classic salt-and-sesame build. The gochujang-dressed cousin (#M11) is one lane over. Who cooks what: the tongs rotate around the table by convention, one flip per person. The grill boss of the evening only manages the fire itself.",
   "adaptationLabel": "restaurant-style",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 12,
-    "display": "12 minutes"
+    "minutes": 25,
+    "display": "25 minutes at the table"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 35,
-    "display": "About 35 minutes"
+    "minutes": 40,
+    "display": "About 40 minutes at the table"
   },
   "equipment": [
     "Separate raw-meat cutting board",
@@ -83,7 +83,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "fine-salt",
@@ -122,7 +124,9 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "fine-salt",
@@ -161,7 +165,9 @@
     "substitutions": [
       "Use a verified sesame-free neutral-oil and salt dip only for a documented sesame-free adaptation."
     ],
-    "allergenNotes": ["sesame"]
+    "allergenNotes": [
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -262,9 +268,19 @@
   "storage": "Refrigerate cooked pork in a shallow covered container within 2 hours and use within 4 days pending food-safety approval.",
   "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
   "leftovers": "Use properly refrigerated leftovers in rice bowls or lettuce wraps within the approved storage window.",
-  "servingSuggestions": ["Serve with lettuce, garlic, ssamjang, and banchan."],
-  "menuPairings": ["B10", "F10", "SA05", "D05"],
-  "relatedRecipeIds": ["M09", "M11"],
+  "servingSuggestions": [
+    "Serve with lettuce, garlic, ssamjang, and banchan."
+  ],
+  "menuPairings": [
+    "B10",
+    "F10",
+    "SA05",
+    "D05"
+  ],
+  "relatedRecipeIds": [
+    "M09",
+    "M11"
+  ],
   "faq": [
     {
       "question": "Is classic samgyeopsal marinated?",
@@ -278,7 +294,10 @@
   "seoTitle": "Classic Samgyeopsal Korean Pork Belly",
   "metaDescription": "Grill classic Korean samgyeopsal pork belly with sesame-salt dipping seasoning, thermometer guidance, clean zones, and a full rest.",
   "primaryKeyword": "samgyeopsal recipe",
-  "secondaryTopics": ["Korean pork belly", "sesame salt dip"],
+  "secondaryTopics": [
+    "Korean pork belly",
+    "sesame salt dip"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -291,6 +310,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M10, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Maangchi samgyeopsal-gui technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/samgyeopsal-gui",
     "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

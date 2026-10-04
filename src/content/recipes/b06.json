@@ -10,8 +10,8 @@
   "publicReleaseOrder": 17,
   "canonicalSlug": "sigeumchi-namul-seasoned-spinach",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/sigeumchi-namul-seasoned-spinach/",
-  "shortDescription": "Spinach is briefly blanched, cooled, squeezed, and gently seasoned with garlic, soy sauce, toasted sesame oil, scallion, and sesame seeds.",
-  "culturalContext": "Sigeumchi namul is a familiar Korean vegetable banchan and a common component of meals and bibimbap. Seasoning can be soy-based or salt-based and may include doenjang; this draft uses a restrained soy-sesame profile.",
+  "shortDescription": "Spinach namul is the fastest bowl in the whole banchan tradition: blanch, squeeze, dress.",
+  "culturalContext": "Spinach namul is the fastest bowl in the whole banchan tradition: blanch, squeeze, dress. It is the gateway recipe that teaches the Korean vegetable logic — greens seasoned with sesame, garlic, and salt until they are a dish rather than a side of greens — and at the grill table it is the bowl that keeps appearing alongside the rich meats because it weighs nothing on the palate. Master this and the pattern (#B05's blanch-dress law) is yours forever.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,15 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "side-dish servings",
-  "prepTime": { "minutes": 12, "display": "12 minutes" },
-  "marinateTime": { "minutes": 0, "display": "No marination" },
-  "cookTime": { "minutes": 2, "display": "1 to 2 minutes" },
-  "restTime": { "minutes": 5, "display": "5 minutes cooling and draining" },
-  "totalTime": { "minutes": 19, "display": "About 20 minutes" },
+  "prepTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 2,
+    "display": "2 minutes"
+  },
+  "restTime": {
+    "minutes": 5,
+    "display": "5 minutes cooling and draining"
+  },
+  "totalTime": {
+    "minutes": 12,
+    "display": "About 12 minutes"
+  },
   "equipment": [
     "Large pot",
     "Large bowl for cold water",
@@ -73,7 +88,10 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "garlic",
@@ -95,7 +113,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "scallion",
@@ -117,7 +137,9 @@
           "customaryUnit": "teaspoons",
           "preparation": "lightly crushed",
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -228,8 +250,16 @@
     "Serve as a small banchan with rice",
     "Use as one component of bibimbap"
   ],
-  "menuPairings": ["M01", "SF11", "F01", "SA01"],
-  "relatedRecipeIds": ["B05", "B07"],
+  "menuPairings": [
+    "M01",
+    "SF11",
+    "F01",
+    "SA01"
+  ],
+  "relatedRecipeIds": [
+    "B05",
+    "B07"
+  ],
   "faq": [
     {
       "question": "Why cool spinach after blanching?",
@@ -252,9 +282,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["recipe card", "food-safety notes", "allergen notes"],
+  "adExclusionZones": [
+    "recipe card",
+    "food-safety notes",
+    "allergen notes"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B06, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary convention and blanching reference: https://www.maangchi.com/recipe/sigumchi-namul",
     "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Draft synthesized for this project; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."

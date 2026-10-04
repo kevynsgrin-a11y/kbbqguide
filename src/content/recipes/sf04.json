@@ -10,8 +10,8 @@
   "publicReleaseOrder": 11,
   "canonicalSlug": "ojingeo-gui-spicy-grilled-squid",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/ojingeo-gui-spicy-grilled-squid/",
-  "shortDescription": "Whole squid is cleaned, lightly scored, grilled until opaque and tender, then lacquered with a glossy gochujang, garlic, ginger, and rice-syrup sauce.",
-  "culturalContext": "Spicy whole grilled squid is commonly shared in Korean drinking and home-table settings. Names and seasoning vary; this draft follows an ojingeo-tonggui-style presentation while retaining the locked shorter title, and requires Korean-language review.",
+  "shortDescription": "Ojingeo gui is whole grilled squid, Korea's pojangmacha (street tent) and drinking-table classic: one squid, scored, rushed over charcoal, brushed with a sweet-spicy gochujang glaze in the last minute",
+  "culturalContext": "Ojingeo gui is whole grilled squid, Korea's pojangmacha (street tent) and drinking-table classic: one squid, scored, rushed over charcoal, brushed with a sweet-spicy gochujang glaze in the last minutes, cut into rings at the table, and eaten with the dipping sauce and cold beer or soju that the dish was engineered to sell. It looks like restaurant theater and cooks like a technique lesson — squid has exactly one doneness question (2 minutes or 2 hours, nothing between), and this record is a masterclass in the fast answer.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,15 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
-  "prepTime": { "minutes": 25, "display": "25 minutes" },
-  "marinateTime": { "minutes": 0, "display": "No marination" },
-  "cookTime": { "minutes": 7, "display": "6 to 8 minutes" },
-  "restTime": { "minutes": 2, "display": "2 minutes" },
-  "totalTime": { "minutes": 34, "display": "About 35 minutes" },
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes, plus 30 minutes marinating"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 8,
+    "display": "8 minutes"
+  },
+  "restTime": {
+    "minutes": 2,
+    "display": "2 minutes"
+  },
+  "totalTime": {
+    "minutes": 65,
+    "display": "About 1 hour 5 minutes"
+  },
   "equipment": [
     "Chef’s knife and cutting board",
     "Kitchen shears",
@@ -51,7 +66,9 @@
           "customaryUnit": "pounds",
           "preparation": "cleaned, quill, innards, eyes, and beak removed",
           "optional": false,
-          "allergenNotes": ["shellfish/mollusk"]
+          "allergenNotes": [
+            "shellfish/mollusk"
+          ]
         },
         {
           "id": "gochujang",
@@ -62,7 +79,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["may contain wheat/gluten and soy; check label"]
+          "allergenNotes": [
+            "may contain wheat/gluten and soy; check label"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -84,7 +103,10 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "garlic",
@@ -128,7 +150,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "scallions",
@@ -150,7 +174,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": true,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -261,8 +287,16 @@
     "Serve immediately with rice and crisp lettuce",
     "Cut at the table for a shareable presentation"
   ],
-  "menuPairings": ["B03", "F06", "SA01", "D05"],
-  "relatedRecipeIds": ["SF03", "SF05"],
+  "menuPairings": [
+    "B03",
+    "F06",
+    "SA01",
+    "D05"
+  ],
+  "relatedRecipeIds": [
+    "SF03",
+    "SF05"
+  ],
   "faq": [
     {
       "question": "Why score the squid?",
@@ -292,6 +326,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF04, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary preparation reference: https://www.maangchi.com/recipe/ojingeo-tonggui (whole-squid cleaning, scoring, glaze, and grill sequence).",
     "Seafood doneness reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "Cold-storage reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",

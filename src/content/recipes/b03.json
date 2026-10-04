@@ -10,8 +10,8 @@
   "publicReleaseOrder": 14,
   "canonicalSlug": "oi-sobagi-cucumber-kimchi",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/oi-sobagi-cucumber-kimchi/",
-  "shortDescription": "Small cucumbers are cross-slit, briefly salted, and stuffed with a crisp chive, carrot, gochugaru, garlic, fish-sauce, and sesame filling.",
-  "culturalContext": "Oi sobagi is cucumber kimchi filled through cross-shaped cuts rather than sliced into a salad. It is valued for fresh crunch and is commonly eaten sooner than long-aged cabbage kimchi; fillings and fermentation choices vary by cook.",
+  "shortDescription": "Oi sobagi is the kimchi of one afternoon: cucumbers stuffed with the kimchi paste, ready by dinner and gone by the weekend.",
+  "culturalContext": "Oi sobagi is the kimchi of one afternoon: cucumbers stuffed with the kimchi paste, ready by dinner and gone by the weekend. Where the cabbage jar (#B01) runs a month's arc, cucumber kimchi runs three days — it has no long-ferment ambition, because cucumber's water works fast in both directions. This is the bowl to make the morning of a summer grill, the cold crunch against the pork records' (#M10, #M11) richness.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,17 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 8,
+  "yield": 800,
   "servingUnit": "side-dish servings",
-  "prepTime": { "minutes": 35, "display": "35 minutes" },
-  "marinateTime": { "minutes": 40, "display": "40 minutes salting" },
-  "cookTime": { "minutes": 0, "display": "No cooking" },
-  "restTime": { "minutes": 0, "display": "Optional fermentation not included" },
+  "prepTime": {
+    "minutes": 30,
+    "display": "30 minutes"
+  },
+  "marinateTime": {
+    "minutes": 40,
+    "display": "40 minutes salting"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "Optional fermentation not included"
+  },
   "totalTime": {
-    "minutes": 75,
-    "display": "1 hour 15 minutes, before optional fermentation"
+    "minutes": 1470,
+    "display": "30 minutes, best 6–24 hours later"
   },
   "equipment": [
     "Chef’s knife and cutting board",
@@ -119,7 +131,9 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         },
         {
           "id": "garlic",
@@ -152,7 +166,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": true,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -263,8 +279,16 @@
     "Serve one or two stuffed cucumber pieces per person",
     "Cut longer pieces once at serving time if needed"
   ],
-  "menuPairings": ["M18", "SF08", "F08", "SA03"],
-  "relatedRecipeIds": ["B02", "B04"],
+  "menuPairings": [
+    "M18",
+    "SF08",
+    "F08",
+    "SA03"
+  ],
+  "relatedRecipeIds": [
+    "B02",
+    "B04"
+  ],
   "faq": [
     {
       "question": "Why stop the slit before the end?",
@@ -287,9 +311,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["recipe card", "food-safety notes", "allergen notes"],
+  "adExclusionZones": [
+    "recipe card",
+    "food-safety notes",
+    "allergen notes"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B03, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary convention and technique reference: https://www.maangchi.com/recipe/oisobagi-kimchi",
     "Cold-storage framework checked 2026-07-14: https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Draft synthesized for this project; not test-cooked. Korean-language, cultural, food-safety, and editorial approval remain required."

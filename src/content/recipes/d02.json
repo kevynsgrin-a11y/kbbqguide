@@ -10,8 +10,8 @@
   "publicReleaseOrder": 28,
   "canonicalSlug": "patbingsu-red-bean-shaved-ice",
   "canonicalUrl": "https://kbbqguide.com/recipes/desserts/patbingsu-red-bean-shaved-ice/",
-  "shortDescription": "Fine shaved potable ice is topped with chilled sweetened red beans, pasteurized condensed milk, strawberries, mango, and optional small pieces of Korean rice cake.",
-  "culturalContext": "Patbingsu centers shaved ice and sweet red beans, while modern Korean versions may add fruit, milk, rice cakes, cereal, or ice cream. This fruit-forward assembly preserves the red-bean core without claiming one definitive topping set.",
+  "shortDescription": "Patbingsu is the shared mountain of shaved ice, sweetened red bean, condensed milk, and fruit that ends a summer grill meal the way the hotteok (#D01) ends a winter one: with the whole table around on",
+  "culturalContext": "Patbingsu is the shared mountain of shaved ice, sweetened red bean, condensed milk, and fruit that ends a summer grill meal the way the hotteok (#D01) ends a winter one: with the whole table around one bowl and four long spoons. The cafe-era versions run elaborate; the home version this record builds is the honest core — ice, pat, milk, a few good toppings — and the technique is entirely in the ice and the bean.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,18 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "dessert bowls",
-  "prepTime": { "minutes": 25, "display": "25 minutes" },
-  "marinateTime": { "minutes": 0, "display": "No marination" },
-  "cookTime": { "minutes": 0, "display": "No cooking" },
+  "prepTime": {
+    "minutes": 20,
+    "display": "20 minutes (plus freezing for home shavers)"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
   "restTime": {
     "minutes": 15,
     "display": "15 minutes chilling bowls and toppings"
   },
-  "totalTime": { "minutes": 40, "display": "40 minutes" },
+  "totalTime": {
+    "minutes": 30,
+    "display": "About 30 minutes, assembled at the table"
+  },
   "equipment": [
     "Shaved-ice machine approved for food use",
     "Freezer-safe potable-ice container",
@@ -77,7 +89,9 @@
           "customaryUnit": "cup",
           "preparation": "chilled",
           "optional": false,
-          "allergenNotes": ["dairy"]
+          "allergenNotes": [
+            "dairy"
+          ]
         },
         {
           "id": "strawberries",
@@ -224,8 +238,16 @@
     "Serve one chilled bowl per person",
     "Offer optional rice cake only after assessing choking and allergen risks"
   ],
-  "menuPairings": ["M05", "SF04", "B06", "F03"],
-  "relatedRecipeIds": ["D01", "D03"],
+  "menuPairings": [
+    "M05",
+    "SF04",
+    "B06",
+    "F03"
+  ],
+  "relatedRecipeIds": [
+    "D01",
+    "D03"
+  ],
   "faq": [
     {
       "question": "Can I refreeze melted patbingsu?",
@@ -248,9 +270,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["ice hygiene", "choking warning", "recipe card"],
+  "adExclusionZones": [
+    "ice hygiene",
+    "choking warning",
+    "recipe card"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#D02, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Primary red-bean, shaved-ice, fruit, and milk topping convention reference: https://www.maangchi.com/recipe/patbingsu",
     "Current produce, pasteurized-food, cross-contamination, and refrigeration framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
     "Contemporary fruit-forward assembly for the locked title; not test-cooked. Packaged-product allergens, Korean-language, cultural, choking, food-safety, and editorial approval remain required."

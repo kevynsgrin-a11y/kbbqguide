@@ -10,8 +10,8 @@
   "publicReleaseOrder": 75,
   "canonicalSlug": "watercress-apple-yuja-salad",
   "canonicalUrl": "https://kbbqguide.com/recipes/fresh/watercress-apple-yuja-salad/",
-  "shortDescription": "Peppery watercress and crisp apple are tossed just before service with a bright commercial yuja-cheong vinaigrette.",
-  "culturalContext": "This is a contemporary salad pairing Korean yuja preserve with watercress and apple; it is not presented as a canonical Korean dish. The Korean display name is a descriptive transliteration pending language review.",
+  "shortDescription": "Watercress and apple in a yuja dressing is this list's modern build — the same citron-and-pepper-green logic as the slaw (#F05), tuned for the cold months when the garden narrows to watercress and the",
+  "culturalContext": "Watercress and apple in a yuja dressing is this list's modern build — the same citron-and-pepper-green logic as the slaw (#F05), tuned for the cold months when the garden narrows to watercress and the fruit bowl to apples. It is the fresh bowl that keeps a winter grill table honest, and the one most at home beside the braised and oily cold-weather records (#B20's table, #SF07).",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes"
   },
   "marinateTime": {
     "minutes": 0,
@@ -41,8 +41,8 @@
     "display": "Serve immediately"
   },
   "totalTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 15,
+    "display": "15 minutes, serve within the hour"
   },
   "equipment": [
     "Clean colander",
@@ -120,7 +120,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "salt",
@@ -241,8 +243,16 @@
     "Toss at the table just before eating.",
     "Serve with rich grilled meat or seafood."
   ],
-  "menuPairings": ["M12", "SF10", "B24", "SA04"],
-  "relatedRecipeIds": ["F08", "F10"],
+  "menuPairings": [
+    "M12",
+    "SF10",
+    "B24",
+    "SA04"
+  ],
+  "relatedRecipeIds": [
+    "F08",
+    "F10"
+  ],
   "faq": [
     {
       "question": "Can I wash watercress with soap?",
@@ -273,6 +283,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#F09, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Produce-safety basis: https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
     "Editorial framing: contemporary adaptation; Korean display name requires review.",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."

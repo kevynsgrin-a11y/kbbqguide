@@ -10,8 +10,8 @@
   "publicReleaseOrder": 79,
   "canonicalSlug": "contemporary-sesame-broccoli-and-bell-pepper-salad",
   "canonicalUrl": "https://kbbqguide.com/recipes/fresh/contemporary-sesame-broccoli-and-bell-pepper-salad/",
-  "shortDescription": "Briefly blanched broccoli and raw bell peppers are cooled, dried, and tossed with a sesame-soy vinaigrette.",
-  "culturalContext": "This contemporary vegetable salad uses Korean pantry seasonings with broccoli and bell pepper. It is not presented as a traditional named banchan, and its descriptive Korean display name requires review.",
+  "shortDescription": "Blanched broccoli and raw bell pepper in a toasted-sesame dressing is this list's modern build — no old papers, just the namul family's method (#B06) applied to the vegetables the contemporary table a",
+  "culturalContext": "Blanched broccoli and raw bell pepper in a toasted-sesame dressing is this list's modern build — no old papers, just the namul family's method (#B06) applied to the vegetables the contemporary table actually keeps in the fridge. It keeps in the refrigerator for days where the lettuce bowls (#F03) last an hour, which is exactly why it exists: the grill night's make-ahead bowl.",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 6,
+  "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 12,
+    "display": "12 minutes"
   },
   "marinateTime": {
     "minutes": 0,
@@ -41,8 +41,8 @@
     "display": "15 minutes cooling"
   },
   "totalTime": {
-    "minutes": 38,
-    "display": "About 40 minutes"
+    "minutes": 20,
+    "display": "About 20 minutes"
   },
   "equipment": [
     "Clean colander",
@@ -99,7 +99,10 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-vinegar",
@@ -121,7 +124,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -132,7 +137,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "garlic",
@@ -254,8 +261,16 @@
     "Serve chilled with grilled lamb or beef.",
     "Add dressing shortly before service for the crispest texture."
   ],
-  "menuPairings": ["M13", "SF11", "B25", "SA05"],
-  "relatedRecipeIds": ["F09", "F01"],
+  "menuPairings": [
+    "M13",
+    "SF11",
+    "B25",
+    "SA05"
+  ],
+  "relatedRecipeIds": [
+    "F09",
+    "F01"
+  ],
   "faq": [
     {
       "question": "Why use potable ice water?",
@@ -286,6 +301,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#F10, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Produce-safety basis: https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
     "Cooling and cold-holding basis: project Food Safety Standard.",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."

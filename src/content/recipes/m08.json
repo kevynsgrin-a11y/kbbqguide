@@ -10,8 +10,8 @@
   "publicReleaseOrder": 29,
   "canonicalSlug": "neobiani-royal-style-grilled-beef",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/neobiani-royal-style-grilled-beef/",
-  "shortDescription": "Broad, thin pieces of tenderized beef are marinated with pear, soy sauce, garlic, scallion, sesame, and black pepper, then grilled quickly and cut for serving.",
-  "culturalContext": "Neobiani is commonly described as a broad, tenderized, marinated beef preparation associated with Korean court-style cooking and later formal presentations. Historical and royal-cuisine claims require specialist review; this draft focuses on the practical cut, marinade, and grill method.",
+  "shortDescription": "Neobiani is the old beef sheet: tender loin cut wide and thin, its faces worked with the knife tip until the meat yields, coated in a soy-sesame seasoning set, and grilled fast over charcoal.",
+  "culturalContext": "Neobiani is the old beef sheet: tender loin cut wide and thin, its faces worked with the knife tip until the meat yields, coated in a soy-sesame seasoning set, and grilled fast over charcoal. The method enters print in the late 1800s household compilation *Siuijeonseo* under the heading 너븨안이, is witnessed again in 1917 as a sirloin or tenderloin sheet finished with sesame salt on a charcoal grate and cut into squares after the fire, and is written down once more in 1957 from palace-kitchen memory with sugar and the serve-hot-at-the-meal rule added. That is the lineage this record cooks. It is not \"the original bulgogi\" — the sweet pear-slurry dish (#M01) is a postwar Seoul development that shares an ancestor but not a kitchen — and the fastest way to ruin neobiani is to import that cousin's habits: no pear here, no gochujang, no overnight soak, and never a grind.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,17 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
-  "prepTime": { "minutes": 30, "display": "30 minutes" },
-  "marinateTime": { "minutes": 120, "display": "2 to 8 hours" },
-  "cookTime": { "minutes": 10, "display": "8 to 10 minutes" },
-  "restTime": { "minutes": 3, "display": "3 minutes" },
+  "prepTime": {
+    "minutes": 25,
+    "display": "25 minutes, plus 30–60 minutes resting"
+  },
+  "marinateTime": {
+    "minutes": 120,
+    "display": "2 to 8 hours"
+  },
+  "cookTime": {
+    "minutes": 10,
+    "display": "10 minutes"
+  },
+  "restTime": {
+    "minutes": 3,
+    "display": "3 minutes"
+  },
   "totalTime": {
-    "minutes": 163,
-    "display": "About 2 hours 45 minutes at minimum"
+    "minutes": 75,
+    "display": "About 1 hour 15 minutes, mostly resting"
   },
   "equipment": [
     "Chef’s knife and separate raw-meat cutting board",
@@ -73,7 +85,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "korean-pear",
@@ -150,7 +165,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -161,7 +178,9 @@
           "customaryUnit": "tablespoon",
           "preparation": "lightly crushed",
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "black-pepper",
@@ -189,7 +208,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "korean-pear",
@@ -266,7 +288,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "sesame-seeds",
@@ -277,7 +301,9 @@
         "customaryUnit": "tablespoon",
         "preparation": "lightly crushed",
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "black-pepper",
@@ -418,8 +444,16 @@
     "Cut broad pieces into bite-size sections after resting",
     "Serve with rice, ssam greens, and a separately portioned sauce"
   ],
-  "menuPairings": ["B08", "F08", "SA03", "D03"],
-  "relatedRecipeIds": ["M07", "M09"],
+  "menuPairings": [
+    "B08",
+    "F08",
+    "SA03",
+    "D03"
+  ],
+  "relatedRecipeIds": [
+    "M07",
+    "M09"
+  ],
   "faq": [
     {
       "question": "Why pound the beef?",
@@ -449,6 +483,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M08, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Preparation and cultural comparison: https://www.koreanbapsang.com/neobiani-korean-marinated-beef-slices/ (direct retrieval unavailable during drafting; URL retained for human verification).",
     "Whole-beef safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "Draft synthesized for the locked title; not test-cooked. Royal-cuisine history, Korean-language, food-safety, and editorial approval remain required."

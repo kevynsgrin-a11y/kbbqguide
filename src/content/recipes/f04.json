@@ -10,8 +10,8 @@
   "publicReleaseOrder": 40,
   "canonicalSlug": "minari-muchim-water-parsley-salad",
   "canonicalUrl": "https://kbbqguide.com/recipes/fresh/minari-muchim-water-parsley-salad/",
-  "shortDescription": "Crisp water parsley is tossed just before serving with gochugaru, garlic, rice vinegar, soy sauce, and sesame.",
-  "culturalContext": "Minari muchim is a fresh Korean seasoned vegetable dish built around water parsley. Dressings, cut length, sweetness, and additions vary; this draft keeps the herb raw and crisp.",
+  "shortDescription": "Minari — water parsley, Korean watercress's sharper cousin — is the green that arrived with spring floods and got its own seat at the table: blanched for seconds, dressed warm in the namul set (#B06's",
+  "culturalContext": "Minari — water parsley, Korean watercress's sharper cousin — is the green that arrived with spring floods and got its own seat at the table: blanched for seconds, dressed warm in the namul set (#B06's family) or served as a cold, punchy salad beside rich grilled meat. Its flavor is celery, parsley, and pepper in one stem, and it is the most distinctive green on this site's fresh list. This record runs the blanched-dressed build, the more traditional of its two lives.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,7 +20,7 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "fresh side servings",
@@ -33,16 +33,16 @@
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 0,
-    "display": "No cooking"
+    "minutes": 2,
+    "display": "2 minutes"
   },
   "restTime": {
     "minutes": 0,
     "display": "No rest"
   },
   "totalTime": {
-    "minutes": 15,
-    "display": "About 15 minutes"
+    "minutes": 20,
+    "display": "About 20 minutes"
   },
   "equipment": [
     "Colander",
@@ -109,7 +109,10 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "garlic",
@@ -142,7 +145,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -153,7 +158,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -259,9 +266,19 @@
   "storage": "Best served immediately. Refrigerate undressed greens and dressing separately at or below 40°F / 4°C; discard dressed salad if wilted or held unsafely.",
   "reheating": "Do not reheat; this is a fresh ready-to-eat dish.",
   "leftovers": "For best quality and safer handling, make only what will be served and avoid keeping table-exposed dressed leftovers.",
-  "servingSuggestions": ["Serve immediately beside rich grilled pork or beef."],
-  "menuPairings": ["M07", "SF05", "B19", "SA04"],
-  "relatedRecipeIds": ["F03", "F05"],
+  "servingSuggestions": [
+    "Serve immediately beside rich grilled pork or beef."
+  ],
+  "menuPairings": [
+    "M07",
+    "SF05",
+    "B19",
+    "SA04"
+  ],
+  "relatedRecipeIds": [
+    "F03",
+    "F05"
+  ],
   "faq": [
     {
       "question": "Can I wash minari with soap?",
@@ -275,7 +292,10 @@
   "seoTitle": "Minari Muchim Water Parsley Salad",
   "metaDescription": "Make crisp Korean minari muchim with gochugaru, vinegar, soy, and sesame, plus running-water washing and ready-to-eat handling guidance.",
   "primaryKeyword": "minari muchim recipe",
-  "secondaryTopics": ["Korean water parsley salad", "fresh Korean banchan"],
+  "secondaryTopics": [
+    "Korean water parsley salad",
+    "fresh Korean banchan"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -288,6 +308,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#F04, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Maangchi minari-muchim technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/minari-muchim",
     "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

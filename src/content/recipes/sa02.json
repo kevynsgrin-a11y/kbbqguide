@@ -10,8 +10,8 @@
   "publicReleaseOrder": 25,
   "canonicalSlug": "gireumjang-sesame-oil-salt-dip",
   "canonicalUrl": "https://kbbqguide.com/recipes/sauces/gireumjang-sesame-oil-salt-dip/",
-  "shortDescription": "Toasted sesame oil, fine salt, and freshly ground black pepper form a minimalist individual dipping sauce for simply seasoned grilled foods.",
-  "culturalContext": "Gireumjang literally points to an oil-based sauce and commonly accompanies unseasoned Korean grilled meat. Some versions include only sesame oil and salt, while pepper and other details vary; this draft keeps the formula intentionally spare.",
+  "shortDescription": "Gireumjang is three ingredients and a warning that it looks like nothing: toasted sesame oil, coarse salt, and black pepper.",
+  "culturalContext": "Gireumjang is three ingredients and a warning that it looks like nothing: toasted sesame oil, coarse salt, and black pepper. It is the dip that the unmarinated records — the classic samgyeopsal (#M10), the galbisal (#M05), the neobiani (#M08) — actually want, because it seasons without competing: the meat tastes like meat, the oil carries the salt, the pepper warms the finish. The neobiani record calls it the period-honest companion for exactly this reason. Five minutes, and the table's quietest bowl is its most important.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,15 +20,30 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 8,
+  "yield": 80,
   "servingUnit": "tablespoons",
-  "prepTime": { "minutes": 5, "display": "5 minutes" },
-  "marinateTime": { "minutes": 0, "display": "No marination" },
-  "cookTime": { "minutes": 0, "display": "No cooking" },
-  "restTime": { "minutes": 0, "display": "No rest" },
-  "totalTime": { "minutes": 5, "display": "5 minutes" },
+  "prepTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
+  "marinateTime": {
+    "minutes": 0,
+    "display": "No marination"
+  },
+  "cookTime": {
+    "minutes": 0,
+    "display": "No cooking"
+  },
+  "restTime": {
+    "minutes": 0,
+    "display": "No rest"
+  },
+  "totalTime": {
+    "minutes": 5,
+    "display": "5 minutes"
+  },
   "equipment": [
     "Measuring spoons or small digital scale",
     "Small clean mixing bowl",
@@ -50,7 +65,9 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "fine-salt",
@@ -183,8 +200,16 @@
     "Serve with simply seasoned cooked beef or pork",
     "Use one shallow individual dish per diner"
   ],
-  "menuPairings": ["M14", "SF08", "B10", "F03"],
-  "relatedRecipeIds": ["SA01", "SA03"],
+  "menuPairings": [
+    "M14",
+    "SF08",
+    "B10",
+    "F03"
+  ],
+  "relatedRecipeIds": [
+    "SA01",
+    "SA03"
+  ],
   "faq": [
     {
       "question": "Should the salt dissolve?",
@@ -207,9 +232,14 @@
   "videoManifestId": null,
   "transcriptId": null,
   "affiliateModuleIds": [],
-  "adExclusionZones": ["allergen notes", "recipe card", "oil-safety notes"],
+  "adExclusionZones": [
+    "allergen notes",
+    "recipe card",
+    "oil-safety notes"
+  ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SA02, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Terminology and service convention require qualified Korean editorial confirmation; no single formula is represented as universal.",
     "Current cross-contamination framework verified 2026-07-14: https://www.cdc.gov/food-safety/about/index.html",
     "Draft synthesized for the locked title; not test-cooked. Sesame labeling, Korean-language, cultural, food-safety, and editorial approval remain required."

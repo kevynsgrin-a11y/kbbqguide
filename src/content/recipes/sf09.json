@@ -10,8 +10,8 @@
   "publicReleaseOrder": 50,
   "canonicalSlug": "jogi-gui-grilled-yellow-croaker",
   "canonicalUrl": "https://kbbqguide.com/recipes/seafood/jogi-gui-grilled-yellow-croaker/",
-  "shortDescription": "Yellow croaker is lightly salted, dried, and grilled whole until the skin is browned and the thickest flesh reaches 145°F / 63°C.",
-  "culturalContext": "Jogi-gui is Korean grilled croaker. Fresh versus salted fish, species sold as croaker, preparation, and ceremonial or everyday context vary; exact market naming requires review.",
+  "shortDescription": "Jogi — yellow croaker — is the fish of the Korean salted-and-dried tradition (the gulbi hung in rows at any market), and its fresh-grilled record runs that same idea on a home clock: a stronger salt c",
+  "culturalContext": "Jogi — yellow croaker — is the fish of the Korean salted-and-dried tradition (the gulbi hung in rows at any market), and its fresh-grilled record runs that same idea on a home clock: a stronger salt cure than the other fish here, a longer rest, and a grill that concentrates rather than merely cooks. The gulbi tradition is the honest ancestor — this record is the fresh fish borrowing the dried fish's seasoning logic, and the table will recognize the flavor immediately.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 4,
+  "yield": 3,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 20,
-    "display": "20 minutes"
+    "minutes": 10,
+    "display": "10 minutes, plus 1–2 hours salting"
   },
   "marinateTime": {
     "minutes": 15,
     "display": "15 minutes refrigerated"
   },
   "cookTime": {
-    "minutes": 14,
-    "display": "14 minutes"
+    "minutes": 12,
+    "display": "12 minutes"
   },
   "restTime": {
     "minutes": 2,
     "display": "2 minutes"
   },
   "totalTime": {
-    "minutes": 51,
-    "display": "About 51 minutes"
+    "minutes": 85,
+    "display": "About 1 hour 25 minutes, mostly salting"
   },
   "equipment": [
     "Separate seafood cutting board",
@@ -67,7 +67,9 @@
           "customaryUnit": "medium fish",
           "preparation": "scaled, gutted, and gills removed by fishmonger",
           "optional": false,
-          "allergenNotes": ["fish"]
+          "allergenNotes": [
+            "fish"
+          ]
         },
         {
           "id": "coarse-salt",
@@ -194,9 +196,19 @@
   "storage": "Refrigerate cooked seafood in a shallow covered container within 2 hours and use within 3 days pending food-safety approval.",
   "reheating": "Reheat only the needed portion to 165°F / 74°C until steaming; avoid repeated reheating.",
   "leftovers": "Use properly refrigerated leftovers within the approved window; discard table-exposed portions after unsafe holding.",
-  "servingSuggestions": ["Serve hot with rice, soup, and banchan."],
-  "menuPairings": ["B08", "F01", "SA01", "D05"],
-  "relatedRecipeIds": ["SF08", "SF10"],
+  "servingSuggestions": [
+    "Serve hot with rice, soup, and banchan."
+  ],
+  "menuPairings": [
+    "B08",
+    "F01",
+    "SA01",
+    "D05"
+  ],
+  "relatedRecipeIds": [
+    "SF08",
+    "SF10"
+  ],
   "faq": [
     {
       "question": "Can visual flaking replace a thermometer?",
@@ -210,7 +222,10 @@
   "seoTitle": "Jogi Gui Korean Grilled Yellow Croaker",
   "metaDescription": "Grill Korean jogi-gui yellow croaker with safe buying and thawing, light salting, thermometer verification, clean tools, and pin-bone guidance.",
   "primaryKeyword": "jogi gui",
-  "secondaryTopics": ["Korean grilled croaker", "whole fish recipe"],
+  "secondaryTopics": [
+    "Korean grilled croaker",
+    "whole fish recipe"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -223,6 +238,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#SF09, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "The locked jogi-gui identity and salted-grilled framing require Korean food-editor and seafood-market verification before publication.",
     "FoodSafety.gov safe minimum internal temperature chart and FDA seafood selection, storage, separation, thawing, cooking, and serving guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

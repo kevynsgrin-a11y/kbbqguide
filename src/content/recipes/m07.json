@@ -10,8 +10,8 @@
   "publicReleaseOrder": 7,
   "canonicalSlug": "chadolbaegi-with-scallion-soy-dipping-sauce",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/chadolbaegi-with-scallion-soy-dipping-sauce/",
-  "shortDescription": "Paper-thin beef brisket grilled without marinade and served with a bright scallion-soy, rice-vinegar, garlic, and sesame dipping sauce.",
-  "culturalContext": "Chadolbaegi is very thinly sliced beef brisket cooked rapidly at the grill, commonly without a sweet marinade. Dipping sauces vary; the scallion-soy sauce here is a defined pairing for this guide rather than a claim of one mandatory restaurant formula.",
+  "shortDescription": "Chadolbaegi — paper-thin frozen beef brisket shavings — is the tabletop grill's speed round.",
+  "culturalContext": "Chadolbaegi — paper-thin frozen beef brisket shavings — is the tabletop grill's speed round. The slices are cut while frozen hard, dropped on the grate still frost-cold, and cooked in seconds per side; the whole pleasure is the contrast of a crisp lacy edge against a melting, barely-set center, dunked in a sharp scallion-soy dip. It is the cheapest cut on the K-BBQ menu and routinely the favorite order, because chadolbaegi's ratio of drama to effort has no rival. Ten seconds of patience at the fire, and the fat does everything else.",
   "adaptationLabel": "none",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,29 +20,29 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
-    "minutes": 18,
-    "display": "18 minutes"
+    "minutes": 10,
+    "display": "10 minutes"
   },
   "marinateTime": {
     "minutes": 0,
     "display": "No marination"
   },
   "cookTime": {
-    "minutes": 8,
-    "display": "6 to 8 minutes"
+    "minutes": 6,
+    "display": "6 minutes"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 29,
-    "display": "29 minutes, including rest"
+    "minutes": 20,
+    "display": "About 20 minutes at the table"
   },
   "equipment": [
     "Chef’s knife",
@@ -85,7 +85,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "water",
@@ -129,7 +132,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sugar",
@@ -151,7 +156,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "garlic",
@@ -190,7 +197,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "water",
@@ -234,7 +244,9 @@
         "customaryUnit": "teaspoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "sugar",
@@ -256,7 +268,9 @@
         "customaryUnit": "teaspoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       },
       {
         "id": "garlic",
@@ -405,8 +419,16 @@
     "Serve with rice, crisp lettuce, and banchan that can cut through the brisket’s richness.",
     "Give each diner a separate sauce bowl to reduce cross-contact at the table."
   ],
-  "menuPairings": ["B07", "F07", "SA02", "D02"],
-  "relatedRecipeIds": ["M06", "M08"],
+  "menuPairings": [
+    "B07",
+    "F07",
+    "SA02",
+    "D02"
+  ],
+  "relatedRecipeIds": [
+    "M06",
+    "M08"
+  ],
   "faq": [
     {
       "question": "Does chadolbaegi need a marinade?",
@@ -439,6 +461,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M07, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Cut/preparation context: https://en.wikipedia.org/wiki/Korean_barbecue (secondary overview only; qualified Korean review required).",
     "Safety reference verified 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
     "Cross-contact and no-rinsing guidance: https://www.foodsafety.gov/blog/how-grill-safely-summer",

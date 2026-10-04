@@ -10,8 +10,8 @@
   "publicReleaseOrder": 64,
   "canonicalSlug": "radish-sprout-and-perilla-salad",
   "canonicalUrl": "https://kbbqguide.com/recipes/fresh/radish-sprout-and-perilla-salad/",
-  "shortDescription": "Commercial radish sprouts and shredded perilla leaves are dressed immediately before service with rice vinegar, soy, gochugaru, and sesame.",
-  "culturalContext": "This is a contemporary Korean-inspired fresh salad. Raw sprouts carry a distinct microbial risk that washing cannot eliminate; the descriptive Korean name and whether this dish is appropriate for publication require human review.",
+  "shortDescription": "Radish sprouts (dorumuk in Korean) and shredded perilla make this fresh list's most Korean-tasting salad: the sprouts' peppery crunch and the perilla's anise depth in a light soy-sesame dressing.",
+  "culturalContext": "Radish sprouts (dorumuk in Korean) and shredded perilla make this fresh list's most Korean-tasting salad: the sprouts' peppery crunch and the perilla's anise depth in a light soy-sesame dressing. It is the bowl that tastes most like a Korean market's sprout stall, and the natural companion to the delicate white-meat records — the fish (#SF09) and the chicken lanes (#M16).",
   "adaptationLabel": "contemporary",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,7 +20,7 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "fresh side servings",
@@ -42,7 +42,7 @@
   },
   "totalTime": {
     "minutes": 15,
-    "display": "15 minutes"
+    "display": "15 minutes, serve within the hour"
   },
   "equipment": [
     "Colander",
@@ -115,7 +115,10 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "gochugaru",
@@ -148,7 +151,9 @@
           "customaryUnit": "teaspoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         },
         {
           "id": "sesame-seeds",
@@ -159,7 +164,9 @@
           "customaryUnit": "teaspoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -266,8 +273,16 @@
   "servingSuggestions": [
     "Serve only to diners for whom raw sprouts are appropriate."
   ],
-  "menuPairings": ["M11", "SF09", "B23", "SA03"],
-  "relatedRecipeIds": ["F07", "F09"],
+  "menuPairings": [
+    "M11",
+    "SF09",
+    "B23",
+    "SA03"
+  ],
+  "relatedRecipeIds": [
+    "F07",
+    "F09"
+  ],
   "faq": [
     {
       "question": "Does washing make raw sprouts safe?",
@@ -281,7 +296,10 @@
   "seoTitle": "Radish Sprout and Perilla Salad",
   "metaDescription": "Make radish sprout and perilla salad with explicit raw-sprout risk screening, sealed cold produce, recall checks, clean tools, and immediate service.",
   "primaryKeyword": "radish sprout perilla salad",
-  "secondaryTopics": ["Korean-inspired sprout salad", "raw sprout safety"],
+  "secondaryTopics": [
+    "Korean-inspired sprout salad",
+    "raw sprout safety"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -294,6 +312,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#F08, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Contemporary locked-title formulation; raw-sprout risk language requires qualified food-safety review.",
     "FoodSafety.gov minimum-temperature chart and FDA seafood selection, shell-opening, storage, and cross-contact guidance, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

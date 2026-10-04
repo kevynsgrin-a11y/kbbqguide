@@ -10,8 +10,8 @@
   "publicReleaseOrder": 38,
   "canonicalSlug": "spicy-dwaeji-bulgogi",
   "canonicalUrl": "https://kbbqguide.com/recipes/grilled-meat/spicy-dwaeji-bulgogi/",
-  "shortDescription": "Thin pork shoulder is marinated with gochujang, gochugaru, aromatics, and rice syrup, then grilled in uncrowded batches.",
-  "culturalContext": "Dwaeji bulgogi broadly describes Korean seasoned pork, often but not always spicy. Cut, marinade balance, vegetables, and cooking method vary by region, restaurant, and household.",
+  "shortDescription": "Dwaeji bulgogi is pork's answer to the bulgogi (#M01) idea, dressed in the yangnyeom lane's red paste: thin pork slices in a gochujang-gochugaru marinade, grilled fast and hot, folded into ssam or hea",
+  "culturalContext": "Dwaeji bulgogi is pork's answer to the bulgogi (#M01) idea, dressed in the yangnyeom lane's red paste: thin pork slices in a gochujang-gochugaru marinade, grilled fast and hot, folded into ssam or heaped over rice. Where beef bulgogi runs sweet and juicy, its pork cousin runs hot and savory-sweet — the fat of a shoulder slice carries the paste's ferment better than any lean meat could. This is the spice-first workhorse of the Korean grill table, and the record every weeknight cook should own from this site. Name it honestly at your table: it shares architecture with bulgogi, but it is the yangnyeom lane's dish, not soy-slurry bulgogi with a pepper swap. Who cooks what: one grill boss on the batches, the table on ssam — the pork cooks so fast that the assembly line matters more than the fire.",
   "adaptationLabel": "restaurant-style",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
   "yield": 4,
   "servingUnit": "servings",
   "prepTime": {
     "minutes": 20,
-    "display": "20 minutes"
+    "display": "20 minutes, plus 2–8 hours marinating"
   },
   "marinateTime": {
     "minutes": 60,
@@ -34,15 +34,15 @@
   },
   "cookTime": {
     "minutes": 12,
-    "display": "12 minutes"
+    "display": "12 minutes at the table"
   },
   "restTime": {
     "minutes": 3,
     "display": "3 minutes"
   },
   "totalTime": {
-    "minutes": 95,
-    "display": "About 95 minutes"
+    "minutes": 35,
+    "display": "About 35 minutes at the table (marinate ahead)"
   },
   "equipment": [
     "Separate raw-meat cutting board",
@@ -83,7 +83,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten; verify label"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten; verify label"
+          ]
         },
         {
           "id": "gochugaru",
@@ -105,7 +108,10 @@
           "customaryUnit": "tablespoons",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-syrup",
@@ -160,7 +166,9 @@
           "customaryUnit": "tablespoon",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["sesame"]
+          "allergenNotes": [
+            "sesame"
+          ]
         }
       ]
     }
@@ -177,7 +185,10 @@
         "customaryUnit": "cup",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten; verify label"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten; verify label"
+        ]
       },
       {
         "id": "gochugaru",
@@ -199,7 +210,10 @@
         "customaryUnit": "tablespoons",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+        "allergenNotes": [
+          "soy",
+          "wheat/gluten unless certified gluten-free"
+        ]
       },
       {
         "id": "rice-syrup",
@@ -254,7 +268,9 @@
         "customaryUnit": "tablespoon",
         "preparation": null,
         "optional": false,
-        "allergenNotes": ["sesame"]
+        "allergenNotes": [
+          "sesame"
+        ]
       }
     ],
     "batchYield": "About 300 ml / 1 1/4 cups marinade",
@@ -272,7 +288,11 @@
     "substitutions": [
       "Use verified gluten-free gochujang and tamari only after test-cook adjustment."
     ],
-    "allergenNotes": ["soy", "wheat/gluten", "sesame"]
+    "allergenNotes": [
+      "soy",
+      "wheat/gluten",
+      "sesame"
+    ]
   },
   "instructions": [
     {
@@ -376,8 +396,16 @@
   "servingSuggestions": [
     "Serve with rice, lettuce, perilla leaves, and cooling banchan."
   ],
-  "menuPairings": ["B13", "F03", "SA03", "D03"],
-  "relatedRecipeIds": ["M12", "M14"],
+  "menuPairings": [
+    "B13",
+    "F03",
+    "SA03",
+    "D03"
+  ],
+  "relatedRecipeIds": [
+    "M12",
+    "M14"
+  ],
   "faq": [
     {
       "question": "Is dwaeji bulgogi always grilled?",
@@ -391,7 +419,10 @@
   "seoTitle": "Spicy Dwaeji Bulgogi Grilled Pork",
   "metaDescription": "Make spicy Korean dwaeji bulgogi with thin pork shoulder, gochujang marinade, uncrowded grilling, thermometer checks, and a safe rest.",
   "primaryKeyword": "dwaeji bulgogi recipe",
-  "secondaryTopics": ["spicy Korean pork", "gochujang pork marinade"],
+  "secondaryTopics": [
+    "spicy Korean pork",
+    "gochujang pork marinade"
+  ],
   "imageManifestIds": [],
   "videoManifestId": null,
   "transcriptId": null,
@@ -404,6 +435,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#M13, editorial status final; lint-passing, tier B). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Maangchi dwaeji-bulgogi technique reference, accessed 2026-07-14: https://www.maangchi.com/recipe/dwaeji-bulgogi",
     "FoodSafety.gov safe minimum internal temperature and cold-storage charts, accessed 2026-07-14: https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures and https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts",
     "Editorial draft only: not test-cooked; Korean-language, cultural, food-safety, and legal review remain required."

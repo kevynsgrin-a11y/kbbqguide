@@ -10,8 +10,8 @@
   "publicReleaseOrder": 71,
   "canonicalSlug": "kkaennip-jangajji-pickled-perilla-leaves",
   "canonicalUrl": "https://kbbqguide.com/recipes/banchan/kkaennip-jangajji-pickled-perilla-leaves/",
-  "shortDescription": "Perilla leaves are layered with a cooled soy-vinegar brine for a crisp, savory refrigerator pickle that is never presented as shelf-stable.",
-  "culturalContext": "Kkaennip jangajji is a preserved perilla-leaf banchan with household variations in brine, aromatics, sweetness, and resting time. This draft uses a vinegar-forward refrigerator method rather than a canning process.",
+  "shortDescription": "Perilla — the broad, jagged, anise-mint leaf that the Korean table treats as both vegetable and wrap — pickled leaf by leaf in a soy-sweet brine: kkaennip jangajji is the most distinctive jar in the b",
+  "culturalContext": "Perilla — the broad, jagged, anise-mint leaf that the Korean table treats as both vegetable and wrap — pickled leaf by leaf in a soy-sweet brine: kkaennip jangajji is the most distinctive jar in the banchan tradition, nothing else on any table tasting like it. The craft is in the leaf-by-layer build: each leaf painted, stacked, and pressed, the leaves becoming the pickle's own layers. One leaf over hot rice is a meal's reset; one leaf wrapping a piece of grilled pork (#M10) is the tradition's own ssam-within-a-banchan.",
   "adaptationLabel": "classic",
   "editorialStatus": "draft",
   "testCookStatus": "required",
@@ -20,13 +20,13 @@
   "author": "{{LEGAL_NAME}}",
   "reviewer": null,
   "createdAt": "2026-07-13",
-  "updatedAt": "2026-07-14",
+  "updatedAt": "2026-10-04",
   "publishedAt": null,
-  "yield": 10,
+  "yield": 1,
   "servingUnit": "banchan servings",
   "prepTime": {
-    "minutes": 25,
-    "display": "25 minutes"
+    "minutes": 30,
+    "display": "30 minutes"
   },
   "marinateTime": {
     "minutes": 0,
@@ -41,8 +41,8 @@
     "display": "12 hours refrigerated"
   },
   "totalTime": {
-    "minutes": 750,
-    "display": "12 hours 30 minutes"
+    "minutes": 2915,
+    "display": "35 minutes, ready in 1–2 days"
   },
   "equipment": [
     "Clean colander",
@@ -76,7 +76,10 @@
           "customaryUnit": "cup",
           "preparation": null,
           "optional": false,
-          "allergenNotes": ["soy", "wheat/gluten unless certified gluten-free"]
+          "allergenNotes": [
+            "soy",
+            "wheat/gluten unless certified gluten-free"
+          ]
         },
         {
           "id": "rice-vinegar",
@@ -241,8 +244,16 @@
     "Serve one folded leaf with rice and grilled meat.",
     "Use clean kitchen shears to cut leaves for diners who need smaller bites."
   ],
-  "menuPairings": ["M19", "SF14", "F09", "SA04"],
-  "relatedRecipeIds": ["B23", "B25"],
+  "menuPairings": [
+    "M19",
+    "SF14",
+    "F09",
+    "SA04"
+  ],
+  "relatedRecipeIds": [
+    "B23",
+    "B25"
+  ],
   "faq": [
     {
       "question": "Can I store this in the pantry?",
@@ -273,6 +284,7 @@
   ],
   "nutritionStatus": "not-calculated",
   "sourcesAndEditorialNotes": [
+    "Content synced 2026-10-04 from the Recipe Finalz corpus master (kbbqguide#B24, editorial status final; lint-passing, tier C). Site review gates (test cook, food safety, Korean language) remain required and unchanged.",
     "Food-safety basis: https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables",
     "Process boundary: refrigerator pickle; formula requires qualified review before any shelf-stable claim.",
     "Editorial draft only: not test-cooked, food-safety reviewed, Korean-language reviewed, or approved for publication."
